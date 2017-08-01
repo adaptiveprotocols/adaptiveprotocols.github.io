@@ -1,0 +1,6 @@
+baseurl: ""
+repository: adaptiveprotocols/adaptiveprotocols.github.io
+exclude: ['README.md']
+permalink: pretty
+sass:
+    sass_dir: ./assets/css
