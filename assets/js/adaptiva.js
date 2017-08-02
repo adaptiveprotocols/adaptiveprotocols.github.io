@@ -1,6 +1,7 @@
 ---
 ---
 jQuery(document).ready(function($) { //safety pants!
-  var $this = $(this);
+  {% include js/smooth-scroll.js %}
+  {% include js/nav.js %}
   {% include js/tertiary.js %}
 });

@@ -4,11 +4,16 @@ section.navbar {
   position: fixed;
   top: 0;
   background: transparent;
+  transition: 300ms $transition-ease;
+  @include z-index-3;
   .content {
     height: 100%;
   }
+  &.is-scrolled {
+    background: rgba($dark-black, .96);
+  }
 }
-.navigation {
+.nav {
   ul {
     list-style-type: none;
     padding: 0;
@@ -25,6 +30,10 @@ section.navbar {
       color: $white;
     }
   }
+}
+.logo {
+  display: block;
+  cursor: pointer;
 }
 // Logo SVG colors
 .logo-1 {

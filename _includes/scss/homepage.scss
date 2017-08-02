@@ -1,3 +1,27 @@
 #hero-homepage {
   background-color: $dark-black;
+  position: relative;
+  background-image: url('/assets/img/hero/hero-homepage.jpg');
+  @include overlay($dark-black);
+  a#scroll {
+    position: absolute;
+    display: block;
+    height: 68px;
+    width: 68px;
+    border-radius: 50%;
+    background: $lighter-gray;
+    bottom: $spacing-larger;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    @include boxshadow($boxshadow-lrg-20);
+    @include z-index-2;
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%) rotate(90deg);
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+  }
 }

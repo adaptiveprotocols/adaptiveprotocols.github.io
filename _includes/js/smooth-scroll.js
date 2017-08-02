@@ -1,5 +1,4 @@
-jQuery(document).ready(function($) { //safety pants!
-  $('a[href*="#"]') // Select all links with hashes
+$('a[href*="#"]') // Select all links with hashes
   // Remove links that don't actually link to anything
   .not('[href="#"]')
   .not('[href="#0"]')
@@ -33,24 +32,3 @@ jQuery(document).ready(function($) { //safety pants!
       }
     }
   });
-
-  $(window).scroll(function(){
-  var scroll = $(window).scrollTop();
-  var $nav = $('.navbar');
-  var navHeight = $nav.height();
-  if (scroll >= navHeight) {
-    $nav.addClass('is-scrolled');
-  } else {
-    $nav.removeClass('is-scrolled');
-  }
-});
-
-  $('.tertiary-nav-item').click(function(){
-  var navID = $(this).attr('id');
-  $(this).closest('.tertiary').find('.tertiary-nav-item').removeClass('is-selected');
-  $(this).toggleClass('is-selected');
-  $(this).closest('.tertiary').find('.tertiary-nav-content').removeClass('is-visible').hide();
-  $('.tertiary-nav-content.' + navID).show().addClass('is-visible');
-});
-
-});

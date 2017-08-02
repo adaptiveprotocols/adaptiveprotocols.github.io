@@ -12,6 +12,7 @@
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </head>
   <body>
+    {% include html/nav.html %}
     {{content}}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="{{'/assets/js/adaptiva.js' | relative_url}}"></script>
