@@ -1,7 +1,20 @@
 ---
 ---
+{% include scss/color.scss %}
 {% include scss/breakpoints.scss %}
+{% include scss/zindex.scss %}
+{% include scss/spacing.scss %}
+{% include scss/type.scss %}
 {% include scss/jframework.scss %}
-* {
-  font-family: 'museo-sans', Segoe UI, Helvetica, sans-serif;
+{% include scss/button.scss %}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
 }
+
+{% include scss/navigation.scss %}
+
+// Page specific styles
+{% include scss/homepage.scss %}

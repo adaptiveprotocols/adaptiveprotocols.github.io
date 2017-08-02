@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 // Grid system
 .j-row {
   display: block;
@@ -219,7 +222,7 @@
   align-items: flex-start;
 }
 
-.grid-container {
+.grid-container { // extra support from flexbox, just incase floating starts doing weird jazz
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -236,6 +239,17 @@
 
 // Page components ----------
 
+// Content/Site width
+
+.content {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  &.centered {
+    text-align: center;
+  }
+}
+
 // Hero section
 // First element on page after navbar
 .hero {
@@ -250,7 +264,89 @@
   &.full-screen { // will adapt to full height of browser window
     height: 100vh;
   }
+  h1 {
+    font-size: $type-largest;
+    color: $white;
+  }
+  h3 {
+    font-size: $type-big;
+    color: $bright-blue;
+  }
 }
 .hero-content {
   text-align: center;
+}
+
+section.color-block {
+  padding: $spacing-larger 0;
+  background: $white;
+  &.no-pad {
+    padding: 0;
+  }
+  &.blue {
+    background: $blue;
+  }
+  &.dark-blue {
+    background: $dark-blue;
+  }
+  &.bright-blue {
+    background: $bright-blue;
+  }
+  &.orange {
+    background: $orange;
+  }
+  &.green {
+    background: $green;
+  }
+  &.purple {
+    background: $purple;
+  }
+  &.lighter-gray {
+    background: $lighter-gray;
+  }
+  &.dark-black {
+    background: $dark-black;
+  }
+  h1,
+  h2 {
+    text-align: center;
+    margin-top: 0;
+  }
+  h2 {
+    font-size: $type-larger;
+  }
+}
+
+// Tertiary Nav ----------
+nav.tertiary-nav {
+  width: 100%;
+  text-align: center;
+  ul {
+    list-style-type: none;
+    padding: 0;
+    -webkit-padding-start: 0;
+    margin: $spacing-large 0;
+    li.tertiary-nav-item {
+      display: inline-block;
+      padding: $spacing-smallest $spacing-small;
+      cursor: pointer;
+      &.is-selected {
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+// Posts section
+.insights-article-img {
+  display: block;
+  cursor: pointer;
+  margin-bottom: $spacing-normal;
+  img {
+    display: block;
+    width: 100%;
+  }
+  p {
+    color: inherit;
+  }
 }

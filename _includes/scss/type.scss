@@ -24,17 +24,67 @@ $type-jumbo:      6.854rem;
   font-size: $type-larger;
 }
 .type-largest {
-  font-size: $type-larger;
+  font-size: $type-largest;
 }
 .type-jumbo {
   font-size: $type-jumbo;
 }
 
+* {
+  font-family: 'museo-sans', Segoe UI, Helvetica, sans-serif;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+}
+
+h3,
+h4,
+h5 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: $type-larger;
+}
+h2 {
+  font-size: $type-large;
+}
+h3 {
+  font-size: $type-big;
+}
+h4 {
+  font-size: $type-small;
+  text-transform: uppercase;
+  letter-spacing: .26em;
+}
+
 h1,
 h2,
 h3,
-h4 {
-  font-weight: 700;
+h4,
+h5,
+p,
+span {
+  &.white {
+    color: $white;
+  }
+  &.blue {
+    color: $blue;
+  }
+  &.bright-blue {
+    color: $bright-blue;
+  }
+  &.orange {
+    color: $orange;
+  }
+  &.green {
+    color: $green;
+  }
+  &.purple {
+    color: $purple;
+  }
 }
 
 a {
@@ -46,9 +96,12 @@ a {
 }
 
 p {
+  font-weight: 500;
+  color: $black;
+  margin-bottom: $spacing-normal;
   a {
     font-weight: 700;
-    border-bottom: 1px solid $bight-blue;
+    border-bottom: 1px solid $bright-blue;
     box-shadow: inset 0 -.26em 0 0 $bright-blue;
     transition: 300ms ease-in-out;
     color: inherit;
