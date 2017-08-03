@@ -273,12 +273,14 @@
     height: 100vh;
   }
   h1 {
-    font-size: $type-largest;
-    color: $white;
+    font-size: $type-jumbo;
+    color: $bright-blue;
+    margin-bottom: $spacing-normal;
   }
   h3 {
     font-size: $type-big;
-    color: $bright-blue;
+    color: $white;
+    font-weight: 300;
   }
 }
 .hero-content {
