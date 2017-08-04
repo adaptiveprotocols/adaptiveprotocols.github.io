@@ -3,6 +3,28 @@
   padding: $spacing-small $spacing-normal;
   text-decoration: none;
   cursor: pointer;
-  background: $bright-blue;
+  background: $blue;
   color: $white;
+  font-weight: 700;
+  transition: 400ms $transition-ease;
+  &:hover {
+    background: $darker-blue;
+  }
+  &.white {
+    background: $white;
+    color: $dark-blue;
+    &:hover {
+      background: $dark-blue;
+      color: $white;
+    }
+    &.outline {
+      background: transparent;
+      border: 2px solid $white;
+      color: $white;
+      &:hover {
+        background: $white;
+        color: $dark-blue;
+      }
+    }
+  }
 }

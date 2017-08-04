@@ -15,31 +15,69 @@ section.navbar {
   }
 }
 .nav {
+  height: 100%;
   ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    height: 100%;
     -webkit-padding-start: 0;
     text-align: right;
   }
   li.nav-item {
     display: inline-block;
+    height: 100%;
     a {
       display: block;
-      padding: $spacing-small;
+      position: relative;
+      line-height: 110px;
+      padding: 0 $spacing-small;
       text-decoration: none;
       color: $white;
+      transition: 400ms $transition-ease-in;
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: $spacing-normal;
+        left: 0;
+        width: 0;
+        height: 2px;
+        transition: 400ms $transition-ease-in;
+        background: lighten($blue, 25%);
+      }
+      &:hover {
+        color: lighten($blue, 25%);
+        &::before {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+.is-scrolled {
+  li.nav-item {
+    a {
+      line-height: 68px;
+      &::before {
+        bottom: 0;
+      }
     }
   }
 }
 .logo {
   display: block;
+  padding-top: 6px;
   cursor: pointer;
+  transition: 400ms $transition-ease;
+  &:hover {
+    opacity: .68;
+  }
 }
 // Logo SVG colors
 .logo-1 {
-  fill: #fff;
+  fill: $white;
 }
 .logo-2 {
-  fill: #fff;
+  fill: $blue;
 }
