@@ -24,9 +24,9 @@ section.navbar {
       left: 100%;
       width: 200px;
       color: $white;
-      margin-left: -$spacing-normal;
+      margin-left: -$spacing-small;
       opacity: 0;
-      transition: 400ms $transition-ease;
+      transition: margin-left 500ms $transition-ease-in, opacity 250ms linear;
     }
     &:hover {
       &::after {
