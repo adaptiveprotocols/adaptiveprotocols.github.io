@@ -13,6 +13,28 @@ section.navbar {
     background: rgba($dark-black, .96);
     height: 68px;
   }
+  .logo {
+    position: relative;
+    &::after {
+      content: 'Smart Scaling for Enterprise IT';
+      font-size: $type-smaller;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 100%;
+      width: 200px;
+      color: $white;
+      margin-left: -$spacing-normal;
+      opacity: 0;
+      transition: 400ms $transition-ease;
+    }
+    &:hover {
+      &::after {
+        opacity: 1;
+        margin-left: $spacing-small;
+      }
+    }
+  }
 }
 .nav {
   height: 100%;

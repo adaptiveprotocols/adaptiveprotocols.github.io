@@ -404,7 +404,6 @@ nav.tertiary-nav {
         transition: 600ms $transition-ease-in;
       }
       &.is-selected {
-        font-weight: 700;
         color: $black;
         &::after {
           width: 100%;
@@ -415,11 +414,19 @@ nav.tertiary-nav {
 }
 .tertiary-nav-content {
   position: relative;
-  transition: 600ms $transition-ease-in;
-  opacity: 0;
   &.is-visible {
-    animation: slideUp 1250ms $transition-ease 1 forwards;
-    opacity: 1;
+    &.slideUp {
+      animation: slideUp 1250ms $transition-ease 1 forwards, fadeIn 1000ms linear 1 forwards;
+    }
+    &.slideDown {
+      animation: slideDown 1250ms $transition-ease 1 forwards, fadeIn 1000ms linear 1 forwards;
+    }
+    &.slideLeft {
+      animation: slideLeft 1250ms $transition-ease 1 forwards, fadeIn 1000ms linear 1 forwards;
+    }
+    &.slideRight {
+      animation: slideRight 1250ms $transition-ease 1 forwards, fadeIn 1000ms linear 1 forwards;
+    }
   }
 }
 

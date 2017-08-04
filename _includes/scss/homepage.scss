@@ -14,8 +14,7 @@
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    transition: 150ms $transition-bounce;
-    @include boxshadow($boxshadow-lrg-50);
+    transition: 200ms $transition-ease;
     @include z-index-2;
     svg {
       display: block;
@@ -48,14 +47,12 @@
       &::before {
         width: 68px;
         height: 68px;
-        animation: scrollRing1 4000ms linear infinite alternate;
-        opacity: 1;
+        animation: scrollRing1 3600ms linear infinite alternate;
       }
       &::after {
         width: 68px;
         height: 68px;
-        animation: scrollRing2 5000ms linear infinite alternate;
-        opacity: 0.5;
+        animation: scrollRing2 4200ms linear infinite alternate;
       }
     }
   }
