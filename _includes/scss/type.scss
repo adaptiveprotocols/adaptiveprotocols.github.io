@@ -1,6 +1,7 @@
 // Type scale
 
-$type-small:      0.618rem;
+$type-smaller:    0.618rem;
+$type-small:      0.875rem;
 $type-base:       1rem;
 $type-big:        1.25rem;
 $type-large:      1.618rem;
@@ -8,6 +9,9 @@ $type-larger:     2.618rem;
 $type-largest:    4.263rem;
 $type-jumbo:      6.854rem;
 
+.type-smaller {
+  font-size: $type-smaller;
+}
 .type-small {
   font-size: $type-small;
 }

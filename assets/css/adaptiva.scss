@@ -21,5 +21,8 @@ html, body {
 // Navbar
 {% include scss/nav.scss %}
 
+// Footer
+{% include scss/footer.scss %}
+
 // Page specific styles
 {% include scss/homepage.scss %}

@@ -1,5 +1,8 @@
 * {
   box-sizing: border-box;
+  &:focus {
+    outline: none;
+  }
 }
 // Grid system
 .j-row {
@@ -254,8 +257,12 @@
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
   &.centered {
     text-align: center;
+  }
+  &.overflow {
+    overflow: visible;
   }
 }
 // Hero section
@@ -384,7 +391,7 @@ nav.tertiary-nav {
   transition: 600ms $transition-ease-in;
   opacity: 0;
   &.is-visible {
-    animation: slideUp 1000ms $transition-ease 1 forwards;
+    animation: slideUp 1250ms $transition-ease 1 forwards;
     opacity: 1;
   }
 }
