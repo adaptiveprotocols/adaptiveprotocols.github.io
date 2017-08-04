@@ -126,3 +126,47 @@
     opacity: 0;
   }
 }
+@keyframes scrollRing1 {
+  0% {
+    width: 60px;
+    height: 60px;
+  }
+  25% {
+    width: 80px;
+    height: 80px;
+  }
+  50% {
+    width: 100px;
+    height: 100px;
+  }
+  75% {
+    width: 70px;
+    height: 70px;
+  }
+  100% {
+    width: 110px;
+    height: 110px;
+  }
+}
+@keyframes scrollRing2 {
+  0% {
+    width: 60px;
+    height: 60px;
+  }
+  25% {
+    width: 110px;
+    height: 110px;
+  }
+  50% {
+    width: 80px;
+    height: 80px;
+  }
+  75% {
+    width: 120px;
+    height: 120px;
+  }
+  100% {
+    width: 100px;
+    height: 100px;
+  }
+}
