@@ -18,6 +18,7 @@ footer.footer {
   margin-bottom: $spacing-small;
   transition: 500ms $transition-ease-in;
   position: relative;
+  padding-left: $spacing-small;
   a {
     color: $gray;
     display: inline-block;
@@ -42,7 +43,6 @@ footer.footer {
     @include z-index-1;
   }
   &:hover {
-    padding-left: $spacing-small;
     a {
       padding: 0 6px;
       color: $white;
