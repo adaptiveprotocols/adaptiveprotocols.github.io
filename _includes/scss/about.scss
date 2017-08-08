@@ -1,0 +1,104 @@
+#hero-about {
+  background-image: url('/assets/img/hero/hero-about.jpg');
+  background-color: $dark-black;
+  position: relative;
+  @include overlay($dark-black);
+}
+
+.tertiary.leadership {
+  .tertiary-nav {
+    border-bottom: 2px solid $blue;
+  }
+  .tertiary-nav-item,
+  .is-selected {
+    &::after {
+      display: none;
+    }
+  }
+  .tertiary-nav-item {
+    img {
+      display: block;
+      border-radius: 50%;
+      transition: 250ms $transition-bounce;
+      height: 68px;
+      width: 68px;
+    }
+    &:hover {
+      img {
+        box-shadow: 0 0 0 4px $white;
+      }
+    }
+    &.is-selected {
+      img {
+        box-shadow: 0 0 0 6px $blue;
+        transform: scale(1.42);
+      }
+      &:hover {
+        img {
+          box-shadow: 0 0 0 6px $blue;
+        }
+      }
+    }
+  }
+  .tertiary-nav-content {
+    padding-top: $spacing-normal;
+    * {
+      text-align: left;
+    }
+    h2 {
+      color: $blue;
+    }
+    h4 {
+      color: $black;
+    }
+    p {
+      color: $white;
+    }
+  }
+}
+.careers-slider {
+  height: 600px;
+  .slide {
+    &.is-visible {
+      .slide-content {
+        animation: slideLeft 800ms $transition-ease-in 1 forwards;
+        .slide-content-txt {
+          animation: slideLeft 600ms $transition-ease 1 forwards;
+        }
+        .button {
+          padding: $spacing-small $spacing-large;
+          animation: slideLeft 1200ms $transition-ease-in 1 forwards;
+        }
+      }
+    }
+  }
+}
+table.awards {
+  width: 100%;
+  th,
+  td {
+    text-align: left;
+  }
+  th {
+    font-weight: 300;
+    font-size: $type-small;
+    color: lighten($black, 40%);
+  }
+  tr {
+    border-bottom: 2px solid $light-gray;
+    padding: $spacing-small 0;
+    @include vertical-center;
+  }
+  .organization {
+    width: 25%;
+  }
+  .award-name {
+    width: 40%;
+  }
+  .product {
+    width: 25%;
+  }
+  .year {
+    width: 10%;
+  }
+}

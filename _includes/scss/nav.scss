@@ -10,7 +10,7 @@ section.navbar {
     height: 100%;
   }
   &.is-scrolled {
-    background: rgba($dark-black, .96);
+    background: rgba($dark-black, .99);
     height: 68px;
   }
   .logo {
@@ -68,6 +68,7 @@ section.navbar {
         transition: 400ms $transition-ease-in;
         background: lighten($blue, 25%);
       }
+      &.current,
       &:hover {
         color: lighten($blue, 25%);
         &::before {
@@ -78,6 +79,7 @@ section.navbar {
   }
 }
 .is-scrolled {
+  @include boxshadow($boxshadow-sm-30);
   li.nav-item {
     a {
       line-height: 68px;

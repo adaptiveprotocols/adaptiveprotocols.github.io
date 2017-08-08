@@ -6,19 +6,19 @@
     <nav class="nav">
       <ul>
         <li class="nav-item">
-          <a href="#0">Products</a>
+          <a href="#0"{% if page.url == "/products/" %} class="current"{% endif %}>Products</a>
         </li>
         <li class="nav-item">
-          <a href="#0">Insights</a>
+          <a href="#0"{% if page.url == "/insights/" %} class="current"{% endif %}>Insights</a>
         </li>
         <li class="nav-item">
-          <a href="#0">About</a>
+          <a href="{{"/about" | relative_url }}"{% if page.url == "/about/" %} class="current"{% endif %}>About</a>
         </li>
         <li class="nav-item">
-          <a href="#0">Careers</a>
+          <a href="#0"{% if page.url == "/careers/" %} class="current"{% endif %}>Careers</a>
         </li>
         <li class="nav-item">
-          <a href="">Contact</a>
+          <a href="#0"{% if page.url == "/contact/" %} class="current"{% endif %}>Contact</a>
         </li>
       </ul>
     </nav>

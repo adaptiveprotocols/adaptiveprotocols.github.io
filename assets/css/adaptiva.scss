@@ -11,6 +11,7 @@
 {% include scss/type.scss %}
 {% include scss/kokkaku.scss %}
 {% include scss/button.scss %}
+{% include scss/icons.scss %}
 
 html, body {
   margin: 0;
@@ -24,5 +25,8 @@ html, body {
 // Footer
 {% include scss/footer.scss %}
 
-// Page specific styles
+// Page specific styles ----------
+//   Homepage
 {% include scss/homepage.scss %}
+//   About
+{% include scss/about.scss %}
