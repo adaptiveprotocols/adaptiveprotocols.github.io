@@ -1,5 +1,6 @@
 .button {
   display: inline-block;
+  text-align: center;
   padding: $spacing-small $spacing-normal;
   text-decoration: none;
   cursor: pointer;
@@ -13,18 +14,47 @@
   &.white {
     background: $white;
     color: $dark-blue;
+    &.outline {
+      border: 2px solid $white;
+      color: $white;
+    }
     &:hover {
       background: $dark-blue;
       color: $white;
-    }
-    &.outline {
-      background: transparent;
-      border: 2px solid $white;
-      color: $white;
-      &:hover {
-        background: $white;
-        color: $dark-blue;
+      &.outline {
+        background: rgba($white, .5);
       }
     }
+  }
+  &.orange {
+    background: $orange;
+    color: $white;
+    &.outline {
+      border: 2px solid $orange;
+      color: $orange;
+    }
+    &:hover {
+      background: $red;
+      &.outline {
+        background: rgba($orange, .5);
+      }
+    }
+  }
+  &.purple {
+    background: $purple;
+    color: $white;
+    &.outline {
+      border: 2px solid $purple;
+      color: $purple;
+    }
+    &:hover {
+      background: darken($purple, 10%);
+      &.outline {
+        background: rgba($purple, 0.5);
+      }
+    }
+  }
+  &.full-width {
+    display: block;
   }
 }

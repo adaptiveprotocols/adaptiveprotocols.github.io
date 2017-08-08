@@ -1,0 +1,61 @@
+.hero#hero-careers,
+.hero#job-opening {
+  background-image: url('/assets/img/hero/hero-adaptiva-careers-jobs.jpg');
+  position: relative;
+  @include overlay($dark-black);
+}
+a.job {
+  display: block;
+  width: 100%;
+  padding: $spacing-small;
+  position: relative;
+  color: $blue;
+  font-size: $type-big;
+  background: $white;
+  margin-bottom: $spacing-smallest;
+  transition: 400ms $transition-ease;
+  @include boxshadow($boxshadow-sm-10);
+  span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: $spacing-small;
+    transition: 300ms $transition-ease-in;
+  }
+  &:hover {
+    @include boxshadow($boxshadow-med-20);
+    span {
+      right: $spacing-smallest;
+    }
+  }
+}
+section.color-block.job-description {
+  text-align: left;
+  h2 {
+    text-align: left;
+  }
+}
+.sidebar-jobs {
+  margin-top: $spacing-normal;
+  a {
+    display: block;
+    padding: $spacing-smallest;
+    color: lighten($black, 30%);
+    transition: 300ms $transition-ease-in;
+    font-size: $type-small;
+    &:hover {
+      box-shadow: inset 0 0 0 2px $gray;
+      color: $black;
+    }
+  }
+}
+.careers-slider {
+  height: 600px;
+}
+.careers-perk {
+  margin-bottom: $spacing-large;
+  span {
+    display: block;
+    padding-right: $spacing-normal;
+  }
+}

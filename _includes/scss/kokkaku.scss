@@ -264,6 +264,7 @@
   align-items: flex-start;
 }
 // Tile
+// Requires .overflow on parent .color-block
 .tile {
   padding: 10px;
   background-color: transparent;
@@ -290,12 +291,12 @@
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
-  &.centered {
-    text-align: center;
-  }
-  &.overflow {
-    overflow: visible;
-  }
+}
+.overflow {
+  overflow: visible;
+}
+.centered {
+  text-align: center;
 }
 // Hero section
 //   First element on page after navbar
@@ -340,7 +341,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba($color, 0.95);
+    background-color: rgba($color, 0.92);
     @include z-index-1;
   }
 }
@@ -395,7 +396,13 @@ section.color-block {
   }
 }
 
-// Tertiary Nav ----------
+//   Tertiary Nav
+//   Markup Structure
+//     .tertiary
+//     nav.tertiary-nav
+//       ul
+//         li.tertiary-nav-item
+//     .tertiary-nav-content
 .tertiary {
   margin-bottom: $spacing-large;
 }
@@ -553,15 +560,17 @@ nav.tertiary-nav {
   }
 }
 .slide-content {
-  background: rgba($dark-black, .9);
+  background: rgba($white, .9);
   padding: $spacing-normal;
   @include boxshadow($boxshadow-lrg-50);
   h3 {
-    color: $white;
+    color: $black;
+    font-size: $type-large;
+    font-weight: 300;
     margin-top: 0;
   }
   p {
-    color: $gray;
+    color: lighten($black, 40%);
   }
 }
 .is-visible {

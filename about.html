@@ -72,7 +72,7 @@ meta: Adaptiva is an enterprise systems management software provider based in Be
     </div>
   </div>
 </section>
-<section class="slider careers-slider">
+<section class="slider about-careers-slider">
   <div class="slider-dots">
     <span class="slider-dot is-selected" id="about-careers-1"></span>
     <span class="slider-dot" id="about-careers-2"></span>
@@ -90,7 +90,7 @@ meta: Adaptiva is an enterprise systems management software provider based in Be
         <div class="j-col j-col-4 slide-content">
           <div class="slide-content-txt">
             <h3>Make an impact</h3>
-            <p>We make products that runs on millions of machines and impacts lives on a daily basis, and our open company structure ensures that your ideas are heard.</p>
+            <p>We make products that runs on millions of machines, impacting lives on a daily basis, and our open company structure ensures that your ideas are heard.</p>
           </div>
           <a href="{{"/careers" | relative_url }}" class="button">Join Adaptiva</a>
         </div>
@@ -147,15 +147,18 @@ meta: Adaptiva is an enterprise systems management software provider based in Be
       </thead>
       <tbody>
         {% for award in site.data.awards %}
-        <tr>
-          <td class="organization">{{award.org}}</td>
-          <td class="award-name">{{award.award}}</td>
-          <td class="product">{{award.product}}</td>
-          <td class="year">{{award.year}}</td>
+        <tr class="js-awards-row">
+          <td class="organization" data-th="Organization"><span>{{award.org}}</span></td>
+          <td class="award-name" data-th="Award"><span>{{award.award}}</span></td>
+          <td class="product" data-th="Product"><span>{{award.product}}</span></td>
+          <td class="year" data-th="Year"><span>{{award.year}}</span></td>
         </tr>
         {% endfor %}
       </tbody>
     </table>
+    <div style="text-align: center; margin-top: 1.618em;">
+      <a class="js-awards button" href="javascript:void(0)">Show More</a>
+    </div>
   </div>
 </section>
 <section class="color-block lighter-gray">

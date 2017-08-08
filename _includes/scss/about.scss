@@ -56,7 +56,7 @@
     }
   }
 }
-.careers-slider {
+.about-careers-slider {
   height: 600px;
   .slide {
     &.is-visible {
@@ -86,11 +86,25 @@ table.awards {
   }
   tr {
     border-bottom: 2px solid $light-gray;
-    padding: $spacing-small 0;
+    padding: $spacing-normal 0;
     @include vertical-center;
+    &:nth-child(n+6) {
+      display: none;
+      &.is-showing {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-animation: fadeIn 500ms linear 1 forwards;
+        animation: fadeIn 500ms linear 1 forwards;
+      }
+    }
   }
   .organization {
     width: 25%;
+    font-weight: 700;
+  }
+  th.organization {
+    font-weight: 300;
   }
   .award-name {
     width: 40%;
@@ -101,4 +115,43 @@ table.awards {
   .year {
     width: 10%;
   }
+  .award-name,
+  .product,
+  .year {
+    font-weight: 300;
+  }
+  @media #{$mobile} {
+    thead {
+      display: none;
+    }
+    tr,
+    tr:nth-child(n+6).is-showing {
+      display: block;
+    }
+    td {
+      &.organization,
+      &.award-name,
+      &.product,
+      &.year {
+        width: 100%;
+        display: block;
+        padding-left: 40%;
+        margin-bottom: $spacing-smallest;
+        position: relative;
+        &::before {
+          content: attr(data-th);
+          position: absolute;
+          top: 0;
+          left: 0;
+          color: lighten($black, 40%);
+          font-size: $type-smaller;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+// Employee Spotlight Section  ----------
+.employee-spotlight-txt {
+  padding-left: $spacing-large;
 }
