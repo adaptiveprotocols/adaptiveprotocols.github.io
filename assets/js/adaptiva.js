@@ -1,6 +1,8 @@
 ---
 ---
+
 jQuery(document).ready(function($) { //safety pants!
+
   {% include js/smooth-scroll.js %}
   {% include js/nav.js %}
   {% include js/tertiary.js %}
@@ -10,6 +12,7 @@ jQuery(document).ready(function($) { //safety pants!
     $('.js-awards-row:nth-child(n+6)').toggleClass('is-showing');
     $(this).text(function(i, text){
           return text === "Show More" ? "Show Less" : "Show More";
-      })
+      });
   });
+  {% include js/contact.js %}
 });

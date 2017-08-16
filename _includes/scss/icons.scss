@@ -1,4 +1,5 @@
 .icon {
+  transition: fill 300ms $transition-ease;
   &.white {
     fill: $white;
   }

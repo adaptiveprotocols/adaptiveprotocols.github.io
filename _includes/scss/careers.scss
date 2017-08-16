@@ -4,6 +4,11 @@
   position: relative;
   @include overlay($dark-black);
 }
+.hero#job-opening {
+  h1 {
+    color: $white;
+  }
+}
 a.job {
   display: block;
   width: 100%;
@@ -57,5 +62,10 @@ section.color-block.job-description {
   span {
     display: block;
     padding-right: $spacing-normal;
+  }
+}
+section.job-description {
+  h2 {
+    color: $blue;
   }
 }

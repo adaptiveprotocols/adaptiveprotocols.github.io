@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
     <script src="https://use.typekit.net/des5qhx.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </head>
-  <body>
+  <body{% if page.bodyclass %} class="{{page.bodyclass}}"{% endif %}>
     {% include html/nav.html %}
     {{content}}
     {% include html/footer.html %}

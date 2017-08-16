@@ -105,6 +105,7 @@ a {
 p {
   font-weight: 500;
   color: $black;
+  margin-top: 0;
   margin-bottom: $spacing-normal;
   line-height: 1.618em;
   a {
@@ -126,10 +127,11 @@ strong {
 ul {
   list-style-type: square;
   -webkit-padding-start: 0;
-  padding-left: $spacing-normal;
+  padding-left: $spacing-large;
   li {
     line-height: 1.618em;
     padding-left: $spacing-small;
+    margin-bottom: $spacing-small;
   }
 }
 

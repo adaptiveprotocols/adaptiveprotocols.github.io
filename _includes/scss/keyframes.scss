@@ -116,8 +116,6 @@
     opacity: 0;
   }
 }
-// Homepage scrolling trigger button ----------
-//   Sweet animation for 'visual sugar' in homepage full screen hero
 @keyframes fadeOut {
   from {
     opacity: 1;
@@ -126,6 +124,52 @@
     opacity: 0;
   }
 }
+// salesClose1
+//   Rotate 90 degrees clockwise
+@-webkit-keyframes salesClose1 {
+  from {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  to {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+}
+@keyframes salesClose1 {
+  from {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  to {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+}
+// salesClose2
+//   Rotate 270 degrees clockwise
+@-webkit-keyframes salesClose2 {
+  from {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  to {
+    -webkit-transform: rotate(405deg);
+            transform: rotate(405deg);
+  }
+}
+@keyframes salesClose2 {
+  from {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  to {
+    -webkit-transform: rotate(405deg);
+            transform: rotate(405deg);
+  }
+}
+// Homepage scrolling trigger button ----------
+//   Sweet animation for 'visual sugar' in homepage full screen hero
 @keyframes scrollRing1 {
   0% {
     width: 60px;

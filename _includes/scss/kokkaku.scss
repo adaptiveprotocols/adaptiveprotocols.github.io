@@ -273,6 +273,7 @@
   .tile-content {
     padding: 20px;
     transition: 400ms $transition-ease;
+    @include boxshadow($boxshadow-sm-10);
     &.white {
       background-color: $white;
     }
@@ -290,7 +291,6 @@
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  overflow: hidden;
 }
 .overflow {
   overflow: visible;
@@ -349,6 +349,7 @@
 section.color-block {
   padding: $spacing-larger 0;
   background: $white;
+  overflow: hidden;
   &.no-pad {
     padding: 0;
   }
@@ -357,6 +358,12 @@ section.color-block {
   }
   &.dark-blue {
     background: $dark-blue;
+  }
+  &.darker-blue {
+    background: $darker-blue;
+  }
+  &.darkest-blue {
+    background: $darkest-blue;
   }
   &.bright-blue {
     background: $bright-blue;
@@ -384,7 +391,6 @@ section.color-block {
   }
   h1,
   h2 {
-    text-align: center;
     margin-top: 0;
   }
   h2 {
@@ -449,16 +455,16 @@ nav.tertiary-nav {
   position: relative;
   &.is-visible {
     &.slideUp {
-      animation: slideUp 1250ms $transition-ease 1 forwards, fadeIn 1000ms linear 1 forwards;
+      animation: slideUp 1000ms $transition-ease 1 forwards;
     }
     &.slideDown {
-      animation: slideDown 1250ms $transition-ease 1 forwards, fadeIn 1000ms linear 1 forwards;
+      animation: slideDown 1000ms $transition-ease 1 forwards;
     }
     &.slideLeft {
-      animation: slideLeft 1250ms $transition-ease 1 forwards, fadeIn 1000ms linear 1 forwards;
+      animation: slideLeft 1000ms $transition-ease 1 forwards;
     }
     &.slideRight {
-      animation: slideRight 1250ms $transition-ease 1 forwards, fadeIn 1000ms linear 1 forwards;
+      animation: slideRight 1000ms $transition-ease 1 forwards;
     }
   }
 }
@@ -547,18 +553,18 @@ nav.tertiary-nav {
     background: rgba($dark-black, .5);
   }
 }
-.slide {
-  &:first-of-type {
-    .prev {
-      display: none;
-    }
-  }
-  &:last-child {
-    .next {
-      display: none;
-    }
-  }
-}
+// .slide {
+//   &:first-of-type {
+//     .prev {
+//       display: none;
+//     }
+//   }
+//   &:last-child {
+//     .next {
+//       display: none;
+//     }
+//   }
+// }
 .slide-content {
   background: rgba($white, .9);
   padding: $spacing-normal;
