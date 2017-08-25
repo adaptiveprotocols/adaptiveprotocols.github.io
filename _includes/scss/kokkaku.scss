@@ -8,7 +8,7 @@
 .j-row {
   display: block;
   clear: both;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .j-col-1 {
@@ -283,6 +283,23 @@
       @include boxshadow($boxshadow-med-20);
     }
   }
+  &.js-scroll {
+    opacity: 0;
+  }
+  &.is-scrolled {
+    &:nth-child(3n+1) {
+      -webkit-animation: 600ms $transition-ease-in 1 forwards slideUp, 500ms linear 1 forwards fadeIn;
+      animation: 600ms $transition-ease-in 1 forwards slideUp, 500ms linear 1 forwards fadeIn;
+    }
+    &:nth-child(3n+2) {
+      -webkit-animation: 600ms $transition-ease-in 100ms 1 forwards slideUp, 500ms linear 100ms 1 forwards fadeIn;
+      animation: 600ms $transition-ease-in 100ms 1 forwards slideUp, 500ms linear 100ms 1 forwards fadeIn;
+    }
+    &:nth-child(3n+3) {
+      -webkit-animation: 600ms $transition-ease-in 200ms 1 forwards slideUp, 500ms linear 200ms 1 forwards fadeIn;
+      animation: 600ms $transition-ease-in 200ms 1 forwards slideUp, 500ms linear 200ms 1 forwards fadeIn;
+    }
+  }
 }
 
 // Page components ----------
@@ -306,12 +323,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   @include vertical-center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   height: 600px;
   &.full-screen { // will adapt to full height of browser window
     height: 100vh;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   h1 {
     font-size: $type-largest;
@@ -421,33 +438,33 @@ nav.tertiary-nav {
     -webkit-padding-start: 0;
     margin: $spacing-large 0;
     width: 100%;
-    li.tertiary-nav-item {
-      display: inline-block;
-      padding: $spacing-smallest $spacing-small;
-      cursor: pointer;
-      position: relative;
-      color: lighten($black, 40%);
-      transition: 600ms $transition-ease-in;
-      &:hover {
-        color: $black;
-      }
-      &::after {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 0;
-        height: 2px;
-        background-color: $blue;
-        transition: 600ms $transition-ease-in;
-      }
-      &.is-selected {
-        color: $black;
-        &::after {
-          width: 100%;
-        }
-      }
+  }
+}
+li.tertiary-nav-item {
+  display: inline-block;
+  padding: $spacing-smallest $spacing-small;
+  cursor: pointer;
+  position: relative;
+  color: lighten($black, 40%);
+  transition: 600ms $transition-ease-in;
+  &:hover {
+    color: $black;
+  }
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: $blue;
+    transition: 600ms $transition-ease-in;
+  }
+  &.is-selected {
+    color: $black;
+    &::after {
+      width: 100%;
     }
   }
 }
@@ -538,33 +555,23 @@ nav.tertiary-nav {
   transition: 300ms ease;
   @include vertical-center;
   @include z-index-2;
-  background: rgba($dark-black, .1);
+  background: rgba($dark-black, .25);
   svg {
     margin: auto;
   }
   &.prev {
     left: 0;
-    transform: translateY(-50%) rotate(180deg);
+    svg {
+      transform: rotate(180deg);
+    }
   }
   &.next {
     right: 0;
   }
   &:hover {
-    background: rgba($dark-black, .5);
+    background: rgba($dark-black, .75);
   }
 }
-// .slide {
-//   &:first-of-type {
-//     .prev {
-//       display: none;
-//     }
-//   }
-//   &:last-child {
-//     .next {
-//       display: none;
-//     }
-//   }
-// }
 .slide-content {
   background: rgba($white, .9);
   padding: $spacing-normal;

@@ -8,3 +8,7 @@ $(window).scroll(function(){
     $nav.removeClass('is-scrolled');
   }
 });
+$('.js-nav-trigger').click(function(){
+  $(this).toggleClass('is-clicked');
+  $('nav.nav').toggleClass('is-visible');
+});

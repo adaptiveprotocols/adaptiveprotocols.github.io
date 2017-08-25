@@ -1,0 +1,107 @@
+section.hero#hero-products {
+  background-image: url('/assets/img/hero/hero-products.jpg');
+  position: relative;
+  @include overlay($dark-black);
+}
+section.products {
+  .slider-dot {
+    border-color: $gray;
+    &.is-selected {
+      border-color: darken($gray, 25%);
+      background: darken($gray, 25%);
+    }
+  }
+  .slider {
+    min-height: 480px; //lmao
+    .slide {
+      background-color: $white;
+      -webkit-box-align: start;-ms-flex-align: start;align-items: flex-start;
+      h3 {
+        color: $blue;
+      }
+      p {
+        color: $black;
+      }
+    }
+    .slider-arrow {
+      top: auto;
+      bottom: $spacing-smallest;
+      transform: none;
+      width: auto;
+      height: auto;
+      background: transparent;
+      @include vertical-center;
+      span {
+        color: lighten($black, 50%);
+        transition: 300ms $transition-ease;
+      }
+      &.prev {
+        span {
+          margin-left: $spacing-normal;
+        }
+      }
+      &.next {
+        span {
+          margin-right: $spacing-normal;
+        }
+      }
+      &:hover {
+        span {
+          color: $black;
+        }
+      }
+    }
+  }
+  .tertiary-nav-content.is-visible {
+    .slide.is-visible {
+      h3,
+      h4 {
+        -webkit-animation: slideRight 600ms $transition-ease-in 1 forwards;animation: slideRight 600ms $transition-ease-in 1 forwards;
+      }
+      p,
+      strong,
+      span {
+        -webkit-animation: slideRight 1000ms $transition-ease-in 1 forwards;animation: slideRight 1000ms $transition-ease-in 1 forwards;
+      }
+      .button {
+        -webkit-animation: slideRight 800ms $transition-ease-in 1 forwards;animation: slideRight 800ms $transition-ease-in 1 forwards;
+      }
+      .responsive-video {
+        -webkit-animation: slideUp 1000ms $transition-ease-in 1 forwards;
+        animation: slideUp 1000ms $transition-ease-in 1 forwards;
+      }
+    }
+  }
+}
+.product-feature-name {
+  display: block;
+  font-weight: 700;
+  color: $black;
+}
+section.products-brands {
+  background-color: $dark-black;
+  padding: $spacing-large 0;
+  background-image: url('/assets/img/adaptiva-customer-testimonials-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  @include overlay($dark-black);
+  .content {
+    position: relative;
+    @include z-index-1;
+  }
+  li.tertiary-nav-item {
+    &.is-selected {
+      color: $white;
+    }
+    &:hover {
+      color: $white;
+    }
+  }
+  .tertiary-nav-content {
+    p {
+      color: $white;
+    }
+  }
+}

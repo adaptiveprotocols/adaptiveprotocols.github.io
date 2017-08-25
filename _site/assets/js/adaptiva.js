@@ -1,4 +1,44 @@
 jQuery(document).ready(function($) { //safety pants!
+  (function($) {
+
+  /**
+   * Copyright 2012, Digital Fusion
+   * Licensed under the MIT license.
+   * http://teamdf.com/jquery-plugins/license/
+   *
+   * @author Sam Sehnert
+   * @desc A small plugin that checks whether elements are within
+   *     the user visible viewport of a web browser.
+   *     only accounts for vertical position, not horizontal.
+   */
+
+  $.fn.visible = function(partial) {
+
+      var $t            = $(this),
+          $w            = $(window),
+          viewTop       = $w.scrollTop(),
+          viewBottom    = viewTop + $w.height(),
+          _top          = $t.offset().top,
+          _bottom       = _top + $t.height(),
+          compareTop    = partial === true ? _bottom : _top,
+          compareBottom = partial === true ? _top : _bottom;
+
+    return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+  };
+
+})(jQuery);
+
+$(window).scroll(function(event) {
+
+  $('.js-scroll').each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass('is-scrolled');
+    }
+  });
+
+});
 
   $('a[href*="#"]') // Select all links with hashes
   // Remove links that don't actually link to anything
@@ -45,13 +85,17 @@ jQuery(document).ready(function($) { //safety pants!
     $nav.removeClass('is-scrolled');
   }
 });
+$('.js-nav-trigger').click(function(){
+  $(this).toggleClass('is-clicked');
+  $('nav.nav').toggleClass('is-visible');
+});
 
   $('.tertiary-nav-item').click(function(){
   var navID = $(this).attr('id');
   $(this).closest('.tertiary').find('.tertiary-nav-item').removeClass('is-selected');
   $(this).toggleClass('is-selected');
   $(this).closest('.tertiary').find('.tertiary-nav-content').removeClass('is-visible').hide();
-  $('.tertiary-nav-content.' + navID).show().addClass('is-visible');
+  $('.tertiary-nav-content#' + navID).show().addClass('is-visible');
 });
 
   var $firstSlide = $('.slide:first-child'),
@@ -79,7 +123,7 @@ $('.slider-dot').click(function(){ // user clicks on nav dots on slider
 
 $('.slider-arrow.prev').click(function(){ // user clicks 'previous' arrow
 
-	var slideID = $(this).parent('.slide').next('.slide').attr('id');
+	var prevID = $(this).parent('.slide').prev('.slide').attr('id');
 
 	$(this).closest('.slider') // localize
 		.find('.slide')
@@ -93,18 +137,16 @@ $('.slider-arrow.prev').click(function(){ // user clicks 'previous' arrow
 
 	$(this).closest('.slider').find('.slider-dot') // localize and find dots
 		.removeClass('is-selected'); // remove mod class from all dots
-	$('.slider-dot#' + slideID) // target dot with same ID as current slide
+	$('.slider-dot#' + prevID) // target dot with same ID as current slide
 		.addClass('is-selected'); // add mod class
 });
 
 $firstSlide.children('.slider-arrow.prev').click(function(){ // user clicks previous on first slide
 
-	var slideID = $(this).parent('.slide').next('.slide').attr('id');
-
 	$(this).parent() // localize
 		.removeClass('is-visible') // remove mod class
 		.hide(); // bye!
-		
+
 	$(this).closest('.slider').find('.slide:last-child') // find last slide in parent
 		.show() // hi!
 		.addClass('is-visible'); // add mod class
@@ -116,7 +158,7 @@ $firstSlide.children('.slider-arrow.prev').click(function(){ // user clicks prev
 
 $('.slider-arrow.next').click(function(){ // user clicks 'next' arrow
 
-	var slideID = $(this).parent('.slide').next('.slide').attr('id');
+	var nextID = $(this).parent('.slide').next('.slide').attr('id');
 
 	$(this).closest('.slider') // same functionality as previous, just backwards, duh
 		.find('.slide')
@@ -131,13 +173,11 @@ $('.slider-arrow.next').click(function(){ // user clicks 'next' arrow
 	 $(this).closest('.slider').find('.slider-dot')
 		.removeClass('is-selected');
 
-	 $('.slider-dot#' + slideID)
+	 $('.slider-dot#' + nextID)
 		.addClass('is-selected');
 });
 
 $lastSlide.children('.slider-arrow.next').click(function(){
-
-	var slideID = $(this).parent('.slide').next('.slide').attr('id');
 
 	$(this).parent()
 		.removeClass('is-visible')
@@ -213,6 +253,18 @@ $('.js-sales-close').click(function(){ // user clicks close button
   $salesProfile
     .hide() // hide, duh?
     .removeClass('is-visible is-current'); // remove all mod classes
+});
+
+  $('select#sccm-academy').change(function() {
+	var value = this.value;
+	$('.asset').hide()
+    .removeClass('is-showing');
+  $('.asset.' + value).show()
+    .addClass('is-showing');
+  if (value == 'all') {
+  	$('.asset').show()
+      .addClass('is-showing');
+  }
 });
 
 });

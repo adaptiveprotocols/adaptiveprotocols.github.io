@@ -1,0 +1,44 @@
+---
+layout: default
+title: SCCM Academy
+meta: Curated library of free resources and education materials for Microsoft Systems Center ConfigMgr (ConfigMgr) admins. Learn SCCM tips and tricks.
+bodyclass: sccm-academy
+---
+<section class="hero" id="hero-sccm-academy">
+  <div class="content hero-content">
+    <h1>{{page.title}}</h1>
+    <div class="sccm-academy-dropdown">
+      <select name="academy" id="sccm-academy">
+        <option value="all">All Resources</option>
+        <option value="podcast">Podcasts</option>
+        <option value="video">Videos</option>
+        <option value="webinar">Webinars</option>
+        <option value="report">Reports</option>
+        <option value="case-study">Case Studies</option>
+        <option value="product-resource">Product Resources</option>
+        <option value="technology-comparison">Technology Comparisons</option>
+        <option value="infographic">Infographics</option>
+        <option value="sccm-tools">SCCM Tools</option>
+      </select>
+    </div>
+  </div>
+</section>
+<section class="color-block white sccm-academy">
+  <div class="content grid-container">
+    {% assign academy = (site.data.sccm-academy | sort: 'date' | reverse) %}
+    {% for asset in academy %}
+      <a class="j-col j-col-3 asset is-showing{% for class in asset.classes %} {{class.class}}{% endfor %}" href="{{asset.link}}" target="_blank" title="{{asset.title}}">
+        <div class="asset-img">
+          <img src="{{asset.img}}" alt="{{asset.title}}">
+        </div>
+        <div class="asset-txt">
+          <h3 class="blue">{{asset.title}}</h3>
+          <span class="asset-date">{{asset.posted}}</span>
+          {% for category in asset.categories %}
+            <span class="asset-category">{{category.category}}</span>
+          {% endfor %}
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+</section>

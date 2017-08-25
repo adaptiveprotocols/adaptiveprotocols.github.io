@@ -15,6 +15,7 @@
     background: $white;
     color: $dark-blue;
     &.outline {
+      background: transparent;
       border: 2px solid $white;
       color: $white;
     }
@@ -30,6 +31,7 @@
     background: $orange;
     color: $white;
     &.outline {
+      background: transparent;
       border: 2px solid $orange;
       color: $orange;
     }
@@ -40,10 +42,26 @@
       }
     }
   }
+  &.dark-blue {
+    background: $dark-blue;
+    color: $white;
+    &.outline {
+      background: transparent;
+      border: 2px solid $dark-blue;
+      color: $dark-blue;
+    }
+    &:hover {
+      background: darken($dark-blue, 10%);
+      &.outline {
+        background: rgba($dark-blue, 0.5);
+      }
+    }
+  }
   &.purple {
     background: $purple;
     color: $white;
     &.outline {
+      background: transparent;
       border: 2px solid $purple;
       color: $purple;
     }
@@ -56,5 +74,17 @@
   }
   &.full-width {
     display: block;
+  }
+}
+a {
+  .link-arrow {
+    vertical-align: middle;
+    margin-left: .6em;
+    transition: 400ms $transition-ease-in;
+  }
+  &:hover {
+    .link-arrow {
+      margin-left: 1em;
+    }
   }
 }

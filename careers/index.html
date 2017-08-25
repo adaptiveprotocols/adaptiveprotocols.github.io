@@ -2,6 +2,7 @@
 layout: default
 title: Careers
 meta: Join Adaptiva's team of talented, driven employees, and help create the future of systems management
+bodyclass: careers
 ---
 <section class="hero" id="hero-careers">
   <div class="content hero-content">
@@ -42,11 +43,11 @@ meta: Join Adaptiva's team of talented, driven employees, and help create the fu
 <section class="color-block dark-black">
   <div class="content vertical-center-row">
     <div class="j-col j-col-6">
-      <div class="responsive-video">
+      <div class="responsive-video js-scroll slideUp">
         <iframe src="https://player.vimeo.com/video/215216782" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
     </div>
-    <div class="j-col j-col-5 push-1 employee-spotlight-txt">
+    <div class="j-col j-col-5 push-1 employee-spotlight-txt js-scroll slideRight">
       <h4 class="blue">Employee Spotlight</h4>
       <p class="type-big white">
         Software Engineer Eric Soler talks about why he chose to work at Adaptiva and what life is like as a developer here.
@@ -91,7 +92,7 @@ meta: Join Adaptiva's team of talented, driven employees, and help create the fu
       <div class="j-col j-col-8 push-2">
         {% for job in site.pages %}
           {% if job.layout == 'job' %}
-          <a href="{{job.url}}" class="job" title="Apply for {{job.title}}">
+          <a href="{{job.url}}" class="job js-scroll" title="Apply for {{job.title}}">
             {{job.title}}
             <span>{% include svg/arrow.svg width="16" color="orange" %}</span>
           </a>
@@ -104,8 +105,8 @@ meta: Join Adaptiva's team of talented, driven employees, and help create the fu
 <section class="slider careers-slider">
   <div class="slider-dots">
     <span class="slider-dot is-selected" id="careers-1"></span>
-    <span class="slider-dot"  id="careers-2"></span>
-    <span class="slider-dot"  id="careers-3"></span>
+    <span class="slider-dot" id="careers-2"></span>
+    <span class="slider-dot" id="careers-3"></span>
   </div>
   <div class="slides">
     <div class="slide is-visible" id="careers-1" style="background-image: url('/assets/img/adaptiva-careers-1.jpg');">
@@ -142,50 +143,50 @@ meta: Join Adaptiva's team of talented, driven employees, and help create the fu
     </div>
     <div class="grid-container">
       <div class="j-col j-col-4 careers-perk wrap vertical-center-row">
-        <div class="j-col j-col-2">
+        <div class="j-col j-col-2 js-scroll slideUp">
           {% include svg/compensation.svg width="42" %}
         </div>
-        <div class="j-col j-col-10">
+        <div class="j-col j-col-10 js-scroll slideRight">
           <span>Highly competitive salaries and compensation packages</span>
         </div>
       </div>
       <div class="j-col j-col-4 careers-perk wrap vertical-center-row">
-        <div class="j-col j-col-2">
+        <div class="j-col j-col-2 js-scroll slideUp">
           {% include svg/company-events.svg width="42" %}
         </div>
-        <div class="j-col j-col-10">
+        <div class="j-col j-col-10 js-scroll slideRight">
           <span>Incredible team outings and events</span>
         </div>
       </div>
       <div class="j-col j-col-4 careers-perk wrap vertical-center-row">
-        <div class="j-col j-col-2">
+        <div class="j-col j-col-2 js-scroll slideUp">
           {% include svg/kitchen.svg width="42" %}
         </div>
-        <div class="j-col j-col-10">
+        <div class="j-col j-col-10 js-scroll slideRight">
           <span>Fully stocked kitchen, plus frequent team lunches and dinners</span>
         </div>
       </div>
       <div class="j-col j-col-4 careers-perk wrap vertical-center-row">
-        <div class="j-col j-col-2">
+        <div class="j-col j-col-2 js-scroll slideUp">
           {% include svg/vacation.svg width="42" %}
         </div>
-        <div class="j-col j-col-10">
+        <div class="j-col j-col-10 js-scroll slideRight">
           <span>Employees start with 18 vacation days and gain one each year</span>
         </div>
       </div>
       <div class="j-col j-col-4 careers-perk wrap vertical-center-row">
-        <div class="j-col j-col-2">
+        <div class="j-col j-col-2 js-scroll slideUp">
           {% include svg/benefits.svg width="42" %}
         </div>
-        <div class="j-col j-col-10">
+        <div class="j-col j-col-10 js-scroll slideRight">
           <span>100% coverage on top-of-the-line medical, dental, and vision benefits</span>
         </div>
       </div>
       <div class="j-col j-col-4 careers-perk wrap vertical-center-row">
-        <div class="j-col j-col-2">
+        <div class="j-col j-col-2 js-scroll slideUp">
           {% include svg/drinks.svg width="42" %}
         </div>
-        <div class="j-col j-col-10">
+        <div class="j-col j-col-10 js-scroll slideRight">
           <span>Beverages on hand for happy hours and product launches</span>
         </div>
       </div>

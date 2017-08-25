@@ -3,10 +3,14 @@
     <a class="logo" href="/">
       {% include svg/adaptiva-logo.svg width="110" %}
     </a>
+    <div class="js-nav-trigger">
+      <span></span>
+      <span></span>
+    </div>
     <nav class="nav">
       <ul>
         <li class="nav-item">
-          <a href="#0"{% if page.url == "/products/" %} class="current"{% endif %}>Products</a>
+          <a href="{{"/products" | relative_url}}"{% if page.url == "/products/" %} class="current"{% endif %}>Products</a>
         </li>
         <li class="nav-item">
           <a href="#0"{% if page.url == "/insights/" %} class="current"{% endif %}>Insights</a>

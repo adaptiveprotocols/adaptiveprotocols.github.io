@@ -1,0 +1,141 @@
+- name: Accenture
+  svg: accenture-logo.svg
+  link: 'http://accenture.com'
+
+- name: Avanade
+  svg: avanade-logo.svg
+  link: 'http://avanade.com'
+
+- name: Better Direct
+  png: better-direct-logo.png
+  link: 'http://betterdirect.com/'
+  sq: true
+
+- name: Blue Turtle Technologies
+  png: blue-turtle-logo.png
+  link: 'http://blueturtle.co.za/'
+
+- name: Capita
+  svg: capita-logo.svg
+  link: 'http://capita.com'
+
+- name: Cellent AG
+  svg: cellent-logo.svg
+  link: 'http://cellent.de'
+
+- name: Compucom
+  svg: compucom-logo.svg
+  link: 'http://compucom.com'
+
+- name: Compugen
+  png: compugen-logo.png
+  link: 'http://www.compugen.com/'
+
+- name: Concurrency
+  svg: concurrency-logo.svg
+  link: 'http://concurrency.com'
+
+- name: Data3
+  png: data-3-logo.png
+  link: 'http://data3.com'
+
+- name: Dilignet
+  png: dilignet-logo.png
+  link: 'http://dilignet.com'
+
+- name: Dimension Data
+  svg: dimension-data-logo.svg
+  link: 'http://dimensiondata.com'
+
+- name: FlexManage
+  png: flex-manage.png
+  link: 'http://flexmanage.com'
+
+- name: Flexera
+  png: flexera-logo.png
+  link: 'http://flexera.com'
+
+- name: Fujitsu
+  svg: fujitsu-logo.svg
+  link: 'http://www.fujitsu.com/'
+
+- name: Dimension Data
+  svg: dimension-data-logo.svg
+  link: 'http://dimensiondata.com'
+
+- name: HEAT Software
+  svg: heat-logo.svg
+  link: 'http://flexmanage.com'
+
+- name: IBM
+  svg: ibm-logo.svg
+  link: 'http://ibm.com'
+
+- name: Infront Consulting Group
+  svg: infront-consulting-logo.svg
+  link: 'http://www.infrontconsulting.com/'
+
+- name: Insight
+  png: insight-logo.png
+  link: 'http://www.insight.com/'
+  sq: true
+
+- name: Hewlett Packard Enterprise
+  png: hewlett-packard-enterprise-logo.png
+  link: 'https://www.hpe.com.html'
+
+- name: Juriba
+  svg: juriba-logo.svg
+  link: 'http://juriba.com/'
+
+- name: MCPC
+  png: mcpc-logo.png
+  link: 'http://mcpc.com'
+
+- name: Microsoft
+  svg: microsoft-logo.svg
+  link: 'http://microsoft.com'
+
+- name: Netcentrics
+  png: netcentrics-logo.png
+  link: 'http://netcentrics.com/'
+
+- name: Netrix
+  png: netrix-logo.png
+  link: 'http://netrixllc.com/'
+  sq: true
+
+- name: Prosource Solutions
+  png: prosource-solutions-logo.png
+  link: 'http://prosource-corp.com/'
+  sq: true
+
+- name: SHI International
+  svg: shi-logo.svg
+  link: 'http://shi.com/'
+  sq: true
+
+- name: SMSMarshall
+  png: sms-marshall-logo.png
+  link: 'http://smsmarshall.com/'
+  sq: true
+
+- name: SoftwareONE
+  svg: software-one-logo.svg
+  link: 'http://softwareone.com/'
+
+- name: SYNNEX Corporation
+  png: synnex-logo.png
+  link: 'http://www.synnexcorp.com/'
+
+- name: Thomas Duryea Consulting
+  png: thomas-duryea-logo.png
+  link: 'http://www.thomasduryea.com.au/'
+
+- name: Windows Management Experts
+  png: windows-management-experts-logo.png
+  link: 'http://www.windowsmanagementexperts.com/'
+
+- name: World Wide Technology
+  png: world-wide-technology-logo.png
+  link: 'https://www2.wwt.com/'

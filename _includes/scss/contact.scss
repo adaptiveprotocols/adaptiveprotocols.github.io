@@ -53,15 +53,21 @@ section.hero#hero-contact {
 }
 .sales-map {
   position: relative;
+  svg {
+    position: relative;
+    @include z-index-1;
+  }
   .territory {
     display: block;
     position: absolute;
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    transition: transform 200ms $transition-pop;
+    opacity: 0;
+    transition: transform 200ms $transition-pop, opacity 600ms linear;
     cursor: pointer;
     @include boxshadow($boxshadow-sm-30);
+    @include z-index-2;
     &:hover {
       @include boxshadow($boxshadow-sm-50);
     }
@@ -107,6 +113,14 @@ section.hero#hero-contact {
     }
     &:hover {
       transform: scale(1.25);
+    }
+    &.is-scrolled {
+      opacity: 1;
+    }
+  }
+  &.is-scrolled {
+    svg {
+      -webkit-animation: slideUp 1000ms $transition-ease-in 1 forwards, fadeIn 600ms linear 1 forwards;animation: slideUp 1000ms $transition-ease-in 1 forwards, fadeIn 600ms linear 1 forwards;
     }
   }
 }

@@ -1,0 +1,80 @@
+section.hero#hero-sccm-academy {
+  position: relative;
+  @include overlay($dark-black);
+  background-image: url('/assets/img/hero/hero-sccm-academy.jpg');
+}
+.sccm-academy-dropdown {
+  position: relative;
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    &::-ms-expand {
+      display: none;
+    }
+    display: block;
+    position: relative;
+    @include z-index-1;
+    width: 100%;
+    padding: $spacing-small;
+    background: rgba($white, 0);
+    color: $white;
+    border: 2px solid $white;
+    font-size: $type-base;
+    transition: 300ms $transition-ease;
+    cursor: pointer;
+    option {
+      background: $white;
+      color: $black;
+      font-size: $type-base;
+    }
+  }
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 0;
+    right: $spacing-small;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 16px;
+    width: 16px;
+    background-image: url('/assets/img/dropdown.svg');
+    background-position: center;
+    background-size: 16px;
+    background-repeat: no-repeat;
+  }
+}
+section.sccm-academy {
+  min-height: 800px;
+}
+.asset {
+  margin-bottom: $spacing-small;
+  opacity: 0;
+  transition: opacity 1000ms;
+  &.is-showing {
+    opacity: 1;
+    -webkit-animation: 1000ms $transition-ease-in 1 forwards slideUp;animation: 1000ms $transition-ease-in 1 forwards slideUp;
+  }
+}
+.asset-img {
+  img {
+    display: block;
+    width: 100%;
+    transition: 400ms $transition-ease;
+  }
+  &:hover {
+    img {
+      @include boxshadow($boxshadow-med-20);
+    }
+  }
+}
+.asset-date {
+  display: block;
+  margin-bottom: $spacing-smallest;
+}
+.asset-category {
+  font-size: $type-small;
+  color: $gray;
+  margin-right: $spacing-smallest;
+  text-transform: capitalize;
+}

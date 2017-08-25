@@ -5,7 +5,7 @@
 {% include scss/boxshadow.scss %}
 {% include scss/prefix.scss %}
 {% include scss/transitions.scss %}
-{% include scss/keyframes.scss %}
+{% include scss/animations.scss %}
 {% include scss/zindex.scss %}
 {% include scss/spacing.scss %}
 {% include scss/type.scss %}
@@ -17,6 +17,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 // Navbar
@@ -28,9 +29,15 @@ html, body {
 // Page specific styles ----------
 //   Homepage
 {% include scss/homepage.scss %}
+//   Products
+{% include scss/products.scss %}
 //   About
 {% include scss/about.scss %}
 //   Careers
 {% include scss/careers.scss %}
 //   Contact
 {% include scss/contact.scss %}
+//   SCCM Academy
+{% include scss/sccm-academy.scss %}
+//   Partners
+{% include scss/partners.scss %}

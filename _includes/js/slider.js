@@ -23,7 +23,7 @@ $('.slider-dot').click(function(){ // user clicks on nav dots on slider
 
 $('.slider-arrow.prev').click(function(){ // user clicks 'previous' arrow
 
-	var slideID = $(this).parent('.slide').next('.slide').attr('id');
+	var prevID = $(this).parent('.slide').prev('.slide').attr('id');
 
 	$(this).closest('.slider') // localize
 		.find('.slide')
@@ -37,18 +37,16 @@ $('.slider-arrow.prev').click(function(){ // user clicks 'previous' arrow
 
 	$(this).closest('.slider').find('.slider-dot') // localize and find dots
 		.removeClass('is-selected'); // remove mod class from all dots
-	$('.slider-dot#' + slideID) // target dot with same ID as current slide
+	$('.slider-dot#' + prevID) // target dot with same ID as current slide
 		.addClass('is-selected'); // add mod class
 });
 
 $firstSlide.children('.slider-arrow.prev').click(function(){ // user clicks previous on first slide
 
-	var slideID = $(this).parent('.slide').next('.slide').attr('id');
-
 	$(this).parent() // localize
 		.removeClass('is-visible') // remove mod class
 		.hide(); // bye!
-		
+
 	$(this).closest('.slider').find('.slide:last-child') // find last slide in parent
 		.show() // hi!
 		.addClass('is-visible'); // add mod class
@@ -60,7 +58,7 @@ $firstSlide.children('.slider-arrow.prev').click(function(){ // user clicks prev
 
 $('.slider-arrow.next').click(function(){ // user clicks 'next' arrow
 
-	var slideID = $(this).parent('.slide').next('.slide').attr('id');
+	var nextID = $(this).parent('.slide').next('.slide').attr('id');
 
 	$(this).closest('.slider') // same functionality as previous, just backwards, duh
 		.find('.slide')
@@ -75,13 +73,11 @@ $('.slider-arrow.next').click(function(){ // user clicks 'next' arrow
 	 $(this).closest('.slider').find('.slider-dot')
 		.removeClass('is-selected');
 
-	 $('.slider-dot#' + slideID)
+	 $('.slider-dot#' + nextID)
 		.addClass('is-selected');
 });
 
 $lastSlide.children('.slider-arrow.next').click(function(){
-
-	var slideID = $(this).parent('.slide').next('.slide').attr('id');
 
 	$(this).parent()
 		.removeClass('is-visible')

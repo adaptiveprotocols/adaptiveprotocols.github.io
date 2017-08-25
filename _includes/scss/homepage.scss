@@ -57,3 +57,15 @@
     }
   }
 }
+.tertiary.what-is-p2p {
+  .tertiary-nav-content {
+    &.is-visible {
+      p {
+        -webkit-animation: 1000ms $transition-ease-in 1 forwards slideRight;animation: 1000ms $transition-ease-in 1 forwards slideRight;
+      }
+      .responsive-video {
+        -webkit-animation: 600ms $transition-ease-in 1 forwards slideUp;animation: 600ms $transition-ease-in 1 forwards slideUp;
+      }
+    }
+  }
+}

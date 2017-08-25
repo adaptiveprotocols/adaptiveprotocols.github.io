@@ -2,7 +2,7 @@
 ---
 
 jQuery(document).ready(function($) { //safety pants!
-
+  {% include js/visible.js %}
   {% include js/smooth-scroll.js %}
   {% include js/nav.js %}
   {% include js/tertiary.js %}
@@ -15,4 +15,5 @@ jQuery(document).ready(function($) { //safety pants!
       });
   });
   {% include js/contact.js %}
+  {% include js/academy.js %}
 });

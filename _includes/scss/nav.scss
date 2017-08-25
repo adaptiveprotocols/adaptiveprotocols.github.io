@@ -34,6 +34,15 @@ section.navbar {
         margin-left: $spacing-small;
       }
     }
+    @media #{$tablet}, #{$mobile} {
+      position: absolute;
+      left: $spacing-small;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  @media #{$tablet}, #{$mobile} {
+    height: 68px;
   }
 }
 .nav {
@@ -77,14 +86,43 @@ section.navbar {
       }
     }
   }
+  @media #{$tablet}, #{$mobile} {
+    position: fixed;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    background: $dark-black;
+    transition: right 600ms $transition-ease-in;
+    ul {
+      text-align: left;
+      padding-top: 68px;
+    }
+    li.nav-item {
+      height: auto;
+      display: block;
+      margin-bottom: $spacing-large;
+      a {
+        line-height: $spacing-small;
+        &::before {
+          display: none;
+        }
+      }
+    }
+    &.is-visible {
+      right: 0;
+    }
+  }
 }
-.is-scrolled {
+section.navbar.is-scrolled {
   @include boxshadow($boxshadow-sm-30);
   li.nav-item {
     a {
       line-height: 68px;
       &::before {
         bottom: 0;
+      }
+      @media #{$tablet}, #{$mobile} {
+        line-height: $spacing-small;
       }
     }
   }
@@ -104,4 +142,51 @@ section.navbar {
 }
 .logo-2 {
   fill: $blue;
+}
+.js-nav-trigger {
+  display: none;
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: $spacing-small;
+  @include z-index-4;
+  span {
+    background-color: $white;
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    -webkit-transition: 600ms $transition-ease-in;
+    transition: 600ms $transition-ease-in;
+    &:first-child {
+      top: 9px;
+    }
+    &:last-child {
+      top: 15px;
+      width: 16px;
+      right: 0;
+    }
+  }
+  &.is-clicked {
+    span {
+      top: 11px;
+      background: $orange;
+      &:first-child {
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+      }
+      &:last-child {
+        width: 24px;
+        right: auto;
+        -webkit-transform: rotate(-135deg);
+                transform: rotate(-135deg);
+      }
+    }
+  }
+  @media #{$tablet}, #{$mobile} {
+    display: block;
+  }
 }

@@ -51,20 +51,20 @@ bodyclass: contact
 <section class="color-block darker-blue sales">
   <div class="content">
     <h2 class="white centered">Adaptiva Sales Team</h2>
-    <div class="sales-map overflow">
-      <a href="javascript:void(0)" class="territory rich-helgeson" id="rich-helgeson" title="Rich Helgeson: NE &amp; Canada"></a>
-      <a href="javascript:void(0)" class="territory row-3" id="jesse-good" title="Jesse Good: APAC"></a>
-      <a href="javascript:void(0)" class="territory" id="jeffrey-day" title="Jeffrey Day: EMEA"></a>
-      <a href="javascript:void(0)" class="territory row-2" id="jesse-good" title="Jesse Good: ANZ"></a>
-      <a href="javascript:void(0)" class="territory ada-hq" id="ada-hq" title="Adaptiva Headquarters"></a>
-      <a href="javascript:void(0)" class="territory" id="jesse-good" title="Jesse Good: Western US"></a>
-      <a href="javascript:void(0)" class="territory row-1" id="jesse-good" title="Jesse Good: LATAM"></a>
-      <a href="javascript:void(0)" class="territory" id="david-sommerville" title="David Sommerville: SEC &amp; Federal Govt."></a>
+    <div class="sales-map overflow js-scroll">
+      <a href="javascript:void(0)" class="territory js-scroll rich-helgeson" id="rich-helgeson" title="Rich Helgeson: NE &amp; Canada"></a>
+      <a href="javascript:void(0)" class="territory js-scroll row-3" id="jesse-good" title="Jesse Good: APAC"></a>
+      <a href="javascript:void(0)" class="territory js-scroll" id="jeffrey-day" title="Jeffrey Day: EMEA"></a>
+      <a href="javascript:void(0)" class="territory js-scroll row-2" id="jesse-good" title="Jesse Good: ANZ"></a>
+      <a href="javascript:void(0)" class="territory js-scroll ada-hq" id="ada-hq" title="Adaptiva Headquarters"></a>
+      <a href="javascript:void(0)" class="territory js-scroll" id="jesse-good" title="Jesse Good: Western US"></a>
+      <a href="javascript:void(0)" class="territory js-scroll row-1" id="jesse-good" title="Jesse Good: LATAM"></a>
+      <a href="javascript:void(0)" class="territory js-scroll" id="david-sommerville" title="David Sommerville: SEC &amp; Federal Govt."></a>
       {% include svg/map.svg %}
     </div>
     <div class="sales-map-profiles">
       <div class="sales-map-profile" id="ada-hq" style="display: none;">
-        <div class="js-sales-close">
+        <div class="js-sales-close" title="Close">
           <span></span><span></span>
         </div>
         <a class="js-prev">
@@ -73,7 +73,7 @@ bodyclass: contact
         <a class="js-next">
           <span href="javascript:void(0)">{% include svg/angle.svg width="26" color="white" %}</span>
         </a>
-        <div class="content vertical-center-row" title="Close">
+        <div class="content vertical-center-row">
           <div class="j-col j-col-4 sales-map-img">
             <img src="{{"/assets/img/sales/jim-souders.png"}}" alt="Adaptiva Headquarters in Bellevue, WA" />
           </div>
@@ -85,7 +85,7 @@ bodyclass: contact
         </div>
       </div>
       <div class="sales-map-profile" id="rich-helgeson" style="display: none;">
-        <div class="js-sales-close">
+        <div class="js-sales-close" title="Close">
           <span></span><span></span>
         </div>
         <a class="js-prev">
@@ -94,7 +94,7 @@ bodyclass: contact
         <a class="js-next">
           <span href="javascript:void(0)">{% include svg/angle.svg width="26" color="white" %}</span>
         </a>
-        <div class="content vertical-center-row" title="Close">
+        <div class="content vertical-center-row">
           <div class="j-col j-col-4 sales-map-img">
             <img src="{{"/assets/img/sales/rich-helgeson.png"}}" alt="Rich Helgeson, Adaptiva" />
           </div>
@@ -108,7 +108,7 @@ bodyclass: contact
         </div>
       </div>
       <div class="sales-map-profile" id="jesse-good" style="display: none;">
-        <div class="js-sales-close">
+        <div class="js-sales-close" title="Close">
           <span></span><span></span>
         </div>
         <a class="js-prev">
@@ -117,7 +117,7 @@ bodyclass: contact
         <a class="js-next">
           <span href="javascript:void(0)">{% include svg/angle.svg width="26" color="white" %}</span>
         </a>
-        <div class="content vertical-center-row" title="Close">
+        <div class="content vertical-center-row">
           <div class="j-col j-col-4 sales-map-img">
             <img src="{{"/assets/img/sales/jesse-good.png"}}" alt="Jesse Good, Adaptiva" />
           </div>
@@ -131,7 +131,7 @@ bodyclass: contact
         </div>
       </div>
       <div class="sales-map-profile" id="david-sommerville" style="display: none;">
-        <div class="js-sales-close">
+        <div class="js-sales-close" title="Close">
           <span></span><span></span>
         </div>
         <a class="js-prev">
@@ -140,7 +140,7 @@ bodyclass: contact
         <a class="js-next">
           <span href="javascript:void(0)">{% include svg/angle.svg width="26" color="white" %}</span>
         </a>
-        <div class="content vertical-center-row" title="Close">
+        <div class="content vertical-center-row">
           <div class="j-col j-col-4 sales-map-img">
             <img src="{{"/assets/img/sales/david-sommerville.png"}}" alt="David Sommerville, Adaptiva" />
           </div>
@@ -154,7 +154,7 @@ bodyclass: contact
         </div>
       </div>
       <div class="sales-map-profile" id="jeffrey-day" style="display: none;">
-        <div class="js-sales-close">
+        <div class="js-sales-close" title="Close">
           <span></span><span></span>
         </div>
         <a class="js-prev">
@@ -163,7 +163,7 @@ bodyclass: contact
         <a class="js-next">
           <span href="javascript:void(0)">{% include svg/angle.svg width="26" color="white" %}</span>
         </a>
-        <div class="content vertical-center-row" title="Close">
+        <div class="content vertical-center-row">
           <div class="j-col j-col-4 sales-map-img">
             <img src="{{"/assets/img/sales/jeffrey-day.png"}}" alt="Jeffrey Day, Adaptiva" />
           </div>
