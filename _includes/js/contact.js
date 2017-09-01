@@ -12,44 +12,74 @@ $('.territory').click(function(){ // user clicks on dot on map
     .show(); // show profile for clicked dot
 });
 
-$('.js-prev').click(function(){ // user clicks previous arrow
+function prevProfile() {
   $(this).parent() // find parent (.sales-map-profile)
-    .removeClass('is-current') // mod class
+    .removeClass('is-current next prev') // remove mod classes
     .hide()
     .prev() // Find previous profile
     .show()
-    .addClass('is-current'); // mod class
-});
+    .addClass('is-current prev'); // mod class
+}
+
+function nextProfile() {
+  $(this).parent() // find parent
+    .removeClass('is-current next prev') // remove mod classes
+    .hide()
+    .next() // find next profile
+    .show()
+    .addClass('is-current next'); // add mod class
+}
+
+function firstProfile() {
+  $(this).removeClass('is-current next prev') // remove mod classes
+    .parent()
+    .hide(); // hide profile
+  $lastProfile.show() // cycle around to last profile
+    .addClass('is-current prev'); // add mod class
+}
+
+function lastProfile() {
+  $(this).removeClass('is-current next prev') // remove mod class
+    .parent()
+    .hide(); // hide profile
+  $firstProfile.show() // cycle around to first profile
+    .addClass('is-current next'); // add mod class
+}
+
+$('.js-prev').click(prevProfile); // previous arrow triggers previous profile
+
+$('.js-next').click(nextProfile); // next arrow triggers next profile
 
 // cycles around to last profile if user clicks prev on first slide
-$firstProfile.children('.js-prev').click(function(){
-  $(this).removeClass('is-current')
-    .parent()
-    .hide();
-  $lastProfile.show()
-    .addClass('is-current');
-});
+$firstProfile.children('.js-prev').click(firstProfile);
 
 // cycles around to first profile if user clicks next on last slide
-$lastProfile.children('.js-next').click(function(){
-  $(this).removeClass('is-current')
-    .parent()
-    .hide();
-  $firstProfile.show()
-    .addClass('is-current');
-});
-
-$('.js-next').click(function(){ // user clicks next arrow
-  $(this).parent()
-    .removeClass('is-current')
-    .hide()
-    .next()
-    .show()
-    .addClass('is-current');
-});
+$lastProfile.children('.js-next').click(lastProfile);
 
 $('.js-sales-close').click(function(){ // user clicks close button
   $salesProfile
     .hide() // hide, duh?
     .removeClass('is-visible is-current'); // remove all mod classes
+});
+
+$salesProfile.swipe({ // user swipes sales profile
+  swipeRight:function() { // user swipes right <3
+    if ( $(this).is(':first-child') ) { // if first profile
+      $(this).children('.js-prev')
+        .each(firstProfile); // cycle around to last profile
+    } else {
+      $(this).children('.js-prev')
+        .each(prevProfile); // else trigger previous profile
+    }
+  },
+  swipeLeft:function() { // user swipes left </3
+    if ( $(this).is(':last-child') ) { // if last profile
+      $(this).children('.js-next')
+        .each(lastProfile); // cycle around to first profile
+    } else {
+      $(this).children('.js-next')
+        .each(nextProfile); // else trigger next profile
+    }
+  },
+  threshold:178 // user must swipe at least 178px across
 });

@@ -19,8 +19,9 @@
     opacity: 0;
     img {
       display: block;
+      border: 2px solid $white;
       border-radius: 50%;
-      transition: 250ms $transition-bounce;
+      transition: transform 250ms $transition-bounce, box-shadow 300ms $transition-ease-in;
       height: 68px;
       width: 68px;
     }
@@ -47,18 +48,13 @@
     }
     &:hover {
       img {
-        box-shadow: 0 0 0 4px $white;
+        box-shadow: 0 0 16px 0 $white, 0 0 6px 0 $white, 0 0 4px 0 $white, 0 0 4px 0 $white, 0 0 10px 0 $white;
       }
     }
     &.is-selected {
       img {
-        box-shadow: 0 0 0 6px $blue;
-        transform: scale(1.42);
-      }
-      &:hover {
-        img {
-          box-shadow: 0 0 0 6px $blue;
-        }
+        box-shadow: 0 0 16px 0 $white, 0 0 6px 0 $white, 0 0 4px 0 $white, 0 0 4px 0 $white, 0 0 10px 0 $white;
+        transform: scale(1.2);
       }
     }
     &.is-scrolled {
@@ -128,7 +124,7 @@
         top: 0;
         right: 0;
         height: 100%;
-        width: 110px;
+        width: 68px;
         background: linear-gradient(to right, rgba($dark-black, 0) 0%, rgba($dark-black, 1) 100%);
         @include z-index-3;
       }
@@ -142,24 +138,47 @@
       }
       @media #{$mobile} {
         &:last-child {
-          padding-right: $spacing-largest;
+          position: relative;
+          &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 100%;
+            top: 0;
+            width: 68px;
+            height: 100%;
+            background: transparent;
+          }
         }
       }
     }
   }
 }
 .about-careers-slider {
-  height: 600px;
+  height: 33vw;
+  min-height: 420px; //lmao
   .slide {
-    &.is-visible {
+    &.is-visible,
+    &.is-visible.next {
       .slide-content {
-        animation: slideLeft 800ms $transition-ease-in 1 forwards;
+        animation: slideRight 800ms $transition-ease-in 1 forwards;
         .slide-content-txt {
-          animation: slideLeft 600ms $transition-ease 1 forwards;
+          animation: slideRight 600ms $transition-ease 1 forwards;
         }
         .button {
           padding: $spacing-small $spacing-large;
-          animation: slideLeft 1200ms $transition-ease-in 1 forwards;
+          animation: slideRight 1200ms $transition-ease-in 1 forwards;
+        }
+      }
+      &.prev {
+        .slide-content {
+          animation: slideLeft 800ms $transition-ease-in 1 forwards;
+          .slide-content-txt {
+            animation: slideLeft 600ms $transition-ease 1 forwards;
+          }
+          .button {
+            animation: slideLeft 1200ms $transition-ease-in 1 forwards;
+          }
         }
       }
     }

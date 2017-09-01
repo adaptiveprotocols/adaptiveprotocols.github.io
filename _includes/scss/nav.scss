@@ -77,9 +77,19 @@ section.navbar {
         transition: 400ms $transition-ease-in;
         background: lighten($blue, 25%);
       }
+      &.button {
+        line-height: 50px;
+        padding: 0 $spacing-normal;
+        &::before {
+          display: none;
+        }
+      }
       &.current,
       &:hover {
         color: lighten($blue, 25%);
+        &.button {
+          color: $white;
+        }
         &::before {
           width: 100%;
         }
@@ -93,9 +103,12 @@ section.navbar {
     right: -200px;
     background: $dark-black;
     transition: right 600ms $transition-ease-in;
+    overflow: hidden; 
     ul {
       text-align: left;
       padding-top: 68px;
+      width: 100%;
+      height: auto;
     }
     li.nav-item {
       height: auto;
@@ -105,6 +118,9 @@ section.navbar {
         line-height: $spacing-small;
         &::before {
           display: none;
+        }
+        &.button {
+          display: inline-block;
         }
       }
     }
@@ -121,8 +137,16 @@ section.navbar.is-scrolled {
       &::before {
         bottom: 0;
       }
+      &.button {
+        line-height: 42px;
+        padding: 0 $spacing-small;
+      }
       @media #{$tablet}, #{$mobile} {
         line-height: $spacing-small;
+        &.button {
+          line-height: 50px;
+          padding: 0 $spacing-normal;
+        }
       }
     }
   }

@@ -205,24 +205,31 @@ section.hero#hero-contact {
   }
   &.is-visible {
     opacity: 1;
-    &.is-current {
+    &.is-current,
+    &.is-current.next {
+      .sales-map-img {
+        -webkit-animation: slideRight 600ms $transition-ease-in 1 forwards;animation: slideRight 600ms $transition-ease-in 1 forwards;
+      }
+      .sales-map-info {
+        -webkit-animation: slideRight 1000ms $transition-ease-in 1 forwards;animation: slideRight 1000ms $transition-ease-in 1 forwards;
+      }
+      &.prev {
+        .sales-map-img {
+          -webkit-animation: slideLeft 600ms $transition-ease-in 1 forwards;animation: slideLeft 600ms $transition-ease-in 1 forwards;
+        }
+        .sales-map-info {
+          -webkit-animation: slideLeft 1000ms $transition-ease-in 1 forwards;animation: slideLeft 1000ms $transition-ease-in 1 forwards;
+        }
+      }
       .js-sales-close {
         span {
           &:first-child {
-            // transform: rotate(135deg);
-            animation: salesClose1 600ms $transition-ease-in 1 forwards;
+            -webkit-animation: salesClose1 600ms $transition-ease-in 1 forwards;animation: salesClose1 600ms $transition-ease-in 1 forwards;
           }
           &:last-child {
-            // transform: rotate(225deg);
-            animation: salesClose2 600ms $transition-ease-in 1 forwards;
+            -webkit-animation: salesClose2 600ms $transition-ease-in 1 forwards;animation: salesClose2 600ms $transition-ease-in 1 forwards;
           }
         }
-      }
-      .sales-map-img {
-        animation: slideRight 600ms $transition-ease-in 1 forwards;
-      }
-      .sales-map-info {
-        animation: slideRight 1000ms $transition-ease-in 1 forwards;
       }
     }
   }

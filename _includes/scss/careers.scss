@@ -68,7 +68,8 @@ section.color-block.job-description {
   }
 }
 .careers-slider {
-  height: 600px;
+  height: 33vw;
+  min-height: 420px; //lmao
 }
 .careers-perk {
   margin-bottom: $spacing-large;

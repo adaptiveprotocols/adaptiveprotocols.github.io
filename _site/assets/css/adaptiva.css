@@ -22,6 +22,8 @@
   to { opacity: 0; } }
 @keyframes fadeOut { from { opacity: 1; }
   to { opacity: 0; } }
+@keyframes glow { from { text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #fff, 0 0 16px #0860b8, 0 0 26px #0860b8, 0 0 42 #0860b8, 0 0 68px #0860b8, 0 0 110px #0860b8; }
+  to { text-shadow: 0 0 4px #fff, 0 0 6px #fff, 0 0 10px #fff, 0 0 16px #0860b8, 0 0 20px #0860b8, 0 0 30px #0860b8, 0 0 40px #0860b8, 0 0 60px #0860b8; } }
 @-webkit-keyframes salesClose1 { from { -webkit-transform: rotate(45deg); transform: rotate(45deg); }
   to { -webkit-transform: rotate(135deg); transform: rotate(135deg); } }
 @keyframes salesClose1 { from { -webkit-transform: rotate(45deg); transform: rotate(45deg); }
@@ -186,9 +188,11 @@ ul li { line-height: 1.618em; padding-left: 1rem; margin-bottom: 1rem; }
 .centered { text-align: center; }
 
 .hero { width: 100%; background-position: center; background-size: cover; background-repeat: no-repeat; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row; flex-flow: row; height: 600px; }
-.hero.full-screen { height: 100vh; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 .hero h1 { font-size: 4.263rem; color: #0860b8; margin-bottom: 1.618rem; }
 .hero h3 { font-size: 1.25rem; color: #fff; font-weight: 300; }
+.hero.full-screen { height: 100vh; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+.hero.full-screen .hero-content { max-width: 700px; margin: auto; }
+.hero.full-screen .hero-content h1 { font-size: 2.618rem; }
 
 .hero-content { text-align: center; }
 
@@ -266,7 +270,7 @@ li.tertiary-nav-item.is-selected::after { width: 100%; }
 .button.white { background: #fff; color: #073971; }
 .button.white.outline { background: transparent; border: 2px solid #fff; color: #fff; }
 .button.white:hover { background: #073971; color: #fff; }
-.button.white:hover.outline { background: rgba(255, 255, 255, 0.5); }
+.button.white:hover.outline { background: rgba(255, 255, 255, 0.2); -webkit-box-shadow: inset 0 0 0.6em 0 rgba(255, 255, 255, 0.5), inset 0 0 0.26em 0 rgba(255, 255, 255, 0.25); -moz-box-shadow: inset 0 0 0.6em 0 rgba(255, 255, 255, 0.5), inset 0 0 0.26em 0 rgba(255, 255, 255, 0.25); box-shadow: inset 0 0 0.6em 0 rgba(255, 255, 255, 0.5), inset 0 0 0.26em 0 rgba(255, 255, 255, 0.25); }
 .button.orange { background: #ff902c; color: #fff; }
 .button.orange.outline { background: transparent; border: 2px solid #ff902c; color: #ff902c; }
 .button.orange:hover { background: #ed4e39; }
@@ -281,7 +285,7 @@ li.tertiary-nav-item.is-selected::after { width: 100%; }
 .button.purple:hover.outline { background: rgba(78, 87, 244, 0.5); }
 .button.full-width { display: block; }
 
-a .link-arrow { vertical-align: middle; margin-left: .6em; transition: 400ms cubic-bezier(0.13, 0.78, 0.3, 0.99); }
+a .link-arrow { margin-left: .6em; transition: 400ms cubic-bezier(0.13, 0.78, 0.3, 0.99); }
 a:hover .link-arrow { margin-left: 1em; }
 
 .icon { transition: fill 300ms cubic-bezier(0.32, 0.57, 0.25, 1); }
@@ -306,19 +310,25 @@ section.navbar .logo:hover::after { opacity: 1; margin-left: 1rem; }
 .nav li.nav-item { display: inline-block; height: 100%; }
 .nav li.nav-item a { display: block; position: relative; line-height: 110px; padding: 0 1rem; text-decoration: none; color: #fff; transition: 400ms cubic-bezier(0.13, 0.78, 0.3, 0.99); }
 .nav li.nav-item a::before { content: ''; display: block; position: absolute; bottom: 1.618rem; left: 0; width: 0; height: 2px; transition: 400ms cubic-bezier(0.13, 0.78, 0.3, 0.99); background: #48a0f7; }
+.nav li.nav-item a.button { line-height: 50px; padding: 0 1.618rem; }
+.nav li.nav-item a.button::before { display: none; }
 .nav li.nav-item a.current, .nav li.nav-item a:hover { color: #48a0f7; }
+.nav li.nav-item a.current.button, .nav li.nav-item a:hover.button { color: #fff; }
 .nav li.nav-item a.current::before, .nav li.nav-item a:hover::before { width: 100%; }
-@media screen and (min-width: 768px) and (max-width: 959px), screen and (max-width: 767px) { .nav { position: fixed; width: 200px; top: 0; right: -200px; background: #191919; transition: right 600ms cubic-bezier(0.13, 0.78, 0.3, 0.99); }
-  .nav ul { text-align: left; padding-top: 68px; }
+@media screen and (min-width: 768px) and (max-width: 959px), screen and (max-width: 767px) { .nav { position: fixed; width: 200px; top: 0; right: -200px; background: #191919; transition: right 600ms cubic-bezier(0.13, 0.78, 0.3, 0.99); overflow: hidden; }
+  .nav ul { text-align: left; padding-top: 68px; width: 100%; height: auto; }
   .nav li.nav-item { height: auto; display: block; margin-bottom: 2.618rem; }
   .nav li.nav-item a { line-height: 1rem; }
   .nav li.nav-item a::before { display: none; }
+  .nav li.nav-item a.button { display: inline-block; }
   .nav.is-visible { right: 0; } }
 
 section.navbar.is-scrolled { -webkit-box-shadow: 0 0.1em 0.16em 0 rgba(0, 0, 0, 0.3); -moz-box-shadow: 0 0.1em 0.16em 0 rgba(0, 0, 0, 0.3); box-shadow: 0 0.1em 0.16em 0 rgba(0, 0, 0, 0.3); }
 section.navbar.is-scrolled li.nav-item a { line-height: 68px; }
 section.navbar.is-scrolled li.nav-item a::before { bottom: 0; }
-@media screen and (min-width: 768px) and (max-width: 959px), screen and (max-width: 767px) { section.navbar.is-scrolled li.nav-item a { line-height: 1rem; } }
+section.navbar.is-scrolled li.nav-item a.button { line-height: 42px; padding: 0 1rem; }
+@media screen and (min-width: 768px) and (max-width: 959px), screen and (max-width: 767px) { section.navbar.is-scrolled li.nav-item a { line-height: 1rem; }
+  section.navbar.is-scrolled li.nav-item a.button { line-height: 50px; padding: 0 1.618rem; } }
 
 .logo { display: block; padding-top: 6px; cursor: pointer; transition: 400ms cubic-bezier(0.32, 0.57, 0.25, 1); }
 .logo:hover { opacity: .68; }
@@ -338,7 +348,8 @@ section.navbar.is-scrolled li.nav-item a::before { bottom: 0; }
 
 footer.footer { background-color: #191919; padding: 4.283rem 0; }
 
-@media screen and (max-width: 767px) { .footer-block { width: 50%; float: left; } }
+@media screen and (max-width: 767px) { .footer-block { width: 50%; float: left; }
+  .footer-block:first-child { width: 100%; float: none; padding: 0 2.618rem 2.618rem; } }
 
 .footer-nav { list-style-type: none; padding: 0; -webkit-padding-start: 0; margin: 0; }
 
@@ -387,10 +398,16 @@ section.products .slider .slider-arrow span { color: #b3b3b3; transition: 300ms 
 section.products .slider .slider-arrow.prev span { margin-left: 1.618rem; }
 section.products .slider .slider-arrow.next span { margin-right: 1.618rem; }
 section.products .slider .slider-arrow:hover span { color: #333; }
-section.products .tertiary-nav-content.is-visible .slide.is-visible h3, section.products .tertiary-nav-content.is-visible .slide.is-visible h4 { -webkit-animation: slideRight 600ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; animation: slideRight 600ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; }
-section.products .tertiary-nav-content.is-visible .slide.is-visible p, section.products .tertiary-nav-content.is-visible .slide.is-visible strong, section.products .tertiary-nav-content.is-visible .slide.is-visible span { -webkit-animation: slideRight 1000ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; animation: slideRight 1000ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; }
-section.products .tertiary-nav-content.is-visible .slide.is-visible .button { -webkit-animation: slideRight 800ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; animation: slideRight 800ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; }
-section.products .tertiary-nav-content.is-visible .slide.is-visible .responsive-video { -webkit-animation: slideUp 1000ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; animation: slideUp 1000ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; }
+section.products .slider .slide:first-child .slider-arrow.prev { display: none; }
+section.products .slider .slide:last-child .slider-arrow.next { display: none; }
+section.products .tertiary-nav-content.is-visible .slide.is-visible h3, section.products .tertiary-nav-content.is-visible .slide.is-visible h4, section.products .tertiary-nav-content.is-visible .slide.is-visible.next h3, section.products .tertiary-nav-content.is-visible .slide.is-visible.next h4 { -webkit-animation: slideRight 600ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; animation: slideRight 600ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; }
+section.products .tertiary-nav-content.is-visible .slide.is-visible p, section.products .tertiary-nav-content.is-visible .slide.is-visible strong, section.products .tertiary-nav-content.is-visible .slide.is-visible span, section.products .tertiary-nav-content.is-visible .slide.is-visible.next p, section.products .tertiary-nav-content.is-visible .slide.is-visible.next strong, section.products .tertiary-nav-content.is-visible .slide.is-visible.next span { -webkit-animation: slideRight 1000ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; animation: slideRight 1000ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; }
+section.products .tertiary-nav-content.is-visible .slide.is-visible .button, section.products .tertiary-nav-content.is-visible .slide.is-visible.next .button { -webkit-animation: slideRight 800ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; animation: slideRight 800ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; }
+section.products .tertiary-nav-content.is-visible .slide.is-visible .responsive-video, section.products .tertiary-nav-content.is-visible .slide.is-visible.next .responsive-video { -webkit-animation: slideUp 1000ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; animation: slideUp 1000ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; }
+section.products .tertiary-nav-content.is-visible .slide.is-visible.prev h3, section.products .tertiary-nav-content.is-visible .slide.is-visible.prev h4, section.products .tertiary-nav-content.is-visible .slide.is-visible.next.prev h3, section.products .tertiary-nav-content.is-visible .slide.is-visible.next.prev h4 { -webkit-animation: slideLeft 600ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; animation: slideLeft 600ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; }
+section.products .tertiary-nav-content.is-visible .slide.is-visible.prev p, section.products .tertiary-nav-content.is-visible .slide.is-visible.prev strong, section.products .tertiary-nav-content.is-visible .slide.is-visible.prev span, section.products .tertiary-nav-content.is-visible .slide.is-visible.next.prev p, section.products .tertiary-nav-content.is-visible .slide.is-visible.next.prev strong, section.products .tertiary-nav-content.is-visible .slide.is-visible.next.prev span { -webkit-animation: slideLeft 1000ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; animation: slideLeft 1000ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; }
+section.products .tertiary-nav-content.is-visible .slide.is-visible.prev .button, section.products .tertiary-nav-content.is-visible .slide.is-visible.next.prev .button { -webkit-animation: slideLeft 800ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; animation: slideLeft 800ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; }
+section.products .tertiary-nav-content.is-visible .slide.is-visible.prev .responsive-video, section.products .tertiary-nav-content.is-visible .slide.is-visible.next.prev .responsive-video { -webkit-animation: slideUp 1000ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; animation: slideUp 1000ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; }
 
 .product-feature-name { display: block; font-weight: 700; color: #333; }
 
@@ -409,7 +426,7 @@ section.products-brands .tertiary-nav-content p { color: #fff; }
 .tertiary.leadership .tertiary-nav { border-bottom: 2px solid #0860b8; }
 .tertiary.leadership .tertiary-nav-item::after, .tertiary.leadership .is-selected::after { display: none; }
 .tertiary.leadership .tertiary-nav-item { opacity: 0; }
-.tertiary.leadership .tertiary-nav-item img { display: block; border-radius: 50%; transition: 250ms cubic-bezier(0.75, 0, 0.75, 1.5); height: 68px; width: 68px; }
+.tertiary.leadership .tertiary-nav-item img { display: block; border: 2px solid #fff; border-radius: 50%; transition: transform 250ms cubic-bezier(0.75, 0, 0.75, 1.5), box-shadow 300ms cubic-bezier(0.13, 0.78, 0.3, 0.99); height: 68px; width: 68px; }
 .tertiary.leadership .tertiary-nav-item:nth-child(7n+1) { transition: opacity 300ms; }
 .tertiary.leadership .tertiary-nav-item:nth-child(7n+2) { transition: opacity 300ms 100ms; }
 .tertiary.leadership .tertiary-nav-item:nth-child(7n+3) { transition: opacity 300ms 200ms; }
@@ -417,9 +434,8 @@ section.products-brands .tertiary-nav-content p { color: #fff; }
 .tertiary.leadership .tertiary-nav-item:nth-child(7n+5) { transition: opacity 300ms 400ms; }
 .tertiary.leadership .tertiary-nav-item:nth-child(7n+6) { transition: opacity 300ms 500ms; }
 .tertiary.leadership .tertiary-nav-item:nth-child(7n+7) { transition: opacity 300ms 600ms; }
-.tertiary.leadership .tertiary-nav-item:hover img { box-shadow: 0 0 0 4px #fff; }
-.tertiary.leadership .tertiary-nav-item.is-selected img { box-shadow: 0 0 0 6px #0860b8; transform: scale(1.42); }
-.tertiary.leadership .tertiary-nav-item.is-selected:hover img { box-shadow: 0 0 0 6px #0860b8; }
+.tertiary.leadership .tertiary-nav-item:hover img { box-shadow: 0 0 16px 0 #fff, 0 0 6px 0 #fff, 0 0 4px 0 #fff, 0 0 4px 0 #fff, 0 0 10px 0 #fff; }
+.tertiary.leadership .tertiary-nav-item.is-selected img { box-shadow: 0 0 16px 0 #fff, 0 0 6px 0 #fff, 0 0 4px 0 #fff, 0 0 4px 0 #fff, 0 0 10px 0 #fff; transform: scale(1.2); }
 .tertiary.leadership .tertiary-nav-item.is-scrolled { opacity: 1; }
 .tertiary.leadership .tertiary-nav-item.is-scrolled:nth-child(7n+1) { animation: slideUp 300ms cubic-bezier(0.32, 0.57, 0.25, 1) 1 forwards; }
 .tertiary.leadership .tertiary-nav-item.is-scrolled:nth-child(7n+2) { animation: slideUp 300ms cubic-bezier(0.32, 0.57, 0.25, 1) 100ms 1 forwards; }
@@ -438,15 +454,19 @@ section.products-brands .tertiary-nav-content p { color: #fff; }
   .tertiary.leadership .tertiary-nav ul::-webkit-scrollbar { display: none; }
   .tertiary.leadership .tertiary-nav ul::-webkit-scrollbar-track { display: none; }
   .tertiary.leadership .tertiary-nav ul::-webkit-scrollbar-thumb { display: none; }
-  .tertiary.leadership .tertiary-nav::before { content: ''; display: block; position: absolute; top: 0; right: 0; height: 100%; width: 110px; background: linear-gradient(to right, rgba(25, 25, 25, 0) 0%, #191919 100%); z-index: 300; }
+  .tertiary.leadership .tertiary-nav::before { content: ''; display: block; position: absolute; top: 0; right: 0; height: 100%; width: 68px; background: linear-gradient(to right, rgba(25, 25, 25, 0) 0%, #191919 100%); z-index: 300; }
   .tertiary.leadership .tertiary-nav-item { margin: 0; }
   .tertiary.leadership .tertiary-nav-item.is-selected img { transform: scale(1.2); } }
-@media screen and (max-width: 767px) and (max-width: 767px) { .tertiary.leadership .tertiary-nav-item:last-child { padding-right: 6.854rem; } }
+@media screen and (max-width: 767px) and (max-width: 767px) { .tertiary.leadership .tertiary-nav-item:last-child { position: relative; }
+  .tertiary.leadership .tertiary-nav-item:last-child::after { content: ''; display: block; position: absolute; left: 100%; top: 0; width: 68px; height: 100%; background: transparent; } }
 
-.about-careers-slider { height: 600px; }
-.about-careers-slider .slide.is-visible .slide-content { animation: slideLeft 800ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; }
-.about-careers-slider .slide.is-visible .slide-content .slide-content-txt { animation: slideLeft 600ms cubic-bezier(0.32, 0.57, 0.25, 1) 1 forwards; }
-.about-careers-slider .slide.is-visible .slide-content .button { padding: 1rem 2.618rem; animation: slideLeft 1200ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; }
+.about-careers-slider { height: 33vw; min-height: 420px; }
+.about-careers-slider .slide.is-visible .slide-content, .about-careers-slider .slide.is-visible.next .slide-content { animation: slideRight 800ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; }
+.about-careers-slider .slide.is-visible .slide-content .slide-content-txt, .about-careers-slider .slide.is-visible.next .slide-content .slide-content-txt { animation: slideRight 600ms cubic-bezier(0.32, 0.57, 0.25, 1) 1 forwards; }
+.about-careers-slider .slide.is-visible .slide-content .button, .about-careers-slider .slide.is-visible.next .slide-content .button { padding: 1rem 2.618rem; animation: slideRight 1200ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; }
+.about-careers-slider .slide.is-visible.prev .slide-content, .about-careers-slider .slide.is-visible.next.prev .slide-content { animation: slideLeft 800ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; }
+.about-careers-slider .slide.is-visible.prev .slide-content .slide-content-txt, .about-careers-slider .slide.is-visible.next.prev .slide-content .slide-content-txt { animation: slideLeft 600ms cubic-bezier(0.32, 0.57, 0.25, 1) 1 forwards; }
+.about-careers-slider .slide.is-visible.prev .slide-content .button, .about-careers-slider .slide.is-visible.next.prev .slide-content .button { animation: slideLeft 1200ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; }
 
 @media screen and (max-width: 767px) { section.awards { padding-left: 0; padding-right: 0; } }
 
@@ -490,7 +510,7 @@ section.color-block.job-description h2 { text-align: left; }
 .sidebar-jobs a { display: block; padding: 0.618rem; color: gray; transition: 300ms cubic-bezier(0.13, 0.78, 0.3, 0.99); font-size: 0.875rem; }
 .sidebar-jobs a:hover { box-shadow: inset 0 0 0 2px #ccc; color: #333; }
 
-.careers-slider { height: 600px; }
+.careers-slider { height: 33vw; min-height: 420px; }
 
 .careers-perk { margin-bottom: 2.618rem; }
 .careers-perk span { display: block; padding-right: 1.618rem; }
@@ -547,10 +567,12 @@ section.hero#hero-contact h1 { color: #fff; }
 .sales-map-profile .js-prev span { transform: rotate(180deg); }
 .sales-map-profile .js-next { right: 0; }
 .sales-map-profile.is-visible { opacity: 1; }
-.sales-map-profile.is-visible.is-current .js-sales-close span:first-child { animation: salesClose1 600ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; }
-.sales-map-profile.is-visible.is-current .js-sales-close span:last-child { animation: salesClose2 600ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; }
-.sales-map-profile.is-visible.is-current .sales-map-img { animation: slideRight 600ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; }
-.sales-map-profile.is-visible.is-current .sales-map-info { animation: slideRight 1000ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; }
+.sales-map-profile.is-visible.is-current .sales-map-img, .sales-map-profile.is-visible.is-current.next .sales-map-img { -webkit-animation: slideRight 600ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; animation: slideRight 600ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; }
+.sales-map-profile.is-visible.is-current .sales-map-info, .sales-map-profile.is-visible.is-current.next .sales-map-info { -webkit-animation: slideRight 1000ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; animation: slideRight 1000ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; }
+.sales-map-profile.is-visible.is-current.prev .sales-map-img, .sales-map-profile.is-visible.is-current.next.prev .sales-map-img { -webkit-animation: slideLeft 600ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; animation: slideLeft 600ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; }
+.sales-map-profile.is-visible.is-current.prev .sales-map-info, .sales-map-profile.is-visible.is-current.next.prev .sales-map-info { -webkit-animation: slideLeft 1000ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; animation: slideLeft 1000ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; }
+.sales-map-profile.is-visible.is-current .js-sales-close span:first-child, .sales-map-profile.is-visible.is-current.next .js-sales-close span:first-child { -webkit-animation: salesClose1 600ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; animation: salesClose1 600ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; }
+.sales-map-profile.is-visible.is-current .js-sales-close span:last-child, .sales-map-profile.is-visible.is-current.next .js-sales-close span:last-child { -webkit-animation: salesClose2 600ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; animation: salesClose2 600ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; }
 
 .sales-map-img img { display: block; width: 100%; border-radius: 50%; -webkit-box-shadow: 0 1.618em 2.618em -1em rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 1.618em 2.618em -1em rgba(0, 0, 0, 0.5); box-shadow: 0 1.618em 2.618em -1em rgba(0, 0, 0, 0.5); }
 
@@ -562,9 +584,10 @@ section.hero#hero-sccm-academy::before { content: ''; display: block; position: 
 .sccm-academy-dropdown select { -webkit-appearance: none; -moz-appearance: none; display: block; position: relative; z-index: 100; width: 100%; padding: 1rem; background: rgba(255, 255, 255, 0); color: #fff; border: 2px solid #fff; font-size: 1rem; transition: 300ms cubic-bezier(0.32, 0.57, 0.25, 1); cursor: pointer; }
 .sccm-academy-dropdown select::-ms-expand { display: none; }
 .sccm-academy-dropdown select option { background: #fff; color: #333; font-size: 1rem; }
+.sccm-academy-dropdown select:hover { -webkit-box-shadow: inset 0 0 0.6em 0 rgba(255, 255, 255, 0.5), inset 0 0 0.26em 0 rgba(255, 255, 255, 0.25); -moz-box-shadow: inset 0 0 0.6em 0 rgba(255, 255, 255, 0.5), inset 0 0 0.26em 0 rgba(255, 255, 255, 0.25); box-shadow: inset 0 0 0.6em 0 rgba(255, 255, 255, 0.5), inset 0 0 0.26em 0 rgba(255, 255, 255, 0.25); background: rgba(255, 255, 255, 0.06); }
 .sccm-academy-dropdown::before { content: ''; display: block; position: absolute; z-index: 0; right: 1rem; top: 50%; transform: translateY(-50%); height: 16px; width: 16px; background-image: url("/assets/img/dropdown.svg"); background-position: center; background-size: 16px; background-repeat: no-repeat; }
 
-section.sccm-academy { min-height: 800px; }
+section.sccm-academy { min-height: calc(100vh - 600px); }
 
 .asset { margin-bottom: 1rem; opacity: 0; transition: opacity 1000ms; }
 .asset.is-showing { opacity: 1; -webkit-animation: 1000ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards slideUp; animation: 1000ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards slideUp; }

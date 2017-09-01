@@ -27,6 +27,10 @@ section.hero#hero-sccm-academy {
       color: $black;
       font-size: $type-base;
     }
+    &:hover {
+      @include boxshadow($glow-white);
+      background: rgba($white, 0.06);
+    }
   }
   &::before {
     content: '';
@@ -45,7 +49,7 @@ section.hero#hero-sccm-academy {
   }
 }
 section.sccm-academy {
-  min-height: 800px;
+  min-height: calc(100vh - 600px);
 }
 .asset {
   margin-bottom: $spacing-small;

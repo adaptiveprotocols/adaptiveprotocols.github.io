@@ -23,7 +23,8 @@
       background: $dark-blue;
       color: $white;
       &.outline {
-        background: rgba($white, .5);
+        background: rgba($white, .2);
+        @include boxshadow($glow-white);
       }
     }
   }
@@ -78,7 +79,6 @@
 }
 a {
   .link-arrow {
-    vertical-align: middle;
     margin-left: .6em;
     transition: 400ms $transition-ease-in;
   }

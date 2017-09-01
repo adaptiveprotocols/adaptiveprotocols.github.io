@@ -98,7 +98,8 @@ $('.js-nav-trigger').click(function(){
   $('.tertiary-nav-content#' + navID).show().addClass('is-visible');
 });
 
-  var $firstSlide = $('.slide:first-child'),
+  var $slide 			= $('.slide'),
+		$firstSlide = $('.slide:first-child'),
 		$lastSlide  = $('.slide:last-child');
 
 $('.slider-dot').click(function(){ // user clicks on nav dots on slider
@@ -120,54 +121,37 @@ $('.slider-dot').click(function(){ // user clicks on nav dots on slider
 		.addClass('is-visible') // add mod class
 		.show(); // hi!
 });
-
-$('.slider-arrow.prev').click(function(){ // user clicks 'previous' arrow
-
+// Previous slide ----------
+function prevSlide() {
 	var prevID = $(this).parent('.slide').prev('.slide').attr('id');
 
 	$(this).closest('.slider') // localize
 		.find('.slide')
-		.removeClass('is-visible') // remove mod class
+		.removeClass('is-visible next prev') // remove mod class
 		.hide(); // hide all slides
 
 	$(this).parent('.slide') // localize
 		.prev() // find previous slide
-		.addClass('is-visible') // add mod class to previous
+		.addClass('is-visible prev') // add mod class to previous
 		.show(); // show previous
 
 	$(this).closest('.slider').find('.slider-dot') // localize and find dots
 		.removeClass('is-selected'); // remove mod class from all dots
 	$('.slider-dot#' + prevID) // target dot with same ID as current slide
 		.addClass('is-selected'); // add mod class
-});
-
-$firstSlide.children('.slider-arrow.prev').click(function(){ // user clicks previous on first slide
-
-	$(this).parent() // localize
-		.removeClass('is-visible') // remove mod class
-		.hide(); // bye!
-
-	$(this).closest('.slider').find('.slide:last-child') // find last slide in parent
-		.show() // hi!
-		.addClass('is-visible'); // add mod class
-
-	$(this).closest('.slider') // localize
-		.find('.slider-dot:last-child') // find last slider dot
-		.addClass('is-selected'); // add modd class
-});
-
-$('.slider-arrow.next').click(function(){ // user clicks 'next' arrow
-
+}
+// Next slide ----------
+function nextSlide() {
 	var nextID = $(this).parent('.slide').next('.slide').attr('id');
 
 	$(this).closest('.slider') // same functionality as previous, just backwards, duh
 		.find('.slide')
-		.removeClass('is-visible')
+		.removeClass('is-visible next prev')
 		.hide();
 
 	 $(this).parent('.slide')
 		.next()
-		.addClass('is-visible')
+		.addClass('is-visible next')
 		.show();
 
 	 $(this).closest('.slider').find('.slider-dot')
@@ -175,30 +159,78 @@ $('.slider-arrow.next').click(function(){ // user clicks 'next' arrow
 
 	 $('.slider-dot#' + nextID)
 		.addClass('is-selected');
-});
+}
+// Cycle to last slide ----------
+function firstSlide() {
+	$(this).parent() // localize
+		.removeClass('is-visible next prev') // remove mod classes
+		.hide(); // bye!
 
-$lastSlide.children('.slider-arrow.next').click(function(){
+	$(this).closest('.slider').find('.slide:last-child') // find last slide in parent
+		.show() // hi!
+		.addClass('is-visible prev'); // add mod class
 
-	$(this).parent()
-		.removeClass('is-visible')
-		.hide();
+	$(this).closest('.slider') // localize
+		.find('.slider-dot') // select slider dots
+		.removeClass('is-selected') // remove modd class from all
+		.siblings(':last-child') // find last slider dot
+		.addClass('is-selected'); // add mod class
+}
+// Cycle to first slide ----------
+function lastSlide() {
+	$(this).parent() // localize
+		.removeClass('is-visible next prev') // remove mod classes
+		.hide(); // bye!
 
-	$(this).closest('.slider').find('.slide:first-child')
-		.show()
-		.addClass('is-visible');
+	$(this).closest('.slider').find('.slide:first-child') // find first slide in parent
+		.show() // hi!
+		.addClass('is-visible next'); // add mod classes
 
-	$(this).closest('.slider')
-		.find('.slider-dot:first-child')
-		.addClass('is-selected');
+	$(this).closest('.slider') // localize
+		.find('.slider-dot') // select slider dots
+		.removeClass('is-selected') // remove mod class from all
+		.siblings(':first-child') // find first slider dot
+		.addClass('is-selected'); // add mod class
+}
+
+$('.slider-arrow.prev').click(prevSlide); // clicking prev arrow triggers previous slide
+
+$('.slider-arrow.next').click(nextSlide); // clicking next arrow triggers next slide
+
+$firstSlide.children('.slider-arrow.prev').click(firstSlide); // clicking previous on first slide cycles to end
+
+$lastSlide.children('.slider-arrow.next').click(lastSlide); // clicking next on last slide cycles to beginning
+
+$slide.swipe({ // user swipes on slide
+	swipeRight:function() { // user swipes right <3
+		if ( $(this).is(':first-child') ) { // if first slide
+			$(this).children('.slider-arrow.prev')
+				.each(firstSlide); // cycle around to last slide
+		} else {
+			$(this).children('.slider-arrow.prev')
+				.each(prevSlide); // else trigger previous slide
+		}
+	},
+	swipeLeft:function() { // user swipes left </3
+		if ( $(this).is(':last-child') ) { // if last slide
+			$(this).children('.slider-arrow.next')
+				.each(lastSlide); // cycle around to first slide
+		} else {
+			$(this).children('.slider-arrow.next')
+				.each(nextSlide); // else trigger next slide
+		}
+	},
+	threshold:178 // swipe length of 178px or more
 });
 
   // Load more button on awards table ----------
-  $('.js-awards').click(function(){
-    $('.js-awards-row:nth-child(n+6)').toggleClass('is-showing');
-    $(this).text(function(i, text){
-          return text === "Show More" ? "Show Less" : "Show More";
-      });
-  });
+$('.js-awards').click(function(){
+  $('.js-awards-row:nth-child(n+6)').toggleClass('is-showing');
+  $(this).text(function(i, text){
+        return text === "Show More" ? "Show Less" : "Show More";
+    });
+});
+
   var $salesProfile = $('.sales-map-profile'),
     $firstProfile = $('.sales-map-profile:first-child'),
     $lastProfile  = $('.sales-map-profile:last-child');
@@ -213,46 +245,76 @@ $('.territory').click(function(){ // user clicks on dot on map
     .show(); // show profile for clicked dot
 });
 
-$('.js-prev').click(function(){ // user clicks previous arrow
+function prevProfile() {
   $(this).parent() // find parent (.sales-map-profile)
-    .removeClass('is-current') // mod class
+    .removeClass('is-current next prev') // remove mod classes
     .hide()
     .prev() // Find previous profile
     .show()
-    .addClass('is-current'); // mod class
-});
+    .addClass('is-current prev'); // mod class
+}
+
+function nextProfile() {
+  $(this).parent() // find parent
+    .removeClass('is-current next prev') // remove mod classes
+    .hide()
+    .next() // find next profile
+    .show()
+    .addClass('is-current next'); // add mod class
+}
+
+function firstProfile() {
+  $(this).removeClass('is-current next prev') // remove mod classes
+    .parent()
+    .hide(); // hide profile
+  $lastProfile.show() // cycle around to last profile
+    .addClass('is-current prev'); // add mod class
+}
+
+function lastProfile() {
+  $(this).removeClass('is-current next prev') // remove mod class
+    .parent()
+    .hide(); // hide profile
+  $firstProfile.show() // cycle around to first profile
+    .addClass('is-current next'); // add mod class
+}
+
+$('.js-prev').click(prevProfile); // previous arrow triggers previous profile
+
+$('.js-next').click(nextProfile); // next arrow triggers next profile
 
 // cycles around to last profile if user clicks prev on first slide
-$firstProfile.children('.js-prev').click(function(){
-  $(this).removeClass('is-current')
-    .parent()
-    .hide();
-  $lastProfile.show()
-    .addClass('is-current');
-});
+$firstProfile.children('.js-prev').click(firstProfile);
 
 // cycles around to first profile if user clicks next on last slide
-$lastProfile.children('.js-next').click(function(){
-  $(this).removeClass('is-current')
-    .parent()
-    .hide();
-  $firstProfile.show()
-    .addClass('is-current');
-});
-
-$('.js-next').click(function(){ // user clicks next arrow
-  $(this).parent()
-    .removeClass('is-current')
-    .hide()
-    .next()
-    .show()
-    .addClass('is-current');
-});
+$lastProfile.children('.js-next').click(lastProfile);
 
 $('.js-sales-close').click(function(){ // user clicks close button
   $salesProfile
     .hide() // hide, duh?
     .removeClass('is-visible is-current'); // remove all mod classes
+});
+
+$salesProfile.swipe({ // user swipes sales profile
+  swipeRight:function() { // user swipes right <3
+    if ( $(this).is(':first-child') ) { // if first profile
+      $(this).children('.js-prev')
+        .each(firstProfile); // cycle around to last profile
+    } else {
+      $(this).children('.js-prev')
+        .each(prevProfile); // else trigger previous profile
+    }
+  },
+  swipeLeft:function() { // user swipes left </3
+    if ( $(this).is(':last-child') ) { // if last profile
+      $(this).children('.js-next')
+        .each(lastProfile); // cycle around to first profile
+    } else {
+      $(this).children('.js-next')
+        .each(nextProfile); // else trigger next profile
+    }
+  },
+  threshold:178 // user must swipe at least 178px across
 });
 
   $('select#sccm-academy').change(function() {

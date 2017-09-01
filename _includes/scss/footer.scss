@@ -6,6 +6,11 @@ footer.footer {
   @media #{$mobile} {
     width: 50%;
     float: left;
+    &:first-child {
+      width: 100%;
+      float: none;
+      padding: 0 $spacing-large $spacing-large;
+    }
   }
 }
 .footer-nav {

@@ -21,3 +21,6 @@ $boxshadow-xl-20:       0 1.618em 2.618em -1em rgba(black, .2);
 $boxshadow-xl-30:       0 1.618em 2.618em -1em rgba(black, .3);
 $boxshadow-xl-40:       0 1.618em 2.618em -1em rgba(black, .4);
 $boxshadow-xl-50:       0 1.618em 2.618em -1em rgba(black, .5);
+
+// Glows
+$glow-white:            inset 0 0 .6em 0 rgba($white, .5), inset 0 0 .26em 0 rgba($white, .25);
