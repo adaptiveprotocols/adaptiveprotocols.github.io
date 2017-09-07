@@ -19,7 +19,7 @@
     opacity: 0;
     img {
       display: block;
-      border: 2px solid $white;
+      box-shadow: 0 0 0 2px $white;
       border-radius: 50%;
       transition: transform 250ms $transition-bounce, box-shadow 300ms $transition-ease-in;
       height: 68px;
@@ -48,12 +48,12 @@
     }
     &:hover {
       img {
-        box-shadow: 0 0 16px 0 $white, 0 0 6px 0 $white, 0 0 4px 0 $white, 0 0 4px 0 $white, 0 0 10px 0 $white;
+        box-shadow: 0 0 0 6px $blue;
       }
     }
     &.is-selected {
       img {
-        box-shadow: 0 0 16px 0 $white, 0 0 6px 0 $white, 0 0 4px 0 $white, 0 0 4px 0 $white, 0 0 10px 0 $white;
+        box-shadow: 0 0 0 6px $blue;
         transform: scale(1.2);
       }
     }
@@ -96,37 +96,23 @@
     p {
       color: $white;
     }
+    &.is-visible {
+      animation: none;
+      h2 {
+        animation: slideRight 600ms $transition-ease-in 1 forwards;
+      }
+      h4 {
+        animation: slideRight 900ms $transition-ease-in 1 forwards;
+      }
+      p {
+        animation: slideRight 1200ms $transition-ease-in 1 forwards;
+      }
+    }
   }
   @media #{$mobile} {
     .tertiary-nav {
-      position: relative;
-      ul {
-        margin-top: 0;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        padding: $spacing-smallest;
-        overflow-x: scroll;
-        &::-webkit-scrollbar {
-          display: none;
-        }
-        &::-webkit-scrollbar-track {
-          display: none;
-        }
-        &::-webkit-scrollbar-thumb {
-          display: none;
-        }
-      }
       &::before {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        height: 100%;
-        width: 68px;
-        background: linear-gradient(to right, rgba($dark-black, 0) 0%, rgba($dark-black, 1) 100%);
-        @include z-index-3;
+        @include scrollshadow($dark-black);
       }
     }
     .tertiary-nav-item {
@@ -136,21 +122,9 @@
           transform: scale(1.2);
         }
       }
-      @media #{$mobile} {
-        &:last-child {
-          position: relative;
-          &::after {
-            content: '';
-            display: block;
-            position: absolute;
-            left: 100%;
-            top: 0;
-            width: 68px;
-            height: 100%;
-            background: transparent;
-          }
-        }
-      }
+    }
+    .tertiary-nav-content {
+      padding: $spacing-normal;
     }
   }
 }
@@ -182,6 +156,15 @@
         }
       }
     }
+    @media #{$tablet}, #{$mobile} {
+      .slide-content {
+        background: rgba($dark-black, .68);
+        h3,
+        p {
+          color: $white;
+        }
+      }
+    }
   }
 }
 section.awards {
@@ -195,9 +178,10 @@ table.awards {
   th,
   td {
     text-align: left;
+    display: block;
   }
   th {
-    font-weight: 300;
+    font-weight: 500;
     font-size: $type-small;
     color: lighten($black, 40%);
   }
@@ -216,7 +200,7 @@ table.awards {
       }
     }
     @media #{$mobile} {
-      padding: $spacing-normal 10px;
+      padding: $spacing-normal;
     }
   }
   .organization {
@@ -224,7 +208,7 @@ table.awards {
     font-weight: 700;
   }
   th.organization {
-    font-weight: 300;
+    font-weight: 500;
   }
   .award-name {
     width: 40%;
@@ -238,7 +222,7 @@ table.awards {
   .award-name,
   .product,
   .year {
-    font-weight: 300;
+    font-weight: 500;
   }
   @media #{$mobile} {
     thead {

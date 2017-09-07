@@ -56,6 +56,10 @@ section.hero#hero-contact {
   svg {
     position: relative;
     @include z-index-1;
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      width: 100%;
+      height: 600px;
+    }
   }
   .territory {
     display: block;
@@ -135,7 +139,10 @@ section.hero#hero-contact {
   transition: opacity 500ms linear;
   @include vertical-center;
   text-align: left;
-  @include z-index-5;
+  @include z-index-8;
+  .content {
+    padding: 0 $spacing-large;
+  }
   .js-sales-close {
     position: absolute;
     top: $spacing-normal;
@@ -240,5 +247,8 @@ section.hero#hero-contact {
     width: 100%;
     border-radius: 50%;
     @include boxshadow($boxshadow-xl-50);
+    @media #{$tablet}, #{$mobile} {
+      width: 50%;
+    }
   }
 }

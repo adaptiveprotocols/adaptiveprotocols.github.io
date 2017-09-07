@@ -63,10 +63,16 @@ footer.footer {
   p {
     color: $black;
   }
+  @media #{$tablet}, #{$mobile} {
+    padding: $spacing-normal $spacing-large;
+  }
 }
 .footer-social {
   padding: $spacing-small 0;
   text-align: right;
+  @media #{$tablet}, #{$mobile} {
+    text-align: left;
+  }
 }
 .footer-social-link {
   display: inline-block;

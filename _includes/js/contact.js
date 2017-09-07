@@ -46,6 +46,11 @@ function lastProfile() {
     .addClass('is-current next'); // add mod class
 }
 
+function closeProfile() {
+  $salesProfile.hide()
+    .removeClass('is-visible is-current next prev');
+}
+
 $('.js-prev').click(prevProfile); // previous arrow triggers previous profile
 
 $('.js-next').click(nextProfile); // next arrow triggers next profile
@@ -56,11 +61,7 @@ $firstProfile.children('.js-prev').click(firstProfile);
 // cycles around to first profile if user clicks next on last slide
 $lastProfile.children('.js-next').click(lastProfile);
 
-$('.js-sales-close').click(function(){ // user clicks close button
-  $salesProfile
-    .hide() // hide, duh?
-    .removeClass('is-visible is-current'); // remove all mod classes
-});
+$('.js-sales-close').click(closeProfile);
 
 $salesProfile.swipe({ // user swipes sales profile
   swipeRight:function() { // user swipes right <3
@@ -80,6 +81,11 @@ $salesProfile.swipe({ // user swipes sales profile
       $(this).children('.js-next')
         .each(nextProfile); // else trigger next profile
     }
+  },
+  swipeDown:function() {
+    $salesProfile
+      .hide() // hide
+      .removeClass('is-visible is-current next prev'); // remove all mod classes
   },
   threshold:178 // user must swipe at least 178px across
 });

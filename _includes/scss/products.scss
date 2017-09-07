@@ -14,6 +14,7 @@ section.products {
   .slider {
     min-height: 480px; //lmao
     .slide {
+      padding: 0;
       background-color: $white;
       -webkit-box-align: start;-ms-flex-align: start;align-items: flex-start;
       h3 {
@@ -62,6 +63,14 @@ section.products {
           display: none;
         }
       }
+    }
+    @media #{$tablet}, #{$mobile} {
+      min-height: 600px;
+    }
+  }
+  .tertiary-nav {
+    &::before {
+      @include scrollshadow($white);
     }
   }
   .tertiary-nav-content.is-visible {
@@ -133,6 +142,24 @@ section.products-brands {
   .tertiary-nav-content {
     p {
       color: $white;
+    }
+    &.is-visible {
+      h3,
+      h4 {
+        -webkit-animation: slideRight 600ms $transition-ease-in 1 forwards;animation: slideRight 600ms $transition-ease-in 1 forwards;
+      }
+      p,
+      strong,
+      span {
+        -webkit-animation: slideRight 1000ms $transition-ease-in 1 forwards;animation: slideRight 1000ms $transition-ease-in 1 forwards;
+      }
+      .button {
+        -webkit-animation: slideRight 800ms $transition-ease-in 1 forwards;animation: slideRight 800ms $transition-ease-in 1 forwards;
+      }
+      .responsive-video {
+        -webkit-animation: slideUp 1000ms $transition-ease-in 1 forwards;
+        animation: slideUp 1000ms $transition-ease-in 1 forwards;
+      }
     }
   }
 }

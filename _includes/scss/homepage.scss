@@ -1,7 +1,7 @@
 #hero-homepage {
   background-color: $dark-black;
   position: relative;
-  background-image: url('/assets/img/hero/hero-homepage.jpg');
+  background-image: url('/assets/img/hero/hero-homepage.gif');
   @include overlay($dark-black);
   a#scroll {
     position: absolute;
@@ -47,25 +47,45 @@
       &::before {
         width: 68px;
         height: 68px;
-        animation: scrollRing1 3600ms linear infinite alternate;
+        -webkit-animation: scrollRing1 3600ms linear infinite alternate;
+                animation: scrollRing1 3600ms linear infinite alternate;
       }
       &::after {
         width: 68px;
         height: 68px;
-        animation: scrollRing2 4200ms linear infinite alternate;
+        -webkit-animation: scrollRing2 4200ms linear infinite alternate;
+                animation: scrollRing2 4200ms linear infinite alternate;
       }
     }
   }
+  @media #{$mobile} {
+    background-image: url('/assets/img/hero/hero-homepage--mobile.jpg');
+  }
 }
 .tertiary.what-is-p2p {
+  .tertiary-nav {
+    &::before {
+      @include scrollshadow($white);
+    }
+  }
   .tertiary-nav-content {
     &.is-visible {
       p {
-        -webkit-animation: 1000ms $transition-ease-in 1 forwards slideRight;animation: 1000ms $transition-ease-in 1 forwards slideRight;
+        -webkit-animation: 800ms $transition-ease-in 1 forwards slideRight;animation: 800ms $transition-ease-in 1 forwards slideRight;
+      }
+      .button {
+        -webkit-animation: 1200ms $transition-ease-in 1 forwards slideLeft;animation: 1200ms $transition-ease-in 1 forwards slideLeft;
       }
       .responsive-video {
         -webkit-animation: 600ms $transition-ease-in 1 forwards slideUp;animation: 600ms $transition-ease-in 1 forwards slideUp;
       }
+    }
+  }
+}
+.tertiary.customers-home {
+  .tertiary-nav {
+    &::before {
+      @include scrollshadow($light-gray);
     }
   }
 }

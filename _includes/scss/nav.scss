@@ -5,9 +5,10 @@ section.navbar {
   top: 0;
   background: transparent;
   transition: 300ms $transition-ease;
-  @include z-index-3;
+  @include z-index-6;
   .content {
     height: 100%;
+    padding: 0 $spacing-small;
   }
   &.is-scrolled {
     background: rgba($dark-black, .99);
@@ -101,9 +102,9 @@ section.navbar {
     width: 200px;
     top: 0;
     right: -200px;
-    background: $dark-black;
-    transition: right 600ms $transition-ease-in;
-    overflow: hidden; 
+    background: rgba($white, 0.98);
+    transition: 600ms $transition-ease-in;
+    overflow: hidden;
     ul {
       text-align: left;
       padding-top: 68px;
@@ -113,11 +114,16 @@ section.navbar {
     li.nav-item {
       height: auto;
       display: block;
-      margin-bottom: $spacing-large;
+      margin-bottom: $spacing-small;
       a {
+        color: $black;
         line-height: $spacing-small;
+        padding: $spacing-small;
         &::before {
           display: none;
+        }
+        &.current {
+          color: $blue;
         }
         &.button {
           display: inline-block;
@@ -126,6 +132,7 @@ section.navbar {
     }
     &.is-visible {
       right: 0;
+      box-shadow: -6px 0 16px 0 rgba(black, .2);
     }
   }
 }
@@ -176,7 +183,7 @@ section.navbar.is-scrolled {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   right: $spacing-small;
-  @include z-index-4;
+  @include z-index-7;
   span {
     background-color: $white;
     display: block;
@@ -197,7 +204,7 @@ section.navbar.is-scrolled {
   &.is-clicked {
     span {
       top: 11px;
-      background: $orange;
+      background: $blue;
       &:first-child {
         -webkit-transform: rotate(-45deg);
                 transform: rotate(-45deg);
