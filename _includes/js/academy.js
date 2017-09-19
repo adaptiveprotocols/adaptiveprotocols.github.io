@@ -1,4 +1,4 @@
-$('select#sccm-academy').change(function() {
+$('select#academy').change(function() {
 	var value = this.value;
 	$('.asset').hide()
     .removeClass('is-showing');
@@ -9,3 +9,10 @@ $('select#sccm-academy').change(function() {
       .addClass('is-showing');
   }
 });
+
+$(window).resize(function() {
+	var $assetTitle = $('.asset-title'),
+			assetWidth  = $assetTitle.width();
+
+	$assetTitle.css('height', assetWidth + 32);
+}).resize();

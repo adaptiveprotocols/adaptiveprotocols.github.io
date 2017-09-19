@@ -4,7 +4,28 @@
   position: relative;
   @include overlay($dark-black);
 }
-
+section.about {
+  min-height: 460px;
+  .tertiary-nav {
+    ul {
+      margin-top: 0;
+    }
+  }
+  .tertiary-nav-content {
+    &.is-visible {
+      animation: none;
+      h2 {
+        animation: slideRight 600ms $transition-ease-in 1 forwards;
+      }
+      h4 {
+        animation: slideRight 900ms $transition-ease-in 1 forwards;
+      }
+      p {
+        animation: slideRight 1200ms $transition-ease-in 1 forwards;
+      }
+    }
+  }
+}
 .tertiary.leadership {
   .tertiary-nav {
     border-bottom: 2px solid $blue;

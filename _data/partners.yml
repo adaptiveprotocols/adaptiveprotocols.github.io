@@ -132,6 +132,10 @@
   png: thomas-duryea-logo.png
   link: 'http://www.thomasduryea.com.au/'
 
+- name: VMware AirWatch
+  svg: vmware-airwatch.svg
+  link: 'https://www.vmware.com/products/airwatch-enterprise-mobility-management.html'
+
 - name: Windows Management Experts
   png: windows-management-experts-logo.png
   link: 'http://www.windowsmanagementexperts.com/'

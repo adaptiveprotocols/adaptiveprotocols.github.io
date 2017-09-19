@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82.5 73.88">
+  <defs>
+    <style>
+      .academy-webinar {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>academy-webinar</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1"><path class="academy-webinar" d="M82.5,0H0V55.5H31.69L28.11,69.88H21.88v4h39v-4H54.66L51.06,55.5H82.5ZM30.13,69.88,33.5,55.51H49.23l3.38,14.37ZM2,53.5V2H80.5V53.5Z"/><path class="academy-webinar" d="M4.75,50.75h73v-46h-73Zm2-2v-42h69v42Z"/><path class="academy-webinar" d="M30.94,38.37,52.18,27.75,30.94,17.13ZM47.7,27.75,32.94,35.13V20.37Z"/></g>
+  </g>
+</svg>

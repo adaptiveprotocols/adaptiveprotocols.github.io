@@ -75,22 +75,22 @@ div,
 li {
   color: $black;
   &.white {
-    color: $white;
+    color: $white !important;
   }
   &.blue {
-    color: $blue;
+    color: $blue !important;
   }
   &.bright-blue {
-    color: $bright-blue;
+    color: $bright-blue !important;
   }
   &.orange {
-    color: $orange;
+    color: $orange !important;
   }
   &.green {
-    color: $green;
+    color: $green !important;
   }
   &.purple {
-    color: $purple;
+    color: $purple !important;
   }
 }
 

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 94.01 112">
+  <defs>
+    <style>
+      .academy-document {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>academy-document</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1"><path class="academy-document" d="M94,11a2,2,0,0,0-.59-1.43l-9-9A2,2,0,0,0,83,0H2A2,2,0,0,0,0,2V110a2,2,0,0,0,2,2H92a2,2,0,0,0,2-2V11.07S94,11,94,11ZM84,10V4.41L89.59,10Zm-2.71,1.71,1,1A1,1,0,0,0,83,13h8v96H3V3H81v8A1,1,0,0,0,81.29,11.71Z"/><rect class="academy-document" x="19.5" y="18" width="55" height="3"/><rect class="academy-document" x="19.5" y="28" width="55" height="3"/><rect class="academy-document" x="19.5" y="37" width="56" height="3"/><rect class="academy-document" x="19.5" y="46" width="46" height="3"/><rect class="academy-document" x="19.5" y="55" width="38" height="3"/></g>
+  </g>
+</svg>

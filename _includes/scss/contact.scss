@@ -8,6 +8,8 @@ section.hero#hero-contact {
 }
 .form-container {
   margin-top: $spacing-large;
+  background: $white;
+  @include boxshadow($boxshadow-med-20);
 }
 .contact-form {
   width: 100%;

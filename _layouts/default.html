@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="robots" content="noindex">
+    <link rel="canonical" href="{{page.url | absolute_url}}">
     {% if page.meta %}
     <meta name="description" content="{{page.meta}}">
     <meta name="og:description" content="{{page.meta}}">
@@ -19,6 +20,7 @@
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </head>
   <body{% if page.bodyclass %} class="{{page.bodyclass}}"{% endif %}>
+    {% include html/trial.html %}
     {% include html/nav.html %}
     {{content}}
     {% include html/footer.html %}

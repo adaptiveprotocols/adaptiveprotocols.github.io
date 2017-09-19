@@ -12,16 +12,33 @@ section.products {
     }
   }
   .slider {
-    min-height: 480px; //lmao
+    min-height: 480px;
     .slide {
       padding: 0;
       background-color: $white;
       -webkit-box-align: start;-ms-flex-align: start;align-items: flex-start;
       h3 {
         color: $blue;
+        @media #{$mobile} {
+          font-size: $type-base;
+        }
       }
       p {
         color: $black;
+      }
+      .responsive-video {
+        &.text-content {
+          height: auto;
+          padding: $spacing-small;
+          .responsive-video-content {
+            position: static;
+            top: auto;
+            left: auto;
+            transform: none;
+            width: 100%;
+            height: auto;
+          }
+        }
       }
     }
     .slider-arrow {
@@ -53,6 +70,9 @@ section.products {
       }
     }
     .slide {
+      h3 {
+        margin-top: 0;
+      }
       &:first-child {
         .slider-arrow.prev {
           display: none;
@@ -65,7 +85,22 @@ section.products {
       }
     }
     @media #{$tablet}, #{$mobile} {
-      min-height: 600px;
+      min-height: initial;
+      padding-bottom: $spacing-normal;
+      .slides,
+      .slide {
+        position: static;
+        height: auto;
+      }
+      .slider-dots {
+        bottom: -$spacing-small;
+      }
+      .slider-arrow {
+        bottom: -$spacing-normal;
+        span {
+          font-size: $type-small;
+        }
+      }
     }
   }
   .tertiary-nav {
@@ -74,23 +109,30 @@ section.products {
     }
   }
   .tertiary-nav-content.is-visible {
-    .slide.is-visible,
-    .slide.is-visible.next {
-      h3,
-      h4 {
-        -webkit-animation: slideRight 600ms $transition-ease-in 1 forwards;animation: slideRight 600ms $transition-ease-in 1 forwards;
-      }
-      p,
-      strong,
-      span {
-        -webkit-animation: slideRight 1000ms $transition-ease-in 1 forwards;animation: slideRight 1000ms $transition-ease-in 1 forwards;
-      }
-      .button {
-        -webkit-animation: slideRight 800ms $transition-ease-in 1 forwards;animation: slideRight 800ms $transition-ease-in 1 forwards;
-      }
-      .responsive-video {
-        -webkit-animation: slideUp 1000ms $transition-ease-in 1 forwards;
-        animation: slideUp 1000ms $transition-ease-in 1 forwards;
+    .slide {
+      &.is-visible,
+      &.next {
+        h3,
+        h4 {
+          -webkit-animation: slideRight 600ms $transition-ease-in 1 forwards;animation: slideRight 600ms $transition-ease-in 1 forwards;
+        }
+        p,
+        strong,
+        span {
+          -webkit-animation: slideRight 1000ms $transition-ease-in 1 forwards;animation: slideRight 1000ms $transition-ease-in 1 forwards;
+        }
+        .button,
+        .product-feature-icon {
+          -webkit-animation: slideRight 800ms $transition-ease-in 1 forwards;animation: slideRight 800ms $transition-ease-in 1 forwards;
+        }
+        .responsive-video{
+          -webkit-animation: slideUp 1000ms $transition-ease-in 1 forwards;
+          animation: slideUp 1000ms $transition-ease-in 1 forwards;
+          + p {
+            -webkit-animation: slideDown 600ms $transition-ease-in 1 forwards;
+            animation: slideDown 600ms $transition-ease-in 1 forwards;
+          }
+        }
       }
       &.prev {
         h3,
@@ -102,21 +144,67 @@ section.products {
         span {
           -webkit-animation: slideLeft 1000ms $transition-ease-in 1 forwards;animation: slideLeft 1000ms $transition-ease-in 1 forwards;
         }
-        .button {
+        .button,
+        .product-feature-icon {
           -webkit-animation: slideLeft 800ms $transition-ease-in 1 forwards;animation: slideLeft 800ms $transition-ease-in 1 forwards;
-        }
-        .responsive-video {
-          -webkit-animation: slideUp 1000ms $transition-ease-in 1 forwards;
-          animation: slideUp 1000ms $transition-ease-in 1 forwards;
         }
       }
     }
   }
 }
-.product-feature-name {
-  display: block;
-  font-weight: 700;
-  color: $black;
+.product-feature-item {
+  padding: $spacing-small;
+  width: 50%;
+  float: left;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  transition: 300ms $transition-ease;
+  cursor: pointer;
+  .product-feature-name {
+    display: block;
+    padding: 0 $spacing-small;
+    color: $black;
+    transition: 300ms $transition-ease;
+    width: 83.33%;
+    width: calc(100% / 12 * 10);
+  }
+  &.is-selected,
+  &:hover {
+    .product-feature-name {
+      color: $blue;
+    }
+  }
+  &:hover {
+    background: rgba($blue, .1);
+  }
+  &.is-selected {
+    background: rgba($blue, .16);
+  }
+  @media #{$tablet}, #{$mobile} {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    .product-feature-name {
+      font-size: 0.8em;
+    }
+  }
+}
+.product-features-video {
+  .responsive-video {
+    margin-bottom: $spacing-small;
+  }
+  p {
+    margin: 0;
+    font-size: 0.8em;
+  }
+}
+.product-feature-icon {
+  width: 16.67%;
+  width: calc(100% / 12 * 2);
+  svg {
+    max-height: 26px;
+  }
 }
 section.products-brands {
   background-color: $dark-black;
@@ -133,10 +221,14 @@ section.products-brands {
   }
   li.tertiary-nav-item {
     &.is-selected {
-      color: $white;
+      span {
+        color: $white;
+      }
     }
     &:hover {
-      color: $white;
+      span {
+        color: $white;
+      }
     }
   }
   .tertiary-nav-content {
@@ -144,8 +236,7 @@ section.products-brands {
       color: $white;
     }
     &.is-visible {
-      h3,
-      h4 {
+      .products-brands-logo {
         -webkit-animation: slideRight 600ms $transition-ease-in 1 forwards;animation: slideRight 600ms $transition-ease-in 1 forwards;
       }
       p,
@@ -160,6 +251,18 @@ section.products-brands {
         -webkit-animation: slideUp 1000ms $transition-ease-in 1 forwards;
         animation: slideUp 1000ms $transition-ease-in 1 forwards;
       }
+    }
+  }
+  .products-brands-logo {
+    margin-bottom: $spacing-small;
+    svg {
+      display: block;
+      max-width: 178px;
+    }
+  }
+  .tertiary-nav-content#alere {
+    svg {
+      max-width: 68px;
     }
   }
 }

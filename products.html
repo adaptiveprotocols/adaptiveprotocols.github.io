@@ -7,7 +7,7 @@ bodyclass: products
 <section class="hero" id="hero-products">
   <div class="content hero-content">
     <h1>{{page.title}}</h1>
-    <p class="type-big white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel quibusdam, incidunt quaerat rem, error eveniet reprehenderit</p>
+    <p class="type-big white">Discover the world’s most trusted endpoint management and security products</p>
   </div>
 </section>
 <section class="color-block white products">
@@ -16,19 +16,200 @@ bodyclass: products
     <div class="tertiary">
       <nav class="tertiary-nav">
         <ul>
-          <li class="tertiary-nav-item is-selected" id="windows-10"><span>Deploy Windows 10</span></li>
-          <li class="tertiary-nav-item" id="software-distribution"><span>Speed Software Distribution</span></li>
-          <li class="tertiary-nav-item" id="security"><span>Lock Down Endpoint Health &amp; Security</span></li>
-          <li class="tertiary-nav-item" id="wake-on-lan"><span>Optimize Wake-on-LAN</span></li>
+          <li class="tertiary-nav-item is-selected" id="software-distribution"><span>Speed Software Distribution</span></li>
+          <li class="tertiary-nav-item" id="windows-10"><span>Deploy Windows 10</span></li>
+          <li class="tertiary-nav-item" id="security"><span>Automate Endpoint Security</span></li>
         </ul>
       </nav>
-      <div class="tertiary-nav-content vertical-center-row is-visible" id="windows-10">
+      <div class="tertiary-nav-content is-visible vertical-center-row" id="software-distribution">
         <div class="slider">
           <div class="slider-dots">
-            <span class="slider-dot is-selected" id="windows-10-overview"></span>
-            <span class="slider-dot" id="windows-10-features"></span>
-            <span class="slider-dot" id="windows-10-comparison"></span>
-            <span class="slider-dot" id="windows-10-roi"></span>
+            <span class="slider-dot is-selected" id="software-distribution-overview" title="Overview"></span>
+            <span class="slider-dot" id="software-distribution-features" title="Features"></span>
+            <span class="slider-dot" id="software-distribution-comparison" title="Comparison"></span>
+            <span class="slider-dot" id="software-distribution-roi" title="ROI"></span>
+          </div>
+          <div class="slides">
+
+            <div class="slide is-visible" id="software-distribution-overview">
+              <div class="slider-arrow prev">
+                {% include svg/angle.svg width="20" color="blue" %}
+                <span>ROI</span>
+              </div>
+              <div class="slider-arrow next">
+                <span>Features</span>
+                {% include svg/angle.svg width="20" color="blue" %}
+              </div>
+              <div class="product-overview vertical-center-row">
+                <div class="j-col j-col-6 product-overview-txt">
+                  <h3 class="black">Overview</h3>
+                  <p>The Adaptiva OneSite content distribution engine securely speeds enterprise-wide software deployments with its breakthrough peer-to-peer technology. Now you can reliably distribute any software at unparalleled speed and massive scale without the need for costly server investments, bandwidth throttling, or time-consuming manual efforts.</p>
+                  <a href="http://www2.adaptiva.com/l/139131/2016-04-15/6s9hh/139131/9648/OneSite_Product_Overview.pdf" class="button" target="_blank" title="Download OneSite Overview Brochure">Download OneSite Brochure</a>
+                </div>
+                <div class="j-col j-col-6 product-overview-video">
+                  <div class="responsive-video" style="background: #333;">
+                    <iframe src="https://player.vimeo.com/video/129049313?color=ff9933" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide" id="software-distribution-features" style="display: none;">
+              <div class="slider-arrow prev">
+                {% include svg/angle.svg width="20" color="blue" %}
+                <span>Overview</span>
+              </div>
+              <div class="slider-arrow next">
+                <span>Comparison</span>
+                {% include svg/angle.svg width="20" color="blue" %}
+              </div>
+              <div class="product-features vertical-center-row">
+                <div class="j-col j-col-6 wrap product-features-txt">
+                  <h3 class="black">Features</h3>
+                  <div class="grid-container">
+                    <div class="product-feature-item vertical-center-row" id="memory-pipeline-architecture">
+                      <div class="product-feature-icon">
+                        {% include svg/features/memory-pipeline-architecture.svg %}
+                      </div>
+                      <span class="product-feature-name">Memory Pipeline Architecture</span>
+                    </div>
+                    <div class="product-feature-item vertical-center-row" id="virtual-san">
+                      <div class="product-feature-icon">
+                        {% include svg/features/virtual-san.svg %}
+                      </div>
+                      <span class="product-feature-name">Virtual SAN</span>
+                    </div>
+                    <div class="product-feature-item vertical-center-row" id="predictive-bandwidth-harvesting">
+                      <div class="product-feature-icon">
+                        {% include svg/features/predictive-bandwidth-harvesting.svg %}
+                      </div>
+                      <span class="product-feature-name">Predictive Bandwidth Harvesting</span>
+                    </div>
+                    <div class="product-feature-item vertical-center-row" id="liveflow">
+                      <div class="product-feature-icon">
+                        {% include svg/features/liveflow.svg %}
+                      </div>
+                      <span class="product-feature-name">LiveFlow</span>
+                    </div>
+                    <div class="product-feature-item vertical-center-row" id="workflow-designer-engine">
+                      <div class="product-feature-icon">
+                        {% include svg/features/workflow-designer.svg %}
+                      </div>
+                      <span class="product-feature-name">Workflow Designer &amp; Engine</span>
+                    </div>
+                    <div class="product-feature-item vertical-center-row" id="p2p-pxe">
+                      <div class="product-feature-icon">
+                        {% include svg/features/p2p-pxe.svg %}
+                      </div>
+                      <span class="product-feature-name">P2P PXE</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="j-col j-col-6 product-features-video is-visible" id="memory-pipeline-architecture">
+                  <div class="responsive-video" style="background: #333;">
+                    <iframe src="https://player.vimeo.com/video/234047507" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                  </div>
+                  <p>Eliminate IT infrastructure costs with peer-to-peer software distribution</p>
+                </div>
+                <div class="j-col j-col-6 product-features-video" id="virtual-san" style="display: none;">
+                  <div class="responsive-video" style="background: #333;">
+                    <iframe src="https://player.vimeo.com/video/233058967" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                  </div>
+                  <p>Intelligently store content at infinite scale without user or device impacts</p>
+                </div>
+                <div class="j-col j-col-6 product-features-video" id="predictive-bandwidth-harvesting" style="display: none;">
+                  <div class="responsive-video" style="background: #333;">
+                    <iframe src="https://player.vimeo.com/video/232898198" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                  </div>
+                  <p>Maximize delivery speed while protecting the network</p>
+                </div>
+                <div class="j-col j-col-6 product-features-video" id="liveflow" style="display: none;">
+                  <div class="responsive-video" style="background: #333;">
+                    <iframe src="https://player.vimeo.com/video/232897445" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                  </div>
+                  <p>Gain real-time visibility and control over content</p>
+                </div>
+                <div class="j-col j-col-6 product-features-video" id="workflow-designer-engine" style="display: none;">
+                  <div class="responsive-video text-content" style="background: #052b55;">
+                    <div class="responsive-video-content centered">
+                      <h3 class="white">Learn more in the Workflow Designer &amp; Engine Datasheet</h3>
+                      <a href="http://www2.adaptiva.com/l/139131/2016-07-12/hjl93/139131/20082/Automation_Content_Workflow.pdf" class="button orange" target="_blank">Download</a>
+                    </div>
+                  </div>
+                  <p>Automate IT tasks without coding</p>
+                </div>
+                <div class="j-col j-col-6 product-features-video" id="p2p-pxe" style="display: none;">
+                  <div class="responsive-video text-content" style="background: #052b55;">
+                    <div class="responsive-video-content centered">
+                      <h3 class="white">Learn more about P2P PXE in our Windows 10 OSD Datasheet</h3>
+                      <a href="http://www2.adaptiva.com/l/139131/2016-07-28/kd1x1/139131/22104/Windows_10_OSD_Datasheet.pdf" class="button orange" target="_blank">Download</a>
+                    </div>
+                  </div>
+                  <p>Automate Windows OS deployments without tedious configuration work</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide" id="software-distribution-comparison" style="display: none;">
+              <div class="slider-arrow prev">
+                {% include svg/angle.svg width="20" color="blue" %}
+                <span>Features</span>
+              </div>
+              <div class="slider-arrow next">
+                <span>ROI</span>
+                {% include svg/angle.svg width="20" color="blue" %}
+              </div>
+              <div class="product-comparison vertical-center-row">
+                <div class="j-col j-col-6 product-overview-txt">
+                  <h3 class="black">Comparison</h3>
+                  <p>Traditional approaches to software distribution often can be infrastructure, network, and administration intensive. OneSite’s peer-to-peer approach to software distribution eliminates the need for thousands of costly servers by doing more with the resources you already own. OneSite is the fastest way to deliver content across an enterprise today.
+                  </p>
+                </div>
+                <div class="j-col j-col-6 product-comparison-video">
+                  <div class="responsive-video text-content" style="background: #052b55;">
+                    <div class="responsive-video-content centered">
+                      <h3 class="white">Read our free guide on questions to ask when selecting a content distribution engine</h3>
+                      <a href="http://www2.adaptiva.com/l/139131/2017-05-05/228kfg/139131/56481/Questions_to_Ask_When_Evaluating_Content_Delivery_Solutions.pdf" class="button orange" target="_blank" title="Questions to ask when selecting a content distribution engine">Download</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide" id="software-distribution-roi" style="display: none;">
+              <div class="slider-arrow prev">
+                {% include svg/angle.svg width="20" color="blue" %}
+                <span>Comparions</span>
+              </div>
+              <div class="slider-arrow next">
+                <span>Overview</span>
+                {% include svg/angle.svg width="20" color="blue" %}
+              </div>
+              <div class="product-roi vertical-center-row">
+                <div class="j-col j-col-6 product-roi-txt">
+                  <h3 class="black">ROI</h3>
+                  <p>Many Adaptiva OneSite customers have experienced an immediate ROI including implementations which resulted in a <strong>99% reduction</strong> in IT infrastructure investment, <strong>5x faster</strong> content delivery times, and <strong>1000s of hours</strong> saved each year through automation.</p>
+                </div>
+                <div class="j-col j-col-6 product-roi-form centered">
+                  <div class="responsive-video text-content" style="background: #052b55;">
+                    <div class="responsive-video-content centered">
+                      <h3 class="white">See for yourself how OneSite can drastically reduce costs and administrative burden</h3>
+                      <a href="http://www2.adaptiva.com/l/139131/2016-02-09/fs8j" class="button orange" target="_blank" title="Free Adaptiva ROI Analysis">Get a Free ROI</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tertiary-nav-content vertical-center-row" id="windows-10" style="display: none;">
+        <div class="slider">
+          <div class="slider-dots">
+            <span class="slider-dot is-selected" id="windows-10-overview" title="Overview"></span>
+            <span class="slider-dot" id="windows-10-features" title="Features"></span>
+            <span class="slider-dot" id="windows-10-comparison" title="Comparison"></span>
+            <span class="slider-dot" id="windows-10-roi" title="ROI"></span>
           </div>
           <div class="slides">
             <div class="slide is-visible" id="windows-10-overview">
@@ -43,11 +224,11 @@ bodyclass: products
               <div class="product-overview vertical-center-row">
                 <div class="j-col j-col-6 product-overview-txt">
                   <h3 class="black">Overview</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum hic, illum quam ullam exercitationem sit id commodi quo voluptas reiciendis fugit maiores optio totam assumenda minima perferendis eaque vero eos aperiam laudantium incidunt modi at vel esse.</p>
+                  <p>The Windows 10 Accelerator Program minimizes the need for investments in multiple third-party products and services to make deploying Windows 10 as cost effective as possible. It delivers complimentary training, tools, and products and leverages readily available Microsoft technologies to keep your costs low.</p>
                   <a href="#0" class="button">Download Windows 10 Brochure</a>
                 </div>
                 <div class="j-col j-col-6 product-overview-video">
-                  <div class="responsive-video" style="background: #333;"></div>
+                  <div class="responsive-video" style="background: #052b55;"></div>
                 </div>
               </div>
             </div>
@@ -64,33 +245,62 @@ bodyclass: products
               <div class="product-features vertical-center-row">
                 <div class="j-col j-col-6 wrap product-features-txt">
                   <h3 class="black">Features</h3>
-                  <div class="j-col j-col-6 product-feature-item">
-                    <span class="product-feature-name">Feature</span>
-                    <p>Cumque ex nihil fugiat dolorem, tenetur quae nostrum.</p>
-                  </div>
-                  <div class="j-col j-col-6 product-feature-item">
-                    <span class="product-feature-name">Feature</span>
-                    <p>Eveniet facilis, explicabo cupiditate impedit error, ipsam sapiente!</p>
-                  </div>
-                  <div class="j-col j-col-6 product-feature-item">
-                    <span class="product-feature-name">Feature</span>
-                    <p>Illum cum aut nobis. Optio, cupiditate beatae eos!</p>
-                  </div>
-                  <div class="j-col j-col-6 product-feature-item">
-                    <span class="product-feature-name">Feature</span>
-                    <p>Dicta perferendis harum accusamus inventore est tempora voluptatum?</p>
-                  </div>
-                  <div class="j-col j-col-6 product-feature-item">
-                    <span class="product-feature-name">Feature</span>
-                    <p>Expedita minus quidem error reiciendis et placeat id.</p>
-                  </div>
-                  <div class="j-col j-col-6 product-feature-item">
-                    <span class="product-feature-name">Feature</span>
-                    <p>Odit esse, ipsum. Totam sed dolore voluptatibus dolorum.</p>
+                  <div class="grid-container">
+                    <div class="product-feature-item vertical-center-row" id="windows-10-community-tools">
+                      <div class="product-feature-icon">
+                        {% include svg/features/community-tools.svg %}
+                      </div>
+                      <span class="product-feature-name">Windows 10 Community Tools</span>
+                    </div>
+                    <div class="product-feature-item vertical-center-row" id="windows-10-mvp">
+                      <div class="product-feature-icon">
+                        {% include svg/features/microsoft-training.svg %}
+                      </div>
+                      <span class="product-feature-name">Microsoft MVP Training and Guides</span>
+                    </div>
+                    <div class="product-feature-item vertical-center-row" id="windows-10-onesite">
+                      <div class="product-feature-icon">
+                        {% include svg/onesite.svg %}
+                      </div>
+                      <span class="product-feature-name">Adaptiva OneSite</span>
+                    </div>
+                    <div class="product-feature-item vertical-center-row" id="windows-10-client-health">
+                      <div class="product-feature-icon">
+                        {% include svg/client-health.svg %}
+                      </div>
+                      <span class="product-feature-name">Adaptiva Client Health</span>
+                    </div>
                   </div>
                 </div>
-                <div class="j-col j-col-6 product-features-video">
-                  <div class="responsive-video" style="background: #333;"></div>
+                <div class="j-col j-col-6 product-features-video is-visible" id="windows-10-community-tools">
+                  <div class="responsive-video" style="background: #333;">
+                    <iframe src="https://player.vimeo.com/video/175298193?color=ff902c" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                  </div>
+                  <p>Leverage best-in-class tools for automated BIOS to UEFI conversion, application migration, software license management, and more.</p>
+                </div>
+                <div class="j-col j-col-6 product-features-video is-visible" id="windows-10-mvp" style="display: none;">
+                  <div class="responsive-video" style="background: #052b55;">
+                    <img src="{{"/assets/img/windows-10-mvp-training.jpg"}}" alt="Microsoft Windows 10 MVP Training, Ami Casto and Mikael Nystrom">
+                  </div>
+                  <p>Get your team deployment-ready with hours of video training and guides created by leading Windows 10 experts.</p>
+                </div>
+                <div class="j-col j-col-6 product-features-video is-visible" id="windows-10-onesite" style="display: none;">
+                  <div class="responsive-video" style="background: #052b55;">
+                    <div class="responsive-video-content centered">
+                      <h3 class="white">Learn more about OneSite and Windows 10 in our free Windows 10 OSD brochure</h3>
+                      <a href="http://www2.adaptiva.com/l/139131/2016-05-13/b9p3k/139131/12964/Windows_10_OSD_Brochure.pdf" class="button orange" target="_blank" title="Download brochure">Download</a>
+                    </div>
+                  </div>
+                  <p>Distribute Windows 10 software and updates across the enterprise rapidly and without the need for a complex IT infrastructure.</p>
+                </div>
+                <div class="j-col j-col-6 product-features-video is-visible" id="windows-10-client-health" style="display: none;">
+                  <div class="responsive-video text-content" style="background: #052b55;">
+                    <div class="responsive-video-content centered">
+                      <h3 class="white">Learn more about Client Health for Windows 10 in our free Client Health product brochure</h3>
+                      <a href="#0" class="button orange" target="_blank" title="Download brochure">Download</a>
+                    </div>
+                  </div>
+                  <p>Automate Windows 10 security configuration management, corporate policy compliance, and endpoint health.</p>
                 </div>
               </div>
             </div>
@@ -107,11 +317,17 @@ bodyclass: products
               <div class="product-comparison vertical-center-row">
                 <div class="j-col j-col-6 product-overview-txt">
                   <h3 class="black">Comparison</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum hic, illum quam ullam exercitationem sit id commodi quo voluptas reiciendis fugit maiores optio totam assumenda minima perferendis eaque vero eos aperiam laudantium incidunt modi at vel esse.</p>
+                  <p>The Windows 10 Accelerator Program minimizes the need for investments in multiple third-party products and services to make deploying Windows 10 as cost effective as possible. It delivers complimentary training, tools, and products and leverages readily available Microsoft technologies to keep your costs low.</p>
                   <a href="#0" class="button">Download Competitive Matrix</a>
                 </div>
                 <div class="j-col j-col-6 product-comparison-video">
-                  <div class="responsive-video" style="background: #333;"></div>
+                  <div class="responsive-video text-content" style="background: #052b55;">
+                    <div class="responsive-video-content centered">
+                      <h3 class="white">"OneSite is a clear choice for any IT organization that wants to reduce the total cost of ownership for Configuration Manager."</h3>
+                      <p class="blue">Steve Capper, Global CTO, AECOM</p>
+                      <a href="https://www.gartner.com/reviews/market/client-management-tools/vendor/adaptiva" target="_blank" class="button orange" title="Free Adaptiva ROI Analysis for Windows 10">Adaptiva on Gartner Peer Reviews</a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -126,12 +342,17 @@ bodyclass: products
                 {% include svg/angle.svg width="20" color="blue" %}
               </div>
               <div class="product-roi vertical-center-row">
-                <div class="j-col j-col-6 wrap product-roi-txt">
+                <div class="j-col j-col-6 product-roi-txt">
                   <h3 class="black">ROI</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam necessitatibus voluptatibus, corrupti voluptatum, ipsum deleniti corporis perferendis vitae et, ea harum sapiente reiciendis ipsam.</p>
+                  <p>See how the Windows 10 Accelerator Program can provide an immediate return on investment for your business. Request a free ROI analysis today!</p>
                 </div>
                 <div class="j-col j-col-6 product-roi-form">
-                  <div class="responsive-video" style="background: #333;"></div>
+                  <div class="responsive-video text-content" style="background: #052b55;">
+                    <div class="responsive-video-content centered">
+                      <h3 class="white">Find out how much time and money your organization can save with the Windows 10 Accelerator Program</h3>
+                      <a href="http://www2.adaptiva.com/l/139131/2016-02-09/fs8j" class="button orange" target="_blank" title="Free Adaptiva ROI Analysis">Get a Free ROI</a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -139,14 +360,164 @@ bodyclass: products
           </div>
         </div>
       </div>
-      <div class="tertiary-nav-content vertical-center-row" id="software-distribution">
+      <div class="tertiary-nav-content vertical-center-row" id="security" style="display: none;">
+        <div class="slider">
+          <div class="slider-dots">
+            <span class="slider-dot is-selected" id="security-overview" title="Overview"></span>
+            <span class="slider-dot" id="security-features" title="Features"></span>
+            <span class="slider-dot" id="security-comparison" title="Comparison"></span>
+            <span class="slider-dot" id="security-roi" title="ROI"></span>
+          </div>
+          <div class="slides">
+            <div class="slide is-visible" id="security-overview">
+              <div class="slider-arrow prev">
+                {% include svg/angle.svg width="20" color="blue" %}
+                <span>ROI</span>
+              </div>
+              <div class="slider-arrow next">
+                <span>Features</span>
+                {% include svg/angle.svg width="20" color="blue" %}
+              </div>
+              <div class="product-overview vertical-center-row">
+                <div class="j-col j-col-6 product-overview-txt">
+                  <h3 class="black">Overview</h3>
+                  <p>Today’s IT operations professionals have too many endpoints to manage and too little time to secure them. Client Health is an endpoint health and security engine that uses peer-to- peer technology to manage and secure endpoint configurations at scale. It automatically checks an endpoint’s health, diagnoses any problems, and fixes issues…instantly.</p>
+                  <a href="http://www2.adaptiva.com/downloads/client-health-features" target="_blank" class="button" title="Client Health Key Features Datasheet">Download Client Health Datasheet</a>
+                </div>
+                <div class="j-col j-col-6 product-overview-video">
+                  <div class="responsive-video" style="background: #333;">
+                    <iframe src="https://player.vimeo.com/video/190639881" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-      </div>
-      <div class="tertiary-nav-content vertical-center-row" id="security">
+            <div class="slide" id="security-features" style="display: none;">
+              <div class="slider-arrow prev">
+                {% include svg/angle.svg width="20" color="blue" %}
+                <span>Overview</span>
+              </div>
+              <div class="slider-arrow next">
+                <span>Comparison</span>
+                {% include svg/angle.svg width="20" color="blue" %}
+              </div>
+              <div class="product-features vertical-center-row">
+                <div class="j-col j-col-6 wrap product-features-txt">
+                  <h3 class="black">Features</h3>
+                  <div class="grid-container">
+                    <div class="product-feature-item vertical-center-row" id="security-p2p-tech">
+                      <div class="product-feature-icon">
+                        {% include svg/features/smart-scaling.svg %}
+                      </div>
+                      <span class="product-feature-name">Smart-scaling P2P Technology</span>
+                    </div>
+                    <div class="product-feature-item vertical-center-row" id="security-config-mgmt">
+                      <div class="product-feature-icon">
+                        {% include svg/features/security-config.svg %}
+                      </div>
+                      <span class="product-feature-name">Security Configuration Management Automation</span>
+                    </div>
+                    <div class="product-feature-item vertical-center-row" id="security-health-checks">
+                      <div class="product-feature-icon">
+                        {% include svg/features/health-checks.svg %}
+                      </div>
+                      <span class="product-feature-name">Pre-packaged Health Checks</span>
+                    </div>
+                    <div class="product-feature-item vertical-center-row" id="security-workflow">
+                      <div class="product-feature-icon">
+                        {% include svg/features/workflow-designer.svg %}
+                      </div>
+                      <span class="product-feature-name">Workflow Designer &amp; Engine</span>
+                    </div>
+                    <div class="product-feature-item vertical-center-row" id="security-visual-reporting">
+                      <div class="product-feature-icon">
+                        {% include svg/features/visual-reporting.svg %}
+                      </div>
+                      <span class="product-feature-name">Visual Reporting Engine</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="j-col j-col-6 product-features-video is-visible" id="security-p2p-tech">
+                  <div class="responsive-video">
+                    <img src="{{"/assets/img/products/smart-scaling-p2p-technology.png"}}" alt="Adaptiva Smart Scaling Peer-to-peer Technology" style="border: 2px solid #eee;">
+                  </div>
+                  <p>Drive continuous endpoint compliance and configuration management at scale</p>
+                </div>
+                <div class="j-col j-col-6 product-features-video is-visible" id="security-config-mgmt" style="display: none;">
+                  <div class="responsive-video" style="background: #333;">
+                  </div>
+                  <p>Set your security policies and let Adaptiva do the rest</p>
+                </div>
+                <div class="j-col j-col-6 product-features-video is-visible" id="security-health-checks" style="display: none;">
+                  <div class="responsive-video" style="background: #333;">
+                  </div>
+                  <p>Close common security holes instantly</p>
+                </div>
+                <div class="j-col j-col-6 product-features-video is-visible" id="security-workflow" style="display: none;">
+                  <div class="responsive-video" style="background: #052b55;">
+                    <img src="{{"/assets/img/client-health-workflow-designer-engine-wannacry.jpg"}}" alt="Adaptiva Smart Scaling Peer-to-peer Technology" style="border: 2px solid #eee;">
+                  </div>
+                  <p>Create your own custom health checks without coding</p>
+                </div>
+                <div class="j-col j-col-6 product-features-video is-visible" id="security-visual-reporting" style="display: none;">
+                  <div class="responsive-video" style="background: #052b55; border: 2px solid #eee;">
+                    <img src="{{"/assets/img/client-health-visual-reporting-engine.jpg"}}" alt="Client Health Visual Reporting Engine Screenshot">
+                  </div>
+                  <p>Gain instant insights on endpoint health and security success</p>
+                </div>
+              </div>
+            </div>
 
-      </div>
-      <div class="tertiary-nav-content vertical-center-row" id="wake-on-lan">
+            <div class="slide" id="security-comparison" style="display: none;">
+              <div class="slider-arrow prev">
+                {% include svg/angle.svg width="20" color="blue" %}
+                <span>Features</span>
+              </div>
+              <div class="slider-arrow next">
+                <span>ROI</span>
+                {% include svg/angle.svg width="20" color="blue" %}
+              </div>
+              <div class="product-comparison vertical-center-row">
+                <div class="j-col j-col-6 product-overview-txt">
+                  <h3 class="black">Comparison</h3>
+                  <p>Client Health is the only endpoint security product which can <strong>drive endpoint compliance</strong> and configurations at scale even in the most demanding environments, <strong>empower IT to create health checks</strong> instantly without writing a single line of code, and <strong>increase endpoint management efficiency</strong> with intelligent, self-managing automation.</p>
+                  <a href="#0" class="button">Download Competitive Matrix</a>
+                </div>
+                <div class="j-col j-col-6 product-comparison-video">
+                  <div class="responsive-video" style="background: #333;">
+                    <iframe src="https://player.vimeo.com/video/234048228" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
 
+            <div class="slide" id="security-roi" style="display: none;">
+              <div class="slider-arrow prev">
+                {% include svg/angle.svg width="20" color="blue" %}
+                <span>Comparions</span>
+              </div>
+              <div class="slider-arrow next">
+                <span>Overview</span>
+                {% include svg/angle.svg width="20" color="blue" %}
+              </div>
+              <div class="product-roi vertical-center-row">
+                <div class="j-col j-col-6 product-roi-txt">
+                  <h3 class="black">ROI</h3>
+                  <p>Client Health is used by some of the largest organizations in the world to automatically run millions of daily health checks which <strong>prevent and respond to viruses and attacks</strong> (like WannaCry), <strong>check and update</strong> security settings and configurations, and <strong>analyze and resolve</strong> Windows OS issues.</p>
+                </div>
+                <div class="j-col j-col-6 product-roi-form">
+                  <div class="responsive-video" style="background: #052b55;">
+                    <div class="responsive-video-content centered">
+                      <h3 class="white">See for yourself how Client Health can streamline your endpoint security configuration management and improve system uptime</h3>
+                      <a href="http://www2.adaptiva.com/l/139131/2016-02-09/fs8j" class="button orange" target="_blank" title="Free Adaptiva ROI Analysis">Get a Free ROI</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -155,7 +526,7 @@ bodyclass: products
   <div class="content centered">
     <h2 class="white js-scroll slideRight">Take the Next Step</h2>
     <p class="type-big white js-scroll slideUp">See the product first-hand in a quick, 30-minute demo. Absolutely free.</p>
-    <a href="#0" class="button white outline js-scroll slideLeft">Get a Demo</a>
+    <a href="javascript:void(0)" class="button white outline js-scroll js-trial slideLeft">Get a Demo</a>
   </div>
 </section>
 <section class="products-brands">
@@ -164,9 +535,9 @@ bodyclass: products
     <div class="tertiary">
       <nav class="tertiary-nav">
         <ul>
-          <li class="tertiary-nav-item is-selected" id="aecom">AECOM</li>
-          <li class="tertiary-nav-item" id="skanska">Skanska</li>
-          <li class="tertiary-nav-item" id="alere">Alere</li>
+          <li class="tertiary-nav-item is-selected" id="aecom"><span>AECOM</span></li>
+          <li class="tertiary-nav-item" id="skanska"><span>Skanska</span></li>
+          <li class="tertiary-nav-item" id="alere"><span>Alere</span></li>
         </ul>
       </nav>
       <div class="tertiary-nav-content is-visible vertical-center-row" id="aecom">
@@ -176,7 +547,10 @@ bodyclass: products
           </div>
         </div>
         <div class="j-col j-col-5 push-1">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit officia, beatae dolor magnam commodi eum repudiandae.</p>
+          <div class="products-brands-logo">
+            {% include svg/customers/customers-aecom.svg %}
+          </div>
+          <p>AECOM Global CTO Steve Capper discusses his team's success in software distribution with Adaptiva OneSite</p>
         </div>
       </div>
       <div class="tertiary-nav-content vertical-center-row" id="skanska" style="display: none;">
@@ -186,7 +560,10 @@ bodyclass: products
           </div>
         </div>
         <div class="j-col j-col-5 push-1">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe excepturi, suscipit enim voluptate maxime. Corporis, officiis, deserunt.</p>
+          <div class="products-brands-logo">
+            {% include svg/customers/customers-skanska.svg %}
+          </div>
+          <p>James Pitcher talks about how OneSite saves his team endless time and resources with powerful automation capabilities and network awareness</p>
         </div>
       </div>
       <div class="tertiary-nav-content vertical-center-row" id="alere" style="display: none;">
@@ -196,15 +573,18 @@ bodyclass: products
           </div>
         </div>
         <div class="j-col j-col-5 push-1">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus aspernatur odio, consequatur sit cumque perferendis.</p>
+          <div class="products-brands-logo">
+            {% include svg/customers/customers-alere.svg %}
+          </div>
+          <p>David Baker from Alere shares how Adaptiva helped his organization avoid a large, unwieldy ConfigMgr server infrastructure</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 <section class="color-block dark-black centered">
-  <a href="#0" class="content">
-    <h2 class="white" style="margin: 0;">Check us out on Gartner Peer Reviews <span class="link-arrow">{% include svg/arrow.svg color="orange" width="26" %}</span></h2>
+  <a href="{{"/academy" | relative_url }}" class="content" title="Visit the Adaptiva Academy for free resources on how modern endpoint management, including Microsoft ConfigMgr tips and tricks">
+    <h2 class="white" style="margin: 0;">Get more product resources <span class="link-arrow">{% include svg/arrow.svg color="orange" width="26" %}</span></h2>
   </a>
 </section>
 <section class="color-block lighter-gray">

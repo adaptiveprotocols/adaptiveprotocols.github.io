@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 111.01 45.07">
+  <defs>
+    <style>
+      .academy-video {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>academy-video</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1"><path class="academy-video" d="M85.78,9.42,74.67,14.27V6.73H32.38L25.64,0H0V8.73H12.11V39.06l5.27,6H74.67V37.54L85.38,42.3l25.63,0v-33Zm23.22,2v29H86l-11.32-5V16.45l11.33-5ZM2,6.73V2H24.81l6.73,6.73H72.67V43.06H18.28l-4.17-4.75V6.73Z"/><path class="academy-video" d="M24.9,36.35H53.81V35h5.38V27.59H53.81V26.24H24.9v1.35H19.51V35H24.9Zm2-2V28.24H51.81v6.11ZM53.81,33V29.59l3.38,0V33Zm-32.3,0V29.59H24.9V33Z"/><path class="academy-video" d="M43,11.44H35.66v7.38H43Zm-5.34,5.38V13.44H41v3.38Z"/><path class="academy-video" d="M53.81,11.44H46.43v7.38h7.38Zm-5.38,5.38V13.44h3.38v3.38Z"/><path class="academy-video" d="M64.57,11.44H57.19v7.38h7.38Zm-5.38,5.38V13.44h3.38v3.38Z"/></g>
+  </g>
+</svg>
