@@ -441,8 +441,8 @@ section.products .slider .slide { padding: 0; background-color: #fff; -webkit-bo
 section.products .slider .slide h3 { color: #0860b8; }
 @media screen and (max-width: 767px) { section.products .slider .slide h3 { font-size: 1rem; } }
 section.products .slider .slide p { color: #333; }
-section.products .slider .slide .responsive-video.text-content { height: auto; padding: 1rem; }
-section.products .slider .slide .responsive-video.text-content .responsive-video-content { position: static; top: auto; left: auto; transform: none; width: 100%; height: auto; }
+@media screen and (max-width: 767px) { section.products .slider .slide .responsive-video.text-content { height: auto; padding: 1rem; }
+  section.products .slider .slide .responsive-video.text-content .responsive-video-content { position: static; top: auto; left: auto; transform: none; width: 100%; height: auto; } }
 section.products .slider .slider-arrow { top: auto; bottom: 0.618rem; transform: none; width: auto; height: auto; background: transparent; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row; flex-flow: row; }
 section.products .slider .slider-arrow span { color: #b3b3b3; transition: 300ms cubic-bezier(0.32, 0.57, 0.25, 1); }
 section.products .slider .slider-arrow.prev span { margin-left: 1.618rem; }

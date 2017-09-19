@@ -28,15 +28,17 @@ section.products {
       }
       .responsive-video {
         &.text-content {
-          height: auto;
-          padding: $spacing-small;
-          .responsive-video-content {
-            position: static;
-            top: auto;
-            left: auto;
-            transform: none;
-            width: 100%;
+          @media #{$mobile} {
             height: auto;
+            padding: $spacing-small;
+            .responsive-video-content {
+              position: static;
+              top: auto;
+              left: auto;
+              transform: none;
+              width: 100%;
+              height: auto;
+            }  
           }
         }
       }
