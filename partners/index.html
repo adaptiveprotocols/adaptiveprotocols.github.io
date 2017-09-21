@@ -16,7 +16,7 @@ bodyclass: partners
       <p>Adaptiva teams with a select group of partners to deliver cost-effective ways for enterprises to scale their IT initiatives by doing more with the resources they already own. We work closely with partners of all sizes to build and deliver systems management solutions that eliminate costs and simplify IT operations for our customers.</p>
       <p>Adaptiva is committed to our partners’ success and we have designed our Partner Program to fit your unique needs. Grow your opportunities with enterprises around the world who are searching for a complete solution to meet their systems management needs.</p>
       <p>Want to become an Adaptiva partner today?</p>
-      <a href="http://www2.adaptiva.com/l/139131/2016-06-03/dm2d5" class="button blue" target="_blank" title="Learn more about the Adaptiva Partner Program">Learn More</a>
+      <a href="http://www2.adaptiva.com/l/139131/2016-06-03/dm2d5" class="button blue" target="_blank" rel="noopener" title="Learn more about the Adaptiva Partner Program">Learn More</a>
     </div>
   </div>
 </section>
@@ -50,7 +50,7 @@ bodyclass: partners
     </div>
     <div class="j-row centered" style="margin-top: 1.618em;">
       <p>Already a partner? Log in here:</p>
-      <a href="https://partners.adaptiva.com" class="button blue" target="_blank" title="Sign up for or log into the Adaptiva Partner Portal">Partner Portal</a>
+      <a href="https://partners.adaptiva.com" class="button blue" target="_blank" rel="noopener" title="Sign up for or log into the Adaptiva Partner Portal">Partner Portal</a>
     </div>
   </div>
 </section>
@@ -64,7 +64,7 @@ bodyclass: partners
     </div>
     <div class="grid-container">
       {% for partner in site.data.partners %}
-        <a class="j-col j-col-4 tile partner js-scroll{% if partner.sq %} is-sq{% endif %}" href="{{partner.link}}" title="{{partner.link}}" target="_blank">
+        <a class="j-col j-col-4 tile partner js-scroll{% if partner.sq %} is-sq{% endif %}" href="{{partner.link}}" title="{{partner.link}}" target="_blank" rel="noopener">
           <div class="tile-content">
             <div class="partner-info">
               {% if partner.png %}

@@ -27,7 +27,7 @@ bodyclass: academy
   <div class="content grid-container">
     {% assign academy = (site.data.academy | sort: 'date' | reverse) %}
     {% for asset in academy %}
-      <a class="j-col j-col-3 asset is-showing{% for class in asset.classes %} {{class.class}}{% endfor %}" href="{{asset.link}}" target="_blank" title="{{asset.title}}">
+      <a class="j-col j-col-3 asset is-showing{% for class in asset.classes %} {{class.class}}{% endfor %}" href="{{asset.link}}" target="_blank" rel="noopener" title="{{asset.title}}">
         <div class="asset-content">
           <div class="asset-title{% if asset.img %} has-image{% endif %}" style="{% if asset.img %}background-image: url('/assets/img/academy/{{asset.img}}'); background-size: cover; backgrounbd-position: center;{% else %}background-image: url('/assets/img/academy/type/academy-{{asset.type}}.svg');{% if asset.type=='video' %}background-size: 68px;{% else %} background-size: 42px;{% endif %} background-position: bottom 1em right 1em;{% endif %}">
             <h3 class="white">{{asset.title}}</h3>

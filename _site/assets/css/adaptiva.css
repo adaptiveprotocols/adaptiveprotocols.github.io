@@ -410,12 +410,12 @@ footer.footer { background-color: #191919; padding: 4.283rem 0; }
 #hero-homepage a#scroll:hover::after { width: 68px; height: 68px; -webkit-animation: scrollRing2 4200ms linear infinite alternate; animation: scrollRing2 4200ms linear infinite alternate; }
 @media screen and (max-width: 767px) { #hero-homepage { background-image: url("/assets/img/hero/hero-homepage--mobile.jpg"); } }
 
-.tertiary.what-is-p2p .tertiary-nav::before { background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(white)); background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 100%); }
+.tertiary.what-is-p2p .tertiary-nav::before { background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(white)); background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 100%); pointer-events: none; }
 .tertiary.what-is-p2p .tertiary-nav-content.is-visible p { -webkit-animation: 800ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards slideRight; animation: 800ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards slideRight; }
 .tertiary.what-is-p2p .tertiary-nav-content.is-visible .button { -webkit-animation: 1200ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards slideLeft; animation: 1200ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards slideLeft; }
 .tertiary.what-is-p2p .tertiary-nav-content.is-visible .responsive-video { -webkit-animation: 600ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards slideUp; animation: 600ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards slideUp; }
 
-.tertiary.customers-home .tertiary-nav::before { background: -webkit-gradient(linear, left top, right top, from(rgba(238, 238, 238, 0)), to(#eeeeee)); background: linear-gradient(to right, rgba(238, 238, 238, 0) 0%, #eeeeee 100%); }
+.tertiary.customers-home .tertiary-nav::before { background: -webkit-gradient(linear, left top, right top, from(rgba(238, 238, 238, 0)), to(#eeeeee)); background: linear-gradient(to right, rgba(238, 238, 238, 0) 0%, #eeeeee 100%); pointer-events: none; }
 .tertiary.customers-home .tertiary-nav-content { text-align: center; }
 .tertiary.customers-home .tertiary-nav-content .customer-logo { display: inline-block; padding: 0 0.618rem; vertical-align: middle; max-width: 150px; max-height: 60px; }
 .tertiary.customers-home .tertiary-nav-content .customer-logo svg, .tertiary.customers-home .tertiary-nav-content .customer-logo img { display: block; max-height: 60px; }
@@ -443,7 +443,6 @@ section.products .slider-dot { border-color: #ccc; }
 section.products .slider-dot.is-selected { border-color: #8c8c8c; background: #8c8c8c; }
 section.products .slider { min-height: 480px; }
 section.products .slider .slide { padding: 0; background-color: #fff; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
-section.products .slider .slide h3 { color: #0860b8; }
 @media screen and (max-width: 767px) { section.products .slider .slide h3 { font-size: 1rem; } }
 section.products .slider .slide p { color: #333; }
 @media screen and (max-width: 767px) { section.products .slider .slide .responsive-video.text-content { height: auto; padding: 1rem; }
@@ -461,7 +460,7 @@ section.products .slider .slide:last-child .slider-arrow.next { display: none; }
   section.products .slider .slider-dots { bottom: -1rem; }
   section.products .slider .slider-arrow { bottom: -1.618rem; }
   section.products .slider .slider-arrow span { font-size: 0.875rem; } }
-section.products .tertiary-nav::before { background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(white)); background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 100%); }
+section.products .tertiary-nav::before { background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(white)); background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 100%); pointer-events: none; }
 section.products .tertiary-nav-content.is-visible .slide.is-visible h3, section.products .tertiary-nav-content.is-visible .slide.is-visible h4, section.products .tertiary-nav-content.is-visible .slide.next h3, section.products .tertiary-nav-content.is-visible .slide.next h4 { -webkit-animation: slideRight 600ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; animation: slideRight 600ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; }
 section.products .tertiary-nav-content.is-visible .slide.is-visible p, section.products .tertiary-nav-content.is-visible .slide.is-visible strong, section.products .tertiary-nav-content.is-visible .slide.is-visible span, section.products .tertiary-nav-content.is-visible .slide.next p, section.products .tertiary-nav-content.is-visible .slide.next strong, section.products .tertiary-nav-content.is-visible .slide.next span { -webkit-animation: slideRight 1000ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; animation: slideRight 1000ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; }
 section.products .tertiary-nav-content.is-visible .slide.is-visible .button, section.products .tertiary-nav-content.is-visible .slide.is-visible .product-feature-icon, section.products .tertiary-nav-content.is-visible .slide.next .button, section.products .tertiary-nav-content.is-visible .slide.next .product-feature-icon { -webkit-animation: slideRight 800ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; animation: slideRight 800ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; }
@@ -470,6 +469,8 @@ section.products .tertiary-nav-content.is-visible .slide.is-visible .responsive-
 section.products .tertiary-nav-content.is-visible .slide.prev h3, section.products .tertiary-nav-content.is-visible .slide.prev h4 { -webkit-animation: slideLeft 600ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; animation: slideLeft 600ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; }
 section.products .tertiary-nav-content.is-visible .slide.prev p, section.products .tertiary-nav-content.is-visible .slide.prev strong, section.products .tertiary-nav-content.is-visible .slide.prev span { -webkit-animation: slideLeft 1000ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; animation: slideLeft 1000ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; }
 section.products .tertiary-nav-content.is-visible .slide.prev .button, section.products .tertiary-nav-content.is-visible .slide.prev .product-feature-icon { -webkit-animation: slideLeft 800ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; animation: slideLeft 800ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; }
+
+.product-icon { display: inline-block; vertical-align: middle; margin-right: 0.618rem; }
 
 .product-feature-item { padding: 1rem; width: 50%; float: left; -ms-flex-item-align: stretch; align-self: stretch; transition: 300ms cubic-bezier(0.32, 0.57, 0.25, 1); cursor: pointer; }
 .product-feature-item .product-feature-name { display: block; padding: 0 1rem; color: #333; transition: 300ms cubic-bezier(0.32, 0.57, 0.25, 1); width: 83.33%; width: calc(100% / 12 * 10); }
@@ -485,7 +486,7 @@ section.products .tertiary-nav-content.is-visible .slide.prev .button, section.p
 .product-feature-icon { width: 16.67%; width: calc(100% / 12 * 2); }
 .product-feature-icon svg { max-height: 26px; }
 
-section.products-brands { background-color: #191919; padding: 2.618rem 0; background-image: url("/assets/img/adaptiva-customer-testimonials-bg.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center; position: relative; }
+section.products-brands { background-color: #191919; background-image: url("/assets/img/adaptiva-customer-testimonials-bg.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center; position: relative; }
 section.products-brands .hero-content { z-index: 200; }
 section.products-brands::before { content: ''; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(25, 25, 25, 0.88); z-index: 100; }
 section.products-brands .content { position: relative; z-index: 100; }
@@ -541,7 +542,7 @@ section.about .tertiary-nav-content.is-visible p { animation: slideRight 1200ms 
 .tertiary.leadership .tertiary-nav-content.is-visible h2 { animation: slideRight 600ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; }
 .tertiary.leadership .tertiary-nav-content.is-visible h4 { animation: slideRight 900ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; }
 .tertiary.leadership .tertiary-nav-content.is-visible p { animation: slideRight 1200ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards; }
-@media screen and (max-width: 767px) { .tertiary.leadership .tertiary-nav::before { background: -webkit-gradient(linear, left top, right top, from(rgba(25, 25, 25, 0)), to(#191919)); background: linear-gradient(to right, rgba(25, 25, 25, 0) 0%, #191919 100%); }
+@media screen and (max-width: 767px) { .tertiary.leadership .tertiary-nav::before { background: -webkit-gradient(linear, left top, right top, from(rgba(25, 25, 25, 0)), to(#191919)); background: linear-gradient(to right, rgba(25, 25, 25, 0) 0%, #191919 100%); pointer-events: none; }
   .tertiary.leadership .tertiary-nav-item { margin: 0; }
   .tertiary.leadership .tertiary-nav-item.is-selected img { transform: scale(1.2); }
   .tertiary.leadership .tertiary-nav-content { padding: 1.618rem; } }

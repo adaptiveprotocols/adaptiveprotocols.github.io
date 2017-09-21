@@ -18,7 +18,6 @@ section.products {
       background-color: $white;
       -webkit-box-align: start;-ms-flex-align: start;align-items: flex-start;
       h3 {
-        color: $blue;
         @media #{$mobile} {
           font-size: $type-base;
         }
@@ -38,7 +37,7 @@ section.products {
               transform: none;
               width: 100%;
               height: auto;
-            }  
+            }
           }
         }
       }
@@ -154,6 +153,11 @@ section.products {
     }
   }
 }
+.product-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: $spacing-smallest;
+}
 .product-feature-item {
   padding: $spacing-small;
   width: 50%;
@@ -210,7 +214,6 @@ section.products {
 }
 section.products-brands {
   background-color: $dark-black;
-  padding: $spacing-large 0;
   background-image: url('/assets/img/adaptiva-customer-testimonials-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;

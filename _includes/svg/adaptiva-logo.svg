@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1747.17 406.74" width="{{include.width}}">
-  <title>Adaptiva Logo</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1747.17 406.74"{% if include.width %} width="{{include.width}}"{% endif %}{% if include.height %} height="{{include.height}}"{% endif %}>
+  <title>Adaptiva</title>
   <g id="Layer_2" data-name="Layer 2">
     <g id="Layer_1-2" data-name="Layer 1"><path
       class="logo-1"

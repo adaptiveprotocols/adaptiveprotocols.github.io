@@ -2,7 +2,6 @@
 ---
 
 jQuery(document).ready(function($) { //safety pants!
-  {% include js/pardot-mods.js %}
   {% include js/visible.js %}
   {% include js/smooth-scroll.js %}
   {% include js/scrollto.js %}
