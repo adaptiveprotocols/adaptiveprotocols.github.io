@@ -1,0 +1,5 @@
+.hero#hero-altiris {
+  position: relative;
+  @include overlay($dark-black);
+  background-image: url('/assets/img/hero/hero-altiris.jpg');
+}

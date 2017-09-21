@@ -129,6 +129,9 @@ section.navbar {
           display: inline-block;
           border-color: $blue;
           color: $blue;
+          &:hover {
+            background-color: $blue;
+          }
         }
       }
     }
