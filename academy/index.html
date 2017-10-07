@@ -3,6 +3,7 @@ layout: default
 title: Adaptiva Academy
 meta: Curated library of free resources and education materials for Microsoft Systems Center ConfigMgr (ConfigMgr) admins. Learn SCCM tips and tricks.
 bodyclass: academy
+redirect_from: "/sccm-academy/"
 ---
 <section class="hero" id="hero-academy">
   <div class="content hero-content">
@@ -25,7 +26,7 @@ bodyclass: academy
 </section>
 <section class="color-block white academy">
   <div class="content grid-container">
-    {% assign academy = (site.data.academy | sort: 'date' | reverse) %}
+    {% assign academy = site.data.academy | sort: 'date' | reverse %}
     {% for asset in academy %}
       <a class="j-col j-col-3 asset is-showing{% for class in asset.classes %} {{class.class}}{% endfor %}" href="{{asset.link}}" target="_blank" rel="noopener" title="{{asset.title}}">
         <div class="asset-content">

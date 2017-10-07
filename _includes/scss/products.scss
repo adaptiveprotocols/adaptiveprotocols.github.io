@@ -2,21 +2,32 @@ section.hero#hero-products {
   background-image: url('/assets/img/hero/hero-products.jpg');
   position: relative;
   @include overlay($dark-black);
+  @media #{$mobile} {
+    background-image: url('/assets/img/hero/hero-products--mobile.jpg');
+  }
 }
 section.products {
   .slider-dot {
-    border-color: $gray;
+    border-color: rgba($blue, .5);
+    &:hover {
+      background: rgba($blue, .5);
+    }
     &.is-selected {
-      border-color: darken($gray, 25%);
-      background: darken($gray, 25%);
+      border-color: $blue;
+      background: $blue;
+      &:hover {
+        background: $blue;
+      }
     }
   }
   .slider {
-    min-height: 480px;
+    min-height: 420px; //lmao
     .slide {
       padding: 0;
       background-color: $white;
-      -webkit-box-align: start;-ms-flex-align: start;align-items: flex-start;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
       h3 {
         @media #{$mobile} {
           font-size: $type-base;
@@ -24,8 +35,11 @@ section.products {
       }
       p {
         color: $black;
+        position: relative;
+        @include z-index-0;
       }
       .responsive-video {
+        @include z-index-1;
         &.text-content {
           @media #{$mobile} {
             height: auto;
@@ -51,7 +65,7 @@ section.products {
       background: transparent;
       @include vertical-center;
       span {
-        color: lighten($black, 50%);
+        color: $black;
         transition: 300ms $transition-ease;
       }
       &.prev {
@@ -66,7 +80,7 @@ section.products {
       }
       &:hover {
         span {
-          color: $black;
+          color: $blue;
         }
       }
     }

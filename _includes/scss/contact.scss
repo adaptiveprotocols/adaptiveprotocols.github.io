@@ -5,53 +5,14 @@ section.hero#hero-contact {
   h1 {
     color: $white;
   }
+  @media #{$mobile} {
+    background-image: url('/assets/img/hero/hero-contact--mobile.jpg');
+  }
 }
 .form-container {
   margin-top: $spacing-large;
   background: $white;
-  @include boxshadow($boxshadow-med-20);
-}
-.contact-form {
-  width: 100%;
-  text-align: left;
-  padding: $spacing-large;
-  background: $white;
-  @include boxshadow($boxshadow-med-20);
-}
-.form-field {
-  margin-bottom: $spacing-normal;
-  label {
-    display: block;
-    margin-bottom: $spacing-small;
-  }
-  input,
-  textarea {
-    display: block;
-    width: 100%;
-    border: none;
-    border-bottom: 2px solid $gray;
-    padding: $spacing-smallest;
-    transition: 300ms $transition-ease;
-    &:focus {
-      outline: none;
-      border-color: $blue;
-    }
-  }
-  textarea,
-  select {
-    border: 2px solid $gray;
-  }
-  select,
-  option {
-    padding: $spacing-smallest;
-  }
-  input,
-  textarea,
-  select,
-  option {
-    border-radius: 0;
-    -webkit-appearance: none;
-  }
+  @include boxshadow($boxshadow-xl-10);
 }
 .sales-map {
   position: relative;
@@ -122,6 +83,10 @@ section.hero#hero-contact {
     }
     &.is-scrolled {
       opacity: 1;
+    }
+    @media #{$mobile} {
+      height: 24px;
+      width: 24px;
     }
   }
   &.is-scrolled {

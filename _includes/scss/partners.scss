@@ -2,6 +2,9 @@ section.hero#hero-partners {
   background-image: url('/assets/img/hero/hero-partners.jpg');
   position: relative;
   @include overlay($dark-black);
+  @media #{$mobile} {
+    background-image: url('/assets/img/hero/hero-partners--mobile.jpg');
+  }
 }
 .partner-tier {
   align-self: stretch;

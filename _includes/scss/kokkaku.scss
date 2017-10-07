@@ -289,8 +289,10 @@
   background-color: transparent;
   transition: 400ms $transition-ease;
   overflow: visible;
+  align-self: stretch;
   .tile-content {
     padding: 20px;
+    height: 100%;
     transition: 400ms $transition-ease;
     @include boxshadow($boxshadow-sm-10);
     &.white {

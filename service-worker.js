@@ -29,14 +29,7 @@
 //      promise. If the promise is rejected, the service worker won't be installed.
 //   */
 //   event.waitUntil(
-//     /* The caches built-in is a promise-based API that helps you cache responses,
-//        as well as finding and deleting them.
-//     */
 //     caches
-//       /* You can open a cache by name, and this method returns a promise. We use
-//          a versioned cache name here so that we can remove old cache entries in
-//          one fell swoop later, when phasing out an older service worker.
-//       */
 //       .open(version + 'fundamentals')
 //       .then(function(cache) {
 //         /* After the cache is opened, we can fill it with the offline fundamentals.
@@ -85,9 +78,6 @@
 //            This pattern is known for producing "eventually fresh" responses,
 //            where we return cached responses immediately, and meanwhile pull
 //            a network response and store that in the cache.
-//
-//            Read more:
-//            https://ponyfoo.com/articles/progressive-networking-serviceworker
 //         */
 //         var networked = fetch(event.request)
 //           // We handle the network request with success and failure scenarios.
@@ -134,20 +124,9 @@
 //            error response.
 //         */
 //         function unableToResolve () {
-//           /* There's a couple of things we can do here.
-//              - Test the Accept header and then return one of the `offlineFundamentals`
-//                e.g: `return caches.match('/some/cached/image.png')`
-//              - You should also consider the origin. It's easier to decide what
-//                "unavailable" means for requests against your origins than for requests
-//                against a third party, such as an ad provider.
-//              - Generate a Response programmaticaly, as shown below, and return that.
-//           */
 //
 //           console.log('WORKER: fetch request failed in both cache and network.');
 //
-//           /* Here we're creating a response programmatically. The first parameter is the
-//              response body, and the second one defines the options for the response.
-//           */
 //           return new Response('<h1>Service Unavailable</h1>', {
 //             status: 503,
 //             statusText: 'Service Unavailable',
@@ -160,23 +139,12 @@
 //   );
 // });
 //
-// /* The activate event fires after a service worker has been successfully installed.
-//    It is most useful when phasing out an older version of a service worker, as at
-//    this point you know that the new worker was installed correctly. In this example,
-//    we delete old caches that don't match the version in the worker we just finished
-//    installing.
-// */
 // self.addEventListener("activate", function(event) {
-//   /* Just like with the install event, event.waitUntil blocks activate on a promise.
-//      Activation will fail unless the promise is fulfilled.
-//   */
+//
 //   console.log('WORKER: activate event in progress.');
 //
 //   event.waitUntil(
 //     caches
-//       /* This method returns a promise which will resolve to an array of available
-//          cache keys.
-//       */
 //       .keys()
 //       .then(function (keys) {
 //         // We return a promise that settles when all outdated caches are deleted.

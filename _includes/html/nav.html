@@ -10,22 +10,22 @@
     <nav class="nav">
       <ul>
         <li class="nav-item">
-          <a href="{{"/products" | relative_url}}"{% if page.url == "/products/" %} class="current"{% endif %}>Products</a>
+          <a href="{{"/products" | relative_url}}"{% if page.url == "/products/" %} class="current"{% endif %} title="Adaptiva Products">Products</a>
         </li>
         <li class="nav-item">
-          <a href="#0"{% if page.url == "/insights/" %} class="current"{% endif %}>Insights</a>
+          <a href="https://insights.adaptiva.com" title="Adaptiva Insights">Insights</a>
         </li>
         <li class="nav-item">
-          <a href="{{"/about" | relative_url }}"{% if page.url == "/about/" %} class="current"{% endif %}>About</a>
+          <a href="{{"/about" | relative_url }}"{% if page.url == "/about/" %} class="current"{% endif %} title="About Adaptiva">About</a>
         </li>
         <li class="nav-item">
-          <a href="{{"/careers" | relative_url }}"{% if page.url == "/careers/" %} class="current"{% endif %}>Careers</a>
+          <a href="{{"/careers" | relative_url }}"{% if page.url == "/careers/" %} class="current"{% endif %} title="Adaptiva Careers">Careers</a>
         </li>
         <li class="nav-item">
-          <a href="/contact"{% if page.url == "/contact/" %} class="current"{% endif %}>Contact</a>
+          <a href="/contact"{% if page.url == "/contact/" %} class="current"{% endif %} title="Contact Adaptiva">Contact</a>
         </li>
         <li class="nav-item">
-          <a href="javascript:void(0)" class="button outline white js-trial">Free Trial</a>
+          <a href="javascript:void(0)" class="button outline white js-trial" title="Get a free or product demo">Free Trial</a>
         </li>
       </ul>
     </nav>

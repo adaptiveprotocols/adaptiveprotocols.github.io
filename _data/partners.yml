@@ -47,6 +47,10 @@
   svg: dimension-data-logo.svg
   link: 'http://dimensiondata.com'
 
+- name: DXC Technology
+  png: dxc-technology-logo.png
+  link: 'http://www.dxc.technology/'
+
 - name: FlexManage
   png: flex-manage.png
   link: 'http://flexmanage.com'
@@ -58,10 +62,6 @@
 - name: Fujitsu
   svg: fujitsu-logo.svg
   link: 'http://www.fujitsu.com/'
-
-- name: Dimension Data
-  svg: dimension-data-logo.svg
-  link: 'http://dimensiondata.com'
 
 - name: HEAT Software
   svg: heat-logo.svg
@@ -79,10 +79,6 @@
   png: insight-logo.png
   link: 'http://www.insight.com/'
   sq: true
-
-- name: Hewlett Packard Enterprise
-  png: hewlett-packard-enterprise-logo.png
-  link: 'https://www.hpe.com.html'
 
 - name: Juriba
   svg: juriba-logo.svg

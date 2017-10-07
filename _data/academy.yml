@@ -906,3 +906,38 @@
     - category: 'Video'
     - category: 'Podcast'
   img: 'podcast-adi-kunduri.jpg'
+
+- title: "E³ Podcast: Adi Kunduri (Video)"
+  link: 'https://vimeo.com/adaptiva/e3-adi-kunduri'
+  date: 20170810
+  posted: 'August 10 2017'
+  type: podcast
+  classes:
+    - class: 'video'
+    - class: 'podcast'
+  categories:
+    - category: 'Video'
+    - category: 'Podcast'
+  img: 'podcast-adi-kunduri.jpg'
+
+- title: "E³ Podcast: Harjit Dhaliwal"
+  link: 'https://soundcloud.com/adaptiva/2017-09-13-e3-harjit-social-media'
+  date: 20171004
+  posted: 'September 21 2017'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
+  img: 'podcast-harjit-dhaliwal.jpg'
+
+- title: "E³ Podcast: Andy Malone"
+  link: 'https://soundcloud.com/adaptiva/enterprise-endpoint-security-with-andy-malone'
+  date: 20171004
+  posted: 'October 4 2017'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
+  img: 'podcast-andy-malone.png'

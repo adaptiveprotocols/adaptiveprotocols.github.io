@@ -62,6 +62,13 @@ footer.footer {
   border-top: 2px solid $dark-gray;
   p {
     color: $black;
+    a:not(.button):not(.outline-button) {
+      box-shadow: none;
+      border-bottom: 2px solid $black;
+      &:hover {
+        box-shadow: none;
+      }
+    }
   }
   @media #{$tablet}, #{$mobile} {
     padding: $spacing-normal $spacing-large;

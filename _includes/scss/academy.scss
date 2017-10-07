@@ -1,7 +1,10 @@
 section.hero#hero-academy {
   position: relative;
   @include overlay($dark-black);
-  background-image: url('/assets/img/hero/hero-sccm-academy.jpg');
+  background-image: url('/assets/img/hero/hero-academy.jpg');
+  @media #{$mobile} {
+    background-image: url('/assets/img/hero/hero-academy--mobile.jpg');
+  }
 }
 .academy-dropdown {
   position: relative;
