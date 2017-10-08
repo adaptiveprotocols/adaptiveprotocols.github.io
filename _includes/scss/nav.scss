@@ -132,9 +132,6 @@ section.navbar {
           display: inline-block;
           border-color: $blue;
           color: $blue;
-          &:hover {
-            background-color: $blue;
-          }
         }
       }
     }
@@ -173,8 +170,10 @@ section.navbar.is-scrolled {
   padding-top: 6px;
   cursor: pointer;
   transition: 400ms $transition-ease;
-  &:hover {
-    opacity: .68;
+  @media #{$desktop-sm},#{$desktop},#{$desktop-xl} {
+    &:hover {
+      opacity: .68;
+    }
   }
 }
 // Logo SVG colors

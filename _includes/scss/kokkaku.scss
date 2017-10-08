@@ -503,11 +503,6 @@ li.tertiary-nav-item {
     color: lighten($black, 40%);
     transition: 600ms $transition-ease-in;
   }
-  &:hover {
-    span {
-      color: $black;
-    }
-  }
   &.is-selected {
     span {
       color: $black;
@@ -517,6 +512,11 @@ li.tertiary-nav-item {
     }
   }
   @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
+    &:hover {
+      span {
+        color: $black;
+      }
+    }
     &::after {
       content: '';
       display: block;
