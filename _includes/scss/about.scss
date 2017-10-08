@@ -32,8 +32,10 @@ section.about {
   }
   .tertiary-nav-item,
   .is-selected {
-    &::after {
-      display: none;
+    @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
+      &::after {
+        display: none;
+      }  
     }
   }
   .tertiary-nav-item {
@@ -67,9 +69,11 @@ section.about {
     &:nth-child(7n+7) {
       transition: opacity 300ms 600ms;
     }
-    &:hover {
-      img {
-        box-shadow: 0 0 0 6px $blue;
+    @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
+      &:hover {
+        img {
+          box-shadow: 0 0 0 6px $blue;
+        }
       }
     }
     &.is-selected {
