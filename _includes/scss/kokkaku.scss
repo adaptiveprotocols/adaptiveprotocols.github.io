@@ -508,23 +508,30 @@ li.tertiary-nav-item {
       color: $black;
     }
   }
-  &::after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: $blue;
-    transition: 600ms $transition-ease-in;
-  }
   &.is-selected {
     span {
       color: $black;
+      @media #{$mobile}, #{$tablet} {
+        color: $blue;
+      }
     }
+  }
+  @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
     &::after {
-      width: 100%;
+      content: '';
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: $blue;
+      transition: 600ms $transition-ease-in;
+    }
+    &.is-selected {
+      &::after {
+        width: 100%;
+      }
     }
   }
 }

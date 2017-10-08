@@ -16,23 +16,25 @@ section.navbar {
   }
   .logo {
     position: relative;
-    &::after {
-      content: 'Smart Scaling for Enterprise IT';
-      font-size: $type-smaller;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      left: 100%;
-      width: 200px;
-      color: $white;
-      margin-left: -$spacing-small;
-      opacity: 0;
-      transition: margin-left 500ms $transition-ease-in, opacity 250ms linear;
-    }
-    &:hover {
+    @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
       &::after {
-        opacity: 1;
-        margin-left: $spacing-small;
+        content: 'Smart Scaling for Enterprise IT';
+        font-size: $type-smaller;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 100%;
+        width: 200px;
+        color: $white;
+        margin-left: -$spacing-small;
+        opacity: 0;
+        transition: margin-left 500ms $transition-ease-in, opacity 250ms linear;
+      }
+      &:hover {
+        &::after {
+          opacity: 1;
+          margin-left: $spacing-small;
+        }
       }
     }
     @media #{$tablet}, #{$mobile} {
@@ -67,32 +69,36 @@ section.navbar {
       text-decoration: none;
       color: $white;
       transition: 400ms $transition-ease-in;
-      &::before {
-        content: '';
-        display: block;
-        position: absolute;
-        bottom: $spacing-normal;
-        left: 0;
-        width: 0;
-        height: 2px;
-        transition: 400ms $transition-ease-in;
-        background: lighten($blue, 25%);
-      }
       &.button {
         line-height: 50px;
         padding: 0 $spacing-normal;
-        &::before {
-          display: none;
-        }
       }
-      &.current,
-      &:hover {
-        color: lighten($blue, 25%);
-        &.button {
-          color: $white;
-        }
+      @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
         &::before {
-          width: 100%;
+          content: '';
+          display: block;
+          position: absolute;
+          bottom: $spacing-normal;
+          left: 0;
+          width: 0;
+          height: 2px;
+          transition: 400ms $transition-ease-in;
+          background: lighten($blue, 25%);
+        }
+        &.button {
+          &::before {
+            display: none;
+          }
+        }
+        &.current,
+        &:hover {
+          color: lighten($blue, 25%);
+          &.button {
+            color: $white;
+          }
+          &::before {
+            width: 100%;
+          }
         }
       }
     }
@@ -119,9 +125,6 @@ section.navbar {
         color: $black;
         line-height: $spacing-small;
         padding: $spacing-small;
-        &::before {
-          display: none;
-        }
         &.current {
           color: $blue;
         }
@@ -146,9 +149,6 @@ section.navbar.is-scrolled {
   li.nav-item {
     a {
       line-height: 68px;
-      &::before {
-        bottom: 0;
-      }
       &.button {
         line-height: 42px;
         padding: 0 $spacing-small;
@@ -158,6 +158,11 @@ section.navbar.is-scrolled {
         &.button {
           line-height: 50px;
           padding: 0 $spacing-normal;
+        }
+      }
+      @media #{$desktop-sm},#{$desktop},#{$desktop-xl} {
+        &::before {
+          bottom: 0;
         }
       }
     }
