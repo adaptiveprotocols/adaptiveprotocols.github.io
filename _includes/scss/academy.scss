@@ -31,9 +31,11 @@ section.hero#hero-academy {
       color: $black;
       font-size: $type-base;
     }
-    &:hover {
-      @include boxshadow($glow-white);
-      background: rgba($white, 0.06);
+    @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
+      &:hover {
+        @include boxshadow($glow-white);
+        background: rgba($white, 0.06);
+      }
     }
   }
   &::before {
@@ -92,8 +94,10 @@ section.academy {
     @include z-index-2;
     font-size: $type-big;
   }
-  &:hover {
-    @include boxshadow($boxshadow-med-20);
+  @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
+    &:hover {
+      @include boxshadow($boxshadow-med-20);
+    }
   }
 }
 .asset-date {

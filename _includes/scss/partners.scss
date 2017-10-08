@@ -32,20 +32,22 @@ section.hero#hero-partners {
       color: adjust-hue($orange, 12%);
     }
   }
-  &:hover {
-    &.bronze {
-      .tile-content {
-        box-shadow: 0 .68em 1em -.42em rgba(black, .2), inset 0 0 0 .68em darken($orange, 20%);
+  @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
+    &:hover {
+      &.bronze {
+        .tile-content {
+          box-shadow: 0 .68em 1em -.42em rgba(black, .2), inset 0 0 0 .68em darken($orange, 20%);
+        }
       }
-    }
-    &.silver {
-      .tile-content {
-        box-shadow: 0 .68em 1em -.42em rgba(black, .2), inset 0 0 0 .68em darken($gray, 20%);
+      &.silver {
+        .tile-content {
+          box-shadow: 0 .68em 1em -.42em rgba(black, .2), inset 0 0 0 .68em darken($gray, 20%);
+        }
       }
-    }
-    &.gold {
-      .tile-content {
-        box-shadow: 0 .68em 1em -.42em rgba(black, .2), inset 0 0 0 .68em adjust-hue($orange, 12%);
+      &.gold {
+        .tile-content {
+          box-shadow: 0 .68em 1em -.42em rgba(black, .2), inset 0 0 0 .68em adjust-hue($orange, 12%);
+        }
       }
     }
   }
@@ -83,10 +85,12 @@ section.hero#hero-partners {
       width: auto;
     }
   }
-  &:hover {
-    svg,
-    img {
-      -webkit-filter: grayscale(0%);filter: grayscale(0%);
+  @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
+    &:hover {
+      svg,
+      img {
+        -webkit-filter: grayscale(0%);filter: grayscale(0%);
+      }
     }
   }
 }

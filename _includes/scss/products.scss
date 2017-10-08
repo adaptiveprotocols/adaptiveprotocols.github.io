@@ -78,10 +78,12 @@ section.products {
           margin-right: $spacing-normal;
         }
       }
-      &:hover {
-        span {
-          color: $blue;
-        }
+      @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
+        &:hover {
+          span {
+            color: $blue;
+          }
+        }  
       }
     }
     .slide {
@@ -188,17 +190,21 @@ section.products {
     width: 83.33%;
     width: calc(100% / 12 * 10);
   }
-  &.is-selected,
-  &:hover {
+  &.is-selected {
     .product-feature-name {
       color: $blue;
     }
   }
-  &:hover {
-    background: rgba($blue, .1);
-  }
   &.is-selected {
     background: rgba($blue, .16);
+  }
+  @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
+    &:hover {
+      background: rgba($blue, .1);
+      .product-feature-name {
+        color: $blue;
+      }
+    }
   }
   @media #{$tablet}, #{$mobile} {
     -webkit-box-orient: horizontal;
@@ -244,9 +250,11 @@ section.products-brands {
         color: $white;
       }
     }
-    &:hover {
-      span {
-        color: $white;
+    @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
+      &:hover {
+        span {
+          color: $white;
+        }
       }
     }
   }

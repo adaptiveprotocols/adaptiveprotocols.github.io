@@ -31,10 +31,12 @@ a.job {
     right: $spacing-small;
     transition: 300ms $transition-ease-in;
   }
-  &:hover {
-    @include boxshadow($boxshadow-med-20);
-    span {
-      right: $spacing-smallest;
+  @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
+    &:hover {
+      @include boxshadow($boxshadow-med-20);
+      span {
+        right: $spacing-smallest;
+      }
     }
   }
   &.is-scrolled {
@@ -64,9 +66,11 @@ section.color-block.job-description {
     color: lighten($black, 30%);
     transition: 300ms $transition-ease-in;
     font-size: $type-small;
-    &:hover {
-      box-shadow: inset 0 0 0 2px $gray;
-      color: $black;
+    @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
+      &:hover {
+        box-shadow: inset 0 0 0 2px $gray;
+        color: $black;
+      }
     }
   }
 }

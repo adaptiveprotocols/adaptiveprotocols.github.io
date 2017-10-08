@@ -35,9 +35,7 @@ section.hero#hero-contact {
     cursor: pointer;
     @include boxshadow($boxshadow-sm-30);
     @include z-index-2;
-    &:hover {
-      @include boxshadow($boxshadow-sm-50);
-    }
+
     &#ada-hq {
       bottom: 50%;
       left: 12.6%;
@@ -78,15 +76,18 @@ section.hero#hero-contact {
       left: 21%;
       background: $purple;
     }
-    &:hover {
-      transform: scale(1.25);
-    }
     &.is-scrolled {
       opacity: 1;
     }
+    @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
+      &:hover {
+        transform: scale(1.25);
+        @include boxshadow($boxshadow-sm-50);
+      }
+    }
     @media #{$mobile} {
-      height: 24px;
-      width: 24px;
+      height: 20px;
+      width: 20px;
     }
   }
   &.is-scrolled {
@@ -133,9 +134,11 @@ section.hero#hero-contact {
         transform: rotate(-45deg);
       }
     }
-    &:hover {
-      span {
-        background: $bright-blue;
+    @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
+      &:hover {
+        span {
+          background: $bright-blue;
+        }
       }
     }
   }
@@ -162,9 +165,11 @@ section.hero#hero-contact {
       display: block;
       padding: $spacing-small;
     }
-    &:hover {
-      .icon {
-        fill: $bright-blue;
+    @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
+      &:hover {
+        .icon {
+          fill: $bright-blue;
+        }
       }
     }
   }

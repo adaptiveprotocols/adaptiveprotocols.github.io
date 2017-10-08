@@ -41,20 +41,22 @@
       transform-origin: center;
       @include z-index-1;
     }
-    &:hover {
-      width: 60px;
-      height: 60px;
-      &::before {
-        width: 68px;
-        height: 68px;
-        -webkit-animation: scrollRing1 3600ms linear infinite alternate;
-                animation: scrollRing1 3600ms linear infinite alternate;
-      }
-      &::after {
-        width: 68px;
-        height: 68px;
-        -webkit-animation: scrollRing2 4200ms linear infinite alternate;
-                animation: scrollRing2 4200ms linear infinite alternate;
+    @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
+      &:hover {
+        width: 60px;
+        height: 60px;
+        &::before {
+          width: 68px;
+          height: 68px;
+          -webkit-animation: scrollRing1 3600ms linear infinite alternate;
+                  animation: scrollRing1 3600ms linear infinite alternate;
+        }
+        &::after {
+          width: 68px;
+          height: 68px;
+          -webkit-animation: scrollRing2 4200ms linear infinite alternate;
+                  animation: scrollRing2 4200ms linear infinite alternate;
+        }
       }
     }
   }
@@ -157,9 +159,11 @@
       transform: rotate(-45deg);
     }
   }
-  &:hover {
-    span {
-      background: $orange;
+  @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
+    &:hover {
+      span {
+        background: $orange;
+      }
     }
   }
   &.is-closed {
