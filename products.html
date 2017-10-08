@@ -631,35 +631,11 @@ redirect_from:
 </section>
 <section class="color-block lighter-gray">
   <div class="content overflow">
-    <h2 class="centered js-scroll slideUp blue">Product Insights</h2>
+    <h2 class="centered js-scroll slideUp blue">Latest Insights</h2>
     <div class="grid-container">
-      <a class="j-col j-col-4 insights-article tile js-scroll" href="#0">
-        <div class="tile-content white">
-          <div class="insights-article-img">
-            <img src="{{"/assets/img/insights/insights-1.jpg"}}">
-          </div>
-          <p class="insights-article-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque illum necessitatibus, soluta sit nihil maxime iste iusto voluptatem impedit vel?</p>
-          <span href="#0" class="button">Read More</span>
-        </div>
-      </a>
-      <a class="j-col j-col-4 insights-article tile js-scroll" href="#0">
-        <div class="tile-content white">
-          <div class="insights-article-img">
-            <img src="{{"/assets/img/insights/insights-2.jpg"}}">
-          </div>
-          <p class="insights-article-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque illum necessitatibus, soluta sit nihil maxime iste iusto voluptatem impedit vel?</p>
-          <span href="#0" class="button">Read More</span>
-        </div>
-      </a>
-      <a class="j-col j-col-4 insights-article tile js-scroll" href="#0">
-        <div class="tile-content white">
-          <div class="insights-article-img">
-            <img src="{{"/assets/img/insights/insights-3.jpg"}}">
-          </div>
-          <p class="insights-article-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque illum necessitatibus, soluta sit nihil maxime iste iusto voluptatem impedit vel?</p>
-          <span href="#0" class="button">Read More</span>
-        </div>
-      </a>
+      {% for post in site.data.insights limit:3 %}
+        {% include html/insights.html %}
+      {% endfor %}
     </div>
   </div>
 </section>
