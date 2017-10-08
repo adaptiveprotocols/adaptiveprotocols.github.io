@@ -116,16 +116,11 @@
   height: 100%;
   background: rgba($dark-black, .98);
   overflow: auto;
-  visibility: hidden;
   @include z-index-9; // whoa! for real tho
   @include vertical-center;
   iframe {
     border-color: $white;
     background: rgba($white, 0.06);
-  }
-  &.is-visible {
-    animation: fadeIn 500ms $transition-ease 1 forwards;
-    visibility: visible;
   }
 }
 .trial-content {

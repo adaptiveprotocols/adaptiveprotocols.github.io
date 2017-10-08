@@ -384,12 +384,12 @@ $(window).resize(function() {
 
   // one-off stuff
   // Free trial button
-  $('.js-trial').click(function(){
-    $('.js-trial-container').addClass('is-visible');
+  $('.js-trial').click(function(){ // user clicks free trial button
+    $('.js-trial-container').fadeIn(300); // fade in lightbox
   });
-  $('.js-trial-close').click(function(){
-    $(this).addClass('is-closed');
-    $('.js-trial-container').removeClass('is-visible');
+
+  $('.js-trial-close').click(function(){ // user clicks X
+    $('.js-trial-container').fadeOut(300); // fade out lightbox
   });
 });
 
