@@ -260,6 +260,7 @@ $('.territory').click(function(){ // user clicks on dot on map
   $('.sales-map-profile#' + salesID) // find profile with same ID as clicked dot
     .addClass('is-current') // add mod class for current item
     .show(); // show profile for clicked dot
+  $('html,body').css('overflow','hidden');
 });
 
 function prevProfile() {
@@ -299,6 +300,7 @@ function lastProfile() {
 function closeProfile() {
   $salesProfile.hide()
     .removeClass('is-visible is-current next prev');
+  $('html,body').css('overflow', '');
 }
 
 $('.js-prev').click(prevProfile); // previous arrow triggers previous profile
