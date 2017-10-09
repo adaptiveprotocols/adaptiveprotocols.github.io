@@ -35,4 +35,5 @@ jQuery(document).ready(function($) { //safety pants!
   } else {
     console.log('CLIENT: service worker is not supported.');
   }
+  {% include js/secret.js %}
 })();
