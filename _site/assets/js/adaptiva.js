@@ -340,25 +340,24 @@ $salesProfile.swipe({ // user swipes sales profile
   threshold:178 // user must swipe at least 178px across
 });
 
-  $(window).resize(function() {
-	var $assetTitle = $('.asset-title'),
-			assetWidth  = $assetTitle.width();
-
-	$assetTitle.css('height', assetWidth + 32);
-}).resize();
-
-$('select#academy').change(function() {
+  $('select#academy').change(function() {
 	var value =  this.value,
       $asset = $('.asset');
 	$asset.hide()
     .removeClass('is-showing');
-  $('.asset.' + value).show()
-    .addClass('is-showing');
+  $('.asset.' + value).addClass('is-showing').show();
   if (value == 'all') {
   	$asset.show()
       .addClass('is-showing');
   }
 });
+
+$(window).resize(function() {
+  var $assetTitle = $('.asset.is-showing .asset-title'),
+			assetWidth  = $assetTitle.width();
+
+	$assetTitle.css('height', assetWidth + 32);
+}).resize();
 
   $('.product-feature-item').click(function(){
 
