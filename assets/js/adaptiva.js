@@ -17,10 +17,12 @@ jQuery(document).ready(function($) { //safety pants!
   // Free trial button
   $('.js-trial').click(function(){ // user clicks free trial button
     $('.js-trial-container').fadeIn(300); // fade in lightbox
+    $('html,body').css('overflow', 'hidden');
   });
 
   $('.js-trial-close').click(function(){ // user clicks X
     $('.js-trial-container').fadeOut(300); // fade out lightbox
+    $('html,body').css('overflow','');
   });
 });
 
