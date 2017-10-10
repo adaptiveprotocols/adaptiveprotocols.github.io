@@ -193,6 +193,7 @@ bodyclass: home
   <div class="content overflow">
     <h2 class="centered js-scroll slideUp">Latest Insights</h2>
     <div class="grid-container">
+      {% assign insights = site.data.academy | sort: 'date' | reverse %}
       {% for post in site.data.insights limit:3 %}
         {% include html/insights.html %}
       {% endfor %}

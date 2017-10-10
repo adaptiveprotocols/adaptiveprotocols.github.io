@@ -540,7 +540,7 @@ redirect_from:
 </section>
 <section class="color-block lighter-gray overflow">
   <div class="content">
-    <h2 class="blue centered">Product Suite</h2>
+    <h2 class="blue centered">Solutions</h2>
     <div class="grid-container">
       <div class="j-col j-col-4 tile">
         <div class="tile-content centered white vertical-distribute space-between">
@@ -650,6 +650,7 @@ redirect_from:
   <div class="content overflow">
     <h2 class="centered js-scroll slideUp blue">Latest Insights</h2>
     <div class="grid-container">
+      {% assign insights = site.data.academy | sort: 'date' | reverse %}
       {% for post in site.data.insights limit:3 %}
         {% include html/insights.html %}
       {% endfor %}
