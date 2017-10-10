@@ -3,7 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="robots" content="noindex">
+    <link rel="preload" href="https://use.typekit.net/abc1def.js" as="script" crossorigin>
+    <link rel="preload" href="https://use.typekit.net/abc1def.css" as="style" crossorigin>
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'des5qhx',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
     <link rel="canonical" href="http://localhost:4000/partners/">
     <meta name="author" content="Adaptiva">
     
@@ -24,10 +35,10 @@
     </script>
     <title>Partners / Adaptiva - Smart Scaling for Enterprise IT</title>
     <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="/assets/css/adaptiva.css?v=3406a9d01d0b8a98006abce1a4c20cd6b2612e32">
+    <link rel="stylesheet" href="/assets/css/adaptiva.css?v=e6adf867af53882e6bd28e14e5f0f2bd1d5eea09">
     <link rel="manifest" href="/manifest.json">
-    <script src="https://use.typekit.net/des5qhx.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <!-- <script src="https://use.typekit.net/des5qhx.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script> -->
   </head>
   <body class="partners">
     <div class="js-trial-container" style="display:none">
@@ -1047,7 +1058,7 @@
     <script type="text/javascript" src="/assets/js/touchswipe.js"></script>
     <script type="text/javascript" src="/assets/js/adaptiva.js"></script>
     <script type="text/javascript" language="javascript">
-      var sf14gv = 22025; 
+      var sf14gv = 22025;
       (function() {
       var sf14g = document.createElement('script'); sf14g.type = 'text/javascript'; sf14g.async = true;
       sf14g.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 't.sf14g.com/sf14g.js';

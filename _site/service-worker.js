@@ -2,15 +2,8 @@
 
 console.log('WORKER: executing.');
 
-/* A version number is useful when updating the worker logic,
-   allowing you to remove outdated cache entries during the update.
-*/
 var version = 'v2::';
 
-/* These resources will be downloaded and cached by the service worker
-   during the installation process. If any resource fails to be downloaded,
-   then the service worker won't be installed either.
-*/
 var offlineFundamentals = [
   '',
   'assets/css/adaptiva.css',
@@ -20,8 +13,6 @@ var offlineFundamentals = [
 ];
 
 /* The install event fires when the service worker is first installed.
-   You can use this event to prepare the service worker to be able to serve
-   files while visitors are offline.
 */
 self.addEventListener("install", function(event) {
   console.log('WORKER: install event in progress.');
@@ -32,10 +23,6 @@ self.addEventListener("install", function(event) {
     caches
       .open(version + 'fundamentals')
       .then(function(cache) {
-        /* After the cache is opened, we can fill it with the offline fundamentals.
-           The method below will add all resources in `offlineFundamentals` to the
-           cache, after making requests for them.
-        */
         return cache.addAll(offlineFundamentals);
       })
       .then(function() {
@@ -44,11 +31,6 @@ self.addEventListener("install", function(event) {
   );
 });
 
-/* The fetch event fires whenever a page controlled by this service worker requests
-   a resource. This isn't limited to `fetch` or even XMLHttpRequest. Instead, it
-   comprehends even the request for the HTML page on first load, as well as JS and
-   CSS resources, fonts, any images, etc.
-*/
 self.addEventListener("fetch", function(event) {
   console.log('WORKER: fetch event in progress.');
 
@@ -62,10 +44,7 @@ self.addEventListener("fetch", function(event) {
     console.log('WORKER: fetch event ignored.', event.request.method, event.request.url);
     return;
   }
-  /* Similar to event.waitUntil in that it blocks the fetch event on a promise.
-     Fulfillment result will be used as the response, and rejection will end in a
-     HTTP response indicating failure.
-  */
+
   event.respondWith(
     caches
       /* This method returns a promise that resolves to a cache entry matching
@@ -103,7 +82,7 @@ self.addEventListener("fetch", function(event) {
             // We open a cache to store the response for this request.
             .open(version + 'pages')
             .then(function add(cache) {
-              /* We store the response for this request. It'll later become
+              /* Store the response for this request. It'll later become
                  available to caches.match(event.request) calls, when looking
                  for cached responses.
               */
