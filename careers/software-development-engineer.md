@@ -1,7 +1,7 @@
 ---
 layout: job
 title: Software Development Engineer
-meta: Apply for the software development engineer position at Adaptiva HQ in Bellevue, WA
+meta: "Apply for the software development engineer position at Adaptiva HQ in Bellevue, WA"
 bodyclass: job
 ---
 ## Company

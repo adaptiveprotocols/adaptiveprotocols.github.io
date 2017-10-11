@@ -1,7 +1,7 @@
 ---
 layout: job
 title: Director of Product Marketing
-meta: Apply for the Director of Product Marketing position at Adaptiva HQ in Bellevue, WA
+meta: "Apply for the Director of Product Marketing position at Adaptiva HQ in Bellevue, WA"
 bodyclass: job
 ---
 Adaptiva is searching for a Director of Product Marketing to report to the VP of Marketing in managing the go-to-market planning and content for the company’s product line. This role will offer the opportunity to set the product marketing strategy for Adaptiva, an enterprise IT software company which is rapidly growing, highly profitable, and working with over 150 of the largest Fortune 1000 companies in the world.

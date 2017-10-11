@@ -77,6 +77,21 @@ li {
   &.white {
     color: $white !important;
   }
+  &.lighter-gray {
+    color: $lighter-gray !important;
+  }
+  &.light-gray {
+    color: $light-gray !important;
+  }
+  &.gray {
+    color: $gray !important;
+  }
+  &.dark-gray {
+    color: $dark-gray !important;
+  }
+  &.black {
+    color: $black !important;
+  }
   &.blue {
     color: $blue !important;
   }
@@ -120,7 +135,7 @@ p {
     @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
       &:hover {
         box-shadow: inset 0 -1.618em 0 0 $bright-blue;
-      }  
+      }
     }
   }
 }

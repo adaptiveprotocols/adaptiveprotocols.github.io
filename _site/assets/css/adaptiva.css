@@ -84,6 +84,11 @@ h4 { font-size: 0.875rem; text-transform: uppercase; letter-spacing: .26em; }
 
 h1, h2, h3, h4, h5, p, span, div, li { color: #333; }
 h1.white, h2.white, h3.white, h4.white, h5.white, p.white, span.white, div.white, li.white { color: #fff !important; }
+h1.lighter-gray, h2.lighter-gray, h3.lighter-gray, h4.lighter-gray, h5.lighter-gray, p.lighter-gray, span.lighter-gray, div.lighter-gray, li.lighter-gray { color: #f9f9f9 !important; }
+h1.light-gray, h2.light-gray, h3.light-gray, h4.light-gray, h5.light-gray, p.light-gray, span.light-gray, div.light-gray, li.light-gray { color: #eee !important; }
+h1.gray, h2.gray, h3.gray, h4.gray, h5.gray, p.gray, span.gray, div.gray, li.gray { color: #ccc !important; }
+h1.dark-gray, h2.dark-gray, h3.dark-gray, h4.dark-gray, h5.dark-gray, p.dark-gray, span.dark-gray, div.dark-gray, li.dark-gray { color: #404041 !important; }
+h1.black, h2.black, h3.black, h4.black, h5.black, p.black, span.black, div.black, li.black { color: #333 !important; }
 h1.blue, h2.blue, h3.blue, h4.blue, h5.blue, p.blue, span.blue, div.blue, li.blue { color: #0860b8 !important; }
 h1.dark-blue, h2.dark-blue, h3.dark-blue, h4.dark-blue, h5.dark-blue, p.dark-blue, span.dark-blue, div.dark-blue, li.dark-blue { color: #073971; }
 h1.bright-blue, h2.bright-blue, h3.bright-blue, h4.bright-blue, h5.bright-blue, p.bright-blue, span.bright-blue, div.bright-blue, li.bright-blue { color: #41cdfc !important; }
