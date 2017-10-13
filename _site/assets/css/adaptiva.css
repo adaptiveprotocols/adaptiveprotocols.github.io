@@ -101,7 +101,9 @@ a:focus { outline: none; }
 
 p { font-weight: 500; color: #333; margin-top: 0; margin-bottom: 1.618rem; line-height: 1.618em; }
 p a:not(.button):not(.outline-button) { font-weight: 700; border-bottom: 1px solid #41cdfc; box-shadow: inset 0 -0.26em 0 0 #41cdfc; transition: 300ms ease-in-out; color: inherit; }
-@media screen and (min-width: 960px) and (max-width: 1280px), screen and (min-width: 1281px) and (max-width: 1919px), screen and (min-width: 1920px) { p a:not(.button):not(.outline-button):hover { box-shadow: inset 0 -1.618em 0 0 #41cdfc; } }
+p a:not(.button):not(.outline-button).plain-underline { font-weight: 500; color: inherit; box-shadow: none; border-bottom: 2px solid #333; }
+@media screen and (min-width: 960px) and (max-width: 1280px), screen and (min-width: 1281px) and (max-width: 1919px), screen and (min-width: 1920px) { p a:not(.button):not(.outline-button):hover { box-shadow: inset 0 -1.618em 0 0 #41cdfc; }
+  p a:not(.button):not(.outline-button).plain-underline:hover { box-shadow: none; } }
 
 strong { font-weight: 700; }
 
