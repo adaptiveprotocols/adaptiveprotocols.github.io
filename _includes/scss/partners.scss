@@ -76,21 +76,19 @@ section.hero#hero-partners {
     max-width: 178px;
     max-height: 68px;
     margin: 0 auto $spacing-normal;
-    -webkit-filter: grayscale(100%);filter: grayscale(100%);
     transition: 300ms $transition-ease;
+  }
+  &.big {
+    svg,
+    img {
+      max-width: 200px;
+      max-height: 68px;
+    }
   }
   &.is-sq {
     img,
     svg {
       width: auto;
-    }
-  }
-  @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
-    &:hover {
-      svg,
-      img {
-        -webkit-filter: grayscale(0%);filter: grayscale(0%);
-      }
     }
   }
 }

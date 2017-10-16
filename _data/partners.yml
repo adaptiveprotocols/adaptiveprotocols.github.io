@@ -1,10 +1,12 @@
 - name: Accenture
   svg: accenture-logo.svg
   link: 'http://accenture.com'
+  big: true
 
 - name: Avanade
   svg: avanade-logo.svg
   link: 'http://avanade.com'
+  big: true
 
 - name: Better Direct
   png: better-direct-logo.png
@@ -18,6 +20,10 @@
 - name: Capita
   svg: capita-logo.svg
   link: 'http://capita.com'
+
+- name: CDW
+  svg: cdw-logo.svg
+  link: 'https://cdw.com'
 
 - name: Cellent AG
   svg: cellent-logo.svg
@@ -50,6 +56,7 @@
 - name: DXC Technology
   png: dxc-technology-logo.png
   link: 'http://www.dxc.technology/'
+  big: true
 
 - name: FlexManage
   png: flex-manage.png
@@ -67,9 +74,18 @@
   svg: heat-logo.svg
   link: 'http://flexmanage.com'
 
+- name: Hewlett-Packard
+  svg: hp-logo.svg
+  link: 'https://hp.com'
+
+- name: HP Enterprise
+  svg: hpe-logo.svg
+  link: 'https://hpe.com'
+
 - name: IBM
   svg: ibm-logo.svg
   link: 'http://ibm.com'
+  big: true
 
 - name: Infront Consulting Group
   svg: infront-consulting-logo.svg
@@ -91,6 +107,7 @@
 - name: Microsoft
   svg: microsoft-logo.svg
   link: 'http://microsoft.com'
+  big: true
 
 - name: Netcentrics
   png: netcentrics-logo.png
@@ -100,6 +117,10 @@
   png: netrix-logo.png
   link: 'http://netrixllc.com/'
   sq: true
+
+- name: NTT Data
+  svg: ntt-data-logo.svg
+  link: 'http://www.nttdata.com/global/en/'
 
 - name: Prosource Solutions
   png: prosource-solutions-logo.png
@@ -128,9 +149,10 @@
   png: thomas-duryea-logo.png
   link: 'http://www.thomasduryea.com.au/'
 
-- name: VMware AirWatch
-  svg: vmware-airwatch.svg
-  link: 'https://www.vmware.com/products/airwatch-enterprise-mobility-management.html'
+- name: VMware
+  svg: vmware-logo.svg
+  link: 'https://www.vmware.com/'
+  big: true
 
 - name: Windows Management Experts
   png: windows-management-experts-logo.png
