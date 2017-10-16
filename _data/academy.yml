@@ -941,3 +941,13 @@
   categories:
     - category: 'Podcast'
   img: 'podcast-andy-malone.jpg'
+
+- title: "OneSite & Client Health Overview Webinar"
+  link: 'http://insights.adaptiva.com/downloads/webinars/2017-10-12-adaptiva-product-overview.zip'
+  date: 20171016
+  posted: 'October 16 2017'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'

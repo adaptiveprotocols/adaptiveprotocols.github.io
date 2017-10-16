@@ -1,7 +1,7 @@
 $('a[href*="#"]') // Select all links with hashes
-  // Remove links that don't actually link to anything
+  // Remove links that I don't want scrolling the page
   .not('[href="#"]')
-  .not('[href="#0"]')
+  .not('[href="#0"]') // placeholder links
   .click(function(event) {
     // On-page links
     if (
