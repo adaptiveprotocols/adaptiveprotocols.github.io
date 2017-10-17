@@ -1,5 +1,6 @@
 $('a[href*="#"]') // Select all links with hashes
   // Remove links that I don't want scrolling the page
+  .not('.tertiary-nav-item a') // tertitary nav links
   .not('[href="#"]')
   .not('[href="#0"]') // placeholder links
   .click(function(event) {

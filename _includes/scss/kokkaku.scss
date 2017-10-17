@@ -497,15 +497,19 @@ nav.tertiary-nav {
 }
 li.tertiary-nav-item {
   display: inline-block;
-  padding: $spacing-smallest $spacing-small;
+  padding: 0;
   cursor: pointer;
   position: relative;
   transition: 600ms $transition-ease-in;
+  a,
   span {
+    display: block;
+    padding: $spacing-smallest $spacing-small;
     color: lighten($black, 40%);
     transition: 600ms $transition-ease-in;
   }
   &.is-selected {
+    a,
     span {
       color: $black;
       @media #{$mobile}, #{$tablet} {
@@ -515,6 +519,7 @@ li.tertiary-nav-item {
   }
   @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
     &:hover {
+      a,
       span {
         color: $black;
       }
@@ -708,7 +713,7 @@ li.tertiary-nav-item {
   @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
     &:hover {
       background: rgba($dark-black, .75);
-    }  
+    }
   }
 }
 .slide-content {
