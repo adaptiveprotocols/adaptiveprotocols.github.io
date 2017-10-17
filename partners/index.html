@@ -64,7 +64,8 @@ bodyclass: partners
       </div>
     </div>
     <div class="grid-container">
-      {% for partner in site.data.partners %}
+      {% assign partners = site.data.partners | sort: 'name' %}
+      {% for partner in partners %}
       {% if partner.big %}
         <a class="j-col j-col-4 tile partner big js-scroll{% if partner.sq %} is-sq{% endif %}" href="{{partner.link}}" title="{{partner.link}}" target="_blank" rel="noopener">
           <div class="tile-content">
@@ -92,7 +93,8 @@ bodyclass: partners
       </div>
     </div>
     <div class="grid-container">
-      {% for partner in site.data.partners %}
+      {% assign partners = site.data.partners | sort: 'name' %}
+      {% for partner in partners %}
         <a class="j-col j-col-3 tile partner js-scroll{% if partner.sq %} is-sq{% endif %}" href="{{partner.link}}" title="{{partner.link}}" target="_blank" rel="noopener">
           <div class="tile-content white">
             <div class="partner-info">

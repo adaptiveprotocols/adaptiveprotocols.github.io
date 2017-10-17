@@ -951,3 +951,35 @@
     - class: 'webinar'
   categories:
     - category: 'Webinar'
+
+- title: "Client Health and Security Overview"
+  link: 'https://vimeo.com/234048228'
+  date: 20171017
+  posted: 'October 17 2017'
+  type: video
+  classes:
+    - class: 'product-resource'
+    - class: 'video'
+  categories:
+    - category: 'Product Resource'
+    - category: 'Video'
+
+- title: "Windows 10 Accelerator Program Brochure"
+  link: 'http://www2.adaptiva.com/brochure/windows-10-accelerator-program'
+  date: 20171017
+  posted: 'October 17 2017'
+  type: document
+  classes:
+    - class: 'product-resource'
+  categories:
+    - category: 'Product Resource'
+
+- title: "Windows 10 Accelerator Program Health Checks Datasheet"
+  link: 'http://www2.adaptiva.com/datasheet/windows-10-accelerator-program-health-checks'
+  date: 20171017
+  posted: 'October 17 2017'
+  type: document
+  classes:
+    - class: 'product-resource'
+  categories:
+    - category: 'Product Resource'
