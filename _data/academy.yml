@@ -286,25 +286,15 @@
   categories:
     - category: 'Webinar'
 
-- title: "Client Health Product Webinar"
-  link: 'http://www2.adaptiva.com/webinar/2016-11-17-client-health-resources'
-  date: 20161117
-  posted: 'November 11 2017'
+- title: "Client Health and Security Overview Webinar"
+  link: 'https://vimeo.com/234048228/53817607b6'
+  date: 20170915
+  posted: 'September 15 2017'
   type: webinar
   classes:
     - class: 'webinar'
   categories:
     - category: 'Webinar'
-
-    - title: "Client Health and Security Overview Webinar"
-      link: 'https://vimeo.com/234048228/53817607b6'
-      date: 20170915
-      posted: 'September 15 2017'
-      type: webinar
-      classes:
-        - class: 'webinar'
-      categories:
-        - category: 'Webinar'
 
 - title: "CSMUG: Windows 10 Gotchas & Stress-free OSD"
   link: 'https://1drv.ms/f/s!Ahu9zquvyRmuuJsMlEERmqTHkIhP6g'
