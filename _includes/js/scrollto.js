@@ -1,4 +1,4 @@
-/**
+/*!
  * Copyright (c) 2007-2015 Ariel Flesler - aflesler ○ gmail • com | http://flesler.blogspot.com
  * Licensed under MIT
  * @author Ariel Flesler

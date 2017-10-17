@@ -1,7 +1,7 @@
 jQuery(document).ready(function($) { //safety pants!
   (function($) {
 
-  /**
+  /*!
    * Copyright 2012, Digital Fusion
    * Licensed under the MIT license.
    * http://teamdf.com/jquery-plugins/license/
@@ -75,7 +75,7 @@ $(window).scroll(function(event) {
     }
   });
 
-  /**
+  /*!
  * Copyright (c) 2007-2015 Ariel Flesler - aflesler ○ gmail • com | http://flesler.blogspot.com
  * Licensed under MIT
  * @author Ariel Flesler
