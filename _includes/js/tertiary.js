@@ -16,7 +16,7 @@ $(function() { // safety pants
     $('.tertiary-nav-content' + contentID) // find content that matches clicked element
       .show() // show it
       .addClass('is-visible'); // add mod class
-    $this.closest('ul') // select parent ul element
+    $this.parent() // select parent ul element
       .scrollTo('.is-selected', 600); // scroll to clicked element, animated 600ms
   });
 
