@@ -2,7 +2,8 @@ var $salesProfile = $('.sales-map-profile'),
     $firstProfile = $('.sales-map-profile:first-child'),
     $lastProfile  = $('.sales-map-profile:last-child');
 
-$('.territory').click(function(){ // user clicks on dot on map
+$('.territory').click(function(e){ // user clicks on dot on map
+  e.preventDefault();
   var salesID = $(this).attr('id'); // store ID attribute for each dot clicked
 
   $salesProfile.addClass('is-visible'); // add mod class to all profiles
@@ -11,6 +12,7 @@ $('.territory').click(function(){ // user clicks on dot on map
     .addClass('is-current') // add mod class for current item
     .show(); // show profile for clicked dot
   $('html,body').css('overflow','hidden');
+  console.log('User clicked profile for ' + salesID);
 });
 
 function prevProfile() {
