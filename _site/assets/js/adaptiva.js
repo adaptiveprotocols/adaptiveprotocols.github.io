@@ -238,6 +238,7 @@ $('.js-nav-trigger').click(function(){
 	$lastSlide.children('.slider-arrow.next').click(lastSlide); // clicking next on last slide cycles to beginning
 
 	$slide.swipe({ // user swipes on slide
+
 		swipeRight:function() { // user swipes right <3
 			if ( $(this).is(':first-child') ) { // if first slide
 				$(this).children('.slider-arrow.prev')
@@ -247,6 +248,7 @@ $('.js-nav-trigger').click(function(){
 					.each(prevSlide); // else trigger previous slide
 			}
 		},
+
 		swipeLeft:function() { // user swipes left </3
 			if ( $(this).is(':last-child') ) { // if last slide
 				$(this).children('.slider-arrow.next')
@@ -256,7 +258,9 @@ $('.js-nav-trigger').click(function(){
 					.each(nextSlide); // else trigger next slide
 			}
 		},
+
 		threshold:178 // swipe length of 178px or more
+		
 	});
 
 
@@ -360,16 +364,23 @@ $('.js-awards').click(function(){
 
   $salesProfile.swipe({
 
-    swipeRight: function() { // user swipes right <3
-      prevProfile(); // trigger previous
+    swipeLeft: function() {
+      nextProfile();
     },
-    swipeLeft: function() { // user swipes left </3
-      nextProfile(); // trigger next
+
+    swipeRight: function() {
+      prevProfile();
     },
-    swipeDown: function() { // user swipes down
-      closeProfile(); // close
+
+    swipeStatus: function(event, duration, distance, phase) {
+
+      if (direction=="down") { // user swipes down
+        closeProfile(); // close profile
+      }
+
     },
-    threshold: 68 // minimum swipe distance of 68px
+    threshold: 68,
+    fingers: 1
   });
 
 })(); // end safety pants

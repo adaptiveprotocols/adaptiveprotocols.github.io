@@ -104,6 +104,7 @@
 	$lastSlide.children('.slider-arrow.next').click(lastSlide); // clicking next on last slide cycles to beginning
 
 	$slide.swipe({ // user swipes on slide
+
 		swipeRight:function() { // user swipes right <3
 			if ( $(this).is(':first-child') ) { // if first slide
 				$(this).children('.slider-arrow.prev')
@@ -113,6 +114,7 @@
 					.each(prevSlide); // else trigger previous slide
 			}
 		},
+
 		swipeLeft:function() { // user swipes left </3
 			if ( $(this).is(':last-child') ) { // if last slide
 				$(this).children('.slider-arrow.next')
@@ -122,7 +124,9 @@
 					.each(nextSlide); // else trigger next slide
 			}
 		},
+
 		threshold:178 // swipe length of 178px or more
+		
 	});
 
 

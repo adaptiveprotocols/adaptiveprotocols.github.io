@@ -88,16 +88,23 @@
 
   $salesProfile.swipe({
 
-    swipeRight: function() { // user swipes right <3
-      prevProfile(); // trigger previous
+    swipeLeft: function() {
+      nextProfile();
     },
-    swipeLeft: function() { // user swipes left </3
-      nextProfile(); // trigger next
+
+    swipeRight: function() {
+      prevProfile();
     },
-    swipeDown: function() { // user swipes down
-      closeProfile(); // close
+
+    swipeStatus: function(event, duration, distance, phase) {
+
+      if (direction=="down") { // user swipes down
+        closeProfile(); // close profile
+      }
+
     },
-    threshold: 68 // minimum swipe distance of 68px
+    threshold: 68,
+    fingers: 1
   });
 
 })(); // end safety pants
