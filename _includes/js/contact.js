@@ -6,7 +6,7 @@
 
   function prevProfile() {
 
-    var $currentProfile = $('.sales-map-profile');
+    var $currentProfile = $('.sales-map-profile.is-current');
 
     if ( $currentProfile.is(':first-child') ) { // if current profile is first
       $currentProfile
@@ -27,7 +27,7 @@
 
   function nextProfile() {
 
-    var $currentProfile = $('.sales-map-profile');
+    var $currentProfile = $('.sales-map-profile.is-current');
 
     if ( $currentProfile.is(':last-child') ) { // if current profile is last
       $currentProfile
