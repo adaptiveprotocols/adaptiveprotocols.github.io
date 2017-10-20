@@ -1,95 +1,103 @@
-var $salesProfile = $('.sales-map-profile'),
-    $firstProfile = $('.sales-map-profile:first-child'),
-    $lastProfile  = $('.sales-map-profile:last-child');
+(function(){ // safety pants
 
-$('.territory').click(function(e){ // user clicks on dot on map
-  e.preventDefault();
-  var salesID = $(this).attr('id'); // store ID attribute for each dot clicked
+  var $salesProfile = $('.sales-map-profile');
 
-  $salesProfile.addClass('is-visible'); // add mod class to all profiles
+  // Next Profile
 
-  $('.sales-map-profile#' + salesID) // find profile with same ID as clicked dot
-    .addClass('is-current') // add mod class for current item
-    .show(); // show profile for clicked dot
-  $('html,body').css('overflow','hidden');
-  console.log('User clicked profile for ' + salesID);
-});
+  function prevProfile() {
 
-function prevProfile() {
-  $(this).parent() // find parent (.sales-map-profile)
-    .removeClass('is-current next prev') // remove mod classes
-    .hide()
-    .prev() // Find previous profile
-    .show()
-    .addClass('is-current prev'); // mod class
-}
+    var $currentProfile = $('.sales-map-profile');
 
-function nextProfile() {
-  $(this).parent() // find parent
-    .removeClass('is-current next prev') // remove mod classes
-    .hide()
-    .next() // find next profile
-    .show()
-    .addClass('is-current next'); // add mod class
-}
-
-function firstProfile() {
-  $(this).removeClass('is-current next prev') // remove mod classes
-    .parent()
-    .hide(); // hide profile
-  $lastProfile.show() // cycle around to last profile
-    .addClass('is-current prev'); // add mod class
-}
-
-function lastProfile() {
-  $(this).removeClass('is-current next prev') // remove mod class
-    .parent()
-    .hide(); // hide profile
-  $firstProfile.show() // cycle around to first profile
-    .addClass('is-current next'); // add mod class
-}
-
-function closeProfile() {
-  $salesProfile.hide()
-    .removeClass('is-visible is-current next prev');
-  $('html,body').css('overflow', '');
-}
-
-$('.js-prev').click(prevProfile); // previous arrow triggers previous profile
-
-$('.js-next').click(nextProfile); // next arrow triggers next profile
-
-// cycles around to last profile if user clicks prev on first slide
-$firstProfile.children('.js-prev').click(firstProfile);
-
-// cycles around to first profile if user clicks next on last slide
-$lastProfile.children('.js-next').click(lastProfile);
-
-$('.js-sales-close').click(closeProfile);
-
-$salesProfile.swipe({ // user swipes sales profile
-  swipeRight:function() { // user swipes right <3
-    if ( $(this).is(':first-child') ) { // if first profile
-      $(this).children('.js-prev')
-        .each(firstProfile); // cycle around to last profile
+    if ( $currentProfile.is(':first-child') ) { // if current profile is first
+      $currentProfile
+        .removeClass('is-current prev next') // remove mod classes from current
+        .hide() // hide current
+        $('.sales-map-profile:last-child') // cycle around to last profile
+          .show() // show last profile
+          .addClass('is-current prev') // add mod classes
     } else {
-      $(this).children('.js-prev')
-        .each(prevProfile); // else trigger previous profile
+        $currentProfile
+          .removeClass('is-current prev next') // remove mod classes from current
+          .hide() // hide current
+          .prev() // select previous profile
+            .show() // show previous
+            .addClass('is-current prev') // add mod classes to previous
     }
-  },
-  swipeLeft:function() { // user swipes left </3
-    if ( $(this).is(':last-child') ) { // if last profile
-      $(this).children('.js-next')
-        .each(lastProfile); // cycle around to first profile
+  }
+
+  function nextProfile() {
+
+    var $currentProfile = $('.sales-map-profile');
+
+    if ( $currentProfile.is(':last-child') ) { // if current profile is last
+      $currentProfile
+        .removeClass('is-current prev next') // remove mod classes from current
+        .hide() // hide current
+        $('.sales-map-profile:first-child') // cycle around to first profile
+          .show() // show last profile
+          .addClass('is-current next') // add mod classes
     } else {
-      $(this).children('.js-next')
-        .each(nextProfile); // else trigger next profile
+        $currentProfile
+          .removeClass('is-current prev next') // remove mod classes from current
+          .hide() // hide current
+          .next() // select next profile
+            .show() // show previous
+            .addClass('is-current next') // add mod classes to previous
     }
-  },
-  swipeDown:function() {
-    $salesProfile
-      .hide() // hide
+  }
+
+  function closeProfile() {
+
+    $salesProfile.hide() // hide any visible profiles
       .removeClass('is-visible is-current next prev'); // remove all mod classes
-  },
-  threshold:178 // user must swipe at least 178px across
-});
+
+    $('html,body')
+      .css('overflow', '')
+      .unbind('touchmove');
+
+    return false;
+  }
+
+  $('.territory').click(function(){ // user clicks on dot on map
+
+    var salesID = $(this).attr('id'); // store ID attribute for each dot clicked
+
+    $salesProfile.addClass('is-visible'); // add mod class to all profiles
+
+    $('.sales-map-profile#' + salesID) // find profile with same ID as clicked dot
+      .addClass('is-current') // add mod class for current item
+      .show(); // show profile for clicked dot
+
+    $('html,body')
+      .css('overflow','hidden') // disable scrolling
+      .bind('touchmove', function(e){
+        e.preventDefault(); // prevent default behavior on touch devices
+      });
+
+    console.log('User clicked profile for ' + salesID); // log activity to console
+  });
+
+
+  $('.js-prev').click(prevProfile); // previous arrow triggers previous profile
+
+  $('.js-next').click(nextProfile); // next arrow triggers next profile
+
+  $('.js-sales-close').click(closeProfile); // close profile when user clicks X
+
+  // Swipe Gestures
+
+  $salesProfile.swipe({
+
+    swipeRight: function() { // user swipes right <3
+      prevProfile(); // trigger previous
+    },
+    swipeLeft: function() { // user swipes left </3
+      nextProfile(); // trigger next
+    },
+    swipeDown: function() { // user swipes down
+      closeProfile(); // close
+    },
+    threshold: 68 // minimum swipe distance of 68px
+  });
+
+})(); // end safety pants
