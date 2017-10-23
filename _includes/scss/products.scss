@@ -83,7 +83,7 @@ section.products {
           span {
             color: $blue;
           }
-        }  
+        }
       }
     }
     .slide {
@@ -246,13 +246,13 @@ section.products-brands {
   }
   li.tertiary-nav-item {
     &.is-selected {
-      span {
+      a {
         color: $white;
       }
     }
     @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
       &:hover {
-        span {
+        a {
           color: $white;
         }
       }
