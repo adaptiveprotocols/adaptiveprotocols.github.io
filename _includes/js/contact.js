@@ -48,12 +48,19 @@
 
   function closeProfile() {
 
-    $salesProfile.hide() // hide any visible profiles
-      .removeClass('is-visible is-current next prev'); // remove all mod classes
+    $salesProfile.hide(0, function(){ // hide any visible profiles
+
+      $(this)
+        .removeAttr('style') // clear style attribute
+        .css({ // set CSS back to original value so it's not blank
+          'display': 'none'
+        });
+
+    }).removeClass('is-visible is-current next prev'); // remove all mod classes
 
     $('html,body')
       .css('overflow', '')
-      .unbind('touchmove');
+      .off('touchmove');
 
     return false;
   }
@@ -70,9 +77,27 @@
 
     $('html,body')
       .css('overflow','hidden') // disable scrolling
-      .bind('touchmove', function(e){
+      .on('touchmove', function(e){
         e.preventDefault(); // prevent default behavior on touch devices
       });
+
+    $(document).keydown(function(e){
+
+      switch(e.which) {
+
+        case 37: prevProfile();
+        break;
+
+        case 39: nextProfile();
+        break;
+
+        case 27: closeProfile();
+        break;
+
+        default: return;
+      }
+      e.preventDefault();
+    });
 
     console.log('User clicked profile for ' + salesID); // log activity to console
   });
@@ -88,22 +113,102 @@
 
   $salesProfile.swipe({
 
-    swipeLeft: function() {
-      nextProfile();
-    },
+    swipeStatus: function(event, phase, direction, distance) {
 
-    swipeRight: function() {
-      prevProfile();
-    },
+      if (direction=='down') { // user swipes down
 
-    swipeStatus: function(event, duration, distance, phase) {
+        if (phase=='move') { // while swipe is in motion
 
-      if (direction=="down") { // user swipes down
-        closeProfile(); // close profile
+          $(this)
+            .css({
+              'opacity': 'calc(1 - 0.' + distance/2 + ')', // fade as user swipes
+              'top': distance/2 + '%' // slide downward with swipe
+            });
+            
+        }
+
+        if (phase=='end') { // if user completes swipe reqs
+
+          closeProfile(); // close profile
+
+        }
+
+        if (phase=='cancel') { // if user fails swipe reqs
+
+          $(this).removeAttr('style') // reset style attribute
+          .css({
+            'display':'block' // set css display back to default
+          });
+
+        }
+
+      }
+
+      if (direction=='left') {
+
+        if (phase=='move') { // while swipe is in motion
+
+          $(this).find('.content') // select content inside
+            .css({
+              'opacity': 'calc(1 - 0.' + distance/2 + ')', // fade as user swipes
+              'left': 50 - distance/5 + '%' // slide left with swipe
+            });
+
+        }
+
+        if (phase=='end') { // if user completes swipe reqs
+
+          nextProfile(); // next profile
+
+          $(this).find('.content')
+            .removeAttr('style'); // remove style attr
+
+        }
+
+        if (phase=='cancel') { // if user fails swipe reqs
+
+          $(this).find('.content')
+            .removeAttr('style') // remove style attr
+
+        }
+
+      }
+
+      if (direction=='right') { // user swipes right <3
+
+        if (phase=='move') { // while swipe is in motion
+
+          $(this).find('.content')
+            .css({
+              'opacity': 'calc(1 - 0.' + distance/2 + ')', // fade as user swipes
+              'left': 50 + distance/5 + '%' // slide downward with swipe
+            });
+
+        }
+
+        if (phase=='end') { // if user completes swipe reqs
+
+          prevProfile(); // previous profile
+
+          $(this).find('.content')
+            .removeAttr('style'); // remove style attr
+
+        }
+
+        if (phase=='cancel') { // if user fails swipe reqs
+
+          $(this).find('.content')
+            .removeAttr('style') // remove style attr
+
+        }
+
       }
 
     },
-    threshold: 68,
+    triggerOnTouchEnd: false,
+    triggerOnTouchLeave: false,
+    threshold: 200,
+    cancelThreshold: 42,
     fingers: 1
   });
 
