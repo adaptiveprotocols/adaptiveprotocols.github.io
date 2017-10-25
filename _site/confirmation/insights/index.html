@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
     
+    <meta name="robots" content="noindex">
+    
     <link rel="preload" href="https://use.typekit.net/abc1def.js" as="script" crossorigin>
     <link rel="preload" href="https://use.typekit.net/abc1def.css" as="style" crossorigin>
     <script>
@@ -16,14 +18,11 @@
         h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
       })(document);
     </script>
-    <link rel="canonical" href="http://localhost:4000/terms-of-use/">
+    <link rel="canonical" href="http://localhost:4000/confirmation/insights/">
     <meta name="author" content="Adaptiva">
     
-    <meta name="description" content="Terms of use for adaptiva.com">
-    <meta name="og:description" content="Terms of use for adaptiva.com">
-    
-    <meta property="og:title" content="Terms of Use" />
-    <meta property="og:url" content="/terms-of-use/" />
+    <meta property="og:title" content="Insights Subscription" />
+    <meta property="og:url" content="/confirmation/insights/" />
     <meta property="og:type" content="website" />
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42681101-2"></script>
@@ -34,7 +33,7 @@
 
       gtag('config', 'UA-42681101-2');
     </script>
-    <title>Terms of Use / Adaptiva - Smart Scaling for Enterprise IT</title>
+    <title>Insights Subscription / Adaptiva - Smart Scaling for Enterprise IT</title>
     <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="/assets/css/adaptiva.css?v=25cc4b87e1b0eaf01ff19293920add0d5c1211a1">
     <link rel="manifest" href="/manifest.json">
@@ -98,26 +97,11 @@
   </div>
 </section>
 
-    <section class="hero" style="background-color: #191919;">
-  <div class="hero-content content">
-    <h1 class="blue">Terms of Use</h1>
-  <div>
-</section>
-<section class="color-block white">
-  <div class="content">
-    <div class="j-col j-col-8 push-2">
-      <h2 class="blue">Privacy Policy</h2>
-      <h3 class="dark-blue">Information</h3>
-      <p>Parts of our site invite you to sign up for certain services and obtain more information. The information that you voluntarily submit may be shared with our technology partners or our business alliance partners and others to provide you with more information.</p>
-      <h3 class="dark-blue">Security</h3>
-      <p>We keep all information concerning you on secured servers. We take data security seriously and endeavor to protect this data. In addition to normal precautions such as physical security, firewalls, and intrusion detection software, we employ strict security policies and procedures that govern the management of both physical and logical infrastructure. These policies and practices, however, may not apply to information that is transferred offline.</p>
-      <h3 class="dark-blue">Other Sites and Business Partners</h3>
-      <p>We provide links that take you to other web sites. We encourage you to review privacy and other policies at third party sites you visit, since those sites are not bound to follow our policies.</p>
-      <h3 class="dark-blue">Modifications</h3>
-      <p>Adaptiva Corporation may in the future alter or add to this Privacy Policy, especially as we add new services to our site. Accordingly, please check this part of our site from time to time to see if there has been a change.</p>
-      <h3 class="dark-blue">General</h3>
-      <p>These are our current internal guidelines, which we make you aware of as a convenience. This is not a contract.</p>
-    </div>
+    <section class="hero full-screen" style="background: #041d39;">
+  <div class="content hero-content centered">
+    <h1 class="white" id="confirmation_heading"></h1>
+    <p class="type-big white" id="confirmation_text"></p>
+    <a class="button white" id="close_window" onclick="window.close(); return false;">Close Window</a>
   </div>
 </section>
 

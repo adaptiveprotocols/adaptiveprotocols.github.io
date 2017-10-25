@@ -21,7 +21,7 @@
     <link rel="canonical" href="http://localhost:4000/confirmation/newsletter/">
     <meta name="author" content="Adaptiva">
     
-    <meta property="og:title" content="Success!" />
+    <meta property="og:title" content="Newsletter subscription" />
     <meta property="og:url" content="/confirmation/newsletter/" />
     <meta property="og:type" content="website" />
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
@@ -33,7 +33,7 @@
 
       gtag('config', 'UA-42681101-2');
     </script>
-    <title>Success! / Adaptiva - Smart Scaling for Enterprise IT</title>
+    <title>Newsletter subscription / Adaptiva - Smart Scaling for Enterprise IT</title>
     <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="/assets/css/adaptiva.css?v=25cc4b87e1b0eaf01ff19293920add0d5c1211a1">
     <link rel="manifest" href="/manifest.json">
@@ -99,9 +99,7 @@
 
     <section class="hero full-screen" style="background: #041d39;">
   <div class="content hero-content centered">
-    <h1 class="white" id="confirmation_heading">
-      Success!
-    </h1>
+    <h1 class="white" id="confirmation_heading"></h1>
     <p class="type-big white" id="confirmation_text"></p>
     <a class="button white" id="close_window" onclick="window.close(); return false;">Close Window</a>
   </div>
@@ -167,10 +165,10 @@
     </div>
     <form class="j-row vertical-center-row adaptiva-form" id="newsletter" method="post" action="https://go.pardot.com/l/139131/2016-02-09/fs9g">
       <label class="j-col j-col-2">Subscribe to our Newsletter</label>
-      <div class="j-col j-col-9 newsletter-email">
+      <div class="j-col j-col-9 adaptiva-form-email">
         <input required name="email" placeholder="Enter your corporate email address here" type="email">
       </div>
-      <div class="j-col j-col-1 wrap newsletter-submit">
+      <div class="j-col j-col-1 wrap adaptiva-form-submit">
         <input name="submit" type="submit">
       </div>
     </form>

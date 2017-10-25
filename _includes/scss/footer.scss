@@ -59,7 +59,7 @@ footer.footer {
     }
   }
 }
-form#newsletter {
+form.adaptiva-form {
   padding: 0;
   border-bottom: 2px solid $dark-gray;
   margin-bottom: $spacing-large;
@@ -68,8 +68,9 @@ form#newsletter {
     font-size: $type-small;
     border-right: 2px solid $dark-gray;
     padding: $spacing-smallest 0;
+    margin-bottom: 0;
   }
-  .newsletter-email {
+  .adaptiva-form-email {
     padding: 0;
     -ms-flex-item-align: stretch;
     align-self: stretch;
@@ -89,7 +90,7 @@ form#newsletter {
       color: $black;
     }
   }
-  .newsletter-submit {
+  .adaptiva-form-submit {
     position: relative;
     -ms-flex-item-align: stretch;
     align-self: stretch;
@@ -125,6 +126,7 @@ form#newsletter {
     font-weight: 700;
     text-align: left;
     border: 0;
+    border-radius: 0;
     -webkit-appearance: none;
     transition: 300ms $transition-ease;
     cursor: pointer;
@@ -134,14 +136,16 @@ form#newsletter {
   }
   @media #{$mobile}, #{$tablet} {
     border: 0;
+    padding: 0 $spacing-normal;
     label {
-      padding: 0 $spacing-normal;
+      padding: 0;
       border: 0;
       text-align: center;
       color: $white;
+      margin-bottom: $spacing-normal;
     }
-    .newsletter-email {
-      padding: 0 $spacing-normal;
+    .adaptiva-form-email {
+      padding: 0;
     }
     input[type="email"] {
       padding: 0 $spacing-smallest $spacing-smallest;
@@ -153,7 +157,7 @@ form#newsletter {
         border-color: $white;
       }
     }
-    .newsletter-submit {
+    .adaptiva-form-submit {
       margin-bottom: 0;
     }
     input[type="submit"] {
@@ -166,12 +170,12 @@ form#newsletter {
   @media #{$tablet} {
     display: block;
     label,
-    .newsletter-email,
-    .newsletter-submit {
+    .adaptiva-form-email,
+    .adaptiva-form-submit {
       width: 100%;
     }
     label,
-    .newsletter-email {
+    .adaptiva-form-email {
       margin-bottom: $spacing-normal;
     }
   }
