@@ -2,14 +2,22 @@
 ---
 
 (function() { // service worker pants
+
   if ('serviceWorker' in navigator) {
+
     console.log('CLIENT: service worker registration in progress.');
+
     navigator.serviceWorker.register('/service-worker.js').then(function() {
+
       console.log('CLIENT: service worker registration complete.');
+
     }, function() {
+
       console.log('CLIENT: service worker registration failure.');
+
     });
   } else {
+
     console.log('CLIENT: service worker is not supported.');
   }
   {% include js/secret.js %} // lmfao
@@ -21,7 +29,24 @@
 
     var email = window.location.hash.substr(1); // get hash from URL
 
-    $('p#confirmation_text').text('Success! ' + email + ' has been added to the Adaptiva newsletter subscription list.'); // insert hash into specified <p> tag
+    if (email) {
+
+      $('h1#confirmation_heading')
+        .text('Success!');
+
+      $('p#confirmation_text')
+        .text('Awesome! ' + email + ' has been added to the Adaptiva newsletter subscription list.'); // insert hash into specified <p> tag
+
+    } else {
+
+      $('h1#confirmation_heading')
+        .text('Nope')
+
+      $('p#confirmation_text')
+        .text("Oops, looks like you didn't fill out a form to get here.");
+
+      $('a#close_window').after('<a class="button white outline" style="border:0;" href="https://adaptiva.com">Back to Home</a>')
+    }
 
   }
 
@@ -43,13 +68,19 @@ jQuery(document).ready(function($) { // DOM ready pants!
 
   // Free trial button
   $('.js-trial').click(function(){ // user clicks free trial button
+
     $('.js-trial-container').fadeIn(300); // fade in lightbox
+
     $('html,body').css('overflow', 'hidden');
+
   });
 
   $('.js-trial-close').click(function(){ // user clicks X
+
     $('.js-trial-container').fadeOut(300); // fade out lightbox
+
     $('html,body').css('overflow','');
+    
   });
 
   // Form confirmation
