@@ -121,10 +121,10 @@
 
           $(this)
             .css({
-              'opacity': 'calc(1 - 0.' + distance/2 + ')', // fade as user swipes
+              'opacity': 1 - ((distance/2)/100), // fade as user swipes
               'top': distance/2 + '%' // slide downward with swipe
             });
-            
+
         }
 
         if (phase=='end') { // if user completes swipe reqs
@@ -150,7 +150,7 @@
 
           $(this).find('.content') // select content inside
             .css({
-              'opacity': 'calc(1 - 0.' + distance/2 + ')', // fade as user swipes
+              'opacity': 1 - ((distance/2)/100), // fade as user swipes
               'left': 50 - distance/5 + '%' // slide left with swipe
             });
 
@@ -180,7 +180,7 @@
 
           $(this).find('.content')
             .css({
-              'opacity': 'calc(1 - 0.' + distance/2 + ')', // fade as user swipes
+              'opacity': 1 - ((distance/2)/100), // fade as user swipes
               'left': 50 + distance/5 + '%' // slide downward with swipe
             });
 
