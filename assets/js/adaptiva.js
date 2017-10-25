@@ -1,15 +1,33 @@
 ---
 ---
 
-if(window.location.href.indexOf('newsletter') > -1) { // if URL contains 'newsletter'
+(function() { // service worker pants
+  if ('serviceWorker' in navigator) {
+    console.log('CLIENT: service worker registration in progress.');
+    navigator.serviceWorker.register('/service-worker.js').then(function() {
+      console.log('CLIENT: service worker registration complete.');
+    }, function() {
+      console.log('CLIENT: service worker registration failure.');
+    });
+  } else {
+    console.log('CLIENT: service worker is not supported.');
+  }
+  {% include js/secret.js %} // lmfao
+})();
 
-  var hash = window.location.hash.substr(1); // get hash from URL
+(function(){ // confirmation URL check pants
 
-  $('span#user_email').text(hash); // insert hash into specified span tag
+  if(window.location.href.indexOf('confirmation') > -1) { // if URL contains 'confirmation'
 
-}
+    var email = window.location.hash.substr(1); // get hash from URL
 
-jQuery(document).ready(function($) { //safety pants!
+    $('p#confirmation_text').text('Success! ' + email + ' has been added to the Adaptiva newsletter subscription list.'); // insert hash into specified <p> tag
+
+  }
+
+})();
+
+jQuery(document).ready(function($) { // DOM ready pants!
   {% include js/visible.js %}
   {% include js/smooth-scroll.js %}
   {% include js/scrollto.js %}
@@ -34,17 +52,18 @@ jQuery(document).ready(function($) { //safety pants!
     $('html,body').css('overflow','');
   });
 
-  // Newsletter form
+  // Form confirmation
 
   (function(){ // safety pants
 
-    var $form = $('form.newsletter');
+    var $form = $('form.adaptiva-form');
 
     $form.submit(function(){ // on form submission
 
       var val = $(this).find('input[type="email"]').val(); // get user's email address
+      var form_id = $(this).attr('id'); // return ID of form user submitted
 
-      window.open("/newsletter/#" + val, 'success_window', 'width=1024,height=640'); // open a new window with email passed as URL hash
+      window.open("/confirmation/" + form_id + "/#" + val, 'success_window', 'width=1024,height=640'); // open a new window with correct confirmation message email passed as URL hash
 
     });
 
@@ -57,17 +76,3 @@ jQuery(document).ready(function($) { //safety pants!
   }
 
 });
-
-(function() { // more safety pants!
-  if ('serviceWorker' in navigator) {
-    console.log('CLIENT: service worker registration in progress.');
-    navigator.serviceWorker.register('/service-worker.js').then(function() {
-      console.log('CLIENT: service worker registration complete.');
-    }, function() {
-      console.log('CLIENT: service worker registration failure.');
-    });
-  } else {
-    console.log('CLIENT: service worker is not supported.');
-  }
-  {% include js/secret.js %}
-})();

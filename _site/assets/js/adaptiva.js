@@ -1,12 +1,31 @@
-if(window.location.href.indexOf('newsletter') > -1) { // if URL contains 'newsletter'
+(function() { // service worker pants
+  if ('serviceWorker' in navigator) {
+    console.log('CLIENT: service worker registration in progress.');
+    navigator.serviceWorker.register('/service-worker.js').then(function() {
+      console.log('CLIENT: service worker registration complete.');
+    }, function() {
+      console.log('CLIENT: service worker registration failure.');
+    });
+  } else {
+    console.log('CLIENT: service worker is not supported.');
+  }
+  console.log("Somebody once told me the world is gonna roll me / I ain't the sharpest tool in the shed / She was looking kind of dumb with her finger and her thumb / In the shape of an L on her forehead / Well the years start coming and they don't stop coming / Fed to the rules and I hit the ground running / Didn't make sense not to live for fun / Your brain gets smart but your head gets dumb / So much to do, so much to see / So what's wrong with taking the back streets? / You'll never know if you don't go / You'll never shine if you don't glow / Hey now, you're an all-star, get your game on, go play / Hey now, you're a rock star, get the show on, get paid / And all that glitters is gold / Only shooting stars break the mold");
+ // lmfao
+})();
 
-  var hash = window.location.hash.substr(1); // get hash from URL
+(function(){ // confirmation URL check pants
 
-  $('span#user_email').text(hash); // insert hash into specified span tag
+  if(window.location.href.indexOf('confirmation') > -1) { // if URL contains 'confirmation'
 
-}
+    var email = window.location.hash.substr(1); // get hash from URL
 
-jQuery(document).ready(function($) { //safety pants!
+    $('p#confirmation_text').text('Success! ' + email + ' has been added to the Adaptiva newsletter subscription list.'); // insert hash into specified <p> tag
+
+  }
+
+})();
+
+jQuery(document).ready(function($) { // DOM ready pants!
   (function($) {
 
   /*!
@@ -560,17 +579,18 @@ $(window).resize(function() {
     $('html,body').css('overflow','');
   });
 
-  // Newsletter form
+  // Form confirmation
 
   (function(){ // safety pants
 
-    var $form = $('form.newsletter');
+    var $form = $('form.adaptiva-form');
 
     $form.submit(function(){ // on form submission
 
       var val = $(this).find('input[type="email"]').val(); // get user's email address
+      var form_id = $(this).attr('id'); // return ID of form user submitted
 
-      window.open("/newsletter/#" + val, 'success_window', 'width=1024,height=640'); // open a new window with email passed as URL hash
+      window.open("/confirmation/" + form_id + "/#" + val, 'success_window', 'width=1024,height=640'); // open a new window with correct confirmation message email passed as URL hash
 
     });
 
@@ -583,18 +603,3 @@ $(window).resize(function() {
   }
 
 });
-
-(function() { // more safety pants!
-  if ('serviceWorker' in navigator) {
-    console.log('CLIENT: service worker registration in progress.');
-    navigator.serviceWorker.register('/service-worker.js').then(function() {
-      console.log('CLIENT: service worker registration complete.');
-    }, function() {
-      console.log('CLIENT: service worker registration failure.');
-    });
-  } else {
-    console.log('CLIENT: service worker is not supported.');
-  }
-  console.log("Somebody once told me the world is gonna roll me / I ain't the sharpest tool in the shed / She was looking kind of dumb with her finger and her thumb / In the shape of an L on her forehead / Well the years start coming and they don't stop coming / Fed to the rules and I hit the ground running / Didn't make sense not to live for fun / Your brain gets smart but your head gets dumb / So much to do, so much to see / So what's wrong with taking the back streets? / You'll never know if you don't go / You'll never shine if you don't glow / Hey now, you're an all-star, get your game on, go play / Hey now, you're a rock star, get the show on, get paid / And all that glitters is gold / Only shooting stars break the mold");
-
-})();
