@@ -1,21 +1,26 @@
-$('.product-feature-item').click(function(){
 
-  var $this     = $(this),
-      featureID = $this.attr('id'); // store ID attribute in featureID variable
+(function(){ // product feature pants
 
-  $this
-    .parent().children() // localize
-    .removeClass('is-selected'); // clear mod class from all items
+  $('.product-feature-item').click(function(){
 
-  $this.addClass('is-selected'); // add mod class to clicked element
+    var $this     = $(this),
+        featureID = $this.attr('id'); // store ID attribute in featureID variable
 
-  $this.closest('.slide') // localize
-    .find('.product-features-video') // find videos
-    .hide() // hide all videos
-    .removeClass('is-visible'); // clear mod classes
+    $this
+      .parent().children() // localize
+      .removeClass('is-selected'); // clear mod class from all items
 
-  $('.product-features-video#' + featureID) // select video with matching ID
-    .addClass('is-visible') // add mod class
-    .show(); // show only selected video
+    $this.addClass('is-selected'); // add mod class to clicked element
 
-});
+    $this.closest('.slide') // localize
+      .find('.product-features-video') // find videos
+      .hide() // hide all videos
+      .removeClass('is-visible'); // clear mod classes
+
+    $('.product-features-video#' + featureID) // select video with matching ID
+      .addClass('is-visible') // add mod class
+      .show(); // show only selected video
+
+  });
+
+})();

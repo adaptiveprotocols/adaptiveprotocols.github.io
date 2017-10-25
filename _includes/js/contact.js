@@ -1,4 +1,4 @@
-(function(){ // safety pants
+(function(){ // contact pants
 
   var $salesProfile = $('.sales-map-profile');
 

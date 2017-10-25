@@ -1,14 +1,29 @@
-$(window).scroll(function(){
-  var scroll = $(window).scrollTop();
-  var $nav = $('.navbar');
-  var navHeight = $nav.height();
-  if (scroll >= navHeight) {
-    $nav.addClass('is-scrolled');
-  } else {
-    $nav.removeClass('is-scrolled');
-  }
-});
-$('.js-nav-trigger').click(function(){
-  $(this).toggleClass('is-clicked');
-  $('nav.nav').toggleClass('is-visible');
-});
+(function(){ // nav pants
+
+  $(window).scroll(function(){
+
+    var scroll = $(window).scrollTop();
+    var $nav = $('.navbar');
+    var navHeight = $nav.height();
+
+    if (scroll >= navHeight) { // user scrolls past height of nav
+
+      $nav.addClass('is-scrolled'); // add mod class
+
+    } else {
+
+      $nav.removeClass('is-scrolled'); // remove mod class
+
+    }
+
+  });
+
+  $('.js-nav-trigger').click(function(){ // user clicks nav trigger
+
+    $(this).toggleClass('is-clicked'); // toggle animation/mod class
+
+    $('nav.nav').toggleClass('is-visible'); // toggle mod class on nav
+
+  });
+
+})();

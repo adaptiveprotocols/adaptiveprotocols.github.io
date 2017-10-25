@@ -50,7 +50,7 @@
 
 })();
 
-jQuery(document).ready(function($) { // DOM ready pants!
+jQuery(document).ready(function($) { // DOM ready pants
   (function($) {
 
   /*!
@@ -92,12 +92,14 @@ $(window).scroll(function(event) {
 
 });
 
+  (function(){ // smooth scrolling pants
+
   $('a[href*="#"]') // Select all links with hashes
-  // Remove links that I don't want scrolling the page
-  .not('.tertiary-nav-item a') // tertitary nav links
-  .not('[href="#"]')
-  .not('[href="#0"]') // placeholder links
-  .click(function(event) {
+    // Remove links that I don't want scrolling the page
+    .not('.tertiary-nav-item a') // tertitary nav links
+    .not('[href="#"]')
+    .not('[href="#0"]') // placeholder links
+    .click(function(event) {
     // On-page links
     if (
       location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
@@ -106,27 +108,36 @@ $(window).scroll(function(event) {
       // Figure out element to scroll to
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      // Does a scroll target exist?
-      if (target.length) {
-        // Only prevent default if animation is actually gonna happen
+
+      if (target.length) {// Does a scroll target exist?
+
         event.preventDefault();
+
         $('html, body').animate({
           scrollTop: target.offset().top-68
-        }, 1000, function() {
-          // Callback after animation
-          // Must change focus!
+
+        }, 1000, function() { // Must change focus!
+
           var $target = $(target);
+
           $target.focus();
+
           if ($target.is(":focus")) { // Checking if the target was focused
+
             return false;
+
           } else {
+
             $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
             $target.focus(); // Set focus again
+
           };
         });
       }
     }
   });
+
+})();
 
   /*!
  * Copyright (c) 2007-2015 Ariel Flesler - aflesler ○ gmail • com | http://flesler.blogspot.com
@@ -136,20 +147,35 @@ $(window).scroll(function(event) {
  */
 ;(function(f){"use strict";"function"===typeof define&&define.amd?define(["jquery"],f):"undefined"!==typeof module&&module.exports?module.exports=f(require("jquery")):f(jQuery)})(function($){"use strict";function n(a){return!a.nodeName||-1!==$.inArray(a.nodeName.toLowerCase(),["iframe","#document","html","body"])}function h(a){return $.isFunction(a)||$.isPlainObject(a)?a:{top:a,left:a}}var p=$.scrollTo=function(a,d,b){return $(window).scrollTo(a,d,b)};p.defaults={axis:"xy",duration:0,limit:!0};$.fn.scrollTo=function(a,d,b){"object"=== typeof d&&(b=d,d=0);"function"===typeof b&&(b={onAfter:b});"max"===a&&(a=9E9);b=$.extend({},p.defaults,b);d=d||b.duration;var u=b.queue&&1<b.axis.length;u&&(d/=2);b.offset=h(b.offset);b.over=h(b.over);return this.each(function(){function k(a){var k=$.extend({},b,{queue:!0,duration:d,complete:a&&function(){a.call(q,e,b)}});r.animate(f,k)}if(null!==a){var l=n(this),q=l?this.contentWindow||window:this,r=$(q),e=a,f={},t;switch(typeof e){case "number":case "string":if(/^([+-]=?)?\d+(\.\d+)?(px|%)?$/.test(e)){e= h(e);break}e=l?$(e):$(e,q);case "object":if(e.length===0)return;if(e.is||e.style)t=(e=$(e)).offset()}var v=$.isFunction(b.offset)&&b.offset(q,e)||b.offset;$.each(b.axis.split(""),function(a,c){var d="x"===c?"Left":"Top",m=d.toLowerCase(),g="scroll"+d,h=r[g](),n=p.max(q,c);t?(f[g]=t[m]+(l?0:h-r.offset()[m]),b.margin&&(f[g]-=parseInt(e.css("margin"+d),10)||0,f[g]-=parseInt(e.css("border"+d+"Width"),10)||0),f[g]+=v[m]||0,b.over[m]&&(f[g]+=e["x"===c?"width":"height"]()*b.over[m])):(d=e[m],f[g]=d.slice&& "%"===d.slice(-1)?parseFloat(d)/100*n:d);b.limit&&/^\d+$/.test(f[g])&&(f[g]=0>=f[g]?0:Math.min(f[g],n));!a&&1<b.axis.length&&(h===f[g]?f={}:u&&(k(b.onAfterFirst),f={}))});k(b.onAfter)}})};p.max=function(a,d){var b="x"===d?"Width":"Height",h="scroll"+b;if(!n(a))return a[h]-$(a)[b.toLowerCase()]();var b="client"+b,k=a.ownerDocument||a.document,l=k.documentElement,k=k.body;return Math.max(l[h],k[h])-Math.min(l[b],k[b])};$.Tween.propHooks.scrollLeft=$.Tween.propHooks.scrollTop={get:function(a){return $(a.elem)[a.prop]()}, set:function(a){var d=this.get(a);if(a.options.interrupt&&a._last&&a._last!==d)return $(a.elem).stop();var b=Math.round(a.now);d!==b&&($(a.elem)[a.prop](b),a._last=this.get(a))}};return p});
 
+  (function(){ // nav pants
+
   $(window).scroll(function(){
-  var scroll = $(window).scrollTop();
-  var $nav = $('.navbar');
-  var navHeight = $nav.height();
-  if (scroll >= navHeight) {
-    $nav.addClass('is-scrolled');
-  } else {
-    $nav.removeClass('is-scrolled');
-  }
-});
-$('.js-nav-trigger').click(function(){
-  $(this).toggleClass('is-clicked');
-  $('nav.nav').toggleClass('is-visible');
-});
+
+    var scroll = $(window).scrollTop();
+    var $nav = $('.navbar');
+    var navHeight = $nav.height();
+
+    if (scroll >= navHeight) { // user scrolls past height of nav
+
+      $nav.addClass('is-scrolled'); // add mod class
+
+    } else {
+
+      $nav.removeClass('is-scrolled'); // remove mod class
+
+    }
+
+  });
+
+  $('.js-nav-trigger').click(function(){ // user clicks nav trigger
+
+    $(this).toggleClass('is-clicked'); // toggle animation/mod class
+
+    $('nav.nav').toggleClass('is-visible'); // toggle mod class on nav
+
+  });
+
+})();
 
   (function(){ // safety pants
 
@@ -178,20 +204,24 @@ $('.js-nav-trigger').click(function(){
 
   });
 
-  var hash = $.trim( window.location.hash ); // get hash value from URL
+  $(window).load(function(){ // scroll to anchor pants
 
-  if (hash) { // if hash in the URL
+    var hash = $.trim( window.location.hash ); // get hash value from URL
 
-    $('.tertiary-nav-item a[href$="'+hash+'"]').click(); // find tertiary link that matches hash and click it on page load
-    $('html, body')
-      .animate({scrollTop:$(window.location.hash) // scroll to anchor
-        .offset().top - 288 }, 0); // offset by 288px
+    if (hash) { // if hash in the URL
 
-  }
+      $('.tertiary-nav-item a[href$="'+hash+'"]').click(); // find tertiary link that matches hash and click it on page load
+      $('html, body')
+        .animate({scrollTop:$('.tertiary-nav-content' + hash) // scroll to anchor
+          .offset().top - 288 }, 1000); // offset by 288px
+
+    }
+
+  });
 
 })(); // end safety pants
 
-  (function(){
+  (function(){ // slider pants
 
 	var $slide 			= $('.slide'),
 			$firstSlide = $('.slide:first-child'),
@@ -319,7 +349,7 @@ $('.js-nav-trigger').click(function(){
 		},
 
 		threshold:178 // swipe length of 178px or more
-		
+
 	});
 
 
@@ -333,7 +363,7 @@ $('.js-awards').click(function(){
     });
 });
 
-  (function(){ // safety pants
+  (function(){ // contact pants
 
   var $salesProfile = $('.sales-map-profile');
 
@@ -549,46 +579,55 @@ $('.js-awards').click(function(){
 
 })(); // end safety pants
 
-  $('select#academy').change(function() {
-	var value =  this.value,
-      $asset = $('.asset');
-	$asset.hide()
-    .removeClass('is-showing');
-  $('.asset.' + value).addClass('is-showing').show();
-  if (value == 'all') {
-  	$asset.show()
-      .addClass('is-showing');
-  }
-});
+  (function(){ // academy pants
 
-$(window).resize(function() {
-  var $assetTitle = $('.asset.is-showing .asset-title'),
-			assetWidth  = $assetTitle.width();
+	$('select#academy').change(function() {
+		var value =  this.value,
+	      $asset = $('.asset');
+		$asset.hide()
+	    .removeClass('is-showing');
+	  $('.asset.' + value).addClass('is-showing').show();
+	  if (value == 'all') {
+	  	$asset.show()
+	      .addClass('is-showing');
+	  }
+	});
 
-	$assetTitle.css('height', assetWidth + 32);
-}).resize();
+	$(window).resize(function() {
+	  var $assetTitle = $('.asset.is-showing .asset-title'),
+				assetWidth  = $assetTitle.width();
+
+		$assetTitle.css('height', assetWidth + 32);
+	}).resize();
+
+})();
+
+  
+(function(){ // product feature pants
 
   $('.product-feature-item').click(function(){
 
-  var $this     = $(this),
-      featureID = $this.attr('id'); // store ID attribute in featureID variable
+    var $this     = $(this),
+        featureID = $this.attr('id'); // store ID attribute in featureID variable
 
-  $this
-    .parent().children() // localize
-    .removeClass('is-selected'); // clear mod class from all items
+    $this
+      .parent().children() // localize
+      .removeClass('is-selected'); // clear mod class from all items
 
-  $this.addClass('is-selected'); // add mod class to clicked element
+    $this.addClass('is-selected'); // add mod class to clicked element
 
-  $this.closest('.slide') // localize
-    .find('.product-features-video') // find videos
-    .hide() // hide all videos
-    .removeClass('is-visible'); // clear mod classes
+    $this.closest('.slide') // localize
+      .find('.product-features-video') // find videos
+      .hide() // hide all videos
+      .removeClass('is-visible'); // clear mod classes
 
-  $('.product-features-video#' + featureID) // select video with matching ID
-    .addClass('is-visible') // add mod class
-    .show(); // show only selected video
+    $('.product-features-video#' + featureID) // select video with matching ID
+      .addClass('is-visible') // add mod class
+      .show(); // show only selected video
 
-});
+  });
+
+})();
 
 
   // One-off Stuff
@@ -607,12 +646,12 @@ $(window).resize(function() {
     $('.js-trial-container').fadeOut(300); // fade out lightbox
 
     $('html,body').css('overflow','');
-    
+
   });
 
   // Form confirmation
 
-  (function(){ // safety pants
+  (function(){ // form confirmation pants
 
     var $form = $('form.adaptiva-form');
 

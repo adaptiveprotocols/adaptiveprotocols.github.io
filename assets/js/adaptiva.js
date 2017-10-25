@@ -52,7 +52,7 @@
 
 })();
 
-jQuery(document).ready(function($) { // DOM ready pants!
+jQuery(document).ready(function($) { // DOM ready pants
   {% include js/visible.js %}
   {% include js/smooth-scroll.js %}
   {% include js/scrollto.js %}
@@ -80,12 +80,12 @@ jQuery(document).ready(function($) { // DOM ready pants!
     $('.js-trial-container').fadeOut(300); // fade out lightbox
 
     $('html,body').css('overflow','');
-    
+
   });
 
   // Form confirmation
 
-  (function(){ // safety pants
+  (function(){ // form confirmation pants
 
     var $form = $('form.adaptiva-form');
 

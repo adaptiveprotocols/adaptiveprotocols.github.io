@@ -1,4 +1,4 @@
-(function(){
+(function(){ // slider pants
 
 	var $slide 			= $('.slide'),
 			$firstSlide = $('.slide:first-child'),
@@ -126,7 +126,7 @@
 		},
 
 		threshold:178 // swipe length of 178px or more
-		
+
 	});
 
 

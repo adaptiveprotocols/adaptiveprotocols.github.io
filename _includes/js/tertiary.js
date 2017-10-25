@@ -25,15 +25,19 @@
 
   });
 
-  var hash = $.trim( window.location.hash ); // get hash value from URL
+  $(window).load(function(){ // scroll to anchor pants
 
-  if (hash) { // if hash in the URL
+    var hash = $.trim( window.location.hash ); // get hash value from URL
 
-    $('.tertiary-nav-item a[href$="'+hash+'"]').click(); // find tertiary link that matches hash and click it on page load
-    $('html, body')
-      .animate({scrollTop:$(window.location.hash) // scroll to anchor
-        .offset().top - 288 }, 0); // offset by 288px
+    if (hash) { // if hash in the URL
 
-  }
+      $('.tertiary-nav-item a[href$="'+hash+'"]').click(); // find tertiary link that matches hash and click it on page load
+      $('html, body')
+        .animate({scrollTop:$('.tertiary-nav-content' + hash) // scroll to anchor
+          .offset().top - 288 }, 1000); // offset by 288px
+
+    }
+
+  });
 
 })(); // end safety pants
