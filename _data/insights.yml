@@ -29,6 +29,13 @@
 - title: "Bad Rabbit. Good Solution."
   url: "https://insights.adaptiva.com/2017/bad-rabbit-good-solution/"
   img: "/assets/img/insights/2017-10-25-bad-rabbit"
-  excerpt: "It seems like we can’t go two months without another major cyber security incident. This time it comes in the form of a ransomware attack dubbed ‘Bad Rabbit.’"
+  excerpt: "It seems like we can't go two months without another major cyber security incident. This time it comes in the form of a ransomware attack dubbed 'Bad Rabbit.'"
   type: product
-  date: 20171023
+  date: 20171025
+
+- title: "Speed Read: Windows 10 Fall Creators Update for IT Pros"
+  url: "https://insights.adaptiva.com/2017/speed-read-windows-10-fall-creators-update-pros/"
+  img: "/assets/img/insights/2017-10-26-fall-creators-update"
+  excerpt: "The Windows 10 Fall Creators Update is here! This post provides all the links you need to quench your thirst for knowledge."
+  type: product
+  date: 20171026
