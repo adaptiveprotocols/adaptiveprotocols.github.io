@@ -51,6 +51,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="{{"/assets/js/touchswipe.js" | relative_url}}"></script>
     <script type="text/javascript" src="{{"/assets/js/adaptiva.js" | relative_url}}"></script>
+    {% if page.map %}
+    <script>
+      {% include js/maps.js %}
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9ar4XlyXp0QN774iW5XTIdCVuOpB4Iy0&callback=initMap"></script>
+    {% endif %}
     <script type="text/javascript" language="javascript">
       var sf14gv = 22025;
       (function() {

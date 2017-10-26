@@ -102,32 +102,34 @@
 	$firstSlide.children('.slider-arrow.prev').click(firstSlide); // clicking previous on first slide cycles to end
 
 	$lastSlide.children('.slider-arrow.next').click(lastSlide); // clicking next on last slide cycles to beginning
+	if ( isTouch() == true ) {
 
-	$slide.swipe({ // user swipes on slide
+		$slide.swipe({ // user swipes on slide
 
-		swipeRight:function() { // user swipes right <3
-			if ( $(this).is(':first-child') ) { // if first slide
-				$(this).children('.slider-arrow.prev')
-					.each(firstSlide); // cycle around to last slide
-			} else {
-				$(this).children('.slider-arrow.prev')
-					.each(prevSlide); // else trigger previous slide
-			}
-		},
+			swipeRight:function() { // user swipes right <3
+				if ( $(this).is(':first-child') ) { // if first slide
+					$(this).children('.slider-arrow.prev')
+						.each(firstSlide); // cycle around to last slide
+				} else {
+					$(this).children('.slider-arrow.prev')
+						.each(prevSlide); // else trigger previous slide
+				}
+			},
 
-		swipeLeft:function() { // user swipes left </3
-			if ( $(this).is(':last-child') ) { // if last slide
-				$(this).children('.slider-arrow.next')
-					.each(lastSlide); // cycle around to first slide
-			} else {
-				$(this).children('.slider-arrow.next')
-					.each(nextSlide); // else trigger next slide
-			}
-		},
+			swipeLeft:function() { // user swipes left </3
+				if ( $(this).is(':last-child') ) { // if last slide
+					$(this).children('.slider-arrow.next')
+						.each(lastSlide); // cycle around to first slide
+				} else {
+					$(this).children('.slider-arrow.next')
+						.each(nextSlide); // else trigger next slide
+				}
+			},
 
-		threshold:178 // swipe length of 178px or more
+			threshold:178 // swipe length of 178px or more
 
-	});
+		});
 
+	}
 
 })(); // end safety pants

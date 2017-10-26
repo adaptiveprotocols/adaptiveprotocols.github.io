@@ -10,28 +10,28 @@ $type-largest:    4.263rem;
 $type-jumbo:      6.854rem;
 
 .type-smaller {
-  font-size: $type-smaller;
+  font-size: $type-smaller !important;
 }
 .type-small {
-  font-size: $type-small;
+  font-size: $type-small !important;
 }
 .type-base {
-  font-size: $type-base;
+  font-size: $type-base !important;
 }
 .type-big {
-  font-size: $type-big;
+  font-size: $type-big !important;
 }
 .type-large {
-  font-size: $type-large;
+  font-size: $type-large !important;
 }
 .type-larger {
-  font-size: $type-larger;
+  font-size: $type-larger !important;
 }
 .type-largest {
-  font-size: $type-largest;
+  font-size: $type-largest !important;
 }
 .type-jumbo {
-  font-size: $type-jumbo;
+  font-size: $type-jumbo !important;
 }
 
 * {

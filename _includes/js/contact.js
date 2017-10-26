@@ -111,105 +111,109 @@
 
   // Swipe Gestures
 
-  $salesProfile.swipe({
+  if ( isTouch() == true ) {
 
-    swipeStatus: function(event, phase, direction, distance) {
+    $salesProfile.swipe({
 
-      if (direction=='down') { // user swipes down
+      swipeStatus: function(event, phase, direction, distance) {
 
-        if (phase=='move') { // while swipe is in motion
+        if (direction=='down') { // user swipes down
 
-          $(this)
+          if (phase=='move') { // while swipe is in motion
+
+            $(this)
+              .css({
+                'opacity': 1 - ((distance/2)/100), // fade as user swipes
+                'top': distance/2 + '%' // slide downward with swipe
+              });
+
+          }
+
+          if (phase=='end') { // if user completes swipe reqs
+
+            closeProfile(); // close profile
+
+          }
+
+          if (phase=='cancel') { // if user fails swipe reqs
+
+            $(this).removeAttr('style') // reset style attribute
             .css({
-              'opacity': 1 - ((distance/2)/100), // fade as user swipes
-              'top': distance/2 + '%' // slide downward with swipe
+              'display':'block' // set css display back to default
             });
 
-        }
-
-        if (phase=='end') { // if user completes swipe reqs
-
-          closeProfile(); // close profile
+          }
 
         }
 
-        if (phase=='cancel') { // if user fails swipe reqs
+        if (direction=='left') {
 
-          $(this).removeAttr('style') // reset style attribute
-          .css({
-            'display':'block' // set css display back to default
-          });
+          if (phase=='move') { // while swipe is in motion
 
-        }
+            $(this).find('.content') // select content inside
+              .css({
+                'opacity': 1 - ((distance/2)/100), // fade as user swipes
+                'left': 50 - distance/5 + '%' // slide left with swipe
+              });
 
-      }
+          }
 
-      if (direction=='left') {
+          if (phase=='end') { // if user completes swipe reqs
 
-        if (phase=='move') { // while swipe is in motion
+            nextProfile(); // next profile
 
-          $(this).find('.content') // select content inside
-            .css({
-              'opacity': 1 - ((distance/2)/100), // fade as user swipes
-              'left': 50 - distance/5 + '%' // slide left with swipe
-            });
+            $(this).find('.content')
+              .removeAttr('style'); // remove style attr
 
-        }
+          }
 
-        if (phase=='end') { // if user completes swipe reqs
+          if (phase=='cancel') { // if user fails swipe reqs
 
-          nextProfile(); // next profile
+            $(this).find('.content')
+              .removeAttr('style') // remove style attr
 
-          $(this).find('.content')
-            .removeAttr('style'); // remove style attr
+          }
 
         }
 
-        if (phase=='cancel') { // if user fails swipe reqs
+        if (direction=='right') { // user swipes right <3
 
-          $(this).find('.content')
-            .removeAttr('style') // remove style attr
+          if (phase=='move') { // while swipe is in motion
 
-        }
+            $(this).find('.content')
+              .css({
+                'opacity': 1 - ((distance/2)/100), // fade as user swipes
+                'left': 50 + distance/5 + '%' // slide downward with swipe
+              });
 
-      }
+          }
 
-      if (direction=='right') { // user swipes right <3
+          if (phase=='end') { // if user completes swipe reqs
 
-        if (phase=='move') { // while swipe is in motion
+            prevProfile(); // previous profile
 
-          $(this).find('.content')
-            .css({
-              'opacity': 1 - ((distance/2)/100), // fade as user swipes
-              'left': 50 + distance/5 + '%' // slide downward with swipe
-            });
+            $(this).find('.content')
+              .removeAttr('style'); // remove style attr
 
-        }
+          }
 
-        if (phase=='end') { // if user completes swipe reqs
+          if (phase=='cancel') { // if user fails swipe reqs
 
-          prevProfile(); // previous profile
+            $(this).find('.content')
+              .removeAttr('style') // remove style attr
 
-          $(this).find('.content')
-            .removeAttr('style'); // remove style attr
-
-        }
-
-        if (phase=='cancel') { // if user fails swipe reqs
-
-          $(this).find('.content')
-            .removeAttr('style') // remove style attr
+          }
 
         }
 
-      }
+      },
+      triggerOnTouchEnd: false,
+      triggerOnTouchLeave: false,
+      threshold: 200,
+      cancelThreshold: 42,
+      fingers: 1
+    });
 
-    },
-    triggerOnTouchEnd: false,
-    triggerOnTouchLeave: false,
-    threshold: 200,
-    cancelThreshold: 42,
-    fingers: 1
-  });
+  }
 
 })(); // end safety pants

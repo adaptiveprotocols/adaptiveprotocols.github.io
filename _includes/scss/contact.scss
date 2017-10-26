@@ -14,6 +14,50 @@ section.hero#hero-contact {
   background: $white;
   @include boxshadow($boxshadow-xl-10);
 }
+section.location {
+  width: 100%;
+  height: 33vw;
+  min-height: 420px; //lmao
+  position: relative;
+  padding: 0;
+  #map {
+    @include z-index-0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .content {
+    position: relative;
+    @include z-index-1;
+    background: transparent;
+  }
+  .tile {
+    margin-top: $spacing-large;
+    .tile-content {
+      background: rgba($white, .88);
+      @include boxshadow($boxshadow-xl-50);
+    }
+    h2 {
+      font-size: $type-large;
+    }
+  }
+  @media #{$mobile} {
+    height: 100vh;
+    padding-bottom: $spacing-larger;
+    .content {
+      position: absolute;
+      bottom: 0;
+    }
+    .tile {
+      margin-top: 0;
+      h2 {
+        font-size: $type-big;
+      }
+    }
+  }
+}
 .sales-map {
   position: relative;
   svg {

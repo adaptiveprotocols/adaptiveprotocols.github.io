@@ -52,21 +52,21 @@ html, body { margin: 0; padding: 0; font-size: 16px; overflow-x: hidden; }
 .is-scrolled.slideLeft { -webkit-animation: slideLeft 1000ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards, fadeIn 600ms linear 1 forwards; animation: slideLeft 1000ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards, fadeIn 600ms linear 1 forwards; }
 .is-scrolled.fadeIn { -webkit-animation: fadeIn 600ms linear 1 forwards; animation: fadeIn 600ms linear 1 forwards; }
 
-.type-smaller { font-size: 0.618rem; }
+.type-smaller { font-size: 0.618rem !important; }
 
-.type-small { font-size: 0.875rem; }
+.type-small { font-size: 0.875rem !important; }
 
-.type-base { font-size: 1rem; }
+.type-base { font-size: 1rem !important; }
 
-.type-big { font-size: 1.25rem; }
+.type-big { font-size: 1.25rem !important; }
 
-.type-large { font-size: 1.618rem; }
+.type-large { font-size: 1.618rem !important; }
 
-.type-larger { font-size: 2.618rem; }
+.type-larger { font-size: 2.618rem !important; }
 
-.type-largest { font-size: 4.263rem; }
+.type-largest { font-size: 4.263rem !important; }
 
-.type-jumbo { font-size: 6.854rem; }
+.type-jumbo { font-size: 6.854rem !important; }
 
 * { font-family: 'museo-sans', Segoe UI, Helvetica, sans-serif; }
 
@@ -649,6 +649,17 @@ section.hero#hero-contact h1 { color: #fff; }
 @media screen and (max-width: 767px) { section.hero#hero-contact { background-image: url("/assets/img/hero/hero-contact--mobile.jpg"); } }
 
 .form-container { margin-top: 2.618rem; background: #fff; -webkit-box-shadow: 0 1.618em 2.618em -1em rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 1.618em 2.618em -1em rgba(0, 0, 0, 0.1); box-shadow: 0 1.618em 2.618em -1em rgba(0, 0, 0, 0.1); }
+
+section.location { width: 100%; height: 33vw; min-height: 420px; position: relative; padding: 0; }
+section.location #map { z-index: 0; position: absolute; top: 0; width: 100%; height: 100%; overflow: hidden; }
+section.location .content { position: relative; z-index: 100; background: transparent; }
+section.location .tile { margin-top: 2.618rem; }
+section.location .tile .tile-content { background: rgba(255, 255, 255, 0.88); -webkit-box-shadow: 0 1.618em 2.618em -1em rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 1.618em 2.618em -1em rgba(0, 0, 0, 0.5); box-shadow: 0 1.618em 2.618em -1em rgba(0, 0, 0, 0.5); }
+section.location .tile h2 { font-size: 1.618rem; }
+@media screen and (max-width: 767px) { section.location { height: 100vh; padding-bottom: 4.283rem; }
+  section.location .content { position: absolute; bottom: 0; }
+  section.location .tile { margin-top: 0; }
+  section.location .tile h2 { font-size: 1.25rem; } }
 
 .sales-map { position: relative; }
 .sales-map svg { position: relative; z-index: 100; }
