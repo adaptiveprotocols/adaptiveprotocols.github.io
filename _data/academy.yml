@@ -960,3 +960,13 @@
     - class: 'product-resource'
   categories:
     - category: 'Product Resource'
+
+- title: "Adaptiva 2017 Enterprise Endpoint Security Survey"
+  link: 'http://www2.adaptiva.com/survey/2017-endpoint-security'
+  date: 20171027
+  posted: 'October 27 2017'
+  type: document
+  classes:
+    - class: 'report'
+  categories:
+    - category: 'Report'
