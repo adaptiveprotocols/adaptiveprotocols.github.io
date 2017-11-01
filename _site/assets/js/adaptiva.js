@@ -61,6 +61,7 @@ function isTouch() { // check to see if touch screen
 }
 
 jQuery(document).ready(function($) { // DOM ready pants
+
   (function($) {
 
   /*!
@@ -101,6 +102,7 @@ $(window).scroll(function(event) {
   });
 
 });
+
 
   (function(){ // smooth scrolling pants
 
@@ -149,6 +151,7 @@ $(window).scroll(function(event) {
 
 })();
 
+
   /*!
  * Copyright (c) 2007-2015 Ariel Flesler - aflesler ○ gmail • com | http://flesler.blogspot.com
  * Licensed under MIT
@@ -156,6 +159,7 @@ $(window).scroll(function(event) {
  * @version 2.1.3
  */
 ;(function(f){"use strict";"function"===typeof define&&define.amd?define(["jquery"],f):"undefined"!==typeof module&&module.exports?module.exports=f(require("jquery")):f(jQuery)})(function($){"use strict";function n(a){return!a.nodeName||-1!==$.inArray(a.nodeName.toLowerCase(),["iframe","#document","html","body"])}function h(a){return $.isFunction(a)||$.isPlainObject(a)?a:{top:a,left:a}}var p=$.scrollTo=function(a,d,b){return $(window).scrollTo(a,d,b)};p.defaults={axis:"xy",duration:0,limit:!0};$.fn.scrollTo=function(a,d,b){"object"=== typeof d&&(b=d,d=0);"function"===typeof b&&(b={onAfter:b});"max"===a&&(a=9E9);b=$.extend({},p.defaults,b);d=d||b.duration;var u=b.queue&&1<b.axis.length;u&&(d/=2);b.offset=h(b.offset);b.over=h(b.over);return this.each(function(){function k(a){var k=$.extend({},b,{queue:!0,duration:d,complete:a&&function(){a.call(q,e,b)}});r.animate(f,k)}if(null!==a){var l=n(this),q=l?this.contentWindow||window:this,r=$(q),e=a,f={},t;switch(typeof e){case "number":case "string":if(/^([+-]=?)?\d+(\.\d+)?(px|%)?$/.test(e)){e= h(e);break}e=l?$(e):$(e,q);case "object":if(e.length===0)return;if(e.is||e.style)t=(e=$(e)).offset()}var v=$.isFunction(b.offset)&&b.offset(q,e)||b.offset;$.each(b.axis.split(""),function(a,c){var d="x"===c?"Left":"Top",m=d.toLowerCase(),g="scroll"+d,h=r[g](),n=p.max(q,c);t?(f[g]=t[m]+(l?0:h-r.offset()[m]),b.margin&&(f[g]-=parseInt(e.css("margin"+d),10)||0,f[g]-=parseInt(e.css("border"+d+"Width"),10)||0),f[g]+=v[m]||0,b.over[m]&&(f[g]+=e["x"===c?"width":"height"]()*b.over[m])):(d=e[m],f[g]=d.slice&& "%"===d.slice(-1)?parseFloat(d)/100*n:d);b.limit&&/^\d+$/.test(f[g])&&(f[g]=0>=f[g]?0:Math.min(f[g],n));!a&&1<b.axis.length&&(h===f[g]?f={}:u&&(k(b.onAfterFirst),f={}))});k(b.onAfter)}})};p.max=function(a,d){var b="x"===d?"Width":"Height",h="scroll"+b;if(!n(a))return a[h]-$(a)[b.toLowerCase()]();var b="client"+b,k=a.ownerDocument||a.document,l=k.documentElement,k=k.body;return Math.max(l[h],k[h])-Math.min(l[b],k[b])};$.Tween.propHooks.scrollLeft=$.Tween.propHooks.scrollTop={get:function(a){return $(a.elem)[a.prop]()}, set:function(a){var d=this.get(a);if(a.options.interrupt&&a._last&&a._last!==d)return $(a.elem).stop();var b=Math.round(a.now);d!==b&&($(a.elem)[a.prop](b),a._last=this.get(a))}};return p});
+
 
   (function(){ // nav pants
 
@@ -186,6 +190,7 @@ $(window).scroll(function(event) {
   });
 
 })();
+
 
   (function(){ // safety pants
 
@@ -230,6 +235,7 @@ $(window).scroll(function(event) {
   });
 
 })(); // end safety pants
+
 
   (function(){ // slider pants
 
@@ -367,6 +373,7 @@ $(window).scroll(function(event) {
 
 })(); // end safety pants
 
+
   // Load more button on awards table ----------
 $('.js-awards').click(function(){
   $('.js-awards-row:nth-child(n+6)').toggleClass('is-showing');
@@ -374,6 +381,7 @@ $('.js-awards').click(function(){
         return text === "Show More" ? "Show Less" : "Show More";
     });
 });
+
 
   (function(){ // contact pants
 
@@ -595,6 +603,7 @@ $('.js-awards').click(function(){
 
 })(); // end safety pants
 
+
   (function(){ // academy pants
 
 	$('select#academy').change(function() {
@@ -617,6 +626,7 @@ $('.js-awards').click(function(){
 	}).resize();
 
 })();
+
 
   
 (function(){ // product feature pants
@@ -646,24 +656,100 @@ $('.js-awards').click(function(){
 })();
 
 
-  // One-off Stuff
+  (function(){ // free trial pants
 
-  // Free trial button
+  var container = '.js-trial-container';
+
+  function closeTrial() {
+
+    $(container).fadeOut(300, function(){
+      $(this).removeAttr('style').css({
+        'display': 'none'
+      });
+    });
+
+    $('html,body').css({
+      'overflow': ''
+    }).off('touchmove');
+
+  }
+
   $('.js-trial').click(function(){ // user clicks free trial button
 
-    $('.js-trial-container').fadeIn(300); // fade in lightbox
+    $(container).fadeIn(300); // fade in modal
 
-    $('html,body').css('overflow', 'hidden');
+    // Disable scrolling while trial container is open
+    $('html,body')
+      .css({
+        'overflow': 'hidden'
+      }).on('touchmove', function(e){
+        e.preventDefault();
+      });
+
+    $(document).keydown(function(e){ // user hits key while modal open
+
+      switch(e.which) {
+
+        case 27: closeTrial(); // ESC: close modal
+        break;
+
+        default: return;
+
+      }
+      e.preventDefault(); // stop from scrolling or anything weird
+
+    });
 
   });
 
-  $('.js-trial-close').click(function(){ // user clicks X
+  $('.js-trial-close').click(closeTrial); // User clicks X to close
 
-    $('.js-trial-container').fadeOut(300); // fade out lightbox
+  if ( isTouch() == true ) { // check for touch device
 
-    $('html,body').css('overflow','');
+    $(container).swipe({ // user swipes trial container
 
-  });
+      swipeStatus: function(event, phase, direction, distance) {
+
+        if (direction=='down') { // user swipes down
+
+          if (phase=='move') { // while swipe is in motion
+
+            $(this)
+              .css({
+                'opacity': 1 - ((distance/2)/100), // fade as user swipes
+                'top': distance/2 + '%' // slide downward with swipe
+              });
+
+          }
+
+          if (phase=='end') { // user completes swipe
+
+            closeTrial();
+
+          }
+
+          if (phase=='cancel') {
+
+            $(this).removeAttr('style').css({
+              'display': 'flex'
+            });
+
+          }
+
+        }
+
+      },
+      triggerOnTouchEnd: false,
+      triggerOnTouchLeave: false,
+      threshold: 200,
+      cancelThreshold: 42
+
+    });
+
+  }
+
+})();
+
 
   // Form confirmation
 

@@ -63,35 +63,28 @@ function isTouch() { // check to see if touch screen
 }
 
 jQuery(document).ready(function($) { // DOM ready pants
+
   {% include js/visible.js %}
+
   {% include js/smooth-scroll.js %}
+
   {% include js/scrollto.js %}
+
   {% include js/nav.js %}
+
   {% include js/tertiary.js %}
+
   {% include js/slider.js %}
+
   {% include js/about.js %}
+
   {% include js/contact.js %}
+
   {% include js/academy.js %}
+
   {% include js/products.js %}
 
-  // One-off Stuff
-
-  // Free trial button
-  $('.js-trial').click(function(){ // user clicks free trial button
-
-    $('.js-trial-container').fadeIn(300); // fade in lightbox
-
-    $('html,body').css('overflow', 'hidden');
-
-  });
-
-  $('.js-trial-close').click(function(){ // user clicks X
-
-    $('.js-trial-container').fadeOut(300); // fade out lightbox
-
-    $('html,body').css('overflow','');
-
-  });
+  {% include js/trial.js %}
 
   // Form confirmation
 
