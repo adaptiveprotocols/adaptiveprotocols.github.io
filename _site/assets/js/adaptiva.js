@@ -658,19 +658,22 @@ $('.js-awards').click(function(){
 
   (function(){ // free trial pants
 
-  var container = '.js-trial-container';
+  var container = '.js-trial-container',
+      $this = $(this);
 
   function closeTrial() {
 
-    $(container).fadeOut(300, function(){
-      $(this).removeAttr('style').css({
+    $(container).fadeOut(300, function(){ // fade out lightbox
+
+      $this.removeAttr('style').css({ // reset CSS on callback
         'display': 'none'
       });
+
     });
 
-    $('html,body').css({
+    $('html,body').css({ // reset overflow
       'overflow': ''
-    }).off('touchmove');
+    }).off('touchmove'); // unbind from touchmove
 
   }
 
@@ -714,7 +717,7 @@ $('.js-awards').click(function(){
 
           if (phase=='move') { // while swipe is in motion
 
-            $(this)
+            $this
               .css({
                 'opacity': 1 - ((distance/2)/100), // fade as user swipes
                 'top': distance/2 + '%' // slide downward with swipe
@@ -728,9 +731,9 @@ $('.js-awards').click(function(){
 
           }
 
-          if (phase=='cancel') {
+          if (phase=='cancel') { // user fails or cancels swipe
 
-            $(this).removeAttr('style').css({
+            $this.removeAttr('style').css({ // reset CSS
               'display': 'flex'
             });
 
