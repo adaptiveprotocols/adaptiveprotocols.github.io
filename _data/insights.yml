@@ -39,3 +39,10 @@
   excerpt: "The Windows 10 Fall Creators Update is here! This post provides all the links you need to quench your thirst for knowledge."
   type: product
   date: 20171026
+
+- title: "The One Third-party Patching Best Practice ConfigMgr Pros Need to Know"
+  url: "https://insights.adaptiva.com/2017/one-third-party-patching-best-practice-configmgr-pros-need-know/"
+  img: "/assets/img/insights/2017-11-01-configmgr-third-party-patching"
+  excerpt: "I can explain the importance of third-party patching in one word: security. It really should be in all caps, but I don’t like to yell."
+  type: industry
+  date: 20171101
