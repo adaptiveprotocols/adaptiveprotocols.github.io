@@ -970,3 +970,13 @@
     - class: 'report'
   categories:
     - category: 'Report'
+
+- title: "Windows 10 Accelerator Program Webinar"
+  link: "http://www2.adaptiva.com/downloads/webinars/2017-11-07/w10ap"
+  date: 20171107
+  posted: 'November 07 2017'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
