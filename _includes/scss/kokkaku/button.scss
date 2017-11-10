@@ -1,0 +1,102 @@
+.button {
+  display: inline-block;
+  text-align: center;
+  padding: $spacing-small $spacing-normal;
+  text-decoration: none;
+  cursor: pointer;
+  background: $blue;
+  color: $white;
+  font-weight: 700;
+  transition: 400ms $transition-ease;
+  @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
+    &:hover {
+      background: $darker-blue;
+    }
+  }
+  &.white {
+    background: $white;
+    color: $dark-blue;
+    &.outline {
+      background: transparent;
+      border: 2px solid $white;
+      color: $white;
+    }
+    @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
+      &:hover {
+        background: $dark-blue;
+        color: $white;
+        &.outline {
+          background: rgba($white, .2);
+          @include boxshadow($glow-white);
+        }
+      }
+    }
+  }
+  &.orange {
+    background: $orange;
+    color: $white;
+    &.outline {
+      background: transparent;
+      border: 2px solid $orange;
+      color: $orange;
+    }
+    @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
+      &:hover {
+        background: $red;
+        &.outline {
+          background: rgba($orange, .5);
+        }
+      }
+    }
+  }
+  &.dark-blue {
+    background: $dark-blue;
+    color: $white;
+    &.outline {
+      background: transparent;
+      border: 2px solid $dark-blue;
+      color: $dark-blue;
+    }
+    @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
+      &:hover {
+        background: darken($dark-blue, 10%);
+        &.outline {
+          background: rgba($dark-blue, 0.5);
+        }
+      }
+    }
+  }
+  &.purple {
+    background: $purple;
+    color: $white;
+    &.outline {
+      background: transparent;
+      border: 2px solid $purple;
+      color: $purple;
+    }
+    @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
+      &:hover {
+        background: darken($purple, 10%);
+        &.outline {
+          background: rgba($purple, 0.5);
+        }
+      }
+    }
+  }
+  &.full-width {
+    display: block;
+  }
+}
+a {
+  .link-arrow {
+    margin-left: .6em;
+    transition: 400ms $transition-ease-in;
+  }
+  @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
+    &:hover {
+      .link-arrow {
+        margin-left: 1em;
+      }
+    }
+  }
+}

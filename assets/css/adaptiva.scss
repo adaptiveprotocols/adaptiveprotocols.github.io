@@ -6,41 +6,37 @@ html, body {
   font-size: 16px;
   overflow-x: hidden;
 }
-{% include scss/color.scss %}
-{% include scss/breakpoints.scss %}
-{% include scss/boxshadow.scss %}
-{% include scss/prefix.scss %}
-{% include scss/transitions.scss %}
-{% include scss/animations.scss %}
-{% include scss/zindex.scss %}
-{% include scss/spacing.scss %}
-{% include scss/type.scss %}
-{% include scss/kokkaku.scss %}
-{% include scss/button.scss %}
+// Kokkaku framework
+{% include scss/kokkaku/kokkaku.scss %}
+
+// Icons
 {% include scss/icons.scss %}
 
-// Navbar
-{% include scss/nav.scss %}
-
-// Footer
-{% include scss/footer.scss %}
-
-// Page specific styles ----------
-//   Homepage
+// Page specific styles
+// ----------
+// Homepage
 {% include scss/homepage.scss %}
-//   Products
+
+// Products
 {% include scss/products.scss %}
-//   About
+
+// About
 {% include scss/about.scss %}
-//   Careers
+
+// Careers
 {% include scss/careers.scss %}
-//   Contact
+
+// Contact
 {% include scss/contact.scss %}
-//   SCCM Academy
+
+// SCCM Academy
 {% include scss/academy.scss %}
-//   Partners
+
+// Partners
 {% include scss/partners.scss %}
-//   Support
+
+// Support
 {% include scss/support.scss %}
-//   Altiris
+
+// Altiris
 {% include scss/altiris.scss %}
