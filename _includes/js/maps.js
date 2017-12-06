@@ -1,6 +1,6 @@
   function initMap() {
         // Styles a map in night mode.
-        var ada = {lat: 47.6385764, lng: -122.2015064};
+        var ada = {lat: 47.6467837, lng: -122.2019786};
 
         var map = new google.maps.Map(document.getElementById('map'), {
           center: ada,

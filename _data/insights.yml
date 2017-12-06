@@ -46,3 +46,45 @@
   excerpt: "I can explain the importance of third-party patching in one word: security. It really should be in all caps, but I don’t like to yell."
   type: industry
   date: 20171101
+
+- title: "Windows 10 Security, Asset & Lifecycle Management, and More with Flexera’s Jason Snook"
+  url: "https://insights.adaptiva.com/2017/windows-10-security-configmgr-asset-lifecycle-management/"
+  img: "/assets/img/insights/2017-11-07-jason-snook"
+  excerpt: "Flexera’s Jason Snook shares expertise on ConfigMgr, asset/lifecycle management, Windows 10 deployment, and more."
+  type: industry
+  date: 20171108
+
+- title: "Speed Read: Windows 10 Accelerator Program Webinar Highlights"
+  url: "https://insights.adaptiva.com/2017/speed-read-windows-10-accelerator-program-webinar-highlights/"
+  img: "/assets/img/insights/2017-11-09-w10ap-webinar"
+  excerpt: "Two of my colleagues presented a wildly popular webinar last week on the Adaptiva Windows 10 Accelerator Program."
+  type: industry
+  date: 20171109
+
+- title: "AppLocker: Why You Need It and How to Use It Wisely"
+  url: "https://insights.adaptiva.com/2017/configmgr-sccm-windows-10-security-applocker/"
+  img: "/assets/img/insights/2017-11-20-app-locker"
+  excerpt: "AppLocker allows you to bring your apps under control by helping you to understand which applications are being used."
+  type: industry
+  date: 20171120
+
+- title: "Infographic: Enterprises’ Greatest Endpoint Security Challenges"
+  url: "https://insights.adaptiva.com/2017/infographic-enterprises-greatest-endpoint-security-challenges/"
+  img: "/assets/img/insights/2017-11-27-security-infographic"
+  excerpt: "This infographic shares some of the key insights from Adaptiva’s Enterprise Endpoint Security Survey of 175 IT professionals."
+  type: industry
+  date: 20171127
+
+- title: "E³: ConfigMgr Co-management with MVP Anoop Nair"
+  url: "https://insights.adaptiva.com/2017/e3-configmgr-co-management-mvp-anoop-nair/"
+  img: "/assets/img/insights/2017-11-27-anoop-nair"
+  excerpt: "In this podcast, you’ll get a remarkably clear breakdown of ConfigMgr co-management from MVP Anoop Nair."
+  type: industry
+  date: 20171127
+
+- title: "The Twelve Days of Windows 10 Deployment Tips"
+  url: "https://insights.adaptiva.com/2017/twelve-days-windows-10-deployment-tips/"
+  img: "/assets/img/insights/2017-12-06-tips"
+  excerpt: "Wishing you and your loved one the merriest of holiday seasons, and happy Windows 10 deployments in the new year!"
+  type: industry
+  date: 20171206
