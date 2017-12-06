@@ -980,3 +980,27 @@
     - class: 'webinar'
   categories:
     - category: 'Webinar'
+
+- title: "E³ Podcast: Anoop Nair"
+  link: "https://soundcloud.com/adaptiva/enterprise-endpoint-expert-anoop-nair"
+  date: 20171107
+  posted: 'November 07 2017'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
+  img: 'anoop-nair.jpg'
+
+- title: "E³ Podcast: Anoop Nair (Video)"
+  link: "https://vimeo.com/243958141"
+  date: 20171107
+  posted: 'November 07 2017'
+  type: podcast
+  classes:
+    - class: 'video'
+    - class: 'podcast'
+  categories:
+    - category: 'Video'
+    - category: 'Podcast'
+  img: 'anoop-nair.jpg'
