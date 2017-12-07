@@ -1004,3 +1004,13 @@
     - category: 'Video'
     - category: 'Podcast'
   img: 'anoop-nair.jpg'
+
+- title: "ConfigMgr 1710 & Co-Management: Off to the Races!"
+  link: "http://www2.adaptiva.com/downloads/webinars/2017-12-07/configmgr-1710"
+  date: 20171207
+  posted: 'December 07 2017'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
