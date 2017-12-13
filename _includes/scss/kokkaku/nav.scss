@@ -140,6 +140,14 @@ section.navbar {
       box-shadow: -6px 0 16px 0 rgba(black, .2);
     }
   }
+  @media screen and (max-height: 500px) {
+    li.nav-item {
+      margin-bottom: $spacing-smallest;
+      a {
+        padding: $spacing-smallest;
+      }
+    }
+  }
 }
 section.navbar.is-scrolled {
   @include boxshadow($boxshadow-sm-30);

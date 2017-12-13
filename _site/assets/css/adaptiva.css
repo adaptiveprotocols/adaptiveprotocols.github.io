@@ -349,6 +349,8 @@ section.navbar .logo { position: relative; }
   .nav li.nav-item a.current { color: #0860b8; }
   .nav li.nav-item a.button { display: inline-block; border-color: #0860b8; color: #0860b8; }
   .nav.is-visible { right: 0; box-shadow: -6px 0 16px 0 rgba(0, 0, 0, 0.2); } }
+@media screen and (max-height: 500px) { .nav li.nav-item { margin-bottom: 0.618rem; }
+  .nav li.nav-item a { padding: 0.618rem; } }
 
 section.navbar.is-scrolled { -webkit-box-shadow: 0 0.1em 0.16em 0 rgba(0, 0, 0, 0.3); -moz-box-shadow: 0 0.1em 0.16em 0 rgba(0, 0, 0, 0.3); box-shadow: 0 0.1em 0.16em 0 rgba(0, 0, 0, 0.3); }
 section.navbar.is-scrolled li.nav-item a { line-height: 68px; }
