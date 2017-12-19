@@ -1014,3 +1014,23 @@
     - class: 'webinar'
   categories:
     - category: 'Webinar'
+
+- title: "The Twelve Days of Windows 10 Deployment Tips eBook"
+  link: "http://www2.adaptiva.com/windows-10-tips"
+  date: 20171218
+  posted: 'December 18 2017'
+  type: document
+  classes:
+    - class: 'product-resource'
+  categories:
+    - category: 'Product Resource'
+
+- title: "Windows 10 Accelerator Program Webinar Overview"
+  link: "http://www2.adaptiva.com/windows-10-accelerator-program-overview"
+  date: 20171218
+  posted: 'December 18 2017'
+  type: video
+  classes:
+    - class: 'video'
+  categories:
+    - category: 'Webinar'
