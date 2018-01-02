@@ -181,3 +181,64 @@ section.color-block {
 .encrypted-email:after {
   content: attr(data-name) "@" attr(data-domain) "." attr(data-tld);
 }
+
+// Back to top button
+.back-to-top {
+  position: fixed;
+  width: 68px;
+  height: 68px;
+  bottom: -$spacing-largest;
+  right: $spacing-normal;
+  border-radius: 50%;
+  @include boxshadow($boxshadow-sm-10);
+  @include z-index-5;
+  background: $blue;
+  cursor: pointer;
+  transition: bottom 400ms $transition-pop, background 400ms $transition-ease;
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-90deg);
+    transition: 400ms $transition-pop;
+  }
+  &:hover {
+    background: $dark-blue;
+    @include boxshadow($boxshadow-med-20);
+    svg {
+      transform: translate(-50%,-50%) rotate(-90deg) scale(1.1);
+    }
+  }
+  &.is-visible {
+    bottom: $spacing-normal;
+  }
+  @media #{$mobile}, #{$tablet} {
+    bottom: -68px;
+    left: 50%;
+    right: auto;
+    @include boxshadow($boxshadow-med-30);
+    transform: translateX(-50%);
+    transition: bottom 400ms $transition-pop;
+    &.is-visible {
+      bottom: 26px;
+    }
+  }
+}
+.back-to-top--bar {
+  display: none;
+  @media #{$mobile}, #{$tablet} {
+    display: block;
+    position: fixed;
+    bottom: -68px;
+    left: 0;
+    height: 68px;
+    width: 100%;
+    @include z-index-4;
+    @include boxshadow($boxshadow-med-10);
+    background: rgba($white, .68);
+    transition: 400ms $transition-ease;
+    &.is-visible {
+      bottom: 0;
+    }
+  }
+}
