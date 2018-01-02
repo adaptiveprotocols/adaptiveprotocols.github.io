@@ -2,6 +2,7 @@
 layout: default
 title: Adaptiva Academy
 meta: Curated library of free resources and education materials for Microsoft Systems Center ConfigMgr (ConfigMgr) admins. Learn SCCM tips and tricks.
+backtotop: true
 bodyclass: academy
 redirect_from:
   - "/sccm-academy/"
@@ -28,10 +29,6 @@ redirect_from:
   </div>
 </section>
 <section class="color-block white academy">
-  <div class="back-to-top" title="Back to Top">
-    {% include svg/arrow.svg height="16" width="16" color="white" %}
-  </div>
-  <div class="back-to-top--bar"></div>
   <div class="content grid-container">
     {% assign academy = site.data.academy | sort: 'date' | reverse %}
     {% for asset in academy %}

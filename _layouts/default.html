@@ -48,6 +48,9 @@
     <!-- End Google Tag Manager (noscript) -->
     {% include html/trial.html %}
     {% include html/nav.html %}
+    {% if page.backtotop %}
+      {% include html/backtotop.html %}
+    {% endif %}
     {{content}}
     {% include html/footer.html %}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
