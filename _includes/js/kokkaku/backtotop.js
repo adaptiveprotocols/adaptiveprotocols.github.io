@@ -2,6 +2,7 @@ $(window).scroll(function(){
 
   var dist = $(window).scrollTop(),
       win = $(window).height(),
+      doc = $(document).height(),
       $btn = $('.back-to-top'),
       $bar = $('.back-to-top--bar');
 
@@ -12,6 +13,7 @@ $(window).scroll(function(){
           $('html, body')
             .stop(true, false)
             .animate({scrollTop: 0}, 1000); // scroll to top
+          return false;
         });
 
     $bar.addClass('is-visible');
@@ -20,7 +22,7 @@ $(window).scroll(function(){
 
     $btn.removeClass('is-visible');
     $bar.removeClass('is-visible');
-    
+
   }
 
 });
