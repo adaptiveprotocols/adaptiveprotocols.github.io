@@ -194,7 +194,7 @@ section.color-block {
   @include z-index-5;
   background: $blue;
   cursor: pointer;
-  transition: bottom 400ms $transition-pop, background 400ms $transition-ease;
+  transition: bottom 400ms $transition-pop, background 400ms $transition-ease, box-shadow 400ms $transition-ease;
   svg {
     position: absolute;
     top: 50%;
@@ -204,7 +204,7 @@ section.color-block {
   }
   &:hover {
     background: $dark-blue;
-    @include boxshadow($boxshadow-med-20);
+    @include boxshadow($boxshadow-med-30);
     svg {
       transform: translate(-50%,-50%) rotate(-90deg) scale(1.1);
     }
@@ -218,7 +218,7 @@ section.color-block {
     right: auto;
     @include boxshadow($boxshadow-med-30);
     transform: translateX(-50%);
-    transition: bottom 400ms $transition-pop;
+    transition: bottom 400ms $transition-pop, box-shadow 400ms $transition-ease;
     &.is-visible {
       bottom: 26px;
     }
