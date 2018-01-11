@@ -23,9 +23,6 @@
   {% include js/secret.js %} // lmfao
 })();
 
-// Newsletter and blog confirmation
-{% include js/confirmation.js %}
-
 function isTouch() { // check to see if touch screen
   try {
     document.createEvent("TouchEvent");
@@ -45,13 +42,5 @@ jQuery(document).ready(function($) { // DOM ready pants
   {% include js/smooth-scroll.js %}
 
   {% include js/scrollto.js %}
-
-  {% include js/about.js %}
-
-  {% include js/contact.js %}
-
-  {% include js/academy.js %}
-
-  {% include js/products.js %}
 
 });

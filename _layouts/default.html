@@ -38,8 +38,6 @@
     <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="{{ '/assets/css/adaptiva.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="manifest" href="/manifest.json">
-    <!-- <script src="https://use.typekit.net/des5qhx.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script> -->
   </head>
   <body{% if page.bodyclass %} class="{{page.bodyclass}}"{% endif %}>
     <!-- Google Tag Manager (noscript) -->
@@ -56,10 +54,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="{{"/assets/js/touchswipe.js" | relative_url}}"></script>
     <script type="text/javascript" src="{{"/assets/js/adaptiva.js" | relative_url}}"></script>
+    {% if page.js %}
+      {% for file in page.js %}
+      <script type="text/javascript" src="/assets/js/{{file}}"></script>
+      {% endfor %}
+    {% endif %}
     {% if page.map %}
-    <script>
-      {% include js/maps.js %}
-    </script>
+      <script>
+        {% include js/maps.js %}
+      </script>
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9ar4XlyXp0QN774iW5XTIdCVuOpB4Iy0&callback=initMap"></script>
     {% endif %}
