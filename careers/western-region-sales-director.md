@@ -1,7 +1,7 @@
 ---
 layout: job
 title: Western Region Sales Director
-meta: "Apply for the Western Region Sales Director position at Adaptiva HQ in Bellevue, WA"
+meta: "Apply for the Western Region Sales Director position at Adaptiva HQ in Kirkland, WA"
 bodyclass: job
 ---
 ## About Adaptiva
