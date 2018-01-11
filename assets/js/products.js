@@ -1,26 +1,27 @@
+jQuery(document).ready(function($) {
+  (function(){ // product feature pants
 
-(function(){ // product feature pants
+    $('.product-feature-item').click(function(){
 
-  $('.product-feature-item').click(function(){
+      var $this     = $(this),
+          featureID = $this.attr('id'); // store ID attribute in featureID variable
 
-    var $this     = $(this),
-        featureID = $this.attr('id'); // store ID attribute in featureID variable
+      $this
+        .parent().children() // localize
+        .removeClass('is-selected'); // clear mod class from all items
 
-    $this
-      .parent().children() // localize
-      .removeClass('is-selected'); // clear mod class from all items
+      $this.addClass('is-selected'); // add mod class to clicked element
 
-    $this.addClass('is-selected'); // add mod class to clicked element
+      $this.closest('.slide') // localize
+        .find('.product-features-video') // find videos
+        .hide() // hide all videos
+        .removeClass('is-visible'); // clear mod classes
 
-    $this.closest('.slide') // localize
-      .find('.product-features-video') // find videos
-      .hide() // hide all videos
-      .removeClass('is-visible'); // clear mod classes
+      $('.product-features-video#' + featureID) // select video with matching ID
+        .addClass('is-visible') // add mod class
+        .show(); // show only selected video
 
-    $('.product-features-video#' + featureID) // select video with matching ID
-      .addClass('is-visible') // add mod class
-      .show(); // show only selected video
+    });
 
-  });
-
-})();
+  })();
+});
