@@ -88,3 +88,31 @@
   excerpt: "Wishing you and your loved one the merriest of holiday seasons, and happy Windows 10 deployments in the new year!"
   type: industry
   date: 20171206
+
+- title: "Why Are Windows 10 Migrations Picking Up Speed?"
+  url: "https://insights.adaptiva.com/2017/windows-10-migrations-picking-speed/"
+  img: "/assets/img/insights/2018-01-17-windows-migrations"
+  excerpt: "Last year, few IT professionals believed they would be close to completing their migration to Windows 10 by this time."
+  type: industry
+  date: 20171215
+
+- title: "What Is Co-Management with ConfigMgr and Why Use It?"
+  url: "https://insights.adaptiva.com/2018/co-management-configmgr-use/"
+  img: "/assets/img/insights/2018-01-17-co-management"
+  excerpt: "Microsoft has introduced the co-management feature with the 1710 release of System Center Configuration Manager (ConfigMgr)."
+  type: industry
+  date: 20180103
+
+- title: "Five ConfigMgr Admin Resolutions to Grow Your Career in 2018"
+  url: "https://insights.adaptiva.com/2018/five-configmgr-admin-resolutions-grow-career-2018/"
+  img: "/assets/img/insights/2018-01-17-resolutions"
+  excerpt: "Happy new year! Are you ready to kick off the new year with some incredible goals to advance your career or complete a large project at work?"
+  type: industry
+  date: 20180111
+
+- title: "Meltdown/Spectre Infographic"
+  url: "https://insights.adaptiva.com/2018/meltdown-spectre-windows-10-infographic/"
+  img: "/assets/img/insights/2018-01-17-meltdown-spectre"
+  excerpt: "The newly discovered processor bugs dubbed Meltdown and Spectre are dominating the tech headlines—and many IT administrators’ daily task lists."
+  type: industry
+  date: 20180112
