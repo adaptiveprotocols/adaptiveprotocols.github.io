@@ -33,6 +33,8 @@ function isTouch() { // check to see if touch screen
   }
 }
 
+{% include js/confirmation.js %}
+
 jQuery(document).ready(function($) { // DOM ready pants
 
   {% include js/kokkaku/kokkaku.js %}
