@@ -30,6 +30,16 @@ js:
     </div>
   </div>
 </section>
+<form class="j-row academy-search">
+  <div class="content">
+    <div class="j-col j-col-10 academy-search-bar">
+      <input id="academySearch" type="text" placeholder="Search for resources">
+    </div>
+    <div class="j-col j-col-2 academy-search-button">
+      <button type="submit">Search</button>
+    </div>
+  </div>
+</form>
 <section class="color-block white academy">
   <div class="content grid-container">
     {% assign academy = site.data.academy | sort: 'date' | reverse %}

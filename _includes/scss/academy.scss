@@ -6,6 +6,36 @@ section.hero#hero-academy {
     background-image: url('/assets/img/hero/hero-academy--mobile.jpg');
   }
 }
+.academy-search {
+  background: $lighter-gray;
+  padding: $spacing-smallest;
+  width: 100%;
+  @include z-index-2;
+}
+.academy-search-bar {
+  input {
+    background: transparent;
+    border: none;
+    padding: $spacing-small 0;
+    width: 100%;
+    -webkit-appearance: none;
+  }
+}
+.academy-search-button {
+  button {
+    background: $blue;
+    border: 0;
+    color: $white;
+    cursor: pointer;
+    padding: $spacing-small;
+    transition: 300ms ease;
+    width: 100%;
+    -webkit-appearance: none;
+    &:hover {
+      background: $dark-blue;
+    }
+  }
+}
 .academy-dropdown {
   position: relative;
   select {

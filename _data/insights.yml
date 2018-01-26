@@ -116,3 +116,17 @@
   excerpt: "The newly discovered processor bugs dubbed Meltdown and Spectre are dominating the tech headlines—and many IT administrators’ daily task lists."
   type: industry
   date: 20180112
+
+- title: "E³: Cybersecurity Expert Sami Laiho on Endpoint Security"
+  url: "https://insights.adaptiva.com/2018/e3-cybersecurity-expert-sami-laiho-on-windows-security/"
+  img: "/assets/img/insights/2018-01-26-sami-laiho"
+  excerpt: "Cybersecurity trainer, author, speaker, and Microsoft MVP Sami Laiho joins Ami and Bill for a deep dive into the hottest endpoint security topics!"
+  type: industry
+  date: 20180117
+
+- title: "The Whys and Wheres of Windows Defender Device Guard"
+  url: "https://insights.adaptiva.com/2018/whys-wheres-windows-defender-device-guard/"
+  img: "/assets/img/insights/2018-01-26-cliff-hobbs"
+  excerpt: "Look back over the history of computing, and you will see that users have typically been rather too trusting when running applications."
+  type: industry
+  date: 20180125
