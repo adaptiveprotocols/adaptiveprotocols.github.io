@@ -61,7 +61,8 @@
       &:hover {
         background: darken($dark-blue, 10%);
         &.outline {
-          background: rgba($dark-blue, 0.5);
+          background: $dark-blue;
+          color: $white;
         }
       }
     }
