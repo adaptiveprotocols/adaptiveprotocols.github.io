@@ -7,7 +7,7 @@ jQuery(document).ready(function($) { // academy ready pants
 				searchBar = search.find('input');
 				resetAcademy = function() {
 
-					container.find('.asset.is-showing').sort(function(a, b) {
+					container.find('.asset.is-showing').sort(function(a, b) { // sort by original index
 						return ($(b).data('original-index')) < ($(a).data('original-index')) ? 1 : -1;
 					});
 
@@ -32,7 +32,7 @@ jQuery(document).ready(function($) { // academy ready pants
 		  	$asset.show().addClass('is-showing'); // show all
 		  }
 
-			searchBar.attr('placeholder', 'Search ' + selection);
+			searchBar.attr('placeholder', 'Search ' + selection); // specify scope in placeholder
 
 		});
 
@@ -48,13 +48,15 @@ jQuery(document).ready(function($) { // academy ready pants
 	search.submit(function(e){ // user searches for string
 
 		e.preventDefault(); // stop page from reloading
-		$asset.attr('data-score', ''); // reset search scores
-		resetAcademy(); // if assets have been reordered by a prior search, reset them first
 
 		var results = [], // results go here obvs
+				category = $('select#academy').val(), // current selected category at time of submission
 				scope = $('.asset.is-showing'), // set query scope to only assets currently on page
 				query = $('#academySearch').val().toLowerCase(), // user's query
 				q = query.split(' '); // split query up by word and add to array; // all assets showing on page at time of query
+				
+		$asset.attr('data-score', '0'); // reset search scores
+		resetAcademy(); // if assets have been reordered by a prior search, reset them first
 
 		scope.each(function() { // loop through all assets on page
 
@@ -74,11 +76,11 @@ jQuery(document).ready(function($) { // academy ready pants
 					score++; // increment score for each match
 				}
 
-				if (match) {
-					$(this).attr('data-score', score); // add number of matched words to DOM attribute
-					results.push($(this)); // add current $asset object to results array
-				}
+			}
 
+			if (match) {
+				$(this).attr('data-score', score); // add number of matched words to DOM attribute
+				results.push($(this)); // add current $asset object to results array
 			}
 
 			match = false; // reset match
