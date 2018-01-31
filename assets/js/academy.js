@@ -9,12 +9,7 @@ jQuery(document).ready(function($) { // academy ready pants
     searchBar = search.find('input'),
     tagContainer = $('#searchTags'),
     // function expressions
-    hideAssets = function() {
-
-      $asset.removeClass('is-showing is-match').hide();
-
-    },
-    resetAcademy = function(show = false) { // reorder by og index and allow DOM reset too
+    resetAcademy = function(show = false, hide = false) { // reorder by og index and allow DOM resets too
 
       container.find('.asset.is-showing').sort(function(a, b) { // sort by original index
         return ($(b).data('original-index')) < ($(a).data('original-index')) ? 1 : -1;
@@ -23,6 +18,10 @@ jQuery(document).ready(function($) { // academy ready pants
       if (show) {
         $asset.removeClass('is-match').addClass('is-showing').show();
       }
+
+			if (hide) {
+				$asset.removeClass('is-showing is-match').hide();
+			}
 
     },
     showScope = function() {
@@ -52,10 +51,10 @@ jQuery(document).ready(function($) { // academy ready pants
       selection = $(this).find('option:selected').text(); // text value for selection
 
     // if prior search reorder and hide search stuff
-    resetAcademy();
+    resetAcademy(null, hide = true);
     $('.search-info').hide();
 
-    hideAssets(); // hide all and remove mod classes
+    searchBar.val(''); // clear search bar
 
     // find assets in selected category and show
     $('.asset.' + category).addClass('is-showing').show();
@@ -95,7 +94,6 @@ jQuery(document).ready(function($) { // academy ready pants
       tags = tagContainer.find('span.search-tags-tag');
 
     $asset.attr('data-score', '0'); // reset search scores
-    resetAcademy(); // reorder by original index just in case prior search reordered already
 
     scope.each(function() { // loop through all assets on page
 
@@ -136,7 +134,7 @@ jQuery(document).ready(function($) { // academy ready pants
     console.log(results);
     console.log(session);
 
-    hideAssets(); // reset before loop
+		resetAcademy(null, hide = true); // reorder by original index just in case prior search reordered already
 
     // loop through results
     $.each(results, function() {
