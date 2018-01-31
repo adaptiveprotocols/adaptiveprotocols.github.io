@@ -97,7 +97,7 @@ jQuery(document).ready(function($) { // academy ready pants
 
 		scope.each(function() { // loop through all assets on page
 
-			var title = $(this).find('h3').text().toLowerCase(), // title of current asset
+			var title = $(this).attr('title').toLowerCase(), // title of current asset
 				match = false, // no matches by default
 				score = 0, // score for result ordering
 				bonus = scope.length; // bonus score based on number of available results
