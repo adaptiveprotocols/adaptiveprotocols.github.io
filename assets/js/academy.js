@@ -53,8 +53,8 @@ jQuery(document).ready(function($) { // academy ready pants
 		// if prior search reorder and hide search stuff
 		resetAcademy(null, hide = true);
 		$('.search-info').hide();
-
-		searchBar.val(''); // clear search bar
+		searchBar.val('');
+		tagContainer.empty();
 
 		// find assets in selected category and show
 		$('.asset.' + category).addClass('is-showing').show();
