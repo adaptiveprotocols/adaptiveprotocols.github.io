@@ -19,6 +19,9 @@ section.hero#hero-academy {
     padding: $spacing-small 0;
     width: 100%;
     -webkit-appearance: none;
+    @media #{$mobile} {
+      text-align: center;
+    }
   }
 }
 .academy-search-button {
@@ -27,12 +30,46 @@ section.hero#hero-academy {
     border: 0;
     color: $white;
     cursor: pointer;
+    font-weight: 700;
     padding: $spacing-small;
     transition: 300ms ease;
     width: 100%;
     -webkit-appearance: none;
     &:hover {
       background: $dark-blue;
+    }
+  }
+}
+.search-tags-tag {
+  background: rgba($blue, .2);
+  color: $blue;
+  cursor: pointer;
+  display: inline-block;
+  margin: $spacing-normal $spacing-small;
+  padding: $spacing-smallest;
+  transition: 300ms $transition-ease;
+  &.is-active {
+    background: $blue;
+    color: $white;
+    cursor: default;
+    pointer-events: none;
+  }
+  &.is-sub {
+    margin-left: 2em;
+    position: relative;
+    &::before {
+      content: '>';
+      color: $gray;
+      display: block;
+      left: -1.75em;
+      position: absolute;
+      top: .5em;
+    }
+  }
+  &:hover {
+    background: rgba($blue, .4);
+    &.is-active {
+      background: $blue;
     }
   }
 }

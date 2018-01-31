@@ -1,122 +1,235 @@
 jQuery(document).ready(function($) { // academy ready pants
 
-		var $asset = $('.asset'),
-				container = $('.academy').find('.grid-container'),
-				matched = 0,
-				search = $('form.academy-search'),
-				searchBar = search.find('input');
-				resetAcademy = function() {
+  // variables
+  var $asset = $('.asset'),
+    dropdown = $('select#academy'),
+    container = $('.academy').find('.grid-container'),
+    session = [], // store user search path
+    search = $('form.academy-search'),
+    searchBar = search.find('input'),
+    tagContainer = $('#searchTags'),
+    // function expressions
+    hideAssets = function() {
 
-					container.find('.asset.is-showing').sort(function(a, b) { // sort by original index
-						return ($(b).data('original-index')) < ($(a).data('original-index')) ? 1 : -1;
-					});
+      $asset.removeClass('is-showing is-match').hide();
 
-				};
+    },
+    resetAcademy = function(show = false) { // reorder by og index and allow DOM reset too
 
-		$asset.each(function(index){ // immediately loop through all assets
+      container.find('.asset.is-showing').sort(function(a, b) { // sort by original index
+        return ($(b).data('original-index')) < ($(a).data('original-index')) ? 1 : -1;
+      });
 
-			$(this).attr('data-original-index', index); // create a data attr with its original index
+      if (show) {
+        $asset.removeClass('is-match').addClass('is-showing').show();
+      }
 
-		});
+    },
+    showScope = function() {
 
-		$('select#academy').change(function() { // user selects category from dropdown
+      var searchScope = dropdown.find('option:selected').text();
+      searchBar.attr('placeholder', 'Search ' + searchScope);
 
-			var value =  this.value, // store category selection
-					selection = $(this).find('option:selected').text();
+    },
+    showMatched = function() {
 
-			resetAcademy(); // reset order if user selects from dropdown after searching
-			$('.search-info').hide();
-			$asset.hide().removeClass('is-showing is-match'); // hide all and remove mod classes
-		  $('.asset.' + value).addClass('is-showing').show(); // find assets in selected category and show
-		  if (value == 'all') { // if user selects all resources
-		  	$asset.show().addClass('is-showing'); // show all
-		  }
+      $('.asset.is-match').addClass('is-showing').show();
 
-			searchBar.attr('placeholder', 'Search ' + selection); // specify scope in placeholder
+    };
 
-		});
+  // immediately loop through all assets
+  $asset.each(function(index) {
 
-		$(window).resize(function() { // keep all tiles square
+    $(this).attr('data-original-index', index); // create data attr with original index
 
-		  var $assetTitle = $('.asset.is-showing .asset-title'),
-					assetWidth  = $assetTitle.width();
+  });
 
-			$assetTitle.css('height', assetWidth + 32);
+  // CATEGORY SELECTION
 
-		}).resize();
+  dropdown.change(function() { // user selects category from dropdown
 
-	search.submit(function(e){ // user searches for string
+    var category = this.value, // store category selection
+      selection = $(this).find('option:selected').text(); // text value for selection
 
-		e.preventDefault(); // stop page from reloading
+    // if prior search reorder and hide search stuff
+    resetAcademy();
+    $('.search-info').hide();
 
-		var results = [], // results go here obvs
-				category = $('select#academy').val(), // current selected category at time of submission
-				scope = $('.asset.is-showing'), // set query scope to only assets currently on page
-				query = $('#academySearch').val().toLowerCase(), // user's query
-				q = query.split(' '); // split query up by word and add to array; // all assets showing on page at time of query
-				
-		$asset.attr('data-score', '0'); // reset search scores
-		resetAcademy(); // if assets have been reordered by a prior search, reset them first
+    hideAssets(); // hide all and remove mod classes
 
-		scope.each(function() { // loop through all assets on page
+    // find assets in selected category and show
+    $('.asset.' + category).addClass('is-showing').show();
 
-			var title = $(this).find('h3').text().toLowerCase(), // title of current asset
-					match = false, // no matches by default
-					score = 0, // score for result ordering
-					bonus = scope.length; // bonus score to be decremented depending on order of
+    if (category == 'all') { // if user selects all resources
 
-			for (var i = 0; i < q.length; i++) { // loop through query word array
+      $asset.show().addClass('is-showing'); // show all
 
-				var reg = new RegExp(q[i], 'g'); // new regex rule to match each word in query
+    }
 
-				if (title.match(reg)) { // if current word in query loop matches anything in title
-					console.log('Matched word "' + q[i] +'"');
-					match = true; // we got a match!
-					score += (bonus - i); // give each match a bonus depending on the index of the query of the matched word
-					score++; // increment score for each match
-				}
+    // specify scope in searchbar
+    showScope();
 
-			}
+  });
 
-			if (match) {
-				$(this).attr('data-score', score); // add number of matched words to DOM attribute
-				results.push($(this)); // add current $asset object to results array
-			}
+  // TILE SIZING
 
-			match = false; // reset match
+  $(window).resize(function() {
 
-		});
+    var $assetTitle = $('.asset.is-showing .asset-title'),
+      assetWidth = $assetTitle.width();
 
-		$asset.removeClass('is-showing is-match').hide(); // hide and reset everything
+    $assetTitle.css('height', assetWidth + 32); // keep tiles square at all times
 
-		console.log(results);
+  }).resize();
 
-		$.each(results, function(){ // loop through results
+  // ACADEMY SEARCH
 
-			$(this).addClass('is-match'); // add mod class for matched assets
+  search.submit(function(e) { // user submits query :O
 
-		});
+    e.preventDefault(); // stop page from reloading
 
-		container.find('.asset.is-match').sort(function(a,b) { // sort container based on data-score attr
+    var results = [], // results go here obvs
+      scope = $('.asset.is-showing'), // set scope to only assets currently on page
+      query = $('#academySearch').val().toLowerCase(), // user query (case insensitive)
+      q = query.split(' '), // split query up by word and add to array
+      tags = tagContainer.find('span.search-tags-tag');
 
-			return ($(b).data('score')) > ($(a).data('score')) ? 1 : -1;
+    $asset.attr('data-score', '0'); // reset search scores
+    resetAcademy(); // reorder by original index just in case prior search reordered already
 
-		}).appendTo(container);
+    scope.each(function() { // loop through all assets on page
 
-		$('.asset.is-match').addClass('is-showing').show(); // show matched assets
-		$('.search-info').show(); // show result count and 'clear' button
+      var title = $(this).find('h3').text().toLowerCase(), // title of current asset
+        match = false, // no matches by default
+        score = 0, // score for result ordering
+        bonus = scope.length; // bonus score based on number of available results
 
-		matched = results.length;
-		$('#resultCount').text(matched + ' results found for "' + query + '"'); // display number of results
+      for (var i = 0; i < q.length; i++) { // loop through query word array
 
-		$('.js-clear-search').click(function() { // user clicks "clear search" button
+        var reg = new RegExp(q[i], 'g'); // match each word in query
 
-			resetAcademy(); // reorder everything
-			$('.search-info').hide(); // hide search info bar
-			$asset.removeClass('is-match').addClass('is-showing').show(); // reset mod classes and show everything
+        if (title.match(reg)) { // if current word in query matches anything in title
+          console.log('Matched word "' + q[i] + '"');
+          match = true; // we got a match!
+          score += (bonus - i); // give each match a bonus depending on word order
+          score++; // increment score for each match
+        }
 
-		})
+      } // end q loop
 
-	});
+      if (match) {
+
+        $(this).attr('data-score', score); // add score to DOM attribute
+        results.push($(this)); // add current asset to results
+
+      }
+
+      match = false; // reset match
+
+    }); // end scope loop
+
+    // DISPLAY RESULTS
+
+    session.push(results); // add search to session
+
+    // log results and session history
+    console.log(results);
+    console.log(session);
+
+    hideAssets(); // reset before loop
+
+    // loop through results
+    $.each(results, function() {
+
+      $(this).addClass('is-match'); // add mod class for matched assets
+
+    }); // end loop
+
+    // sort container based on data-score attr
+    container.find('.asset.is-match').sort(function(a, b) {
+
+      return ($(b).data('score')) > ($(a).data('score')) ? 1 : -1;
+
+    }).appendTo(container); // add to container
+
+    showMatched(); // show results
+
+    // SEARCH INFO
+
+    $('.search-info').show(); // show result count and 'clear' button
+
+    // display number of results
+    $('#resultCount').text(results.length + ' results found for "' + query + '"');
+
+    // add breadcrumbs to container
+    if (tagContainer.text().length == 0) { // if target container is empty
+
+      // add first tag
+      tagContainer.append('<span class=\"search-tags-tag is-active\">' + query + '</span>');
+
+    } else { // other tags already exist
+
+      $('.search-tags-tag').removeClass('is-active');
+      // add subsequent tag
+      tagContainer.append('<span class=\"search-tags-tag is-active is-sub\">' + query + '</span>');
+
+    }
+
+    // add title attributes for hover cues
+    tags.each(function() {
+
+      $(this).attr('title', 'Revert search scope back to "' + $(this).text() + '"');
+
+    });
+
+    // breadcrumb clicks
+    tags.not('.is-active').click(function() {
+
+      var index = tags.index($(this)),
+        queryTxt = $(this).text();
+
+      // set only clicked tag to active
+      tags.removeClass('is-active');
+      $(this).addClass('is-active');
+
+      if (index !== tags.length) { // as long as it's not the last tag
+
+        // reset everything
+        resetAcademy(show = true);
+
+        // display updated number of results
+        $('#resultCount').text(session[index].length + ' results found for "' + queryTxt + '"');
+
+        $(this).nextAll().remove(); // remove everything after clicked tag
+        session.length = index + 1; // revert session history
+
+        $.each(session[index], function() { // loop through session array at same index as tag clicked
+
+          $(this).addClass('is-match'); // add mod classes
+
+        });
+
+        console.log(session); // log new session history
+        showMatched(); // show results for current query
+
+      }
+
+    });
+
+    // clear form button
+    $('.js-clear-search').click(function() { // user clicks "clear search" button
+
+      $('.search-info').hide(); // hide search info bar
+      tagContainer.empty(); // remove all search tags
+      session = []; // empty search history
+      resetAcademy(show = true); // reorder everything
+      // reset dropdown and search bar
+      dropdown.val('all');
+      searchBar.val('');
+      showScope();
+
+    });
+
+  });
 
 });

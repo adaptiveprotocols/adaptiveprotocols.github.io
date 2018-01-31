@@ -117,6 +117,13 @@
   type: industry
   date: 20180112
 
+- title: "Hello AutoPilot: Intro for ConfigMgr Admins"
+  url: "https://insights.adaptiva.com/2018/hello-autopilot-intro-configmgr-admins/"
+  img: "/assets/img/insights/2018-01-26-matt-tinney"
+  excerpt: "What Is Windows AutoPilot Deployment and Why Use It?"
+  type: industry
+  date: 20180123
+
 - title: "E³: Cybersecurity Expert Sami Laiho on Endpoint Security"
   url: "https://insights.adaptiva.com/2018/e3-cybersecurity-expert-sami-laiho-on-windows-security/"
   img: "/assets/img/insights/2018-01-26-sami-laiho"
