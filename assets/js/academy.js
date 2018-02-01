@@ -25,6 +25,8 @@ jQuery(document).ready(function($) { // academy ready pants
 				$asset.removeClass('is-showing is-match').hide();
 			}
 
+			$asset.attr('data-score', '0'); // reset search scores every time
+
 		},
 		showScope = function() {
 
@@ -94,7 +96,7 @@ jQuery(document).ready(function($) { // academy ready pants
 			q = query.split(' '), // split query up by word and add to array
 			tags = tagContainer.find('span.search-tags-tag');
 
-		$asset.attr('data-score', '0'); // reset search scores
+		resetAcademy(null, null, hide = true); // hide all assets and reset scores
 
 		/* FIND RESULTS */
 
@@ -139,8 +141,6 @@ jQuery(document).ready(function($) { // academy ready pants
 		// log results and session history
 		console.log(results);
 		console.log(session);
-
-		resetAcademy(null, null, hide = true); // hide all assets before showing results
 
 		$.each(results, function() { // mark results as matches
 
@@ -222,7 +222,6 @@ jQuery(document).ready(function($) { // academy ready pants
 
 			session = []; // empty search history
 			$('.search-info').hide(); // hide search info bar
-			$('.asset').attr('data-score', '0');
 
 			// reset dropdown and search bar
 			tagContainer.empty(); // remove all search tags
