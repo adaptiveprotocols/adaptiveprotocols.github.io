@@ -112,8 +112,11 @@ jQuery(document).ready(function($) { // academy ready pants
 				if (title.match(reg)) { // if current word in q finds match in title
 					console.log('Matched word "' + q[i] + '"');
 					match = true; // we got a match!
+					if (title === query) {
+						score += bonus * 2; // if exact match, give double full bonus
+					}
 					score += (bonus - i); // give each match a bonus based on word order
-					score++; // increment score for each match
+					score *= 2; // double score for each match
 				}
 
 			} // end q loop
@@ -219,6 +222,7 @@ jQuery(document).ready(function($) { // academy ready pants
 
 			session = []; // empty search history
 			$('.search-info').hide(); // hide search info bar
+			$('.asset').attr('data-score', '0');
 
 			// reset dropdown and search bar
 			tagContainer.empty(); // remove all search tags
