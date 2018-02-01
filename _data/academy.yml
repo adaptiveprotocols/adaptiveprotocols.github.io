@@ -376,16 +376,6 @@
   categories:
     - category: 'Webinar'
 
-- title: "Adaptiva Company Brochure"
-  link: 'http://www2.adaptiva.com/downloads/configmgr-1706-webinar'
-  date: 20160415
-  posted: 'April 15 2016'
-  type: document
-  classes:
-    - class: 'product-resource'
-  categories:
-    - category: 'Product Resource'
-
 - title: "OneSite Overview Brochure"
   link: 'http://www2.adaptiva.com/l/139131/2016-04-15/6s9j7'
   date: 20160415
