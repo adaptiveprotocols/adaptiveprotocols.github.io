@@ -11,10 +11,6 @@ jQuery(document).ready(function($) { // academy ready pants
 		// function expressions
 		resetAcademy = function(show = false, hide = false) { // reorder by og index and allow DOM resets too
 
-			container.find('.asset.is-showing').sort(function(a, b) { // sort by original index
-				return ($(b).data('original-index')) < ($(a).data('original-index')) ? 1 : -1;
-			});
-
 			if (show) {
 				$asset.removeClass('is-match').addClass('is-showing').show();
 			}
@@ -22,6 +18,10 @@ jQuery(document).ready(function($) { // academy ready pants
 			if (hide) {
 				$asset.removeClass('is-showing is-match').hide();
 			}
+
+			container.find('.asset').sort(function(a, b) { // sort by original index
+				return ($(b).data('original-index')) < ($(a).data('original-index')) ? 1 : -1;
+			});
 
 		},
 		showScope = function() {
@@ -39,7 +39,7 @@ jQuery(document).ready(function($) { // academy ready pants
 	// immediately loop through all assets
 	$asset.each(function(index) {
 
-		$(this).attr('data-original-index', index); // create data attr with original index
+		$(this).attr('data-original-index', index + 1); // create data attr with original index
 
 	});
 
@@ -89,7 +89,7 @@ jQuery(document).ready(function($) { // academy ready pants
 
 		var results = [], // results go here obvs
 			scope = $('.asset.is-showing'), // set scope to only assets currently on page
-			query = $('#academySearch').val().toLowerCase(), // user query (case insensitive)
+			query = searchBar.val().toLowerCase(), // user query (case insensitive)
 			q = query.split(' '), // split query up by word and add to array
 			tags = tagContainer.find('span.search-tags-tag');
 
@@ -134,7 +134,8 @@ jQuery(document).ready(function($) { // academy ready pants
 		console.log(results);
 		console.log(session);
 
-		resetAcademy(null, hide = true); // reorder by original index just in case prior search reordered already
+		// resetAcademy(null, hide = true); // reorder by original index just in case prior search reordered already
+		$asset.removeClass('is-showing is-match').hide();
 
 		// loop through results
 		$.each(results, function() {
@@ -148,7 +149,7 @@ jQuery(document).ready(function($) { // academy ready pants
 
 			return ($(b).data('score')) > ($(a).data('score')) ? 1 : -1;
 
-		}).appendTo(container); // add to container
+		});
 
 		showMatched(); // show results
 
