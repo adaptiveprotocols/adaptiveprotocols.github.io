@@ -164,13 +164,13 @@ jQuery(document).ready(function($) { // academy ready pants
 		if (tagContainer.text().length == 0) { // if target container is empty
 
 			// add first tag
-			tagContainer.append('<span class=\"search-tags-tag is-active\">' + query + '</span>');
+			tagContainer.append('<span class="search-tags-tag is-active">' + query + '</span>');
 
 		} else { // other tags already exist
 
 			$('.search-tags-tag').removeClass('is-active');
 			// add subsequent tag
-			tagContainer.append('<span class=\"search-tags-tag is-active is-sub\">' + query + '</span>');
+			tagContainer.append('<span class="search-tags-tag is-active is-sub">' + query + '</span>');
 
 		}
 
