@@ -9,11 +9,13 @@ jQuery(document).ready(function($) { // academy ready pants
 		searchBar = search.find('input'),
 		tagContainer = $('#searchTags'),
 		// function expressions
-		resetAcademy = function(show = false, hide = false) { // reorder by og index and allow DOM resets too
+		resetAcademy = function(sort = true, show = false, hide = false) {
 
-			container.find('.asset').sort(function(a, b) { // sort by original index
-				return ($(b).data('original-index')) < ($(a).data('original-index')) ? 1 : -1;
-			}).appendTo(container);
+			if (sort) {
+				container.find('.asset').sort(function(a, b) { // sort by original index
+					return ($(b).data('original-index')) < ($(a).data('original-index')) ? 1 : -1;
+				}).appendTo(container);
+			}
 
 			if (show) {
 				$asset.removeClass('is-match').addClass('is-showing').show();
@@ -41,9 +43,9 @@ jQuery(document).ready(function($) { // academy ready pants
 
 		$(this).attr('data-original-index', index); // create data attr with original index
 
-	});
+	}); // end loop
 
-	// CATEGORY SELECTION
+	/* CATEGORY SELECTION */
 
 	dropdown.change(function() { // user selects category from dropdown
 
@@ -51,7 +53,7 @@ jQuery(document).ready(function($) { // academy ready pants
 			selection = $(this).find('option:selected').text(); // text value for selection
 
 		// if prior search reorder and hide search stuff
-		resetAcademy(null, hide = true);
+		resetAcademy(sort = true, null, hide = true);
 		$('.search-info').hide();
 		searchBar.val('');
 		tagContainer.empty();
@@ -64,13 +66,12 @@ jQuery(document).ready(function($) { // academy ready pants
 			$asset.show().addClass('is-showing'); // show all
 
 		}
-
 		// specify scope in searchbar
 		showScope();
 
 	});
 
-	// TILE SIZING
+	/* TILE SIZING */
 
 	$(window).resize(function() {
 
@@ -81,7 +82,7 @@ jQuery(document).ready(function($) { // academy ready pants
 
 	}).resize();
 
-	// ACADEMY SEARCH
+	/* ACADEMY SEARCH */
 
 	search.submit(function(e) { // user submits query :O
 
@@ -95,6 +96,8 @@ jQuery(document).ready(function($) { // academy ready pants
 
 		$asset.attr('data-score', '0'); // reset search scores
 
+		/* FIND RESULTS */
+
 		scope.each(function() { // loop through all assets on page
 
 			var title = $(this).attr('title').toLowerCase(), // title of current asset
@@ -102,14 +105,14 @@ jQuery(document).ready(function($) { // academy ready pants
 				score = 0, // score for result ordering
 				bonus = scope.length; // bonus score based on number of available results
 
-			for (var i = 0; i < q.length; i++) { // loop through query word array
+			for (var i = 0; i < q.length; i++) { // loop through query words
 
 				var reg = new RegExp(q[i], 'g'); // match each word in query
 
-				if (title.match(reg)) { // if current word in query matches anything in title
+				if (title.match(reg)) { // if current word in q finds match in title
 					console.log('Matched word "' + q[i] + '"');
 					match = true; // we got a match!
-					score += (bonus - i); // give each match a bonus depending on word order
+					score += (bonus - i); // give each match a bonus based on word order
 					score++; // increment score for each match
 				}
 
@@ -126,35 +129,35 @@ jQuery(document).ready(function($) { // academy ready pants
 
 		}); // end scope loop
 
-		// DISPLAY RESULTS
+		/* DISPLAY RESULTS */
 
-		session.push(results); // add search to session
+		session.push(results); // add latest search to session
 
 		// log results and session history
 		console.log(results);
 		console.log(session);
 
-		resetAcademy(null, hide = true); // reorder by original index just in case prior search reordered already
+		resetAcademy(null, null, hide = true); // hide all assets before showing results
 
-		// loop through results
-		$.each(results, function() {
+		$.each(results, function() { // mark results as matches
 
-			$(this).addClass('is-match'); // add mod class for matched assets
+			$(this).addClass('is-match');
 
-		}); // end loop
+		}); // end results loop
 
 		// sort container based on data-score attr
 		container.find('.asset.is-match').sort(function(a, b) {
 
 			return ($(b).data('score')) > ($(a).data('score')) ? 1 : -1;
 
-		}).appendTo(container); // add to container
+		}).appendTo(container);
 
-		showMatched(); // show results
+		showMatched();
 
-		// SEARCH INFO
+		/* SEARCH TAGS */
 
-		$('.search-info').show(); // show result count and 'clear' button
+		// show result count and 'clear' button
+		$('.search-info').show();
 
 		// display number of results
 		$('#resultCount').text(results.length + ' results found for "' + query + '"');
@@ -173,7 +176,7 @@ jQuery(document).ready(function($) { // academy ready pants
 
 		}
 
-		// add title attributes for hover cues
+		// add title attributes for nice hover cues
 		tags.each(function() {
 
 			$(this).attr('title', 'Revert search scope back to "' + $(this).text() + '"');
@@ -191,7 +194,7 @@ jQuery(document).ready(function($) { // academy ready pants
 			$(this).addClass('is-active');
 
 			// reset everything
-			resetAcademy(show = true);
+			resetAcademy(sort = true, show = true);
 
 			// display updated number of results
 			$('#resultCount').text(session[index].length + ' results found for "' + queryTxt + '"');
@@ -210,7 +213,8 @@ jQuery(document).ready(function($) { // academy ready pants
 
 		});
 
-		// clear form button
+		/* CLEAR BUTTON */
+
 		$('.js-clear-search').click(function() { // user clicks "clear search" button
 
 			session = []; // empty search history
@@ -221,10 +225,10 @@ jQuery(document).ready(function($) { // academy ready pants
 			dropdown.val('all');
 			searchBar.val('');
 			showScope();
-			resetAcademy(show = true); // reorder everything
+			resetAcademy(sort = true, show = true); // reorder everything
 
 		});
 
-	});
+	}); // end submit function
 
 });
