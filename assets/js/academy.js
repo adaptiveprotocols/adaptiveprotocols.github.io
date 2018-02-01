@@ -190,41 +190,38 @@ jQuery(document).ready(function($) { // academy ready pants
 			tags.removeClass('is-active');
 			$(this).addClass('is-active');
 
-			if (index !== tags.length) { // as long as it's not the last tag
+			// reset everything
+			resetAcademy(show = true);
 
-				// reset everything
-				resetAcademy(show = true);
+			// display updated number of results
+			$('#resultCount').text(session[index].length + ' results found for "' + queryTxt + '"');
 
-				// display updated number of results
-				$('#resultCount').text(session[index].length + ' results found for "' + queryTxt + '"');
+			$(this).nextAll().remove(); // remove everything after clicked tag
+			session.length = index + 1; // revert session history
 
-				$(this).nextAll().remove(); // remove everything after clicked tag
-				session.length = index + 1; // revert session history
+			$.each(session[index], function() { // loop through session array at same index as tag clicked
 
-				$.each(session[index], function() { // loop through session array at same index as tag clicked
+				$(this).addClass('is-match'); // add mod classes
 
-					$(this).addClass('is-match'); // add mod classes
+			});
 
-				});
-
-				console.log(session); // log new session history
-				showMatched(); // show results for current query
-
-			}
+			console.log(session); // log new session history
+			showMatched(); // show results for current query
 
 		});
 
 		// clear form button
 		$('.js-clear-search').click(function() { // user clicks "clear search" button
 
-			$('.search-info').hide(); // hide search info bar
-			tagContainer.empty(); // remove all search tags
 			session = []; // empty search history
-			resetAcademy(show = true); // reorder everything
+			$('.search-info').hide(); // hide search info bar
+
 			// reset dropdown and search bar
+			tagContainer.empty(); // remove all search tags
 			dropdown.val('all');
 			searchBar.val('');
 			showScope();
+			resetAcademy(show = true); // reorder everything
 
 		});
 
