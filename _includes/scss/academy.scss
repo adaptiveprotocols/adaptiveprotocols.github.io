@@ -49,8 +49,7 @@ section.hero#hero-academy {
   padding: $spacing-smallest;
   transition: 300ms $transition-ease;
   &.is-active {
-    background: $blue;
-    color: $white;
+    box-shadow: 0 .26em 0 0 $blue;
     cursor: default;
     pointer-events: none;
   }
@@ -69,9 +68,12 @@ section.hero#hero-academy {
   &:hover {
     background: rgba($blue, .4);
     &.is-active {
-      background: $blue;
+      background: rgba($blue, .2);
     }
   }
+}
+#searchTags .search-tags-tag:first-child {
+	margin-left: 0;
 }
 .academy-dropdown {
   position: relative;
