@@ -40,13 +40,6 @@ jQuery(document).ready(function($) { // academy ready pants
 
 		};
 
-	// immediately loop through all assets
-	$asset.each(function(index) {
-
-		$(this).attr('data-original-index', index); // create data attr with original index
-
-	}); // end loop
-
 	/* CATEGORY SELECTION */
 
 	dropdown.change(function() { // user selects category from dropdown
