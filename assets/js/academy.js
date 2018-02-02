@@ -1,31 +1,49 @@
 jQuery(document).ready(function($) { // academy ready pants
 
 	// variables
-	var $asset = $('.asset'),
-		dropdown = $('select#academy'),
+	var asset = $('.asset'),
 		container = $('.academy').find('.grid-container'),
-		session = [], // store user search path
+		dropdown = $('select#academy'),
 		search = $('form.academy-search'),
-		searchBar = search.find('input'),
+		searchBtn = $('.academy-search-button'),
+		searchBar = $('.academy-search-bar'),
+		searchInfo = $('.search-info'),
+		session = [], // store user search path
+		sortBy = $('.academy-sort'),
 		tagContainer = $('#searchTags'),
 		// function expressions
+		sortRel = function() { // sort by score
+
+			container.find('.asset').sort(function(a, b) {
+				return ($(b).data('score')) > ($(a).data('score')) ? 1 : -1;
+			}).appendTo(container);
+
+		},
+		sortDate = function() {
+
+			container.find('.asset').sort(function(a, b) { // sort by original index
+				return ($(b).data('original-index')) < ($(a).data('original-index')) ? 1 : -1;
+			}).appendTo(container);
+
+		},
 		resetAcademy = function(sort = true, show = false, hide = false) {
 
 			if (sort) {
-				container.find('.asset').sort(function(a, b) { // sort by original index
-					return ($(b).data('original-index')) < ($(a).data('original-index')) ? 1 : -1;
-				}).appendTo(container);
+				sortDate();
 			}
 
 			if (show) {
-				$asset.removeClass('is-match').addClass('is-showing').show();
+				asset.removeClass('is-match').addClass('is-showing').show();
 			}
 
 			if (hide) {
-				$asset.removeClass('is-showing is-match').hide();
+				asset.removeClass('is-showing is-match').hide();
 			}
 
-			$asset.attr('data-score', '0'); // reset search scores every time
+			asset.attr('data-score', '0'); // reset search scores every time
+			searchBtn.removeClass('is-active'); // gray out button every time
+			sortBy.removeClass('is-selected');
+			$('#sortRel').addClass('is-selected');
 
 		},
 		showScope = function() {
@@ -49,7 +67,7 @@ jQuery(document).ready(function($) { // academy ready pants
 
 		// if prior search reorder and hide search stuff
 		resetAcademy(sort = true, null, hide = true);
-		$('.search-info').hide();
+		searchInfo.hide().removeClass('is-showing');
 		searchBar.val('');
 		tagContainer.empty();
 
@@ -58,7 +76,7 @@ jQuery(document).ready(function($) { // academy ready pants
 
 		if (category == 'all') { // if user selects all resources
 
-			$asset.show().addClass('is-showing'); // show all
+			asset.show().addClass('is-showing'); // show all
 
 		}
 		// specify scope in searchbar
@@ -70,10 +88,10 @@ jQuery(document).ready(function($) { // academy ready pants
 
 	$(window).resize(function() {
 
-		var $assetTitle = $('.asset.is-showing .asset-title'),
-			assetWidth = $assetTitle.width();
+		var assetTitle = $('.asset.is-showing .asset-title'),
+			assetWidth = assetTitle.width();
 
-		$assetTitle.css('height', assetWidth + 32); // keep tiles square at all times
+		assetTitle.css('height', assetWidth + 32); // keep tiles square at all times
 
 	}).resize();
 
@@ -141,24 +159,18 @@ jQuery(document).ready(function($) { // academy ready pants
 
 		}); // end results loop
 
-		// sort container based on data-score attr
-		container.find('.asset.is-match').sort(function(a, b) {
-
-			return ($(b).data('score')) > ($(a).data('score')) ? 1 : -1;
-
-		}).appendTo(container);
-
-		showMatched();
+		showMatched(); // show results
+		sortRel(); // sort results based on score
 
 		/* SEARCH TAGS */
 
 		// show result count and 'clear' button
-		$('.search-info').show();
+		searchInfo.show().addClass('is-showing');
 
 		// display number of results
 		$('#resultCount').text(results.length + ' results found for "' + query + '"');
 
-		// add breadcrumbs to container
+		// add tags to container
 		if (tagContainer.text().length == 0) { // if target container is empty
 
 			// add first tag
@@ -179,7 +191,7 @@ jQuery(document).ready(function($) { // academy ready pants
 
 		});
 
-		// breadcrumb clicks
+		// tag clicks
 		tags.not('.is-active').click(function() {
 
 			var index = tags.index($(this)),
@@ -206,25 +218,67 @@ jQuery(document).ready(function($) { // academy ready pants
 
 			console.log(session); // log new session history
 			showMatched(); // show results for current query
+			searchBar.focus();
 
 		});
 
-		/* CLEAR BUTTON */
+		/* SORT RESULTS BY DATE/RELEVANCE */
 
-		$('.js-clear-search').click(function() { // user clicks "clear search" button
+		$('#sortDate').click(sortDate);
+		$('#sortRel').click(sortRel);
 
-			session = []; // empty search history
-			$('.search-info').hide(); // hide search info bar
+		sortBy.click(function(e) {
 
-			// reset dropdown and search bar
-			tagContainer.empty(); // remove all search tags
-			dropdown.val('all');
-			searchBar.val('');
-			showScope();
-			resetAcademy(sort = true, show = true); // reorder everything
+			e.preventDefault();
+
+			if (!$(this).hasClass('is-selected')) {
+
+				sortBy.removeClass('is-selected');
+				$(this).addClass('is-selected');
+
+			} else {
+				// don't do anything if already selected
+				return false;
+
+			}
 
 		});
+
+		// ensure search button activates if user starts typing again
+		if (searchBar.is(':focus')) {
+
+			searchBar.on('input', function(e) {
+				searchBtn.addClass('is-active');
+			});
+
+		}
 
 	}); // end submit function
+
+	/* CLEAR BUTTON */
+
+	$('.js-clear-search').click(function() { // user clicks "clear search" button
+
+		session = []; // empty search history
+		searchInfo.hide().removeClass('is-showing'); // hide search info bar
+
+		// reset dropdown and search bar
+		tagContainer.empty(); // remove all search tags
+		dropdown.val('all');
+		searchBar.val('');
+		showScope();
+		resetAcademy(sort = true, show = true); // reorder everything
+
+	});
+
+	/* SEARCH BUTTON */
+
+	searchBar
+		.focus(function() { // active button when user focuses on search bar
+			searchBtn.addClass('is-active');
+		})
+		.focusout(function() { // deactivate if user leaves search bar
+			searchBtn.removeClass('is-active');
+		});
 
 });

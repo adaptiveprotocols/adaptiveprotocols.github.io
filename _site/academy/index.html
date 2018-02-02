@@ -133,22 +133,27 @@
 <form class="j-row academy-search">
   <div class="content">
     <div class="j-row">
-      <div class="j-col j-col-10 academy-search-bar">
-        <input id="academySearch" type="text" placeholder="Search All Resources">
+      <div class="j-col j-col-10">
+        <input id="academySearch" class="academy-search-bar" type="text" placeholder="Search All Resources">
       </div>
-      <div class="j-col j-col-2 academy-search-button">
-        <button type="submit">Search</button>
+      <div class="j-col j-col-2">
+        <button type="submit" class="academy-search-button">Search</button>
       </div>
     </div>
   </div>
 </form>
 <section>
   <div class="content search-info" style="display:none;margin-bottom:4.283rem;">
-    <div class="j-row vertical-center-row">
-      <div class="j-col j-col-10">
+    <div class="j-row">
+      <div class="j-col j-col-7">
 				<div id="searchTags"></div>
         <span id="resultCount"></span>
       </div>
+			<div class="j-col j-col-3">
+				<span class="gray">Sort by &nbsp;</span>
+				<a href="javascript:void(0);" class="academy-sort is-selected" id="sortRel">Relevance</a>
+				<a href="javascript:void(0);" class="academy-sort" id="sortDate">Date</a>
+			</div>
       <div class="j-col j-col-2">
         <a href="javascript:void(0);" class="button dark-blue outline full-width js-clear-search">Clear Search</a>
       </div>
