@@ -12,42 +12,39 @@ jQuery(document).ready(function($) { // academy ready pants
 		sortBy = $('.academy-sort'),
 		tagContainer = $('#searchTags'),
 		// function expressions
-		sortRel = function() { // sort by score
-
+		sortRel = function() {
+			// sort by score
 			container.find('.asset').sort(function(a, b) {
 				return ($(b).data('score')) > ($(a).data('score')) ? 1 : -1;
 			}).appendTo(container);
 
 		},
 		sortDate = function() {
-
+			// sort by date/original index
 			container.find('.asset').sort(function(a, b) { // sort by original index
 				return ($(b).data('original-index')) < ($(a).data('original-index')) ? 1 : -1;
 			}).appendTo(container);
 
 		},
 		resetAcademy = function(sort = true, show = false, hide = false) {
-
+			// optional
 			if (sort) {
 				sortDate();
 			}
-
 			if (show) {
 				asset.removeClass('is-match').addClass('is-showing').show();
 			}
-
 			if (hide) {
 				asset.removeClass('is-showing is-match').hide();
 			}
-
-			asset.attr('data-score', '0'); // reset search scores every time
-			searchBtn.removeClass('is-active'); // gray out button every time
+			asset.attr('data-score', '0'); // reset scores
+			searchBtn.removeClass('is-active'); // gray out search button
 			sortBy.removeClass('is-selected');
-			$('#sortRel').addClass('is-selected');
+			$('#sortRel').addClass('is-selected'); // reset sortby buttons
 
 		},
 		showScope = function() {
-
+			// indicate scope in search bar placeholder text
 			var searchScope = dropdown.find('option:selected').text();
 			searchBar.attr('placeholder', 'Search ' + searchScope);
 
@@ -74,7 +71,8 @@ jQuery(document).ready(function($) { // academy ready pants
 		// find assets in selected category and show
 		$('.asset.' + category).addClass('is-showing').show();
 
-		if (category == 'all') { // if user selects all resources
+		// if user selects all resources
+		if (category == 'all') {
 
 			asset.show().addClass('is-showing'); // show all
 
@@ -87,36 +85,52 @@ jQuery(document).ready(function($) { // academy ready pants
 	/* TILE SIZING */
 
 	$(window).resize(function() {
-
+		// keep tiles square at all times
 		var assetTitle = $('.asset.is-showing .asset-title'),
 			assetWidth = assetTitle.width();
 
-		assetTitle.css('height', assetWidth + 32); // keep tiles square at all times
+		assetTitle.css('height', assetWidth + 32);
 
 	}).resize();
 
 	/* ACADEMY SEARCH */
 
-	search.submit(function(e) { // user submits query :O
+	search.submit(function(e) { // user submits query :o
+
+		var results = [], // results go here obvs
+			// set scope to assets currently on page
+			scope = $('.asset.is-showing'),
+			// user query (case insensitive)
+			query = $('#academySearch').val().toLowerCase(),
+			// split query by word and store in array
+			q = query.split(' '),
+			tags = tagContainer.find('span.search-tags-tag');
+
+		/* DEFAULT SUBMIT ACTIONS */
 
 		e.preventDefault(); // stop page from reloading
 
-		var results = [], // results go here obvs
-			scope = $('.asset.is-showing'), // set scope to only assets currently on page
-			query = $('#academySearch').val().toLowerCase(), // user query (case insensitive)
-			q = query.split(' '), // split query up by word and add to array
-			tags = tagContainer.find('span.search-tags-tag');
+		// hide all assets and reset scores
+		resetAcademy(null, null, hide = true);
 
-		resetAcademy(null, null, hide = true); // hide all assets and reset scores
+		// ensure search button activates if user starts typing again
+		if (searchBar.is(':focus')) {
+
+			searchBar.on('input', function(e) {
+				searchBtn.addClass('is-active');
+			});
+
+		}
 
 		/* FIND RESULTS */
 
-		scope.each(function() { // loop through all assets on page
+		scope.each(function() { // loop through current scope
 
-			var title = $(this).attr('title').toLowerCase(), // title of current asset
+			var bonus = scope.length, // bonus score based on number of available results
 				match = false, // no matches by default
 				score = 0, // score for result ordering
-				bonus = scope.length; // bonus score based on number of available results
+				title = $(this).attr('title').toLowerCase(); // title of current asset
+
 
 			for (var i = 0; i < q.length; i++) { // loop through query words
 
@@ -162,10 +176,10 @@ jQuery(document).ready(function($) { // academy ready pants
 		showMatched(); // show results
 		sortRel(); // sort results based on score
 
-		/* SEARCH TAGS */
-
-		// show result count and 'clear' button
+		// show search info and actions
 		searchInfo.show().addClass('is-showing');
+
+		/* SEARCH TAGS */
 
 		// display number of results
 		$('#resultCount').text(results.length + ' results found for "' + query + '"');
@@ -174,13 +188,13 @@ jQuery(document).ready(function($) { // academy ready pants
 		if (tagContainer.text().length == 0) { // if target container is empty
 
 			// add first tag
-			tagContainer.append('<span class=\"search-tags-tag is-active\">' + query + '</span>');
+			tagContainer.append('<span class="search-tags-tag is-active">' + query + '</span>');
 
 		} else { // other tags already exist
 
-			$('.search-tags-tag').removeClass('is-active');
+			tags.removeClass('is-active');
 			// add subsequent tag
-			tagContainer.append('<span class=\"search-tags-tag is-active is-sub\">' + query + '</span>');
+			tagContainer.append('<span class="search-tags-tag is-active is-sub">' + query + '</span>');
 
 		}
 
@@ -210,9 +224,9 @@ jQuery(document).ready(function($) { // academy ready pants
 			$(this).nextAll().remove(); // remove everything after clicked tag
 			session.length = index + 1; // revert session history
 
-			$.each(session[index], function() { // loop through session array at same index as tag clicked
+			$.each(session[index], function() { // loop through corresponding result in session
 
-				$(this).addClass('is-match'); // add mod classes
+				$(this).addClass('is-match'); // mark as matches again
 
 			});
 
@@ -244,15 +258,6 @@ jQuery(document).ready(function($) { // academy ready pants
 
 		});
 
-		// ensure search button activates if user starts typing again
-		if (searchBar.is(':focus')) {
-
-			searchBar.on('input', function(e) {
-				searchBtn.addClass('is-active');
-			});
-
-		}
-
 	}); // end submit function
 
 	/* CLEAR BUTTON */
@@ -260,14 +265,14 @@ jQuery(document).ready(function($) { // academy ready pants
 	$('.js-clear-search').click(function() { // user clicks "clear search" button
 
 		session = []; // empty search history
-		searchInfo.hide().removeClass('is-showing'); // hide search info bar
 
 		// reset dropdown and search bar
-		tagContainer.empty(); // remove all search tags
 		dropdown.val('all');
+		searchInfo.hide().removeClass('is-showing');
 		searchBar.val('');
+		tagContainer.empty();
 		showScope();
-		resetAcademy(sort = true, show = true); // reorder everything
+		resetAcademy(sort = true, show = true);
 
 	});
 
