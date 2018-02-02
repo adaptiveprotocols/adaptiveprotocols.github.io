@@ -1024,3 +1024,25 @@
     - class: 'video'
   categories:
     - category: 'Webinar'
+
+- title: "E³ Podcast: Sami Laiho"
+  link: "https://soundcloud.com/adaptiva/cybersecurity-expert-sami-laiho-on-windows-security"
+  date: 20180117
+  posted: 'January 17 2018'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
+  img: 'sami-laiho.jpg'
+
+- title: "E³ Podcast: Matt Tinney"
+  link: "https://soundcloud.com/adaptiva/hello-autopilot-podcast-edition-with-matt-tinney"
+  date: 20180123
+  posted: 'January 23 2018'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
+  img: 'matt-tinney.jpg'

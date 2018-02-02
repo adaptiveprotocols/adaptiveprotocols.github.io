@@ -75,6 +75,9 @@ section.hero#hero-academy {
 	&.is-showing {
 		margin-top: $spacing-normal;
 	}
+	@media #{$mobile} {
+		border-bottom: 2px solid $light-gray;
+	}
 }
 .academy-search-button {
 	background: transparent;
@@ -104,6 +107,12 @@ section.hero#hero-academy {
 		box-shadow: none;
 	}
 }
+.search-sortby {
+	@media #{$mobile} {
+		border-bottom: 2px solid $light-gray;
+		order: 1;
+	}
+}
 .academy-sort {
 	color: $blue;
 	cursor: pointer;
@@ -113,7 +122,10 @@ section.hero#hero-academy {
 	transition: 300ms $transition-ease;
 	&:hover,
 	&.is-selected {
-		box-shadow: inset 0 -.26em 0 0 $blue;
+		box-shadow: inset 0 -2px 0 0 $blue;
+		@media #{$mobile} {
+			box-shadow: 0 2px 0 0 $blue;
+		}
 	}
 	&.is-selected {
 		cursor: default;

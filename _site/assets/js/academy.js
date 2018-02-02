@@ -118,7 +118,19 @@ jQuery(document).ready(function($) { // academy ready pants
 		if (searchBar.is(':focus')) {
 
 			searchBar.on('input', function(e) {
-				searchBtn.addClass('is-active');
+				if (searchBar.val().length > 0) {
+					searchBtn.addClass('is-active');
+				}
+			});
+
+			searchBtn
+			.on('mouseenter', function() {
+				if (searchBar.val().length > 0) {
+					searchBtn.addClass('is-active');
+				}
+			}).
+			on('mouseleave', function() {
+				searchBtn.removeClass('is-active');
 			});
 
 		}
@@ -281,10 +293,19 @@ jQuery(document).ready(function($) { // academy ready pants
 
 	searchBar
 		.focus(function() { // active button when user focuses on search bar
-			searchBtn.addClass('is-active');
-		})
-		.focusout(function() { // deactivate if user leaves search bar
-			searchBtn.removeClass('is-active');
+			searchBar.on('input', function() {
+				if (searchBar.val().length > 0) {
+					searchBtn.addClass('is-active');
+				} else {
+					searchBtn.removeClass('is-active');
+				}
+			});
 		});
+
+	searchBtn.click(function(e) {
+		if (searchBar.val().length === 0) {
+			e.preventDefault();
+		}
+	});
 
 });
