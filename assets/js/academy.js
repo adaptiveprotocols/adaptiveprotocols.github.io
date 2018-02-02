@@ -37,6 +37,7 @@ jQuery(document).ready(function($) { // academy ready pants
 			if (hide) {
 				asset.removeClass('is-showing is-match').hide();
 			}
+			// default
 			asset.attr('data-score', '0'); // reset scores
 			searchBtn.removeClass('is-active'); // gray out search button
 			sortBy.removeClass('is-selected');
