@@ -61,11 +61,14 @@ section.hero#hero-academy {
   @include z-index-2;
 }
 .academy-search-bar {
-	background: transparent;
+	background: $lighter-gray;
 	border: none;
 	padding: $spacing-small 0;
 	width: 100%;
 	-webkit-appearance: none;
+	&:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 48px $lighter-gray inset;
+	}
 	@media #{$mobile} {
 		border-bottom: 2px solid $light-gray;
 		text-align: center;
@@ -129,7 +132,6 @@ section.hero#hero-academy {
 	}
 	&.is-selected {
 		cursor: default;
-		pointer-events: none;
 	}
 }
 .search-tags-tag {
