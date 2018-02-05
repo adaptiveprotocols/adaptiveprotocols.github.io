@@ -114,6 +114,17 @@ jQuery(document).ready(function($) { // academy ready pants
 		// hide all assets and reset scores
 		resetAcademy(null, null, hide = true);
 
+		// specify narrowed scope in search placehoder
+		if (session.length > 0) {
+			// give generic scope message after second query
+			searchBar.val('').attr('placeholder', 'Search within previous results');
+
+		} else {
+			// give specific scope message after first query
+			searchBar.val('').attr('placeholder', 'Search within results for "' + query + '"');
+
+		}
+
 		// ensure search button activates if user starts typing again
 		if (searchBar.is(':focus')) {
 
