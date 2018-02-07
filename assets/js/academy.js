@@ -5,8 +5,8 @@ jQuery(document).ready(function($) { // academy ready pants
 		container = $('.academy').find('.grid-container'),
 		dropdown = $('select#academy'),
 		search = $('form.academy-search'),
-		searchBtn = $('.academy-search-button'),
 		searchBar = $('.academy-search-bar'),
+		searchBtn = $('.academy-search-button'),
 		searchInfo = $('.search-info'),
 		session = [], // store user search path
 		sortBy = $('.academy-sort'),
