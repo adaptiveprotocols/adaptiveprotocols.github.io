@@ -1,13 +1,17 @@
 .button {
+	background: $blue;
+	border-radius: 3px;
+	color: $white;
+	cursor: pointer;
   display: inline-block;
-  text-align: center;
-  padding: $spacing-small $spacing-normal;
-  text-decoration: none;
-  cursor: pointer;
-  background: $blue;
-  color: $white;
+  font-size: 0.8em;
   font-weight: 700;
+	letter-spacing: .16em;
+	padding: $spacing-small $spacing-normal;
   transition: 400ms $transition-ease;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
   @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
     &:hover {
       background: $darker-blue;

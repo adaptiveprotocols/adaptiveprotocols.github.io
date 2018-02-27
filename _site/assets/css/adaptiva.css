@@ -194,7 +194,7 @@ ol li { line-height: 1.618em; margin-left: 1.618rem; padding-left: 0.618rem; mar
 .tile.is-scrolled:nth-child(3n+3) { -webkit-animation: 600ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 200ms 1 forwards slideUp, 500ms linear 200ms 1 forwards fadeIn; animation: 600ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 200ms 1 forwards slideUp, 500ms linear 200ms 1 forwards fadeIn; }
 @media screen and (min-width: 960px) and (max-width: 1280px), screen and (min-width: 1281px) and (max-width: 1919px), screen and (min-width: 1920px) { .tile:hover .tile-content { -webkit-box-shadow: 0 0.68em 1em -0.42em rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 0.68em 1em -0.42em rgba(0, 0, 0, 0.2); box-shadow: 0 0.68em 1em -0.42em rgba(0, 0, 0, 0.2); } }
 
-.button { display: inline-block; text-align: center; padding: 1rem 1.618rem; text-decoration: none; cursor: pointer; background: #0860b8; color: #fff; font-weight: 700; transition: 400ms cubic-bezier(0.32, 0.57, 0.25, 1); }
+.button { background: #0860b8; border-radius: 3px; color: #fff; cursor: pointer; display: inline-block; font-size: 0.8em; font-weight: 700; letter-spacing: .16em; padding: 1rem 1.618rem; transition: 400ms cubic-bezier(0.32, 0.57, 0.25, 1); text-align: center; text-decoration: none; text-transform: uppercase; }
 @media screen and (min-width: 960px) and (max-width: 1280px), screen and (min-width: 1281px) and (max-width: 1919px), screen and (min-width: 1920px) { .button:hover { background: #052b55; } }
 .button.white { background: #fff; color: #073971; }
 .button.white.outline { background: transparent; border: 2px solid #fff; color: #fff; }
