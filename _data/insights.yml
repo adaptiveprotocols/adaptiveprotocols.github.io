@@ -120,7 +120,7 @@
 - title: "Hello AutoPilot: Intro for ConfigMgr Admins"
   url: "https://insights.adaptiva.com/2018/hello-autopilot-intro-configmgr-admins/"
   img: "/assets/img/insights/2018-01-26-matt-tinney"
-  excerpt: "What Is Windows AutoPilot Deployment and Why Use It?"
+  excerpt: "What is Windows AutoPilot Deployment and why use it? Guest writer Matt Tinney gives you the lowdown on Hello AutoPilot."
   type: industry
   date: 20180123
 
@@ -137,3 +137,10 @@
   excerpt: "Look back over the history of computing, and you will see that users have typically been rather too trusting when running applications."
   type: industry
   date: 20180125
+
+- title: "Five Cool Things I Saw at Experts Live US"
+  url: "https://insights.adaptiva.com/2018/five-cool-things-saw-experts-live-us/"
+  img: "/assets/img/insights/2018-02-27-experts-live"
+  excerpt: "Much too much awesomeness to include in a single blog, but here’s a short list of five cool things I saw."
+  type: industry
+  date: 20180227
