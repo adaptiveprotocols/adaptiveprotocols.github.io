@@ -12,3 +12,9 @@
 
 // Back to Top
 {% include js/kokkaku/backtotop.js %}
+
+// Collapsible Section
+{% include js/kokkaku/collapse.js %}
+
+// Forms
+{% include js/kokkaku/forms.js %}

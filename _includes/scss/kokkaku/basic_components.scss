@@ -1,4 +1,12 @@
 // Page components ----------
+//	Site wrap
+div#site {
+	transition: 1000ms $transition-ease;
+	&.is-blurred {
+		-webkit-filter: blur(6px);
+		filter: blur(6px);
+	}
+}
 //   Content/Site width
 .content {
   width: 100%;
@@ -255,4 +263,117 @@ section.color-block {
       bottom: 0;
     }
   }
+}
+
+// Collapsible Section
+.collapsible-title {
+  position: relative;
+  padding-bottom: .42em;
+  border-bottom: 2px solid $gray;
+  cursor: pointer;
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0.6em;
+    background: $blue;
+    position: absolute;
+    top: 50%;
+    right: $spacing-smallest;
+    transform: translateY(-50%);
+    transition: 500ms $transition-ease-in;
+  }
+  &::after {
+    transform: translateY(-50%) rotate(90deg);
+  }
+  &.is-expanded {
+    &:before {
+      transform: translateY(-50%) rotate(-180deg);
+    }
+    &:after {
+      transform: translateY(-50%) rotate(-180deg);
+    }
+  }
+}
+
+// Forms
+form.form {
+	background: $white;
+	border: 1px solid $lighter-gray;
+	@include boxshadow($boxshadow-sm-10);
+	padding: $spacing-large $spacing-normal;
+	.j-row {
+		margin-bottom: $spacing-normal;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	input[type="text"],
+	input[type="email"],
+	select {
+		background: $white;
+		border: 0;
+		border-bottom: 2px solid $gray;
+		font-size: $type-base;
+		padding: 0 0 0.26em;
+		transition: 300ms $transition-ease;
+		width: 100%;
+		&.demoForm-products {
+			border-bottom: 0;
+		}
+		&::placeholder {
+			color: $light-gray;
+		}
+		&:focus {
+			border-color: $blue;
+		}
+	}
+	select {
+		padding: 0.26em;
+		-webkit-appearance: none;
+	}
+	input[type="submit"] {
+		border: 0;
+	}
+	textarea {
+		border: 2px solid $gray;
+		font-size: $type-base;
+		height: 178px;
+		padding: $spacing-small;
+		resize: vertical;
+		width: 100%;
+	}
+	@media #{$mobile}, #{$tablet} {
+		padding: $spacing-normal 0;
+	}
+}
+
+// Form asterisk
+span.asterisk {
+	color: $gray;
+}
+
+// Form Dropdown
+.selectWrap {
+	position: relative;
+	select {
+		transition: 300ms $transition-ease;
+		&:hover {
+			background: $lighter-gray;
+		}
+	}
+	svg {
+		position: absolute;
+		right: $spacing-normal;
+		pointer-events: none;
+		top: 50%;
+		transform: translateY(-50%) rotate(90deg);
+		transition: 400ms $transition-pop;
+	}
+	&.is-open {
+		svg {
+			transform: translateY(-50%) rotate(270deg);
+		}
+	}
 }

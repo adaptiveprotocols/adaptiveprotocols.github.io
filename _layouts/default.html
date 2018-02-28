@@ -43,12 +43,14 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     {% include html/trial.html %}
-    {% include html/nav.html %}
-    {% if page.backtotop %}
-      {% include html/backtotop.html %}
-    {% endif %}
-    {{content}}
-    {% include html/footer.html %}
+		<div id="site">
+	    {% include html/nav.html %}
+	    {% if page.backtotop %}
+	      {% include html/backtotop.html %}
+	    {% endif %}
+	    {{content}}
+	    {% include html/footer.html %}
+		</div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="{{"/assets/js/touchswipe.js" | relative_url}}"></script>
     <script type="text/javascript" src="{{"/assets/js/adaptiva.js" | relative_url}}"></script>

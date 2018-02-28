@@ -1,13 +1,13 @@
 (function(){ // free trial pants
 
-  var container = '.js-trial-container',
-      $this = $(this);
+  var container = $('.js-trial-container');
 
-  function closeTrial() {
+  function closeTrial(e) {
 
-    $(container).fadeOut(300, function(){ // fade out lightbox
+		e.preventDefault();
+    container.fadeOut(300, function(){ // fade out lightbox
 
-      $this.removeAttr('style').css({ // reset CSS on callback
+      $(this).removeAttr('style').css({ // reset CSS on callback
         'display': 'none'
       });
 
@@ -17,11 +17,14 @@
       'overflow': ''
     }).off('touchmove'); // unbind from touchmove
 
+		$('#site').removeClass('is-blurred');
+
   }
 
   $('.js-trial').click(function(){ // user clicks free trial button
 
-    $(container).fadeIn(300); // fade in modal
+    container.fadeIn(300); // fade in modal
+		$('#site').addClass('is-blurred');
 
     // Disable scrolling while trial container is open
     $('html,body')
@@ -47,11 +50,11 @@
 
   });
 
-  $('.js-trial-close').click(closeTrial); // User clicks X to close
+  $('.js-close-trial').click(closeTrial); // User clicks X to close
 
   if ( isTouch() == true ) { // check for touch device
 
-    $(container).swipe({ // user swipes trial container
+    container.swipe({ // user swipes trial container
 
       swipeStatus: function(event, phase, direction, distance) {
 
@@ -59,7 +62,7 @@
 
           if (phase=='move') { // while swipe is in motion
 
-            $this
+            $(this)
               .css({
                 'opacity': 1 - ((distance/2)/100), // fade as user swipes
                 'top': distance/2 + '%' // slide downward with swipe

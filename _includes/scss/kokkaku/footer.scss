@@ -59,8 +59,10 @@ footer.footer {
     }
   }
 }
-form.adaptiva-form {
+form#newsletter {
+	background: transparent;
   padding: 0;
+	border: 0;
   border-bottom: 2px solid $dark-gray;
   margin-bottom: $spacing-large;
   label {

@@ -10,13 +10,13 @@ Adaptiva is a leading, global enterprise systems management company headquartere
 ## Job Summary
 We are seeking passionate and driven Senior Software Development Engineers who love creating elegant and sophisticated designs and architectures. You’ll be working on cutting-edge technologies, including Big Data, Cloud Services, Analytics, Visualization, and Machine Learning to solve real-world problems for some of the biggest and most respected Fortune 500 companies in the world.
 
-## Responsibilities
+### Responsibilities
 * Design and architect sophisticated on-premise and cloud-based software
 * Implement challenging code, conduct code reviews, and supervise the implementation of complex software designs
 * Engage directly with major Adaptiva customers to help define the functionality of current and future Adaptiva products
 * Work collaboratively with product marketing, sales, solutions engineering, and support teams to ensure that Adaptiva products deliver outstanding experiences to all our customers
 
-## Requirements
+### Requirements
 * Bachelors or Masters degree in Computer Science or Engineering
 * 3-7 years of proven software design and development experience using C, C++, C#, or Java
 * Demonstrated ability to design and develop high quality code

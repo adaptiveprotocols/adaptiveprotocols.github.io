@@ -1,25 +1,25 @@
-(function() { // service worker pants
-
-  if ('serviceWorker' in navigator) {
-
-    console.log('CLIENT: service worker registration in progress.');
-
-    navigator.serviceWorker.register('/service-worker.js').then(function() {
-
-      console.log('CLIENT: service worker registration complete.');
-
-    }, function() {
-
-      console.log('CLIENT: service worker registration failure.');
-
-    });
-  } else {
-
-    console.log('CLIENT: service worker is not supported.');
-  }
-  console.log("Somebody once told me the world is gonna roll me / I ain't the sharpest tool in the shed / She was looking kind of dumb with her finger and her thumb / In the shape of an L on her forehead / Well the years start coming and they don't stop coming / Fed to the rules and I hit the ground running / Didn't make sense not to live for fun / Your brain gets smart but your head gets dumb / So much to do, so much to see / So what's wrong with taking the back streets? / You'll never know if you don't go / You'll never shine if you don't glow / Hey now, you're an all-star, get your game on, go play / Hey now, you're a rock star, get the show on, get paid / And all that glitters is gold / Only shooting stars break the mold");
+// (function() { // service worker pants
+//
+//   if ('serviceWorker' in navigator) {
+//
+//     console.log('CLIENT: service worker registration in progress.');
+//
+//     navigator.serviceWorker.register('/service-worker.js').then(function() {
+//
+//       console.log('CLIENT: service worker registration complete.');
+//
+//     }, function() {
+//
+//       console.log('CLIENT: service worker registration failure.');
+//
+//     });
+//   } else {
+//
+//     console.log('CLIENT: service worker is not supported.');
+//   }
+//   console.log("Somebody once told me the world is gonna roll me / I ain't the sharpest tool in the shed / She was looking kind of dumb with her finger and her thumb / In the shape of an L on her forehead / Well the years start coming and they don't stop coming / Fed to the rules and I hit the ground running / Didn't make sense not to live for fun / Your brain gets smart but your head gets dumb / So much to do, so much to see / So what's wrong with taking the back streets? / You'll never know if you don't go / You'll never shine if you don't glow / Hey now, you're an all-star, get your game on, go play / Hey now, you're a rock star, get the show on, get paid / And all that glitters is gold / Only shooting stars break the mold");
  // lmfao
-})();
+// })();
 
 function isTouch() { // check to see if touch screen
   try {
@@ -30,55 +30,6 @@ function isTouch() { // check to see if touch screen
     return false;
   }
 }
-
-(function(){ // confirmation URL check pants
-
-  if(window.location.href.indexOf('confirmation') > -1) { // if URL contains 'confirmation'
-
-    var email = window.location.hash.substr(1); // get hash from URL
-
-    if (email) { // if email address found in hash in URL
-
-      $('h1#confirmation_heading') // display success message
-        .text('Success!');
-
-      $('p#confirmation_text')
-        .text('Awesome! ' + email + ' has been added to the Adaptiva newsletter subscription list.'); // insert hash into specified <p> tag
-
-    } else {
-
-      $('h1#confirmation_heading') // Change heading text
-        .text('Nope')
-
-      $('p#confirmation_text') // change body text
-        .text("Oops, looks like you didn't fill out a form to get here.");
-
-      $('a#close_window').removeAttr('onclick') // remove JS click event
-        .text('Back to Home') // change button text
-        .attr('href', '/'); // change button link
-    }
-
-  }
-
-  var $form = $('form.adaptiva-form');
-
-  $form.submit(function(){ // on form submission
-
-    var val = $(this).find('input[type="email"]').val(); // get user's email address
-    var form_id = $(this).attr('id'); // return ID of form user submitted
-
-    window.open("/confirmation/" + form_id + "/#" + val, 'success_window', 'width=1024,height=640'); // open a new window with correct confirmation message email passed as URL hash
-
-  });
-
-  // Close Window
-
-  function closeWindow() {
-    window.close();
-  }
-
-})();
-
 
 jQuery(document).ready(function($) { // DOM ready pants
 
@@ -301,14 +252,14 @@ jQuery(document).ready(function($) { // DOM ready pants
 // Free Trial
 (function(){ // free trial pants
 
-  var container = '.js-trial-container',
-      $this = $(this);
+  var container = $('.js-trial-container');
 
-  function closeTrial() {
+  function closeTrial(e) {
 
-    $(container).fadeOut(300, function(){ // fade out lightbox
+		e.preventDefault();
+    container.fadeOut(300, function(){ // fade out lightbox
 
-      $this.removeAttr('style').css({ // reset CSS on callback
+      $(this).removeAttr('style').css({ // reset CSS on callback
         'display': 'none'
       });
 
@@ -318,11 +269,14 @@ jQuery(document).ready(function($) { // DOM ready pants
       'overflow': ''
     }).off('touchmove'); // unbind from touchmove
 
+		$('#site').removeClass('is-blurred');
+
   }
 
   $('.js-trial').click(function(){ // user clicks free trial button
 
-    $(container).fadeIn(300); // fade in modal
+    container.fadeIn(300); // fade in modal
+		$('#site').addClass('is-blurred');
 
     // Disable scrolling while trial container is open
     $('html,body')
@@ -348,11 +302,11 @@ jQuery(document).ready(function($) { // DOM ready pants
 
   });
 
-  $('.js-trial-close').click(closeTrial); // User clicks X to close
+  $('.js-close-trial').click(closeTrial); // User clicks X to close
 
   if ( isTouch() == true ) { // check for touch device
 
-    $(container).swipe({ // user swipes trial container
+    container.swipe({ // user swipes trial container
 
       swipeStatus: function(event, phase, direction, distance) {
 
@@ -360,7 +314,7 @@ jQuery(document).ready(function($) { // DOM ready pants
 
           if (phase=='move') { // while swipe is in motion
 
-            $this
+            $(this)
               .css({
                 'opacity': 1 - ((distance/2)/100), // fade as user swipes
                 'top': distance/2 + '%' // slide downward with swipe
@@ -426,6 +380,66 @@ $(window).scroll(function(){
   }
 
 });
+
+
+// Collapsible Section
+$('.collapsible-title').click(function(){
+
+	$(this).toggleClass('is-expanded')
+		.parent().find('.collapsible-section--content')
+			.toggleClass('is-expanded')
+			.slideToggle();
+
+});
+
+
+// Forms
+(function(){
+	var
+	form = $('form.form'),
+	country = form.find('.country').find('select');
+
+	// Dropdown arrow
+	$('.selectWrap').click(function() {
+
+		$(this).toggleClass('is-open');
+
+	});
+
+	// Dependent state field
+	country.change(function() {
+
+		var
+		selection = $(this).val(),
+		hasState = new RegExp(/^(United States|Canada)$/),
+		state = $(this).closest('.form').find('.state');
+
+		if (selection.match(hasState)) {
+			state.fadeIn().find('select').attr('required', '');
+		} else {
+			state.fadeOut().find('select').removeAttr('required');
+		}
+
+	});
+
+	// Success Window
+	form.submit(function(){ // on form submission
+
+    var
+		$this = $(this),
+		email = $this.find('input[type="email"]').val(), // get user's email address
+    form_id = $this.attr('id'), // return ID of form user submitted
+		name = $this.find('.first-name').val();
+
+		if ( $this.is('#newsletter') ) {
+			window.open("/confirmation/" + form_id + "/#" + email, 'success_window', 'width=1024,height=640'); // open a new window with correct confirmation message email passed as URL hash
+		} else {
+			window.open("/confirmation/" + form_id + "/#" + name, 'success_window', 'width=1024,height=640'); // open a new window with correct confirmation message email passed as URL hash
+		}
+
+  });
+
+})();
 
 
 

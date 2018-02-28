@@ -88,6 +88,15 @@
       }
     }
   }
+	&.button--flat {
+		background: transparent;
+		border: 0;
+		color: $blue;
+		font-weight: 700;
+		&:hover {
+			background: rgba($darkest-blue, .1);
+		}
+	}
   &.full-width {
     display: block;
   }

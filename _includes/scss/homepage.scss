@@ -117,7 +117,7 @@
   position: fixed;
   width: 100%;
   height: 100%;
-  background: rgba($dark-black, .98);
+  background: rgba($white, .68);
   overflow: auto;
   @include z-index-9; // whoa! for real tho
   @include vertical-center;
@@ -128,13 +128,16 @@
 }
 .trial-content {
   width: 100%;
-  max-width: 600px;
+  max-width: 800px;
   margin: auto;
   h2 {
     text-align: center;
   }
+	@media #{$mobile}, #{$tablet} {
+		padding: $spacing-smallest;
+	}
 }
-.js-trial-close {
+.trial-close-container {
   position: absolute;
   top: $spacing-normal;
   right: $spacing-normal;
@@ -145,7 +148,7 @@
   span {
     display: block;
     position: absolute;
-    background: $white;
+    background: $blue;
     height: 2px;
     width: 24px;
     top: 11px;
@@ -160,11 +163,37 @@
   @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
     &:hover {
       span {
-        background: $orange;
+        background: $red;
       }
     }
   }
   &.is-closed {
     animation: fadeOut 600ms $transition-ease;
   }
+}
+
+.demoForm-products {
+	height: 110px;
+	overflow: hidden;
+	padding: 0;
+	white-space: pre;
+	option {
+		border: 2px solid $gray;
+		border-radius: 3px;
+		display: inline-block;
+		margin: .26em;
+		padding: $spacing-smallest;
+		&:checked {
+			background: $blue;
+			border-color: $blue;
+			color: $white;
+		}
+	}
+	@media #{$mobile} {
+		height: 200px;
+		option {
+			display: block;
+			max-width: 100%;
+		}
+	}
 }

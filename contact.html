@@ -14,14 +14,76 @@ redirect_from: "/contact-us"
   </div>
 </section>
 <section class="color-block lighter-gray">
-  <div class="content centered">
+  <div class="content">
     <div class="j-row overflow">
       <div class="j-col j-col-8 push-2">
-        <h2>Questions or comments?<br>Talk to a human.</h2>
-        <div class="form-container">
-          <iframe src="https://go.pardot.com/l/139131/2017-09-19/25g6ps" scrolling="no" width="100%" type="text/html" frameborder="0" allowTransparency="true" style="border: 0; height: 850px;"></iframe>
-        </div>
-        <p class="gray" style="margin-top: 2.618em;">Having problems with this form? View it in its <a class="plain-underline" href="http://www2.adaptiva.com/l/139131/2016-02-09/fs72" target="_blank" rel="noopener" title="View contact form in new window">own window</a>.</p>
+        <h2 class="centered">Questions or comments?<br>Talk to a human.</h2>
+        <form method="post" action="https://go.pardot.com/l/139131/2018-02-28/28pq1y" class="contactForm form" id="contact-adaptiva">
+					<div class="j-row contactForm-name">
+	      		<div class="j-col j-col-2">
+	      			<label>Name <span class="asterisk" title="Required field">*</span></label>
+	      		</div>
+						<div class="j-col j-col-10 wrap">
+							<div class="j-col j-col-6 contactForm-first-name">
+								<input type="text" class="first-name" name="contact_firstname" placeholder="First Name" required>
+							</div>
+							<div class="j-col j-col-6 contactForm-last-name">
+								<input type="text" class="last-name" name="contact_lastname" placeholder="Last Name" required>
+							</div>
+						</div>
+	      	</div>
+					<div class="j-row contactForm-email">
+						<div class="j-col j-col-2">
+							<label for="email">Email <span class="asterisk" title="Required field">*</span></label>
+						</div>
+						<div class="j-col j-col-10">
+							<input type="email" name="contact_email" required>
+						</div>
+					</div>
+					<div class="j-row contactForm-company">
+						<div class="j-col j-col-2">
+							<label for="company">Company <span class="asterisk" title="Required field">*</span></label>
+						</div>
+						<div class="j-col j-col-10">
+							<input type="text" name="contact_company" required>
+						</div>
+					</div>
+					<div class="j-row contactForm-country country">
+						<div class="j-col j-col-2">
+							<label for="contact_country">Country <span class="asterisk" title="Required field">*</span></label>
+						</div>
+						<div class="j-col j-col-10 selectWrap">
+							{% include svg/angle.svg color="black" width="6" %}
+							<select name="contact_country" class="country" id="contact_country" required>
+								{% include html/countries.html %}
+							</select>
+						</div>
+					</div>
+					<div class="j-row contactForm-state state" style="display: none;">
+						<div class="j-col j-col-2">
+							<label for="contact_state">State <span class="asterisk" title="Required field">*</span></label>
+						</div>
+						<div class="j-col j-col-10 selectWrap">
+							{% include svg/angle.svg color="black" width="6" %}
+							<select name="contact_state" id="contact_state">
+								{% include html/states.html %}
+							</select>
+						</div>
+					</div>
+					<div class="j-row contactForm-comments">
+						<div class="j-col j-col-2">
+							<label for="contact_comments">Message <span class="asterisk">*</span></label>
+						</div>
+						<div class="j-col j-col-10">
+							<textarea name="contact_comments" required></textarea>
+						</div>
+					</div>
+					<div class="j-row contactForm-submit">
+						<div class="j-col j-col-12" style="text-align: right;">
+							<input type="submit" class="button" value="Submit">
+						</div>
+					</div>
+        </form>
       </div>
     </div>
   </div>
