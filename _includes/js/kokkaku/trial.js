@@ -15,9 +15,9 @@
 
     $('html,body').css({ // reset overflow
       'overflow': ''
-    }).off('touchmove'); // unbind from touchmove
+    });
 
-		$('#site').removeClass('is-blurred');
+		$('#site').off('touchmove').removeClass('is-blurred');
 
   }
 
@@ -30,7 +30,9 @@
     $('html,body')
       .css({
         'overflow': 'hidden'
-      }).on('touchmove', function(e){
+      });
+
+		$('#site').on('touchmove', function(e){
         e.preventDefault();
       });
 

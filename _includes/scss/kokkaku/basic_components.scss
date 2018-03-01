@@ -315,10 +315,12 @@ form.form {
 		background: $white;
 		border: 0;
 		border-bottom: 2px solid $gray;
+		border-radius: 0;
 		font-size: $type-base;
 		padding: 0 0 0.26em;
 		transition: 300ms $transition-ease;
 		width: 100%;
+		-webkit-appearance: none;
 		&.demoForm-products {
 			border-bottom: 0;
 		}
@@ -331,7 +333,6 @@ form.form {
 	}
 	select {
 		padding: 0.26em;
-		-webkit-appearance: none;
 	}
 	input[type="submit"] {
 		border: 0;
