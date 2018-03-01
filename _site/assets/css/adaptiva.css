@@ -302,7 +302,7 @@ form.form input[type="text"]::placeholder, form.form input[type="email"]::placeh
 form.form input[type="text"]:focus, form.form input[type="email"]:focus, form.form select:focus { border-color: #0860b8; }
 form.form select { padding: 0.26em; }
 form.form input[type="submit"] { border: 0; -webkit-appearance: none; }
-form.form textarea { border: 2px solid #ccc; font-size: 1rem; height: 178px; padding: 1rem; resize: vertical; width: 100%; }
+form.form textarea { border: 2px solid #ccc; border-radius: 0; font-size: 1rem; height: 178px; padding: 1rem; resize: vertical; -webkit-appearance: none; width: 100%; }
 @media screen and (max-width: 767px), screen and (min-width: 768px) and (max-width: 959px) { form.form { padding: 1.618rem 0; } }
 
 span.asterisk { color: #ccc; }

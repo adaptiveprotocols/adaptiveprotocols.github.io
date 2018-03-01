@@ -340,10 +340,12 @@ form.form {
 	}
 	textarea {
 		border: 2px solid $gray;
+		border-radius: 0;
 		font-size: $type-base;
 		height: 178px;
 		padding: $spacing-small;
 		resize: vertical;
+		-webkit-appearance: none;
 		width: 100%;
 	}
 	@media #{$mobile}, #{$tablet} {
