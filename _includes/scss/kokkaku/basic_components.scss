@@ -336,6 +336,7 @@ form.form {
 	}
 	input[type="submit"] {
 		border: 0;
+		-webkit-appearance: none;
 	}
 	textarea {
 		border: 2px solid $gray;
