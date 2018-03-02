@@ -144,3 +144,10 @@
   excerpt: "Much too much awesomeness to include in a single blog, but here’s a short list of five cool things I saw."
   type: industry
   date: 20180227
+
+- title: "Credential Guard Cheat Sheet"
+  url: "https://insights.adaptiva.com/2018/windows-10-credential-guard-security/"
+  img: "/assets/img/insights/2018-03-02-cliff-hobbs"
+  excerpt: "Security is an ever increasingly important part of our everyday lives. Traditional approaches such as the use of credentials now only offer a limited amount of protection."
+  type: industry
+  date: 20180302
