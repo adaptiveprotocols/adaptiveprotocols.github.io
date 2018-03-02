@@ -127,9 +127,11 @@
   }
 }
 .trial-content {
-  width: 100%;
-  max-width: 800px;
+  -webkit-animation: slideDown 1000ms $transition-ease-in 1 forwards;
+	animation: slideDown 1000ms $transition-ease-in 1 forwards;
   margin: auto;
+	max-width: 800px;
+	width: 100%;
   h2 {
     text-align: center;
   }

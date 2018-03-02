@@ -35,7 +35,7 @@ section.about {
     @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
       &::after {
         display: none;
-      }  
+      }
     }
   }
   .tertiary-nav-item {
