@@ -1,26 +1,3 @@
-// (function() { // service worker pants
-//
-//   if ('serviceWorker' in navigator) {
-//
-//     console.log('CLIENT: service worker registration in progress.');
-//
-//     navigator.serviceWorker.register('/service-worker.js').then(function() {
-//
-//       console.log('CLIENT: service worker registration complete.');
-//
-//     }, function() {
-//
-//       console.log('CLIENT: service worker registration failure.');
-//
-//     });
-//   } else {
-//
-//     console.log('CLIENT: service worker is not supported.');
-//   }
-//   console.log("Somebody once told me the world is gonna roll me / I ain't the sharpest tool in the shed / She was looking kind of dumb with her finger and her thumb / In the shape of an L on her forehead / Well the years start coming and they don't stop coming / Fed to the rules and I hit the ground running / Didn't make sense not to live for fun / Your brain gets smart but your head gets dumb / So much to do, so much to see / So what's wrong with taking the back streets? / You'll never know if you don't go / You'll never shine if you don't glow / Hey now, you're an all-star, get your game on, go play / Hey now, you're a rock star, get the show on, get paid / And all that glitters is gold / Only shooting stars break the mold");
- // lmfao
-// })();
-
 function isTouch() { // check to see if touch screen
   try {
     document.createEvent("TouchEvent");
@@ -425,18 +402,39 @@ $('.collapsible-title').click(function(){
 	});
 
 	// Success Window
-	form.submit(function(){ // on form submission
+	form.submit(function(e){ // on form submission
 
     var
 		$this = $(this),
 		email = $this.find('input[type="email"]').val(), // get user's email address
     form_id = $this.attr('id'), // return ID of form user submitted
-		name = $this.find('.first-name').val();
+		name = $this.find('.first-name').val(),
+		freeESPs = ['gmail.com', 'yahoo.com', 'msn.com', 'aol.com', 'juno.com', 'hotmail.com', 'live.com', 'comcast.net'];
 
-		if ( $this.is('#newsletter') ) {
-			window.open("/confirmation/" + form_id + "/#" + email, 'success_window', 'width=1024,height=640'); // open a new window with correct confirmation message email passed as URL hash
+		if ($this.data('mql')) {
+
+			$.each(freeESPs, function(i) {
+
+				var esp = new RegExp(freeESPs[i], 'g');
+
+				if (email.match(esp)) {
+
+					alert('Sorry, no ' + freeESPs[i] + ' addresses allowed! Please use your corporate email address.');
+					e.preventDefault();
+					return false;
+
+				} else {
+
+					window.open("/confirmation/" + form_id + "/#" + name, 'success_window', 'width=1024,height=640');
+
+				}
+
+			});
+
 		} else {
-			window.open("/confirmation/" + form_id + "/#" + name, 'success_window', 'width=1024,height=640'); // open a new window with correct confirmation message email passed as URL hash
+
+			window.open("/confirmation/" + form_id + "/#" + email, 'success_window', 'width=1024,height=640'); // open a new window with correct confirmation message email passed as URL hash
+
 		}
 
   });
