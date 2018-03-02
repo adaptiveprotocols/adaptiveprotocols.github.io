@@ -143,7 +143,7 @@ section.hero#hero-academy {
   padding: $spacing-smallest;
   transition: 300ms $transition-ease;
   &.is-active {
-    box-shadow: inset 0 -.26em 0 0 $blue;
+    box-shadow: inset 0 -2px 0 0 $blue;
     cursor: default;
     pointer-events: none;
   }

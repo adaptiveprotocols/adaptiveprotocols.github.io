@@ -1056,3 +1056,13 @@
     - class: 'report'
   categories:
     - category: 'Report'
+
+- title: "Webinar On Demand: Windows 10 Security: Enterprise Round Table"
+  link: "http://www2.adaptiva.com/downloads/webinars/2018-02-27/windows-10-security"
+  date: 20180302
+  posted: 'March 02 2018'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
