@@ -123,27 +123,6 @@ jQuery(document).ready(function($) { // academy ready pants
 
 		}
 
-		// ensure search button activates if user starts typing again
-		if (searchBar.is(':focus')) {
-
-			searchBar.on('input', function() {
-				if (searchBar.val().length > 0) {
-					searchBtn.addClass('is-active');
-				}
-			});
-
-			searchBtn
-				.on('mouseenter', function() {
-					if (searchBar.val().length > 0) {
-						searchBtn.addClass('is-active');
-					}
-				})
-				.on('mouseleave', function() {
-					searchBtn.removeClass('is-active');
-				});
-
-		}
-
 		/* FIND RESULTS */
 
 		scope.each(function() { // loop through current scope
