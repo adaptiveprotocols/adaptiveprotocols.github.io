@@ -313,6 +313,7 @@ form.form textarea { border: 2px solid #ccc; border-radius: 0; font-size: 1rem; 
 @media screen and (max-width: 767px), screen and (min-width: 768px) and (max-width: 959px) { form.form { padding: 1.618rem 0; } }
 
 @media screen and (max-width: 767px) { .g-recaptcha { transform: scale(0.9); } }
+@media screen and (max-width: 360px) { .g-recaptcha { transform: scale(0.72); } }
 
 span.asterisk { color: #ccc; }
 

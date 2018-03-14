@@ -362,7 +362,7 @@ form.form {
 	@media #{$mobile} {
 		transform: scale(0.9);
 	}
-	@media #{$mobile-xs} {
+	@media #{$mobile-sm} {
 		transform: scale(0.72);
 	}
 }
