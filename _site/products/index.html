@@ -14,6 +14,7 @@
         h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
       })(document);
     </script>
+		<script src='https://www.google.com/recaptcha/api.js'></script>
     <link rel="canonical" href="http://localhost:4000/products/">
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -32,7 +33,7 @@
     <meta property="og:type" content="website" />
     <title>Endpoint Management & Security Products for Enterprise IT - Adaptiva</title>
     <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="/assets/css/adaptiva.css?v=a18fe0af11da5c5646a2ddf1279c9b75a633ff3c">
+    <link rel="stylesheet" href="/assets/css/adaptiva.css?v=231868ddb2ea569646212dc49f365ab52380fd33">
     <link rel="manifest" href="/manifest.json">
   </head>
   <body class="products">
@@ -447,9 +448,14 @@
 						</div>
 					</div>
 				</div>
+				<div class="j-row captcha">
+					<div class="j-col j-col-12">
+						<div class="g-recaptcha" data-sitekey="6LevqEwUAAAAAILLSs8LozwgQf_SXlFRYSJcvA5L"></div>
+					</div>
+				</div>
 				<div class="j-row demoForm-submit">
 					<div class="j-col j-col-12">
-						<input type="submit" class="button" value="Submit">
+						<button class="button" id="free-trial-submit">Submit</button>
 						<div class="button button--flat js-close-trial">Cancel</div>
 					</div>
 				</div>
@@ -498,7 +504,7 @@
           <a href="/contact/" title="Contact Adaptiva">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="button outline white js-trial" title="Get a free or product demo">Free Trial</a>
+          <a class="button outline white js-trial" title="Get a free trial or product demo">Free Trial</a>
         </li>
       </ul>
     </nav>
@@ -564,7 +570,7 @@
               </div>
               <div class="product-overview vertical-center-row">
                 <div class="j-col j-col-6 product-overview-txt">
-                  <h3 class="black"><span class="product-icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 394.49 399"  width="26"   height="26" >
+                  <h3 class="black"><span class="product-icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 394.49 399" width="26" height="26">
   <defs>
     <style>
       .k18fa_os-1 {
@@ -728,7 +734,7 @@
                   <div class="grid-container">
                     <div class="product-feature-item vertical-center-row is-selected" id="memory-pipeline-architecture" title="Eliminate IT infrastructure costs with peer-to-peer software distribution">
                       <div class="product-feature-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 579 370">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 579 370" >
   <defs>
     <style>
       .mpa-1 {
@@ -766,7 +772,7 @@
                     </div>
                     <div class="product-feature-item vertical-center-row" id="virtual-san" title="Intelligently store content at infinite scale without user or device impacts">
                       <div class="product-feature-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 514 469">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 514 469" >
   <defs>
     <style>
       .virtual-san-1 {
@@ -794,7 +800,7 @@
                     </div>
                     <div class="product-feature-item vertical-center-row" id="predictive-bandwidth-harvesting" title="Maximize delivery speed while protecting the network">
                       <div class="product-feature-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 352">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 352" >
   <defs>
     <style>
       .pbh-1 {
@@ -826,7 +832,7 @@
                     </div>
                     <div class="product-feature-item vertical-center-row" id="liveflow" title="Gain real-time visibility and control over content">
                       <div class="product-feature-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 676 442">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 676 442" >
   <defs>
     <style>
       .liveflow-1 {
@@ -862,7 +868,7 @@
                     </div>
                     <div class="product-feature-item vertical-center-row" id="workflow-designer-engine" title="Learn more in the Workflow Designer &amp; Engine Datasheet">
                       <div class="product-feature-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 391.97 397">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 391.97 397" >
   <defs>
     <style>
       .wfde-1 {
@@ -894,7 +900,7 @@
                     </div>
                     <div class="product-feature-item vertical-center-row" id="p2p-pxe" title="Automate Windows OS deployments without tedious configuration work">
                       <div class="product-feature-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" >
   <defs>
     <style>
       .p2ppxe-1 {
@@ -1044,7 +1050,7 @@
                   <div class="responsive-video text-content" style="background: #fff; border: 2px solid #0860b8;">
                     <div class="responsive-video-content centered">
                       <h3 class="blue">See for yourself how OneSite can drastically reduce costs and administrative burden</h3>
-                      <a class="button js-trial" target="_blank" rel="noopener" title="Free Adaptiva ROI Analysis">Get a Demo</a>
+                      <a class="button js-trial" target="_blank" rel="noopener" title="Get a free product demo and trial">Get a Demo</a>
                     </div>
                   </div>
                 </div>
@@ -1173,7 +1179,7 @@
                   <div class="grid-container">
                     <div class="product-feature-item vertical-center-row is-selected" id="windows-10-community-tools" title="Leverage best-in-class tools for automated BIOS to UEFI conversion, application migration, software license management, and more.">
                       <div class="product-feature-icon">
-                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 445.39 351.18">
+                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 445.39 351.18" >
   <defs>
     <style>
       .cmnty-tools-1 {
@@ -1202,7 +1208,7 @@
                     </div>
                     <div class="product-feature-item vertical-center-row" id="windows-10-mvp" title="Get your team deployment-ready with hours of video training and guides created by leading Windows 10 experts.">
                       <div class="product-feature-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153 153">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153 153" >
   <defs>
     <style>
       .msft-training-1 {
@@ -1221,7 +1227,7 @@
                     </div>
                     <div class="product-feature-item vertical-center-row" id="windows-10-onesite" title="Distribute Windows 10 software and updates across the enterprise rapidly and without the need for a complex IT infrastructure.">
                       <div class="product-feature-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 394.49 399"  width="26"   height="26" >
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 394.49 399" width="26" height="26">
   <defs>
     <style>
       .av24z_os-1 {
@@ -1480,7 +1486,7 @@
                     <div class="responsive-video-content centered">
                       <h3 class="blue">"Adaptiva enables us to accomplish our goals with a lean, agile IT team and reduces time consuming efforts across our enterprise."</h3>
                       <p class="black">Steve Capper, Global CTO, AECOM</p>
-                      <a href="https://www.gartner.com/reviews/market/client-management-tools/vendor/adaptiva" target="_blank" rel="noopener" class="button" title="Free Adaptiva ROI Analysis for Windows 10">Adaptiva on Gartner Peer Reviews</a>
+                      <a href="https://www.gartner.com/reviews/market/client-management-tools/vendor/adaptiva" target="_blank" rel="noopener" class="button" title="Get a free product demo and trial for Windows 10">Adaptiva on Gartner Peer Reviews</a>
                     </div>
                   </div>
                 </div>
@@ -1525,7 +1531,7 @@
                   <div class="responsive-video text-content" style="background: #fff; border: 2px solid #0860b8;">
                     <div class="responsive-video-content centered">
                       <h3 class="blue">Find out how much time and money your organization can save with the Windows 10 Accelerator Program</h3>
-                      <a class="button js-trial" target="_blank" rel="noopener" title="Free Adaptiva ROI Analysis">Get a Demo</a>
+                      <a class="button js-trial" target="_blank" rel="noopener" title="Get a free product demo and trial">Get a Demo</a>
                     </div>
                   </div>
                 </div>
@@ -1680,7 +1686,7 @@
                   <div class="grid-container">
                     <div class="product-feature-item vertical-center-row is-selected" id="security-p2p-tech" title="Drive continuous endpoint compliance and configuration management at scale">
                       <div class="product-feature-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 152 153">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 152 153" >
   <defs>
     <style>
       .smrt-scl-1 {
@@ -1701,7 +1707,7 @@
                     </div>
                     <div class="product-feature-item vertical-center-row" id="security-health-checks" title="Close common security holes instantly">
                       <div class="product-feature-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 224 192.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 224 192.5" >
   <defs>
     <style>
       .hlth-chk-1 {
@@ -1729,7 +1735,7 @@
                     </div>
                     <div class="product-feature-item vertical-center-row" id="security-workflow" title="Create your own custom health checks without coding">
                       <div class="product-feature-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 391.97 397">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 391.97 397" >
   <defs>
     <style>
       .wfde-1 {
@@ -1761,7 +1767,7 @@
                     </div>
                     <div class="product-feature-item vertical-center-row" id="security-visual-reporting" title="Gain instant insights on endpoint health and security success">
                       <div class="product-feature-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 207 243">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 207 243" >
   <defs>
     <style>
       .vis-rep-1 {
@@ -1893,7 +1899,7 @@
                   <div class="responsive-video" style="background: #fff; border: 2px solid #0860b8;">
                     <div class="responsive-video-content centered">
                       <h3 class="blue">See for yourself how Client Health can streamline your endpoint security configuration management and improve system uptime</h3>
-                      <a class="button js-trial" target="_blank" rel="noopener" title="Free Adaptiva ROI Analysis">Get a Demo</a>
+                      <a class="button js-trial" target="_blank" rel="noopener" title="Get a free demo">Get a Demo</a>
                     </div>
                   </div>
                 </div>
@@ -1913,7 +1919,7 @@
       <div class="j-col j-col-4 tile">
         <div class="tile-content centered white vertical-distribute space-between">
           <div style="padding:1em;">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 394.49 399"  width="68"   height="68" >
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 394.49 399" width="68" height="68">
   <defs>
     <style>
       .n198v_os-1 {
@@ -2036,7 +2042,7 @@
             OneSite
           </h3>
           <p>Peer-to-peer content distribution engine</p>
-          <a href="http://www2.adaptiva.com/l/139131/2016-04-15/6s9hh/139131/9648/OneSite_Product_Overview.pdf" class="button" title="Download free Adpativa OneSite Overview brochure" target="_blank" rel="noopener">Download Brochure</a>
+          <a href="/products/onesite/" class="button" title="Learn more about OneSite" rel="noopener">Learn More</a>
         </div>
       </div>
       <div class="j-col j-col-4 tile">
@@ -2079,7 +2085,7 @@
             Windows 10<br>Accelerator Program
           </h3>
           <p>Plan, test, deploy and maintain Windows 10</p>
-          <a href="https://insights.adaptiva.com/downloads/documents/brochure_windows_10_accelerator_program_overview.pdf" class="button" title="Download free brochure on Windows 10 Accelerator Program">Download Brochure</a>
+          <a href="/products/windows-10-accelerator-program/" class="button" title="Learn more about the Windows 10 Accelerator Program">Learn More</a>
         </div>
       </div>
       <div class="j-col j-col-4 tile">
@@ -2149,7 +2155,7 @@
             Client Health
           </h3>
           <p>Endpoint health and security engine</p>
-          <a href="http://www2.adaptiva.com/downloads/client-health-features" class="button" title="Download free Client Health Features Datasheet" target="_blank" rel="noopener">Download Datasheet</a>
+          <a href="/products/client-health/" class="button" title="Learn more about Client Health">Learn More</a>
         </div>
       </div>
     </div>
@@ -2292,6 +2298,30 @@
     <div class="grid-container">
       
       
+        <a class="j-col j-col-4 insights-article tile js-scroll" href="https://insights.adaptiva.com/2018/wsus-configuration-manager/">
+  <div class="tile-content white">
+    <div class="insights-article-img">
+      <img src="/assets/img/insights/2018-03-14-wsus-blog.jpg" srcset="/assets/img/insights/2018-03-14-wsus-blog.jpg 1x, /assets/img/insights/2018-03-14-wsus-blog@2x.jpg 2x"  alt="Optimizing WSUS with Configuration Manager">
+    </div>
+    <h3 class="blue">Optimizing WSUS with Configuration Manager</h3>
+    <p class="insights-article-txt">This post provides high-level guidance for the SUP configuration and recommendations to optimize and maintain the SUSDB.</p>
+    <span class="button" title="Read more">Read More</span>
+  </div>
+</a>
+
+      
+        <a class="j-col j-col-4 insights-article tile js-scroll" href="https://insights.adaptiva.com/2018/infographic-windows-10-security-primer/">
+  <div class="tile-content white">
+    <div class="insights-article-img">
+      <img src="/assets/img/insights/2018-03-14-win10-security-infographic.jpg" srcset="/assets/img/insights/2018-03-14-win10-security-infographic.jpg 1x, /assets/img/insights/2018-03-14-win10-security-infographic@2x.jpg 2x"  alt="Infographic: Windows 10 Security Primer">
+    </div>
+    <h3 class="blue">Infographic: Windows 10 Security Primer</h3>
+    <p class="insights-article-txt">The infographic organizes security features and capabilities by operating phase (offline, boot, logon, running).</p>
+    <span class="button" title="Read more">Read More</span>
+  </div>
+</a>
+
+      
         <a class="j-col j-col-4 insights-article tile js-scroll" href="https://insights.adaptiva.com/2018/windows-10-credential-guard-security/">
   <div class="tile-content white">
     <div class="insights-article-img">
@@ -2299,30 +2329,6 @@
     </div>
     <h3 class="blue">Credential Guard Cheat Sheet</h3>
     <p class="insights-article-txt">Security is an ever increasingly important part of our everyday lives. Traditional approaches such as the use of credentials now only offer a limited amount of protection.</p>
-    <span class="button" title="Read more">Read More</span>
-  </div>
-</a>
-
-      
-        <a class="j-col j-col-4 insights-article tile js-scroll" href="https://insights.adaptiva.com/2018/five-cool-things-saw-experts-live-us/">
-  <div class="tile-content white">
-    <div class="insights-article-img">
-      <img src="/assets/img/insights/2018-02-27-experts-live.jpg" srcset="/assets/img/insights/2018-02-27-experts-live.jpg 1x, /assets/img/insights/2018-02-27-experts-live@2x.jpg 2x"  alt="Five Cool Things I Saw at Experts Live US">
-    </div>
-    <h3 class="blue">Five Cool Things I Saw at Experts Live US</h3>
-    <p class="insights-article-txt">Much too much awesomeness to include in a single blog, but here’s a short list of five cool things I saw.</p>
-    <span class="button" title="Read more">Read More</span>
-  </div>
-</a>
-
-      
-        <a class="j-col j-col-4 insights-article tile js-scroll" href="https://insights.adaptiva.com/2018/whys-wheres-windows-defender-device-guard/">
-  <div class="tile-content white">
-    <div class="insights-article-img">
-      <img src="/assets/img/insights/2018-01-26-cliff-hobbs.jpg" srcset="/assets/img/insights/2018-01-26-cliff-hobbs.jpg 1x, /assets/img/insights/2018-01-26-cliff-hobbs@2x.jpg 2x"  alt="The Whys and Wheres of Windows Defender Device Guard">
-    </div>
-    <h3 class="blue">The Whys and Wheres of Windows Defender Device Guard</h3>
-    <p class="insights-article-txt">Look back over the history of computing, and you will see that users have typically been rather too trusting when running applications.</p>
     <span class="button" title="Read more">Read More</span>
   </div>
 </a>
@@ -2483,6 +2489,11 @@
 
 		</div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script>
+		function onSubmit(token) {
+			document.getElementById("free-trial-submit").submit();
+		}
+		</script>
     <script type="text/javascript" src="/assets/js/touchswipe.js"></script>
     <script type="text/javascript" src="/assets/js/adaptiva.js"></script>
     

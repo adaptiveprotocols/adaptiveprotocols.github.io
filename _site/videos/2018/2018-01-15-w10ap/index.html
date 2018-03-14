@@ -14,6 +14,7 @@
         h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
       })(document);
     </script>
+		<script src='https://www.google.com/recaptcha/api.js'></script>
     <link rel="canonical" href="http://localhost:4000/videos/2018/2018-01-15-w10ap/">
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -29,7 +30,7 @@
     <meta property="og:type" content="website" />
     <title>Windows 10 Accelerator Program Overview - Adaptiva</title>
     <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="/assets/css/adaptiva.css?v=a18fe0af11da5c5646a2ddf1279c9b75a633ff3c">
+    <link rel="stylesheet" href="/assets/css/adaptiva.css?v=231868ddb2ea569646212dc49f365ab52380fd33">
     <link rel="manifest" href="/manifest.json">
   </head>
   <body class="video">
@@ -444,9 +445,14 @@
 						</div>
 					</div>
 				</div>
+				<div class="j-row captcha">
+					<div class="j-col j-col-12">
+						<div class="g-recaptcha" data-sitekey="6LevqEwUAAAAAILLSs8LozwgQf_SXlFRYSJcvA5L"></div>
+					</div>
+				</div>
 				<div class="j-row demoForm-submit">
 					<div class="j-col j-col-12">
-						<input type="submit" class="button" value="Submit">
+						<button class="button" id="free-trial-submit">Submit</button>
 						<div class="button button--flat js-close-trial">Cancel</div>
 					</div>
 				</div>
@@ -495,7 +501,7 @@
           <a href="/contact/" title="Contact Adaptiva">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="button outline white js-trial" title="Get a free or product demo">Free Trial</a>
+          <a class="button outline white js-trial" title="Get a free trial or product demo">Free Trial</a>
         </li>
       </ul>
     </nav>
@@ -669,6 +675,11 @@
 
 		</div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script>
+		function onSubmit(token) {
+			document.getElementById("free-trial-submit").submit();
+		}
+		</script>
     <script type="text/javascript" src="/assets/js/touchswipe.js"></script>
     <script type="text/javascript" src="/assets/js/adaptiva.js"></script>
     

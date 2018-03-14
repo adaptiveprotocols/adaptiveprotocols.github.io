@@ -151,3 +151,17 @@
   excerpt: "Security is an ever increasingly important part of our everyday lives. Traditional approaches such as the use of credentials now only offer a limited amount of protection."
   type: industry
   date: 20180302
+
+- title: "Infographic: Windows 10 Security Primer"
+  url: "https://insights.adaptiva.com/2018/infographic-windows-10-security-primer/"
+  img: "/assets/img/insights/2018-03-14-win10-security-infographic"
+  excerpt: "The infographic organizes security features and capabilities by operating phase (offline, boot, logon, running)."
+  type: industry
+  date: 20180308
+
+- title: "Optimizing WSUS with Configuration Manager"
+  url: "https://insights.adaptiva.com/2018/wsus-configuration-manager/"
+  img: "/assets/img/insights/2018-03-14-wsus-blog"
+  excerpt: "This post provides high-level guidance for the SUP configuration and recommendations to optimize and maintain the SUSDB."
+  type: industry
+  date: 20180314

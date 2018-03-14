@@ -16,6 +16,7 @@
         h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
       })(document);
     </script>
+		<script src='https://www.google.com/recaptcha/api.js'></script>
     <link rel="canonical" href="{{page.url | absolute_url}}">
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -32,7 +33,7 @@
     <meta property="og:title" content="{{page.title}}" />
     <meta property="og:url" content="{{page.url}}" />
     <meta property="og:type" content="website" />
-    <title>{% if page.title %}{{page.title}} - {% endif %}Adaptiva</title>
+    <title>{% if page.title %}{{page.title}} - {% endif %}Adaptiva{% if page.product %} {{page.product}}{% endif %}</title>
     <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="{{ '/assets/css/adaptiva.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="manifest" href="/manifest.json">
@@ -52,6 +53,11 @@
 	    {% include html/footer.html %}
 		</div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script>
+		function onSubmit(token) {
+			document.getElementById("free-trial-submit").submit();
+		}
+		</script>
     <script type="text/javascript" src="{{"/assets/js/touchswipe.js" | relative_url}}"></script>
     <script type="text/javascript" src="{{"/assets/js/adaptiva.js" | relative_url}}"></script>
     {% if page.js %}

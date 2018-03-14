@@ -6,6 +6,14 @@ section.hero#hero-products {
     background-image: url('/assets/img/hero/hero-products--mobile.jpg');
   }
 }
+h1.product-title {
+	font-size: $type-larger;
+	text-align: left;
+	@media #{$mobile}, #{$tablet} {
+		font-size: $type-large;
+		text-align: center;
+	}
+}
 section.products {
   .slider-dot {
     border-color: rgba($blue, .5);

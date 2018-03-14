@@ -6,15 +6,6 @@
   transition: 400ms $transition-ease;
   overflow: visible;
   align-self: stretch;
-  .tile-content {
-    padding: 20px;
-    height: 100%;
-    transition: 400ms $transition-ease;
-    @include boxshadow($boxshadow-sm-10);
-    &.white {
-      background-color: $white;
-    }
-  }
   &.js-scroll {
     opacity: 0;
   }
@@ -32,11 +23,28 @@
       animation: 600ms $transition-ease-in 200ms 1 forwards slideUp, 500ms linear 200ms 1 forwards fadeIn;
     }
   }
-  @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
-    &:hover {
-      .tile-content {
-        @include boxshadow($boxshadow-med-20);
-      }
-    }
-  }
+}
+.tile-content {
+	padding: 20px;
+	height: 100%;
+	transition: 400ms $transition-ease;
+	@include boxshadow($boxshadow-sm-10);
+	&.white {
+		background-color: $white;
+	}
+	&.light-gray {
+		background-color: $light-gray;
+	}
+	&.lighter-gray {
+		background-color: $lighter-gray;
+	}
+	&.blue {
+		background-color: $blue;
+	}
+	&.dark-black {
+		background-color: $dark-black;
+	}
+	&.green {
+		background-color: $green;
+	}
 }
