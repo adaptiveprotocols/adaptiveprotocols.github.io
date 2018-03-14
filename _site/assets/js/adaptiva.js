@@ -409,27 +409,40 @@ $('.collapsible-title').click(function(){
 		email = $this.find('input[type="email"]').val(), // get user's email address
     form_id = $this.attr('id'), // return ID of form user submitted
 		name = $this.find('.first-name').val(),
-		freeESPs = ['gmail.com', 'yahoo.com', 'msn.com', 'aol.com', 'juno.com', 'hotmail.com', 'live.com', 'comcast.net'];
+		freeESPs = ['gmail.com', 'yahoo.com', 'msn.com', 'aol.com', 'juno.com', 'hotmail.com', 'live.com', 'comcast.net'],
+		captcha = $('#g-recaptcha-response');
 
 		if ($this.data('mql')) {
 
-			$.each(freeESPs, function(i) {
+			if (captcha) {
 
-				var esp = new RegExp(freeESPs[i], 'g');
-
-				if (email.match(esp)) {
-
-					alert('Sorry, no ' + freeESPs[i] + ' addresses allowed! Please use your corporate email address.');
+				if (captcha.val() === "") {
 					e.preventDefault();
+					alert('Please verify your humanity!');
 					return false;
-
-				} else {
-
-					window.open("/confirmation/" + form_id + "/#" + name, 'success_window', 'width=1024,height=640');
-
 				}
 
-			});
+			} else {
+
+				$.each(freeESPs, function(i) {
+
+					var esp = new RegExp(freeESPs[i], 'g');
+
+					if (email.match(esp)) {
+
+						alert('Sorry, no ' + freeESPs[i] + ' addresses allowed! Please use your corporate email address.');
+						e.preventDefault();
+						return false;
+
+					} else {
+
+						window.open("/confirmation/" + form_id + "/#" + name, 'success_window', 'width=1024,height=640');
+
+					}
+
+				});
+
+			}
 
 		} else {
 
