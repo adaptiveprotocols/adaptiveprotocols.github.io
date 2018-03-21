@@ -1015,16 +1015,6 @@
   categories:
     - category: 'Product Resource'
 
-- title: "Windows 10 Accelerator Program Overview"
-  link: "https://adaptiva.com/videos/2018/2018-01-15-w10ap/"
-  date: 20171218
-  posted: 'December 18 2017'
-  type: video
-  classes:
-    - class: 'video'
-  categories:
-    - category: 'Webinar'
-
 - title: "E³ Podcast: Sami Laiho"
   link: "https://soundcloud.com/adaptiva/cybersecurity-expert-sami-laiho-on-windows-security"
   date: 20180117
@@ -1066,3 +1056,17 @@
     - class: 'webinar'
   categories:
     - category: 'Webinar'
+
+- title: "Windows 10 Accelerator Program Overview"
+  link: "/videos/2018/2018-03-21-w10ap/"
+  date: 20180321
+  posted: 'March 21 2018'
+  type: video
+  classes:
+    - class: 'video'
+    - class: 'product-resource'
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+    - category: 'Video'
+    - category: 'Product Resource'
