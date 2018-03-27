@@ -57,6 +57,8 @@
 							e.preventDefault();
 							alert('Please verify your humanity!');
 							return false;
+						} else {
+							window.open("/confirmation/" + form_id + "/#" + name, 'success_window', 'width=1024,height=640');
 						}
 
 					} else {
