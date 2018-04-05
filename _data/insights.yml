@@ -165,3 +165,10 @@
   excerpt: "This post provides high-level guidance for the SUP configuration and recommendations to optimize and maintain the SUSDB."
   type: industry
   date: 20180314
+
+- title: "ConfigMgr Server Groups: Take Control of Patching"
+  url: "https://insights.adaptiva.com/2018/configmgr-server-groups-take-control-patching/"
+  img: "/assets/img/insights/2018-03-28-configmgr-server-groups"
+  excerpt: "Don’t let the “pre-release” label discourage you entirely, server groups may be just what you’ve been looking for."
+  type: industry
+  date: 20180314
