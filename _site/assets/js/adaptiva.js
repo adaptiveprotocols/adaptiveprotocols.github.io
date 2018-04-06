@@ -410,7 +410,7 @@ $('.collapsible-title').click(function(){
     form_id = $this.attr('id'), // return ID of form user submitted
 		name = $this.find('.first-name').val(),
 		freeESPs = ['gmail.com', 'yahoo.com', 'msn.com', 'aol.com', 'juno.com', 'hotmail.com', 'live.com', 'comcast.net'],
-		captcha = $('#g-recaptcha-response');
+		captcha = $this.find('.g-recaptcha-response');
 
 		$.each(freeESPs, function(i) { // loop through free ESP list
 
