@@ -179,3 +179,10 @@
   excerpt: "Windows 10 is Microsoft’s answer to viruses, malware, ransomware, bootkits, rootkits, data thievery, and all manner of dangers threatening your enterprise’s bottom line."
   type: industry
   date: 20180406
+
+- title: "E³: Mick Pletcher on PowerShell ConfigMgr Tools and Cheaper Airline Tickets"
+  url: "https://insights.adaptiva.com/2018/powershell-configmgr-tools-and-cheaper-airline-tickets/"
+  img: "/assets/img/insights/2018-04-16-mick-e3"
+  excerpt: "Microsoft MVP Mick Pletcher joins Bill and Ami for a truly fascinating discussion about a diverse set of topics."
+  type: industry
+  date: 20180416
