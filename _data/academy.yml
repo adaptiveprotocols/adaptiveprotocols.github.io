@@ -1070,3 +1070,13 @@
     - category: 'Webinar'
     - category: 'Video'
     - category: 'Product Resource'
+
+- title: "Adaptiva 2018 Windows 10 Enterprise Impact Survey"
+  link: 'http://www2.adaptiva.com/survey/2018-windows-10-enterprise-impact'
+  date: 20180419
+  posted: 'April 19 2018'
+  type: document
+  classes:
+    - class: 'report'
+  categories:
+    - category: 'Report'
