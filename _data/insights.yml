@@ -187,6 +187,13 @@
   type: industry
   date: 20180416
 
+- title: "Cloudlisting is the New Whitelisting for Windows 10 Application Security"
+  url: "https://insights.adaptiva.com/2018/windows-10-application-security-whitelisting/"
+  img: "/assets/img/insights/2018-04-17-cloudlisting-is-the-new-whitelisting"
+  excerpt: "No matter how carefully you configure the OS itself, it can still run recklessly insecure applications."
+  type: industry
+  date: 20180417
+
 - title: "Is Your Windows 10 Migration Faster Than Average?"
   url: "https://insights.adaptiva.com/2018/windows-10-migration-faster/"
   img: "/assets/img/insights/2018-04-19-windows-10-migration"
