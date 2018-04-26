@@ -1,6 +1,6 @@
 ---
 layout: job
-title: US Support Resource
+title: Senior Solutions Architect, US
 meta: "Apply for the United States Support Resource remote position at Adaptiva."
 bodyclass: job
 ---
