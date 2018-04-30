@@ -200,3 +200,17 @@
   excerpt: "We asked more than 400 IT professionals how far along they were in their Windows 10 migration and when they expect to be done."
   type: industry
   date: 20180419
+
+- title: "MVP Mirko Colemberg on Practical Modern Management and More"
+  url: "https://insights.adaptiva.com/2018/mvp-mirko-colemberg-on-practical-modern-management-swiss-tech-apprenticeship-and-chocolate/"
+  img: "/assets/img/insights/2018-04-24-e3-podcast-mirko-colemberg"
+  excerpt: "Ami and Bill talk with Microsoft MVP and MCT Mirko Colemberg about ConfigMgr, Intune, and practical use of modern management."
+  type: industry
+  date: 20180424
+
+- title: "Five Cool Things I Heard at RSA"
+  url: "https://insights.adaptiva.com/2018/mvp-mirko-colemberg-on-practical-modern-management-swiss-tech-apprenticeship-and-chocolate/"
+  img: "/assets/img/insights/2018-04-26-five-cool-things-heard-rsa"
+  excerpt: "Across all the center's buildings, there were sessions about everything from email security to how DARPA scopes and prioritizes projects."
+  type: industry
+  date: 20180426

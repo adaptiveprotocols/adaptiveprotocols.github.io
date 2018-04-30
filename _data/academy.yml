@@ -1071,6 +1071,17 @@
     - category: 'Video'
     - category: 'Product Resource'
 
+- title: "E³ Podcast: Mick Pletcher"
+  link: "https://soundcloud.com/adaptiva/mick-pletcher-on-powershell-configmgr-tools-and-cheaper-airline-ticket"
+  date: 20180411
+  posted: 'April 11 2018'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
+  img: '2018-04-30-mick-e3.jpg'
+
 - title: "Adaptiva 2018 Windows 10 Enterprise Impact Survey"
   link: 'http://www2.adaptiva.com/survey/2018-windows-10-enterprise-impact'
   date: 20180419
@@ -1080,3 +1091,35 @@
     - class: 'report'
   categories:
     - category: 'Report'
+
+- title: "E³ Podcast: Garth Jones"
+  link: "https://soundcloud.com/adaptiva/e3-podcast-configuration-manager-reporting-with-garth-jones"
+  date: 20180424
+  posted: 'April 24 2018'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
+  img: '2018-04-30-garth-jones-e3.jpg'
+
+- title: "E³ Podcast: Mirko Colemberg"
+  link: "https://soundcloud.com/adaptiva/2018-04-12-1129-podcast-recording-with-mirko-colemberg-01"
+  date: 20180425
+  posted: 'April 25 2018'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
+  img: '2018-04-30-mirko-e3.jpg'
+
+- title: "Get Smart on Windows 10 Application Security"
+  link: "http://www2.adaptiva.com/downloads/webinars/2017-04-27/windows-10-application-security"
+  date: 20180430
+  posted: 'April 30 2018'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
