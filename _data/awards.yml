@@ -1,3 +1,23 @@
+- org: Stevie Awards
+  award: Marketing Campaign of the Year (Gold)
+  product: Adaptiva
+  year: '2018'
+
+- org: Stevie Awards
+  award: New Product or Service of the Year (Gold)
+  product: Windows 10 Accelerator Program
+  year: '2018'
+
+- org: Stevie Awards
+  award: Technical Innovation of the Year (Silver)
+  product: OneSite
+  year: '2018'
+
+- org: Stevie Awards
+  award: Company of the Year (Bronze)
+  product: Adaptiva
+  year: '2018'
+
 - org: CODiE Awards
   award: Best Endpoint Security Management Solution (Finalist)
   product: Client Health
