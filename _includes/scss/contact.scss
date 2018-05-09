@@ -83,47 +83,53 @@ section.location {
     cursor: pointer;
     @include boxshadow($boxshadow-sm-30);
     @include z-index-2;
-
+		&.ada-hq {
+			background: $bright-blue;
+		}
     &#ada-hq {
       bottom: 50%;
       left: 12.6%;
-      background: $bright-blue;
     }
     &#jeffrey-day {
       top: 42%;
       left: 46%;
-      background: $red;
     }
+		&.jeffrey-day {
+			background: $red;
+		}
     &#rich-helgeson {
       top: 48%;
       left: 27%;
-      background: $orange;
     }
-    &#jesse-good {
-      bottom: 43%;
+		&.rich-helgeson {
+			background: $orange;
+		}
+		&#bob-rooney {
+			bottom: 46%;
+			left: 13%;
+		}
+		&.bob-rooney {
+			background: $green;
+		}
+		&#row-3 {
+			bottom: 18%;
+			left: 34%;
+		}
+		&#row-2 {
+			bottom: 14%;
+			right: 13%;
+		}
+		&#row-1 {
+			bottom: 43%;
       right: 19%;
-      background: $green;
-      &.row-3 {
-        bottom: 18%;
-        left: 34%;
-        background: $green;
-      }
-      &.row-2 {
-        bottom: 14%;
-        right: 13%;
-        background: $green;
-      }
-      &.row-1 {
-        bottom: 46%;
-        left: 13%;
-        background: $green;
-      }
-    }
+		}
     &#david-sommerville {
       top: 55%;
       left: 21%;
-      background: $purple;
     }
+		&.david-sommerville {
+			background: $purple;
+		}
     &.is-scrolled {
       opacity: 1;
     }

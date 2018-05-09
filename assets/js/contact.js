@@ -68,7 +68,7 @@ jQuery(document).ready(function($) {
 
     $('.territory').click(function(){ // user clicks on dot on map
 
-      var salesID = $(this).attr('id'); // store ID attribute for each dot clicked
+      var salesID = $(this).data('territory'); // get sales guy
 
       $salesProfile.addClass('is-visible'); // add mod class to all profiles
 
@@ -99,8 +99,6 @@ jQuery(document).ready(function($) {
         }
         e.preventDefault();
       });
-
-      console.log('User clicked profile for ' + salesID); // log activity to console
     });
 
 
