@@ -7,9 +7,6 @@
 // Nav
 {% include js/kokkaku/nav.js %}
 
-// Free Trial
-{% include js/kokkaku/trial.js %}
-
 // Back to Top
 {% include js/kokkaku/backtotop.js %}
 
