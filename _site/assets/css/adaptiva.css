@@ -398,9 +398,10 @@ section.navbar .logo { position: relative; }
 .nav { height: 100%; }
 .nav ul { list-style-type: none; padding: 0; margin: 0; height: 100%; -webkit-padding-start: 0; text-align: right; }
 .nav li.nav-item { display: inline-block; height: 100%; }
-.nav li.nav-item a { display: block; position: relative; line-height: 110px; padding: 0 1rem; text-decoration: none; color: #fff; transition: 400ms cubic-bezier(0.13, 0.78, 0.3, 0.99); }
+.nav li.nav-item a { display: block; position: relative; line-height: 110px; padding: 0 1rem; text-decoration: none; color: #fff; }
 .nav li.nav-item a.button { line-height: 50px; padding: 0 1.618rem; }
-@media screen and (min-width: 960px) and (max-width: 1280px), screen and (min-width: 1281px) and (max-width: 1919px), screen and (min-width: 1920px) { .nav li.nav-item a::before { content: ''; display: block; position: absolute; bottom: 1.618rem; left: 0; width: 0; height: 2px; transition: 400ms cubic-bezier(0.13, 0.78, 0.3, 0.99); background: #48a0f7; }
+@media screen and (min-width: 960px) and (max-width: 1280px), screen and (min-width: 1281px) and (max-width: 1919px), screen and (min-width: 1920px) { .nav li.nav-item a { transition: 400ms cubic-bezier(0.13, 0.78, 0.3, 0.99); }
+  .nav li.nav-item a::before { content: ''; display: block; position: absolute; bottom: 1.618rem; left: 0; width: 0; height: 2px; transition: 400ms cubic-bezier(0.13, 0.78, 0.3, 0.99); background: #48a0f7; }
   .nav li.nav-item a.button::before { display: none; }
   .nav li.nav-item a.current, .nav li.nav-item a:hover { color: #48a0f7; }
   .nav li.nav-item a.current.button, .nav li.nav-item a:hover.button { color: #fff; }
@@ -416,11 +417,10 @@ section.navbar .logo { position: relative; }
   .nav li.nav-item a, .nav li.nav-item a.button { padding: 0.618rem; } }
 
 section.navbar.is-scrolled { -webkit-box-shadow: 0 0.1em 0.16em 0 rgba(0, 0, 0, 0.3); -moz-box-shadow: 0 0.1em 0.16em 0 rgba(0, 0, 0, 0.3); box-shadow: 0 0.1em 0.16em 0 rgba(0, 0, 0, 0.3); }
-section.navbar.is-scrolled li.nav-item a { line-height: 68px; }
-section.navbar.is-scrolled li.nav-item a.button { line-height: 42px; padding: 0 1rem; }
-@media screen and (min-width: 768px) and (max-width: 959px), screen and (max-width: 767px) { section.navbar.is-scrolled li.nav-item a { line-height: 1rem; }
-  section.navbar.is-scrolled li.nav-item a.button { line-height: 50px; padding: 0 1.618rem; } }
-@media screen and (min-width: 960px) and (max-width: 1280px), screen and (min-width: 1281px) and (max-width: 1919px), screen and (min-width: 1920px) { section.navbar.is-scrolled li.nav-item a::before { bottom: 0; } }
+@media screen and (min-width: 768px) and (max-width: 959px), screen and (max-width: 767px) { section.navbar.is-scrolled li.nav-item a { line-height: 1rem; } }
+@media screen and (min-width: 960px) and (max-width: 1280px), screen and (min-width: 1281px) and (max-width: 1919px), screen and (min-width: 1920px) { section.navbar.is-scrolled li.nav-item a { line-height: 68px; }
+  section.navbar.is-scrolled li.nav-item a.button { line-height: 42px; padding: 0 1rem; }
+  section.navbar.is-scrolled li.nav-item a::before { bottom: 0; } }
 
 .logo { display: block; padding-top: 6px; cursor: pointer; transition: 400ms cubic-bezier(0.32, 0.57, 0.25, 1); }
 @media screen and (min-width: 960px) and (max-width: 1280px), screen and (min-width: 1281px) and (max-width: 1919px), screen and (min-width: 1920px) { .logo:hover { opacity: .68; } }

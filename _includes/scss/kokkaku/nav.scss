@@ -68,12 +68,12 @@ section.navbar {
       padding: 0 $spacing-small;
       text-decoration: none;
       color: $white;
-      transition: 400ms $transition-ease-in;
       &.button {
         line-height: 50px;
         padding: 0 $spacing-normal;
       }
       @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
+				transition: 400ms $transition-ease-in;
         &::before {
           content: '';
           display: block;
@@ -160,19 +160,15 @@ section.navbar.is-scrolled {
   @include boxshadow($boxshadow-sm-30);
   li.nav-item {
     a {
-      line-height: 68px;
-      &.button {
-        line-height: 42px;
-        padding: 0 $spacing-small;
-      }
       @media #{$tablet}, #{$mobile} {
         line-height: $spacing-small;
-        &.button {
-          line-height: 50px;
-          padding: 0 $spacing-normal;
-        }
       }
       @media #{$desktop-sm},#{$desktop},#{$desktop-xl} {
+				line-height: 68px;
+	      &.button {
+	        line-height: 42px;
+	        padding: 0 $spacing-small;
+	      }
         &::before {
           bottom: 0;
         }
