@@ -129,9 +129,15 @@ section.navbar {
           color: $blue;
         }
         &.button {
-          display: inline-block;
+          background: transparent;
           border-color: $blue;
           color: $blue;
+					display: inline-block;
+			    font-size: 1rem;
+			    letter-spacing: normal;
+					line-height: 1;
+			    padding: $spacing-small;
+			    text-transform: none;
         }
       }
     }
@@ -143,7 +149,8 @@ section.navbar {
   @media screen and (max-height: 500px) {
     li.nav-item {
       margin-bottom: $spacing-smallest;
-      a {
+      a,
+			a.button {
         padding: $spacing-smallest;
       }
     }
