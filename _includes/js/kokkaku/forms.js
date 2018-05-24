@@ -37,45 +37,48 @@
 		freeESPs = ['gmail.com', 'yahoo.com', 'msn.com', 'aol.com', 'juno.com', 'hotmail.com', 'live.com', 'comcast.net'],
 		captcha = $this.find('.g-recaptcha-response');
 
-		$.each(freeESPs, function(i) { // loop through free ESP list
+		if (email) {
+			
+			$.each(freeESPs, function(i) { // loop through free ESP list
 
-			var esp = new RegExp(freeESPs[i], 'g');
+				var esp = new RegExp(freeESPs[i], 'g');
 
-			if (email.match(esp)) { // if email is from free ESP
-				// alert and stop form submission
-				alert('Sorry, no ' + freeESPs[i] + ' addresses allowed! Please use your corporate email address.');
-				e.preventDefault();
-				return false;
+				if (email.match(esp)) { // if email is from free ESP
+					// alert and stop form submission
+					alert('Sorry, no ' + freeESPs[i] + ' addresses allowed! Please use your corporate email address.');
+					e.preventDefault();
+					return false;
 
-			} else {
+				} else {
 
-				if ($this.data('mql')) {
+					if ($this.data('mql')) {
 
-					if (captcha) {
+						if (captcha) {
 
-						if (captcha.val() === "") {
-							e.preventDefault();
-							alert('Please verify your humanity!');
-							return false;
+							if (captcha.val() === "") {
+								e.preventDefault();
+								alert('Please verify your humanity!');
+								return false;
+							} else {
+								window.open("/confirmation/" + form_id + "/#" + name, 'success_window', 'width=1024,height=640');
+							}
+
 						} else {
+
 							window.open("/confirmation/" + form_id + "/#" + name, 'success_window', 'width=1024,height=640');
+
 						}
 
 					} else {
 
-						window.open("/confirmation/" + form_id + "/#" + name, 'success_window', 'width=1024,height=640');
+						window.open("/confirmation/" + form_id + "/#" + email, 'success_window', 'width=1024,height=640'); // open a new window with correct confirmation message email passed as URL hash
 
 					}
 
-				} else {
-
-					window.open("/confirmation/" + form_id + "/#" + email, 'success_window', 'width=1024,height=640'); // open a new window with correct confirmation message email passed as URL hash
-
 				}
 
-			}
-
-		});
+			});
+		}
 
   });
 
