@@ -221,3 +221,17 @@
   excerpt: "Windows 10 1803, the April update, was released on April 30th. After some initial delays, we are finally able to get our hands on it and try out the cool new features."
   type: industry
   date: 20180509
+
+- title: "Is Windows Defender Mature Enough to Replace Third-Party Antivirus / Antimalware?"
+  url: "https://insights.adaptiva.com/2018/windows-defender-antivirus-antimalware-windows-10-security/"
+  img: "/assets/img/insights/2018-05-22-is-windows-defender-enough"
+  excerpt: "When Windows Defender was first released in 2006, Microsoft described it as not great, but better than nothing."
+  type: industry
+  date: 20180522
+
+- title: "ConfigMgr State of the Union 2018 with Kim Oppalfens"
+  url: "https://insights.adaptiva.com/2018/configmgr-state-of-the-union-2018-with-kim-oppalfens/"
+  img: "/assets/img/insights/2018-05-24-kim-oppalfens-configmgr-union"
+  excerpt: "Join MVPs Kim Oppalfens and Ami Casto for an illuminating discussion about the ConfigMgr State of the Union from MMS 2018."
+  type: industry
+  date: 20180529
