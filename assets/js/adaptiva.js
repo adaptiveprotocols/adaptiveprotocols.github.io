@@ -20,4 +20,6 @@ jQuery(document).ready(function($) { // DOM ready pants
 
   {% include js/scrollto.js %}
 
+	{% include js/newsletter.js %}
+
 });

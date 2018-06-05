@@ -1145,3 +1145,13 @@
   categories:
     - category: 'Podcast'
     - category: 'Video'
+
+- title: "VMware’s Brooks Peppin on Windows 10, ConfigMgr, and Adaptiva OneSite"
+  link: 'https://vimeo.com/273392139'
+  date: 20180604
+  posted: 'June 6 2018'
+  type: video
+  classes:
+    - class: 'video'
+  categories:
+    - category: 'Video'

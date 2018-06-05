@@ -15,3 +15,6 @@
 
 // Forms
 {% include js/kokkaku/forms.js %}
+
+// Lightbox
+{% include js/kokkaku/lightbox.js %}

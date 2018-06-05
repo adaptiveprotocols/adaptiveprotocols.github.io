@@ -299,6 +299,55 @@ section.color-block {
   }
 }
 
+// Lightbox
+.lightbox {
+	background: rgba(white, .9);
+	height: 100%;
+	overflow: auto;
+	position: fixed;
+	width: 100%;
+	@include z-index-6;
+}
+.lightbox-content {
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.lightbox-close {
+	position: absolute;
+  top: $spacing-normal;
+  right: $spacing-normal;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: 300ms $transition-ease-in;
+  span {
+    display: block;
+    position: absolute;
+    background: $blue;
+    height: 2px;
+    width: 24px;
+    top: 11px;
+    transition: 300ms $transition-ease-in;
+    &:first-child {
+      transform: rotate(45deg);
+    }
+    &:last-child {
+      transform: rotate(-45deg);
+    }
+  }
+  @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
+    &:hover {
+      span {
+        background: $red;
+      }
+    }
+  }
+  &.is-closed {
+    animation: fadeOut 600ms $transition-ease;
+  }
+}
 // Forms
 form.form {
 	background: $white;
