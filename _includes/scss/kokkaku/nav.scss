@@ -61,11 +61,12 @@ section.navbar {
   li.nav-item {
     display: inline-block;
     height: 100%;
+		padding: 0;
     a {
       display: block;
       position: relative;
       line-height: 110px;
-      padding: 0 $spacing-small;
+      padding: 0 1.25rem;
       text-decoration: none;
       color: $white;
       &.button {
