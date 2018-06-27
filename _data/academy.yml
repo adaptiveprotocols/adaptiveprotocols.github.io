@@ -1175,3 +1175,13 @@
     - class: 'product-resource'
   categories:
     - category: 'Product Resource'
+
+- title: "On-demand Webinar: Windows 10 OSD Best Practices with ConfigMgr"
+  link: 'http://www2.adaptiva.com/downloads/webinars/2018-06-26/windows-10-osd-best-practices-configmgr'
+  date: 20180627
+  posted: 'June 27 2018'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
