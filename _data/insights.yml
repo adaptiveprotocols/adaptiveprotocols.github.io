@@ -235,3 +235,24 @@
   excerpt: "Join MVPs Kim Oppalfens and Ami Casto for an illuminating discussion about the ConfigMgr State of the Union from MMS 2018."
   type: industry
   date: 20180529
+
+- title: "E3: Architecting ConfigMgr with Rob Marshall"
+  url: "https://insights.adaptiva.com/2018/e3-architecting-configmgr-with-rob-marshall/"
+  img: "/assets/img/insights/2018-07-20-rob-marshall"
+  excerpt: "Rob offers guidance on architecting ConfigMgr based on the latest technologies and options."
+  type: industry
+  date: 20180712
+
+- title: "DXC Partner Testimonial Video"
+  url: "https://insights.adaptiva.com/2018/onesite-configmgr-deployment-dxc-partner-testimonial-video/"
+  img: "/assets/img/insights/2018-07-20-tom-gibson"
+  excerpt: "As Technical Consultant in the Workplace & Mobility Offering Delivery (OD&T) group, Tom Gibson helps some of the world's largest companies manage their endpoints."
+  type: industry
+  date: 20180718
+
+- title: "NetCentrics Solves Stubborn ConfigMgr Challenge for Government Agency"
+  url: "https://insights.adaptiva.com/2018/configmgr-sccm-challenge-netcentrics-government-agency/"
+  img: "/assets/img/insights/2018-07-20-thomas-cook"
+  excerpt: "Thomas Cook talks about a ConfigMgr problem that vexed a government agency."
+  type: industry
+  date: 20180703
