@@ -256,3 +256,10 @@
   excerpt: "Thomas Cook talks about a ConfigMgr problem that vexed a government agency."
   type: industry
   date: 20180703
+
+- title: "Simplifying Windows Defender Application Control with ConfigMgr & Intune"
+  url: "https://insights.adaptiva.com/2018/windows-defender-application-control-configmgr-intune/"
+  img: "/assets/img/insights/2018-07-23-wdac"
+  excerpt: "Let’s hope malware never appears on computers you manage. However, it may still find a way."
+  type: industry
+  date: 20180801
