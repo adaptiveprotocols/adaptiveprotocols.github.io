@@ -1,8 +1,16 @@
-section.hero#hero-ignite {
-  background-image: url('/assets/img/hero/hero-ignite-2018.jpg');
-  position: relative;
-  @include overlay($dark-black);
-  @media #{$mobile} {
-    background-image: url('/assets/img/hero/hero-ignite-2018.jpg');
+section.hero {
+  //
+  &#hero-ignite {
+    background-image: url('/assets/img/hero/ignite-hero-2018-3.jpg');
+    position: relative;
+    @include overlay($dark-gray);
+  }
+  &#havana-nights {
+    background-image: url('http://adaptiva.wpengine.com/images/banner-images/2018-08-14-ignite-party-banner.jpg');
+    height: auto;
+    padding: $spacing-large;
   }
 }
+.blend.multiply {
+    background-blend-mode: hue;
+ }

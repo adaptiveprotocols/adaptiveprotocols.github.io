@@ -881,12 +881,14 @@ section.hero#hero-partners::before { content: ''; display: block; position: abso
 .hero#hero-altiris .hero-content { z-index: 200; }
 .hero#hero-altiris::before { content: ''; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(25, 25, 25, 0.88); z-index: 100; }
 
-section.hero#hero-strong { background-image: url("/assets/img/hero/hero-strong-against-cancer.jpg"); position: relative; }
+section.hero#hero-strong { background-image: url("/assets/img/hero/hero-against-cancer.jpg"); position: relative; }
 section.hero#hero-strong .hero-content { z-index: 200; }
 section.hero#hero-strong::before { content: ''; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(25, 25, 25, 0.88); z-index: 100; }
 @media screen and (max-width: 767px) { section.hero#hero-strong { background-image: url("/assets/img/hero/hero-against-cancer.jpg"); } }
 
-section.hero#hero-ignite { background-image: url("/assets/img/hero/hero-ignite-2018.jpg"); position: relative; }
+section.hero#hero-ignite { background-image: url("/assets/img/hero/ignite-hero-2018-3.jpg"); position: relative; }
 section.hero#hero-ignite .hero-content { z-index: 200; }
-section.hero#hero-ignite::before { content: ''; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(25, 25, 25, 0.88); z-index: 100; }
-@media screen and (max-width: 767px) { section.hero#hero-ignite { background-image: url("/assets/img/hero/hero-ignite-2018.jpg"); } }
+section.hero#hero-ignite::before { content: ''; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(64, 64, 65, 0.88); z-index: 100; }
+section.hero#havana-nights { background-image: url("http://adaptiva.wpengine.com/images/banner-images/2018-08-14-ignite-party-banner.jpg"); height: auto; padding: 2.618rem; }
+
+.blend.multiply { background-blend-mode: hue; }

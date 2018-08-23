@@ -1,5 +1,5 @@
 section.hero#hero-strong {
-  background-image: url('/assets/img/hero/hero-strong-against-cancer.jpg');
+  background-image: url('/assets/img/hero/hero-against-cancer.jpg');
   position: relative;
   @include overlay($dark-black);
   @media #{$mobile} {
