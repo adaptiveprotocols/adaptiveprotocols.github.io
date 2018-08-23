@@ -2,7 +2,14 @@ section.hero#hero-strong {
   background-image: url('/assets/img/hero/hero-against-cancer.jpg');
   position: relative;
   @include overlay($dark-black);
+}
+section.hero#september-strong {
+  background-image: url('/assets/img/strong/september-strong-1.png');
+  position: relative;
+  @include overlay($white);
   @media #{$mobile} {
-    background-image: url('/assets/img/hero/hero-against-cancer.jpg');
+    background-image: url('/assets/img/strong/september-strong-mobile.png');
+    position: relative;
+    @include overlay($white);
   }
 }
