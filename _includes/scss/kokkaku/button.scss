@@ -14,7 +14,7 @@
 	text-transform: uppercase;
   @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
     &:hover {
-      background: $darker-blue;
+      background: $dark-blue;
     }
   }
   &.white {
@@ -66,6 +66,24 @@
         background: darken($dark-blue, 10%);
         &.outline {
           background: $dark-blue;
+          color: $white;
+        }
+      }
+    }
+  }
+	&.green {
+    background: $green;
+    color: $white;
+    &.outline {
+      background: transparent;
+      border: 2px solid $green;
+      color: $green;
+    }
+    @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
+      &:hover {
+        background: darken($green, 10%);
+        &.outline {
+          background: $green;
           color: $white;
         }
       }
