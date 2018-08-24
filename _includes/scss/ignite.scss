@@ -3,7 +3,7 @@ section.hero {
   &#hero-ignite {
     background-image: url('/assets/img/hero/ignite-hero-2018-3.jpg');
     position: relative;
-    @include overlay($blue);
+    @include overlay($dark-blue);
   }
   &#havana-nights {
     background-image: url('http://adaptiva.wpengine.com/images/banner-images/2018-08-14-ignite-party-banner.jpg');
