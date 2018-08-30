@@ -263,3 +263,17 @@
   excerpt: "Let’s hope malware never appears on computers you manage. However, it may still find a way."
   type: industry
   date: 20180801
+
+- title: "ConfigMgr Cloud Management Gateway: Extending Your Reach"
+  url: "https://insights.adaptiva.com/2018/cloud-management-gateway-configuration-manager/"
+  img: "/assets/img/insights/2018-06-11-configmgr-review"
+  excerpt: "As the workforce becomes increasingly mobile, IT pros are finding it harder to manage endpoints."
+  type: industry
+  date: 20180823
+
+- title: "Introduction to Cloud Management Gateway Simplifying Windows Defender Application Control with ConfigMgr & Intune"
+  url: "https://insights.adaptiva.com/2018/cloud-management-gateway-configmgr/"
+  img: "/assets/img/insights/2018-08-31-steve-h"
+  excerpt: "This podcast with MVP Steven Hosking is a beginner’s guide to Cloud Management Gateway (CMG) for ConfigMgr."
+  type: industry
+  date: 20180830
