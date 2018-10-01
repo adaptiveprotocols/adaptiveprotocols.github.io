@@ -45,9 +45,9 @@
   png: data-3-logo.png
   link: 'http://data3.com'
 
-- name: Dilignet
-  png: dilignet-logo.png
-  link: 'http://dilignet.com'
+# - name: Dilignet
+#   png: dilignet-logo.png
+#   link: 'http://dilignet.com'
 
 - name: Dimension Data
   svg: dimension-data-logo.svg
@@ -161,3 +161,7 @@
 - name: World Wide Technology
   png: world-wide-technology-logo.png
   link: 'https://www2.wwt.com/'
+
+- name: Xello
+  png: xello.png
+  link: 'https://xello.world/en/'
