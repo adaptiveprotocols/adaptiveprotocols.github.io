@@ -1,6 +1,6 @@
 baseurl: ""
 repository: adaptiveprotocols/adaptiveprotocols.github.io
-exclude: ['README.md']
+exclude: ['README.md', vendor]
 permalink: pretty
 sass:
     sass_dir: ./assets/css
