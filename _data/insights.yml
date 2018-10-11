@@ -277,3 +277,10 @@
   excerpt: "This podcast with MVP Steven Hosking is a beginner’s guide to Cloud Management Gateway (CMG) for ConfigMgr."
   type: industry
   date: 20180830
+
+- title: "Survey: IT Pros Want to Secure Endpoints Daily but Don’t Have the Time"
+  url: "https://insights.adaptiva.com/2018/it-security-windows-10-help-desk/"
+  img: "/assets/img/insights/2018-10-11-security-survey"
+  excerpt: "If you work in IT today, you are walking on a razor’s edge trying to get security right."
+  type: industry
+  date: 20180925
