@@ -1,0 +1,15 @@
+section.hero#hero-sec-ops {
+  background-image: url('/assets/img/hero/hero-about.jpg');
+  position: relative;
+  @include overlay($dark-black);
+}
+section.hero#september-sec-ops {
+  background-image: url('/assets/img/strong/september-strong-1.png');
+  position: relative;
+  @include overlay($white);
+  @media #{$mobile} {
+    background-image: url('/assets/img/strong/september-strong-mobile.png');
+    position: relative;
+    @include overlay($white);
+  }
+}
