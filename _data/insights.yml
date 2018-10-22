@@ -284,10 +284,3 @@
   excerpt: "If you work in IT today, you are walking on a razor’s edge trying to get security right."
   type: industry
   date: 20180925
-
-- title: "Security Snacks"
-  url: "https://insights.adaptiva.com/2018/security-snacks-oct-16-18/"
-  img: "/assets/img/insights/2018-10-17-sec-ops"
-  excerpt: "This week's summaries of cybersecurity news for IT Windows endpoint management professionals."
-  type: industry
-  date: 20181017
