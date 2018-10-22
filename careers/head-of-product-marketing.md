@@ -1,7 +1,7 @@
 ---
 layout: job
 title: Head of Product Marketing
-meta: "Apply for the Head of Product Marketing position at Adaptiva."
+meta: "Apply for the Head of Product Marketing position at Adaptiva"
 bodyclass: job
 published: true
 ---
