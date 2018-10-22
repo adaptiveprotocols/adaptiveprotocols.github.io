@@ -1,14 +1,14 @@
 ---
 layout: job
-title: Director of Product Marketing
-meta: "Apply for the Director of Product Marketing position at Adaptiva."
+title: Head of Product Marketing
+meta: "Apply for the Head of Product Marketing position at Adaptiva."
 bodyclass: job
 published: true
 ---
-Adaptiva is searching for a Director of Product Marketing to report to the VP of Marketing in managing the go-to-market planning and content for the company’s product line. This role will offer the opportunity to set the product marketing strategy for Adaptiva, an enterprise IT software company which is rapidly growing, highly profitable, and working with over 150 of the largest Fortune 1000 companies in the world.
+Adaptiva is searching for a Head of Product Marketing to report to the VP of Marketing in managing the go-to-market planning and content for the company’s product line. This role will offer the opportunity to set the product marketing strategy for Adaptiva, an enterprise IT software company which is rapidly growing, highly profitable, and working with over 150 of the largest Fortune 1000 companies in the world.
 
 ## Role and Responsibilities
-The Director of Product Marketing will be responsible for developing positioning, messaging, competitive differentiation, and sales tools and collateral for the company’s suite of endpoint management and security products. This role requires both the ability to understand the technology as well as eloquently communicate the high-level business value of those products. He/she will both define the product marketing strategy as well as drive the execution of the plan, creating most materials in-house.  
+The Head of Product Marketing will be responsible for developing positioning, messaging, competitive differentiation, and sales tools and collateral for the company’s suite of endpoint management and security products. This role requires both the ability to understand the technology as well as eloquently communicate the high-level business value of those products. He/she will both define the product marketing strategy as well as drive the execution of the plan, creating most materials in-house.  
 
 ### Responsibilities
 - **Positioning/Messaging** – Develop product positioning and messaging that clearly differentiates Adaptiva’s products in the market
