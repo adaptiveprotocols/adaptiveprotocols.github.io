@@ -20,7 +20,7 @@ The Head of Product Marketing will be responsible for developing positioning, me
 
 
 ### Requirements
-- Bachelor’s degree in marketing, technology, or a related field. MBA a plus.
+- Bachelor’s degree in marketing, technology, or a related field. MBA is a plus.
 - 8+ years of product marketing experience
 - Work experience in systems management or security related product marketing.
 - Demonstrated product marketing and content creation experience. Writing samples required.
