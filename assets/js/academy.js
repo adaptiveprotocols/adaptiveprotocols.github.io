@@ -11,6 +11,7 @@ jQuery(document).ready(function($) { // academy ready pants
 		session = [], // store user search path
 		sortBy = $('.academy-sort'),
 		tagContainer = $('#searchTags'),
+		urlHash = window.location.hash.substr(1),
 		// function expressions
 		resetAcademy = function(sort = true, show = false, hide = false) {
 			// optional
@@ -81,9 +82,12 @@ jQuery(document).ready(function($) { // academy ready pants
 
 	});
 
-	/* TILE SIZING */
-
-	$(window).resize(function() {
+	$(window).ready(function() {
+		// if category name as hash in URL, update page
+		if (urlHash) {
+			dropdown.val(urlHash).change();
+		}
+	}).resize(function() {
 		// keep tiles square at all times
 		var assetTitle = $('.asset.is-showing .asset-title');
 		assetTitle.css('height', assetTitle.width() + 32);
