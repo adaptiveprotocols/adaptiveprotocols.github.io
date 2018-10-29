@@ -79,12 +79,20 @@ jQuery(document).ready(function($) { // academy ready pants
 		}
 		// specify scope in searchbar
 		showScope();
+		// update url hash
+		if (history.pushState) {
+			history.pushState(null, null, '#' + category);
+		} else {
+			location.hash = '#' + category;
+		}
 
 	});
 
 	$(window).ready(function() {
 		// if category name as hash in URL, update page
 		if (urlHash) {
+			// TODO: loop through all <option> tags inside dropdown and check
+			// if urlHash exists as one of their values
 			dropdown.val(urlHash).change();
 		}
 	}).resize(function() {
