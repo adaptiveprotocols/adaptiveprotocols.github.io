@@ -290,4 +290,11 @@
   img: "/assets/img/insights/2018-10-29-security-checklist"
   excerpt: "I love it when a tech speaker lays out an overwhelming topic so clearly that it starts to feel approachable."
   type: industry
-  date: 20181029  
+  date: 20181029
+
+- title: "Microsoft Online Goes FIDO2, Cryptocurrency Hardware Wallets, Malwarebytes Gets Eaten"
+  url: "https://insights.adaptiva.com/2018/microsoft-online-goes-fido2-cryptocurrency-hardware-wallets-malwarebytes-gets-eaten/"
+  img: "/assets/img/insights/2018-11-29-security-snacks"
+  excerpt: "Windows Supports FIDO2 Hardware Keys for Microsoft Online Sign-in"
+  type: industry
+  date: 20181129    
