@@ -1245,3 +1245,13 @@
     - class: 'video'
   categories:
     - category: 'Video'
+
+- title: "Adaptiva + Fortune 100 Financial Services Organization"
+  link: 'http://www2.adaptiva.com/downloads/casestudy/2018-12-20/F100-CaseStudy'
+  date: 20181218
+  posted: 'December 12 2018'
+  type: document
+  classes:
+    - class: 'case-study'
+  categories:
+    - category: 'Case Study'
