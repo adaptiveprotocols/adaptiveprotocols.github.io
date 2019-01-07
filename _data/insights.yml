@@ -297,4 +297,11 @@
   img: "/assets/img/insights/2018-11-29-security-snacks"
   excerpt: "Windows Supports FIDO2 Hardware Keys for Microsoft Online Sign-in"
   type: industry
-  date: 20181129    
+  date: 20181129
+
+- title: "Adam Gross On Futureproofing Windows 10 OSD"
+  url: "https://insights.adaptiva.com/2019/windows-10-deployments-configmgr-osd/"
+  img: "/assets/img/insights/2019-01-07-adam-gross"
+  excerpt: "Futureproof Windows 10 Deployments, Fight the Tyranny of the Urgent, and Automate Yourself into a Promotion"
+  type: industry
+  date: 20190107
