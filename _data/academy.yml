@@ -1255,3 +1255,13 @@
     - class: 'case-study'
   categories:
     - category: 'Case Study'
+
+- title: "Report: Managing Windows 10 Security Using ConfigMgr"
+  link: 'http://www2.adaptiva.com/windows10-security-configmgr'
+  date: 20190114
+  posted: 'January 14 2019'
+  type: document
+  classes:
+    - class: 'report'
+  categories:
+    - category: 'Report'
