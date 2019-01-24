@@ -305,3 +305,10 @@
   excerpt: "Futureproof Windows 10 Deployments, Fight the Tyranny of the Urgent, and Automate Yourself into a Promotion"
   type: industry
   date: 20190107
+
+- title: "MSIX and ConfigMgr: Freedom from Package Paralysis"
+  url: "https://insights.adaptiva.com/2019/msix-and-configmgr-freedom-from-package-paralysis/"
+  img: "/assets/img/insights/2019-01-23-msix"
+  excerpt: "MSIX is a new Microsoft packaging technology. It takes the best features from setup.exe, MSI, Windows ClickOne, App-V, and script.vbs and puts them to use."
+  type: industry
+  date: 20190123  
