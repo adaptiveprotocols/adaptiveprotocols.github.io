@@ -1,0 +1,23 @@
+section.hero#brand {
+  background-image: url('/assets/img/hero/brand-banner.jpg');
+  position: relative;
+  @include overlay($dark-black);
+}
+.brand-asset {
+  padding: 20px;
+  margin-bottom: 20px;
+  display: block;
+  overflow: hidden;
+  img, svg {
+    max-width: 100%;
+  }
+  &.icon {
+    text-align: center;
+    img, svg{
+      max-width: 110px;
+    }
+  }
+  &.dark {
+    background-color: #222;
+  }
+}

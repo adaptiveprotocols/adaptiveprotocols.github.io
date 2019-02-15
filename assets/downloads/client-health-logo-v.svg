@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1414.55 585.52">
+  <defs>
+    <style>
+      .client-health-logo-v-1{fill:url(#client-health-logo-v-linear-gradient);}.client-health-logo-v-2{fill:url(#client-health-logo-v-linear-gradient-2);}.client-health-logo-v-3{fill:url(#client-health-logo-v-linear-gradient-3);}.client-health-logo-v-4{fill:url(#client-health-logo-v-linear-gradient-4);}.client-health-logo-v-5{fill:url(#client-health-logo-v-linear-gradient-5);}.client-health-logo-v-6{fill:url(#client-health-logo-v-linear-gradient-6);}.client-health-logo-v-7{fill:url(#client-health-logo-v-linear-gradient-7);}.client-health-logo-v-8{fill:url(#client-health-logo-v-linear-gradient-8);}.client-health-logo-v-9{fill:url(#client-health-logo-v-linear-gradient-11);}.client-health-logo-v-10{fill:url(#client-health-logo-v-linear-gradient-12);}.client-health-logo-v-11{fill:url(#client-health-logo-v-linear-gradient-13);}.client-health-logo-v-12{fill:url(#client-health-logo-v-linear-gradient-14);}.client-health-logo-v-13{fill:url(#client-health-logo-v-linear-gradient-15);}.client-health-logo-v-14{fill:url(#client-health-logo-v-linear-gradient-16);}.client-health-logo-v-15{fill:url(#client-health-logo-v-linear-gradient-22);}.client-health-logo-v-16{fill:url(#client-health-logo-v-linear-gradient-23);}.client-health-logo-v-17{fill:#404041;}
+    </style>
+    <linearGradient id="client-health-logo-v-linear-gradient" x1="707.58" y1="70.78" x2="707.58" y2="208.01" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ed4e39"/>
+      <stop offset="1" stop-color="#ff902c"/>
+    </linearGradient>
+    <linearGradient id="client-health-logo-v-linear-gradient-2" x1="795.39" y1=".21" x2="576.13" y2="219.48" xlink:href="#client-health-logo-v-linear-gradient"/>
+    <linearGradient id="client-health-logo-v-linear-gradient-3" x1="769.83" y1="-25.35" x2="550.56" y2="193.92" xlink:href="#client-health-logo-v-linear-gradient"/>
+    <linearGradient id="client-health-logo-v-linear-gradient-4" x1="1428.68" y1="-2629.46" x2="1209.41" y2="-2410.2" gradientTransform="matrix(1 0 0 -1 0 -1717.6)" xlink:href="#client-health-logo-v-linear-gradient"/>
+    <linearGradient id="client-health-logo-v-linear-gradient-5" x1="1403.11" y1="-2655.03" x2="1183.85" y2="-2435.76" gradientTransform="matrix(1 0 0 -1 0 -1717.6)" xlink:href="#client-health-logo-v-linear-gradient"/>
+    <linearGradient id="client-health-logo-v-linear-gradient-6" x1="647.31" y1="-152.59" x2="647.31" y2="561.52" xlink:href="#client-health-logo-v-linear-gradient"/>
+    <linearGradient id="client-health-logo-v-linear-gradient-7" x1="670.44" y1="-152.59" x2="670.44" y2="561.52" xlink:href="#client-health-logo-v-linear-gradient"/>
+    <linearGradient id="client-health-logo-v-linear-gradient-8" x1="762.95" y1="-152.59" x2="762.95" y2="561.52" xlink:href="#client-health-logo-v-linear-gradient"/>
+    <linearGradient id="client-health-logo-v-linear-gradient-11" x1="716.69" y1="-152.59" x2="716.69" y2="561.52" xlink:href="#client-health-logo-v-linear-gradient"/>
+    <linearGradient id="client-health-logo-v-linear-gradient-12" x1="742.12" y1="-152.59" x2="742.12" y2="561.52" xlink:href="#client-health-logo-v-linear-gradient"/>
+    <linearGradient id="client-health-logo-v-linear-gradient-13" x1="691.89" y1="-152.59" x2="691.89" y2="561.52" xlink:href="#client-health-logo-v-linear-gradient"/>
+    <linearGradient id="client-health-logo-v-linear-gradient-14" x1="644.55" y1="-152.59" x2="644.55" y2="561.52" xlink:href="#client-health-logo-v-linear-gradient"/>
+    <linearGradient id="client-health-logo-v-linear-gradient-15" x1="607.69" y1="-152.59" x2="607.69" y2="561.52" xlink:href="#client-health-logo-v-linear-gradient"/>
+    <linearGradient id="client-health-logo-v-linear-gradient-16" x1="588.86" y1="-152.59" x2="588.86" y2="561.52" xlink:href="#client-health-logo-v-linear-gradient"/>
+    <linearGradient id="client-health-logo-v-linear-gradient-22" x1="788.74" y1="-152.59" x2="788.74" y2="561.52" xlink:href="#client-health-logo-v-linear-gradient"/>
+    <linearGradient id="client-health-logo-v-linear-gradient-23" x1="825.69" y1="-152.59" x2="825.69" y2="561.52" xlink:href="#client-health-logo-v-linear-gradient"/>
+  </defs>
+  <title>
+    clienth-health-v
+  </title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <path class="client-health-logo-v-1" d="M716.69 208a68.61 68.61 0 1 1 49.38-116.25l-2.87 2.77A64.62 64.62 0 1 0 716.69 204a64.83 64.83 0 0 0 47.47-20.77l2.93 2.71a68.84 68.84 0 0 1-50.4 22.06z"/>
+      <path class="client-health-logo-v-2" d="M646.51 141.23l-63.78-27.9L668.8 91.5l21.55-81.93h53.32l20.64 80.84 60.61-25.4 1.55 3.68-64.88 27.19-21.02-82.32h-47.14l-21.36 81.23-77.08 19.54 53.12 23.24-1.6 3.66z"/>
+      <path class="client-health-logo-v-3" d="M646.51 141.23l-60.22-26.35 20.3-50.65 60.14 25.2-26.19-63.17 76.15 41.48 71.09-38.78 1.91 3.51-73 39.82-68.13-37.12 25.58 61.69-65.35-27.38-17.36 43.3 56.68 24.79-1.6 3.66z"/>
+      <path class="client-health-logo-v-4" d="M743.67 269.23h-53.32L668.8 187.3l-86.07-21.83 63.78-27.9 1.6 3.66-53.12 23.23 77.08 19.55 21.36 81.22h47.14l21.02-82.31 64.88 27.18-1.55 3.68-60.61-25.39-20.64 80.84z"/>
+      <path class="client-health-logo-v-5" d="M640.54 252.54l26.19-63.17-60.14 25.2-20.3-50.66 60.22-26.34 1.6 3.66-56.68 24.79 17.36 43.29 65.35-27.37-25.58 61.68 68.13-37.12 73 39.82-1.91 3.51-71.09-38.78-76.15 41.49z"/>
+      <circle class="client-health-logo-v-6" cx="647.31" cy="139.4" r="11.56"/>
+      <circle class="client-health-logo-v-7" cx="670.44" cy="93.14" r="11.56"/>
+      <circle class="client-health-logo-v-8" cx="762.95" cy="185.65" r="11.56"/>
+      <circle class="client-health-logo-v-7" cx="670.44" cy="185.65" r="11.56"/>
+      <circle class="client-health-logo-v-8" cx="762.95" cy="93.14" r="11.56"/>
+      <circle class="client-health-logo-v-9" cx="716.69" cy="70.01" r="11.56"/>
+      <circle class="client-health-logo-v-10" cx="742.12" cy="11.56" r="11.56"/>
+      <circle class="client-health-logo-v-11" cx="691.89" cy="11.56" r="11.56"/>
+      <circle class="client-health-logo-v-12" cx="644.55" cy="30.72" r="11.56"/>
+      <circle class="client-health-logo-v-13" cx="607.69" cy="66.85" r="11.56"/>
+      <circle class="client-health-logo-v-14" cx="588.86" cy="113.83" r="11.56"/>
+      <circle class="client-health-logo-v-14" cx="588.86" cy="164.78" r="11.56"/>
+      <circle class="client-health-logo-v-13" cx="607.69" cy="211.4" r="11.56"/>
+      <circle class="client-health-logo-v-12" cx="644.55" cy="248.08" r="11.56"/>
+      <circle class="client-health-logo-v-11" cx="691.89" cy="267.23" r="11.56"/>
+      <circle class="client-health-logo-v-10" cx="742.12" cy="267.23" r="11.56"/>
+      <circle class="client-health-logo-v-15" cx="788.74" cy="248.08" r="11.56"/>
+      <circle class="client-health-logo-v-16" cx="825.69" cy="211.4" r="11.56"/>
+      <circle class="client-health-logo-v-16" cx="825.69" cy="66.85" r="11.56"/>
+      <circle class="client-health-logo-v-15" cx="788.74" cy="30.72" r="11.56"/>
+      <circle class="client-health-logo-v-9" cx="716.69" cy="208.78" r="11.56"/>
+      <path class="client-health-logo-v-17" d="M85.73 409c40.8 0 61.45 22.1 61.45 22.1l-9 12.38s-19.92-18.94-52-18.94c-40.07 0-68.73 31.09-68.73 71.4 0 40.8 28.66 74.07 69.22 74.07 34.49 0 55.37-22.83 55.37-22.83l9.71 11.9s-23.31 26.47-65.33 26.47C35.94 585.52 0 545.93 0 496.15 0 446.6 36.92 409 85.73 409zm96.4 2.87h16.51v138.19c0 16 7.29 18.46 13.6 18.46a37.88 37.88 0 0 0 4.13-.24v14.81a41.64 41.64 0 0 1-6.07.49c-10.2 0-28.17-3.16-28.17-29.87zm60.71 0h17.24v20.64h-17.24zm.49 48.57h16.51v122.17h-16.51zm108.06-2.91c33.76 0 51 26 51 56.34 0 2.91-.49 8.5-.49 8.5h-93.73c.73 31.33 22.1 48.33 47.36 48.33 22.34 0 37.16-14.82 37.16-14.82l7.53 12.63a70 70 0 0 1-45.17 17c-36.43 0-63.87-26.23-63.87-63.87-.02-40.06 27.19-64.11 60.21-64.11zm34.24 51.24c-1-25.5-16.51-37.4-34.73-37.4-20.4 0-38.13 12.87-42 37.4zM434 460.45h16.27v18.21c0 5.34-.49 9.71-.49 9.71h.49c4.37-11.17 19.91-30.84 48.82-30.84 30.12 0 40.8 17.24 40.8 47.36v77.72h-16.56v-73.35c0-19.19-2.91-36.19-26.47-36.19-20.88 0-38.86 14.33-44.44 34.49a60.39 60.39 0 0 0-1.94 16.51v58.53H434zm148.57 15.3h-16V461.9h16.27v-35.21h16.27v35.21h30.6v13.84h-30.6v60.71c0 28.66 18.21 32.3 27.44 32.3a28.46 28.46 0 0 0 5.59-.48v14.81a43.3 43.3 0 0 1-7 .49c-14.09 0-42.5-4.61-42.5-45.41zm146.92-63.88h16.76v77.72h99.09v-77.72h16.76v170.74h-16.76v-78h-99.09v78h-16.76zm229.01 45.66c33.76 0 51 26 51 56.34 0 2.91-.49 8.5-.49 8.5h-93.74c.73 31.33 22.1 48.33 47.36 48.33 22.34 0 37.16-14.82 37.16-14.82l7.53 12.63a70 70 0 0 1-45.17 17c-36.43 0-63.87-26.23-63.87-63.87-.01-40.06 27.19-64.11 60.22-64.11zm34.24 51.24c-1-25.5-16.51-37.4-34.73-37.4-20.4 0-38.13 12.87-42 37.4zm113.16-1.69h6.8v-3.16c0-23.56-12.87-31.57-30.36-31.57-20.16 0-34.49 11.66-34.49 11.66l-7.77-12.63s16-13.84 43.47-13.84c29.39 0 45.66 16.27 45.66 46.87v78.2h-15.79v-13.36a96.19 96.19 0 0 1 .49-10.2h-.49s-10.2 26.47-40.8 26.47c-20.4 0-41.53-11.9-41.53-36.19.01-41.33 53.68-42.25 74.81-42.25zm-30.6 64.36c23.31 0 37.4-24.29 37.4-45.41v-5.34h-7c-19.19 0-57.56.73-57.56 27.68-.04 11.41 8.95 23.06 27.16 23.06zm90.82-159.57h16.51v138.19c0 16 7.29 18.46 13.6 18.46a37.87 37.87 0 0 0 4.13-.24v14.81a41.67 41.67 0 0 1-6.07.49c-10.2 0-28.17-3.16-28.17-29.87zm65.81 63.88h-16V461.9h16.27v-35.21h16.27v35.21H1279v13.84h-30.6v60.71c0 28.66 18.21 32.3 27.44 32.3a28.46 28.46 0 0 0 5.59-.48v14.81a43.3 43.3 0 0 1-7 .49c-14.09 0-42.5-4.61-42.5-45.41zm76.73-63.88h16.51v66.06c0 5.59-.48 10-.48 10h.48c4.61-11.66 20.89-30.36 48.57-30.36 30.12 0 40.8 17.24 40.8 47.36v77.72H1398v-73.39c0-19.19-2.91-36.19-26.47-36.19-20.89 0-38.86 14.33-44.44 34.73a57.57 57.57 0 0 0-1.94 16.27v58.53h-16.51z"/>
+    </g>
+  </g>
+</svg>

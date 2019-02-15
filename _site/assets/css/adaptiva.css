@@ -911,3 +911,13 @@ section.hero#september-sec-ops::before { content: ''; display: block; position: 
 @media screen and (max-width: 767px) { section.hero#september-sec-ops { background-image: url("/assets/img/strong/september-strong-mobile.png"); position: relative; }
   section.hero#september-sec-ops .hero-content { z-index: 200; }
   section.hero#september-sec-ops::before { content: ''; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.88); z-index: 100; } }
+
+section.hero#brand { background-image: url("/assets/img/hero/brand-banner.jpg"); position: relative; }
+section.hero#brand .hero-content { z-index: 200; }
+section.hero#brand::before { content: ''; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(25, 25, 25, 0.88); z-index: 100; }
+
+.brand-asset { padding: 20px; margin-bottom: 20px; display: block; overflow: hidden; }
+.brand-asset img, .brand-asset svg { max-width: 100%; }
+.brand-asset.icon { text-align: center; }
+.brand-asset.icon img, .brand-asset.icon svg { max-width: 110px; }
+.brand-asset.dark { background-color: #222; }
