@@ -1275,3 +1275,33 @@
     - class: 'product-resource'
   categories:
     - category: 'Product Resource'
+
+- title: "Evolve VM: The Next Generation of Vulnerability Management"
+  link: 'https://vimeo.com/320795833'
+  date: 20190306
+  posted: 'March 06 2019'
+  type: video
+  classes:
+    - class: 'video'
+  categories:
+    - category: 'Video'
+
+- title: "Evolve VM Datasheet"
+  link: 'http://adaptiva.wpengine.com/downloads/datasheets/evolve-vm-datasheet.pdf?_ga=2.38057451.995704222.1551897575-1010494848.1532105891'
+  date: 20190306
+  posted: 'March 06 2019'
+  type: document
+  classes:
+    - class: 'product-resource'
+  categories:
+    - category: 'Product Resource'
+
+- title: "OneSite Cumalitive Update Datasheet"
+  link: 'http://adaptiva.wpengine.com/downloads/datasheets/DS_OneSite_Cumulative_Update_March_2019.pdf'
+  date: 20190306
+  posted: 'March 06 2019'
+  type: document
+  classes:
+    - class: 'product-resource'
+  categories:
+    - category: 'Product Resource'
