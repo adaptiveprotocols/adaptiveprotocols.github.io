@@ -240,6 +240,21 @@
   for: "evolve-vm"
   class: "dark"
 
+- title: "Evolve VM logo"
+  svg: "evolve-vm-color-dark-horizontal.svg"
+  eps: "evolve-vm-color-dark-horizontal.eps"
+  png: "evolve-vm-color-dark-horizontal.png"
+  jpg: "evolve-vm-color-dark-horizontal.jpg"
+  for: "evolve-vm"
+
+- title: "Evolve VM logo"
+  svg: "evolve-vm-color-white-text-horizontal.svg"
+  eps: "evolve-vm-color-white-text-horizontal.eps"
+  png: "evolve-vm-white-text-horizontal.png"
+  jpg: "evolve-vm-white-text-horizontal.jpg"
+  for: "evolve-vm"
+  class: "dark"
+
 - title: "Evolve VM Icon"
   svg: "evolve-vm-icon.svg"
   eps: "evolve-vm-icon.eps"
