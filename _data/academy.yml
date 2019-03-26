@@ -1315,3 +1315,13 @@
     - class: 'video'
   categories:
     - category: 'Video'
+
+- title: "Adaptiva Evolve VM Overview and Demo"
+  link: 'https://vimeo.com/326696425'
+  date: 20190326
+  posted: 'March 26 2019'
+  type: video
+  classes:
+    - class: 'video'
+  categories:
+    - category: 'Video'
