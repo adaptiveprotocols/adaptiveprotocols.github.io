@@ -1,10 +1,10 @@
 .hero#hero-careers,
 .hero#job-opening {
-  background-image: url('/assets/img/hero/hero-adaptiva-careers-jobs.jpg');
+  background-image: url('/assets/img/hero/hero-careers.png');
   position: relative;
-  @include overlay($dark-black);
+
   @media #{mobile} {
-    background-image: url('/assets/img/hero/hero-adaptiva-careers-jobs--mobile.jpg');
+    background-image: url('/assets/img/hero/hero-careers.png');
   }
 }
 .hero#job-opening {

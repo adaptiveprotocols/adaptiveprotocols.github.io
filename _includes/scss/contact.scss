@@ -1,12 +1,12 @@
 section.hero#hero-contact {
-  background-image: url('/assets/img/hero/hero-contact.jpg');
+  background-image: url('/assets/img/hero/hero-contact.png');
   position: relative;
-  @include overlay($dark-black);
+
   h1 {
     color: $white;
   }
   @media #{$mobile} {
-    background-image: url('/assets/img/hero/hero-contact--mobile.jpg');
+    background-image: url('/assets/img/hero/hero-contact--mobile.png');
   }
 }
 .contactForm-submit {

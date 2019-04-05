@@ -1,8 +1,8 @@
 #hero-about {
-  background-image: url('/assets/img/hero/hero-about.jpg');
+  background-image: url('/assets/img/hero/hero-about.png');
   background-color: $dark-black;
   position: relative;
-  @include overlay($dark-black);
+  
 }
 section.about {
   min-height: 460px;
