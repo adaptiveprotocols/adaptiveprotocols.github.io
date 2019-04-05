@@ -513,7 +513,7 @@ form#newsletter { max-width: 100%; width: 600px; }
 @media screen and (min-width: 960px) and (max-width: 1280px), screen and (min-width: 1281px) and (max-width: 1919px), screen and (min-width: 1920px) { #hero-homepage #scroll:hover { width: 60px; height: 60px; }
   #hero-homepage #scroll:hover::before { width: 68px; height: 68px; -webkit-animation: scrollRing1 3600ms linear infinite alternate; animation: scrollRing1 3600ms linear infinite alternate; }
   #hero-homepage #scroll:hover::after { width: 68px; height: 68px; -webkit-animation: scrollRing2 4200ms linear infinite alternate; animation: scrollRing2 4200ms linear infinite alternate; } }
-@media screen and (max-width: 767px) { #hero-homepage { background-image: url("/assets/img/hero/hero-homepage--mobile.jpg"); } }
+@media screen and (max-width: 767px) { #hero-homepage { background-image: url("/assets/img/hero/hero-homepage-1.gif"); } }
 
 .tertiary.what-is-p2p .tertiary-nav::before { background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(white)); background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 100%); pointer-events: none; }
 .tertiary.what-is-p2p .tertiary-nav-content.is-visible p { -webkit-animation: 800ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards slideRight; animation: 800ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards slideRight; }
