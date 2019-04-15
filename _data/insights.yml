@@ -319,3 +319,24 @@
   excerpt: "Recently, Adaptiva asked independent survey company TechValidate to survey our customers so we could gauge their satisfaction."
   type: product
   date: 20190124
+
+- title: "What is OVAL? A Community-Driven Vulnerability Management Brain!"
+  url: "https://insights.adaptiva.com/2019/oval-vulnerability-management-brain/"
+  img: "/assets/img/insights/2019-04-15-oval"
+  excerpt: "The Open Vulnerability and Assessment Language (OVAL®) is a critical component of most enterprises’ endpoint cybersecurity operations."
+  type: industry
+  date: 20190318
+
+- title: "Topology Optimization Delivers the Fewest ConfigMgr Servers For the Greatest Speed and Savings"
+  url: "https://insights.adaptiva.com/2019/topology-optimization-delivers-the-fewest-configmgr-servers-for-the-greatest-speed-and-savings/"
+  img: "/assets/img/insights/2019-04-15-topology"
+  excerpt: "In the past, one of the most expensive aspects of ConfigMgr software delivery has been server infrastructure."
+  type: industry
+  date: 20190328
+
+- title: "What’s New in CM 1902"
+  url: "https://insights.adaptiva.com/2019/configuration-manager-configmgr-1902/"
+  img: "/assets/img/insights/2019-04-15-1902"
+  excerpt: "It’s time for another release in the Configuration Manager as a Service model— the first release of the year, ConfigMgr 1902. The annual 02 release has become the standard for use as a baseline, and 1902 is no exception."
+  type: industry
+  date: 20190402
