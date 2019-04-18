@@ -1335,3 +1335,13 @@
     - class: 'video'
   categories:
     - category: 'Video'
+
+- title: "Adaptiva Evolve VM Demo (7 min)"
+  link: 'https://vimeo.com/adaptiva/evolve-vm-introduction'
+  date: 20190418
+  posted: 'April 18 2019'
+  type: video
+  classes:
+    - class: 'video'
+  categories:
+    - category: 'Video'
