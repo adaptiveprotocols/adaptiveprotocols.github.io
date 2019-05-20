@@ -751,6 +751,8 @@ section.location .tile h2 { font-size: 1.618rem; }
 .sales-map .territory.rich-helgeson { background: #ff902c; }
 .sales-map .territory#bob-rooney { bottom: 46%; left: 13%; }
 .sales-map .territory.bob-rooney { background: #4dcf83; }
+.sales-map .territory#geza-lauturner { top: 46%; left: 48%; }
+.sales-map .territory.geza-lauturner { background: #f9ef3b; }
 .sales-map .territory#row-3 { bottom: 18%; left: 34%; }
 .sales-map .territory#row-2 { bottom: 14%; right: 13%; }
 .sales-map .territory#row-1 { bottom: 43%; right: 19%; }

@@ -1345,3 +1345,13 @@
     - class: 'video'
   categories:
     - category: 'Video'
+
+- title: "Webinar Executive Summary: Vulnerability Management, It’s So Much More Than Patching"
+  link: 'https://storyscape.itprotoday.com/adaptiva-vulnerability-management-so-much-more-than-patching/'
+  date: 20190520
+  posted: 'May 20 2019'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
