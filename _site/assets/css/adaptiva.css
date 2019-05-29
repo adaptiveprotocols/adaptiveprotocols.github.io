@@ -453,6 +453,15 @@ section.navbar.is-scrolled { -webkit-box-shadow: 0 0.1em 0.16em 0 rgba(0, 0, 0, 
 .js-nav-trigger.is-clicked span:last-child { width: 24px; right: auto; -webkit-transform: rotate(-135deg); transform: rotate(-135deg); }
 @media screen and (min-width: 768px) and (max-width: 959px), screen and (max-width: 767px) { .js-nav-trigger { display: block; } }
 
+#translate-button { position: relative; }
+#translate-button:hover .translate-menu { display: block; }
+
+.translate-menu { display: none; position: absolute; right: 0; top: 100%; width: 100%; box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2); }
+
+.translate-menu-language { cursor: pointer; padding: .5rem; background-color: white; line-height: 1; text-align: center; transition: 300ms ease; }
+.translate-menu-language:not(:last-child) { border-bottom: 1px solid #ccc; }
+.translate-menu-language:hover { background: #eee; }
+
 footer.footer { background-color: #041d39; padding: 4.283rem 0; }
 
 @media screen and (max-width: 767px) { .footer-block { width: 50%; float: left; }

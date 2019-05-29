@@ -1,6 +1,7 @@
+---
+---
 jQuery(document).ready(function($) {
-  (function(){ // product feature pants
-
+  {% include js/dictionaries/product-dictionary.js %}
     $('.product-feature-item').click(function(){
 
       var $this     = $(this),
@@ -22,6 +23,4 @@ jQuery(document).ready(function($) {
         .show(); // show only selected video
 
     });
-
-  })();
 });

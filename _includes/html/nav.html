@@ -10,26 +10,36 @@
     <nav class="nav">
       <ul>
         <li class="nav-item">
-          <a href="{{"/products/" | relative_url}}"{% if page.url == "/products/" %} class="current"{% endif %} title="Adaptiva Products">Products</a>
+          <a href="{{"/products/" | relative_url}}" {% if page.url == "/products/" %} class="current trn"{% else %}class="trn"{% endif %} title="Adaptiva Products">Products</a>
         </li>
         <li class="nav-item">
-          <a href="https://insights.adaptiva.com" title="Adaptiva Insights">Insights</a>
+          <a class="trn" href="https://insights.adaptiva.com" title="Adaptiva Insights">Insights</a>
         </li>
         <li class="nav-item">
-          <a href="{{"/academy/" | relative_url }}"{% if page.url == "/academy/" %} class="current"{% endif %} title="Adaptiva Academy">Academy</a>
+          <a href="{{"/academy/" | relative_url }}"{% if page.url == "/academy/" %} class="current trn"{% else %}class="trn"{% endif %} title="Adaptiva Academy">Academy</a>
         </li>
         <li class="nav-item">
-          <a href="{{"/about/" | relative_url }}"{% if page.url == "/about/" %} class="current"{% endif %} title="About Adaptiva">About</a>
+          <a href="{{"/about/" | relative_url }}"{% if page.url == "/about/" %} class="current trn"{% else %}class="trn"{% endif %} title="About Adaptiva">About</a>
         </li>
         <li class="nav-item">
-          <a href="{{"/careers/" | relative_url }}"{% if page.url == "/careers/" %} class="current"{% endif %} title="Adaptiva Careers">Careers</a>
+          <a href="{{"/careers/" | relative_url }}"{% if page.url == "/careers/" %} class="current trn"{% else %}class="trn"{% endif %} title="Adaptiva Careers">Careers</a>
         </li>
         <li class="nav-item">
-          <a href="http://www2.adaptiva.com/contact" title="Contact Adaptiva">Contact</a>
+          <a class="trn" href="http://www2.adaptiva.com/contact" title="Contact Adaptiva">Contact</a>
         </li>
         <li class="nav-item">
-          <a href="http://www2.adaptiva.com/product-demo" class="button green" title="Get a Free Trial">Free Trial</a>
+          <a href="http://www2.adaptiva.com/product-demo" class="button green trn" title="Get a Free Trial">Free Trial</a>
         </li>
+        <!-- <li class="nav-item"> -->
+          <!--Translate button
+           <a id="translate-button">
+            <img src="/assets/translate.svg" style="width: 36px; padding-left: 10px; vertical-align: middle;">
+            <div class="translate-menu">
+              <div class="translate-menu-language" data-language="en">EN</div>
+              <div class="translate-menu-language" data-language="de">DE</div>
+            </div>
+          </a> -->
+        <!-- </li> -->
       </ul>
     </nav>
   </div>

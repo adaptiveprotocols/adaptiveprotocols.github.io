@@ -48,7 +48,7 @@ window.cookieconsent.initialise({
     <meta property="og:type" content="website" />
     <title>Contact Us to Learn About Endpoint Management & Security Solutions - Adaptiva</title>
     <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="/assets/css/adaptiva.css?v=1fe5fa309c992177617da16999a6236877c722e0">
+    <link rel="stylesheet" href="/assets/css/adaptiva.css?v=b9a99b20a064c1a61d454d6e2cafe780419cddfb">
     <link rel="manifest" href="/manifest.json">
   </head>
   <body class="contact">
@@ -101,26 +101,36 @@ window.cookieconsent.initialise({
     <nav class="nav">
       <ul>
         <li class="nav-item">
-          <a href="/products/" title="Adaptiva Products">Products</a>
+          <a href="/products/" class="trn" title="Adaptiva Products">Products</a>
         </li>
         <li class="nav-item">
-          <a href="https://insights.adaptiva.com" title="Adaptiva Insights">Insights</a>
+          <a class="trn" href="https://insights.adaptiva.com" title="Adaptiva Insights">Insights</a>
         </li>
         <li class="nav-item">
-          <a href="/academy/" title="Adaptiva Academy">Academy</a>
+          <a href="/academy/"class="trn" title="Adaptiva Academy">Academy</a>
         </li>
         <li class="nav-item">
-          <a href="/about/" title="About Adaptiva">About</a>
+          <a href="/about/"class="trn" title="About Adaptiva">About</a>
         </li>
         <li class="nav-item">
-          <a href="/careers/" title="Adaptiva Careers">Careers</a>
+          <a href="/careers/"class="trn" title="Adaptiva Careers">Careers</a>
         </li>
         <li class="nav-item">
-          <a href="http://www2.adaptiva.com/contact" title="Contact Adaptiva">Contact</a>
+          <a class="trn" href="http://www2.adaptiva.com/contact" title="Contact Adaptiva">Contact</a>
         </li>
         <li class="nav-item">
-          <a href="http://www2.adaptiva.com/product-demo" class="button green" title="Get a Free Trial">Free Trial</a>
+          <a href="http://www2.adaptiva.com/product-demo" class="button green trn" title="Get a Free Trial">Free Trial</a>
         </li>
+        <!-- <li class="nav-item"> -->
+          <!--Translate button
+           <a id="translate-button">
+            <img src="/assets/translate.svg" style="width: 36px; padding-left: 10px; vertical-align: middle;">
+            <div class="translate-menu">
+              <div class="translate-menu-language" data-language="en">EN</div>
+              <div class="translate-menu-language" data-language="de">DE</div>
+            </div>
+          </a> -->
+        <!-- </li> -->
       </ul>
     </nav>
   </div>
@@ -353,14 +363,20 @@ window.cookieconsent.initialise({
         </a>
         <div class="content vertical-center-row">
           <div class="j-col j-col-4 sales-map-img">
-            <img src="/assets/img/sales/geza-lauturner.png" alt="Jesse Good, Adaptiva" />
+            <img src="/assets/img/sales/geza-lauturner.png" alt="Geza Lauturner, Adaptiva" />
           </div>
           <div class="j-col j-col-7 push-1 sales-map-info">
             <h2>Geza Lauturner</h2>
-            <h4>Regional Sales Director Central Europe Region</h4>
-            <p>Geza oversees sales for Germany and Central Europe Region<br>
+            <h4>Ihr Ansprechpartner für DACH</h4>
+            <p>Gerne stellen wir Ihnen unsere Produkte mit einer Demo vor und begleiten Sie durch eine POC in Ihrer IT-Umgebung<br>
             <p><a href="tel:14258234500">+43 670 607 74 25</a>
-          </div>
+              <p><a>geza.lauturner@adaptiva.com</a></p>
+
+                <table>
+<tr><a href="https://www.linkedin.com/in/gezalauturner/"><img src="/assets/img/sales/linkedin-icon.png" style="float:left; padding-right: .5rem; width: 40px;"></a>
+<a href="https://www.xing.com/profile/Geza_Lauturner/portfolio?sc_o=mxb_p">
+<img src="/assets/img/sales/xing.png" style="height: 40px;"></a></tr>
+</table>
         </div>
       </div>
       <div class="sales-map-profile" id="david-sommerville" style="display: none;">
@@ -597,6 +613,7 @@ window.cookieconsent.initialise({
 
 		</div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- <script src="/assets/js/translate.js"></script> -->
 		<script>
 		function onSubmit(token) {
 			document.getElementById("free-trial-submit").submit();
@@ -604,10 +621,6 @@ window.cookieconsent.initialise({
 		</script>
     <script type="text/javascript" src="/assets/js/touchswipe.js"></script>
     <script type="text/javascript" src="/assets/js/adaptiva.js"></script>
-    
-      
-      <script type="text/javascript" src="/assets/js/contact.js"></script>
-      
     
     
       <script>

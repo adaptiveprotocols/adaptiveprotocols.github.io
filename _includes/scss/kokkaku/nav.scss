@@ -242,3 +242,33 @@ section.navbar.is-scrolled {
     display: block;
   }
 }
+#translate-button {
+  position: relative;
+  &:hover {
+    .translate-menu {
+      display: block;
+    }
+  }
+}
+.translate-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 100%;
+  box-shadow: 0 3px 5px -1px rgba(0,0,0,0.2);
+}
+.translate-menu-language {
+  cursor: pointer;
+  padding: .5rem;
+  background-color: white;
+  line-height: 1;
+  text-align: center;
+  transition: 300ms ease;
+  &:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+  }
+  &:hover {
+    background: #eee;
+  }
+}

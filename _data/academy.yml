@@ -1355,3 +1355,23 @@
     - class: 'webinar'
   categories:
     - category: 'Webinar'
+
+- title: "ConfigMgr Driver Strategy from Deployment Bunny and MoDaly"
+  link: 'https://vimeo.com/adaptiva/e3-podcast-maurice-daly-mikael-nystrom'
+  date: 20190520
+  posted: 'May 20 2019'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
+
+- title: "Adaptiva + Large Enterprise Financial Services Company"
+  link: 'http://adaptiva.wpengine.com/downloads/Case%20Studies/2019-05-28%20Fortune%20100%20Financial%20Case%20Study.pdf'
+  date: 20190529
+  posted: 'May 29 2019'
+  type: document
+  classes:
+    - class: 'case-study'
+  categories:
+    - category: 'Case Study'
