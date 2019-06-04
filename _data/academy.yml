@@ -1375,3 +1375,23 @@
     - class: 'case-study'
   categories:
     - category: 'Case Study'
+
+- title: "ConfigMgr Admins Can Own Patch Tuesday with Tips from Harjit"
+  link: 'https://vimeo.com/adaptiva/e3-podcast-harjit-dhaliwal'
+  date: 20190604
+  posted: 'June 04 2019'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
+
+- title: "Configuration Manager Security -- Protect the Protector"
+  link: 'https://soundcloud.com/adaptiva/configuration-manager-security-protect-the-protector'
+  date: 20190604
+  posted: 'June 04 2019'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
