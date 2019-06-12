@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: job
 title: Head of Product Marketing
 meta: "Apply for the Head of Product Marketing position at Adaptiva."
@@ -36,4 +36,4 @@ The Head of Product Marketing will be responsible for developing positioning, me
 - 100% coverage on top-of-the-line medical, dental, and vision benefits
 - 18 vacation days to start + one additional day each year
 - Incredible team outings and events
-- Fully stocked kitchen, plus frequent team lunches and dinners
+- Fully stocked kitchen, plus frequent team lunches and dinners -->
