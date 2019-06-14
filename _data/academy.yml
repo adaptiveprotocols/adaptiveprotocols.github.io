@@ -1395,3 +1395,13 @@
     - class: 'podcast'
   categories:
     - category: 'Podcast'
+
+- title: "How to Beat the Windows 10 Deployment Clock"
+  link: 'http://www2.adaptiva.com/downloads/webinar/2019-05-23/deployment-clock'
+  date: 20190614
+  posted: 'June 14 2019'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
