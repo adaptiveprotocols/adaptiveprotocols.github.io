@@ -1405,3 +1405,23 @@
     - class: 'webinar'
   categories:
     - category: 'Webinar'
+
+- title: "ConfigMgr OSD Under the Hood with Adam Gross & Doug Wilson"
+  link: 'https://soundcloud.com/adaptiva/configmgr-osd-under-the-hood-with-adam-gross'
+  date: 20190611
+  posted: 'June 11 2019'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
+
+- title: "E3 Podcast: Throwing WSUS Under the Bus, and Why ADRs Rule"
+  link: 'https://insights.adaptiva.com/2019/e3-podcast-throwing-wsus-under-the-bus-and-adrs-rule/'
+  date: 20190619
+  posted: 'June 19 2019'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
