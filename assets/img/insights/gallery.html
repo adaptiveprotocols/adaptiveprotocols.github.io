@@ -1,0 +1,18 @@
+<li class="j-col j-col-4 gallery-item">
+      <img src="{{image.img}}" alt="">
+      <div class="js-light-box" style="display: none;">
+        <div class="js-light-box-close">
+          <span></span>
+          <span></span>
+        </div>
+        <div class="js-light-box-content">
+          <div class="js-light-box-img{% if image.portrait %} portrait{% endif %}" style="background-image: url('{{image.img}}')">
+          </div>
+          <div class="js-light-box-txt">
+            <div class="js-more-info">Show info</div>
+            <h2>{{image.title}}</h2>
+            <span class="js-light-box-desc">{{image.text}}</span>
+          </div>
+        </div>
+      </div>
+    </li>

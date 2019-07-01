@@ -361,3 +361,17 @@
   excerpt: "This podcast with Harjit turned out to be a master class on Patch Tuesday for ConfigMgr admins."
   type: industry
   date: 20190529
+
+- title: "ConfigMgr OSD Under the Hood with Adam Gross & Doug Wilson"
+  url: "https://insights.adaptiva.com/2019/configmgr-osd-under-the-hood-with-adam-gross-doug-wilson/"
+  img: "/assets/img/insights/2019-07-01-adam-doug"
+  excerpt: "Operating system deployment experts Adam Gross and Doug Wilson will go over the top four OSD debugging challenges and deliver the answers you need to tackle them."
+  type: industry
+  date: 20190611
+
+- title: "E3 Podcast: Throwing WSUS Under the Bus, and Why ADRs Rule"
+  url: "https://insights.adaptiva.com/2019/e3-podcast-throwing-wsus-under-the-bus-and-adrs-rule/"
+  img: "/assets/img/insights/2019-07-01-bryan-jordan"
+  excerpt: "MVPs Jordan Benzing and Bryan Dam break down why WSUS is a problematic relic—and why you can’t live without it yet."
+  type: industry
+  date: 20190619
