@@ -1425,3 +1425,13 @@
     - class: 'podcast'
   categories:
     - category: 'Podcast'
+
+- title: "ConfigMgr Third-Party Patching Roundtable"
+  link: 'https://adaptiva.com/videos/2019/third-party-patching-roundtable/'
+  date: 20190709
+  posted: 'July 9, 2019'
+  type: document
+  classes:
+    - class: 'report'
+  categories:
+    - category: 'Report'
