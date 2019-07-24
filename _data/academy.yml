@@ -1430,6 +1430,16 @@
   link: 'http://www2.adaptiva.com/downloads/webinar/2019-06-25/configmgr-roundtable'
   date: 20190709
   posted: 'July 9, 2019'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "ConfigMgr Third-Party Patching Primer"
+  link: 'http://www2.adaptiva.com/report/third-party-patch-primer'
+  date: 20190724
+  posted: 'July 24 2019'
   type: document
   classes:
     - class: 'report'
