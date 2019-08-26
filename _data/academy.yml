@@ -1445,3 +1445,13 @@
     - class: 'report'
   categories:
     - category: 'Report'
+
+- title: "OneSite VMWare Edition Brochure"
+  link: 'http://www2.adaptiva.com/brochure/onesite-vmware-edition'
+  date: 20190826
+  posted: 'August 26 2019'
+  type: document
+  classes:
+    - class: 'product-resource'
+  categories:
+    - category: 'Product Resource'
