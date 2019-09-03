@@ -6,6 +6,14 @@ section.hero#hero-products {
     background-image: url('/assets/img/hero/hero-products--mobile.png');
   }
 }
+section.hero#hero-products-onesite-vmware-edition {
+  background-image: url('/assets/img/hero/hero-products-onesite-vmware-edition.jpg');
+  position: relative;
+
+  @media #{$mobile} {
+    background-image: url('/assets/img/hero/hero-products-onesite-vmware-edition--mobile.jpg');
+  }
+}
 h1.product-title {
 	font-size: $type-larger;
 	text-align: left;
