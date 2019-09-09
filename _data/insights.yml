@@ -375,3 +375,17 @@
   excerpt: "MVPs Jordan Benzing and Bryan Dam break down why WSUS is a problematic relic—and why you can’t live without it yet."
   type: industry
   date: 20190619
+
+- title: "The Majority of Enterprises Fear They Will Not Complete Windows 10 Migration on Time"
+  url: "https://insights.adaptiva.com/2019/enterprise-windows-10-migration-what-to-do/"
+  img: "/assets/img/insights/2019-09-09-win10-migration"
+  excerpt: "According to a recent survey, only 15 percent of enterprises have completed migration."
+  type: industry
+  date: 20190909
+
+- title: "Read Log Files Like a Pro in ConfigMgr 1906 Support Center OneTrace (Preview)"
+  url: "https://insights.adaptiva.com/2019/configmgr-onetrace-read-log-files-like-a-pro-1906-support-center/"
+  img: "/assets/img/insights/2019-09-09-log-files"
+  excerpt: "Using the console and status message queries are great when everything is working well."
+  type: industry
+  date: 20190909
