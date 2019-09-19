@@ -389,3 +389,10 @@
   excerpt: "Using the console and status message queries are great when everything is working well."
   type: industry
   date: 20190909
+
+- title: "ConfigMgr Application Groups Let You Install the Horse App before the Cart App"
+  url: "https://insights.adaptiva.com/2019/configmgr-application-groups-let-you-install-the-horse-app-before-the-cart-app/"
+  img: "/assets/img/insights/2019-09-19-config-groups"
+  excerpt: "Application groups let you collate applications together and order them for install."
+  type: industry
+  date: 20190919
