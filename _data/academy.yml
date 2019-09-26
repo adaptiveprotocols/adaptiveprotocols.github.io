@@ -1455,3 +1455,13 @@
     - class: 'product-resource'
   categories:
     - category: 'Product Resource'
+
+- title: "On-Demand Webinar: Radically Accelerate VMware Workspace ONE App Delivery"
+  link: 'http://www2.adaptiva.com/downloads/webinar/2019-09-24/vmware-accelerate-wsone'
+  date: 20190926
+  posted: 'September 26 2019'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
