@@ -1465,3 +1465,13 @@
     - class: 'webinar'
   categories:
     - category: 'Webinar'
+
+- title: "2018 Endpoint Security Survey"
+  link: 'http://www2.adaptiva.com/2018SecuritySurvey'
+  date: 20191016
+  posted: 'October 16 2019'
+  type: document
+  classes:
+    - class: 'report'
+  categories:
+    - category: 'Report'
