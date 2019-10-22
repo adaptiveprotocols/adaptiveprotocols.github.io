@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: job
 title: Business Development Representative
 meta: "Apply for the Business Development Representative position at Adaptiva."
@@ -36,4 +36,4 @@ Our Business Development Representatives bring our technology portfolio to life 
 - 100% coverage on top-of-the-line medical, dental, and vision benefits
 - 18 vacation days to start + one additional day each year
 - Incredible team outings and events
-- Fully stocked kitchen, plus frequent team lunches and dinners
+- Fully stocked kitchen, plus frequent team lunches and dinners -->
