@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: job
 title: Senior Product Manager
 meta: "Apply for the Senior Product Manager position at Adaptiva."
@@ -56,4 +56,4 @@ Requirements Documentation: Documenting specific, clear product requirements tha
 <li>18 vacation days to start + one additional day each year, with unlimited sick leave</li>
 <li>Incredible team outings and events</li>
 <li>Fully stocked kitchen, plus frequent team lunches and dinners</li>
-</ul>
+</ul> -->
