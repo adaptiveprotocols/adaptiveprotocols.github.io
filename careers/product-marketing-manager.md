@@ -1,6 +1,6 @@
 ---
 layout: job
-title: Sr. Product Marking Manager
+title: Sr. Product Marketing Manager
 meta: "Apply for the Sr. Product Marking Manager position at Adaptiva."
 bodyclass: job
 published: true
