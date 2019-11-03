@@ -1446,7 +1446,7 @@
   categories:
     - category: 'Report'
 
-- title: "OneSite VMWare Edition Brochure"
+- title: "OneSite VMware Edition Brochure"
   link: 'http://www2.adaptiva.com/brochure/onesite-vmware-edition'
   date: 20190826
   posted: 'August 26 2019'
@@ -1458,7 +1458,7 @@
 
 - title: "On-Demand Webinar: Radically Accelerate VMware Workspace ONE App Delivery"
   link: 'http://www2.adaptiva.com/downloads/webinar/2019-09-24/vmware-accelerate-wsone'
-  date: 2010926
+  date: 20190926
   posted: 'September 26 2019'
   type: webinar
   classes:
