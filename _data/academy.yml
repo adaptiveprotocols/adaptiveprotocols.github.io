@@ -1495,3 +1495,13 @@
     - class: 'report'
   categories:
     - category: 'Report'
+
+- title: "On-Demand Webinar: An Evolutionary Leap in Vulnerability Management"
+  link: 'https://adaptiva.com/videos/2019/evolutionary-leap-in-vulnerability-management/'
+  date: 20191122
+  posted: 'November 22 2019'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
