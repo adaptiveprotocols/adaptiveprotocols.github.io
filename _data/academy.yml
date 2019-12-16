@@ -1496,6 +1496,16 @@
   categories:
     - category: 'Report'
 
+- title: "Report: Windows as a Service for ConfigMgr and Intune Admins"
+  link: 'http://www2.adaptiva.com/report/waas-for-admins'
+  date: 20191216
+  posted: 'December 16 2019'
+  type: document
+  classes:
+    - class: 'report'
+  categories:
+    - category: 'Report'
+
 - title: "On-Demand Webinar: An Evolutionary Leap in Vulnerability Management"
   link: 'http://www2.adaptiva.com/downloads/webinar/2019-11-19/evolutionary-leap-evolvevm'
   date: 20191122
@@ -1505,3 +1515,23 @@
     - class: 'webinar'
   categories:
     - category: 'Webinar'
+
+- title: "On-Demand: Windows as a Service for Smarties Webinar"
+  link: 'http://www2.adaptiva.com/downloads/webinar/2019-10-22/waas-for-smarties'
+  date: 20191216
+  posted: 'December 16 2019'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "ConfigMgr Community Tools Podcast Party from MMS Jazz"
+  link: 'https://soundcloud.com/adaptiva/configmgr-community-tools-podcaste-party-from-mms-jazz'
+  date: 20191206
+  posted: 'December 6 2019'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
