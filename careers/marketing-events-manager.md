@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: job
 title: Marketing Events Manager
 meta: "Apply for the Marketing Events Manager position at Adaptiva."
@@ -40,4 +40,4 @@ The main goal of this position is to help Adaptiva stand out at events with enga
 - 100% coverage on top-of-the-line medical, dental, and vision benefits
 - 18 vacation days to start + one additional day each year
 - Incredible team outings and events
-- Fully stocked kitchen, plus frequent team lunches and dinners
+- Fully stocked kitchen, plus frequent team lunches and dinners -->
