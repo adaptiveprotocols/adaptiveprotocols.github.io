@@ -109,10 +109,6 @@
   link: 'http://microsoft.com'
   big: true
 
-- name: Netcentrics
-  png: netcentrics-logo.png
-  link: 'http://netcentrics.com/'
-
 - name: Netrix
   png: netrix-logo.png
   link: 'http://netrixllc.com/'
