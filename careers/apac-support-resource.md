@@ -1,7 +1,7 @@
 ---
 layout: job
-title: APAC Support Resource
-meta: "Apply for the APAC Support Resource remote position at Adaptiva."
+title: Senior Technical & Pre-Sales Analyst - APAC
+meta: "Apply for the Senior Technical & Pre-Sales Analyst - APAC remote position at Adaptiva."
 bodyclass: job
 published: true
 ---

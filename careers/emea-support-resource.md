@@ -1,7 +1,7 @@
 ---
 layout: job
-title: EMEA Support Resource
-meta: "Apply for the EMEA Support Resource remote position at Adaptiva."
+title: Senior Solutions Architect - EMEA
+meta: "Apply for the Senior Solutions Architect - EMEA remote position at Adaptiva."
 bodyclass: job
 published: true
 ---
@@ -10,7 +10,7 @@ Adaptiva is a leading, global enterprise systems management company headquartere
 
 
 ## Role and Responsibilities
-We are looking for a Senior Solutions Architect to be part of the global technical services team, working in the EMEA region, performing senior level Technical Support & Pre-Sales activities reporting to the Director of Global Support.  You will be responsible for ensuring our customers have excellent experiences implementing and using Adaptiva products.
+We are looking for a Senior Solutions Architect - EMEA to be part of the global technical services team, working in the EMEA region, performing senior level Technical Support & Pre-Sales activities reporting to the Director of Global Support.  You will be responsible for ensuring our customers have excellent experiences implementing and using Adaptiva products.
 
 For this position we are looking for someone to primarily cover the South EMEA region, ideally based in the UK (although not essential) and French speaking.  You will be primarily be home office based with occasional travel in the region.
  
