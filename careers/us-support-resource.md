@@ -1,7 +1,7 @@
 ---
 layout: job
-title: EMEA Support Resource
-meta: "Apply for the EMEA Support Resource remote position at Adaptiva."
+title: Senior Solutions Architect
+meta: "Apply for the Senior Solutions Architect remote position at Adaptiva."
 bodyclass: job
 published: true
 ---
