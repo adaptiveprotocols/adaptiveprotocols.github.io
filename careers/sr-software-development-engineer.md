@@ -6,7 +6,7 @@ bodyclass: job
 published: true
 ---
 ## Company
-Adaptiva is a leading, global enterprise systems management company headquartered in Bellevue, WA. Our breakthrough peer-to-peer distributed computing technology is trusted by hundreds of large enterprises around the world. Our environment and culture incorporate our four core values: Integrity, Excellence, Work Ethic, and Dignity of Labor. As an employer, we offer above-market compensation structures, industry-leading benefits packages, and incredible learning and growth opportunities, in a fast-paced and collaborative environment.
+Adaptiva is a leading, global enterprise systems management company headquartered in Kirkland, WA. Our breakthrough peer-to-peer distributed computing technology is trusted by hundreds of large enterprises around the world. Our environment and culture incorporate our four core values: Integrity, Excellence, Work Ethic, and Dignity of Labor. As an employer, we offer above-market compensation structures, industry-leading benefits packages, and incredible learning and growth opportunities, in a fast-paced and collaborative environment.
 
 ## Job Summary
 We are seeking passionate and driven Senior Software Development Engineers who love creating elegant and sophisticated designs and architectures. You’ll be working on cutting-edge technologies, including Big Data, Cloud Services, Analytics, Visualization, and Machine Learning to solve real-world problems for some of the biggest and most respected Fortune 500 companies in the world.

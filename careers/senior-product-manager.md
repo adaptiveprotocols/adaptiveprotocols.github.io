@@ -6,7 +6,7 @@ bodyclass: job
 published: true
 ---
 ## About Adaptiva
-We are a rapidly growing and highly profitable enterprise systems management and security software company headquartered in Bellevue, WA. Our breakthrough intelligent network aware peer-to-peer distributed computing technology and automation engine is trusted by hundreds of the largest enterprises around the world. As an employer, we offer above-market compensation structures, industry-leading benefits packages, and incredible learning and growth opportunities, in a fast-paced and collaborative environment.
+We are a rapidly growing and highly profitable enterprise systems management and security software company headquartered in Kirkland, WA. Our breakthrough intelligent network aware peer-to-peer distributed computing technology and automation engine is trusted by hundreds of the largest enterprises around the world. As an employer, we offer above-market compensation structures, industry-leading benefits packages, and incredible learning and growth opportunities, in a fast-paced and collaborative environment.
 
 ## Role
 Adaptiva is searching for a Senior Product Manager to report to the VP of Marketing in managing the roadmap and product requirements for company’s product lines. This role will offer the opportunity to set the product management strategy for Adaptiva, an enterprise IT software company which is rapidly growing, highly profitable, and working with over 200 of the largest Fortune 1000 companies in the world.
