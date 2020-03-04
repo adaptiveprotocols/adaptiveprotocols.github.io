@@ -466,8 +466,8 @@
   categories:
     - category: 'Product Resource'
 
-- title: "Client Health Health Checks"
-  link: 'http://www2.adaptiva.com/l/139131/2016-10-27/srxx9/139131/34988/Client_Health_Health_Check_List.pdf'
+- title: "Endpoint Health Health Checks List"
+  link: 'https://insights.adaptiva.com/downloads/datasheets/Endpoint_Health_Health_Check_List.pdf'
   date: 20161027
   posted: 'October 27 2016'
   type: document
