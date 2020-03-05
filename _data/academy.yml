@@ -472,9 +472,9 @@
   posted: 'October 27 2016'
   type: document
   classes:
-    - class: 'product-resource'
+    - class: 'case-study'
   categories:
-    - category: 'Product Resource'
+    - category: 'Case Study'
 
 - title: "Green Planet Overview Brochure"
   link: 'http://www2.adaptiva.com/l/139131/2016-11-01/t3l41/139131/35532/Green_Planet_Overview.pdf'
