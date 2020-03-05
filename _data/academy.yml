@@ -476,6 +476,16 @@
   categories:
     - category: 'Product Resource'
 
+- title: "Endpoint Health Case Study"
+  link: 'https://insights.adaptiva.com/downloads/CaseStudies/Endpoint_Health_Case_Study.pdf'
+  date: 20161027
+  posted: 'March 5 2020'
+  type: document
+  classes:
+    - class: 'case-study'
+  categories:
+    - category: 'Case Study'
+
 - title: "Green Planet Overview Brochure"
   link: 'http://www2.adaptiva.com/l/139131/2016-11-01/t3l41/139131/35532/Green_Planet_Overview.pdf'
   date: 20161101
