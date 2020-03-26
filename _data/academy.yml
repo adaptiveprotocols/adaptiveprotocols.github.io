@@ -1,3 +1,13 @@
+- title: "Adaptiva PowerShell CmdLet Foundry Technical Deep Dive"
+  link: 'https://adaptiva.com/videos/2020/powershell-cmdlet-foundry-deep-dive/'
+  date: 20200326
+  posted: 'March 26 2020'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
 - title: "E³ Podcast: Wally Mead"
   link: 'https://soundcloud.com/adaptiva/enterprise-endpoint-experts-wally-mead'
   date: 20170320
