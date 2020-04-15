@@ -187,7 +187,7 @@
   img: 'podcast-duncan-mcalynn.jpg'
 
 - title: "Client Health Product Webinar"
-  link: 'http://www2.adaptiva.com/webinar/2016-11-17-client-health-resources'
+  link: 'https://www2.adaptiva.com/webinar/2016-11-17-client-health-resources'
   date: 20161107
   posted: 'November 07 2016'
   type: webinar
@@ -197,7 +197,7 @@
     - category: 'Webinar'
 
 - title: "TNT Uses OneSite to Streamline SCCM Infrastructure"
-  link: 'http://www2.adaptiva.com/l/139131/2016-02-09/fs78'
+  link: 'https://www2.adaptiva.com/l/139131/2016-02-09/fs78'
   date: 20160209
   posted: 'February 09 2016'
   type: document
@@ -207,7 +207,7 @@
     - category: 'Case Study'
 
 - title: "Windows 10 OSD Primer Guide"
-  link: 'http://www2.adaptiva.com/report/windows-10-primer'
+  link: 'https://www2.adaptiva.com/report/windows-10-primer'
   date: 20170615
   posted: 'June 15 2017'
   type: document
@@ -217,7 +217,7 @@
     - category: 'Report'
 
 - title: "Adaptiva Company Brochure"
-  link: 'http://www2.adaptiva.com/l/139131/2016-03-23/43tvp/139131/6804/Adaptiva_Company_Overview_Brochure.pdf'
+  link: 'https://www2.adaptiva.com/l/139131/2016-03-23/43tvp/139131/6804/Adaptiva_Company_Overview_Brochure.pdf'
   date: 20170415
   posted: 'April 15 2017'
   type: document
@@ -227,7 +227,7 @@
     - category: 'Product Resource'
 
 - title: "Multicast vs. Memory Pipeline Architecture Brochure"
-  link: 'http://www2.adaptiva.com/l/139131/2016-09-08/ndmx7'
+  link: 'https://www2.adaptiva.com/l/139131/2016-09-08/ndmx7'
   date: 20160908
   posted: 'September 08 2016'
   type: document
@@ -237,7 +237,7 @@
     - category: 'Technology Comparison'
 
 - title: "Windows 10 OSD Partner Roundtable"
-  link: 'http://www2.adaptiva.com/l/139131/2016-04-15/6qlkc'
+  link: 'https://www2.adaptiva.com/l/139131/2016-04-15/6qlkc'
   date: 20160318
   posted: 'March 18 2016'
   type: webinar
@@ -247,7 +247,7 @@
     - category: 'Webinar'
 
 - title: "Top 20 SCCM Security Best Practices"
-  link: 'http://www2.adaptiva.com/l/139131/2016-04-15/6qllh'
+  link: 'https://www2.adaptiva.com/l/139131/2016-04-15/6qllh'
   date: 20161005
   posted: 'October 5 2016'
   type: webinar
@@ -257,7 +257,7 @@
     - category: 'Webinar'
 
 - title: "OneSite Product Webinar"
-  link: 'http://www2.adaptiva.com/l/139131/2016-04-15/6qlbw'
+  link: 'https://www2.adaptiva.com/l/139131/2016-04-15/6qlbw'
   date: 20160620
   posted: 'June 20 2016'
   type: webinar
@@ -277,7 +277,7 @@
     - category: 'Webinar'
 
 - title: "CTO Talk: Automating OSD and Software Distribution"
-  link: 'http://www2.adaptiva.com/l/139131/2016-05-25/cpxrk'
+  link: 'https://www2.adaptiva.com/l/139131/2016-05-25/cpxrk'
   date: 20161005
   posted: 'October 5 2016'
   type: webinar
@@ -327,7 +327,7 @@
     - category: 'Webinar'
 
 - title: "Mastering Windows 10: Virtual Tradeshow Session"
-  link: 'http://www2.adaptiva.com/downloads/mastering-windows-10-virtual-tradeshow'
+  link: 'https://www2.adaptiva.com/downloads/mastering-windows-10-virtual-tradeshow'
   date: 20170620
   posted: 'June 20 2017'
   type: webinar
@@ -337,7 +337,7 @@
     - category: 'Webinar'
 
 - title: "Windows 10 Start to Finish: A Roundtable Discussion"
-  link: 'http://www2.adaptiva.com/webinar/windows-10-roundtable-recording-download'
+  link: 'https://www2.adaptiva.com/webinar/windows-10-roundtable-recording-download'
   date: 20170608
   posted: 'June 08 2017'
   type: webinar
@@ -347,7 +347,7 @@
     - category: 'Webinar'
 
 - title: "MMW 2017 Wrap-up Webinar"
-  link: 'http://www2.adaptiva.com/webinars/mms-2017-wrap-up-download'
+  link: 'https://www2.adaptiva.com/webinars/mms-2017-wrap-up-download'
   date: 20170526
   posted: 'May 26 2017'
   type: webinar
@@ -357,7 +357,7 @@
     - category: 'Webinar'
 
 - title: "OneSite and Client Health Product Overview Webinar"
-  link: 'http://www2.adaptiva.com/webinar/product-webinar-download'
+  link: 'https://www2.adaptiva.com/webinar/product-webinar-download'
   date: 20170607
   posted: 'June 7 2017'
   type: webinar
@@ -367,7 +367,7 @@
     - category: 'Webinar'
 
 - title: "Security Configuration Management Best Practices (Dale Meredith)"
-  link: 'http://www2.adaptiva.com/downloads/webinar-scm-practices'
+  link: 'https://www2.adaptiva.com/downloads/webinar-scm-practices'
   date: 20170803
   posted: 'June 7 2017'
   type: webinar
@@ -377,7 +377,7 @@
     - category: 'Webinar'
 
 - title: "ConfigMgr 1706 Deep Dive"
-  link: 'http://www2.adaptiva.com/downloads/configmgr-1706-webinar'
+  link: 'https://www2.adaptiva.com/downloads/configmgr-1706-webinar'
   date: 20170901
   posted: 'September 1 2017'
   type: webinar
@@ -387,7 +387,7 @@
     - category: 'Webinar'
 
 - title: "OneSite Overview Brochure"
-  link: 'http://www2.adaptiva.com/l/139131/2016-04-15/6s9hh/139131/9648/OneSite_Product_Overview.pdf'
+  link: 'https://www2.adaptiva.com/l/139131/2016-04-15/6s9hh/139131/9648/OneSite_Product_Overview.pdf'
   date: 20160415
   posted: 'April 15 2016'
   type: document
@@ -397,7 +397,7 @@
     - category: 'Product Resource'
 
 - title: "OneSite Speed Datasheet"
-  link: 'http://www2.adaptiva.com/l/139131/2016-04-29/8q2x7/139131/11394/OneSite_Datasheet.pdf'
+  link: 'https://www2.adaptiva.com/l/139131/2016-04-29/8q2x7/139131/11394/OneSite_Datasheet.pdf'
   date: 20160513
   posted: 'May 13 2016'
   type: document
@@ -407,7 +407,7 @@
     - category: 'Product Resource'
 
 - title: "Windows 10 OSD Brochure"
-  link: 'http://adaptiva.wpengine.com/downloads/documents/windows-10-osd-brochure.pdf'
+  link: 'https://insights.adaptiva.com/downloads/documents/windows-10-osd-brochure.pdf'
   date: 20160513
   posted: 'May 13 2016'
   type: document
@@ -417,7 +417,7 @@
     - category: 'Product Resource'
 
 - title: "Automation: Content Staging with OneSite"
-  link: 'http://www2.adaptiva.com/l/139131/2016-07-12/hjl8y/139131/20078/Automation_Content_Staging.pdf'
+  link: 'https://www2.adaptiva.com/l/139131/2016-07-12/hjl8y/139131/20078/Automation_Content_Staging.pdf'
   date: 20160712
   posted: 'July 12 2016'
   type: document
@@ -427,7 +427,7 @@
     - category: 'Product Resource'
 
 - title: "Automation: Content Visibility and Control with OneSite"
-  link: 'http://www2.adaptiva.com/l/139131/2016-07-12/hjl91/139131/20080/Automation_Content_Visibility_.pdf'
+  link: 'https://www2.adaptiva.com/l/139131/2016-07-12/hjl91/139131/20080/Automation_Content_Visibility_.pdf'
   date: 20160712
   posted: 'July 12 2016'
   type: document
@@ -437,7 +437,7 @@
     - category: 'Product Resource'
 
 - title: "Automation: Content Workflow with OneSite"
-  link: 'http://www2.adaptiva.com/l/139131/2016-07-12/hjl93/139131/20082/Automation_Content_Workflow.pdf'
+  link: 'https://www2.adaptiva.com/l/139131/2016-07-12/hjl93/139131/20082/Automation_Content_Workflow.pdf'
   date: 20160712
   posted: 'July 12 2016'
   type: document
@@ -447,7 +447,7 @@
     - category: 'Product Resource'
 
 - title: "Rapid Windows 10 OSD Datasheet"
-  link: 'http://www2.adaptiva.com/l/139131/2016-07-28/kd1x1/139131/22104/Windows_10_OSD_Datasheet.pdf'
+  link: 'https://www2.adaptiva.com/l/139131/2016-07-28/kd1x1/139131/22104/Windows_10_OSD_Datasheet.pdf'
   date: 20160729
   posted: 'July 29 2016'
   type: document
@@ -457,7 +457,7 @@
     - category: 'Product Resource'
 
 - title: "Altiris to SCCM Migration Brochure"
-  link: 'http://www2.adaptiva.com/l/139131/2016-08-12/lpt95/139131/24122/Adaptiva_AltiristoSCCM_Brochure.pdf'
+  link: 'https://www2.adaptiva.com/l/139131/2016-08-12/lpt95/139131/24122/Adaptiva_AltiristoSCCM_Brochure.pdf'
   date: 20160831
   posted: 'August 31 2016'
   type: document
@@ -467,7 +467,7 @@
     - category: 'Product Resource'
 
 - title: "Adaptiva Key Advantages Brochure"
-  link: 'http://www2.adaptiva.com/l/139131/2016-09-19/pnrvt/139131/29312/Adaptiva_Key_Advantages.pdf'
+  link: 'https://www2.adaptiva.com/l/139131/2016-09-19/pnrvt/139131/29312/Adaptiva_Key_Advantages.pdf'
   date: 20160919
   posted: 'September 19 2016'
   type: document
@@ -497,7 +497,7 @@
     - category: 'Case Study'
 
 - title: "Green Planet Overview Brochure"
-  link: 'http://www2.adaptiva.com/l/139131/2016-11-01/t3l41/139131/35532/Green_Planet_Overview.pdf'
+  link: 'https://www2.adaptiva.com/l/139131/2016-11-01/t3l41/139131/35532/Green_Planet_Overview.pdf'
   date: 20161101
   posted: 'November 1 2016'
   type: document
@@ -507,7 +507,7 @@
     - category: 'Product Resource'
 
 - title: "PowerShell Fusion and Workflow Designer"
-  link: 'http://www2.adaptiva.com/files/datasheets/powershell'
+  link: 'https://www2.adaptiva.com/files/datasheets/powershell'
   date: 20170413
   posted: 'April 13 2017'
   type: document
@@ -517,7 +517,7 @@
     - category: 'Product Resource'
 
 - title: "Endpoint Health Key Features Datasheet"
-  link: 'http://www2.adaptiva.com/downloads/client-health-features'
+  link: 'https://www2.adaptiva.com/downloads/client-health-features'
   date: 20170630
   posted: 'June 30 2017'
   type: document
@@ -527,7 +527,7 @@
     - category: 'Product Resource'
 
 - title: "Client Health Visual Reporting Engine Overview"
-  link: 'http://www2.adaptiva.com/downloads/client-health-visual-reporting'
+  link: 'https://www2.adaptiva.com/downloads/client-health-visual-reporting'
   date: 20170714
   posted: 'July 14 2017'
   type: document
@@ -537,7 +537,7 @@
     - category: 'Product Resource'
 
 - title: "Adaptiva Deep Dive: LiveFlow"
-  link: 'http://www2.adaptiva.com/video/liveflow'
+  link: 'https://www2.adaptiva.com/video/liveflow'
   date: 20170907
   posted: 'September 7 2017'
   type: video
@@ -549,7 +549,7 @@
     - category: 'Video'
 
 - title: "Adaptiva Deep Dive: Predictive Bandwidth Harvesting"
-  link: 'http://www2.adaptiva.com/video/PBH'
+  link: 'https://www2.adaptiva.com/video/PBH'
   date: 20170907
   posted: 'September 7 2017'
   type: video
@@ -561,7 +561,7 @@
     - category: 'Video'
 
 - title: "Adaptiva Deep Dive: Virtual SAN"
-  link: 'http://www2.adaptiva.com/video/VirtualSAN'
+  link: 'https://www2.adaptiva.com/video/VirtualSAN'
   date: 20170908
   posted: 'September 8 2017'
   type: video
@@ -573,7 +573,7 @@
     - category: 'Video'
 
 - title: "Five Star Overcomes OSD and WAN Hurdles with OneSite"
-  link: 'http://www2.adaptiva.com/l/139131/2016-02-09/fs74'
+  link: 'https://www2.adaptiva.com/l/139131/2016-02-09/fs74'
   date: 20160209
   posted: 'February 9 2016'
   type: document
@@ -583,7 +583,7 @@
     - category: 'Case Study'
 
 - title: "Skanska’s James Pitcher on SCCM OSD and Security with OneSite"
-  link: 'http://adaptiva.com/blog/2016/sccm-osd-interview-skanska/'
+  link: 'https://adaptiva.com/blog/2016/sccm-osd-interview-skanska/'
   date: 20160126
   posted: 'January 26 2016'
   type: document
@@ -593,7 +593,7 @@
     - category: 'Case Study'
 
 - title: "Customer Case Study: AECOM"
-  link: 'http://www2.adaptiva.com/case-study/aecom'
+  link: 'https://www2.adaptiva.com/case-study/aecom'
   date: 20161207
   posted: 'December 7 2016'
   type: document
@@ -603,7 +603,7 @@
     - category: 'Case Study'
 
 - title: "Top 20 SCCM Security Best Practices Report"
-  link: 'http://www2.adaptiva.com/l/139131/2016-02-09/fs98'
+  link: 'https://www2.adaptiva.com/l/139131/2016-02-09/fs98'
   date: 20160209
   posted: 'February 9 2016'
   type: document
@@ -613,7 +613,7 @@
     - category: 'Report'
 
 - title: "Windows 10 IT Impact Survey Report"
-  link: 'http://www2.adaptiva.com/l/139131/2016-02-09/fs8n'
+  link: 'https://www2.adaptiva.com/l/139131/2016-02-09/fs8n'
   date: 20160209
   posted: 'February 9 2016'
   type: document
@@ -623,7 +623,7 @@
     - category: 'Report'
 
 - title: "Ignite 2015 Systems Management Survey"
-  link: 'http://www2.adaptiva.com/l/139131/2016-04-15/6qlx9'
+  link: 'https://www2.adaptiva.com/l/139131/2016-04-15/6qlx9'
   date: 20160415
   posted: 'April 15 2016'
   type: document
@@ -633,7 +633,7 @@
     - category: 'Report'
 
 - title: "Top 10 Best Practices for Windows 10 OSD"
-  link: 'http://www2.adaptiva.com/l/139131/2016-04-27/8kqmy'
+  link: 'https://www2.adaptiva.com/l/139131/2016-04-27/8kqmy'
   date: 20160427
   posted: 'April 27 2016'
   type: document
@@ -643,7 +643,7 @@
     - category: 'Report'
 
 - title: "2016 Windows 10 Enterprise Adoption Survey"
-  link: 'http://www2.adaptiva.com/l/139131/2016-07-29/kv67c'
+  link: 'https://www2.adaptiva.com/l/139131/2016-07-29/kv67c'
   date: 20160729
   posted: 'July 29 2016'
   type: document
@@ -653,7 +653,7 @@
     - category: 'Report'
 
 - title: "Top 5 Security Best Practices for Windows 10 in the Enterprise"
-  link: 'http://www2.adaptiva.com/l/139131/2016-09-01/mx69m'
+  link: 'https://www2.adaptiva.com/l/139131/2016-09-01/mx69m'
   date: 20160901
   posted: 'September 1 2016'
   type: document
@@ -663,7 +663,7 @@
     - category: 'Report'
 
 - title: "Software Deployments from the Cloud Survey"
-  link: 'http://www2.adaptiva.com/survey/2016-cloud-software-deployments'
+  link: 'https://www2.adaptiva.com/survey/2016-cloud-software-deployments'
   date: 20160914
   posted: 'September 14 2016'
   type: document
@@ -673,7 +673,7 @@
     - category: 'Report'
 
 - title: "2017 Windows 10 Enterprise Impact Survey"
-  link: 'http://www2.adaptiva.com/survey/2016-cloud-software-deployments'
+  link: 'https://www2.adaptiva.com/survey/2016-cloud-software-deployments'
   date: 20160914
   posted: 'September 14 2016'
   type: document
@@ -684,7 +684,7 @@
     - category: 'Report'
 
 - title: "Redmond Magazine Technology Brief: Security Configuration Management"
-  link: 'http://www2.adaptiva.com/reports/security-config-mgmt'
+  link: 'https://www2.adaptiva.com/reports/security-config-mgmt'
   date: 20170830
   posted: 'August 30 2017'
   type: document
@@ -694,7 +694,7 @@
     - category: 'Report'
 
 - title: "OneSite vs. BranchCache Comparison Datasheet"
-  link: 'http://www2.adaptiva.com/datasheet/onesite-vs-branchcache'
+  link: 'https://www2.adaptiva.com/datasheet/onesite-vs-branchcache'
   date: 20160908
   posted: 'September 8 2016'
   type: document
@@ -704,7 +704,7 @@
     - category: 'Technology Comparison'
 
 - title: "SCCM + OneSite vs. SCCM Standalone Comparison"
-  link: 'http://www2.adaptiva.com/brochure/sccm-with-without-onesite'
+  link: 'https://www2.adaptiva.com/brochure/sccm-with-without-onesite'
   date: 20160908
   posted: 'September 8 2016'
   type: document
@@ -714,7 +714,7 @@
     - category: 'Technology Comparison'
 
 - title: "Endpoint Health and Security Options from Adaptiva and Microsoft"
-  link: 'http://www2.adaptiva.com/datasheet/adaptiva-client-health-vs-sccm'
+  link: 'https://www2.adaptiva.com/datasheet/adaptiva-client-health-vs-sccm'
   date: 20170321
   posted: 'March 21 2017'
   type: document
@@ -724,7 +724,7 @@
     - category: 'Technology Comparison'
 
 - title: "ConfigMgr Peer-to-peer Landscape"
-  link: 'http://www2.adaptiva.com/datasheet/configmgr-p2p-landscape'
+  link: 'https://www2.adaptiva.com/datasheet/configmgr-p2p-landscape'
   date: 20170711
   posted: 'July 11 2017'
   type: document
@@ -734,7 +734,7 @@
     - category: 'Technology Comparison'
 
 - title: "Demystifying Windows 10 Update Service Branches"
-  link: 'http://adaptiva.wpengine.com/downloads/infographics/2015-08-08-win10-infographic.jpg'
+  link: 'https://insights.adaptiva.com/downloads/infographics/2015-08-08-win10-infographic.jpg'
   date: 20160415
   posted: 'April 15 2016'
   type: document
@@ -744,7 +744,7 @@
     - category: 'Infographics'
 
 - title: "Solving the SCCM Office 365 Update Challenge"
-  link: 'http://adaptiva.wpengine.com/downloads/infographics/2015-11-18-o365-infographic.jpg'
+  link: 'https://insights.adaptiva.com/downloads/infographics/2015-11-18-o365-infographic.jpg'
   date: 20160415
   posted: 'April 15 2016'
   type: document
@@ -754,7 +754,7 @@
     - category: 'Infographics'
 
 - title: "Enterprise SCCM Security"
-  link: 'http://adaptiva.wpengine.com/downloads/infographics/2016-04-20-enterprise-security-infographic.pdf'
+  link: 'https://insights.adaptiva.com/downloads/infographics/2016-04-20-enterprise-security-infographic.pdf'
   date: 20160420
   posted: 'April 20 2016'
   type: document
@@ -764,7 +764,7 @@
     - category: 'Infographics'
 
 - title: "SCCM Visio Stencil Pack"
-  link: 'http://www2.adaptiva.com/l/139131/2016-04-15/6qmcm'
+  link: 'https://www2.adaptiva.com/l/139131/2016-04-15/6qmcm'
   date: 20160415
   posted: 'April 15 2016'
   type: tools
@@ -774,7 +774,7 @@
     - category: 'Tools'
 
 - title: "SCCM Security Checklist"
-  link: 'http://www2.adaptiva.com/l/139131/2016-02-09/fs6q'
+  link: 'https://www2.adaptiva.com/l/139131/2016-02-09/fs6q'
   date: 20160209
   posted: 'February 9 2016'
   type: tools
@@ -794,7 +794,7 @@
     - category: 'Tools'
 
 - title: "Secure 10: BIOS to UEFI Solution New 2017 update!"
-  link: 'http://www2.adaptiva.com/l/139131/2016-07-18/j7lfk'
+  link: 'https://www2.adaptiva.com/l/139131/2016-07-18/j7lfk'
   date: 20170718
   posted: 'July 18 2017'
   type: tools
@@ -930,7 +930,7 @@
   img: 'podcast-andy-malone.jpg'
 
 - title: "OneSite & Client Health Overview Webinar"
-  link: 'http://www2.adaptiva.com/downloads/webinars/onesite-client-health-overview'
+  link: 'https://www2.adaptiva.com/downloads/webinars/onesite-client-health-overview'
   date: 20171016
   posted: 'October 16 2017'
   type: webinar
@@ -952,7 +952,7 @@
     - category: 'Video'
 
 - title: "Windows 10 Accelerator Program Brochure"
-  link: 'http://www2.adaptiva.com/download/windows-10-accelerator-brochure'
+  link: 'https://www2.adaptiva.com/download/windows-10-accelerator-brochure'
   date: 20171017
   posted: 'October 17 2017'
   type: document
@@ -962,7 +962,7 @@
     - category: 'Product Resource'
 
 - title: "Windows 10 Accelerator Program Health Checks Datasheet"
-  link: 'http://www2.adaptiva.com/downloads/windows-10-health-checks'
+  link: 'https://www2.adaptiva.com/downloads/windows-10-health-checks'
   date: 20171017
   posted: 'October 17 2017'
   type: document
@@ -972,7 +972,7 @@
     - category: 'Product Resource'
 
 - title: "Adaptiva 2017 Enterprise Endpoint Security Survey"
-  link: 'http://www2.adaptiva.com/survey/2017-endpoint-security'
+  link: 'https://www2.adaptiva.com/survey/2017-endpoint-security'
   date: 20171027
   posted: 'October 27 2017'
   type: document
@@ -982,7 +982,7 @@
     - category: 'Report'
 
 - title: "Windows 10 Accelerator Program Webinar"
-  link: "http://www2.adaptiva.com/downloads/webinars/2017-11-07/w10ap"
+  link: "https://www2.adaptiva.com/downloads/webinars/2017-11-07/w10ap"
   date: 20171107
   posted: 'November 07 2017'
   type: webinar
@@ -1016,7 +1016,7 @@
   img: 'anoop-nair.jpg'
 
 - title: "ConfigMgr 1710 & Co-Management: Off to the Races!"
-  link: "http://www2.adaptiva.com/downloads/webinars/2017-12-07/configmgr-1710"
+  link: "https://www2.adaptiva.com/downloads/webinars/2017-12-07/configmgr-1710"
   date: 20171207
   posted: 'December 07 2017'
   type: webinar
@@ -1026,7 +1026,7 @@
     - category: 'Webinar'
 
 - title: "The Twelve Days of Windows 10 Deployment Tips eBook"
-  link: "http://www2.adaptiva.com/downloads/documents/windows-10-tips-ebook"
+  link: "https://www2.adaptiva.com/downloads/documents/windows-10-tips-ebook"
   date: 20171218
   posted: 'December 18 2017'
   type: document
@@ -1058,7 +1058,7 @@
   img: 'matt-tinney.jpg'
 
 - title: "Windows 10 Security Design Decision Guide"
-  link: 'http://www2.adaptiva.com/downloads/documents/security-design-decision'
+  link: 'https://www2.adaptiva.com/downloads/documents/security-design-decision'
   date: 20180130
   posted: 'January 30 2018'
   type: document
@@ -1068,7 +1068,7 @@
     - category: 'Report'
 
 - title: "Windows 10 Security: Enterprise Round Table"
-  link: "http://www2.adaptiva.com/downloads/webinars/2018-02-27/windows-10-security"
+  link: "https://www2.adaptiva.com/downloads/webinars/2018-02-27/windows-10-security"
   date: 20180302
   posted: 'March 02 2018'
   type: webinar
@@ -1103,7 +1103,7 @@
   img: '2018-04-30-mick-e3.jpg'
 
 - title: "Adaptiva 2018 Windows 10 Enterprise Impact Survey"
-  link: 'http://www2.adaptiva.com/survey/2018-windows-10-enterprise-impact'
+  link: 'https://www2.adaptiva.com/survey/2018-windows-10-enterprise-impact'
   date: 20180419
   posted: 'April 19 2018'
   type: document
@@ -1135,7 +1135,7 @@
   img: '2018-04-30-mirko-e3.jpg'
 
 - title: "Get Smart on Windows 10 Application Security"
-  link: "http://www2.adaptiva.com/downloads/webinars/2017-04-27/windows-10-application-security"
+  link: "https://www2.adaptiva.com/downloads/webinars/2017-04-27/windows-10-application-security"
   date: 20180430
   posted: 'April 30 2018'
   type: webinar
@@ -1177,7 +1177,7 @@
     - category: 'Video'
 
 - title: "ConfigMgr Driver Management Primer"
-  link: 'http://www2.adaptiva.com/reports/configmgr-driver-management-primer'
+  link: 'https://www2.adaptiva.com/reports/configmgr-driver-management-primer'
   date: 20180614
   posted: 'June 14 2018'
   type: document
@@ -1187,7 +1187,7 @@
     - category: 'Report'
 
 - title: "Windows 10 Accelerator Program Datasheet"
-  link: 'http://www2.adaptiva.com/downloads/datasheets/windows-10-accelerator-program'
+  link: 'https://www2.adaptiva.com/downloads/datasheets/windows-10-accelerator-program'
   date: 20180619
   posted: 'June 19 2018'
   type: document
@@ -1197,7 +1197,7 @@
     - category: 'Product Resource'
 
 - title: "On-demand Webinar: Windows 10 OSD Best Practices with ConfigMgr"
-  link: 'http://www2.adaptiva.com/downloads/webinars/2018-06-26/windows-10-osd-best-practices-configmgr'
+  link: 'https://www2.adaptiva.com/downloads/webinars/2018-06-26/windows-10-osd-best-practices-configmgr'
   date: 20180627
   posted: 'June 27 2018'
   type: webinar
@@ -1237,7 +1237,7 @@
     - category: 'Video'
 
 - title: "Adaptiva Client Health Webinar"
-  link: 'http://www2.adaptiva.com/downloads/webinar/2018-07-24/client-health-configmgr'
+  link: 'https://www2.adaptiva.com/downloads/webinar/2018-07-24/client-health-configmgr'
   date: 20180726
   posted: 'July 26 2018'
   type: webinar
@@ -1267,7 +1267,7 @@
     - category: 'Video'
 
 - title: "Adaptiva + Fortune 100 Financial Services Organization"
-  link: 'http://www2.adaptiva.com/downloads/casestudy/2018-12-20/F100-CaseStudy'
+  link: 'https://www2.adaptiva.com/downloads/casestudy/2018-12-20/F100-CaseStudy'
   date: 20181218
   posted: 'December 12 2018'
   type: document
@@ -1277,7 +1277,7 @@
     - category: 'Case Study'
 
 - title: "Report: Managing Windows 10 Security Using ConfigMgr"
-  link: 'http://www2.adaptiva.com/windows10-security-configmgr'
+  link: 'https://www2.adaptiva.com/windows10-security-configmgr'
   date: 20190114
   posted: 'January 14 2019'
   type: document
@@ -1307,7 +1307,7 @@
     - category: 'Video'
 
 - title: "Evolve VM Datasheet"
-  link: 'http://www2.adaptiva.com/EvolveVM-ProductSheet'
+  link: 'https://www2.adaptiva.com/EvolveVM-ProductSheet'
   date: 20190306
   posted: 'March 06 2019'
   type: document
@@ -1317,7 +1317,7 @@
     - category: 'Product Resource'
 
 - title: "OneSite Cumulative Update March 2019 Datasheet"
-  link: 'http://www2.adaptiva.com/downloads/datasheets/onesite-cumulative-update-201903'
+  link: 'https://www2.adaptiva.com/downloads/datasheets/onesite-cumulative-update-201903'
   date: 20190306
   posted: 'March 06 2019'
   type: document
@@ -1347,7 +1347,7 @@
     - category: 'Video'
 
 - title: "Vulnerability Management, It's So Much More Than Patching"
-  link: 'http://www2.adaptiva.com/downloads/webinar/2019-03-26/vulnerability-mgmt'
+  link: 'https://www2.adaptiva.com/downloads/webinar/2019-03-26/vulnerability-mgmt'
   date: 20190402
   posted: 'April 02 2019'
   type: video
@@ -1387,7 +1387,7 @@
     - category: 'Podcast'
 
 - title: "Adaptiva + Large Enterprise Financial Services Company"
-  link: 'http://adaptiva.wpengine.com/downloads/CaseStudies/large-enterprise-financial-services-case-study.pdf'
+  link: 'https://insights.adaptiva.com/downloads/CaseStudies/large-enterprise-financial-services-case-study.pdf'
   date: 20190529
   posted: 'May 29 2019'
   type: document
@@ -1417,7 +1417,7 @@
     - category: 'Podcast'
 
 - title: "How to Beat the Windows 10 Deployment Clock"
-  link: 'http://www2.adaptiva.com/downloads/webinar/2019-05-23/deployment-clock'
+  link: 'https://www2.adaptiva.com/downloads/webinar/2019-05-23/deployment-clock'
   date: 20190614
   posted: 'June 14 2019'
   type: webinar
@@ -1447,7 +1447,7 @@
     - category: 'Podcast'
 
 - title: "ConfigMgr Third-Party Patching Roundtable"
-  link: 'http://www2.adaptiva.com/downloads/webinar/2019-06-25/configmgr-roundtable'
+  link: 'https://www2.adaptiva.com/downloads/webinar/2019-06-25/configmgr-roundtable'
   date: 20190709
   posted: 'July 9 2019'
   type: webinar
@@ -1457,7 +1457,7 @@
     - category: 'Webinar'
 
 - title: "ConfigMgr Third-Party Patching Primer"
-  link: 'http://www2.adaptiva.com/report/third-party-patch-primer'
+  link: 'https://www2.adaptiva.com/report/third-party-patch-primer'
   date: 20190724
   posted: 'July 24 2019'
   type: document
@@ -1467,7 +1467,7 @@
     - category: 'Report'
 
 - title: "OneSite VMware Edition Brochure"
-  link: 'http://adaptiva.wpengine.com/downloads/datasheets/onesite-vmware-edition-datasheet.pdf'
+  link: 'https://insights.adaptiva.com/downloads/datasheets/onesite-vmware-edition-datasheet.pdf'
   date: 20190826
   posted: 'August 26 2019'
   type: document
@@ -1477,7 +1477,7 @@
     - category: 'Product Resource'
 
 - title: "On-Demand Webinar: Radically Accelerate VMware Workspace ONE App Delivery"
-  link: 'http://www2.adaptiva.com/downloads/webinar/2019-09-24/vmware-accelerate-wsone'
+  link: 'https://www2.adaptiva.com/downloads/webinar/2019-09-24/vmware-accelerate-wsone'
   date: 20190926
   posted: 'September 26 2019'
   type: webinar
@@ -1487,7 +1487,7 @@
     - category: 'Webinar'
 
 - title: "2018 Endpoint Security Survey"
-  link: 'http://www2.adaptiva.com/2018SecuritySurvey'
+  link: 'https://www2.adaptiva.com/2018SecuritySurvey'
   date: 20181016
   posted: 'October 16 2018'
   type: document
@@ -1497,7 +1497,7 @@
     - category: 'Report'
 
 - title: "2019 Endpoint Security Survey"
-  link: 'http://www2.adaptiva.com/survey/2019-enterprise-security-survey'
+  link: 'https://www2.adaptiva.com/survey/2019-enterprise-security-survey'
   date: 20191103
   posted: 'November 3 2019'
   type: document
@@ -1507,7 +1507,7 @@
     - category: 'Report'
 
 - title: "Top 5 CIS Controls and Cybersecurity Best Practices"
-  link: 'http://www2.adaptiva.com/report/cis-controls'
+  link: 'https://www2.adaptiva.com/report/cis-controls'
   date: 20191103
   posted: 'November 3 2019'
   type: document
@@ -1517,7 +1517,7 @@
     - category: 'Report'
 
 - title: "Report: Windows as a Service for ConfigMgr and Intune Admins"
-  link: 'http://www2.adaptiva.com/report/waas-for-admins'
+  link: 'https://www2.adaptiva.com/report/waas-for-admins'
   date: 20191216
   posted: 'December 16 2019'
   type: document
@@ -1527,7 +1527,7 @@
     - category: 'Report'
 
 - title: "On-Demand Webinar: An Evolutionary Leap in Vulnerability Management"
-  link: 'http://www2.adaptiva.com/downloads/webinar/2019-11-19/evolutionary-leap-evolvevm'
+  link: 'https://www2.adaptiva.com/downloads/webinar/2019-11-19/evolutionary-leap-evolvevm'
   date: 20191122
   posted: 'November 22 2019'
   type: webinar
@@ -1537,7 +1537,7 @@
     - category: 'Webinar'
 
 - title: "On-Demand: Windows as a Service for Smarties Webinar"
-  link: 'http://www2.adaptiva.com/downloads/webinar/2019-10-22/waas-for-smarties'
+  link: 'https://www2.adaptiva.com/downloads/webinar/2019-10-22/waas-for-smarties'
   date: 20191216
   posted: 'December 16 2019'
   type: webinar
