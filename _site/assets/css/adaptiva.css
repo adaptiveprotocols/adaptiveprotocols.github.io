@@ -238,14 +238,19 @@ div#site.is-blurred { -webkit-filter: blur(6px); filter: blur(6px); }
 
 .centered { text-align: center; }
 
+.hidden { display: none !important; }
+
 .hero { width: 100%; background-position: center; background-size: cover; background-repeat: no-repeat; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row; flex-flow: row; height: 33vw; min-height: 360px; }
 .hero.slim { height: 20vw; min-height: 240px; }
 .hero.slim h1 { font-size: 2.618rem; }
-.hero h1 { font-size: 4.263rem; color: #0860b8; margin-bottom: 1.618rem; }
+.hero h1 { font-size: 2.618rem; color: #fff; margin-bottom: 1.618rem; }
 .hero h3 { font-size: 1.25rem; color: #fff; font-weight: 300; }
 .hero.full-screen { height: 100vh; }
 .hero.full-screen h1 { font-size: 2.618rem; }
 .hero.full-screen .hero-content { display: block; max-width: 700px; margin: auto; }
+.hero.most-screen { height: 80vh; }
+.hero.most-screen h1 { font-size: 2.618rem; }
+.hero.most-screen .hero-content { display: block; max-width: 700px; margin: auto; }
 @media screen and (max-width: 767px) { .hero { height: 360px; min-height: none; }
   .hero.slim { height: 240px; min-height: none; }
   .hero.slim h1 { font-size: 1.618rem; }
@@ -522,7 +527,6 @@ form#newsletter { max-width: 100%; width: 600px; }
 @media screen and (min-width: 960px) and (max-width: 1280px), screen and (min-width: 1281px) and (max-width: 1919px), screen and (min-width: 1920px) { #hero-homepage #scroll:hover { width: 60px; height: 60px; }
   #hero-homepage #scroll:hover::before { width: 68px; height: 68px; -webkit-animation: scrollRing1 3600ms linear infinite alternate; animation: scrollRing1 3600ms linear infinite alternate; }
   #hero-homepage #scroll:hover::after { width: 68px; height: 68px; -webkit-animation: scrollRing2 4200ms linear infinite alternate; animation: scrollRing2 4200ms linear infinite alternate; } }
-@media screen and (max-width: 767px) { #hero-homepage { background-image: url("/assets/img/hero/hero-homepage-1.gif"); } }
 
 .tertiary.what-is-p2p .tertiary-nav::before { background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(white)); background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 100%); pointer-events: none; }
 .tertiary.what-is-p2p .tertiary-nav-content.is-visible p { -webkit-animation: 800ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards slideRight; animation: 800ms cubic-bezier(0.13, 0.78, 0.3, 0.99) 1 forwards slideRight; }
