@@ -1546,6 +1546,16 @@
   categories:
     - category: 'Webinar'
 
+- title: "Enhancing Microsoft Intune Application Delivery with Adaptiva OneSite Intune Edition"
+  link: 'https://www2.adaptiva.com/resources/webinar/onesite-intune-edition-2020'
+  date: 20200528
+  posted: 'May 28 2020'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
 - title: "On-Demand: Windows as a Service for Smarties Webinar"
   link: 'https://www2.adaptiva.com/downloads/webinar/2019-10-22/waas-for-smarties'
   date: 20191216
