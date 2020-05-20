@@ -7,6 +7,12 @@ div#site {
 		filter: blur(6px);
 	}
 }
+/* micro clearfix below. contains floats like .clearfix. */
+.cf:before, .cf:after { content: " "; display: table; }
+.cf:after { clear: both; }
+
+/* need to clear floats instead of contain them? use this below. */
+.clear, .clear-both { clear: both; }
 //   Content/Site width
 .content {
   width: 100%;

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>06_organization_chart</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <g id="06_organization_chart" transform="translate(32.000000, 32.000000) rotate(-180.000000) translate(-32.000000, -32.000000) translate(1.000000, 1.000000)" stroke="#0860B8" stroke-width="2">
+            <path d="M53,22 C53,24.209 51.209,26 49,26 L13,26 C10.791,26 9,24.209 9,22 L9,4 C9,1.791 10.791,0 13,0 L49,0 C51.209,0 53,1.791 53,4 L53,22 Z" id="Path"></path>
+            <line x1="31" y1="29" x2="31" y2="41" id="Path"></line>
+            <polyline id="Path" points="53 41 53 35 9 35 9 41"></polyline>
+            <line x1="30" y1="13" x2="32" y2="13" id="Path"></line>
+            <line x1="34" y1="13" x2="36" y2="13" id="Path"></line>
+            <line x1="26" y1="13" x2="28" y2="13" id="Path"></line>
+            <circle id="Oval" cx="31" cy="53" r="9"></circle>
+            <circle id="Oval" cx="9" cy="53" r="9"></circle>
+            <circle id="Oval" cx="53" cy="53" r="9"></circle>
+            <rect id="Rectangle" x="13" y="4" width="36" height="18"></rect>
+            <circle id="Oval" cx="9" cy="53" r="5"></circle>
+            <circle id="Oval" cx="31" cy="53" r="5"></circle>
+            <circle id="Oval" cx="53" cy="53" r="5"></circle>
+        </g>
+    </g>
+</svg>
