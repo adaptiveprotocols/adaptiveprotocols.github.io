@@ -42,20 +42,20 @@ window.cookieconsent.initialise({
     <!-- End Google Tag Manager -->
     <meta name="author" content="Adaptiva">
     {% if page.meta %}
-    <meta name="description" content="{{page.meta}}">
-    <meta name="og:description" content="{{page.meta}}">
+    <meta property="description" content="{{page.meta}}">
+    <meta property="og:description" content="{{page.meta}}">
 	{% endif %}
 	{% if page.image-url %}
 	<meta property="og:image" content="{{page.image-url}}" />
 	<meta property="og:image:width" content="{{page.image-width}}" />
 	<meta property="og:image:height" content="{{page.image-height}}" />
 	{% else %}
-	<meta property="og:image" content="/assets/img/adaptiva-default-social-share.jpg" />
+	<meta property="og:image" content="https://adaptiva.com/assets/img/adaptiva-default-social-share.jpg" />
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="630" />
     {% endif %}
     <meta property="og:title" content="{{page.title}}" />
-    <meta property="og:url" content="{{page.url}}" />
+    <meta property="og:url" content="https://adaptiva.com{{page.url}}" />
     <meta property="og:type" content="website" />
     <title>{% if page.title %}{{page.title}} - {% endif %}Adaptiva{% if page.product %} {{page.product}}{% endif %}</title>
     <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" />
