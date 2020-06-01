@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="" height="20px" viewBox="0 0 179 111" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <defs>
+        <linearGradient x1="55.0105387%" y1="32.9840834%" x2="2.58443163%" y2="53.9564672%" id="linearGradient-1">
+            <stop stop-color="#5AABF7" offset="0%"></stop>
+            <stop stop-color="#0760B8" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy-6" transform="translate(-39.000000, -95.000000)">
+            <g id="Group" transform="translate(41.470588, 97.500000)">
+                <polygon id="Rectangle" fill="#CFDDF2" opacity="0.282063802" points="0.402559913 0.766115702 159.008794 0.766115702 175.40256 47.6941176 159.008794 99.2661157 0.402559913 99.2661157"></polygon>
+                <g id="dot-dash-dot" transform="translate(0.000000, 12.088235)" stroke="#CFDDF2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <line x1="4.52941176" y1="70.9117647" x2="0.529411765" y2="70.9117647" id="Path-Copy"></line>
+                    <line x1="13.5294118" y1="70.9117647" x2="9.52941176" y2="70.9117647" id="Path"></line>
+                    <line x1="32.5294118" y1="70.9117647" x2="19.5294118" y2="70.9117636" id="Path-Copy-6"></line>
+                    <line x1="41.5294118" y1="70.9117647" x2="37.5294118" y2="70.9117647" id="Path-Copy-2"></line>
+                    <line x1="51.5294118" y1="70.9117647" x2="47.5294118" y2="70.9117647" id="Path-Copy-3"></line>
+                    <line x1="69.5294118" y1="70.9117647" x2="56.5294118" y2="70.9117636" id="Path-Copy-7"></line>
+                    <line x1="79.5294118" y1="70.9117647" x2="75.5294118" y2="70.9117647" id="Path-Copy-8"></line>
+                    <line x1="88.5294118" y1="70.9117647" x2="84.5294118" y2="70.9117647" id="Path-Copy-5"></line>
+                    <line x1="97.5294118" y1="70.9117647" x2="93.5294118" y2="70.9117647" id="Path-Copy-4"></line>
+                    <line x1="116.529412" y1="70.9117647" x2="103.529412" y2="70.9117636" id="Path-Copy-9"></line>
+                    <line x1="4.52941176" y1="60.9117647" x2="0.529411765" y2="60.9117647" id="Path-Copy-19"></line>
+                    <line x1="14.5294118" y1="50.9117647" x2="1.52941176" y2="50.9117647" id="Path-Copy-20"></line>
+                    <line x1="13.5294118" y1="60.9117647" x2="9.52941176" y2="60.9117647" id="Path-Copy-18"></line>
+                    <line x1="22.5294118" y1="60.9117647" x2="18.5294118" y2="60.9117647" id="Path-Copy-16"></line>
+                    <line x1="31.5294118" y1="60.9117647" x2="27.5294118" y2="60.9117647" id="Path-Copy-15"></line>
+                    <line x1="49.5294118" y1="60.9117647" x2="36.5294118" y2="60.9117647" id="Path-Copy-17"></line>
+                    <line x1="68.5294118" y1="60.9117647" x2="55.5294118" y2="60.9117647" id="Path-Copy-14"></line>
+                    <line x1="77.5294118" y1="60.9117647" x2="73.5294118" y2="60.9117647" id="Path-Copy-13"></line>
+                    <line x1="95.5294118" y1="60.9117647" x2="82.5294118" y2="60.9117647" id="Path-Copy-10"></line>
+                    <line x1="105.529412" y1="60.9117647" x2="101.529412" y2="60.9117647" id="Path-Copy-12"></line>
+                    <line x1="113.529412" y1="60.9117647" x2="109.529412" y2="60.9117647" id="Path-Copy-11"></line>
+                    <line x1="23.5294118" y1="50.9117647" x2="19.5294118" y2="50.9117647" id="Path-Copy-21"></line>
+                    <line x1="42.5294118" y1="50.9117647" x2="29.5294118" y2="50.9117647" id="Path-Copy-22"></line>
+                    <line x1="51.5294118" y1="50.9117647" x2="47.5294118" y2="50.9117647" id="Path-Copy-24"></line>
+                    <line x1="60.5294118" y1="50.9117647" x2="56.5294118" y2="50.9117647" id="Path-Copy-23"></line>
+                    <line x1="69.5294118" y1="50.9117647" x2="65.5294118" y2="50.9117647" id="Path-Copy-25"></line>
+                    <line x1="88.5294118" y1="50.9117647" x2="75.5294118" y2="50.9117647" id="Path-Copy-26"></line>
+                    <line x1="97.5294118" y1="50.9117647" x2="93.5294118" y2="50.9117647" id="Path-Copy-28"></line>
+                    <line x1="107.529412" y1="50.9117647" x2="103.529412" y2="50.9117647" id="Path-Copy-27"></line>
+                    <line x1="116.529412" y1="50.9117647" x2="112.529412" y2="50.9117647" id="Path-Copy-29"></line>
+                    <line x1="123.529412" y1="70.9117647" x2="119.529412" y2="70.9117647" id="Path-Copy-30"></line>
+                    <line x1="4.52941176" y1="40.9117647" x2="0.529411765" y2="40.9117647" id="Path-Copy-41"></line>
+                    <line x1="13.5294118" y1="40.9117647" x2="9.52941176" y2="40.9117647" id="Path-Copy-40"></line>
+                    <line x1="32.5294118" y1="40.9117647" x2="19.5294118" y2="40.9117636" id="Path-Copy-39"></line>
+                    <line x1="41.5294118" y1="40.9117647" x2="37.5294118" y2="40.9117647" id="Path-Copy-38"></line>
+                    <line x1="51.5294118" y1="40.9117647" x2="47.5294118" y2="40.9117647" id="Path-Copy-37"></line>
+                    <line x1="69.5294118" y1="40.9117647" x2="56.5294118" y2="40.9117636" id="Path-Copy-36"></line>
+                    <line x1="79.5294118" y1="40.9117647" x2="75.5294118" y2="40.9117647" id="Path-Copy-35"></line>
+                    <line x1="88.5294118" y1="40.9117647" x2="84.5294118" y2="40.9117647" id="Path-Copy-34"></line>
+                    <line x1="97.5294118" y1="40.9117647" x2="93.5294118" y2="40.9117647" id="Path-Copy-33"></line>
+                    <line x1="116.529412" y1="40.9117647" x2="103.529412" y2="40.9117636" id="Path-Copy-32"></line>
+                    <line x1="123.529412" y1="40.9117647" x2="119.529412" y2="40.9117647" id="Path-Copy-31"></line>
+                    <line x1="4.52941176" y1="30.9117647" x2="0.529411765" y2="30.9117647" id="Path-Copy-51"></line>
+                    <line x1="31.5294118" y1="30.9117647" x2="27.5294118" y2="30.9117647" id="Path-Copy-48"></line>
+                    <line x1="49.5294118" y1="30.9117647" x2="36.5294118" y2="30.9117647" id="Path-Copy-47"></line>
+                    <line x1="68.5294118" y1="30.9117647" x2="55.5294118" y2="30.9117647" id="Path-Copy-46"></line>
+                    <line x1="77.5294118" y1="30.9117647" x2="73.5294118" y2="30.9117647" id="Path-Copy-45"></line>
+                    <line x1="95.5294118" y1="30.9117647" x2="82.5294118" y2="30.9117647" id="Path-Copy-44"></line>
+                    <line x1="105.529412" y1="30.9117647" x2="101.529412" y2="30.9117647" id="Path-Copy-43"></line>
+                    <line x1="113.529412" y1="30.9117647" x2="109.529412" y2="30.9117647" id="Path-Copy-42"></line>
+                    <line x1="31.5294118" y1="20.9117647" x2="27.5294118" y2="20.9117647" id="Path-Copy-61"></line>
+                    <line x1="39.5294118" y1="20.9117647" x2="35.5294118" y2="20.9117647" id="Path-Copy-60"></line>
+                    <line x1="48.5294118" y1="20.9117647" x2="44.5294118" y2="20.9117647" id="Path-Copy-59"></line>
+                    <line x1="57.5294118" y1="20.9117647" x2="53.5294118" y2="20.9117647" id="Path-Copy-58"></line>
+                    <line x1="76.5294118" y1="20.9117647" x2="63.5294118" y2="20.9117647" id="Path-Copy-57"></line>
+                    <line x1="94.5294118" y1="20.9117647" x2="81.5294118" y2="20.9117647" id="Path-Copy-56"></line>
+                    <line x1="103.529412" y1="20.9117647" x2="99.5294118" y2="20.9117647" id="Path-Copy-55"></line>
+                    <line x1="122.529412" y1="20.9117647" x2="109.529412" y2="20.9117647" id="Path-Copy-54"></line>
+                    <line x1="131.529412" y1="20.9117647" x2="127.529412" y2="20.9117647" id="Path-Copy-53"></line>
+                    <line x1="140.529412" y1="20.9117647" x2="136.529412" y2="20.9117647" id="Path-Copy-52"></line>
+                    <line x1="4.52941176" y1="10.9117647" x2="0.529411765" y2="10.9117647" id="Path-Copy-71"></line>
+                    <line x1="13.5294118" y1="10.9117647" x2="9.52941176" y2="10.9117647" id="Path-Copy-70"></line>
+                    <line x1="22.5294118" y1="10.9117647" x2="18.5294118" y2="10.9117647" id="Path-Copy-69"></line>
+                    <line x1="31.5294118" y1="10.9117647" x2="27.5294118" y2="10.9117647" id="Path-Copy-68"></line>
+                    <line x1="49.5294118" y1="10.9117647" x2="36.5294118" y2="10.9117647" id="Path-Copy-67"></line>
+                    <line x1="68.5294118" y1="10.9117647" x2="55.5294118" y2="10.9117647" id="Path-Copy-66"></line>
+                    <line x1="77.5294118" y1="10.9117647" x2="73.5294118" y2="10.9117647" id="Path-Copy-65"></line>
+                    <line x1="95.5294118" y1="10.9117647" x2="82.5294118" y2="10.9117647" id="Path-Copy-64"></line>
+                    <line x1="105.529412" y1="10.9117647" x2="101.529412" y2="10.9117647" id="Path-Copy-63"></line>
+                    <line x1="113.529412" y1="10.9117647" x2="109.529412" y2="10.9117647" id="Path-Copy-62"></line>
+                    <line x1="14.5294118" y1="0.911764706" x2="1.52941176" y2="0.911764706" id="Path-Copy-81"></line>
+                    <line x1="23.5294118" y1="0.911764706" x2="19.5294118" y2="0.911764706" id="Path-Copy-80"></line>
+                    <line x1="42.5294118" y1="0.911764706" x2="29.5294118" y2="0.911764706" id="Path-Copy-79"></line>
+                    <line x1="51.5294118" y1="0.911764706" x2="47.5294118" y2="0.911764706" id="Path-Copy-78"></line>
+                    <line x1="69.5294118" y1="0.911764706" x2="56.5294118" y2="0.911764706" id="Path-Copy-91"></line>
+                    <line x1="78.5294118" y1="0.911764706" x2="74.5294118" y2="0.911764706" id="Path-Copy-90"></line>
+                    <line x1="97.5294118" y1="0.911764706" x2="84.5294118" y2="0.911764706" id="Path-Copy-89"></line>
+                    <line x1="106.529412" y1="0.911764706" x2="102.529412" y2="0.911764706" id="Path-Copy-88"></line>
+                    <line x1="116.529412" y1="0.911764706" x2="112.529412" y2="0.911764706" id="Path-Copy-87"></line>
+                    <line x1="125.529412" y1="0.911764706" x2="121.529412" y2="0.911764706" id="Path-Copy-86"></line>
+                    <line x1="143.529412" y1="0.911764706" x2="130.529412" y2="0.911764706" id="Path-Copy-85"></line>
+                    <line x1="14.5294118" y1="20.9117647" x2="1.52941176" y2="20.9117647" id="Path-Copy-72"></line>
+                    <line x1="23.5294118" y1="20.9117647" x2="19.5294118" y2="20.9117647" id="Path-Copy-73"></line>
+                    <line x1="132.529412" y1="10.9117647" x2="119.529412" y2="10.9117647" id="Path-Copy-74"></line>
+                    <line x1="123.529412" y1="30.9117647" x2="119.529412" y2="30.9117647" id="Path-Copy-50"></line>
+                    <line x1="132.529412" y1="30.9117647" x2="128.529412" y2="30.9117647" id="Path-Copy-49"></line>
+                    <line x1="152.529412" y1="0.911764706" x2="148.529412" y2="0.911764706" id="Path-Copy-92"></line>
+                    <line x1="22.5294118" y1="30.9117647" x2="9.52941176" y2="30.9117647" id="Path-Copy-75"></line>
+                    <line x1="142.529412" y1="10.9117647" x2="138.529412" y2="10.9117647" id="Path-Copy-76"></line>
+                </g>
+                <g id="16-Rackmount-Server-Copy" transform="translate(0.529412, 0.000000)">
+                    <rect id="Rectangle" fill="#CFDDF2" x="6.35294118" y="17.4705882" width="69.8823529" height="90.5294118"></rect>
+                    <line x1="6.35294118" y1="34.9411765" x2="6.35294118" y2="28.5882353" id="Path" stroke="#222829" stroke-width="2"></line>
+                    <line x1="76.2352941" y1="28.5882353" x2="76.2352941" y2="34.9411765" id="Path" stroke="#222829" stroke-width="2"></line>
+                    <line x1="6.35294118" y1="66.7058824" x2="6.35294118" y2="60.3529412" id="Path" stroke="#222829" stroke-width="2"></line>
+                    <line x1="76.2352941" y1="60.3529412" x2="76.2352941" y2="66.7058824" id="Path" stroke="#222829" stroke-width="2"></line>
+                    <rect id="Rectangle" stroke="#053771" stroke-width="2" fill="url(#linearGradient-1)" stroke-linejoin="round" x="-1" y="68.8823529" width="84.5882353" height="27.4117647"></rect>
+                    <line x1="6.35294118" y1="108" x2="6.35294118" y2="96.8823529" id="Path" stroke="#053771" stroke-width="2"></line>
+                    <line x1="76.2352941" y1="96.8823529" x2="76.2352941" y2="108" id="Path" stroke="#053771" stroke-width="2"></line>
+                    <line x1="11.1176471" y1="103.235294" x2="71.4705882" y2="103.235294" id="Path" stroke="#053771" stroke-width="2"></line>
+                    <line x1="9.52941176" y1="77.8235294" x2="9.52941176" y2="87.3529412" id="Path" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <line x1="15.8823529" y1="77.8235294" x2="15.8823529" y2="87.3529412" id="Path" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <line x1="22.2352941" y1="77.8235294" x2="22.2352941" y2="87.3529412" id="Path" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <line x1="28.5882353" y1="77.8235294" x2="28.5882353" y2="87.3529412" id="Path" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <line x1="34.9411765" y1="77.8235294" x2="34.9411765" y2="87.3529412" id="Path" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <line x1="44.4705882" y1="82.5882353" x2="41.2941176" y2="82.5882353" id="Path" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <line x1="44.4705882" y1="77.8235294" x2="41.2941176" y2="77.8235294" id="Path" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <line x1="44.4705882" y1="87.3529412" x2="41.2941176" y2="87.3529412" id="Path" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <rect id="Rectangle" stroke="#053771" stroke-width="2" fill="url(#linearGradient-1)" stroke-linejoin="round" x="-1" y="33.9411765" width="84.5882353" height="27.4117647"></rect>
+                    <line x1="9.52941176" y1="42.8823529" x2="9.52941176" y2="52.4117647" id="Path" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <line x1="15.8823529" y1="42.8823529" x2="15.8823529" y2="52.4117647" id="Path" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <line x1="22.2352941" y1="42.8823529" x2="22.2352941" y2="52.4117647" id="Path" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <line x1="28.5882353" y1="42.8823529" x2="28.5882353" y2="52.4117647" id="Path" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <line x1="34.9411765" y1="42.8823529" x2="34.9411765" y2="52.4117647" id="Path" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <line x1="44.4705882" y1="47.6470588" x2="41.2941176" y2="47.6470588" id="Path" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <line x1="44.4705882" y1="42.8823529" x2="41.2941176" y2="42.8823529" id="Path" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <line x1="44.4705882" y1="52.4117647" x2="41.2941176" y2="52.4117647" id="Path" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <rect id="Rectangle" stroke="#053771" stroke-width="2" fill="url(#linearGradient-1)" stroke-linejoin="round" x="-1" y="-1" width="84.5882353" height="27.4117647"></rect>
+                    <line x1="9.52941176" y1="7.94117647" x2="9.52941176" y2="17.4705882" id="Path" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <line x1="15.8823529" y1="7.94117647" x2="15.8823529" y2="17.4705882" id="Path" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <line x1="22.2352941" y1="7.94117647" x2="22.2352941" y2="17.4705882" id="Path" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <line x1="28.5882353" y1="7.94117647" x2="28.5882353" y2="17.4705882" id="Path" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <line x1="34.9411765" y1="7.94117647" x2="34.9411765" y2="17.4705882" id="Path" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <line x1="44.4705882" y1="12.7058824" x2="41.2941176" y2="12.7058824" id="Path" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <line x1="44.4705882" y1="7.94117647" x2="41.2941176" y2="7.94117647" id="Path" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <line x1="44.4705882" y1="17.4705882" x2="41.2941176" y2="17.4705882" id="Path" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <circle id="Oval" fill="#0E487B" cx="68.2941176" cy="49.2352941" r="4.76470588"></circle>
+                    <circle id="Oval" fill="#0E487B" cx="68.2941176" cy="84.1764706" r="4.76470588"></circle>
+                    <circle id="Oval" fill="#0E487B" cx="68.2941176" cy="14.2941176" r="4.76470588"></circle>
+                    <circle id="Oval-Copy-3" fill="#FFFFFF" cx="68.2941176" cy="47.6470588" r="4.76470588"></circle>
+                    <circle id="Oval-Copy-2" fill="#FFFFFF" cx="68.2941176" cy="82.5882353" r="4.76470588"></circle>
+                    <circle id="Oval-Copy" fill="#FFFFFF" cx="68.2941176" cy="12.7058824" r="4.76470588"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
