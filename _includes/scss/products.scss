@@ -190,6 +190,16 @@ section.products {
   vertical-align: middle;
   margin-right: $spacing-smallest;
 }
+.product-banner {
+    background-image:url('/assets/img/products/onsite-banner-bg.jpg'); 
+    background-size:cover;
+    background-position: center center;
+    .button.white {
+        font-size: 14px;
+        vertical-align: middle;
+        margin-left: 15px;
+    }
+} 
 .product-feature-item {
   padding: $spacing-small;
   width: 50%;
