@@ -1154,6 +1154,16 @@
   categories:
     - category: 'Webinar'
 
+- title: "Adaptiva OneSite Cloud: Scalable Software Delivery Everywhere "
+  link: "https://www2.adaptiva.com/resources/webinar/onesite-cloud-2020 "
+  date: 20200618
+  posted: 'June 18 2020'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
 - title: "E³ Podcast: Kim Oppalfens"
   link: "https://soundcloud.com/adaptiva/configmgr-state-of-the-union-2018-with-kim-oppelfens"
   date: 20180529
