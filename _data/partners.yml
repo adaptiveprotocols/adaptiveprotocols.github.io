@@ -111,12 +111,12 @@
 
 - name: Netrix
   png: netrix-logo.png
-  link: 'https://www.oktik.net/'
+  link: 'http://netrixllc.com/'
   sq: true
 
 - name: OkTik
   png: oktik.png
-  link: 'http://netrixllc.com/'
+  link: 'https://www.oktik.net/'
   sq: true
 
 - name: NTT Data
