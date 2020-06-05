@@ -111,6 +111,11 @@
 
 - name: Netrix
   png: netrix-logo.png
+  link: 'https://www.oktik.net/'
+  sq: true
+
+- name: OkTik
+  png: oktik.png
   link: 'http://netrixllc.com/'
   sq: true
 
