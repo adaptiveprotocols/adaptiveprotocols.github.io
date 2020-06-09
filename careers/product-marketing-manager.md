@@ -3,7 +3,7 @@ layout: job
 title: Sr. Product Marketing Manager
 meta: "Apply for the Sr. Product Marking Manager position at Adaptiva."
 bodyclass: job
-published: true
+published: false
 ---
 Adaptiva is searching for a Senior Product Marketing Manager to report to the VP of Marketing in managing the go-to-market planning and content for the company’s product line. This role will offer the opportunity to set the product marketing strategy for Adaptiva, an enterprise IT software company which is rapidly growing, highly profitable, and working with over 150 of the largest Fortune 1000 companies in the world.
 

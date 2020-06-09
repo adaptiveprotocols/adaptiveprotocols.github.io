@@ -9,7 +9,7 @@ published: true
 Adaptiva is a leading, global enterprise systems management company headquartered in Kirkland, WA. Our breakthrough peer-to-peer distributed computing technology is trusted by hundreds of large enterprises around the world. Our environment and culture incorporate our four core values: Integrity, Excellence, Work Ethic, and Dignity of Labour. As an employer, we offer above-market compensation structures, industry-leading benefits packages, and incredible learning and growth opportunities, in a fast-paced and collaborative environment.
 
 
-## Role and Responsibilities
+## Role and Responsibilities 
 We are looking for a Senior Technical & Pre-Sales Analyst to support our future and existing APAC customers, to assist the sales team by providing technical assistance and vetting new prospects in the APAC region.
  
 You will be part of the global technical services team, performing senior level Technical Support & Pre-Sales activities reporting to the Director of Global Support.  You will be responsible for managing all workload within that region, ensuring customer & business success, often independently.
