@@ -15,90 +15,73 @@ layout: default
       <h2 style="color: #0860b8; margin-top: 2.681rem;">The Adaptiva Logo</h2>
         <div class="grid-container">
           {% for asset in site.data.assets %}
-          {%if asset.for contains 'Adaptiva Logo'%}
-          <div class="j-col j-col-6" style="padding: 2rem;">
-          <a class="brand-asset {% if asset.class %}{{asset.class}}{% endif %}" href="{{site.baseurl}}/assets/downloads/{{asset.svg}}" title="Download SVG" target="_blank"><img src="{{site.baseurl}}/assets/downloads/{{asset.svg}}"></a>
-          <h4>{{asset.title}}</h4>
-          <a class="file-type" href="{{site.baseurl}}/assets/downloads/{{asset.svg}}" title="Download SVG" target="_blank">SVG</a>
-          <a class="file-type" href="{{site.baseurl}}/assets/downloads/{{asset.eps}}" title="Download EPS" target="_blank">EPS</a>
-          <a class="file-type" href="{{site.baseurl}}/assets/downloads/{{asset.png}}" title="Download PNG" target="_blank">PNG</a>
-          {% if asset.jpg %}
-          <a class="file-type" href="{{site.baseurl}}/assets/downloads/{{asset.jpg}}" title="Download JPG" target="_blank">JPG</a>
-          {% endif %}
-          </div>
-          {% endif %}
+            {%if asset.for contains 'Adaptiva Logo'%}
+                <div class="j-col j-col-6" style="padding: 2rem;">
+                    <a class="brand-asset {% if asset.class %}{{asset.class}}{% endif %}" href="{{site.baseurl}}/assets/downloads/{{asset.svg}}" title="Download SVG" target="_blank"><img src="{{site.baseurl}}/assets/downloads/{{asset.svg}}"></a>
+                    <h4>{{asset.title}}</h4>
+                    <a class="file-type" href="{{site.baseurl}}/assets/downloads/{{asset.svg}}" title="Download SVG" target="_blank">SVG</a>
+                    <a class="file-type" href="{{site.baseurl}}/assets/downloads/{{asset.eps}}" title="Download EPS" target="_blank">EPS</a>
+                    <a class="file-type" href="{{site.baseurl}}/assets/downloads/{{asset.png}}" title="Download PNG" target="_blank">PNG</a>
+                    {% if asset.jpg %}
+                        <a class="file-type" href="{{site.baseurl}}/assets/downloads/{{asset.jpg}}" title="Download JPG" target="_blank">JPG</a>
+                    {% endif %}
+                </div>
+            {% endif %}
           {% endfor %}
         </div>
         <a class="button purple" style="margin-top: 1.681rem;" href="{{"/assets/downloads/adaptiva-logos.zip" | relative_url}}" target="_blank">Download All Company Logos</a>
         <h2 style="color: #0860b8; margin-top: 2.681rem;">OneSite Logo</h2>
-          <div class="grid-container">
+        <div class="grid-container">
           {% for asset in site.data.assets %}
-          {%if asset.for contains 'onesite'%}
-          <div class="j-col j-col-6" style="padding: 2rem;">
-          <a class="brand-asset {% if asset.class %}{{asset.class}}{% endif %}" href="{{site.baseurl}}/assets/downloads/{{asset.svg}}" title="Download SVG" target="_blank"><img src="{{site.baseurl}}/assets/downloads/{{asset.svg}}"></a>
-          <h4>{{asset.title}}</h4>
-          <a class="file-type" href="{{site.baseurl}}/assets/downloads/{{asset.svg}}" title="Download SVG" target="_blank">SVG</a>
-          <a class="file-type" href="{{site.baseurl}}/assets/downloads/{{asset.eps}}" title="Download EPS" target="_blank">EPS</a>
-          <a class="file-type" href="{{site.baseurl}}/assets/downloads/{{asset.png}}" title="Download PNG" target="_blank">PNG</a>
-          {% if asset.jpg %}
-          <a class="file-type" href="{{site.baseurl}}/assets/downloads/{{asset.jpg}}" title="Download JPG" target="_blank">JPG</a>
-          {% endif %}
-          </div>
-          {% endif %}
+            {%if asset.for contains 'onesite'%}
+                <div class="j-col j-col-6" style="padding: 2rem;">
+                    <a class="brand-asset {% if asset.class %}{{asset.class}}{% endif %}" href="{{site.baseurl}}/assets/downloads/{{asset.svg}}" title="Download SVG" target="_blank"><img src="{{site.baseurl}}/assets/downloads/{{asset.svg}}"></a>
+                    <h4>{{asset.title}}</h4>
+                    <a class="file-type" href="{{site.baseurl}}/assets/downloads/{{asset.svg}}" title="Download SVG" target="_blank">SVG</a>
+                    <a class="file-type" href="{{site.baseurl}}/assets/downloads/{{asset.eps}}" title="Download EPS" target="_blank">EPS</a>
+                    <a class="file-type" href="{{site.baseurl}}/assets/downloads/{{asset.png}}" title="Download PNG" target="_blank">PNG</a>
+                    {% if asset.jpg %}
+                    <a class="file-type" href="{{site.baseurl}}/assets/downloads/{{asset.jpg}}" title="Download JPG" target="_blank">JPG</a>
+                    {% endif %}
+                </div>
+            {% endif %}
           {% endfor %}
         </div>
         <a class="button purple" style="margin-top: 1.681rem;" href="{{"/assets/downloads/onesite-logos.zip" | relative_url}}" target="_blank">Download All OneSite Logos</a>
-        <h2 style="color: #0860b8; margin-top: 2.681rem;">Windows 10 Accelerator Program (W10AP) Logo</h2>
-          <div class="grid-container">
+        
+        <h2 style="color: #0860b8; margin-top: 2.681rem;">Endpoint Health Logo</h2>
+        <div class="grid-container">
           {% for asset in site.data.assets %}
-          {%if asset.for contains 'w10ap'%}
-          <div class="j-col j-col-6" style="padding: 2rem;">
-          <a class="brand-asset {% if asset.class %}{{asset.class}}{% endif %}" href="{{site.baseurl}}/assets/downloads/{{asset.svg}}" title="Download SVG" target="_blank"><img src="{{site.baseurl}}/assets/downloads/{{asset.svg}}"></a>
-          <h4>{{asset.title}}</h4>
-          <a class="file-type" href="{{site.baseurl}}/assets/downloads/{{asset.svg}}" title="Download SVG" target="_blank">SVG</a>
-          <a class="file-type" href="{{site.baseurl}}/assets/downloads/{{asset.eps}}" title="Download EPS" target="_blank">EPS</a>
-          <a class="file-type" href="{{site.baseurl}}/assets/downloads/{{asset.png}}" title="Download PNG" target="_blank">PNG</a>
-          {% if asset.jpg %}
-          <a class="file-type" href="{{site.baseurl}}/assets/downloads/{{asset.jpg}}" title="Download JPG" target="_blank">JPG</a>
-          {% endif %}
-          </div>
-          {% endif %}
-          {% endfor %}
-        </div>
-        <a class="button purple" style="margin-top: 1.681rem;" href="{{"/assets/downloads/w10ap-logos.zip" | relative_url}}" target="_blank">Download All W10AP Logos</a>
-        <h2 style="color: #0860b8; margin-top: 2.681rem;">Client Health Logo</h2>
-          <div class="grid-container">
-          {% for asset in site.data.assets %}
-          {%if asset.for contains 'client-health'%}
-          <div class="j-col j-col-6" style="padding: 2rem;">
-          <a class="brand-asset {% if asset.class %}{{asset.class}}{% endif %}" href="{{site.baseurl}}/assets/downloads/{{asset.svg}}" title="Download SVG" target="_blank"><img src="{{site.baseurl}}/assets/downloads/{{asset.svg}}"></a>
-          <h4>{{asset.title}}</h4>
-          <a class="file-type" href="{{site.baseurl}}/assets/downloads/{{asset.svg}}" title="Download SVG" target="_blank">SVG</a>
-          <a class="file-type" href="{{site.baseurl}}/assets/downloads/{{asset.eps}}" title="Download EPS" target="_blank">EPS</a>
-          <a class="file-type" href="{{site.baseurl}}/assets/downloads/{{asset.png}}" title="Download PNG" target="_blank">PNG</a>
-          {% if asset.jpg %}
-          <a class="file-type" href="{{site.baseurl}}/assets/downloads/{{asset.jpg}}" title="Download JPG" target="_blank">JPG</a>
-          {% endif %}
-          </div>
-          {% endif %}
+            {%if asset.for contains 'endpoint-health'%}
+                <div class="j-col j-col-6" style="padding: 2rem;">
+                    <a class="brand-asset {% if asset.class %}{{asset.class}}{% endif %}" href="{{site.baseurl}}/assets/downloads/{{asset.svg}}" title="Download SVG" target="_blank"><img src="{{site.baseurl}}/assets/downloads/{{asset.svg}}"></a>
+                    <h4>{{asset.title}}</h4>
+                    <a class="file-type" href="{{site.baseurl}}/assets/downloads/{{asset.svg}}" title="Download SVG" target="_blank">SVG</a>
+                    <a class="file-type" href="{{site.baseurl}}/assets/downloads/{{asset.eps}}" title="Download EPS" target="_blank">EPS</a>
+                    <a class="file-type" href="{{site.baseurl}}/assets/downloads/{{asset.png}}" title="Download PNG" target="_blank">PNG</a>
+                    {% if asset.jpg %}
+                    <a class="file-type" href="{{site.baseurl}}/assets/downloads/{{asset.jpg}}" title="Download JPG" target="_blank">JPG</a>
+                    {% endif %}
+                </div>
+            {% endif %}
           {% endfor %}
         </div> 
-        <a class="button purple" style="margin-top: 1.681rem;" href="{{"/assets/downloads/client-health-logos.zip" | relative_url}}" target="_blank">Download All Client Health Logos</a>
+        <a class="button purple" style="margin-top: 1.681rem;" href="{{"/assets/downloads/endpoint-health-logos.zip" | relative_url}}" target="_blank">Download All Endpoint Health Logos</a>
         <h2 style="color: #0860b8; margin-top: 2.681rem;">Evolve VM Logo</h2>
-          <div class="grid-container">
+        <div class="grid-container">
           {% for asset in site.data.assets %}
-          {%if asset.for contains 'evolve-vm'%}
-          <div class="j-col j-col-6" style="padding: 2rem;">
-          <a class="brand-asset {% if asset.class %}{{asset.class}}{% endif %}" href="{{site.baseurl}}/assets/downloads/{{asset.svg}}" title="Download SVG" target="_blank"><img src="{{site.baseurl}}/assets/downloads/{{asset.svg}}"></a>
-          <h4>{{asset.title}}</h4>
-          <a class="file-type" href="{{site.baseurl}}/assets/downloads/{{asset.svg}}" title="Download SVG" target="_blank">SVG</a>
-          <a class="file-type" href="{{site.baseurl}}/assets/downloads/{{asset.eps}}" title="Download EPS" target="_blank">EPS</a>
-          <a class="file-type" href="{{site.baseurl}}/assets/downloads/{{asset.png}}" title="Download PNG" target="_blank">PNG</a>
-          {% if asset.jpg %}
-          <a class="file-type" href="{{site.baseurl}}/assets/downloads/{{asset.jpg}}" title="Download JPG" target="_blank">JPG</a>
-          {% endif %}
-          </div>
-          {% endif %}
+            {%if asset.for contains 'evolve-vm'%}
+                <div class="j-col j-col-6" style="padding: 2rem;">
+                    <a class="brand-asset {% if asset.class %}{{asset.class}}{% endif %}" href="{{site.baseurl}}/assets/downloads/{{asset.svg}}" title="Download SVG" target="_blank"><img src="{{site.baseurl}}/assets/downloads/{{asset.svg}}"></a>
+                    <h4>{{asset.title}}</h4>
+                    <a class="file-type" href="{{site.baseurl}}/assets/downloads/{{asset.svg}}" title="Download SVG" target="_blank">SVG</a>
+                    <a class="file-type" href="{{site.baseurl}}/assets/downloads/{{asset.eps}}" title="Download EPS" target="_blank">EPS</a>
+                    <a class="file-type" href="{{site.baseurl}}/assets/downloads/{{asset.png}}" title="Download PNG" target="_blank">PNG</a>
+                    {% if asset.jpg %}
+                        <a class="file-type" href="{{site.baseurl}}/assets/downloads/{{asset.jpg}}" title="Download JPG" target="_blank">JPG</a>
+                    {% endif %}
+                </div>
+            {% endif %}
           {% endfor %}
         </div>
         <a class="button purple" style="margin-top: 1.681rem;" href="{{"/assets/downloads/evolve-vm-zip.zip" | relative_url}}" target="_blank">Download All Evolve VM Logos</a>
