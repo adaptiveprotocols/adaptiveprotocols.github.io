@@ -70,10 +70,10 @@
   class: "icon dark"
 
 - title: "Endpoint Health logo"
-  svg: "endpoint-health-logo.svg"
-  eps: "endpoint-health-logo.eps"
-  png: "endpoint-health-logo.png"
-  jpg: "endpoint-health-logo.jpg"
+  svg: "endpoint-health-logo-1.svg"
+  eps: "endpoint-health-logo-1.eps"
+  png: "endpoint-health-logo-1.png"
+  jpg: "endpoint-health-logo-1.jpg"
   for: "endpoint-health"
 
 - title: "White Endpoint Health logo"
