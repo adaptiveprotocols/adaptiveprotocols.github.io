@@ -646,6 +646,8 @@ section.products-brands .products-brands-logo { margin-bottom: 1rem; }
 section.products-brands .products-brands-logo svg { display: block; max-width: 178px; }
 section.products-brands .tertiary-nav-content#alere svg { max-width: 68px; }
 
+.collapsible-section .gray { color: #757575 !important; }
+
 #hero-about { background-image: url("/assets/img/hero/hero-about.png"); background-color: #191919; position: relative; }
 
 section.about { min-height: 460px; }
