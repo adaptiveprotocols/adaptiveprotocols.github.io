@@ -319,6 +319,11 @@ section.products-brands {
     }
   }
 }
-.collapsible-section .gray {
+.collapsible-section > .gray {
 	color: #757575!important;
+	margin-top: -15px;
+}
+
+.collapsible-section--content .gray {
+	color: #000!important;
 }
