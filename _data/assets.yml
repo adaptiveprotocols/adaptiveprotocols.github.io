@@ -98,10 +98,10 @@
   class: "dark"
 
 - title: "Endpoint Health for Windows 10"
-  svg: "endpoint-health-for-windows-10-logo.svg"
-  eps: "endpoint-health-for-windows-10-logo.eps"
-  png: "endpoint-health-for-windows-10-logo.png"
-  jpg: "endpoint-health-for-windows-10-logo.jpg"
+  svg: "Endpoint-health-for-windows-10-logo.svg"
+  eps: "Endpoint-health-for-windows-10-logo.eps"
+  png: "Endpoint-health-for-windows-10-logo.png"
+  jpg: "Endpoint-health-for-windows-10-logo.jpg"
   for: "endpoint-health"
 
 - title: "White Endpoint Health for Windows 10"
