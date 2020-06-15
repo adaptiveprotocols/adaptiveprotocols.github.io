@@ -648,7 +648,7 @@ section.products-brands .tertiary-nav-content#alere svg { max-width: 68px; }
 
 .collapsible-section > .gray { color: #757575 !important; margin-top: -15px; }
 
-.collapsible-section--content .gray { color: #000 !important; }
+.collapsible-section--content .gray { color: #000000 !important; }
 
 #hero-about { background-image: url("/assets/img/hero/hero-about.png"); background-color: #191919; position: relative; }
 
