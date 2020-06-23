@@ -12,20 +12,6 @@
   for: "Adaptiva Logo"
   class: "dark"
 
-- title: "Standard Adaptiva Logo with Tagline"
-  svg: "adaptiva-logo-tagline.svg"
-  eps: "adaptiva-logo-tagline.eps"
-  png: "adaptiva-logo-tagline.png"
-  jpg: "adaptiva-logo-tagline.jpg"
-  for: "Adaptiva Logo"
-
-- title: "White Adaptiva Logo with Tagline"
-  svg: "adaptiva-logo-tagline-white.svg"
-  eps: "adaptiva-logo-tagline-white.eps"
-  png: "adaptiva-logo-tagline-white.png"
-  for: "Adaptiva Logo"
-  class: "dark"
-
 - title: "OneSite logo"
   svg: "onesite-logo.svg"
   eps: "onesite-logo.eps"
