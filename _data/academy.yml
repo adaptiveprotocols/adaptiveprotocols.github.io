@@ -1,5 +1,15 @@
+- title: "Adaptiva OneSite Cloud – Live Demo: Software Delivery Everywhere"
+  link: 'https://www2.adaptiva.com/resources/webinar/onesite-cloud-demo'
+  date: 20200708
+  posted: 'July 8 2020'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
 - title: "Adaptiva Endpoint Health: Endpoint Administration and Security at Scale in a WFH World"
-  link: 'https://www2.adaptiva.com/resources/webinar/endpoint-administration-and-security '
+  link: 'https://www2.adaptiva.com/resources/webinar/endpoint-administration-and-security'
   date: 20200429
   posted: 'April 29 2020'
   type: webinar
