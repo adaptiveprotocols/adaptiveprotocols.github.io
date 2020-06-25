@@ -97,19 +97,6 @@
   for: "onesite-vmware-edition"
   class: "dark"
 
-- title: "OneSite Azure Enabled logo"
-  svg: "onesite-azure-enabled-logo.svg"
-  eps: "onesite-azure-enabled-logo.eps"
-  png: "onesite-azure-enabled-logo.png"
-  jpg: "onesite-azure-enabled-logo.jpg"
-  for: "onesite-azure-enabled"
-
-- title: "White OneSite Azure Enabled logo"
-  svg: "onesite-azure-enabled-logo-white.svg"
-  eps: "onesite-azure-enabled-logo-white.eps"
-  png: "onesite-azure-enabled-logo-white.png"
-  for: "onesite-azure-enabled"
-  class: "dark"
 
 - title: "Endpoint Health logo"
   svg: "Endpoint-health-logo.svg"
