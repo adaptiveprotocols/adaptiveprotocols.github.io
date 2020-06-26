@@ -59,12 +59,17 @@ footer.footer {
     }
   }
 }
+.form-legal {
+    @media #{$mobile}, #{$tablet} {
+        padding: 0 1.618rem;
+    }
+}
 #newsletter-email {
 	background: transparent;
   padding: 0;
 	border: 0;
   border-bottom: 2px solid $light-gray;
-  margin-bottom: $spacing-large;
+  margin-bottom: 0;
   label {
     color: $white;
     font-size: $type-small;
