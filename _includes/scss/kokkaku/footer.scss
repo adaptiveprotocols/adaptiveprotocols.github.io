@@ -62,6 +62,9 @@ footer.footer {
 .form-legal {
     @media #{$mobile}, #{$tablet} {
         padding: 0 1.618rem;
+        .j-col-8 {
+            width: 100%;
+        }
     }
 }
 #newsletter-email {

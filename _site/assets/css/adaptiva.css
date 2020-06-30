@@ -490,7 +490,8 @@ footer.footer { background-color: #041d39; padding: 4.283rem 0; }
   .footer-nav-item:hover a { padding: 0 6px; color: #fff; }
   .footer-nav-item:hover::after { width: 90%; } }
 
-@media screen and (max-width: 767px), screen and (min-width: 768px) and (max-width: 959px) { .form-legal { padding: 0 1.618rem; } }
+@media screen and (max-width: 767px), screen and (min-width: 768px) and (max-width: 959px) { .form-legal { padding: 0 1.618rem; }
+  .form-legal .j-col-8 { width: 100%; } }
 
 #newsletter-email { background: transparent; padding: 0; border: 0; border-bottom: 2px solid #eee; margin-bottom: 0; }
 #newsletter-email label { color: #fff; font-size: 0.875rem; border-right: 2px solid #eee; padding: 0.618rem 0; margin-bottom: 0; }
