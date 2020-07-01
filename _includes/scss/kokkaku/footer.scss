@@ -60,6 +60,7 @@ footer.footer {
   }
 }
 .form-legal {
+    margin-top: 15px;
     @media #{$mobile}, #{$tablet} {
         padding: 0 1.618rem;
         .j-col-8 {
