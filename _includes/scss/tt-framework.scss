@@ -1,0 +1,120 @@
+/* need to float things? we got you covered. */
+.left, .floatleft { float: left !important; }
+.right, .floatright { float: right !important; }
+
+/* these are for images, below. gives a nice margin. sweet. */
+.alignright { float: right; margin: 0 0 15px 15px;}
+.alignleft { float: left; margin: 0 15px 15px 0;}
+.floatnone { float: none; }
+
+/* need a middle-aligned header. don't write another CSS rule. just use these! */
+.text-left {text-align: left;}
+.text-right {text-align: right;}
+.text-center {text-align: center;}
+
+/* positioning */
+.absolute {position: absolute;}
+.relative {position: relative;}
+.fixed {position: fixed;}
+.flex {display: flex;}
+.flex-align-center {align-items: center;}
+.flex-justify-center {justify-content: center;}
+.flex-space-between {justify-content: space-between;}
+
+/* need to add z-index?  Us these class? */
+.z0 {z-index: 0;}
+.z1 {z-index: 1;}
+.z2 {z-index: 2;}
+.z3 {z-index: 3;}
+.z4 {z-index: 4;}
+/* For a little extra reassurance */
+.z99{z-index: 99;}
+
+/* magic. many combinations exists with simplicity. */
+.float20 { float: left; width: 20%;}
+.float25 { float: left; width: 25%;}
+.float33 { float: left; width: 33.3333%;}
+.float50 { float: left; width: 50%;}
+.float66 { float: left; width: 66.6667%;}
+.float75 { float: left; width: 75%;}
+.float80 { float: left; width: 80%;}
+
+.inline25 { display: inline-block; width: 25%; margin-right: -4px; } 
+.inline33 { display: inline-block; width: 33.3333%; margin-right: -4px; } 
+.inline50 { display: inline-block; width: 50%; margin-right: -4px; } 
+.inline66 { display: inline-block; width: 66.6666%; margin-right: -4px; } 
+
+.bg-cover {background-size:cover; background-position: center center;}
+.bg-cover.bg-cover--center-btm {background-position: center bottom;}
+.bg-cover.bg-cover--center-top {background-position: center top;}
+.cta {padding: 3px; display: inline-block; text-transform: uppercase;background-image:linear-gradient(-90deg,#010A11,#05224B); transition: all 0.3s ease;}
+
+.cta-inner {background-color: #000;padding: 10px 30px; display: inline-block; color:#ACCFFE;text-transform: uppercase; transition: color 0.3s ease;}
+.cta:hover .cta-inner {color:#fff;}
+.grad-black-blue {background-image:linear-gradient(90deg,#010A11,#05224B);}
+.grad-black-blue-vertical {background-image:linear-gradient(#05224B,#010A11);}
+
+.inner {width:100%; max-width: 1200px; margin: 0 auto; padding: 0 24px;}
+//home page 2020
+.home h2, .home h3, .home h4 {margin-top: 0;}
+.home h2 {font-size: 40px;font-weight: bold;}
+.home-hero { background-image: url('/assets/img/home/home-hero-bg.jpg');background-size: cover;padding-top: 150px; padding-bottom: 200px;}
+.home-hero h1 {font-weight: bold; color:#fff; font-size: 48px; line-height: 1.2em;}
+.home-hero p {color: #CCCCCC; font-size: 20px;}
+.after-border {position: relative; padding-bottom: 35px;}
+.after-border:after {content:'';width:110px; border-top: 2px solid #F9EF39;box-shadow:  0px 0px 10px #F9EF39, 0px 0px 20px #F9EF39,0px 0px 30px #F9EF39; top:100%; left:0; position: absolute;}
+
+.home-banner {background-color: #002250;padding: 15px 20px;}
+.home-banner p {margin-bottom: 0px;font-size: 18px;margin-top: 0px;margin-bottom: 0px; }
+.sub-hero {color:#fff; padding: 150px 0 100px;}
+.speed-and-scale h2 + p {font-size: 24px;}
+.sub-hero p {color: #CCCCCC; }
+.speed-scale-value-props {margin-top: 50px;}
+.speed-scale-value-prop {padding: 0 20px 40px 150px; position: relative; }
+.speed-scale-value-prop p {font-size: 18px;}
+.speed-scale-value-prop:before {content:'';position: absolute;left: 12px; top:23px; height:calc(100% - 22px); border-left: 2px dotted #2CB566;box-shadow:  0px 0px 14px #2CB566;}
+.speed-scale-value-prop:after {content:''; width: 21px; height: 21px; border-radius: 50%; border: 2px solid #2CB566; position: absolute; left:0; top:0; box-shadow:  0px 0px 14px #2CB566;}
+.speed-scale-value-prop:last-child:before {display:none;}
+.speed-scale-value-prop h3 {margin-top: 0px;}
+.adaptiva-solutions {margin-top: 200px;}
+.solution-logo {padding: 20px; vertical-align: top;}
+.logo-wrap {height: 50px; margin-bottom: 20px;}
+.solution-logo img {max-width: 100%; max-height: 100%;}
+.adaptiva-stats {margin-top: 100px;}
+.stat {padding: 0 45px; vertical-align: top;}
+.stat-number {font-size: 72px; font-weight: bold; line-height: 1.1em; margin-bottom: 20px;}
+.big-cta {padding:150px 0;}
+
+@media (max-width: 1200px){
+    .stat {padding:0 3%;}
+    .stat-number {font-size: calc(10vw * .6);}
+}
+@media (max-width: 1000px){
+    .half-1000 { width: 50%; }
+    .full-1000 { float: none; width: 100%; display: block; }
+    .no-flex-1000 { display: inherit;}
+    .speed-scale-value-prop {padding-left: 80px;}
+}
+@media (max-width: 800px){
+    .half-800 { width: 50%; }
+    .full-800 { float: none; width: 100%; display: block; }
+    .no-flex-800 { display: inherit;}
+    .adaptiva-solutions {margin-top: 100px;}
+}
+@media (max-width: 600px){
+    .half-600 { width: 50%; }
+    .full-600 { float: none; width: 100%; display: block; }
+    .no-flex-600 { display: inherit;}
+    .stat.inline33,.solution-logo.inline33 {display: block; width:100%; margin-bottom: 40px; text-align: center;}
+    .stat-number {font-size: 60px;}
+}
+@media (max-width: 500px){
+    .half-500 { width: 50%; }
+    .full-500 { float: none; width: 100%; display: block; }
+    .no-flex-500 { display: inherit;}
+}
+@media (max-width: 400px){
+    .half-400 { width: 50%; }
+    .full-400 { float: none; width: 100%; display: block; }
+    .no-flex-400 { display: inherit;}
+}

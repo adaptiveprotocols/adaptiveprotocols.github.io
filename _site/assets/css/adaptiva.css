@@ -71,7 +71,7 @@ html, body { margin: 0; padding: 0; font-size: 16px; overflow-x: hidden; }
 
 .type-jumbo { font-size: 6.854rem !important; }
 
-* { font-family: 'museo-sans', Segoe UI, Helvetica, sans-serif; }
+* { font-family: 'Red Hat Display', sans-serif; }
 
 h1, h2 { font-weight: 300; }
 
@@ -250,8 +250,8 @@ div#site.is-blurred { -webkit-filter: blur(6px); filter: blur(6px); }
 
 .hero { width: 100%; background-position: center; background-size: cover; background-repeat: no-repeat; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row; flex-flow: row; height: 33vw; min-height: 360px; }
 .hero.slim { height: 20vw; min-height: 240px; }
-.hero.slim h1 { font-size: 2.618rem; }
-.hero h1 { font-size: 2.618rem; color: #fff; margin-bottom: 1.618rem; }
+.hero.slim h1 { font-size: 2.618rem; font-weight: 500; }
+.hero h1 { font-size: 4.263rem; color: #fff; margin-bottom: 1.618rem; font-weight: 500; }
 .hero h3 { font-size: 1.25rem; color: #fff; font-weight: 300; }
 .hero.full-screen { height: 100vh; }
 .hero.full-screen h1 { font-size: 2.618rem; }
@@ -284,7 +284,7 @@ section.color-block.lighter-gray { background: #f9f9f9; }
 section.color-block.dark-black { background: #191919; }
 section.color-block.blue-to-dark-blue { background-color: #052b55; background-image: -webkit-radial-gradient(circle farthest-side at right top, #0860b8, #052b55 125%); background-image: radial-gradient(circle farthest-side at right top, #0860b8, #052b55 125%); }
 section.color-block h1, section.color-block h2 { margin-top: 0; }
-section.color-block h2 { font-size: 2.618rem; }
+section.color-block h2 { font-size: 2.618rem; font-weight: 500; }
 @media screen and (max-width: 767px) { section.color-block { padding-left: 10px; padding-right: 10px; }
   section.color-block h2 { font-size: 1.618rem; } }
 
@@ -420,19 +420,20 @@ section.navbar { width: 100%; height: 110px; position: fixed; top: 0; background
 section.navbar .content { height: 100%; padding: 0 1rem; }
 section.navbar.is-scrolled { background: rgba(4, 29, 57, 0.99); height: 68px; }
 section.navbar .logo { position: relative; }
-@media screen and (min-width: 960px) and (max-width: 1280px), screen and (min-width: 1281px) and (max-width: 1919px), screen and (min-width: 1920px) { section.navbar .logo::after { content: 'Smart Scaling for Enterprise IT'; font-size: 0.618rem; position: absolute; top: 50%; transform: translateY(-50%); left: 100%; width: 200px; color: #fff; margin-left: -1rem; opacity: 0; transition: margin-left 500ms cubic-bezier(0.13, 0.78, 0.3, 0.99), opacity 250ms linear; }
-  section.navbar .logo:hover::after { opacity: 1; margin-left: 1rem; } }
 @media screen and (min-width: 768px) and (max-width: 959px), screen and (max-width: 767px) { section.navbar .logo { position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); } }
 @media screen and (min-width: 768px) and (max-width: 959px), screen and (max-width: 767px) { section.navbar { height: 68px; } }
 
-.nav { height: 100%; }
-.nav ul { list-style-type: none; padding: 0; margin: 0; height: 100%; -webkit-padding-start: 0; text-align: right; }
+.nav { height: 100%; width: calc(100% - 195px); }
+.nav ul { list-style-type: none; padding: 0; margin: 0; height: 100%; -webkit-padding-start: 0; text-align: left; position: relative; }
 .nav li.nav-item { display: inline-block; height: 100%; padding: 0; }
-.nav li.nav-item a { display: block; position: relative; line-height: 110px; padding: 0 1.25rem; text-decoration: none; color: #fff; }
+.nav li.nav-item.header-demo-btn { position: absolute; right: 24px; top: 50%; transform: translateY(-50%); height: auto; }
+.nav li.nav-item a { display: block; position: relative; line-height: 110px; padding: 0 1.25rem; text-decoration: none; font-size: 15px; font-weight: bold; text-transform: uppercase; color: #fff; }
+.nav li.nav-item a.cta { padding: 0; line-height: 1em; padding: 3px; display: inline-block; text-transform: uppercase; background-image: linear-gradient(-90deg, #010A11, #05224B); transition: all 0.3s ease; }
 .nav li.nav-item a.button { line-height: 50px; padding: 0 1.618rem; }
 @media screen and (min-width: 960px) and (max-width: 1280px), screen and (min-width: 1281px) and (max-width: 1919px), screen and (min-width: 1920px) { .nav li.nav-item a { transition: 400ms cubic-bezier(0.13, 0.78, 0.3, 0.99); }
   .nav li.nav-item a::before { content: ''; display: block; position: absolute; bottom: 1.618rem; left: 0; width: 0; height: 2px; transition: 400ms cubic-bezier(0.13, 0.78, 0.3, 0.99); background: #48a0f7; }
   .nav li.nav-item a.button::before { display: none; }
+  .nav li.nav-item a.cta::before { display: none; }
   .nav li.nav-item a.current, .nav li.nav-item a:hover { color: #48a0f7; }
   .nav li.nav-item a.current.button, .nav li.nav-item a:hover.button { color: #fff; }
   .nav li.nav-item a.current::before, .nav li.nav-item a:hover::before { width: 100%; } }
@@ -450,9 +451,10 @@ section.navbar.is-scrolled { -webkit-box-shadow: 0 0.1em 0.16em 0 rgba(0, 0, 0, 
 @media screen and (min-width: 768px) and (max-width: 959px), screen and (max-width: 767px) { section.navbar.is-scrolled li.nav-item a { line-height: 1rem; } }
 @media screen and (min-width: 960px) and (max-width: 1280px), screen and (min-width: 1281px) and (max-width: 1919px), screen and (min-width: 1920px) { section.navbar.is-scrolled li.nav-item a { line-height: 68px; }
   section.navbar.is-scrolled li.nav-item a.button { line-height: 42px; padding: 0 1rem; }
+  section.navbar.is-scrolled li.nav-item a.cta { line-height: 1em; padding: 0; }
   section.navbar.is-scrolled li.nav-item a::before { bottom: 0; } }
 
-.logo { display: block; padding-top: 6px; cursor: pointer; transition: 400ms cubic-bezier(0.32, 0.57, 0.25, 1); }
+.logo { display: block; padding-top: 6px; cursor: pointer; margin-right: 45px; float: left; top: 50%; transform: translateY(-50%); transition: 400ms cubic-bezier(0.32, 0.57, 0.25, 1); }
 @media screen and (min-width: 960px) and (max-width: 1280px), screen and (min-width: 1281px) and (max-width: 1919px), screen and (min-width: 1920px) { .logo:hover { opacity: .68; } }
 
 .logo-1 { fill: #fff; }
@@ -881,7 +883,7 @@ section.academy { min-height: calc(100vh - 600px); }
 .asset-title h3 { margin: 0; position: relative; z-index: 200; font-size: 1.25rem; }
 @media screen and (min-width: 960px) and (max-width: 1280px), screen and (min-width: 1281px) and (max-width: 1919px), screen and (min-width: 1920px) { .asset-title:hover { -webkit-box-shadow: 0 0.68em 1em -0.42em rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 0.68em 1em -0.42em rgba(0, 0, 0, 0.2); box-shadow: 0 0.68em 1em -0.42em rgba(0, 0, 0, 0.2); } }
 
-.asset-date { display: block; margin-bottom: 0.618rem; }
+.asset-date { display: block; margin-bottom: 0.618rem; font-weight: 500; }
 
 .asset-category { font-size: 0.875rem; color: #ccc; margin-right: 0.618rem; text-transform: capitalize; }
 
@@ -952,3 +954,168 @@ section.hero#brand::before { content: ''; display: block; position: absolute; to
 .brand-asset.icon { text-align: center; }
 .brand-asset.icon img, .brand-asset.icon svg { max-width: 110px; }
 .brand-asset.dark { background-color: #222; }
+
+/* need to float things? we got you covered. */
+.left, .floatleft { float: left !important; }
+
+.right, .floatright { float: right !important; }
+
+/* these are for images, below. gives a nice margin. sweet. */
+.alignright { float: right; margin: 0 0 15px 15px; }
+
+.alignleft { float: left; margin: 0 15px 15px 0; }
+
+.floatnone { float: none; }
+
+/* need a middle-aligned header. don't write another CSS rule. just use these! */
+.text-left { text-align: left; }
+
+.text-right { text-align: right; }
+
+.text-center { text-align: center; }
+
+/* positioning */
+.absolute { position: absolute; }
+
+.relative { position: relative; }
+
+.fixed { position: fixed; }
+
+.flex { display: flex; }
+
+.flex-align-center { align-items: center; }
+
+.flex-justify-center { justify-content: center; }
+
+.flex-space-between { justify-content: space-between; }
+
+/* need to add z-index?  Us these class? */
+.z0 { z-index: 0; }
+
+.z1 { z-index: 1; }
+
+.z2 { z-index: 2; }
+
+.z3 { z-index: 3; }
+
+.z4 { z-index: 4; }
+
+/* For a little extra reassurance */
+.z99 { z-index: 99; }
+
+/* magic. many combinations exists with simplicity. */
+.float20 { float: left; width: 20%; }
+
+.float25 { float: left; width: 25%; }
+
+.float33 { float: left; width: 33.3333%; }
+
+.float50 { float: left; width: 50%; }
+
+.float66 { float: left; width: 66.6667%; }
+
+.float75 { float: left; width: 75%; }
+
+.float80 { float: left; width: 80%; }
+
+.inline25 { display: inline-block; width: 25%; margin-right: -4px; }
+
+.inline33 { display: inline-block; width: 33.3333%; margin-right: -4px; }
+
+.inline50 { display: inline-block; width: 50%; margin-right: -4px; }
+
+.inline66 { display: inline-block; width: 66.6666%; margin-right: -4px; }
+
+.bg-cover { background-size: cover; background-position: center center; }
+
+.bg-cover.bg-cover--center-btm { background-position: center bottom; }
+
+.bg-cover.bg-cover--center-top { background-position: center top; }
+
+.cta { padding: 3px; display: inline-block; text-transform: uppercase; background-image: linear-gradient(-90deg, #010A11, #05224B); transition: all 0.3s ease; }
+
+.cta-inner { background-color: #000; padding: 10px 30px; display: inline-block; color: #ACCFFE; text-transform: uppercase; transition: color 0.3s ease; }
+
+.cta:hover .cta-inner { color: #fff; }
+
+.grad-black-blue { background-image: linear-gradient(90deg, #010A11, #05224B); }
+
+.grad-black-blue-vertical { background-image: linear-gradient(#05224B, #010A11); }
+
+.inner { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+.home h2, .home h3, .home h4 { margin-top: 0; }
+
+.home h2 { font-size: 40px; font-weight: bold; }
+
+.home-hero { background-image: url("/assets/img/home/home-hero-bg.jpg"); background-size: cover; padding-top: 150px; padding-bottom: 200px; }
+
+.home-hero h1 { font-weight: bold; color: #fff; font-size: 48px; line-height: 1.2em; }
+
+.home-hero p { color: #CCCCCC; font-size: 20px; }
+
+.after-border { position: relative; padding-bottom: 35px; }
+
+.after-border:after { content: ''; width: 110px; border-top: 2px solid #F9EF39; box-shadow: 0px 0px 10px #F9EF39, 0px 0px 20px #F9EF39,0px 0px 30px #F9EF39; top: 100%; left: 0; position: absolute; }
+
+.home-banner { background-color: #002250; padding: 15px 20px; }
+
+.home-banner p { margin-bottom: 0px; font-size: 18px; margin-top: 0px; margin-bottom: 0px; }
+
+.sub-hero { color: #fff; padding: 150px 0 100px; }
+
+.speed-and-scale h2 + p { font-size: 24px; }
+
+.sub-hero p { color: #CCCCCC; }
+
+.speed-scale-value-props { margin-top: 50px; }
+
+.speed-scale-value-prop { padding: 0 20px 40px 150px; position: relative; }
+
+.speed-scale-value-prop p { font-size: 18px; }
+
+.speed-scale-value-prop:before { content: ''; position: absolute; left: 12px; top: 23px; height: calc(100% - 22px); border-left: 2px dotted #2CB566; box-shadow: 0px 0px 14px #2CB566; }
+
+.speed-scale-value-prop:after { content: ''; width: 21px; height: 21px; border-radius: 50%; border: 2px solid #2CB566; position: absolute; left: 0; top: 0; box-shadow: 0px 0px 14px #2CB566; }
+
+.speed-scale-value-prop:last-child:before { display: none; }
+
+.speed-scale-value-prop h3 { margin-top: 0px; }
+
+.adaptiva-solutions { margin-top: 200px; }
+
+.solution-logo { padding: 20px; vertical-align: top; }
+
+.logo-wrap { height: 50px; margin-bottom: 20px; }
+
+.solution-logo img { max-width: 100%; max-height: 100%; }
+
+.adaptiva-stats { margin-top: 100px; }
+
+.stat { padding: 0 45px; vertical-align: top; }
+
+.stat-number { font-size: 72px; font-weight: bold; line-height: 1.1em; margin-bottom: 20px; }
+
+.big-cta { padding: 150px 0; }
+
+@media (max-width: 1200px) { .stat { padding: 0 3%; }
+  .stat-number { font-size: calc(10vw * .6); } }
+@media (max-width: 1000px) { .half-1000 { width: 50%; }
+  .full-1000 { float: none; width: 100%; display: block; }
+  .no-flex-1000 { display: inherit; }
+  .speed-scale-value-prop { padding-left: 80px; } }
+@media (max-width: 800px) { .half-800 { width: 50%; }
+  .full-800 { float: none; width: 100%; display: block; }
+  .no-flex-800 { display: inherit; }
+  .adaptiva-solutions { margin-top: 100px; } }
+@media (max-width: 600px) { .half-600 { width: 50%; }
+  .full-600 { float: none; width: 100%; display: block; }
+  .no-flex-600 { display: inherit; }
+  .stat.inline33, .solution-logo.inline33 { display: block; width: 100%; margin-bottom: 40px; text-align: center; }
+  .stat-number { font-size: 60px; } }
+@media (max-width: 500px) { .half-500 { width: 50%; }
+  .full-500 { float: none; width: 100%; display: block; }
+  .no-flex-500 { display: inherit; } }
+@media (max-width: 400px) { .half-400 { width: 50%; }
+  .full-400 { float: none; width: 100%; display: block; }
+  .no-flex-400 { display: inherit; } }

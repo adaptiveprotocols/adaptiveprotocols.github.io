@@ -45,12 +45,14 @@ div#site {
     min-height: 240px;
     h1 {
       font-size: $type-larger;
+      font-weight: 500;
     }
   }
   h1 {
-    font-size: $type-larger;
+    font-size: $type-largest;
     color: $white;
     margin-bottom: $spacing-normal;
+    font-weight: 500;
   }
   h3 {
     font-size: $type-big;
@@ -176,6 +178,7 @@ section.color-block {
   }
   h2 {
     font-size: $type-larger;
+    font-weight: 500;
   }
   @media #{$mobile} {
     padding-left: 10px;

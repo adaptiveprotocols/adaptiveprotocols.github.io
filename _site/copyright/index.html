@@ -21,17 +21,8 @@ window.cookieconsent.initialise({
     
     <meta name="robots" content="noindex">
     
-    <script>
-      (function(d) {
-        var config = {
-          kitId: 'des5qhx',
-          scriptTimeout: 3000,
-          async: true
-        },
-        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-      })(document);
-    </script>
-		<script src='https://www.google.com/recaptcha/api.js'></script>
+   
+	<script src='https://www.google.com/recaptcha/api.js'></script>
     <link rel="canonical" href="http://localhost:4000/copyright/">
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -55,8 +46,11 @@ window.cookieconsent.initialise({
     <meta property="og:type" content="website" />
     <title>Copyright Notice - Adaptiva</title>
     <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="/assets/css/adaptiva.css?v=6413a5d70f666aa116834f39852448a33ced1113">
+    <link rel="stylesheet" href="/assets/css/adaptiva.css?v=fc2d1e9c29438b5c52d423089339625d248465bb">
     <link rel="manifest" href="/manifest.json">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -89,9 +83,9 @@ window.cookieconsent.initialise({
 
 		<div id="site">
 	    <section class="navbar">
-  <div class="content vertical-center-row space-between">
-    <a class="logo" href="/">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1747.17 406.74"  width="110"  >
+  <div class="content">
+    <a class="logo left" href="/">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1747.17 406.74"  width="150"  >
 	<g id="Layer_2" data-name="Layer 2">
 		<g id="Layer_1-2" data-name="Layer 1"><path
 			class="logo-1"
@@ -101,11 +95,8 @@ window.cookieconsent.initialise({
 </svg>
 
     </a>
-    <div class="js-nav-trigger">
-      <span></span>
-      <span></span>
-    </div>
-    <nav class="nav">
+   
+    <nav class="nav left">
       <ul>
         <li class="nav-item">
           <a href="/products/" class="trn" title="Adaptiva Products">Products</a>
@@ -119,27 +110,21 @@ window.cookieconsent.initialise({
         <li class="nav-item">
           <a href="/about/"class="trn" title="About Adaptiva">About</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a href="/careers/"class="trn" title="Adaptiva Careers">Careers</a>
         </li>
         <li class="nav-item">
           <a href="/contact/"class="trn" title="Adaptiva Contact">Contact</a>
+        </li> -->
+        <li class="nav-item header-demo-btn">
+          <a href="https://www2.adaptiva.com/product-demo" class="cta" title="Request Demo"><div class="cta-inner">Request Demo</div></a>
         </li>
-        <li class="nav-item">
-          <a href="https://www2.adaptiva.com/product-demo" class="button green trn" title="Request Demo">Request Demo</a>
-        </li>
-        <!-- <li class="nav-item"> -->
-          <!--Translate button
-           <a id="translate-button">
-            <img src="/assets/translate.svg" style="width: 36px; padding-left: 10px; vertical-align: middle;">
-            <div class="translate-menu">
-              <div class="translate-menu-language" data-language="en">EN</div>
-              <div class="translate-menu-language" data-language="de">DE</div>
-            </div>
-          </a> -->
-        <!-- </li> -->
       </ul>
     </nav>
+  </div>
+  <div class="js-nav-trigger">
+    <span></span>
+    <span></span>
   </div>
 </section>
 
@@ -306,7 +291,7 @@ window.cookieconsent.initialise({
 </footer>
 
 		</div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  
     <!-- <script src="/assets/js/translate.js"></script> -->
 		<script>
 		function onSubmit(token) {
