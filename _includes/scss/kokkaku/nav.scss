@@ -123,6 +123,18 @@ section.navbar {
       height: auto;
       display: block;
       margin-bottom: $spacing-small;
+      &.header-demo-btn {
+          position: relative;
+          right: auto;
+          top: auto;
+          transform: translateY(0);
+          line-height: 1.618em;
+          .cta-inner {
+              background-color: transparent;
+              color: $blue;
+              padding:0;
+          }
+      }
       a {
         color: $black;
         line-height: $spacing-small;
@@ -130,6 +142,17 @@ section.navbar {
         &.current {
           color: $blue;
         }
+        &.cta {
+            background: transparent;
+            border-color: $blue;
+            color: $blue;
+                      display: inline-block;
+                  font-size: 1rem;
+                  letter-spacing: normal;
+                      line-height: 1;
+                  padding: $spacing-small;
+                  text-transform: none;
+          }
         &.button {
           background: transparent;
           border-color: $blue;
@@ -151,8 +174,7 @@ section.navbar {
   @media screen and (max-height: 500px) {
     li.nav-item {
       margin-bottom: $spacing-smallest;
-      a,
-			a.button {
+      a,a.button {
         padding: $spacing-smallest;
       }
     }
