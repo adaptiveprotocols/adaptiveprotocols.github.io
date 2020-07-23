@@ -210,14 +210,18 @@ section.navbar.is-scrolled {
   cursor: pointer;
   margin-right: 45px;
   float:left;
-  top: 50%; 
-  transform: translateY(-50%);
   transition: 400ms $transition-ease;
   @media #{$desktop-sm},#{$desktop},#{$desktop-xl} {
     &:hover {
       opacity: .68;
     }
   }
+}
+.navbar {
+    .logo {
+        top: 50%; 
+        transform: translateY(-50%);
+    }
 }
 // Logo SVG colors
 .logo-1 {
