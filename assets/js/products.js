@@ -1,8 +1,8 @@
 ---
 ---
 jQuery(document).ready(function($) {
-$('#brochure').addClass('active');
-  {% include js/dictionaries/product-dictionary.js %}
+    {% include js/dictionaries/product-dictionary.js %}
+    $('#brochure').addClass('active');
     $('.product-feature-item').click(function(){
 
       var $this     = $(this),
