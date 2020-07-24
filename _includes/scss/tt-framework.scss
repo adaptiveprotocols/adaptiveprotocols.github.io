@@ -112,7 +112,7 @@ h1.grey, h2.grey, h3.grey,li.grey,p.grey {color: #ccc;}
 .products-subhero {background-image: linear-gradient(#04224B,#000911);}
 .p-subhero-content {transform: translateY(-100px);}
 .feature-text {font-weight: 400;}
-.prod-logo {height: 70px; margin-bottom: 45px;}
+.prod-logo {height: 70px; margin-bottom: 45px; max-width:330px;}
 .prod-logo img{max-height: 100%;}
 .products section.products-brands {background-image: none; background-color: #000;}
 .products section.products-brands:before {background-image:url('/assets/img/products/products-hero.jpg'); filter:blur(6px); opacity: .8;}

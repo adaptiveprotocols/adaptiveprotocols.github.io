@@ -1153,7 +1153,7 @@ h1.grey, h2.grey, h3.grey, li.grey, p.grey { color: #ccc; }
 
 .feature-text { font-weight: 400; }
 
-.prod-logo { height: 70px; margin-bottom: 45px; }
+.prod-logo { height: 70px; margin-bottom: 45px; max-width: 330px; }
 
 .prod-logo img { max-height: 100%; }
 
