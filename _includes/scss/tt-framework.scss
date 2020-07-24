@@ -106,7 +106,7 @@
 
 /* Product Single */
 .product-hero {padding: 150px 0 0; background-image: url('/assets/img/products/product-bg.jpg');}
-.product-logo {width: 50%; margin-bottom: 60px;}
+.product-logo {max-width: 500px; margin-bottom: 60px;}
 .product-logo img {max-width: 100%;}
 .product-hero h1 {font-size: 48px;}
 .product-single h2 {font-size: 40px; font-weight: bold;}
@@ -137,8 +137,11 @@ h2 + .feature-row {padding-top: 0px;}
 .asset-btm .fa{margin-right: 5px;}
 .recommended-content {padding: 90px 0;}
 .green-planet-benefits .w33 {padding: 15px;}
+.gp-feature {padding-left: 30px; position: relative; margin-bottom: 30px; border-left: 2px solid #4dcf83;}
+.gp-feature h3 {margin-top: 0px;}
+.gp-feature p {margin-bottom: 0px;}
 .gp-bene {padding: 15px; display: block;height:100%; width: 100%;}
-.gp-bene h3 {font-size: 24px;}
+.gp-bene h3 {font-size: 24px; }
 @media (max-width: 1200px){
     .stat {padding:0 3%;}
     .stat-number {font-size: calc(10vw * .6);}
