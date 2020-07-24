@@ -444,7 +444,7 @@ section.navbar .logo { position: relative; }
   .nav li.nav-item.header-demo-btn .cta-inner { background-color: transparent; color: #0860b8; padding: 0; }
   .nav li.nav-item a { color: #333; line-height: 1rem; padding: 1rem; }
   .nav li.nav-item a.current { color: #0860b8; }
-  .nav li.nav-item a.cta { background: transparent; border-color: #0860b8; color: #0860b8; display: inline-block; font-size: 1rem; letter-spacing: normal; line-height: 1; padding: 1rem; text-transform: none; }
+  .nav li.nav-item a.cta { background: transparent; border-color: #0860b8; color: #0860b8; display: inline-block; font-size: 15px; letter-spacing: normal; line-height: 1; padding: 1rem; text-transform: none; box-shadow: none; }
   .nav li.nav-item a.button { background: transparent; border-color: #0860b8; color: #0860b8; display: inline-block; font-size: 1rem; letter-spacing: normal; line-height: 1; padding: 1rem; text-transform: none; }
   .nav.is-visible { right: 0; box-shadow: -6px 0 16px 0 rgba(0, 0, 0, 0.2); } }
 @media screen and (max-height: 500px) { .nav li.nav-item { margin-bottom: 0.618rem; }
