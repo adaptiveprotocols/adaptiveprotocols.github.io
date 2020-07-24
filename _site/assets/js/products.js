@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-    // (function() {
+  // (function() {
 //   // make a map to store the string values and their translations (as JSON objects)
 //   var productDictionary = new Map();
 //
@@ -30,7 +30,6 @@ jQuery(document).ready(function($) {
 //
 // })();
 
-    $('#brochure').addClass('active');
     $('.product-feature-item').click(function(){
 
       var $this     = $(this),
