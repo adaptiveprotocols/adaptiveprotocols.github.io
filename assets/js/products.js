@@ -1,6 +1,7 @@
 ---
 ---
 jQuery(document).ready(function($) {
+$('#brochure').addClass('active');
   {% include js/dictionaries/product-dictionary.js %}
     $('.product-feature-item').click(function(){
 

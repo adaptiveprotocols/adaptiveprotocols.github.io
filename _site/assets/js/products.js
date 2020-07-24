@@ -1,4 +1,5 @@
 jQuery(document).ready(function($) {
+$('#brochure').addClass('active');
   // (function() {
 //   // make a map to store the string values and their translations (as JSON objects)
 //   var productDictionary = new Map();
