@@ -1212,6 +1212,8 @@ h2 + .feature-row { padding-top: 0px; }
 
 .feature-graphic { padding-left: 3%; }
 
+.feature-graphic img { width: 100%; max-width: 431px; }
+
 .row-reverse .feature-graphic { padding-left: 0; padding-right: 3%; }
 
 .recommended-content .asset-title { height: 320px; position: relative; }
@@ -1226,7 +1228,7 @@ h2 + .feature-row { padding-top: 0px; }
 
 .asset-btm .fa { margin-right: 5px; }
 
-.recommended-content { padding: 90px 0; }
+.recommended-content { display: none; padding: 90px 0; }
 
 .green-planet-benefits .w33 { padding: 15px; }
 
@@ -1273,9 +1275,11 @@ h2 + .feature-row { padding-top: 0px; }
   .stat.inline33, .solution-logo.inline33 { display: block; width: 100%; margin-bottom: 40px; text-align: center; }
   .stat-number { font-size: 60px; }
   .product-subhero .float33.right { float: none !important; }
-  .download-wrap { float: none; display: block; margin: -100px auto 0; }
+  .download-wrap { float: none; display: block; margin: 10px auto 0; }
   .home-hero h1 { font-size: 34px; }
-  .product-hero h1 { font-size: 34px; } }
+  .product-hero h1 { font-size: 34px; }
+  .product-subhero-text { margin-top: -120px; }
+  .features .w50 { width: auto; } }
 @media (max-width: 500px) { .half-500 { width: 50%; }
   .full-500 { float: none; width: 100%; display: block; }
   .no-flex-500 { display: inherit; } }
