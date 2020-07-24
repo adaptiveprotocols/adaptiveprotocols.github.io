@@ -1075,7 +1075,7 @@ section.hero#brand::before { content: ''; display: block; position: absolute; to
 
 .grad-dblue-lblue-reverse, .asset-title.grad-dblue-lblue-reverse { background-image: linear-gradient(#275797, #002546); }
 
-.diffuse-shadow { box-shadow: 0 10px 44px rgba(0, 0, 0, 0.3); }
+.diffuse-shadow, .responsive-video.diffuse-shadow { box-shadow: 0 10px 44px rgba(0, 0, 0, 0.3); }
 
 .brochure-cta img, .image-max img { max-width: 100%; }
 
