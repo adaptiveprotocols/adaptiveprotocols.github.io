@@ -1,4 +1,4 @@
-html, body { margin: 0; padding: 0; font-size: 16px; overflow-x: hidden; }
+html, body { margin: 0; padding: 0; font-size: 18px; overflow-x: hidden; }
 
 * { box-sizing: border-box; }
 *:focus { outline: none; }
@@ -428,7 +428,7 @@ section.navbar .logo { position: relative; }
 .nav li.nav-item { display: inline-block; height: 100%; padding: 0; }
 .nav li.nav-item.header-demo-btn { position: absolute; right: 24px; top: 50%; transform: translateY(-50%); height: auto; }
 .nav li.nav-item a { display: block; position: relative; line-height: 110px; padding: 0 1.25rem; text-decoration: none; font-size: 15px; font-weight: bold; text-transform: uppercase; color: #fff; }
-.nav li.nav-item a.cta { padding: 0; line-height: 1em; padding: 3px; display: inline-block; text-transform: uppercase; background-image: linear-gradient(-45deg, #4DCF83, #275797); transition: all 0.3s ease; }
+.nav li.nav-item a.cta { padding: 0; line-height: 1em; padding: 3px; display: inline-block; text-transform: uppercase; background-image: linear-gradient(-45deg, #4DCF83, #275797); transition: all 0.3s ease; box-shadow: 0 10px 44px rgba(0, 0, 0, 0.3); }
 .nav li.nav-item a.button { line-height: 50px; padding: 0 1.618rem; }
 @media screen and (min-width: 960px) and (max-width: 1280px), screen and (min-width: 1281px) and (max-width: 1919px), screen and (min-width: 1920px) { .nav li.nav-item a { transition: 400ms cubic-bezier(0.13, 0.78, 0.3, 0.99); }
   .nav li.nav-item a::before { content: ''; display: block; position: absolute; bottom: 1.618rem; left: 0; width: 0; height: 2px; transition: 400ms cubic-bezier(0.13, 0.78, 0.3, 0.99); background: #48a0f7; }
@@ -1057,7 +1057,7 @@ section.hero#brand::before { content: ''; display: block; position: absolute; to
 
 .bg-cover.bg-cover--center-top { background-position: center top; }
 
-.cta { padding: 3px; display: inline-block; text-transform: uppercase; background-image: linear-gradient(-45deg, #4DCF83, #275797); transition: all 0.3s ease; }
+.cta { padding: 2px; display: inline-block; text-transform: uppercase; background-image: linear-gradient(-45deg, #4DCF83, #275797); transition: all 0.3s ease; box-shadow: 0 10px 44px rgba(0, 0, 0, 0.3); }
 
 .cta.cta--alt { background-image: linear-gradient(-45deg, #4DCF83, #275797); }
 
@@ -1071,9 +1071,9 @@ section.hero#brand::before { content: ''; display: block; position: absolute; to
 
 .grad-black-blue-vertical { background-image: linear-gradient(#05224B, #010A11); }
 
-.grad-dblue-lblue, .asset-title.grad-dblue-lblue { background-image: linear-gradient(#002546, #275797); }
+.grad-dblue-lblue, .grad-dblue-lblue { background-image: linear-gradient(#002546, #275797); }
 
-.grad-dblue-lblue-reverse { background-image: linear-gradient(#275797, #002546); }
+.grad-dblue-lblue-reverse, .asset-title.grad-dblue-lblue-reverse { background-image: linear-gradient(#275797, #002546); }
 
 .diffuse-shadow { box-shadow: 0 10px 44px rgba(0, 0, 0, 0.3); }
 
@@ -1083,7 +1083,7 @@ section.hero#brand::before { content: ''; display: block; position: absolute; to
 
 .home h2, .home h3, .home h4 { margin-top: 0; }
 
-.home h2 { font-size: 40px; font-weight: bold; }
+.home h2, .product-single h2, .products-landing h2 { font-size: 40px; font-weight: bold; }
 
 .home-hero { background-image: url("/assets/img/home/home-hero-bg.jpg"); background-size: cover; padding-top: 150px; padding-bottom: 200px; }
 
@@ -1094,6 +1094,8 @@ section.hero#brand::before { content: ''; display: block; position: absolute; to
 .after-border { position: relative; padding-bottom: 35px; }
 
 .after-border:after { content: ''; width: 110px; border-top: 2px solid #F9EF39; box-shadow: 0px 0px 10px #F9EF39, 0px 0px 20px #F9EF39,0px 0px 30px #F9EF39; top: 100%; left: 0; position: absolute; }
+
+h1.grey, h2.grey, h3.grey, li.grey, p.grey { color: #ccc; }
 
 .home-banner { padding: 15px 20px; }
 

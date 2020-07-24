@@ -57,27 +57,29 @@
 .bg-cover.bg-cover--center-btm {background-position: center bottom;}
 .bg-cover.bg-cover--right-center {background-position: right center;}
 .bg-cover.bg-cover--center-top {background-position: center top;}
-.cta {padding: 3px; display: inline-block; text-transform: uppercase;background-image:linear-gradient(-45deg,#4DCF83,#275797); transition: all 0.3s ease;}
+.cta {padding: 2px; display: inline-block; text-transform: uppercase;background-image:linear-gradient(-45deg,#4DCF83,#275797); transition: all 0.3s ease; box-shadow:0 10px 44px rgba(0, 0, 0, 0.3)}
 .cta.cta--alt {background-image:linear-gradient(-45deg,#4DCF83,#275797);}
 .big-p {font-size: 24px;font-weight:400;}
 .cta-inner {background-color: #000;padding:13px 30px; display: inline-block; color:#ACCFFE;text-transform: uppercase; transition: color 0.3s ease; font-weight: bold;}
 .cta:hover .cta-inner {color:#fff;}
 .grad-black-blue {background-image:linear-gradient(90deg,#010A11,#05224B);}
 .grad-black-blue-vertical {background-image:linear-gradient(#05224B,#010A11);}
-.grad-dblue-lblue,.asset-title.grad-dblue-lblue{background-image:linear-gradient(#002546,#275797)}
-.grad-dblue-lblue-reverse {background-image:linear-gradient(#275797,#002546)}
+.grad-dblue-lblue,.grad-dblue-lblue{background-image:linear-gradient(#002546,#275797)}
+.grad-dblue-lblue-reverse , .asset-title.grad-dblue-lblue-reverse{background-image:linear-gradient(#275797,#002546)}
 
 .diffuse-shadow {box-shadow: 0 10px 44px rgba(0,0,0,0.3);}
 .brochure-cta img, .image-max img {max-width: 100%;}
 .inner {width:100%; max-width: 1200px; margin: 0 auto; padding: 0 24px;}
 //home page 2020
 .home h2, .home h3, .home h4 {margin-top: 0;}
-.home h2 {font-size: 40px;font-weight: bold;}
+.home h2, .product-single h2, .products-landing h2 {font-size: 40px;font-weight: bold;}
 .home-hero { background-image: url('/assets/img/home/home-hero-bg.jpg');background-size: cover;padding-top: 150px; padding-bottom: 200px;}
 .home-hero h1 {font-weight: bold; color:#fff; font-size: 48px; line-height: 1.2em; margin-bottom: 100px;}
 .home-hero p {color: #CCCCCC; font-size: 20px;}
 .after-border {position: relative; padding-bottom: 35px;}
 .after-border:after {content:'';width:110px; border-top: 2px solid #F9EF39;box-shadow:  0px 0px 10px #F9EF39, 0px 0px 20px #F9EF39,0px 0px 30px #F9EF39; top:100%; left:0; position: absolute;}
+
+h1.grey, h2.grey, h3.grey,li.grey,p.grey {color: #ccc;}
 
 .home-banner {padding: 15px 20px;}
 .banner-text {padding-right: 40px;}
