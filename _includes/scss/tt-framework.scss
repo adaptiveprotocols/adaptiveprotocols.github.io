@@ -102,7 +102,20 @@
 .stat {padding: 0 45px; vertical-align: top;}
 .stat-number {font-size: 72px; font-weight: bold; line-height: 1.1em; margin-bottom: 20px;}
 .big-cta {padding:150px 0; background-image: url('/assets/img/home/big-cta-bg.jpg');}
-.product-single .big-cta {padding:150px 0; background-image: url('/assets/img/products/products-footer-cta.jpg');}
+.product-single .big-cta, .products .big-cta {padding:150px 0; background-image: url('/assets/img/products/products-footer-cta.jpg');}
+
+
+// PRODUCTS
+.products-hero {background-image:url('/assets/img/products/products-hero.jpg'); padding: 250px 0 300px}
+.products-subhero {background-image: linear-gradient(#04224B,#000911);}
+.p-subhero-content {transform: translateY(-100px);}
+.feature-text {font-weight: 400;}
+.prod-logo {height: 70px; margin-bottom: 45px;}
+.prod-logo img{max-height: 100%;}
+.products section.products-brands {background-image: none; background-color: #000;}
+.products section.products-brands:before {background-image:url('/assets/img/products/products-hero.jpg'); filter:blur(6px); opacity: .8;}
+.products-landing h3 { color: #275797; font-size: 18px; text-transform: uppercase; font-weight: bold;}
+
 
 /* Product Single */
 .product-hero {padding: 150px 0 0; background-image: url('/assets/img/products/product-bg.jpg');}
@@ -159,12 +172,19 @@ h2 + .feature-row {padding-top: 0px;}
     .no-flex-800 { display: inherit;}
     .no-flex-800 .w50 {width: 100%;}
     .adaptiva-solutions {margin-top: 100px;}
+    .feature-text {margin-bottom: 40px;}
+    .feature-graphic {padding-left: 0;}
+    .row-reverse .feature-graphic {padding-right: 0px;}
+    .home-banner {text-align: center;}
+    .banner-text {padding-right: 0px; margin-bottom: 15px;}
+    .home-banner .text-right {text-align: center;}
     .big-p {font-size: 1.3em;}
     .angle-separator {display: none;}
     .product-subhero {padding-top: 40px;}
     .product-subhero .float33.right {float: left !important; margin: 0 20px 20px 0; width:33.33%; }
     .download-wrap {transform: translateY(0);float: left; margin-top: -100px;}
-
+    .products-hero {padding: 20vw 0 20vw;}
+    .p-subhero-content {transform: translateY(-50px);}
     .product-subhero-text {transform: translateY(0);}
 }
 @media (max-width: 600px){
