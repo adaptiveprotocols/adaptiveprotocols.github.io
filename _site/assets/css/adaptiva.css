@@ -988,6 +988,8 @@ section.hero#brand::before { content: ''; display: block; position: absolute; to
 
 .flex { display: flex; }
 
+.flex-wrap { flex-wrap: wrap; }
+
 .flex-align-center { align-items: center; }
 
 .flex-justify-center { justify-content: center; }
@@ -995,6 +997,8 @@ section.hero#brand::before { content: ''; display: block; position: absolute; to
 .flex-space-between { justify-content: space-between; }
 
 .row-reverse { flex-direction: row-reverse; }
+
+.flex-row { flex-direction: row; }
 
 /* need to add z-index?  Us these class? */
 .z0 { z-index: 0; }
@@ -1033,6 +1037,8 @@ section.hero#brand::before { content: ''; display: block; position: absolute; to
 
 .inline66 { display: inline-block; width: 66.6666%; margin-right: -4px; }
 
+.text-col { width: 100%; max-width: 880px; margin: 0 auto; }
+
 .w50 { width: 50%; }
 
 .w33 { width: 33.33%; }
@@ -1055,7 +1061,7 @@ section.hero#brand::before { content: ''; display: block; position: absolute; to
 
 .cta.cta--alt { background-image: linear-gradient(-90deg, #4DCF83, #275797); }
 
-.big-p { font-size: 24px; }
+.big-p { font-size: 24px; font-weight: 400; }
 
 .cta-inner { background-color: #000; padding: 7px 20px; display: inline-block; color: #ACCFFE; text-transform: uppercase; transition: color 0.3s ease; font-weight: bold; }
 
@@ -1070,6 +1076,8 @@ section.hero#brand::before { content: ''; display: block; position: absolute; to
 .grad-dblue-lblue-reverse { background-image: linear-gradient(#275797, #002546); }
 
 .diffuse-shadow { box-shadow: 0 10px 44px rgba(0, 0, 0, 0.3); }
+
+.brochure-cta img, .image-max img { max-width: 100%; }
 
 .inner { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 24px; }
 
@@ -1150,15 +1158,19 @@ section.hero#brand::before { content: ''; display: block; position: absolute; to
 
 .product-hero-content { margin-bottom: 150px; }
 
+.product-banner { padding: 30px 0; text-align: center; }
+
+.product-banner h2 { margin-bottom: 0; }
+
 .angle-separator { position: relative; height: 150px; }
 
 .angle-separator:before { position: absolute; height: 100%; transform: translateX(-100%); width: calc(100vw - 1200px); left: 30px; background-color: #eeeeee; transform-origin: top; }
 
-.angle-separator:after { position: absolute; height: 100%; transform: skewX(32deg); width: 100vw; right: 41.33%; background-color: #eeeeee; transform-origin: top left; }
+.angle-separator:after { position: absolute; height: 100%; transform: skewX(45deg); width: 100vw; right: 41.33%; background-color: #eeeeee; transform-origin: top left; }
 
 .product-subhero-text { transform: translateY(-75px); }
 
-.download-wrap { width: 170px; margin: 0 auto; transform: translateY(-154px); text-align: center; display: block; }
+.download-wrap { width: 170px; margin: 0 auto; transform: translateY(-154px); text-align: center; float: right; }
 
 .download-wrap p { color: #275797; font-weight: bold; }
 
@@ -1168,17 +1180,21 @@ section.hero#brand::before { content: ''; display: block; position: absolute; to
 
 .brochure-cta .b-mark { position: absolute; bottom: 10px; right: 10px; }
 
-.brochure-cta img { max-width: 100%; }
+.brochure-cta svg { height: auto !important; }
 
-.features { padding: 65px; }
+.section-pad, .features { padding: 65px 0; }
 
 .feature-row { padding: 40px 0; }
+
+h2 + .feature-row { padding-top: 0px; }
 
 .feature-graphic { padding-left: 3%; }
 
 .row-reverse .feature-graphic { padding-left: 0; padding-right: 3%; }
 
 .recommended-content .asset-title { height: 320px; position: relative; }
+
+.asset-wrap { padding: 15px; }
 
 .asset-title h3 { font-size: 24px; font-weight: 500; }
 
@@ -1190,21 +1206,38 @@ section.hero#brand::before { content: ''; display: block; position: absolute; to
 
 .recommended-content { padding: 90px 0; }
 
+.green-planet-benefits .w33 { padding: 15px; }
+
+.gp-bene { padding: 15px; display: block; height: 100%; width: 100%; }
+
+.gp-bene h3 { font-size: 24px; }
+
 @media (max-width: 1200px) { .stat { padding: 0 3%; }
   .stat-number { font-size: calc(10vw * .6); } }
 @media (max-width: 1000px) { .half-1000 { width: 50%; }
   .full-1000 { float: none; width: 100%; display: block; }
   .no-flex-1000 { display: inherit; }
-  .speed-scale-value-prop { padding-left: 80px; } }
+  .speed-scale-value-prop { padding-left: 80px; }
+  .asset-title h3 { font-size: 18px; } }
 @media (max-width: 800px) { .half-800 { width: 50%; }
-  .full-800 { float: none; width: 100%; display: block; }
+  .full-800, .full-800.right { float: none !important; width: 100%; display: block; }
   .no-flex-800 { display: inherit; }
-  .adaptiva-solutions { margin-top: 100px; } }
+  .no-flex-800 .w50 { width: 100%; }
+  .adaptiva-solutions { margin-top: 100px; }
+  .big-p { font-size: 1.3em; }
+  .angle-separator { display: none; }
+  .product-subhero { padding-top: 40px; }
+  .product-subhero .float33.right { float: left !important; margin: 0 20px 20px 0; width: 33.33%; }
+  .download-wrap { transform: translateY(0); float: left; margin-top: -100px; }
+  .product-subhero-text { transform: translateY(0); } }
 @media (max-width: 600px) { .half-600 { width: 50%; }
   .full-600 { float: none; width: 100%; display: block; }
   .no-flex-600 { display: inherit; }
   .stat.inline33, .solution-logo.inline33 { display: block; width: 100%; margin-bottom: 40px; text-align: center; }
-  .stat-number { font-size: 60px; } }
+  .stat-number { font-size: 60px; }
+  .product-subhero .float33.right { float: none !important; }
+  .download-wrap { float: none; display: block; margin: -100px auto 0; }
+  .product-hero h1 { font-size: 34px; } }
 @media (max-width: 500px) { .half-500 { width: 50%; }
   .full-500 { float: none; width: 100%; display: block; }
   .no-flex-500 { display: inherit; } }
