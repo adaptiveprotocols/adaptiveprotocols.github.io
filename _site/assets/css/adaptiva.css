@@ -1170,7 +1170,7 @@ h1.grey, h2.grey, h3.grey, li.grey, p.grey { color: #ccc; }
 
 .product-logo img { max-width: 100%; }
 
-.product-hero h1 { font-size: 48px; }
+.product-hero h1 { font-size: 48px; text-shadow: 0 0 15px #02142a, 0 10px 25px #02142a, 30px 0px 34px #02142a, 30px 0 45px #02142a; }
 
 .product-single h2 { font-size: 40px; font-weight: bold; }
 
@@ -1254,6 +1254,7 @@ h2 + .feature-row { padding-top: 0px; }
   .no-flex-800 { display: inherit; }
   .no-flex-800 .w50 { width: 100%; }
   .home-hero-overlay.hidden { background-color: rgba(2, 19, 39, 0.85); position: absolute; display: block !important; left: 0; top: 0; width: 100%; height: 100%; }
+  .products-hero .home-hero-overlay.hidden { height: 150%; }
   .adaptiva-solutions { margin-top: 100px; }
   .feature-text { margin-bottom: 40px; }
   .feature-graphic { padding-left: 0; }
