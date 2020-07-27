@@ -1244,6 +1244,9 @@ h2 + .feature-row { padding-top: 0px; }
 
 .gp-bene h3 { font-size: 24px; }
 
+/* ENDPOINT HEALTH */
+.endpoint-health .feature-graphic img { border: 1px solid #ccc; }
+
 @media (max-width: 1200px) { .stat { padding: 0 3%; }
   .stat-number { font-size: calc(10vw * .6); } }
 @media (max-width: 1000px) { .half-1000 { width: 50%; }
