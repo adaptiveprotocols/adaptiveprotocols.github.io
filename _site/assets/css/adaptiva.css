@@ -1161,7 +1161,7 @@ h1.grey, h2.grey, h3.grey, li.grey, p.grey { color: #ccc; }
 
 .products section.products-brands { background-image: none; background-color: #000; }
 
-.products section.products-brands:before { background-image: url("/assets/img/products/products-hero.jpg"); filter: blur(6px); opacity: .8; }
+.products section.products-brands:before { background-image: url("/assets/img/products/products-hero.jpg"); filter: blur(6px); opacity: .8; background-size: cover; }
 
 .products-landing h3 { color: #275797; font-size: 18px; text-transform: uppercase; font-weight: bold; }
 
