@@ -1190,9 +1190,9 @@ h1.grey, h2.grey, h3.grey, li.grey, p.grey { color: #ccc; }
 
 .angle-separator { position: relative; height: 150px; }
 
-.angle-separator:before { position: absolute; height: 100%; transform: translateX(-100%); width: calc(100vw - 1200px); left: 30px; background-color: #eeeeee; transform-origin: top; }
+.angle-separator:before { position: absolute; height: calc(100% + 1px); transform: translateX(-100%); width: calc(100vw - 1200px); left: 30px; background-color: #eeeeee; transform-origin: top; }
 
-.angle-separator:after { position: absolute; height: 100%; transform: skewX(45deg); width: 100vw; right: 41.33%; background-color: #eeeeee; transform-origin: top left; }
+.angle-separator:after { position: absolute; height: calc(100% + 1px); transform: skewX(45deg); width: 100vw; right: 41.33%; background-color: #eeeeee; transform-origin: top left; }
 
 .product-subhero-text { transform: translateY(-75px); }
 
@@ -1249,7 +1249,9 @@ h2 + .feature-row { padding-top: 0px; }
 .gp-bene h3 { font-size: 24px; }
 
 /* ENDPOINT HEALTH */
-.endpoint-health .feature-graphic img { border: 1px solid #ccc; }
+.product-single .feature-graphic img { border: 1px solid #ccc; }
+
+.asset-title-bg .asset-title { background-color: transparent; }
 
 @media (max-width: 1200px) { .stat { padding: 0 3%; }
   .stat-number { font-size: calc(10vw * .6); } }
