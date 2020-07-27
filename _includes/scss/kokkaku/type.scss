@@ -35,12 +35,14 @@ $type-jumbo:      6.854rem;
 }
 
 * {
-  font-family: 'museo-sans', Segoe UI, Helvetica, sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 h1,
 h2 {
-  font-weight: 300;
+  font-weight: bold;
+  font-size: 40px;
+  margin-top: 0;
 }
 
 h3,
@@ -121,7 +123,7 @@ a {
 }
 
 p {
-  font-weight: 500;
+  font-weight: 400;
   color: $black;
   margin-top: 0;
   margin-bottom: $spacing-normal;

@@ -1,13 +1,10 @@
 <section class="navbar">
-  <div class="content vertical-center-row space-between">
-    <a class="logo" href="/">
-      {% include svg/adaptiva-logo.svg width="110" %}
+  <div class="content">
+    <a class="logo left" href="/">
+      {% include svg/adaptiva-logo.svg width="150" %}
     </a>
-    <div class="js-nav-trigger">
-      <span></span>
-      <span></span>
-    </div>
-    <nav class="nav">
+   
+    <nav class="nav left">
       <ul>
         <li class="nav-item">
           <a href="{{"/products/" | relative_url}}" {% if page.url == "/products/" %} class="current trn"{% else %}class="trn"{% endif %} title="Adaptiva Products">Products</a>
@@ -21,26 +18,20 @@
         <li class="nav-item">
           <a href="{{"/about/" | relative_url }}"{% if page.url == "/about/" %} class="current trn"{% else %}class="trn"{% endif %} title="About Adaptiva">About</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a href="{{"/careers/" | relative_url }}"{% if page.url == "/careers/" %} class="current trn"{% else %}class="trn"{% endif %} title="Adaptiva Careers">Careers</a>
         </li>
         <li class="nav-item">
           <a href="{{"/contact/" | relative_url }}"{% if page.url == "/contact/" %} class="current trn"{% else %}class="trn"{% endif %} title="Adaptiva Contact">Contact</a>
+        </li> -->
+        <li class="nav-item header-demo-btn">
+          <a href="https://www2.adaptiva.com/product-demo" class="cta" title="Request Demo"><div class="cta-inner">Request Demo</div></a>
         </li>
-        <li class="nav-item">
-          <a href="https://www2.adaptiva.com/product-demo" class="button green trn" title="Request Demo">Request Demo</a>
-        </li>
-        <!-- <li class="nav-item"> -->
-          <!--Translate button
-           <a id="translate-button">
-            <img src="/assets/translate.svg" style="width: 36px; padding-left: 10px; vertical-align: middle;">
-            <div class="translate-menu">
-              <div class="translate-menu-language" data-language="en">EN</div>
-              <div class="translate-menu-language" data-language="de">DE</div>
-            </div>
-          </a> -->
-        <!-- </li> -->
       </ul>
     </nav>
+  </div>
+  <div class="js-nav-trigger">
+    <span></span>
+    <span></span>
   </div>
 </section>

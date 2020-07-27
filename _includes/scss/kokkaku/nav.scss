@@ -16,27 +16,6 @@ section.navbar {
   }
   .logo {
     position: relative;
-    @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
-      &::after {
-        content: 'Smart Scaling for Enterprise IT';
-        font-size: $type-smaller;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 100%;
-        width: 200px;
-        color: $white;
-        margin-left: -$spacing-small;
-        opacity: 0;
-        transition: margin-left 500ms $transition-ease-in, opacity 250ms linear;
-      }
-      &:hover {
-        &::after {
-          opacity: 1;
-          margin-left: $spacing-small;
-        }
-      }
-    }
     @media #{$tablet}, #{$mobile} {
       position: absolute;
       left: $spacing-small;
@@ -50,25 +29,42 @@ section.navbar {
 }
 .nav {
   height: 100%;
+  width: calc(100% - 195px);
   ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     height: 100%;
     -webkit-padding-start: 0;
-    text-align: right;
+    text-align: left;
+    position: relative;
   }
   li.nav-item {
     display: inline-block;
     height: 100%;
-		padding: 0;
+    padding: 0;
+    &.header-demo-btn {
+        position: absolute;
+        right:24px;
+        top:50%;
+        transform: translateY(-50%);
+        height: auto;
+    }
     a {
       display: block;
       position: relative;
       line-height: 110px;
       padding: 0 1.25rem;
       text-decoration: none;
+      font-size: 15px;
+      font-weight: bold;
+      text-transform: uppercase;
       color: $white;
+      &.cta {
+          padding:0;
+          line-height: 1em;
+          padding: 3px; display: inline-block; text-transform: uppercase;background-image:linear-gradient(-45deg,#4DCF83,#275797); transition: all 0.3s ease;box-shadow:0 10px 44px rgba(0, 0, 0, 0.3)
+      }
       &.button {
         line-height: 50px;
         padding: 0 $spacing-normal;
@@ -90,6 +86,11 @@ section.navbar {
           &::before {
             display: none;
           }
+        }
+        &.cta {
+            &::before {
+                display: none;
+            }
         }
         &.current,
         &:hover {
@@ -122,6 +123,18 @@ section.navbar {
       height: auto;
       display: block;
       margin-bottom: $spacing-small;
+      &.header-demo-btn {
+          position: relative;
+          right: auto;
+          top: auto;
+          transform: translateY(0);
+          line-height: 1.618em;
+          .cta-inner {
+              background-color: transparent;
+              color: $blue;
+              padding:0;
+          }
+      }
       a {
         color: $black;
         line-height: $spacing-small;
@@ -129,6 +142,18 @@ section.navbar {
         &.current {
           color: $blue;
         }
+        &.cta {
+            background: transparent;
+            border-color: $blue;
+            color: $blue;
+            display: inline-block;
+            font-size: 15px;
+            letter-spacing: normal;
+            line-height: 1;
+            padding: $spacing-small;
+            text-transform: none;
+            box-shadow: none;
+          }
         &.button {
           background: transparent;
           border-color: $blue;
@@ -150,8 +175,7 @@ section.navbar {
   @media screen and (max-height: 500px) {
     li.nav-item {
       margin-bottom: $spacing-smallest;
-      a,
-			a.button {
+      a,a.button {
         padding: $spacing-smallest;
       }
     }
@@ -169,7 +193,11 @@ section.navbar.is-scrolled {
 	      &.button {
 	        line-height: 42px;
 	        padding: 0 $spacing-small;
-	      }
+          }
+          &.cta {
+              line-height: 1em;
+              padding:2px;
+            }
         &::before {
           bottom: 0;
         }
@@ -181,12 +209,20 @@ section.navbar.is-scrolled {
   display: block;
   padding-top: 6px;
   cursor: pointer;
+  margin-right: 45px;
+  float:left;
   transition: 400ms $transition-ease;
   @media #{$desktop-sm},#{$desktop},#{$desktop-xl} {
     &:hover {
       opacity: .68;
     }
   }
+}
+.navbar {
+    .logo {
+        top: 50%; 
+        transform: translateY(-50%);
+    }
 }
 // Logo SVG colors
 .logo-1 {
