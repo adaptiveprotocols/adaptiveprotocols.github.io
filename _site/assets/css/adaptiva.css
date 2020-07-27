@@ -428,7 +428,9 @@ section.navbar .logo { position: relative; }
 .nav li.nav-item { display: inline-block; height: 100%; padding: 0; }
 .nav li.nav-item.header-demo-btn { position: absolute; right: 24px; top: 50%; transform: translateY(-50%); height: auto; }
 .nav li.nav-item a { display: block; position: relative; line-height: 110px; padding: 0 1.25rem; text-decoration: none; font-size: 15px; font-weight: bold; text-transform: uppercase; color: #fff; }
-.nav li.nav-item a.cta { padding: 0; line-height: 1em; padding: 3px; display: inline-block; text-transform: uppercase; background-image: linear-gradient(-45deg, #4DCF83, #275797); transition: all 0.3s ease; box-shadow: 0 10px 44px rgba(0, 0, 0, 0.3); }
+.nav li.nav-item a.cta { padding: 0; line-height: 1em; padding: 3px; display: inline-block; text-transform: uppercase; background-image: linear-gradient(-45deg, #4DCF83, #275797); transition: all .5s ease; box-shadow: 0 10px 44px rgba(0, 0, 0, 0.3); }
+.nav li.nav-item a.cta:hover { background-image: linear-gradient(-45deg, #28bde2, #275797); }
+.nav li.nav-item a.cta:hover .cta-inner { color: #cedae3; }
 .nav li.nav-item a.button { line-height: 50px; padding: 0 1.618rem; }
 @media screen and (min-width: 960px) and (max-width: 1280px), screen and (min-width: 1281px) and (max-width: 1919px), screen and (min-width: 1920px) { .nav li.nav-item a { transition: 400ms cubic-bezier(0.13, 0.78, 0.3, 0.99); }
   .nav li.nav-item a::before { content: ''; display: block; position: absolute; bottom: 1.618rem; left: 0; width: 0; height: 2px; transition: 400ms cubic-bezier(0.13, 0.78, 0.3, 0.99); background: #48a0f7; }
@@ -1063,9 +1065,11 @@ section.hero#brand::before { content: ''; display: block; position: absolute; to
 
 .big-p { font-size: 24px; font-weight: 400; }
 
-.cta-inner { background-color: #000; padding: 13px 30px; display: inline-block; color: #fff; text-transform: uppercase; transition: color 0.3s ease; font-weight: bold; }
+.cta-inner { background-color: #000; padding: 13px 30px; display: inline-block; color: #fff; text-transform: uppercase; transition: all 0.5s ease; font-weight: bold; }
 
-.cta:hover .cta-inner { color: #fff; }
+.cta:hover { background-image: linear-gradient(-45deg, #28bde2, #275797); }
+
+.cta:hover .cta-inner { color: #cedae3; }
 
 .grad-black-blue { background-image: linear-gradient(90deg, #010A11, #05224B); }
 
@@ -1293,3 +1297,4 @@ h2 + .feature-row { padding-top: 0px; }
 @media (max-width: 400px) { .half-400 { width: 50%; }
   .full-400 { float: none; width: 100%; display: block; }
   .no-flex-400 { display: inherit; } }
+@media (max-width: 375px) { #newsletter-email { padding: 0; } }

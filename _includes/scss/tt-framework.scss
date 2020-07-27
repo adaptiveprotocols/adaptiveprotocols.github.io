@@ -60,8 +60,9 @@
 .cta {padding: 2px; display: inline-block; text-transform: uppercase;background-image:linear-gradient(-45deg,#4DCF83,#275797); transition: all 0.3s ease; box-shadow:0 10px 44px rgba(0, 0, 0, 0.3)}
 .cta.cta--alt {background-image:linear-gradient(-45deg,#4DCF83,#275797);}
 .big-p {font-size: 24px;font-weight:400;}
-.cta-inner {background-color: #000;padding:13px 30px; display: inline-block; color:#fff;text-transform: uppercase; transition: color 0.3s ease; font-weight: bold;}
-.cta:hover .cta-inner {color:#fff;}
+.cta-inner {background-color: #000;padding:13px 30px; display: inline-block; color:#fff;text-transform: uppercase; transition: all 0.5s ease; font-weight: bold;}
+.cta:hover {background-image:linear-gradient(-45deg,#28bde2,#275797);}
+.cta:hover .cta-inner {color:#cedae3;}
 .grad-black-blue {background-image:linear-gradient(90deg,#010A11,#05224B);}
 .grad-black-blue-vertical {background-image:linear-gradient(#05224B,#010A11);}
 .grad-dblue-lblue,.grad-dblue-lblue{background-image:linear-gradient(#002546,#275797)}
@@ -221,4 +222,7 @@ h2 + .feature-row {padding-top: 0px;}
     .half-400 { width: 50%; }
     .full-400 { float: none; width: 100%; display: block; }
     .no-flex-400 { display: inherit;}
+}
+@media (max-width: 375px){
+    #newsletter-email {padding:0;}
 }
