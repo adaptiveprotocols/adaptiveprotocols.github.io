@@ -1,3 +1,23 @@
+- title: "Endpoint Management and Security at Scale in a Remote Work Reality"
+  link: 'https://www2.adaptiva.com/resources/webinar/endpoint-management-security-2020'
+  date: 20200819
+  posted: 'August 19 2020'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "Adaptiva OneSite Cloud – Live Demo with new Web UI & Dashboards"
+  link: 'https://www2.adaptiva.com/resources/webinar/onesite-cloud-webui-demo'
+  date: 20200811
+  posted: 'August 12 2020'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
 - title: "Adaptiva OneSite Cloud – Live Demo: Software Delivery Everywhere"
   link: 'https://www2.adaptiva.com/resources/webinar/onesite-cloud-demo'
   date: 20200708
