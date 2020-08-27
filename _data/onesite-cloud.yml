@@ -1,0 +1,44 @@
+
+- title: "Adaptiva OneSite Cloud: Brochure"
+  link: "https://www2.adaptiva.com/resources/datasheet/onesite-cloud"
+  date: 20200618
+  order: 1
+  posted: 'June 18 2020'
+  type: document
+  classes:
+    - class: 'document'
+  categories:
+    - category: 'document'
+
+- title: "Adaptiva OneSite Cloud: Scalable Software Delivery Everywhere"
+  link: "https://www2.adaptiva.com/resources/webinar/onesite-cloud-2020"
+  date: 20200618
+  order: 2
+  posted: 'June 18 2020'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "Adaptiva OneSite Cloud – Live Demo with new Web UI & Dashboards"
+  link: 'https://www2.adaptiva.com/resources/webinar/onesite-cloud-webui-demo'
+  date: 20200811
+  order: 3
+  posted: 'August 12 2020'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "Adaptiva Endpoint Health: Endpoint Administration and Security at Scale in a WFH World"
+  link: 'https://www2.adaptiva.com/resources/webinar/endpoint-administration-and-security'
+  date: 20200429
+  order: 4
+  posted: 'April 29 2020'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'

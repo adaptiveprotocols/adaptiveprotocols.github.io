@@ -125,7 +125,7 @@ h1.grey, h2.grey, h3.grey,li.grey,p.grey {color: #ccc;}
 .product-hero {padding: 150px 0 0; background-image: url('/assets/img/products/product-bg.jpg');}
 .product-logo {max-width: 500px; margin-bottom: 60px;}
 .product-logo img {max-width: 100%;}
-.product-hero h1, .products-hero h1 {font-size: 48px;text-shadow: 0 0 15px #02142a, 0 10px 25px #02142a, 30px 0px 34px #02142a, 30px 0 45px #02142a}
+.product-hero h1, .products-hero h1, .foobarbaz {font-size: 44px;text-shadow: 0 0 15px #02142a, 0 10px 25px #02142a, 30px 0px 34px #02142a, 30px 0 45px #02142a}
 .product-single h2 {font-size: 40px; font-weight: bold;}
 .product-single h3 {font-size: 32px; font-weight: 500;}
 .product-hero-content {margin-bottom: 150px;}
@@ -154,13 +154,25 @@ h2 + .feature-row {padding-top: 0px;}
 .asset-btm {position: absolute; left:0;bottom:0; width:100%; padding: 1rem;font-size: 18px; font-weight: 500; color: #fff !important;}
 .asset-btm .res-icon, .asset-btm .fa  {color: #fff; font-weight: 500;}
 .asset-btm .fa{margin-right: 5px;}
-.recommended-content { padding: 90px 0;}
+.recommended-content { padding: 45px 0;}
 .green-planet-benefits .w33 {padding: 15px;}
 .gp-feature {padding-left: 30px; position: relative; margin-bottom: 30px; border-left: 2px solid #4dcf83;}
 .gp-feature h3 {margin-top: 0px;}
 .gp-feature p {margin-bottom: 0px;}
 .gp-bene {padding: 15px; display: block;height:100%; width: 100%;}
 .gp-bene h3 {font-size: 24px; }
+
+.feature-horz-list ul {list-style-type: none!important;padding:30px 0 0 0;margin:0}
+.feature-horz-list ul li {margin:0}
+.feature-horz-list {padding:40px 0;}
+.content-delivery-anywhere {padding:80px 0; background-image:linear-gradient(23deg, #0119286b 34%, #224E87 100%),url("/assets/img/products/background-content-delivery-anywhere.jpg");background-size: cover, cover;background-position: bottom, bottom }
+.content-delivery-anywhere .inner h2, .content-delivery-anywhere .inner p {color: white;}
+.content-delivery-anywhere .float50:first-child {padding-right: 50px;}
+.content-delivery-anywhere .float50:last-child {padding-left: 50px;}
+
+li.text-center.float25.full-600 p {font-size: 16px; padding: 0 28px;} //hero feature
+
+.privacy-pol h3 {text-transform: capitalize;}
 
 /* ENDPOINT HEALTH */
 .product-single .feature-graphic img {border: 1px solid #ccc;}
@@ -213,6 +225,9 @@ h2 + .feature-row {padding-top: 0px;}
     .product-hero h1, .products-hero h1 {font-size: 34px;}
 	.product-subhero-text {margin-top:-120px}
 	.features .w50 {width: auto;}
+	.content-delivery-anywhere .float50:first-child, .content-delivery-anywhere .float50:last-child {padding-left: 0px;}
+	.content-delivery-anywhere .float50 img {width: 95vw;}
+	.content-delivery-anywhere .float50:last-child p:last-child {margin-bottom: 200px;}
 
 }
 @media (max-width: 500px){
