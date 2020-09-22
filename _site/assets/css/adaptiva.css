@@ -962,6 +962,9 @@ section.hero#brand::before { content: ''; display: block; position: absolute; to
 .brand-asset.icon img, .brand-asset.icon svg { max-width: 110px; }
 .brand-asset.dark { background-color: #222; }
 
+/* Root Variables */
+:root { --val-baseline: 20px; }
+
 /* need to float things? we got you covered. */
 .left, .floatleft { float: left !important; }
 
@@ -1047,9 +1050,56 @@ section.hero#brand::before { content: ''; display: block; position: absolute; to
 
 .w66 { width: 66.66%; }
 
+/* padding and margin helpers */
+.pa-small { padding: calc( var(--val-baseline) / 2 ); }
+
+.pa-medium { padding: var(--val-baseline); }
+
+.pa-large { padding: calc( var(--val-baseline) * 2 ); }
+
+.pa-xl { padding: calc( var(--val-baseline) * 4); }
+
+.ma-small { margin: calc( var(--val-baseline) / 2 ); }
+
+.ma-medium { margin: var(--val-baseline); }
+
+.ma-large { margin: calc( var(--val-baseline) * 2 ); }
+
+.ma-xl { margin: calc( var(--val-baseline) * 4 ); }
+
+.py-small { padding-top: calc( var(--val-baseline) / 2 ); padding-bottom: calc( var(--val-baseline) / 2 ); }
+
+.py-medium { padding-top: var(--val-baseline); padding-bottom: var(--val-baseline); }
+
+.py-large { padding-top: calc( var(--val-baseline) * 2 ); padding-bottom: calc( var(--val-baseline) * 2); }
+
+.py-xl { padding-top: calc( var(--val-baseline) * 4 ); padding-bottom: calc( var(--val-baseline) * 4); }
+
+.px-small { padding-left: calc( var(--val-baseline) / 2 ); padding-right: calc( var(--val-baseline) / 2 ); }
+
+.px-medium { padding-left: var(--val-baseline); padding-right: var(--val-baseline); }
+
+.px-large { padding-left: calc( var(--val-baseline) * 2 ); padding-right: calc( var(--val-baseline) * 2); }
+
+.px-xl { padding-left: calc( var(--val-baseline) * 4 ); padding-right: calc( var(--val-baseline) * 4); }
+
+.pr-small { padding-right: calc( var(--val-baseline) / 2 ); }
+
+.pr-medium { padding-right: var(--val-baseline); }
+
+.pr-large { padding-right: calc( var(--val-baseline) * 2); }
+
+.pl-small { padding-left: calc( var(--val-baseline) / 2 ); }
+
+.pl-medium { padding-left: var(--val-baseline); }
+
+.pl-large { padding-left: calc( var(--val-baseline) * 2); }
+
 .bg-black { background-color: #000; }
 
 .bg-lt-grey { background-color: #eeeeee; }
+
+.bg-grey { background-color: #dddddd; }
 
 .bg-cover { background-size: cover; background-position: center center; }
 
@@ -1081,7 +1131,7 @@ section.hero#brand::before { content: ''; display: block; position: absolute; to
 
 .diffuse-shadow, .responsive-video.diffuse-shadow { box-shadow: 0 10px 44px rgba(0, 0, 0, 0.3); }
 
-.brochure-cta img, .image-max img { max-width: 100%; }
+.brochure-cta img, .image-max img, .img-max { max-width: 100%; }
 
 .inner { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 24px; }
 
@@ -1266,10 +1316,25 @@ li.text-center.float25.full-600 p { font-size: 16px; padding: 0 28px; }
 
 .privacy-pol h3 { text-transform: capitalize; }
 
-/* ENDPOINT HEALTH */
+/* CASE STUDY */
 .product-single .feature-graphic img { border: 1px solid #ccc; }
 
 .asset-title-bg .asset-title { background-color: transparent; }
+
+.cs-section h3, .cs-section h2 { color: #0860b8; }
+
+.sidebar__info { margin-top: 40px; }
+
+/* Case Study Single */
+#hero-eh-fortune-500 { background-image: url(/assets/img/case-studies/case-study-bg.jpg); }
+
+.cs-section--dark, .cs-section--dark h2, .cs-section--dark h3, .cs-section--dark h4, .cs-section--dark p, .cs-section--dark li { color: #fff; }
+
+.cs-section--dark .cs-sidebar__info h2, .cs-section--dark .cs-sidebar__info h3 { color: #0860b8; }
+
+.cs-sidebar__info h4 { color: #333; text-transform: capitalize; letter-spacing: 0px; font-size: 20px; }
+
+.cs-section--dark .cs-sidebar__info p, .cs-section--dark .cs-sidebar__info li { color: #333; }
 
 @media (max-width: 1200px) { .stat { padding: 0 3%; }
   .stat-number { font-size: calc(10vw * .6); } }
