@@ -54,6 +54,7 @@
 
 .w50 {width: 50%;}
 .w33 {width: 33.33%;}
+.w25 {width: 25%;}
 .w66 {width: 66.66%;}
 
 /* padding and margin helpers */
@@ -207,6 +208,9 @@ h2 + .feature-row {padding-top: 0px;}
 li.text-center.float25.full-600 p {font-size: 16px; padding: 0 28px;} //hero feature
 .privacy-pol h3 {text-transform: capitalize;}
 
+/* ONESITE */
+.promotional-banner {background-image: url("/assets/img/home/home-hero-bg.jpg");}
+
 /* CASE STUDY */
 .product-single .feature-graphic img {border: 1px solid #ccc;}
 .asset-title-bg .asset-title { background-color: transparent;}
@@ -219,6 +223,17 @@ li.text-center.float25.full-600 p {font-size: 16px; padding: 0 28px;} //hero fea
 .cs-section--dark .cs-sidebar__info h2, .cs-section--dark .cs-sidebar__info h3{color: #0860b8;}
 .cs-sidebar__info h4 {color: #333; text-transform: capitalize; letter-spacing: 0px; font-size: 20px;}
 .cs-section--dark .cs-sidebar__info p, .cs-section--dark .cs-sidebar__info li  {color: #333;}
+.case-study-table th {background-color: #0860b8; color: #fff;padding: 15px 10px;
+    font-size: 24px;}
+.case-study-table tr:nth-child(odd) {background-color: #fff;}
+.case-study-table td {padding: 10px; font-size: 22px;font-weight: 500; border-bottom: 1px solid #777;}
+.cs-sidebar__info blockquote {color: #0860b8; font-size: 22px; position: relative; padding-left: 20px;}
+.cs-sidebar__info blockquote:before {content:''; width:49px; height: 60px; background-image:url('/assets/img/case-studies/left-quote-blue.png'); position: absolute; top:10; left: -20px; opacity: .6; background-size: 100%; background-repeat: no-repeat;}
+.val-row {border-left: 1px solid #777;}
+.cs-contact-section .w33 {padding-right: 2%; color: #aaa; font-size: 14px; }
+.cs-contact-section p {color: #aaa; font-size: 14px;}
+
+
 @media (max-width: 1200px){
     .stat {padding:0 3%;}
     .stat-number {font-size: calc(10vw * .6);}
@@ -253,6 +268,10 @@ li.text-center.float25.full-600 p {font-size: 16px; padding: 0 28px;} //hero fea
     .products-hero {padding: 20vw 0 20vw;}
     .p-subhero-content {transform: translateY(-50px);}
     .product-subhero-text {transform: translateY(0);}
+    .section-image { display: none; }
+    .cs-sidebar__info {position: relative; background-color: #ddd;}
+    .cs-sidebar__info {text-align: center;}
+    
 }
 @media (max-width: 600px){
     .half-600 { width: 50%; }
@@ -268,7 +287,9 @@ li.text-center.float25.full-600 p {font-size: 16px; padding: 0 28px;} //hero fea
 	.features .w50 {width: auto;}
 	.content-delivery-anywhere .float50:first-child, .content-delivery-anywhere .float50:last-child {padding-left: 0px;}
 	.content-delivery-anywhere .float50 img {width: 95vw;}
-	.content-delivery-anywhere .float50:last-child p:last-child {margin-bottom: 200px;}
+    .content-delivery-anywhere .float50:last-child p:last-child {margin-bottom: 200px;}
+    .case-study-table td {font-size: 16px;}
+    .case-study-table td {font-size: 20px;}
 
 }
 @media (max-width: 500px){

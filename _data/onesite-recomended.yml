@@ -1,0 +1,41 @@
+
+- title: "Adaptiva OneSite Cloud: Brochure"
+  link: "https://www2.adaptiva.com/resources/datasheet/onesite-cloud"
+  date: 20200618
+  order: 1
+  posted: 'June 18 2020'
+  type: document
+  classes:
+    - class: 'document'
+  categories:
+    - category: 'document'
+
+- title: "Enabling Remote Work in a COVID-19 World with Total Endpoint Visibility & Control"
+  link: 'https://www2.adaptiva.com/resources/webinar/enabling-remote-work-covid-19'
+  date: 20201007
+  posted: 'October 07 2020'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "Adaptiva OneSite Cloud: Scalable Software Delivery Everywhere "
+  link: "https://www2.adaptiva.com/resources/webinar/onesite-cloud-2020 "
+  date: 20200618
+  posted: 'June 18 2020'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "Adaptiva + Large Enterprise Financial Services Company"
+  link: 'https://insights.adaptiva.com/downloads/CaseStudies/large-enterprise-financial-services-case-study.pdf'
+  date: 20190529
+  posted: 'May 29 2019'
+  type: document
+  classes:
+    - class: 'case-study'
+  categories:
+    - category: 'Case Study'
