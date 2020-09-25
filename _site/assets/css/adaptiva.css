@@ -1044,6 +1044,8 @@ section.hero#brand::before { content: ''; display: block; position: absolute; to
 
 .text-col { width: 100%; max-width: 880px; margin: 0 auto; }
 
+.inline-top { vertical-align: top; }
+
 .w50 { width: 50%; }
 
 .w33 { width: 33.33%; }
@@ -1211,6 +1213,8 @@ h1.grey, h2.grey, h3.grey, li.grey, p.grey { color: #ccc; }
 
 .feature-text { font-weight: 400; }
 
+.feature-text.inline33 { padding-right: 20px; }
+
 .prod-logo { height: 70px; margin-bottom: 45px; max-width: 330px; }
 
 .prod-logo img { max-height: 100%; }
@@ -1321,6 +1325,8 @@ li.text-center.float25.full-600 p { font-size: 16px; padding: 0 28px; }
 /* ONESITE */
 .promotional-banner { background-image: url("/assets/img/home/home-hero-bg.jpg"); }
 
+.image-overflow img { max-width: 110%; }
+
 /* CASE STUDY */
 .product-single .feature-graphic img { border: 1px solid #ccc; }
 
@@ -1388,7 +1394,8 @@ li.text-center.float25.full-600 p { font-size: 16px; padding: 0 28px; }
   .product-subhero-text { transform: translateY(0); }
   .section-image { display: none; }
   .cs-sidebar__info { position: relative; background-color: #ddd; }
-  .cs-sidebar__info { text-align: center; } }
+  .cs-sidebar__info { text-align: center; }
+  .feature-text.inline33 { padding-right: 0px; } }
 @media (max-width: 600px) { .half-600 { width: 50%; }
   .full-600 { float: none; width: 100%; display: block; }
   .no-flex-600 { display: inherit; }
@@ -1404,7 +1411,8 @@ li.text-center.float25.full-600 p { font-size: 16px; padding: 0 28px; }
   .content-delivery-anywhere .float50 img { width: 95vw; }
   .content-delivery-anywhere .float50:last-child p:last-child { margin-bottom: 200px; }
   .case-study-table td { font-size: 16px; }
-  .case-study-table td { font-size: 20px; } }
+  .case-study-table td { font-size: 20px; }
+  .image-overflow img { max-width: 100%; } }
 @media (max-width: 500px) { .half-500 { width: 50%; }
   .full-500 { float: none; width: 100%; display: block; }
   .no-flex-500 { display: inherit; } }
