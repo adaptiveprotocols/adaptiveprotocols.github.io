@@ -1005,6 +1005,8 @@ section.hero#brand::before { content: ''; display: block; position: absolute; to
 
 .flex-row { flex-direction: row; }
 
+.flex-col { flex-direction: column; }
+
 /* need to add z-index?  Us these class? */
 .z0 { z-index: 0; }
 
