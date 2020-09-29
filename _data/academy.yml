@@ -1,3 +1,23 @@
+- title: "Remote Work and What It Means for the Future of Network Architecture"
+  link: 'https://www2.adaptiva.com/resources/ebook/endpoint-mgmt-covid/thankyou/rmcmg'
+  date: 20200921
+  posted: 'September 21 2020'
+  type: document
+  classes:
+    - class: 'report'
+  categories:
+    - category: 'Ebooks & Reports'
+
+- title: "Enabling Remote Work in a COVID-19 World with Total Endpoint Visibility & Control"
+  link: 'https://www2.adaptiva.com/resources/webinar/enabling-remote-work-covid-19'
+  date: 20200928
+  posted: 'September 28 2020'
+  type: document
+  classes:
+    - class: 'report'
+  categories:
+    - category: 'Ebooks & Reports'
+
 - title: "Enabling Remote Work in a COVID-19 World with Total Endpoint Visibility & Control"
   link: 'https://www2.adaptiva.com/resources/webinar/enabling-remote-work-covid-19'
   date: 20201007
