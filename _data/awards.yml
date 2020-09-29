@@ -1,7 +1,32 @@
+- org:  Stevie Awards 
+  award: Achievement in Customer Satisfaction (Silver)
+  product: solutions and support team
+  year: '2020'
+  
+- org:  Stevie Awards 
+  award: Achievement in Growth (Silver)
+  product: Adaptiva
+  year: '2020'
+  
+- org: SVUS Awards®
+  award:  Customer Service and Support Team (Bronze)
+  product: solutions and support team
+  year: '2020'
+  
 - org: IT World Awards
-  award: Best New Products or Services of the Year, Security Software (Gold)
+  award: Best Product - Enterprise Mobility Management (Gold)
+  product: OneSite VMWare Edition
+  year: '2020'
+  
+- org: Cyber Defense Magazine - InfoSec Awards 2020
+  award:  Hot Company Endpoint Security
   product: Evolve VM
-  year: '2019'
+  year: '2020'
+  
+- org:  Stevie Awards 
+  award: Front-Line Customer Service Team of the Year (Silver)
+  product: solutions and support team
+  year: '2020'
 
 - org: Stevie Awards
   award: Marketing Campaign of the Year (Gold)
