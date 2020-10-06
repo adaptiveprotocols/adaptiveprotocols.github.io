@@ -800,6 +800,8 @@ section.location .tile h2 { font-size: 1.618rem; }
 .sales-map .territory#geza { top: 46%; left: 48%; }
 .sales-map .territory.geza { background: #f9ef3b; }
 .sales-map .territory#africa { bottom: 20%; right: 45%; }
+.sales-map .territory#wayne-collier { left: 50%; top: 41%; background: #ff902c; }
+.sales-map .territory#torsten-wiedemeyer { left: 52%; top: 44%; background: #ed4e39; }
 .sales-map .territory.ada-hq { background: #41cdfc; }
 .sales-map .territory#row-3 { bottom: 18%; left: 34%; }
 .sales-map .territory#row-2 { bottom: 14%; right: 13%; }
@@ -1366,6 +1368,8 @@ li.text-center.float25.full-600 p { font-size: 16px; padding: 0 28px; }
 .cs-contact-section .w33 { padding-right: 2%; color: #aaa; font-size: 14px; }
 
 .cs-contact-section p { color: #aaa; font-size: 14px; }
+
+.feature-horz-list img { height: 70px; }
 
 @media (max-width: 1200px) { .stat { padding: 0 3%; }
   .stat-number { font-size: calc(10vw * .6); } }

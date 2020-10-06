@@ -51,31 +51,32 @@ jQuery(document).ready(function($) {
             $('html,body').css('overflow', '').off('touchmove');
             return false;
         }
-        $('.territory').click(function(){ // user clicks on dot on map
+        // user clicks on dot on map
+        $('.territory').click(function(){ 
             var salesID = $(this).data('territory'); // get sales guy
             $salesProfile.addClass('is-visible'); // add mod class to all profiles
-
-            $('.sales-map-profile#' + salesID) // find profile with same ID as clicked dot
-                .addClass('is-current') // add mod class for current item
-                .show(); // show profile for clicked dot
+            // find profile with same ID as clicked dot
+            // add mod class for current item 
+            // show profile for clicked dot
+            $('.sales-map-profile#' + salesID).addClass('is-current').show();
 
             $('html,body').css('overflow','hidden').on('touchmove', function(e){
                     e.preventDefault(); // prevent default behavior on touch devices
             });
-            $(document).keydown(function(e){
-                switch(e.which) {
-                    case 37: prevProfile();
-                    break;
-                    case 39: nextProfile();
-                    break;
-                    case 27: closeProfile();
-                    break;
-                    default: return;
-                }
-                e.preventDefault();
-            });
+            
         });
-
+        $(document).keydown(function(e){
+            switch(e.which) {
+                case 37: prevProfile();
+                break;
+                case 39: nextProfile();
+                break;
+                case 27: closeProfile();
+                break;
+                default: return;
+            }
+            e.preventDefault();
+        });
         $('.js-prev').click(prevProfile); // previous arrow triggers previous profile
         $('.js-next').click(nextProfile); // next arrow triggers next profile
         $('.js-sales-close').click(closeProfile); // close profile when user clicks X
