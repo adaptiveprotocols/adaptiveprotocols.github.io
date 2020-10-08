@@ -48,6 +48,16 @@
   categories:
     - category: 'Webinar'
 
+- title: "Adaptiva OneSite Cloud Demo"
+  link: 'https://www2.adaptiva.com/resources/demo/onesite-cloud/on-demand'
+  date: 20201008
+  posted: 'October 08 2020'
+  type: video
+  classes:
+    - class: 'video'
+  categories:
+    - category: 'video'
+
 - title: "Adaptiva OneSite Cloud – Live Demo: Software Delivery Everywhere"
   link: 'https://www2.adaptiva.com/resources/webinar/onesite-cloud-demo'
   date: 20200708
