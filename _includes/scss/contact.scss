@@ -75,8 +75,8 @@ section.location {
   .territory {
     display: block;
     position: absolute;
-    width: 16px;
-    height: 16px;
+    width: 13px;
+    height: 13px;
     border-radius: 50%;
     opacity: 0;
     transition: transform 200ms $transition-pop, opacity 600ms linear;
@@ -91,15 +91,15 @@ section.location {
       left: 12.6%;
     }
     &#jeffrey-day {
-      top: 42%;
-      left: 46%;
+      top: 55%;
+      left: 56%;
     }
 		&.jeffrey-day {
 			background: $red;
 		}
     &#rich-helgeson {
       top: 48%;
-      left: 27%;
+      left: 24%;
     }
 		&.rich-helgeson {
 			background: $orange;
@@ -121,6 +121,26 @@ section.location {
     &#africa {
       bottom: 20%;
       right: 45%;
+    }
+    &#brian-warren {
+        left: 24%; top: 53%;
+        background: $blue;
+    }
+    &#jeff-canfield {
+        left: 26%; top: 52%;
+        background: $bright-blue;
+    }
+    &#nicolas-ippolito {
+        left: 47%; top: 49%;
+        background: $purple;
+    }
+    &#samir-shah {
+        left: 15%; top: 51%;
+        background: $blue;
+    }
+    &#bob-goldsmith {
+        left: 27%; top: 50%;
+        background:$green;
     }
     &#wayne-collier {
         left: 50%; top: 41%;
