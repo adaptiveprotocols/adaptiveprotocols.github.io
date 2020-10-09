@@ -90,32 +90,25 @@ section.location {
       bottom: 50%;
       left: 12.6%;
     }
-    &#jeffrey-day {
-      top: 55%;
-      left: 56%;
-    }
-		&.jeffrey-day {
-			background: $red;
-		}
     &#rich-helgeson {
       top: 48%;
       left: 24%;
     }
-		&.rich-helgeson {
-			background: $orange;
-		}
-		&#bob-rooney {
-			bottom: 46%;
-			left: 13%;
-		}
-		&.bob-rooney {
-			background: $green;
-		}
-    &#geza {
+    &.rich-helgeson {
+        background: $orange;
+    }
+    &#bob-rooney {
+        bottom: 46%;
+        left: 13%;
+    }
+    &.bob-rooney {
+        background: $green;
+    }
+    &#jeffrey-day {
       top: 46%;
       left: 48%;
     }
-    &.geza {
+    &.jeffrey-day {
       background: $yellow;
     }
     &#africa {
@@ -166,8 +159,8 @@ section.location {
       right: 19%;
 		}
     &#david-sommerville {
-      top: 55%;
-      left: 21%;
+      top: 50%;
+      left: 19%;
     }
 		&.david-sommerville {
 			background: $purple;
