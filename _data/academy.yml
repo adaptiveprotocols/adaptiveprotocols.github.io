@@ -8,6 +8,16 @@
   categories:
     - category: 'Ebooks & Reports'
 
+- title: "Managing and Securing Endpoints in the COVID-19 Era"
+  link: 'https://www2.adaptiva.com/resources/ebook/managing-securing-endpoints-covid'
+  date: 20201014
+  posted: 'October 14 2020'
+  type: document
+  classes:
+    - class: 'report'
+  categories:
+    - category: 'Ebooks & Reports'
+
 - title: "Endpoint Management and Security in a Work From Home World"
   link: 'https://www2.adaptiva.com/resources/ebook/endpoint-mgmt-wfh'
   date: 20200928
