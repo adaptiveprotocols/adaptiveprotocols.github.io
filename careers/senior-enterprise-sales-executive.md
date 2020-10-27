@@ -1,6 +1,7 @@
 ---
 layout: job
-title: Senior Enterprise Sales Executive, Public Sector – Federal, State and Local U.S.A
+title: Senior Enterprise Sales Executive
+subtitle: Public Sector – Federal, State and Local U.S.A
 meta: "Apply for the Front End Engineer Senior Enterprise Sales Executive"
 bodyclass: job
 published: true
@@ -38,4 +39,6 @@ Flexible, though residence within the central or eastern time zones preferred.  
 
 ## Compensation and Benefits
 The compensation plan includes a competitive base salary, variable (commission), bonuses as well as a comprehensive benefits package.  You will also be eligible for our employee Phantom Stock Plan.
+
+FLSA Status: Exempt
  

@@ -24,6 +24,7 @@ a.job {
   transition: opacity 1000ms, box-shadow 500ms $transition-ease-in;
   @include boxshadow($boxshadow-sm-10);
   opacity: 0;
+  
   span {
     position: absolute;
     top: 50%;
@@ -31,6 +32,7 @@ a.job {
     right: $spacing-small;
     transition: 300ms $transition-ease-in;
   }
+  .sub-title {font-size: 14px;}
   @media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
     &:hover {
       @include boxshadow($boxshadow-med-20);
