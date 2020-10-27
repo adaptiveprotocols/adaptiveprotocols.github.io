@@ -90,9 +90,6 @@ redirect_from: "/jobs"
           {% if job.layout == 'job' %}
           <a href="{{job.url}}" class="job js-scroll" title="Apply for {{job.title}}">
             {{job.title}}
-            {% if job.subtitle %}
-            <div class="sub-title">{{ job.subtitle }}</div>
-            {% endif %}
             <span>{% include svg/arrow.svg width="16" color="orange" %}</span>
           </a>
           {% endif %}

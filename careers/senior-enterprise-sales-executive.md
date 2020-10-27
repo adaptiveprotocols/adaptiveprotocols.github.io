@@ -1,7 +1,6 @@
 ---
 layout: job
-title: Senior Enterprise Sales Executive
-subtitle: Public Sector – Federal, State and Local U.S.A
+title: Sr. Enterprise Sales Executive, U.S. Public Sector
 meta: "Apply for the Front End Engineer Senior Enterprise Sales Executive"
 bodyclass: job
 published: true
