@@ -971,6 +971,8 @@ section.hero#brand::before { content: ''; display: block; position: absolute; to
 /* Root Variables */
 :root { --val-baseline: 20px; }
 
+p.caption { line-height: 1em; }
+
 /* need to float things? we got you covered. */
 .left, .floatleft { float: left !important; }
 
@@ -1053,6 +1055,8 @@ section.hero#brand::before { content: ''; display: block; position: absolute; to
 .text-col { width: 100%; max-width: 880px; margin: 0 auto; }
 
 .inline-top { vertical-align: top; }
+
+.w80 { width: 80%; }
 
 .w50 { width: 50%; }
 
