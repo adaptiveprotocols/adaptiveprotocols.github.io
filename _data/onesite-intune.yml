@@ -1,0 +1,44 @@
+
+- title: "Adaptiva OneSite Cloud: Brochure"
+  link: "https://www2.adaptiva.com/resources/datasheet/onesite-cloud?_ga=2.151335423.791118108.1600107679-1785018393.1595620638"
+  date: 20200618
+  order: 1
+  posted: 'June 18 2020'
+  type: document
+  classes:
+    - class: 'document'
+  categories:
+    - category: 'document'
+
+- title: "Enabling Remote Work in a COVID-19 World with Total Endpoint Visibility & Control"
+  link: "https://www2.adaptiva.com/resources/webinar/enabling-remote-work-covid-19?_ga=2.126490187.791118108.1600107679-1785018393.1595620638"
+  date: 20200618
+  order: 2
+  posted: 'June 18 2020'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "Endpoint Management and Security in a Work From Home World"
+  link: 'https://www2.adaptiva.com/resources/ebook/endpoint-mgmt-wfh'
+  date: 20200811
+  order: 3
+  posted: 'August 12 2020'
+  type: document
+  classes:
+    - class: 'document'
+  categories:
+    - category: 'document'
+
+- title: "Adaptiva + Large Enterprise Financial Service Company"
+  link: 'https://insights.adaptiva.com/downloads/CaseStudies/large-enterprise-financial-services-case-study.pdf?_ga=2.81466961.791118108.1600107679-1785018393.1595620638'
+  date: 20200429
+  order: 4
+  posted: 'April 29 2020'
+  type: document
+  classes:
+    - class: 'document'
+  categories:
+    - category: 'document'

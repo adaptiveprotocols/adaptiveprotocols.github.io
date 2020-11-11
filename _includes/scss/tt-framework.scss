@@ -2,6 +2,9 @@
 :root {
 	--val-baseline:				20px;
 }
+
+p.caption {line-height:1em}
+
 /* need to float things? we got you covered. */
 .left, .floatleft { float: left !important; }
 .right, .floatright { float: right !important; }
@@ -54,6 +57,7 @@
 .text-col {width: 100%; max-width: 880px; margin: 0 auto;}
 .inline-top {vertical-align: top;}
 
+.w80 {width: 80%}
 .w50 {width: 50%;}
 .w33 {width: 33.33%;}
 .w25 {width: 25%;}
