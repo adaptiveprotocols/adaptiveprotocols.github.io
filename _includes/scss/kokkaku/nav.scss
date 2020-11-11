@@ -12,7 +12,7 @@ section.navbar {
   }
   &.is-scrolled {
     background: rgba($darkest-blue, .99);
-    height: 68px;
+    height: 60px;
   }
   .logo {
     position: relative;
@@ -24,11 +24,12 @@ section.navbar {
     }
   }
   @media #{$tablet}, #{$mobile} {
-    height: 68px;
+    height: 60px;
   }
 }
 .nav {
-  height: 100%;
+  margin-top: 40px; 
+  transition: 400ms cubic-bezier(.13,.78,.3,.99);
   width: calc(100% - 195px);
   ul {
     list-style-type: none;
@@ -43,23 +44,29 @@ section.navbar {
     display: inline-block;
     height: 100%;
     padding: 0;
+    position: relative;
+    line-height: 1em;
+    &:hover > .sub-menu {
+        display: block;
+    }
     &.header-demo-btn {
         position: absolute;
         right:24px;
-        top:50%;
+        top:20%;
         transform: translateY(-50%);
         height: auto;
     }
     a {
-      display: block;
-      position: relative;
-      line-height: 110px;
-      padding: 0 1.25rem;
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: bold;
-      text-transform: uppercase;
-      color: $white;
+        display: block;
+        position: relative;
+        padding: 0 1.25rem 17px;
+        text-decoration: none;
+        color: $white;
+        transition: 400ms cubic-bezier(.13,.78,.3,.99);
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 15px;
+        position: relative;
       &.cta {
           padding:0;
           line-height: 1em;
@@ -81,7 +88,7 @@ section.navbar {
           content: '';
           display: block;
           position: absolute;
-          bottom: $spacing-normal;
+          bottom: 0px;
           left: 0;
           width: 0;
           height: 2px;
@@ -109,6 +116,30 @@ section.navbar {
           }
         }
       }
+     
+    }
+    .sub-menu {
+        position: absolute;
+        position: absolute;
+        left: 0;
+        top: calc(100% - 1px);
+        width: 200px;
+        display: none;
+        height: auto;
+        padding-top: 10px;
+        li {
+            margin-bottom: 0px;
+            padding: 0;
+            a {
+                line-height: 1.1em;
+                font-size: 13px;
+                padding-bottom: 15px;
+                &::before {
+                    display: none !important;
+                }
+            }
+           
+        }
     }
   }
   @media #{$tablet}, #{$mobile} {
@@ -119,6 +150,7 @@ section.navbar {
     background: rgba($white, 0.98);
     transition: 600ms $transition-ease-in;
     overflow: hidden;
+    margin-top: 0px;
     ul {
       text-align: left;
       padding-top: 68px;
@@ -128,7 +160,7 @@ section.navbar {
     li.nav-item {
       height: auto;
       display: block;
-      margin-bottom: $spacing-small;
+      margin-bottom: 0px;
       &.header-demo-btn {
           position: relative;
           right: auto;
@@ -174,6 +206,14 @@ section.navbar {
 			    text-transform: none;
         }
       }
+      .sub-menu {
+          display: block;
+          position: relative;
+          width: auto;
+          padding-left: 10px;
+          padding-top: 0px;
+            li a {padding-bottom: 0px !important;}
+        }
     }
     &.is-visible {
       right: 0;
@@ -191,27 +231,39 @@ section.navbar {
 }
 section.navbar.is-scrolled {
   @include boxshadow($boxshadow-sm-30);
-  li.nav-item {
-    a {
-      @media #{$tablet}, #{$mobile} {
-        line-height: $spacing-small;
-      }
-      @media #{$desktop-sm},#{$desktop},#{$desktop-xl} {
-				line-height: 68px;
-	      &.button {
-	        line-height: 42px;
-	        padding: 0 $spacing-small;
+  .nav {
+      margin-top: 20px;
+      li.nav-item {
+        a {
+          @media #{$tablet}, #{$mobile} {
+            line-height: $spacing-small;
           }
-          &.cta {
-              line-height: 1em;
-              padding:2px;
+          @media #{$desktop-sm},#{$desktop},#{$desktop-xl} {
+              &.button {
+                line-height: 42px;
+                padding: 0 $spacing-small;
+              }
+              &.cta {
+                  line-height: 1em;
+                  padding:2px;
+                }
+            &::before {
+              bottom: 0;
             }
-        &::before {
-          bottom: 0;
+          }
         }
       }
-    }
+      .sub-menu {
+          background-color: #031d39;
+      }
+      @media #{$tablet}, #{$mobile} {
+        margin-top: 0px;
+        .sub-menu {
+            background-color:transparent;
+        }
+      }
   }
+  
 }
 .logo {
   display: block;
