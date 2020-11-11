@@ -1566,6 +1566,16 @@
   categories:
     - category: 'Ebooks & Reports'
 
+- title: "OneSite Intune Edition Datasheet"
+  link: 'https://www2.adaptiva.com/resources/download/datasheet/onesite-intune-edition'
+  date: 20101110
+  posted: 'November 10 2020'
+  type: document
+  classes:
+    - class: 'product-resource'
+  categories:
+    - category: 'Product Resource'
+
 - title: "OneSite VMware Edition Brochure"
   link: 'https://insights.adaptiva.com/downloads/datasheets/onesite-vmware-edition-datasheet.pdf'
   date: 20190826
