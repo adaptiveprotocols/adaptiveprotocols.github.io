@@ -1157,6 +1157,8 @@ p.caption { line-height: 1em; }
 
 .grad-dblue-lblue-reverse, .asset-title.grad-dblue-lblue-reverse { background-image: linear-gradient(#275797, #002546); }
 
+.text-white { color: #fff; }
+
 .diffuse-shadow, .responsive-video.diffuse-shadow { box-shadow: 0 10px 44px rgba(0, 0, 0, 0.3); }
 
 .brochure-cta img, .image-max img, .img-max { max-width: 100%; }
@@ -1377,7 +1379,7 @@ li.text-center.float25.full-600 p { font-size: 16px; padding: 0 28px; }
 
 .cs-hero { padding-top: 150px; }
 
-.cs-section--dark, .cs-section--dark h2, .cs-section--dark h3, .cs-section--dark h4, .cs-section--dark p, .cs-section--dark li { color: #fff; }
+.cs-section--dark, .cs-section--dark h2, .cs-section--dark h3, .cs-section--dark h4, .cs-section--dark p, .cs-section--dark li, .cs-section--dark .cs-main-text blockquote { color: #fff; }
 
 .cs-section--dark .cs-sidebar__info h2, .cs-section--dark .cs-sidebar__info h3 { color: #0860b8; }
 
