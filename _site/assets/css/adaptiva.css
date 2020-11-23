@@ -1368,6 +1368,8 @@ li.text-center.float25.full-600 p { font-size: 16px; padding: 0 28px; }
 
 .sidebar__info { margin-top: 40px; }
 
+.cs-sidebar__info li { font-size: 16px; padding-left: 0px; }
+
 /* Case Study Single */
 #hero-eh-fortune-500 { background-image: url("/assets/img/case-studies/case-study-bg.jpg"); }
 
@@ -1490,6 +1492,7 @@ li.text-center.float25.full-600 p { font-size: 16px; padding: 0 28px; }
   .section-image { display: none; }
   .cs-sidebar__info { position: relative; background-color: #ddd; }
   .cs-sidebar__info { text-align: center; }
+  .cs-sidebar__info ul { text-align: left; }
   .feature-text.inline33 { padding-right: 0px; }
   .distro-issues.inline33 { width: 50%; }
   .q-slide .quote p { font-size: 26px; }
