@@ -1,3 +1,13 @@
+- title: "BranchCache Vs. OneSite Datasheet"
+  link: 'https://www2.adaptiva.com/resources/datasheet/branchcache-onesite'
+  date: 20201120
+  posted: 'November 20 2020'
+  type: document
+  classes:
+    - class: 'technology-comparison'
+  categories:
+    - category: 'Technology Comparison'
+
 - title: "Remote Work and What It Means for the Future of Network Architecture"
   link: 'https://www2.adaptiva.com/resources/ebook/endpoint-mgmt-covid'
   date: 20200921
@@ -782,16 +792,6 @@
     - class: 'report'
   categories:
     - category: 'Ebooks & Reports'
-
-- title: "OneSite vs. BranchCache Comparison Datasheet"
-  link: 'https://www2.adaptiva.com/datasheet/onesite-vs-branchcache'
-  date: 20160908
-  posted: 'September 8 2016'
-  type: document
-  classes:
-    - class: 'technology-comparison'
-  categories:
-    - category: 'Technology Comparison'
 
 - title: "SCCM + OneSite vs. SCCM Standalone Comparison"
   link: 'https://www2.adaptiva.com/brochure/sccm-with-without-onesite'
