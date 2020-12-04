@@ -1,12 +1,22 @@
-- title: "BranchCache Vs. OneSite Datasheet"
-  link: 'https://www2.adaptiva.com/resources/datasheet/branchcache-onesite'
-  date: 20201120
-  posted: 'November 20 2020'
+- title: "Endpoint Management and Security at Scale in a Remote Work Reality"
+  link: 'https://adaptiva.ewebinar.com/webinar/endpoint-management-and-security-at-scale-in-a-remote-work-reality-239'
+  date: 20201209
+  posted: 'December 9 2020'
   type: document
   classes:
     - class: 'technology-comparison'
   categories:
     - category: 'Technology Comparison'
+
+- title: "BranchCache Vs. OneSite Datasheet"
+  link: 'https://www2.adaptiva.com/resources/datasheet/branchcache-onesite'
+  date: 20201120
+  posted: 'November 20 2020'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
 
 - title: "Remote Work and What It Means for the Future of Network Architecture"
   link: 'https://www2.adaptiva.com/resources/ebook/endpoint-mgmt-covid'

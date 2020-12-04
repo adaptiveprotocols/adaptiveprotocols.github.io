@@ -70,7 +70,7 @@ section.navbar {
       &.cta {
           padding:0;
           line-height: 1em;
-          padding: 3px; display: inline-block; text-transform: uppercase;background-image:linear-gradient(-45deg,#4DCF83,#275797,#fff); transition: all .5s ease;box-shadow:0 10px 44px rgba(0, 0, 0, 0.3); background-size: 200%; background-position: 100%;
+          padding: 2px; display: inline-block; text-transform: uppercase;background-image:linear-gradient(-45deg,#4DCF83,#275797,#fff); transition: all .5s ease;box-shadow:0 10px 44px rgba(0, 0, 0, 0.3); background-size: 200%; background-position: 100%;
           &:hover { 
             background-position:200%;
             .cta-inner {
