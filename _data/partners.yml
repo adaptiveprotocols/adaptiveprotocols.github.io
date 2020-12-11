@@ -8,42 +8,42 @@
   link: 'http://avanade.com'
   big: true
 
-- name: Better Direct
-  png: better-direct-logo.png
-  link: 'http://betterdirect.com/'
-  sq: true
+# - name: Better Direct
+#   png: better-direct-logo.png
+#   link: 'http://betterdirect.com/'
+#   sq: true
 
 - name: Blue Turtle Technologies
   png: blue-turtle-logo.png
   link: 'http://blueturtle.co.za/'
 
-- name: Capita
-  svg: capita-logo.svg
-  link: 'http://capita.com'
+# - name: Capita
+#   svg: capita-logo.svg
+#   link: 'http://capita.com'
 
-- name: CDW
-  svg: cdw-logo.svg
-  link: 'https://cdw.com'
+# - name: CDW
+#   svg: cdw-logo.svg
+#   link: 'https://cdw.com'
 
-- name: Cellent AG
-  svg: cellent-logo.svg
-  link: 'http://cellent.de'
+# - name: Cellent AG
+#   svg: cellent-logo.svg
+#   link: 'http://cellent.de'
 
-- name: Compucom
-  svg: compucom-logo.svg
-  link: 'http://compucom.com'
+# - name: Compucom
+#   svg: compucom-logo.svg
+#   link: 'http://compucom.com'
 
-- name: Compugen
-  png: compugen-logo.png
-  link: 'http://www.compugen.com/'
+# - name: Compugen
+#   png: compugen-logo.png
+#   link: 'http://www.compugen.com/'
 
-- name: Concurrency
-  svg: concurrency-logo.svg
-  link: 'http://concurrency.com'
+# - name: Concurrency
+#   svg: concurrency-logo.svg
+#   link: 'http://concurrency.com'
 
-- name: Data3
-  png: data-3-logo.png
-  link: 'http://data3.com'
+# - name: Data3
+#   png: data-3-logo.png
+#   link: 'http://data3.com'
 
 # - name: Dilignet
 #   png: dilignet-logo.png
@@ -58,21 +58,21 @@
   link: 'http://www.dxc.technology/'
   big: true
 
-- name: FlexManage
-  png: flex-manage.png
-  link: 'http://flexmanage.com'
+# - name: FlexManage
+#   png: flex-manage.png
+#   link: 'http://flexmanage.com'
 
-- name: Flexera
-  png: flexera-logo.png
-  link: 'http://flexera.com'
+# - name: Flexera
+#   png: flexera-logo.png
+#   link: 'http://flexera.com'
 
 - name: Fujitsu
   svg: fujitsu-logo.svg
   link: 'http://www.fujitsu.com/'
 
-- name: HEAT Software
-  svg: heat-logo.svg
-  link: 'http://flexmanage.com'
+# - name: HEAT Software
+#   svg: heat-logo.svg
+#   link: 'http://flexmanage.com'
 
 - name: Hewlett-Packard
   svg: hp-logo.svg
@@ -82,27 +82,27 @@
   svg: hpe-logo.svg
   link: 'https://hpe.com'
 
-- name: IBM
-  svg: ibm-logo.svg
-  link: 'http://ibm.com'
-  big: true
+# - name: IBM
+#   svg: ibm-logo.svg
+#   link: 'http://ibm.com'
+#   big: true
 
-- name: Infront Consulting Group
-  svg: infront-consulting-logo.svg
-  link: 'http://www.infrontconsulting.com/'
+# - name: Infront Consulting Group
+#   svg: infront-consulting-logo.svg
+#   link: 'http://www.infrontconsulting.com/'
 
 - name: Insight
   png: insight-logo.png
   link: 'http://www.insight.com/'
   sq: true
 
-- name: Juriba
-  svg: juriba-logo.svg
-  link: 'http://juriba.com/'
+# - name: Juriba
+#   svg: juriba-logo.svg
+#   link: 'http://juriba.com/'
 
-- name: MCPC
-  png: mcpc-logo.png
-  link: 'http://mcpc.com'
+# - name: MCPC
+#   png: mcpc-logo.png
+#   link: 'http://mcpc.com'
 
 - name: Microsoft
   svg: microsoft-logo.svg
@@ -119,24 +119,24 @@
   link: 'https://www.oktik.net/'
   sq: true
 
-- name: NTT Data
-  svg: ntt-data-logo.svg
-  link: 'http://www.nttdata.com/global/en/'
+# - name: NTT Data
+#   svg: ntt-data-logo.svg
+#   link: 'http://www.nttdata.com/global/en/'
 
-- name: Prosource Solutions
-  png: prosource-solutions-logo.png
-  link: 'http://prosource-corp.com/'
-  sq: true
+# - name: Prosource Solutions
+#   png: prosource-solutions-logo.png
+#   link: 'http://prosource-corp.com/'
+#   sq: true
 
-- name: SHI International
-  svg: shi-logo.svg
-  link: 'http://shi.com/'
-  sq: true
+# - name: SHI International
+#   svg: shi-logo.svg
+#   link: 'http://shi.com/'
+#   sq: true
 
-- name: SMSMarshall
-  png: sms-marshall-logo.png
-  link: 'http://smsmarshall.com/'
-  sq: true
+# - name: SMSMarshall
+#   png: sms-marshall-logo.png
+#   link: 'http://smsmarshall.com/'
+#   sq: true
 
 - name: SoftwareONE
   svg: software-one-logo.svg
@@ -159,9 +159,9 @@
   png: windows-management-experts-logo.png
   link: 'http://www.windowsmanagementexperts.com/'
 
-- name: World Wide Technology
-  png: world-wide-technology-logo.png
-  link: 'https://www2.wwt.com/'
+# - name: World Wide Technology
+#   png: world-wide-technology-logo.png
+#   link: 'https://www2.wwt.com/'
 
 - name: Xello
   png: xello.png
