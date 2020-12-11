@@ -109,10 +109,10 @@
   link: 'http://microsoft.com'
   big: true
 
-- name: Netrix
-  png: netrix-logo.png
-  link: 'http://netrixllc.com/'
-  sq: true
+# - name: Netrix
+#   png: netrix-logo.png
+#   link: 'http://netrixllc.com/'
+#   sq: true
 
 - name: OkTik
   png: oktik.png
