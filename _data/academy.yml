@@ -307,7 +307,7 @@
     - category: 'Webinar'
 
 - title: "TNT Uses OneSite to Streamline SCCM Infrastructure"
-  link: 'https://www2.adaptiva.com/resources/download/case-study/tnt'
+  link: '/resources/case-study/tnt-case-study'
   date: 20160209
   posted: 'February 09 2016'
   type: document
@@ -683,7 +683,7 @@
     - category: 'Video'
 
 - title: "Five Star Overcomes OSD and WAN Hurdles with OneSite"
-  link: 'https://www2.adaptiva.com/resources/download/case-study/five-star-quality-care'
+  link: '/resources/case-study/five-star-quality-care-case-study'
   date: 20160209
   posted: 'February 9 2016'
   type: document
@@ -703,7 +703,7 @@
     - category: 'Case Study'
 
 - title: "Customer Case Study: AECOM"
-  link: 'https://www2.adaptiva.com/resources/download/case-study/aecom'
+  link: '/resources/case-study/customer-case-study-aecom'
   date: 20161207
   posted: 'December 7 2016'
   type: document
