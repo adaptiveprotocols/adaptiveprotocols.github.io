@@ -1,3 +1,14 @@
+- title: "OKTiK Technology Partners with Adaptiva to Help Coca Cola European Partners Build a Unified Digital Workplace"
+  link: 'https://adaptiva.com/resources/case-study/oktik-technology-and-coca-cola-europe/'
+  date: 20210119
+  posted: 'January 19 2021'
+  type: document
+  classes:
+    - class: 'case-study'
+  categories:
+    - category: 'Case Study'
+
+
 - title: "Endpoint Management and Security at Scale in a Remote Work Reality"
   link: 'https://adaptiva.ewebinar.com/webinar/endpoint-management-and-security-at-scale-in-a-remote-work-reality-239'
   date: 20201209
@@ -306,7 +317,7 @@
   categories:
     - category: 'Webinar'
 
-- title: "TNT Uses OneSite to Streamline SCCM Infrastructure"
+- title: "TNT Eliminates 430 Servers and saves £1 million with OneSite"
   link: 'https://www2.adaptiva.com/resources/download/case-study/tnt'
   date: 20160209
   posted: 'February 09 2016'
@@ -596,7 +607,7 @@
   categories:
     - category: 'Product Resource'
 
-- title: "Endpoint Health Case Study: Fortune 500 Retailer"
+- title: "Fortune 500 Retailer resolves thousands of endpoint health and security problems with Endpoint Health"
   link: 'https://adaptiva.com/resources/case-study/endpoint-health-fortune-500/'
   date: 20200305
   posted: 'March 5 2020'
@@ -692,7 +703,7 @@
   categories:
     - category: 'Case Study'
 
-- title: "Skanska’s James Pitcher on SCCM OSD and Security with OneSite"
+- title: "Skanka Massively Simplifies its SCCM Infrastructure with OneSite"
   link: 'https://adaptiva.com/blog/2016/sccm-osd-interview-skanska/'
   date: 20160126
   posted: 'January 26 2016'
@@ -702,7 +713,7 @@
   categories:
     - category: 'Case Study'
 
-- title: "Customer Case Study: AECOM"
+- title: "AECOM Eliminates the Need for 1,500 Servers and Accelerates OSD with OneSite"
   link: 'https://www2.adaptiva.com/resources/download/case-study/aecom'
   date: 20161207
   posted: 'December 7 2016'
@@ -1376,7 +1387,7 @@
   categories:
     - category: 'Video'
 
-- title: "Adaptiva + Fortune 100 Financial Services Organization"
+- title: "Fortune 100 Financial Services Organization Accelerates Windows 10 Migration with OneSite"
   link: 'https://adaptiva.com/resources/case-study/adaptiva-fortune-100-financial-services-organization/'
   date: 20181218
   posted: 'December 12 2018'
@@ -1496,7 +1507,7 @@
   categories:
     - category: 'Podcast'
 
-- title: "Adaptiva + Large Enterprise Financial Services Company"
+- title: "Large Enterprise Financial Services Company Achieves Dramatic Infrastructure Reduction with OneSite"
   link: 'https://adaptiva.com/resources/case-study/adaptiva-large-enterprise-financial-services-company/'
   date: 20190529
   posted: 'May 29 2019'
