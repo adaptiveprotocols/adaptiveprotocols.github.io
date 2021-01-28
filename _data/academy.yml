@@ -23,11 +23,11 @@
   link: 'https://www2.adaptiva.com/resources/datasheet/branchcache-onesite'
   date: 20201120
   posted: 'November 20 2020'
-  type: webinar
+  type: product-resource
   classes:
-    - class: 'webinar'
+    - class: 'product-resource'
   categories:
-    - category: 'Webinar'
+    - category: 'product-resource'
 
 - title: "Remote Work and What It Means for the Future of Network Architecture"
   link: 'https://www2.adaptiva.com/resources/ebook/endpoint-mgmt-covid'
