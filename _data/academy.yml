@@ -10,14 +10,14 @@
 
 
 - title: "Endpoint Management and Security at Scale in a Remote Work Reality"
-  link: 'https://adaptiva.ewebinar.com/webinar/endpoint-management-and-security-at-scale-in-a-remote-work-reality-239'
+  link: 'https://www2.adaptiva.com/resources/webinar/endpoint-management-security-2020'
   date: 20201209
   posted: 'December 9 2020'
   type: document
   classes:
-    - class: 'technology-comparison'
+    - class: 'webinar'
   categories:
-    - category: 'Technology Comparison'
+    - category: 'Webinar'
 
 - title: "BranchCache Vs. OneSite Datasheet"
   link: 'https://www2.adaptiva.com/resources/datasheet/branchcache-onesite'
