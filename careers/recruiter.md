@@ -1,6 +1,6 @@
 ---
 layout: job
-title: Recruiter
+title: Technical Recruiter
 meta: "Apply for the recruiter position at Adaptiva HQ in Kirkland, WA"
 bodyclass: job
 published: true
