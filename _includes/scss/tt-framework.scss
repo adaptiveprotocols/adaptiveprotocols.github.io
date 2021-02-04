@@ -283,6 +283,7 @@ opacity: .6; background-size: cover;content:''; background-size: cover; width:10
 #pagination {width: 100%; text-align: center;}
 .pag {width: 15px; height: 15px; background-color: #fff; border-radius: 50%; margin: 10px 10px; display: inline-block; cursor: pointer;}
 .pag.active-pag, .pag:hover {background-color: #0860b8;}
+
 @media (max-width: 1200px){
     .stat {padding:0 3%;} 
     .stat-number {font-size: calc(10vw * .6);}
