@@ -1284,6 +1284,8 @@ h1.grey, h2.grey, h3.grey, li.grey, p.grey { color: #ccc; }
 
 .product-subhero-text { transform: translateY(-75px); }
 
+body.onesite-cloud .home-banner .left.text-right.full-800 { margin-top: 18px; }
+
 .download-wrap { width: 170px; margin: 0 auto; transform: translateY(-100px); text-align: center; float: right; opacity: 0; transition: all 0.5s ease; }
 
 .download-wrap.active { transform: translateY(-154px); opacity: 1; }
@@ -1487,7 +1489,9 @@ li.text-center.float25.full-600 p { font-size: 16px; padding: 0 28px; }
   .angle-separator { display: none; }
   .product-subhero { padding-top: 40px; }
   .product-subhero .float33.right { float: left !important; margin: 0 20px 20px 0; width: 33.33%; }
+  body.onesite-cloud .product-subhero .float33.right { margin-top: 80px; }
   .download-wrap { transform: translateY(0); float: left; margin-top: -100px; }
+  body.onesite-cloud .product-subhero .download-wrap.active { transform: translateY(0); }
   .products-hero { padding: 20vw 0 20vw; }
   .p-subhero-content { transform: translateY(-50px); }
   .product-subhero-text { transform: translateY(0); }
@@ -1506,6 +1510,7 @@ li.text-center.float25.full-600 p { font-size: 16px; padding: 0 28px; }
   .stat-number { font-size: 60px; }
   .product-subhero .float33.right { float: none !important; }
   .download-wrap { float: none; display: block; margin: 10px auto 0; }
+  body.onesite-cloud .product-subhero .download-wrap.active { transform: translateY(-134px); }
   .home-hero h1 { font-size: 34px; }
   .product-hero h1, .products-hero h1 { font-size: 34px; }
   .product-subhero-text { margin-top: -120px; }

@@ -183,6 +183,7 @@ h1.grey, h2.grey, h3.grey,li.grey,p.grey {color: #ccc;}
 .angle-separator:before{position: absolute;height: calc(100% + 1px);transform: translateX(-100%); width: calc(100vw - 1200px);left: 30px; background-color: #eeeeee; transform-origin: top;}
 .angle-separator:after {position: absolute; height: calc(100% + 1px); transform: skewX(45deg); width: 100vw; right: 41.33%; background-color: #eeeeee; transform-origin: top left;}
 .product-subhero-text {transform: translateY(-75px);}
+body.onesite-cloud .home-banner .left.text-right.full-800 {margin-top: 18px;}
 .download-wrap {width: 170px;margin: 0 auto;transform: translateY(-100px); text-align: center;float: right; opacity: 0; transition: all 0.5s ease;}
 .download-wrap.active {transform: translateY(-154px); opacity: 1;}
 .download-wrap p{color: #275797; font-weight: bold;}
@@ -311,8 +312,10 @@ opacity: .6; background-size: cover;content:''; background-size: cover; width:10
     .big-p {font-size: 1.3em;}
     .angle-separator {display: none;}
     .product-subhero {padding-top: 40px;}
-    .product-subhero .float33.right {float: left !important; margin: 0 20px 20px 0; width:33.33%; }
-    .download-wrap {transform: translateY(0);float: left; margin-top: -100px;}
+	.product-subhero .float33.right {float: left !important; margin: 0 20px 20px 0; width:33.33%; }
+	body.onesite-cloud .product-subhero .float33.right {margin-top: 80px;}
+	.download-wrap {transform: translateY(0);float: left; margin-top: -100px;}
+	body.onesite-cloud .product-subhero .download-wrap.active {transform: translateY(0)}
     .products-hero {padding: 20vw 0 20vw;}
     .p-subhero-content {transform: translateY(-50px);}
     .product-subhero-text {transform: translateY(0);}
@@ -333,7 +336,8 @@ opacity: .6; background-size: cover;content:''; background-size: cover; width:10
     .stat.inline33,.solution-logo.inline33 {display: block; width:100%; margin-bottom: 40px; text-align: center;}
     .stat-number {font-size: 60px;}
     .product-subhero .float33.right {float: none !important;}
-    .download-wrap {float: none; display: block; margin: 10px auto 0;}
+	.download-wrap {float: none; display: block; margin: 10px auto 0;}
+	body.onesite-cloud .product-subhero .download-wrap.active {transform: translateY(-134px)}
     .home-hero h1 {font-size: 34px;}
     .product-hero h1, .products-hero h1 {font-size: 34px;}
 	.product-subhero-text {margin-top:-120px}
