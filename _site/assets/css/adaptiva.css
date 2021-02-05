@@ -818,6 +818,7 @@ section.location .tile h2 { font-size: 1.618rem; }
 .sales-map .territory#bob-goldsmith { left: 27%; top: 50%; background: #4dcf83; }
 .sales-map .territory#wayne-collier { left: 50%; top: 41%; background: #ff902c; }
 .sales-map .territory#torsten-wiedemeyer { left: 52%; top: 44%; background: #ed4e39; }
+.sales-map .territory#singapore { bottom: 28%; right: 23%; background: #9c27b0; }
 .sales-map .territory.ada-hq { background: #41cdfc; }
 .sales-map .territory#row-3 { bottom: 18%; left: 34%; }
 .sales-map .territory#row-2 { bottom: 14%; right: 13%; }
