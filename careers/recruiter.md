@@ -5,9 +5,6 @@ meta: "Apply for the recruiter position at Adaptiva HQ in Kirkland, WA"
 bodyclass: job
 published: true
 ---
-## Company
-Adaptiva is a leading, global enterprise systems management company headquartered in Kirkland, WA. Our breakthrough peer-to-peer distributed computing technology is trusted by hundreds of large enterprises around the world. Our environment and culture incorporate our four core values: Integrity, Excellence, Work Ethic, and Dignity of Labor. As an employer, we offer above-market compensation structures, industry-leading benefits packages, and incredible learning and growth opportunities, in a fast-paced and collaborative environment.
-
 ## Job Summary
 We are a fast-growing and extremely successful enterprise software company, seeking a strong Technical Recruiter to help us double the size of our software development team, and beyond.
 
