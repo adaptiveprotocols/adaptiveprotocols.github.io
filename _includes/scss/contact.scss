@@ -147,6 +147,11 @@ section.location {
 		bottom: 28%; right: 23%;
 		background: #9c27b0;
 	}
+	&#row-1 {
+		bottom: 39%;
+		right: 21%;
+		background: #9c27b0;
+	}
     &.ada-hq {
       background: $bright-blue;
     }
@@ -157,10 +162,6 @@ section.location {
 		&#row-2 {
 			bottom: 14%;
 			right: 13%;
-		}
-		&#row-1 {
-			bottom: 43%;
-      right: 19%;
 		}
     &#david-sommerville {
       top: 50%;

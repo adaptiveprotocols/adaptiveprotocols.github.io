@@ -819,10 +819,10 @@ section.location .tile h2 { font-size: 1.618rem; }
 .sales-map .territory#wayne-collier { left: 50%; top: 41%; background: #ff902c; }
 .sales-map .territory#torsten-wiedemeyer { left: 52%; top: 44%; background: #ed4e39; }
 .sales-map .territory#singapore { bottom: 28%; right: 23%; background: #9c27b0; }
+.sales-map .territory#row-1 { bottom: 39%; right: 21%; background: #9c27b0; }
 .sales-map .territory.ada-hq { background: #41cdfc; }
 .sales-map .territory#row-3 { bottom: 18%; left: 34%; }
 .sales-map .territory#row-2 { bottom: 14%; right: 13%; }
-.sales-map .territory#row-1 { bottom: 43%; right: 19%; }
 .sales-map .territory#david-sommerville { top: 50%; left: 19%; }
 .sales-map .territory.david-sommerville { background: #4e57f4; }
 .sales-map .territory.is-scrolled { opacity: 1; }
