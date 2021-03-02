@@ -22,7 +22,7 @@
   link: 'https://www2.adaptiva.com/resources/datasheet/branchcache-onesite'
   date: 20201120
   posted: 'November 20 2020'
-  type: product-resource
+  type: document
   classes:
     - class: 'product-resource'
   categories:
@@ -1052,7 +1052,7 @@
     - category: 'Webinar'
 
 - title: "Supercharging Software Delivery for Remote Endpoints"
-  link: 'https://www2.adaptiva.com/resources/webinar/onesite-cloud-demo-2021'
+  link: 'https://www.adaptiva.com/resources/webinar/onesite-cloud-demo-2021'
   date: 20210218
   posted: 'February 18 2021'
   type: webinar

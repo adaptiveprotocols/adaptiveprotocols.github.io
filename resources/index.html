@@ -64,14 +64,18 @@ js:
   <div class="content grid-container">
     {% assign academy = site.data.academy | sort: 'date' | reverse %}
     {% for asset in academy %}
-      <a class="j-col j-col-3 asset is-showing{% for class in asset.classes %} {{class.class}}{% endfor %}" href="{{asset.link}}" target="_blank" rel="noopener" title="{{asset.title}}" data-original-index="{{forloop.index0}}">
+    {% if asset.link contains 'adaptiva.com' %}
+    {% assign target = "" %}
+    {% else %}
+    {% assign target = "_blank" %}
+    {% endif %}
+      <a class="j-col j-col-3 asset is-showing{% for class in asset.classes %} {{class.class}}{% endfor %}" href="{{asset.link}}" target="{{target}}" rel="noopener" title="{{asset.title}}" data-original-index="{{forloop.index0}}">
         <div class="asset-content">
             <div class="asset-title-bg grad-dblue-lblue-reverse">
                 <div class="asset-title" style="background-image: url('/assets/img/academy/type/academy-{{asset.type}}.svg');{% if asset.type=='video' %}background-size: 68px;{% elsif asset.type=='podcast' %} background-size: 26px;{% else %} background-size: 42px;{% endif %} background-position: bottom 1em right 1em;">
                   <h3 class="white">{{asset.title}}</h3>
                 </div>
             </div>
-          <span class="asset-date">{{asset.posted}}</span>
           {% for category in asset.categories %}
             <span class="asset-category">{{category.category}}</span>
           {% endfor %}
