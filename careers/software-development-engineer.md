@@ -1,6 +1,6 @@
 ---
 layout: job
-title: Software Development Engineer
+title: Software Engineer
 meta: "Apply for the software development engineer position at Adaptiva HQ in Kirkland, WA"
 bodyclass: job
 published: true

@@ -1,6 +1,6 @@
 ---
 layout: job
-title: Sr. Software Development Engineer
+title: Sr. Software Engineer
 meta: "Apply for the Senior Software Development Engineer position at Adaptiva HQ in Kirkland, WA"
 bodyclass: job
 published: true
