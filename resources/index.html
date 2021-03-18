@@ -72,7 +72,7 @@ js:
       <a class="j-col j-col-3 asset is-showing{% for class in asset.classes %} {{class.class}}{% endfor %}" href="{{asset.link}}" target="{{target}}" rel="noopener" title="{{asset.title}}" data-original-index="{{forloop.index0}}">
         <div class="asset-content">
             <div class="asset-title-bg grad-dblue-lblue-reverse">
-                <div class="asset-title" style="background-image: url('/assets/img/academy/type/academy-{{asset.type}}.svg');{% if asset.type=='video' %}background-size: 68px;{% elsif asset.type=='podcast' %} background-size: 26px;{% else %} background-size: 42px;{% endif %} background-position: bottom 1em right 1em;">
+                <div class="asset-title" style="background-image: url('/assets/img/academy/type/academy-{{asset.type}}.svg');{% if asset.type=='video' %}background-size: 68px;{% elsif asset.type=='podcast' %} background-size: 26px;{% else %} background-size: 42px;{% endif %} background-position: bottom 1em right 1em; margin-bottom:5px;">
                   <h3 class="white">{{asset.title}}</h3>
                 </div>
             </div>

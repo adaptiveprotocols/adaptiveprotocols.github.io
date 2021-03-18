@@ -226,7 +226,8 @@ section.academy {
 }
 .asset-category {
   font-size: $type-small;
-  color: $gray;
+  color: #333;
   margin-right: $spacing-smallest;
   text-transform: capitalize;
+  font-weight: bold;
 }
