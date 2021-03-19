@@ -911,7 +911,11 @@ section.academy { min-height: calc(100vh - 600px); }
 
 .asset-date { display: block; margin-bottom: 0.618rem; font-weight: 500; }
 
-.asset-category { font-size: 0.875rem; color: #333; margin-right: 0.618rem; text-transform: capitalize; font-weight: bold; }
+.asset-category { font-size: 18px; color: #333; margin-right: 0; text-transform: capitalize; font-weight: 800; display: block; padding: 10px; margin-right: 0; /*
+color: #fff;
+background-color: #002546;
+border-top: 1px solid #245492;
+*/ }
 
 section.hero#hero-partners { background-image: url("/assets/img/hero/hero-partners.jpg"); position: relative; }
 section.hero#hero-partners .hero-content { z-index: 200; }
