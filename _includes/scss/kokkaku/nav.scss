@@ -48,6 +48,7 @@ section.navbar {
     line-height: 1em;
     &:hover > .sub-menu {
         display: block;
+		background-color: #031d39;
     }
     &.header-demo-btn {
         position: absolute;
