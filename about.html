@@ -288,14 +288,3 @@ redirect_from:
     </div>
   </div>
 </section>
-<section class="color-block lighter-gray">
-  <div class="content overflow">
-    <h2 class="centered">Latest Insights</h2>
-    <div class="grid-container">
-      {% assign insights = site.data.insights | sort: 'date' | reverse %}
-      {% for post in insights limit:3 %}
-        {% include html/insights.html %}
-      {% endfor %}
-    </div>
-  </div>
-</section>
