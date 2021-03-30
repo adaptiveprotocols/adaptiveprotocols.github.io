@@ -157,6 +157,23 @@ layout: default
             {% endif %}
           {% endfor %}
         </div>
+        <h2 style="color: #0860b8; margin-top: 2.681rem;">Green Planet Logo</h2>
+        <div class="grid-container">
+          {% for asset in site.data.assets %}
+            {%if asset.for contains 'adaptiva-academy'%}
+                <div class="j-col j-col-6" style="padding: 2rem;">
+                    <a class="brand-asset brand-asset--medium {% if asset.class %}{{asset.class}}{% endif %}" href="{{site.baseurl}}/assets/downloads/{{asset.svg}}" title="Download SVG" target="_blank"><img src="{{site.baseurl}}/assets/downloads/{{asset.svg}}"></a>
+                    <h4>{{asset.title}}</h4>
+                    <a class="file-type" href="{{site.baseurl}}/assets/downloads/{{asset.svg}}" title="Download SVG" target="_blank">SVG</a>
+                    <a class="file-type" href="{{site.baseurl}}/assets/downloads/{{asset.eps}}" title="Download EPS" target="_blank">EPS</a>
+                    <a class="file-type" href="{{site.baseurl}}/assets/downloads/{{asset.png}}" title="Download PNG" target="_blank">PNG</a>
+                    {% if asset.jpg %}
+                        <a class="file-type" href="{{site.baseurl}}/assets/downloads/{{asset.jpg}}" title="Download JPG" target="_blank">JPG</a>
+                    {% endif %}
+                </div>
+            {% endif %}
+          {% endfor %}
+        </div>
         <a class="button purple" style="margin-top: 1.681rem;" href="{{"/assets/downloads/green-planet-zip.zip" | relative_url}}" target="_blank">Download All Green Planet Logos</a>
         <h2 style="color: #0860b8; margin-top: 2.681rem;">Typefaces</h2>
         <div class="j-row">

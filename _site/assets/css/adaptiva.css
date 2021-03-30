@@ -1260,6 +1260,8 @@ h1.grey, h2.grey, h3.grey, li.grey, p.grey { color: #ccc; }
 
 .products-landing h3 { color: #275797; font-size: 18px; text-transform: uppercase; font-weight: bold; }
 
+.brand-asset.brand-asset--medium.icon img { max-width: 200px !important; }
+
 /* Product Single */
 .product-hero { padding: 150px 0 0; background-image: url("/assets/img/products/product-bg.jpg"); }
 

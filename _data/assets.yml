@@ -212,6 +212,14 @@
   for: "green-planet"
   class: "icon dark"
 
+- title: "Adaptiva Academy Icon"
+  svg: "adaptiva-academy-icon.svg"
+  eps: "adaptiva-academy-icon.eps"
+  png: "adaptiva-academy-icon.png"
+  jpg: "adaptiva-academy-icon.jpg"
+  for: "adaptiva-academy"
+  class: "icon"
+
 - title: "Evolve VM logo"
   svg: "evolve-vm-logo.svg"
   eps: "evolve-vm-logo.eps"
