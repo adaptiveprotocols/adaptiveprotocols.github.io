@@ -22,7 +22,7 @@ We are seeking passionate and driven Front End Engineers who love solving big pr
 
 ### Qualifications
 * BA/BS degree in Computer Science, HCI, Design, or equivalent practical experience.
-1-3 years of experience building applications with modern web technologies, including but not limited to Angular2+, SCSS, and TypeScript.
+* 1-3 years of experience building applications with modern web technologies, including but not limited to Angular2+, SCSS, and TypeScript.
 * Experience designing and implementing complex UIs.
 
 ### Bonus Qualifications
