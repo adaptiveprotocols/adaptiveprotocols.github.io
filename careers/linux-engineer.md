@@ -18,13 +18,6 @@ You will mainly be working in C and running on Linux platfroms, adding monitorin
 The right person would have a deep understanding of Linux OS and have a  love for it.  You know how to create threads, multithreading models and could be building up to be an expert in the Linux community who is programming in various Linux Operating Systems.
 
 
-### Responsibilities
-* Work closely with UX designers, project managers and back-end engineers to implement versatile front-end solutions.
-* Embrace emerging standards while promoting best practices in order to push the limits of what a browser can do.
-* Manage your own time, and work well both independently and as part of a team.
-* Launch, iterate and make a difference. Provide front-end coding expertise and be ready to make our products better for our users.
-* Design and develop the front ends of user facing products.
-
 ### Basic Qualifications
 * BA/BS in Computer Engineering or Science, Electrical Engineering or related discipline, or equivalent work experience.
 * At least 2 years of industry experience kernel hacking or firmware development or embedded software development.
