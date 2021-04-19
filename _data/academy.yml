@@ -1,12 +1,12 @@
 - title: "Adaptiva OneSite Cloud Savings Calculator"
-  link: ' https://www2.adaptiva.com/resources/demo/onesite-cloud/on-demand'
+  link: 'https://www2.adaptiva.com/resources/interactive-content/roi-calculator'
   date: 20210415
   posted: 'April 15 2021'
   type: document
   classes:
     - class: 'product-resource'
   categories:
-    - category: 'Product Resource'
+    - category: 'Product Resource' 
 
 - title: "OKTiK Technology Partners with Adaptiva to Help Coca Cola European Partners Build a Unified Digital Workplace"
   link: '/resources/case-study/oktik-technology-and-coca-cola-europe/'
