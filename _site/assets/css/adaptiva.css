@@ -1472,7 +1472,9 @@ li.text-center.float25.full-600 p { font-size: 16px; padding: 0 28px; }
 @media (max-width: 1200px) { .stat { padding: 0 3%; }
   .stat-number { font-size: calc(10vw * .6); } }
 @media (max-width: 1000px) { .half-1000 { width: 50%; }
-  .full-1000 { float: none; width: 100%; display: block; }
+  .full-1000 { float: none !important; width: 100%; display: block; }
+  .home-banner { text-align: center; }
+  .home-banner .text-right { text-align: center; }
   .no-flex-1000 { display: inherit; }
   .speed-scale-value-prop { padding-left: 80px; }
   .asset-title h3 { font-size: 18px; } }

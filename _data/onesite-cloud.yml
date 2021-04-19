@@ -10,16 +10,16 @@
   categories:
     - category: 'document'
 
-- title: "Adaptiva OneSite Cloud: Scalable Software Delivery Everywhere"
-  link: "https://www2.adaptiva.com/resources/webinar/onesite-cloud-2020"
-  date: 20200618
+- title: "Adaptiva OneSite Cloud Savings Calculator"
+  link: ' https://www2.adaptiva.com/resources/demo/onesite-cloud/on-demand'
+  date: 20210415
   order: 2
-  posted: 'June 18 2020'
-  type: webinar
+  posted: 'April 15 2021'
+  type: document
   classes:
-    - class: 'webinar'
+    - class: 'product-resource'
   categories:
-    - category: 'Webinar'
+    - category: 'Product Resource'
 
 - title: "Adaptiva OneSite Cloud – Live Demo with new Web UI & Dashboards"
   link: 'https://www2.adaptiva.com/resources/webinar/onesite-cloud-webui-demo'
