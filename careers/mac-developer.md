@@ -6,11 +6,9 @@ bodyclass: job
 published: true
 ---
 
-Adaptiva is seeking a passionate and driven Mac Developer to join their team who love solving big problems using well-designed and elegantly written code. You will be working on cutting-edge technologies, including Distributed Computing, Network Protocols, Cloud Infrastructure and Services, Big Data, Analytics and Visualization to solve real-world problems for some of the biggest and most respected Fortune 500 companies in the world.
+Adaptiva is seeking a passionate and driven Mac Developer who loves solving big problems using well-designed and elegantly written code. You will be working on cutting-edge technologies, including Distributed Computing, Network Protocols, Cloud Infrastructure and Services, Big Data/Hadoop, Analytics and Visualization to solve real-world problems for some of the biggest and most respected Fortune 500 companies in the world.
 
 Adaptiva is a results-driven company that invests in hard-working, genuine, talented, and creative employees who don’t settle for anything short of their best work. Engineers can thrive in an independent, logical environment where they can truly leave a mark on an award winning, rapidly growing organization.
-
-We are seeking passionate and driven Mac Engineers who love solving big problems and have an OS level understanding.
 
 ## Responsibilities
 * Identify, prioritize and execute tasks in the software development life cycle
@@ -19,15 +17,20 @@ We are seeking passionate and driven Mac Engineers who love solving big problems
 * Work collaboratively with product marketing, sales, solutions engineering, and support teams to ensure that Adaptiva products deliver outstanding experiences to all our customers
 
 
+
 ### Basic Qualifications
 * Bachelors or Masters degree in Computer Science or Engineering
-* A very solid understanding of Objective-C, C++ a plus
-* Experience with Swift and AppKit.
-* Professional experience with Xcode IDE and the Foundation Framework.
-* Deep understanding of the Macintosh OS and experience with XNU kernel understanding and Unix 
+* Fluent in Java, Swift, Objective-C and asynchronous development 
+* Solid understanding of OOP
+* Deep understanding of the Macintosh OS and experience with XNU kernel and Unix 
+* 3+ years of experience in macOS Development
+* 2+ years of experience in Native macOS Applications
+* Expertise in Developing and Releasing macOS applications through the App Store
+* Knowledge of current production methods for macOS applications
+* Solid understanding of API integrations 
 * Experience building complex, scalable, high-performance software systems that been successfully delivered to customers
 * Strong focus on clean code and robust design
-* Ability to work independently and manage/lead other developers.
+* Ability to work independently 
 * Willingness to write design documents and specifications.
 
 ### Daily Life 
