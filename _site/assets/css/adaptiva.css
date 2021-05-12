@@ -781,7 +781,7 @@ section.color-block.job-description h2 { text-align: left; }
 
 section.job-description h2 { color: #0860b8; }
 
-section.hero#hero-contact { background-image: url("/assets/img/hero/hero-contact.png"); position: relative; }
+section.hero#hero-contact { background-image: url("/assets/img/products/product-bg.jpg"); position: relative; }
 section.hero#hero-contact h1 { color: #fff; }
 @media screen and (max-width: 767px) { section.hero#hero-contact { background-image: url("/assets/img/hero/hero-contact--mobile.png"); } }
 
@@ -1095,6 +1095,12 @@ p.caption { line-height: 1em; }
 .ma-large { margin: calc( var(--val-baseline) * 2 ); }
 
 .ma-xl { margin: calc( var(--val-baseline) * 4 ); }
+
+.mr-medium { margin-right: var(--val-baseline); }
+
+.mr-large { margin-right: calc( var(--val-baseline) * 2 ); }
+
+.mr-xl { margin-right: calc( var(--val-baseline) * 4 ); }
 
 .py-small { padding-top: calc( var(--val-baseline) / 2 ); padding-bottom: calc( var(--val-baseline) / 2 ); }
 
@@ -1469,6 +1475,11 @@ li.text-center.float25.full-600 p { font-size: 16px; padding: 0 28px; }
 
 .pag.active-pag, .pag:hover { background-color: #0860b8; }
 
+/* contact */
+.contact-form-container { background: #fff; border: 1px solid #f9f9f9; box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1); padding: 2.618rem 1.618rem; }
+
+body.contact section.color-block h2 { font-size: 34px; }
+
 @media (max-width: 1200px) { .stat { padding: 0 3%; }
   .stat-number { font-size: calc(10vw * .6); } }
 @media (max-width: 1000px) { .half-1000 { width: 50%; }
@@ -1530,6 +1541,7 @@ li.text-center.float25.full-600 p { font-size: 16px; padding: 0 28px; }
   .image-overflow img { max-width: 100%; }
   .results.inline50 { width: 100%; display: block; margin-bottom: 40px; }
   .hero--customer-survey { padding-bottom: 75px; }
+  .contact-form-container { padding: 0; }
   :root { --val-baseline: 15px; } }
 @media (max-width: 500px) { .half-500 { width: 50%; }
   .full-500 { float: none; width: 100%; display: block; }
