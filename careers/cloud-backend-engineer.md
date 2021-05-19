@@ -9,7 +9,7 @@ Adaptiva is seeking passionate and driven Cloud Software Developers to join thei
 
 You will be working on cutting-edge technologies, including Distributed Computing, Network Protocols, Cloud Infrastructure and Services, Big Data, Analytics and Visualization to solve real-world problems for some of the biggest and most respected Fortune 500 companies in the world.  
 
-Adaptiva is a results-driven company that invests in hard-working, genuine, talented, and creative employees who do not settle for anything short of their best work. Engineers can thrive in an independent environment and can truly leave a mark on an award winning, stable, and growing organization.  
+Adaptiva is a results-driven company that invests in hard-working, genuine, talented, and creative employees who do not settle for anything short of their best work. You will thrive in an independent, friendly, and collaborative working environment where you can truly leave a mark.  
 
 ### Responsibilities
 * Design and architect sophisticated hybrid, and cloud-based software 
