@@ -32,13 +32,13 @@
   categories:
     - category: 'Webinar'
 
-- title: "Adaptiva Endpoint Health: Endpoint Administration and Security at Scale in a WFH World"
-  link: 'https://www2.adaptiva.com/resources/webinar/endpoint-administration-and-security'
+- title: "OKTIK Technology Partners with Adaptiva to Help Coca Cola European Partners Build a Unified Digital Workplace"
+  link: 'https://adaptiva.com/resources/case-study/oktik-technology-and-coca-cola-europe/'
   date: 20200429
   order: 4
   posted: 'April 29 2020'
-  type: webinar
+  type: document
   classes:
-    - class: 'webinar'
+    - class: 'case-study'
   categories:
-    - category: 'Webinar'
+    - category: 'Case Study'
