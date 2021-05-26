@@ -146,6 +146,8 @@ redirect_from:
                             <span class="res-icon">
                                 {% if asset.type=='webinar' %}
                                     <i class="fa fa-play-circle"></i> Watch
+                                {% elsif asset.type=='calculator' %}
+                                    <i class="fa fa-file-alt" aria-hidden="true"></i>
                                 {% elsif asset.type=='podcast' %}
                                     <i class="fa fa-microphone"></i> Listen to
                                 {% elsif asset.type=='document' %}
@@ -153,7 +155,11 @@ redirect_from:
                                 {% endif %}
                             </span> 
                             {% for category in asset.categories %}
-                                {{category.category}}
+                                {% if asset.type=='calculator' %}
+                                    Calculate My Savings
+                                {% else %}
+                                    {{category.category}}
+                                {% endif %}
                             {% endfor %}
                             <div class="right"><img src="/assets/img/products/Chevron-Right.png" alt="resource arrow"></div>
                         </div>
