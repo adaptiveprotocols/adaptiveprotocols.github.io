@@ -1,0 +1,44 @@
+
+- title: "Endpoint Management and Security at Scale in a Remote Work Reality"
+  link: "https://www2.adaptiva.com/resources/webinar/endpoint-management-security-2020"
+  date: 20200618
+  order: 1
+  posted: 'June 18 2020'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'webinar'
+
+- title: "Fortune 500 Retailer Resolves Thousands of Health and Security Problems"
+  link: 'https://adaptiva.com/resources/case-study/endpoint-health-fortune-500/'
+  date: 20210415
+  order: 2
+  posted: 'April 15 2021'
+  type: document
+  classes:
+    - class: 'case-study'
+  categories:
+    - category: 'Case Study'
+
+- title: "Supercharging Software Delivery for Remote Endpoints"
+  link: 'https://www2.adaptiva.com/resources/webinar/onesite-cloud-demo-2021'
+  date: 20200811
+  order: 3
+  posted: 'August 12 2020'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "OKTIK Technology Partners with Adaptiva to Help Coca Cola European Partners Build a Unified Digital Workplace"
+  link: 'https://adaptiva.com/resources/case-study/oktik-technology-and-coca-cola-europe/'
+  date: 20200429
+  order: 4
+  posted: 'April 29 2020'
+  type: document
+  classes:
+    - class: 'case-study'
+  categories:
+    - category: 'Case Study'

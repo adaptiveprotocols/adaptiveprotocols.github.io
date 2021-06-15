@@ -27,6 +27,7 @@ p.caption {line-height:1em}
 .flex-wrap {flex-wrap: wrap;}
 .flex-align-center {align-items: center;}
 .flex-justify-center {justify-content: center;}
+.flex-center {align-items: center;justify-content: center}
 .flex-space-between {justify-content: space-between;}
 .row-reverse {flex-direction: row-reverse;}
 .flex-row {flex-direction: row;}
@@ -224,6 +225,14 @@ h2 + .feature-row {padding-top: 0px;}
 li.text-center.float25.full-600 p {font-size: 16px; padding: 0 28px;} //hero feature
 .privacy-pol h3 {text-transform: capitalize;}
 
+/* Endpoint Health */
+.benefit-container {gap:20px;}
+.benefit-item {flex: 1 1 30%; flex-direction: column;border-radius:5px;background:white;padding-top: 40px;}
+.benefit-item img {height: 75px;}
+.benefit-item img.icon-smaller {height: 50px!important;margin-top: 25px;}
+.endpoint-health.product-single .angle-separator:after {background-color:white}
+
+
 /* ONESITE */
 .promotional-banner {background-image: url("/assets/img/home/home-hero-bg.jpg");}
 .image-overflow img {max-width: 110%;}
@@ -361,6 +370,7 @@ body.contact section.color-block h2 {font-size: 34px;}
     .results.inline50 {width: 100%; display: block; margin-bottom: 40px;}
     .hero--customer-survey {padding-bottom: 75px;}
 	.contact-form-container {padding: 0;}
+	.benefit-item {flex-basis:100%;}
     :root {
         --val-baseline:	15px;
     }
@@ -375,6 +385,7 @@ body.contact section.color-block h2 {font-size: 34px;}
     .q-slide .quoter-info p {font-size: 14px; font-weight: 300;}
     .slider {height: 310px;}
     #pagination { position: relative; transform: translateY(50px);}
+	
 }
 @media (max-width: 400px){
     .half-400 { width: 50%; }
