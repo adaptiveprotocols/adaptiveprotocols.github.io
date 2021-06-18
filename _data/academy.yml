@@ -1,3 +1,13 @@
+- title: "Cloud-enabled Endpoint Health Launch Webinar"
+  link: 'https://www2.adaptiva.com/resources/webinar/endpoint-health-launch-2021'
+  date: 20220630
+  posted: 'June 30 2021'
+  type: document
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
 - title: "Adaptiva OneSite Cloud Savings Calculator"
   link: 'https://www2.adaptiva.com/resources/interactive-content/roi-calculator'
   date: 20210415
