@@ -53,8 +53,5 @@ An ideal candidate will be able to quickly ascertain gaps in product messaging a
 * Working knowledge of web analytics tools
 * Have worked with tools and systems such as Wordpress, Hubspot, Pardot, Salesforce as well as production tools such as Adobe Creative Cloud, Camptasia, Canva 
 
-### How to Apply
-Submit your cover letter and resume to sonia.martinez@adaptiva.com
-
 ### Location
 Seattle, Washington
