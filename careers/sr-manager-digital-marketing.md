@@ -3,6 +3,7 @@ layout: job
 title: Sr. Manager Digital Marketing 
 meta: "Apply for the Sr. Manager Digital Marketing  position in Kirkland, WA"
 bodyclass: job
+department: marketing
 published: true
 ---
 

@@ -3,6 +3,7 @@ layout: job
 title: Senior Product Manager
 meta: "Apply for the Senior Product Manager position at Adaptiva."
 bodyclass: job
+department: marketing
 published: true
 ---
 ## About Adaptiva

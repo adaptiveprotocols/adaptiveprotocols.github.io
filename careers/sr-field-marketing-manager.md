@@ -3,6 +3,7 @@ layout: job
 title: Field Marketing, Sr Manager
 meta: "Apply for the Field Marketing, Sr Manager position in Kirkland, WA"
 bodyclass: job
+department: marketing
 published: true
 ---
 

@@ -3,6 +3,7 @@ layout: job
 title: Director, Product Marketing
 meta: "Apply for the Director, Product Marketing position in Kirkland, WA"
 bodyclass: job
+department: marketing
 published: true
 ---
 

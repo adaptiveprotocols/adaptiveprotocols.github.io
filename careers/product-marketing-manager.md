@@ -3,6 +3,7 @@ layout: job
 title: Product Marketing Manager
 meta: "Apply for the Product Marketing Manager position in Kirkland, WA"
 bodyclass: job
+department: marketing
 published: true
 ---
 
