@@ -303,7 +303,8 @@ body.contact section.color-block h2 {font-size: 34px;}
 
 /* Release Hisotry */
 #rel-hist-list tr {text-align: left;}
-#rel-hist-list td, #rel-hist-list th {padding:30px 20px;}
+#rel-hist-list td {padding: 30px 20px;}
+#rel-hist-list th {padding: 30px 20px 0px}
 #rel-hist-list th {text-decoration: underline;}
 #rel-hist-list td:first-child, #rel-hist-list th:first-child {width: 100px;text-align:right}
 #rel-hist-list td:nth-child(2), #rel-hist-list th:nth-child(2) {width: 200px;text-align:right}
