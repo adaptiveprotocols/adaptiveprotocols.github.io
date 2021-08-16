@@ -1,0 +1,32 @@
+---
+layout: default
+title: Release History
+meta: "At Adaptiva, we work closely with partners of all sizes to build and deliver endpoint management and security solutions that eliminate costs and simplify IT operations for our customers."
+bodyclass: release-history
+stylesheet: tt-framework
+---
+<section class="hero" style="background-image: url(/assets/img/hero/hero-academy.png);">
+  <div class="content hero-content">
+    <h1>Adaptiva Release History</h1>
+  </div>
+</section>
+<section class="flex flex-justify-center ma-medium">
+	<div >
+    	<table id="rel-hist-list">
+			<tr>
+				<th>BUILD</th>
+				<th>RELEASE DATE</th>
+				<th>BRIEF DESCRIPTION</th>
+			</tr>
+			{% assign releases = site.data.release-history %}
+			{% for release in releases %}
+			<tr>
+				<td>{{release.build}}</td>
+				<td>{{release.title}}</td>
+				<td>{{release.description}}</td>
+			</tr>
+			{% endfor %}
+	  	</table>
+	</div>
+</section>
+

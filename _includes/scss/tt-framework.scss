@@ -70,6 +70,7 @@ p.caption {line-height:1em}
 .pa-large {padding:calc( var(--val-baseline) * 2 )}
 .pa-xl {padding:calc( var(--val-baseline) * 4)}
 
+.mx-auto {margin:0 auto}
 .ma-small {margin:calc( var(--val-baseline) / 2 )}
 .ma-medium {margin: var(--val-baseline)}
 .ma-large {margin:calc( var(--val-baseline) * 2 )}
@@ -299,6 +300,14 @@ opacity: .6; background-size: cover;content:''; background-size: cover; width:10
 /* contact */
 .contact-form-container {background: #fff;border: 1px solid #f9f9f9;box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);padding: 2.618rem 1.618rem;}
 body.contact section.color-block h2 {font-size: 34px;}
+
+/* Release Hisotry */
+#rel-hist-list tr {text-align: left;}
+#rel-hist-list td, #rel-hist-list th {padding:30px 20px;}
+#rel-hist-list th {text-decoration: underline;}
+#rel-hist-list td:first-child, #rel-hist-list th:first-child {width: 100px;text-align:right}
+#rel-hist-list td:nth-child(2), #rel-hist-list th:nth-child(2) {width: 200px;text-align:right}
+#rel-hist-list td:nth-child(3) {width: 500px;}
 
 @media (max-width: 1200px){
     .stat {padding:0 3%;} 
