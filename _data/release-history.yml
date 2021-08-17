@@ -1,14 +1,22 @@
-- title: "August 5, 2021"
+- title: "5-Aug-21"
   build: "8.1.931"
-  description: "Supports Endpoint Health in the Cloud"
+  description: "Endpoint Health in the Cloud"
 
-- title: "June 1, 2021"
-  build: "8.0.926"
-  description: "OneSite Cloud Release"
-
-- title: "February 1, 2021"
+- title: "1-Jun-21"
   build: "8.0.928.2"
-  description: "OneSite for Intune and VMWare"
+  description: "LiveFlow UI , Internet Offices "
+
+- title: "1-Feb-21"
+  build: "8.0.926"
+  description: "Adaptiva CDN, InternetP2PTester"
+
+- title: "1-Nov-20"
+  build: "8.0.924.2"
+  description: "OneSite Cloud"
+
+- title: "1-Jun-20"
+  build: "7.1.903"
+  description: "OneSite for Intune"
 
 # - title: "November 6, 2020"
 #   build: "8.0.924.2"
