@@ -227,8 +227,8 @@ li.text-center.float25.full-600 p {font-size: 16px; padding: 0 28px;} //hero fea
 .privacy-pol h3 {text-transform: capitalize;}
 
 /* Endpoint Health */
-.benefit-container {gap:20px;}
-.benefit-item {flex: 1 1 30%; flex-direction: column;border-radius:5px;background:white;padding-top: 40px;}
+.benefit-container {gap:20px;justify-content: center;}
+.benefit-item {flex: 1 1 30%; flex-direction: column;border-radius:5px;background:white;padding-top: 40px;max-width: 330px;}
 .benefit-item img {height: 75px;}
 .benefit-item img.icon-smaller {height: 50px!important;margin-top: 25px;}
 .endpoint-health.product-single .angle-separator:after {background-color:white}
