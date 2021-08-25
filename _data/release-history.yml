@@ -2,10 +2,6 @@
   build: "8.1.931.1"
   description: "Endpoint Health in the Sky"
 
-- title: "5-Aug-21"
-  build: "8.1.931"
-  description: "Endpoint Health in the Cloud"
-
 - title: "1-Jun-21"
   build: "8.0.928.2"
   description: "LiveFlow UI , Internet Offices "
