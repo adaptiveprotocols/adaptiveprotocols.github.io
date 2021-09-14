@@ -1,80 +1,80 @@
 - title: "18-Aug-21"
   build: "8.1.931.1"
   description: "Endpoint Health in the Cloud"
-
+  product: "Adaptiva Edge Platform"
 - title: "1-Jun-21"
   build: "8.0.928.2"
   description: "LiveFlow UI , Internet Offices "
-
+  product: "Adaptiva Edge Platform"
 - title: "1-Feb-21"
   build: "8.0.926"
   description: "Adaptiva CDN, InternetP2PTester"
-
+  product: "Adaptiva Edge Platform"
 - title: "6-Nov-20"
   build: "8.0.924.2"
   description: "OneSite Cloud"
-
+  product: "Adaptiva Edge Platform"
 - title: "1-Jun-20"
   build: "7.1.903"
   description: "OneSite for Intune"
-
+  product: "Adaptiva Edge Platform"
 # - title: "November 6, 2020"
 #   build: "8.0.924.2"
 
-# - title: "June 1, 2020"
+# -   product: "Adaptiva Edge Platform"title: "June 1, 2020"
 #   build: "7.1.903"
 
-# - title: "February 4, 2020"
+# -   product: "Adaptiva Edge Platform"title: "February 4, 2020"
 #   build: "7.0.855"
 
-# - title: "November 12, 2019"
+# -   product: "Adaptiva Edge Platform"title: "November 12, 2019"
 #   build: "7.0.854"
 
-# - title: "July 2, 2019"
+# -   product: "Adaptiva Edge Platform"title: "July 2, 2019"
 #   build: "5.6.815"
 
-# - title: "June 2, 2019"
+# -   product: "Adaptiva Edge Platform"title: "June 2, 2019"
 #   build: "5.6.814"
 
-# - title: "March 1, 2019"
+# -   product: "Adaptiva Edge Platform"title: "March 1, 2019"
 #   build: "5.6.812.1"
 
-# - title: "October 1, 2018"
+# -   product: "Adaptiva Edge Platform"title: "October 1, 2018"
 #   build: "5.5.677.1"
 
-# - title: "September 26, 2018"
+# -   product: "Adaptiva Edge Platform"title: "September 26, 2018"
 #   build: "5.5.676.4"
 
-# - title: "September 26, 2018"
+# -   product: "Adaptiva Edge Platform"title: "September 26, 2018"
 #   build: "5.5.674.3"
 
-# - title: "July 2, 2018"
+# -   product: "Adaptiva Edge Platform"title: "July 2, 2018"
 #   build: "5.5.674.1"
 
-# - title: "July 9, 2018"
+# -   product: "Adaptiva Edge Platform"title: "July 9, 2018"
 #   build: "5.5.676.2"
 
-# - title: "April 3, 2018"
+# -   product: "Adaptiva Edge Platform"title: "April 3, 2018"
 #   build: "5.5.674"
 
-# - title: "February 2, 2018"
+# -   product: "Adaptiva Edge Platform"title: "February 2, 2018"
 #   build: "5.5.673"
 
-
+  product: "Adaptiva Edge Platform"
 # - title: "December 16, 2017"
 #   build: "5.5.672"
 
-# - title: "December 1, 2017"
+# -   product: "Adaptiva Edge Platform"title: "December 1, 2017"
 #   build: "5.5.671"
 
-# - title: "Not Released"
+# -   product: "Adaptiva Edge Platform"title: "Not Released"
 #   build: "5.5.670"
 
-# - title: "July 1, 2017"
+# -   product: "Adaptiva Edge Platform"title: "July 1, 2017"
 #   build: "5.5.669"
 
-# - title: "April 1, 2017"
+# -   product: "Adaptiva Edge Platform"title: "April 1, 2017"
 #   build: "5.5.668"
 
-# - title: "December 5, 2016"
-#   build: "5.5.667"
+# -   product: "Adaptiva Edge Platform"title: "December 5, 2016"
+#   build: "5.5.667"  product: "Adaptiva Edge Platform"

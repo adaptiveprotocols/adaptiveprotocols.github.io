@@ -16,6 +16,7 @@ stylesheet: tt-framework
 			<tr>
 				<th>BUILD</th>
 				<th>RELEASE DATE</th>
+				<th>PRODUCT</th>
 				<th>BRIEF DESCRIPTION</th>
 			</tr>
 			{% assign releases = site.data.release-history %}
@@ -23,6 +24,7 @@ stylesheet: tt-framework
 			<tr>
 				<td>{{release.build}}</td>
 				<td>{{release.title}}</td>
+				<td>{{release.product}}</td>
 				<td>{{release.description}}</td>
 			</tr>
 			{% endfor %}
