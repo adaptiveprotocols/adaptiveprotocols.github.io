@@ -1,6 +1,6 @@
 ---
 layout: job
-title: Senior Solutions Architect
+title: Senior Solutions Architect (Toronto)
 meta: "Apply for the Senior Solutions Architect position in Toronto"
 bodyclass: job
 published: true
