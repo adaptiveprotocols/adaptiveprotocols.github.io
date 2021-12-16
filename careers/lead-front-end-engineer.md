@@ -15,13 +15,6 @@ The company is entirely self-funded, extremely profitable, and fast-growing. We 
 We are now expanding into a brand-new SaaS product portfolio of cloud-native solutions that will drive hyper-growth for the company and create tremendous opportunities for the team. As part of this growth, we are seeking a Lead Front End Engineer to join our team. This position will mentor and manage the front-end team of an Award-winning enterprise software product. 
  
 This position is based at our headquarters in Kirkland, WA, and reports to the VP of Software Development. 
-Adaptiva is a leading, global provider of endpoint management and security solutions. The company’s products empower enterprises to manage and secure endpoints at unparalleled speed and massive scale using the power of peer-to-peer technology. Leading global Fortune 1000 organizations, including Nokia, HSBC, Walgreens, the U.S. Department of Defense, and the U.S. Department of Homeland Security, use Adaptiva products to eliminate the need for a vast IT infrastructure and automate countless endpoint management and security tasks.
- 
-The company is entirely self-funded, extremely profitable, and fast-growing. We were founded with the goal of creating an environment where people could work together collaboratively and do the best work of their lives. The company has built an experienced executive team is drawn from Microsoft, Oracle, and other leading enterprise software companies. 
- 
-We are now expanding into a brand-new SaaS product portfolio of cloud-native solutions that will drive hyper-growth for the company and create tremendous opportunities for the team. As part of this growth, we are seeking a Lead Front End Engineer to join our team. This position will mentor and manage the front-end team of an Award-winning enterprise software product. 
- 
-This position is based at our headquarters in Kirkland, WA, and reports to the VP of Software Development. 
 
 ### Key responsibilities
 * Manage and mentor a team of talented front-end developers to implement world-class front-end solutions for our award-winning enterprise software products using Typescript, JavaScript, and Angular frameworks.
