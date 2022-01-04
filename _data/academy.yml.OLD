@@ -1,0 +1,1729 @@
+- title: "Cloud-enabled Endpoint Health Launch Webinar"
+  link: 'https://www2.adaptiva.com/resources/webinar/endpoint-health-launch-2021'
+  date: 20220630
+  posted: 'June 30 2021'
+  type: document
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "Adaptiva OneSite Cloud Savings Calculator"
+  link: 'https://www2.adaptiva.com/resources/interactive-content/roi-calculator'
+  date: 20210415
+  posted: 'April 15 2021'
+  type: document
+  classes:
+    - class: 'product-resource'
+  categories:
+    - category: 'Product Resource' 
+
+- title: "OKTiK Technology Partners with Adaptiva to Help Coca Cola European Partners Build a Unified Digital Workplace"
+  link: '/resources/case-study/oktik-technology-and-coca-cola-europe/'
+  date: 20210119
+  posted: 'January 19 2021'
+  type: document
+  classes:
+    - class: 'case-study'
+  categories:
+    - category: 'Case Study'
+
+- title: "Endpoint Management and Security at Scale in a Remote Work Reality"
+  link: 'https://www2.adaptiva.com/resources/webinar/endpoint-management-security-2020'
+  date: 20201209
+  posted: 'December 9 2020'
+  type: document
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "BranchCache Vs. OneSite Datasheet"
+  link: 'https://www2.adaptiva.com/resources/datasheet/branchcache-onesite'
+  date: 20201120
+  posted: 'November 20 2020'
+  type: document
+  classes:
+    - class: 'product-resource'
+  categories:
+    - category: 'product-resource'
+
+- title: "Remote Work and What It Means for the Future of Network Architecture"
+  link: 'https://www2.adaptiva.com/resources/ebook/endpoint-mgmt-covid'
+  date: 20200921
+  posted: 'September 21 2020'
+  type: document
+  classes:
+    - class: 'report'
+  categories:
+    - category: 'Ebooks & Reports'
+
+- title: "Managing and Securing Endpoints in the COVID-19 Era"
+  link: 'https://www2.adaptiva.com/resources/ebook/managing-securing-endpoints-covid'
+  date: 20201014
+  posted: 'October 14 2020'
+  type: document
+  classes:
+    - class: 'report'
+  categories:
+    - category: 'Ebooks & Reports'
+
+- title: "Endpoint Management and Security in a Work From Home World"
+  link: 'https://www2.adaptiva.com/resources/ebook/endpoint-mgmt-wfh'
+  date: 20200928
+  posted: 'September 28 2020'
+  type: document
+  classes:
+    - class: 'report'
+  categories:
+    - category: 'Ebooks & Reports'
+
+- title: "Enabling Remote Work in a COVID-19 World with Total Endpoint Visibility & Control"
+  link: 'https://www2.adaptiva.com/resources/webinar/enabling-remote-work-covid-19'
+  date: 20201007
+  posted: 'October 07 2020'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "Endpoint Management and Security at Scale in a Remote Work Reality"
+  link: 'https://www2.adaptiva.com/resources/webinar/endpoint-management-security-2020'
+  date: 20200819
+  posted: 'August 19 2020'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "Adaptiva OneSite Cloud – Live Demo with new Web UI & Dashboards"
+  link: 'https://www2.adaptiva.com/resources/webinar/onesite-cloud-webui-demo'
+  date: 20200811
+  posted: 'August 12 2020'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "Adaptiva OneSite Cloud Demo"
+  link: 'https://www2.adaptiva.com/resources/demo/onesite-cloud/on-demand'
+  date: 20201008
+  posted: 'October 08 2020'
+  type: video
+  classes:
+    - class: 'video'
+  categories:
+    - category: 'video'
+
+- title: "Adaptiva OneSite Cloud – Live Demo: Software Delivery Everywhere"
+  link: 'https://www2.adaptiva.com/resources/webinar/onesite-cloud-demo'
+  date: 20200708
+  posted: 'July 8 2020'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "Adaptiva Endpoint Health: Endpoint Administration and Security at Scale in a WFH World"
+  link: 'https://www2.adaptiva.com/resources/webinar/endpoint-administration-and-security'
+  date: 20200429
+  posted: 'April 29 2020'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+    
+- title: "Adaptiva PowerShell CmdLet Foundry Technical Deep Dive"
+  link: 'https://adaptiva.com/videos/2020/powershell-cmdlet-foundry-deep-dive/'
+  date: 20200326
+  posted: 'March 26 2020'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "E³ Podcast: Wally Mead"
+  link: 'https://soundcloud.com/adaptiva/enterprise-endpoint-experts-wally-mead'
+  date: 20170320
+  posted: 'March 20 2017'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
+  img: 'podcast-wally-mead.jpg'
+
+- title: "E³ Podcast: Wally Mead (Video)"
+  link: 'https://vimeo.com/adaptiva/enterprise-endpoint-experts-wally-mead'
+  date: 20170320
+  posted: 'March 20 2017'
+  type: podcast
+  classes:
+    - class: 'video'
+    - class: 'podcast'
+  categories:
+    - category: 'Video'
+    - category: 'Podcast'
+  img: 'podcast-wally-mead.jpg'
+
+- title: "E³ Podcast: Adin Ermie"
+  link: 'https://soundcloud.com/adaptiva/mvp-adin-ermie-on-microsofts-upgrade-readiness-for-windows-10'
+  date: 20170331
+  posted: 'March 31 2017'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
+  img: 'podcast-adin-ermie.jpg'
+
+- title: "E³ Podcast: Ami Casto"
+  link: 'https://soundcloud.com/adaptiva/ami-casto-on-windows-10-creators-update-whats-new-for-it-professionals'
+  date: 20170406
+  posted: 'April 6 2017'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
+  img: 'podcast-ami-casto.jpg'
+
+- title: "E³ Podcast: Nickolaj Andersen"
+  link: 'https://soundcloud.com/adaptiva/windows-10-osd-frontend-with-nickolaj-andersen-1'
+  date: 20170504
+  posted: 'May 4 2017'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
+  img: 'podcast-nickolaj-andersen.jpg'
+
+- title: "E³ Podcast: Steve Thompson"
+  link: 'https://soundcloud.com/adaptiva/enterprise-endpoint-experts-steve-thompson'
+  date: 20170510
+  posted: 'May 10 2017'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
+  img: 'podcast-steve-thompson.jpg'
+
+- title: "E³ Podcast: Kim Oppalfens"
+  link: 'https://soundcloud.com/adaptiva/enterprise-endpoint-experts-steve-thompson'
+  date: 20170530
+  posted: 'May 30 2017'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
+  img: 'podcast-kim-oppalfens.jpg'
+
+- title: "E³ Podcast: Matthew Teegarden"
+  link: 'https://soundcloud.com/adaptiva/enterprise-endpoint-experts-matthew-teegarden'
+  date: 20170606
+  posted: 'June 6 2017'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
+  img: 'podcast-matthew-teegarden.jpg'
+
+- title: "E³ Podcast: Brian Mason"
+  link: 'https://soundcloud.com/adaptiva/2017-05-25-brianmason-audio'
+  date: 20170612
+  posted: 'June 12 2017'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
+  img: 'podcast-brian-mason.jpg'
+
+- title: "E³ Podcast: Mikael Nystrom"
+  link: 'https://soundcloud.com/adaptiva/enterprise-endpoint-experts-mikael-nystrom'
+  date: 20170619
+  posted: 'June 19 2017'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
+  img: 'podcast-mikael-nystrom.jpg'
+
+- title: "E³ Podcast: Johan Arwidmark"
+  link: 'https://soundcloud.com/adaptiva/enterprise-endpoint-experts-johan-arwidmark'
+  date: 20170626
+  posted: 'June 26 2017'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
+  img: 'podcast-johan-arwidmark.jpg'
+
+- title: "E³ Podcast: Lee Berg"
+  link: 'https://soundcloud.com/adaptiva/e3-lee-berg'
+  date: 20170711
+  posted: 'July 11 2017'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
+  img: 'podcast-lee-berg.jpg'
+
+- title: "E³ Podcast: Niall Brady"
+  link: 'https://soundcloud.com/adaptiva/niall-brady-podcast'
+  date: 20170724
+  posted: 'July 24 2017'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
+  img: 'podcast-niall-brady.jpg'
+
+- title: "E³ Podcast: Cole McDonald"
+  link: 'https://soundcloud.com/adaptiva/enterprise-endpoint-experts-cole-mcdonald'
+  date: 20170731
+  posted: 'July 31 2017'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
+  img: 'podcast-cole-mcdonald.jpg'
+
+- title: "E³ Podcast: Adi Kunduri"
+  link: 'https://soundcloud.com/adaptiva/enterprise-endpoint-experts-adi-kunduri'
+  date: 20170814
+  posted: 'August 14 2017'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
+  img: 'podcast-adi-kunduri.jpg'
+
+- title: "E³ Podcast: Duncan McAlynn"
+  link: 'https://soundcloud.com/adaptiva/e3-podcast-duncan-mcalynn'
+  date: 20170825
+  posted: 'August 25 2017'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
+  img: 'podcast-duncan-mcalynn.jpg'
+
+- title: "Client Health Product Webinar"
+  link: 'https://www2.adaptiva.com/webinar/2016-11-17-client-health-resources'
+  date: 20161107
+  posted: 'November 07 2016'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+
+- title: "TNT Uses OneSite to Streamline SCCM Infrastructure"
+  link: '/resources/case-study/tnt-case-study'
+  date: 20160209
+  posted: 'February 09 2016'
+  type: document
+  classes:
+    - class: 'case-study'
+  categories:
+    - category: 'Case Study'
+
+- title: "Windows 10 OSD Primer Guide"
+  link: 'https://www2.adaptiva.com/report/windows-10-primer'
+  date: 20170615
+  posted: 'June 15 2017'
+  type: document
+  classes:
+    - class: 'report'
+  categories:
+    - category: 'Ebooks & Reports'
+
+- title: "Adaptiva Company Brochure"
+  link: 'https://www2.adaptiva.com/l/139131/2016-03-23/43tvp/139131/6804/Adaptiva_Company_Overview_Brochure.pdf'
+  date: 20170415
+  posted: 'April 15 2017'
+  type: document
+  classes:
+    - class: 'product-resource'
+  categories:
+    - category: 'Product Resource'
+
+- title: "Multicast vs. Memory Pipeline Architecture Brochure"
+  link: 'https://www2.adaptiva.com/l/139131/2016-09-08/ndmx7'
+  date: 20160908
+  posted: 'September 08 2016'
+  type: document
+  classes:
+    - class: 'technology-comparison'
+  categories:
+    - category: 'Technology Comparison'
+
+- title: "Windows 10 OSD Partner Roundtable"
+  link: 'https://www2.adaptiva.com/l/139131/2016-04-15/6qlkc'
+  date: 20160318
+  posted: 'March 18 2016'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "Top 20 SCCM Security Best Practices"
+  link: 'https://www2.adaptiva.com/l/139131/2016-04-15/6qllh'
+  date: 20161005
+  posted: 'October 5 2016'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "OneSite Product Webinar"
+  link: 'https://www2.adaptiva.com/l/139131/2016-04-15/6qlbw'
+  date: 20160620
+  posted: 'June 20 2016'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "Windows 10 Rapid Release Management: Tips & Strategies"
+  link: 'http://learn.flexerasoftware.com/AR-WBNR-Win10-Continuous-Updates'
+  date: 20160620
+  posted: 'June 20 2016'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "CTO Talk: Automating OSD and Software Distribution"
+  link: 'https://www2.adaptiva.com/l/139131/2016-05-25/cpxrk'
+  date: 20161005
+  posted: 'October 5 2016'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "What's New in ConfigMgr Since RTM"
+  link: 'https://vimeo.com/176496832'
+  date: 20160727
+  posted: 'July 27 2016'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "Client Health and Security Overview Webinar"
+  link: 'https://vimeo.com/234048228/53817607b6'
+  date: 20170915
+  posted: 'September 15 2017'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "CSMUG: Windows 10 Gotchas & Stress-free OSD"
+  link: 'https://1drv.ms/f/s!Ahu9zquvyRmuuJsMlEERmqTHkIhP6g'
+  date: 20170325
+  posted: 'March 25 2017'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "Deploying Windows 10 the Right Way with ConfigMgr (John Savill)"
+  link: 'https://www.dropbox.com/s/3ymf2ab80p1dkyb/Adaptiva%203_30%20Webcast.mp4?dl=0'
+  date: 20170210
+  posted: 'March 30 2017'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "Mastering Windows 10: Virtual Tradeshow Session"
+  link: 'https://www2.adaptiva.com/downloads/mastering-windows-10-virtual-tradeshow'
+  date: 20170620
+  posted: 'June 20 2017'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "Windows 10 Start to Finish: A Roundtable Discussion"
+  link: 'https://www2.adaptiva.com/webinar/windows-10-roundtable-recording-download'
+  date: 20170608
+  posted: 'June 08 2017'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "MMW 2017 Wrap-up Webinar"
+  link: 'https://www2.adaptiva.com/webinars/mms-2017-wrap-up-download'
+  date: 20170526
+  posted: 'May 26 2017'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "OneSite and Client Health Product Overview Webinar"
+  link: 'https://www2.adaptiva.com/webinar/product-webinar-download'
+  date: 20170607
+  posted: 'June 7 2017'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "Security Configuration Management Best Practices (Dale Meredith)"
+  link: 'https://www2.adaptiva.com/downloads/webinar-scm-practices'
+  date: 20170803
+  posted: 'June 7 2017'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "ConfigMgr 1706 Deep Dive"
+  link: 'https://www2.adaptiva.com/downloads/configmgr-1706-webinar'
+  date: 20170901
+  posted: 'September 1 2017'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "OneSite Overview Brochure"
+  link: 'https://www2.adaptiva.com/l/139131/2016-04-15/6s9hh/139131/9648/OneSite_Product_Overview.pdf'
+  date: 20160415
+  posted: 'April 15 2016'
+  type: document
+  classes:
+    - class: 'product-resource'
+  categories:
+    - category: 'Product Resource'
+
+- title: "OneSite Speed Datasheet"
+  link: 'https://www2.adaptiva.com/l/139131/2016-04-29/8q2x7/139131/11394/OneSite_Datasheet.pdf'
+  date: 20160513
+  posted: 'May 13 2016'
+  type: document
+  classes:
+    - class: 'product-resource'
+  categories:
+    - category: 'Product Resource'
+
+- title: "Windows 10 OSD Brochure"
+  link: 'https://insights.adaptiva.com/downloads/documents/windows-10-osd-brochure.pdf'
+  date: 20160513
+  posted: 'May 13 2016'
+  type: document
+  classes:
+    - class: 'product-resource'
+  categories:
+    - category: 'Product Resource'
+
+- title: "Automation: Content Staging with OneSite"
+  link: 'https://www2.adaptiva.com/l/139131/2016-07-12/hjl8y/139131/20078/Automation_Content_Staging.pdf'
+  date: 20160712
+  posted: 'July 12 2016'
+  type: document
+  classes:
+    - class: 'product-resource'
+  categories:
+    - category: 'Product Resource'
+
+- title: "Automation: Content Visibility and Control with OneSite"
+  link: 'https://www2.adaptiva.com/l/139131/2016-07-12/hjl91/139131/20080/Automation_Content_Visibility_.pdf'
+  date: 20160712
+  posted: 'July 12 2016'
+  type: document
+  classes:
+    - class: 'product-resource'
+  categories:
+    - category: 'Product Resource'
+
+- title: "Automation: Content Workflow with OneSite"
+  link: 'https://www2.adaptiva.com/l/139131/2016-07-12/hjl93/139131/20082/Automation_Content_Workflow.pdf'
+  date: 20160712
+  posted: 'July 12 2016'
+  type: document
+  classes:
+    - class: 'product-resource'
+  categories:
+    - category: 'Product Resource'
+
+- title: "Rapid Windows 10 OSD Datasheet"
+  link: 'https://www2.adaptiva.com/l/139131/2016-07-28/kd1x1/139131/22104/Windows_10_OSD_Datasheet.pdf'
+  date: 20160729
+  posted: 'July 29 2016'
+  type: document
+  classes:
+    - class: 'product-resource'
+  categories:
+    - category: 'Product Resource'
+
+- title: "Altiris to SCCM Migration Brochure"
+  link: 'https://www2.adaptiva.com/l/139131/2016-08-12/lpt95/139131/24122/Adaptiva_AltiristoSCCM_Brochure.pdf'
+  date: 20160831
+  posted: 'August 31 2016'
+  type: document
+  classes:
+    - class: 'product-resource'
+  categories:
+    - category: 'Product Resource'
+
+- title: "Adaptiva Key Advantages Brochure"
+  link: 'https://www2.adaptiva.com/l/139131/2016-09-19/pnrvt/139131/29312/Adaptiva_Key_Advantages.pdf'
+  date: 20160919
+  posted: 'September 19 2016'
+  type: document
+  classes:
+    - class: 'product-resource'
+  categories:
+    - category: 'Product Resource'
+
+- title: "Endpoint Health Health Checks List"
+  link: 'https://insights.adaptiva.com/downloads/datasheets/Endpoint_Health_Health_Check_List.pdf'
+  date: 20161027
+  posted: 'October 27 2016'
+  type: document
+  classes:
+    - class: 'product-resource'
+  categories:
+    - category: 'Product Resource'
+
+- title: "Fortune 500 Retailer Resolves Thousands of Health and Security Problems with Endpoint Health"
+  link: 'https://adaptiva.com/resources/case-study/endpoint-health-fortune-500/'
+  date: 20200305
+  posted: 'March 5 2020'
+  type: document
+  classes:
+    - class: 'case-study'
+  categories:
+    - category: 'Case Study'
+
+- title: "Green Planet Overview Brochure"
+  link: 'https://www2.adaptiva.com/l/139131/2016-11-01/t3l41/139131/35532/Green_Planet_Overview.pdf'
+  date: 20161101
+  posted: 'November 1 2016'
+  type: document
+  classes:
+    - class: 'product-resource'
+  categories:
+    - category: 'Product Resource'
+
+- title: "PowerShell Fusion and Workflow Designer"
+  link: 'https://www2.adaptiva.com/files/datasheets/powershell'
+  date: 20170413
+  posted: 'April 13 2017'
+  type: document
+  classes:
+    - class: 'product-resource'
+  categories:
+    - category: 'Product Resource'
+
+- title: "Endpoint Health Datasheet"
+  link: 'https://www2.adaptiva.com/downloads/client-health-features'
+  date: 20170630
+  posted: 'June 30 2017'
+  type: document
+  classes:
+    - class: 'product-resource'
+  categories:
+    - category: 'Product Resource'
+
+- title: "Client Health Visual Reporting Engine Overview"
+  link: 'https://www2.adaptiva.com/downloads/client-health-visual-reporting'
+  date: 20170714
+  posted: 'July 14 2017'
+  type: document
+  classes:
+    - class: 'product-resource'
+  categories:
+    - category: 'Product Resource'
+
+- title: "Adaptiva Deep Dive: LiveFlow"
+  link: 'https://www2.adaptiva.com/video/liveflow'
+  date: 20170907
+  posted: 'September 7 2017'
+  type: video
+  classes:
+    - class: 'product-resource'
+    - class: 'video'
+  categories:
+    - category: 'Product Resource'
+    - category: 'Video'
+
+- title: "Adaptiva Deep Dive: Predictive Bandwidth Harvesting"
+  link: 'https://www2.adaptiva.com/video/PBH'
+  date: 20170907
+  posted: 'September 7 2017'
+  type: video
+  classes:
+    - class: 'product-resource'
+    - class: 'video'
+  categories:
+    - category: 'Product Resource'
+    - category: 'Video'
+
+- title: "Adaptiva Deep Dive: Virtual SAN"
+  link: 'https://www2.adaptiva.com/video/VirtualSAN'
+  date: 20170908
+  posted: 'September 8 2017'
+  type: video
+  classes:
+    - class: 'product-resource'
+    - class: 'video'
+  categories:
+    - category: 'Product Resource'
+    - category: 'Video'
+
+- title: "Five Star Overcomes OSD and WAN Hurdles with OneSite"
+  link: '/resources/case-study/five-star-quality-care-case-study'
+  date: 20160209
+  posted: 'February 9 2016'
+  type: document
+  classes:
+    - class: 'case-study'
+  categories:
+    - category: 'Case Study'
+
+- title: "Skanka Massively Simplifies its SCCM Infrastructure with OneSite"
+  link: 'https://adaptiva.com/blog/2016/sccm-osd-interview-skanska/'
+  date: 20160126
+  posted: 'January 26 2016'
+  type: document
+  classes:
+    - class: 'case-study'
+  categories:
+    - category: 'Case Study'
+
+
+- title: "AECOM Eliminates the Need for 1,500 Servers and Accelerates OSD with OneSite"
+  link: '/resources/case-study/customer-case-study-aecom'
+  date: 20161207
+  posted: 'December 7 2016'
+  type: document
+  classes:
+    - class: 'case-study'
+  categories:
+    - category: 'Case Study'
+
+- title: "Top 20 SCCM Security Best Practices Report"
+  link: 'https://www2.adaptiva.com/l/139131/2016-02-09/fs98'
+  date: 20160209
+  posted: 'February 9 2016'
+  type: document
+  classes:
+    - class: 'report'
+  categories:
+    - category: 'Ebooks & Reports'
+
+- title: "Windows 10 IT Impact Survey Report"
+  link: 'https://www2.adaptiva.com/l/139131/2016-02-09/fs8n'
+  date: 20160209
+  posted: 'February 9 2016'
+  type: document
+  classes:
+    - class: 'report'
+  categories:
+    - category: 'Ebooks & Reports'
+
+- title: "Ignite 2015 Systems Management Survey"
+  link: 'https://www2.adaptiva.com/l/139131/2016-04-15/6qlx9'
+  date: 20160415
+  posted: 'April 15 2016'
+  type: document
+  classes:
+    - class: 'report'
+  categories:
+    - category: 'Ebooks & Reports'
+
+- title: "Top 10 Best Practices for Windows 10 OSD"
+  link: 'https://www2.adaptiva.com/l/139131/2016-04-27/8kqmy'
+  date: 20160427
+  posted: 'April 27 2016'
+  type: document
+  classes:
+    - class: 'report'
+  categories:
+    - category: 'Ebooks & Reports'
+
+- title: "2016 Windows 10 Enterprise Adoption Survey"
+  link: 'https://www2.adaptiva.com/l/139131/2016-07-29/kv67c'
+  date: 20160729
+  posted: 'July 29 2016'
+  type: document
+  classes:
+    - class: 'report'
+  categories:
+    - category: 'Ebooks & Reports'
+
+- title: "Top 5 Security Best Practices for Windows 10 in the Enterprise"
+  link: 'https://www2.adaptiva.com/l/139131/2016-09-01/mx69m'
+  date: 20160901
+  posted: 'September 1 2016'
+  type: document
+  classes:
+    - class: 'report'
+  categories:
+    - category: 'Ebooks & Reports'
+
+- title: "Software Deployments from the Cloud Survey"
+  link: 'https://www2.adaptiva.com/survey/2016-cloud-software-deployments'
+  date: 20160914
+  posted: 'September 14 2016'
+  type: document
+  classes:
+    - class: 'report'
+  categories:
+    - category: 'Ebooks & Reports'
+
+- title: "2017 Windows 10 Enterprise Impact Survey"
+  link: 'https://www2.adaptiva.com/survey/2016-cloud-software-deployments'
+  date: 20160914
+  posted: 'September 14 2016'
+  type: document
+  classes:
+    - class: 'report'
+  categories:
+    - category: 'Ebooks & Reports'
+    - category: 'Ebooks & Reports'
+
+- title: "Redmond Magazine Technology Brief: Security Configuration Management"
+  link: 'https://www2.adaptiva.com/reports/security-config-mgmt'
+  date: 20170830
+  posted: 'August 30 2017'
+  type: document
+  classes:
+    - class: 'report'
+  categories:
+    - category: 'Ebooks & Reports'
+
+- title: "SCCM + OneSite vs. SCCM Standalone Comparison"
+  link: 'https://www2.adaptiva.com/brochure/sccm-with-without-onesite'
+  date: 20160908
+  posted: 'September 8 2016'
+  type: document
+  classes:
+    - class: 'technology-comparison'
+  categories:
+    - category: 'Technology Comparison'
+
+- title: "Endpoint Health and Security Options from Adaptiva and Microsoft"
+  link: 'https://www2.adaptiva.com/datasheet/adaptiva-client-health-vs-sccm'
+  date: 20170321
+  posted: 'March 21 2017'
+  type: document
+  classes:
+    - class: 'technology-comparison'
+  categories:
+    - category: 'Technology Comparison'
+
+- title: "ConfigMgr Peer-to-peer Landscape"
+  link: 'https://www2.adaptiva.com/datasheet/configmgr-p2p-landscape'
+  date: 20170711
+  posted: 'July 11 2017'
+  type: document
+  classes:
+    - class: 'technology-comparison'
+  categories:
+    - category: 'Technology Comparison'
+
+- title: "Demystifying Windows 10 Update Service Branches"
+  link: 'https://insights.adaptiva.com/downloads/infographics/2015-08-08-win10-infographic.jpg'
+  date: 20160415
+  posted: 'April 15 2016'
+  type: document
+  classes:
+    - class: 'infographic'
+  categories:
+    - category: 'Infographics'
+
+- title: "Solving the SCCM Office 365 Update Challenge"
+  link: 'https://insights.adaptiva.com/downloads/infographics/2015-11-18-o365-infographic.jpg'
+  date: 20160415
+  posted: 'April 15 2016'
+  type: document
+  classes:
+    - class: 'infographic'
+  categories:
+    - category: 'Infographics'
+
+- title: "Enterprise SCCM Security"
+  link: 'https://insights.adaptiva.com/downloads/infographics/2016-04-20-enterprise-security-infographic.pdf'
+  date: 20160420
+  posted: 'April 20 2016'
+  type: document
+  classes:
+    - class: 'infographic'
+  categories:
+    - category: 'Infographics'
+
+- title: "SCCM Visio Stencil Pack"
+  link: 'https://www2.adaptiva.com/l/139131/2016-04-15/6qmcm'
+  date: 20160415
+  posted: 'April 15 2016'
+  type: tools
+  classes:
+    - class: 'tools'
+  categories:
+    - category: 'Tools'
+
+- title: "SCCM Security Checklist"
+  link: 'https://www2.adaptiva.com/l/139131/2016-02-09/fs6q'
+  date: 20160209
+  posted: 'February 9 2016'
+  type: tools
+  classes:
+    - class: 'tools'
+  categories:
+    - category: 'Tools'
+
+- title: "Cireson Free Community Apps"
+  link: 'http://cireson.com/free-community-apps/'
+  date: 20160208
+  posted: 'February 8 2016'
+  type: tools
+  classes:
+    - class: 'tools'
+  categories:
+    - category: 'Tools'
+
+- title: "Secure 10: BIOS to UEFI Solution New 2017 update!"
+  link: 'https://www2.adaptiva.com/l/139131/2016-07-18/j7lfk'
+  date: 20170718
+  posted: 'July 18 2017'
+  type: tools
+  classes:
+    - class: 'tools'
+  categories:
+    - category: 'Tools'
+
+- title: "E³ Podcast: Kim Oppalfens (Video)"
+  link: 'https://vimeo.com/219128025/4266a21774'
+  date: 20170526
+  posted: 'May 26 2017'
+  type: podcast
+  classes:
+    - class: 'video'
+    - class: 'podcast'
+  categories:
+    - category: 'Video'
+    - category: 'Podcast'
+  img: 'podcast-kim-oppalfens.jpg'
+
+- title: "E³ Podcast: Matthew Teegarden (Video)"
+  link: 'https://vimeo.com/adaptiva/matthew-teegarden'
+  date: 20170606
+  posted: 'June 6 2017'
+  type: podcast
+  classes:
+    - class: 'video'
+    - class: 'podcast'
+  categories:
+    - category: 'Video'
+    - category: 'Podcast'
+  img: 'podcast-matthew-teegarden.jpg'
+
+- title: "E³ Podcast: Brian Mason (Video)"
+  link: 'https://vimeo.com/adaptiva/brian-mason'
+  date: 20170608
+  posted: 'June 8 2017'
+  type: podcast
+  classes:
+    - class: 'video'
+    - class: 'podcast'
+  categories:
+    - category: 'Video'
+    - category: 'Podcast'
+  img: 'podcast-brian-mason.jpg'
+
+- title: "E³ Podcast: Mikael Nystrom (Video)"
+  link: 'https://vimeo.com/adaptiva/mikael-nystrom'
+  date: 20170616
+  posted: 'June 16 2017'
+  type: podcast
+  classes:
+    - class: 'video'
+    - class: 'podcast'
+  categories:
+    - category: 'Video'
+    - category: 'Podcast'
+  img: 'podcast-mikael-nystrom.jpg'
+
+- title: "E³ Podcast: Johan Arwidmark (Video)"
+  link: 'https://vimeo.com/223351728'
+  date: 20170627
+  posted: 'June 27 2017'
+  type: podcast
+  classes:
+    - class: 'video'
+    - class: 'podcast'
+  categories:
+    - category: 'Video'
+    - category: 'Podcast'
+  img: 'podcast-johan-arwidmark.jpg'
+
+- title: "E³ Podcast: Lee Berg (Video)"
+  link: 'https://vimeo.com/225127002'
+  date: 20170711
+  posted: 'July 11 2017'
+  type: podcast
+  classes:
+    - class: 'video'
+    - class: 'podcast'
+  categories:
+    - category: 'Video'
+    - category: 'Podcast'
+  img: 'podcast-lee-berg.jpg'
+
+- title: "E³ Podcast: Cole McDonald (Video)"
+  link: 'https://vimeo.com/adaptiva/e3-cole-mcdonald'
+  date: 20170725
+  posted: 'July 25 2017'
+  type: podcast
+  classes:
+    - class: 'video'
+    - class: 'podcast'
+  categories:
+    - category: 'Video'
+    - category: 'Podcast'
+  img: 'podcast-cole-mcdonald.jpg'
+
+- title: "E³ Podcast: Adi Kunduri (Video)"
+  link: 'https://vimeo.com/adaptiva/e3-adi-kunduri'
+  date: 20170810
+  posted: 'August 10 2017'
+  type: podcast
+  classes:
+    - class: 'video'
+    - class: 'podcast'
+  categories:
+    - category: 'Video'
+    - category: 'Podcast'
+  img: 'podcast-adi-kunduri.jpg'
+
+- title: "E³ Podcast: Harjit Dhaliwal"
+  link: 'https://soundcloud.com/adaptiva/2017-09-13-e3-harjit-social-media'
+  date: 20171004
+  posted: 'September 21 2017'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
+  img: 'podcast-harjit-dhaliwal.jpg'
+
+- title: "E³ Podcast: Andy Malone"
+  link: 'https://soundcloud.com/adaptiva/enterprise-endpoint-security-with-andy-malone'
+  date: 20171004
+  posted: 'October 4 2017'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
+  img: 'podcast-andy-malone.jpg'
+
+- title: "OneSite & Client Health Overview Webinar"
+  link: 'https://www2.adaptiva.com/downloads/webinars/onesite-client-health-overview'
+  date: 20171016
+  posted: 'October 16 2017'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "Supercharging Software Delivery for Remote Endpoints"
+  link: 'https://www2.adaptiva.com/resources/webinar/onesite-cloud-demo-2021'
+  date: 20210218
+  posted: 'February 18 2021'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "Client Health and Security Overview"
+  link: 'https://vimeo.com/234048228'
+  date: 20171017
+  posted: 'October 17 2017'
+  type: video
+  classes:
+    - class: 'product-resource'
+    - class: 'video'
+  categories:
+    - category: 'Product Resource'
+    - category: 'Video'
+
+- title: "Windows 10 Accelerator Program Brochure"
+  link: 'https://www2.adaptiva.com/download/windows-10-accelerator-brochure'
+  date: 20171017
+  posted: 'October 17 2017'
+  type: document
+  classes:
+    - class: 'product-resource'
+  categories:
+    - category: 'Product Resource'
+
+- title: "Windows 10 Accelerator Program Health Checks Datasheet"
+  link: 'https://www2.adaptiva.com/downloads/windows-10-health-checks'
+  date: 20171017
+  posted: 'October 17 2017'
+  type: document
+  classes:
+    - class: 'product-resource'
+  categories:
+    - category: 'Product Resource'
+
+- title: "Adaptiva 2017 Enterprise Endpoint Security Survey"
+  link: 'https://www2.adaptiva.com/survey/2017-endpoint-security'
+  date: 20171027
+  posted: 'October 27 2017'
+  type: document
+  classes:
+    - class: 'report'
+  categories:
+    - category: 'Ebooks & Reports'
+
+- title: "Windows 10 Accelerator Program Webinar"
+  link: "https://www2.adaptiva.com/downloads/webinars/2017-11-07/w10ap"
+  date: 20171107
+  posted: 'November 07 2017'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "E³ Podcast: Anoop Nair"
+  link: "https://soundcloud.com/adaptiva/enterprise-endpoint-expert-anoop-nair"
+  date: 20171206
+  posted: 'December 06 2017'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
+  img: 'anoop-nair.jpg'
+
+- title: "E³ Podcast: Anoop Nair (Video)"
+  link: "https://vimeo.com/243958141"
+  date: 20171206
+  posted: 'December 06 2017'
+  type: podcast
+  classes:
+    - class: 'video'
+    - class: 'podcast'
+  categories:
+    - category: 'Video'
+    - category: 'Podcast'
+  img: 'anoop-nair.jpg'
+
+- title: "ConfigMgr 1710 & Co-Management: Off to the Races!"
+  link: "https://www2.adaptiva.com/downloads/webinars/2017-12-07/configmgr-1710"
+  date: 20171207
+  posted: 'December 07 2017'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "The Twelve Days of Windows 10 Deployment Tips eBook"
+  link: "https://www2.adaptiva.com/downloads/documents/windows-10-tips-ebook"
+  date: 20171218
+  posted: 'December 18 2017'
+  type: document
+  classes:
+    - class: 'product-resource'
+  categories:
+    - category: 'Product Resource'
+
+- title: "E³ Podcast: Sami Laiho"
+  link: "https://soundcloud.com/adaptiva/cybersecurity-expert-sami-laiho-on-windows-security"
+  date: 20180117
+  posted: 'January 17 2018'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
+  img: 'sami-laiho.jpg'
+
+- title: "E³ Podcast: Matt Tinney"
+  link: "https://soundcloud.com/adaptiva/hello-autopilot-podcast-edition-with-matt-tinney"
+  date: 20180123
+  posted: 'January 23 2018'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
+  img: 'matt-tinney.jpg'
+
+- title: "Windows 10 Security Design Decision Guide"
+  link: 'https://www2.adaptiva.com/downloads/documents/security-design-decision'
+  date: 20180130
+  posted: 'January 30 2018'
+  type: document
+  classes:
+    - class: 'report'
+  categories:
+    - category: 'Ebooks & Reports'
+
+- title: "Windows 10 Security: Enterprise Round Table"
+  link: "https://www2.adaptiva.com/downloads/webinars/2018-02-27/windows-10-security"
+  date: 20180302
+  posted: 'March 02 2018'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "Windows 10 Accelerator Program Overview"
+  link: "/videos/2018/2018-03-21-w10ap/"
+  date: 20180321
+  posted: 'March 21 2018'
+  type: video
+  classes:
+    - class: 'video'
+    - class: 'product-resource'
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+    - category: 'Video'
+    - category: 'Product Resource'
+
+- title: "E³ Podcast: Mick Pletcher"
+  link: "https://soundcloud.com/adaptiva/mick-pletcher-on-powershell-configmgr-tools-and-cheaper-airline-ticket"
+  date: 20180411
+  posted: 'April 11 2018'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
+  img: '2018-04-30-mick-e3.jpg'
+
+- title: "Adaptiva 2018 Windows 10 Enterprise Impact Survey"
+  link: 'https://www2.adaptiva.com/survey/2018-windows-10-enterprise-impact'
+  date: 20180419
+  posted: 'April 19 2018'
+  type: document
+  classes:
+    - class: 'report'
+  categories:
+    - category: 'Ebooks & Reports'
+
+- title: "E³ Podcast: Garth Jones"
+  link: "https://soundcloud.com/adaptiva/e3-podcast-configuration-manager-reporting-with-garth-jones"
+  date: 20180424
+  posted: 'April 24 2018'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
+  img: '2018-04-30-garth-jones-e3.jpg'
+
+- title: "E³ Podcast: Mirko Colemberg"
+  link: "https://soundcloud.com/adaptiva/2018-04-12-1129-podcast-recording-with-mirko-colemberg-01"
+  date: 20180425
+  posted: 'April 25 2018'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
+  img: '2018-04-30-mirko-e3.jpg'
+
+- title: "Get Smart on Windows 10 Application Security"
+  link: "https://www2.adaptiva.com/downloads/webinars/2017-04-27/windows-10-application-security"
+  date: 20180430
+  posted: 'April 30 2018'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "Adaptiva OneSite Cloud: Scalable Software Delivery Everywhere "
+  link: "https://www2.adaptiva.com/resources/webinar/onesite-cloud-2020 "
+  date: 20200618
+  posted: 'June 18 2020'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "E³ Podcast: Kim Oppalfens"
+  link: "https://soundcloud.com/adaptiva/configmgr-state-of-the-union-2018-with-kim-oppelfens"
+  date: 20180529
+  posted: 'May 29 2018'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
+
+- title: "E³ Podcast: Kim Oppalfens (Video)"
+  link: "https://insights.adaptiva.com/2018/configmgr-state-of-the-union-2018-with-kim-oppalfens/"
+  date: 20180529
+  posted: 'May 29 2018'
+  type: podcast
+  classes:
+    - class: 'podcast'
+    - class: 'video'
+  categories:
+    - category: 'Podcast'
+    - category: 'Video'
+
+- title: "VMware’s Brooks Peppin on Windows 10, ConfigMgr, and Adaptiva OneSite"
+  link: 'https://vimeo.com/273392139'
+  date: 20180604
+  posted: 'June 6 2018'
+  type: video
+  classes:
+    - class: 'video'
+  categories:
+    - category: 'Video'
+
+- title: "ConfigMgr Driver Management Primer"
+  link: 'https://www2.adaptiva.com/reports/configmgr-driver-management-primer'
+  date: 20180614
+  posted: 'June 14 2018'
+  type: document
+  classes:
+    - class: 'report'
+  categories:
+    - category: 'Ebooks & Reports'
+
+- title: "Windows 10 Accelerator Program Datasheet"
+  link: 'https://www2.adaptiva.com/downloads/datasheets/windows-10-accelerator-program'
+  date: 20180619
+  posted: 'June 19 2018'
+  type: document
+  classes:
+    - class: 'product-resource'
+  categories:
+    - category: 'Product Resource'
+
+- title: "On-demand Webinar: Windows 10 OSD Best Practices with ConfigMgr"
+  link: 'https://www2.adaptiva.com/downloads/webinars/2018-06-26/windows-10-osd-best-practices-configmgr'
+  date: 20180627
+  posted: 'June 27 2018'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "NetCentrics Solves Stubborn ConfigMgr Challenge for Government Agency"
+  link: 'https://vimeo.com/277722917'
+  date: 20180629
+  posted: 'June 29 2018'
+  type: video
+  classes:
+    - class: 'video'
+  categories:
+    - category: 'Video'
+
+- title: "E3: Architecting ConfigMgr with Rob Marshall"
+  link: 'https://vimeo.com/279502902'
+  date: 20180713
+  posted: 'July 13 2018'
+  type: video
+  classes:
+    - class: 'video'
+  categories:
+    - category: 'Video'
+
+- title: "DXC Partner Testimonial Video"
+  link: 'https://vimeo.com/280462148'
+  date: 20180719
+  posted: 'July 19 2018'
+  type: video
+  classes:
+    - class: 'video'
+  categories:
+    - category: 'Video'
+
+- title: "Adaptiva Client Health Webinar"
+  link: 'https://www2.adaptiva.com/downloads/webinar/2018-07-24/client-health-configmgr'
+  date: 20180726
+  posted: 'July 26 2018'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "Adaptiva Client Health Overview"
+  link: 'https://vimeo.com/296493394'
+  date: 20181022
+  posted: 'October 22 2018'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "Adaptiva Customer Panel at Microsoft Ignite 2018"
+  link: 'https://vimeo.com/296501446'
+  date: 20181022
+  posted: 'October 22 2018'
+  type: video
+  classes:
+    - class: 'video'
+  categories:
+    - category: 'Video'
+
+- title: "Fortune 100 Financial Services Organization Accelerates Windows 10 Migration with OneSite"
+  link: 'https://adaptiva.com/resources/case-study/adaptiva-fortune-100-financial-services-organization/'
+  date: 20181218
+  posted: 'December 12 2018'
+  type: document
+  classes:
+    - class: 'case-study'
+  categories:
+    - category: 'Case Study'
+
+- title: "Report: Managing Windows 10 Security Using ConfigMgr"
+  link: 'https://www2.adaptiva.com/windows10-security-configmgr'
+  date: 20190114
+  posted: 'January 14 2019'
+  type: document
+  classes:
+    - class: 'report'
+  categories:
+    - category: 'Ebooks & Reports'
+
+- title: "Infographic: Adaptiva Customer Survey"
+  link: 'https://insights.adaptiva.com/2019/satisfaction-infographic-independent-adaptiva-onesite-customer-survey-results/?_ga=2.16945593.169910342.1548287949-1010494848.1532105891'
+  date: 20190124
+  posted: 'January 24 2019'
+  type: document
+  classes:
+    - class: 'product-resource'
+  categories:
+    - category: 'Product Resource'
+
+- title: "Evolve VM: The Next Generation of Vulnerability Management"
+  link: 'https://vimeo.com/320795833'
+  date: 20190306
+  posted: 'March 06 2019'
+  type: video
+  classes:
+    - class: 'video'
+  categories:
+    - category: 'Video'
+
+- title: "Evolve VM Datasheet"
+  link: 'https://www2.adaptiva.com/EvolveVM-ProductSheet'
+  date: 20190306
+  posted: 'March 06 2019'
+  type: document
+  classes:
+    - class: 'product-resource'
+  categories:
+    - category: 'Product Resource'
+
+- title: "OneSite Cumulative Update March 2019 Datasheet"
+  link: 'https://www2.adaptiva.com/downloads/datasheets/onesite-cumulative-update-201903'
+  date: 20190306
+  posted: 'March 06 2019'
+  type: document
+  classes:
+    - class: 'product-resource'
+  categories:
+    - category: 'Product Resource'
+
+- title: "Product Webinar: Rethinking ConfigMgr Speed, Security, and Simplicity"
+  link: 'https://adaptiva.com/videos/2019/configmgr-product-webinar/'
+  date: 20190311
+  posted: 'March 11 2019'
+  type: video
+  classes:
+    - class: 'video'
+  categories:
+    - category: 'Video'
+
+- title: "Adaptiva Evolve VM Overview and Demo"
+  link: 'https://vimeo.com/326696425'
+  date: 20190326
+  posted: 'March 26 2019'
+  type: video
+  classes:
+    - class: 'video'
+  categories:
+    - category: 'Video'
+
+- title: "Vulnerability Management, It's So Much More Than Patching"
+  link: 'https://www2.adaptiva.com/downloads/webinar/2019-03-26/vulnerability-mgmt'
+  date: 20190402
+  posted: 'April 02 2019'
+  type: video
+  classes:
+    - class: 'video'
+  categories:
+    - category: 'Video'
+
+- title: "Adaptiva Evolve VM Demo (7 min)"
+  link: 'https://vimeo.com/adaptiva/evolve-vm-introduction'
+  date: 20190418
+  posted: 'April 18 2019'
+  type: video
+  classes:
+    - class: 'video'
+  categories:
+    - category: 'Video'
+
+- title: "Webinar Executive Summary: Vulnerability Management, It’s So Much More Than Patching"
+  link: 'https://storyscape.itprotoday.com/adaptiva-vulnerability-management-so-much-more-than-patching/'
+  date: 20190520
+  posted: 'May 20 2019'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "ConfigMgr Driver Strategy from Deployment Bunny and MoDaly"
+  link: 'https://vimeo.com/adaptiva/e3-podcast-maurice-daly-mikael-nystrom'
+  date: 20190520
+  posted: 'May 20 2019'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
+
+- title: "Large Enterprise Financial Services Company Achieves Dramatic Infrastructure Reduction with OneSite"
+  link: 'https://adaptiva.com/resources/case-study/adaptiva-large-enterprise-financial-services-company/'
+  date: 20190529
+  posted: 'May 29 2019'
+  type: document
+  classes:
+    - class: 'case-study'
+  categories:
+    - category: 'Case Study'
+
+- title: "ConfigMgr Admins Can Own Patch Tuesday with Tips from Harjit"
+  link: 'https://vimeo.com/adaptiva/e3-podcast-harjit-dhaliwal'
+  date: 20190604
+  posted: 'June 04 2019'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
+
+- title: "Configuration Manager Security"
+  link: 'https://soundcloud.com/adaptiva/configuration-manager-security-protect-the-protector'
+  date: 20190604
+  posted: 'June 04 2019'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
+
+- title: "How to Beat the Windows 10 Deployment Clock"
+  link: 'https://www2.adaptiva.com/downloads/webinar/2019-05-23/deployment-clock'
+  date: 20190614
+  posted: 'June 14 2019'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "ConfigMgr OSD Under the Hood with Adam Gross & Doug Wilson"
+  link: 'https://soundcloud.com/adaptiva/configmgr-osd-under-the-hood-with-adam-gross'
+  date: 20190611
+  posted: 'June 11 2019'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
+
+- title: "E3 Podcast: Throwing WSUS Under the Bus, and Why ADRs Rule"
+  link: 'https://insights.adaptiva.com/2019/e3-podcast-throwing-wsus-under-the-bus-and-adrs-rule/'
+  date: 20190619
+  posted: 'June 19 2019'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
+
+- title: "ConfigMgr Third-Party Patching Roundtable"
+  link: 'https://www2.adaptiva.com/downloads/webinar/2019-06-25/configmgr-roundtable'
+  date: 20190709
+  posted: 'July 9 2019'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "ConfigMgr Third-Party Patching Primer"
+  link: 'https://www2.adaptiva.com/report/third-party-patch-primer'
+  date: 20190724
+  posted: 'July 24 2019'
+  type: document
+  classes:
+    - class: 'report'
+  categories:
+    - category: 'Ebooks & Reports'
+
+- title: "OneSite Intune Edition Datasheet"
+  link: 'https://www2.adaptiva.com/resources/download/datasheet/onesite-intune-edition'
+  date: 20201110
+  posted: 'November 10 2020'
+  type: document
+  classes:
+    - class: 'product-resource'
+  categories:
+    - category: 'Product Resource'
+
+- title: "OneSite VMware Edition Brochure"
+  link: 'https://insights.adaptiva.com/downloads/datasheets/onesite-vmware-edition-datasheet.pdf'
+  date: 20190826
+  posted: 'August 26 2019'
+  type: document
+  classes:
+    - class: 'product-resource'
+  categories:
+    - category: 'Product Resource'
+
+- title: "On-Demand Webinar: Radically Accelerate VMware Workspace ONE App Delivery"
+  link: 'https://www2.adaptiva.com/downloads/webinar/2019-09-24/vmware-accelerate-wsone'
+  date: 20190926
+  posted: 'September 26 2019'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "2018 Endpoint Security Survey"
+  link: 'https://www2.adaptiva.com/2018SecuritySurvey'
+  date: 20181016
+  posted: 'October 16 2018'
+  type: document
+  classes:
+    - class: 'report'
+  categories:
+    - category: 'Ebooks & Reports'
+
+- title: "2019 Endpoint Security Survey"
+  link: 'https://www2.adaptiva.com/survey/2019-enterprise-security-survey'
+  date: 20191103
+  posted: 'November 3 2019'
+  type: document
+  classes:
+    - class: 'report'
+  categories:
+    - category: 'Ebooks & Reports'
+
+- title: "Top 5 CIS Controls and Cybersecurity Best Practices"
+  link: 'https://www2.adaptiva.com/report/cis-controls'
+  date: 20191103
+  posted: 'November 3 2019'
+  type: document
+  classes:
+    - class: 'report'
+  categories:
+    - category: 'Ebooks & Reports'
+
+- title: "Report: Windows as a Service for ConfigMgr and Intune Admins"
+  link: 'https://www2.adaptiva.com/report/waas-for-admins'
+  date: 20191216
+  posted: 'December 16 2019'
+  type: document
+  classes:
+    - class: 'report'
+  categories:
+    - category: 'Ebooks & Reports'
+
+- title: "On-Demand Webinar: An Evolutionary Leap in Vulnerability Management"
+  link: 'https://www2.adaptiva.com/downloads/webinar/2019-11-19/evolutionary-leap-evolvevm'
+  date: 20191122
+  posted: 'November 22 2019'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "Enhancing Microsoft Intune Application Delivery with Adaptiva OneSite Intune Edition"
+  link: 'https://www2.adaptiva.com/resources/webinar/onesite-intune-edition-2020'
+  date: 20200528
+  posted: 'May 28 2020'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "On-Demand: Windows as a Service for Smarties Webinar"
+  link: 'https://www2.adaptiva.com/downloads/webinar/2019-10-22/waas-for-smarties'
+  date: 20191216
+  posted: 'December 16 2019'
+  type: webinar
+  classes:
+    - class: 'webinar'
+  categories:
+    - category: 'Webinar'
+
+- title: "ConfigMgr Community Tools Podcast Party from MMS Jazz"
+  link: 'https://soundcloud.com/adaptiva/configmgr-community-tools-podcaste-party-from-mms-jazz'
+  date: 20191206
+  posted: 'December 6 2019'
+  type: podcast
+  classes:
+    - class: 'podcast'
+  categories:
+    - category: 'Podcast'
